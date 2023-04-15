@@ -1,0 +1,8 @@
+@import 'src/scss/variables';
+
+:host {
+    width: $wrapper-width;
+    & h1 {
+        font-family: $sans;
+    }
+}

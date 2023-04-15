@@ -1,0 +1,12 @@
+@import 'variables';
+
+@mixin link {
+    padding:$elem-padding;
+    border-radius: $border-radius;
+    text-decoration: none;
+    color: $black;
+    font-family: $mono;
+    &:hover {
+        @include darken-little($cool);
+    }
+}

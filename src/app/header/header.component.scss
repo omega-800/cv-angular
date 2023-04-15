@@ -1,0 +1,21 @@
+@import 'src/scss/variables';
+@import 'src/scss/link';
+
+:host {
+    width:100%;
+    & .navbar {
+        background-color: $cool;
+        padding:$padding;
+        & ul {
+            @include flex-row;
+            margin:0;
+            padding:0;
+            & li {
+                list-style: none;
+                & a {
+                    @include link;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+$black:rgb(22, 22, 19);
+$dark:rgb(43, 43, 38);
+$white: rgb(237, 242, 244);
+$cool: rgb(142, 141, 190);
+$bitter: rgb(237, 106, 90);
+$apple: rgb(135, 163, 48);
+
+$wrapper-width:80%;
+$border-radius: 2em;
+$padding:1em;
+$elem-padding:0.5em;
+
+$mono: RedHatMono, Courier, monospace;
+$sans: WorkSans, Helvetica, sans-serif;
+
+$trans-cb: cubic-bezier(.46,0,.37,.82) 0.5s;
+
+@font-face {
+    font-family: RedHatMono;
+    src: url(../assets/fonts/Red_Hat_Mono/static/RedHatMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin darken-little($color) {
+    background-color: darken($color, 10%);
+    transition: background-color $trans-cb;
+}
+
+@mixin flex-row {
+    display:flex;
+    flex: {
+        direction:row;
+        wrap:wrap;
+    }
+    align: {
+        items:center;
+        content:space-around;
+    }
+    justify-content: space-around;
+}
+
+@mixin flex-column {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}

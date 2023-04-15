@@ -1,73 +1,10 @@
-<div className="home">
-    <div className="home_about section">
-        <div className="box">
-            <div className="box_title">
-                <h2>About</h2>
-            </div>
-            <div className="box_content">
-                <img src="" alt=""/> 
-            </div>
-        </div>
-        <div className="box">
-            <div className="box_title">
-                <h3>Infos</h3>
-            </div>
-            <div className="box_content">
-                <!-- table>	
-                    <thead>
-                        <tr>
-                            <th colSpan={2}>About me</th>
-                        </tr>
-                    </thead>
-                    <tbody>		
-                        <tr>			
-                            <td>{t('home_about_birthdate')}</td>			
-                            <td>{me.birthDate}</td>			
-                        </tr>	
-                        <tr>			
-                            <td>{t('home_about_nationality')}</td>			
-                            <td>{me.nationality}</td>			
-                        </tr>
-                        <tr>
-                            <td>{t('home_about_address')}</td>			
-                            <td>{my_address.streetAddress}</td>			
-                        </tr>			
-                        <tr>			
-                            <td>{t('home_about_city')}</td>			
-                            <td>{my_address.postalCode+" "+my_address.addressLocality}</td>			
-                        </tr>
-                    </tbody>				
-                </table>	
-                <table>	
-                    <thead>
-                        <tr>
-                            <th colSpan={2}><h4>{t('home_about_contact')}</h4></th>
-                        </tr>
-                    </thead>
-                    <tbody>		
-                        <tr>			
-                            <td>{t('home_about_phone')}</td>					
-                            <td><a href={"tel:"+me.telephone}>{me.telephone}</a></td>						
-                        </tr>
-                        <tr>
-                            <td>{t('home_about_email')}</td>		
-                            <td><a href={"mailto:"+me.email}>{me.email}</a></td>					
-                        </tr>	
-                    </tbody>			
-                </table -->
-            </div>	
+<div id="aboutme" class="box">
+    <img src="" alt="">
+    <div class="box" id="details">
+        <h1>Welcome</h1>
+        <p id="introtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum hic omnis alias excepturi ipsum, numquam eos voluptatibus corrupti amet. Deleniti provident voluptate earum ea quibusdam cumque, adipisci aut voluptas sapiente.</p>
+        <div class="socials">
+            <app-socials-button link="link" type="mail" name="name" image=""></app-socials-button>
         </div>
     </div>
-
-    <div className="home_skills section">
-        <h2  className="section_title">Skills</h2>
-
-
-    </div>
-
-    <div className="home_hobbies section">
-        <h2 className="section_title">Hobbies</h2>
-        
-    </div>
-
 </div>
