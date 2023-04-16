@@ -1,0 +1,47 @@
+[
+ {
+  "applicationtype_id": "0cf8841a-585f-482b-ba49-a6affb4dcb64",
+  "name": "Umgebung",
+  "name_e": "Environment",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "applicationtype_id": "40ab5414-7c16-43c2-be4b-bf87b6945d12",
+  "name": "Applikation",
+  "name_e": "Application",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "applicationtype_id": "a4310d42-af3a-41a1-9576-c38d21c8d3b4",
+  "name": "Programmiersprache",
+  "name_e": "Programming language",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "applicationtype_id": "ade3bd4f-ceb5-46a2-9b51-8cbaf5b06447",
+  "name": "Rahmenwerk",
+  "name_e": "Framework",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "applicationtype_id": "ba38e4cb-cb8c-46e3-9d60-f0841f02e159",
+  "name": "Inhaltsverwaltungssystem",
+  "name_e": "Content Management System",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ }
+]

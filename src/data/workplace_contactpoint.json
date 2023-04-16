@@ -1,0 +1,27 @@
+[
+ {
+  "workplace_contactpoint_id": "36030e88-679c-4125-9d2e-479f16daf975",
+  "contactpoint_id": "2e343d9f-5c2f-4e9a-ad4c-df2b34d09a83",
+  "workplace_id": "16766a07-c135-42b7-9cfa-86c984bc3940"
+ },
+ {
+  "workplace_contactpoint_id": "50385e44-4048-4cc1-9d27-b45cc6d0c672",
+  "contactpoint_id": "01628f89-df1a-49ce-9347-d890baaac106",
+  "workplace_id": "a611ca13-be22-4c38-8b41-937b5d410e9a"
+ },
+ {
+  "workplace_contactpoint_id": "794bb3de-d409-4734-8e26-f40656d64bc9",
+  "contactpoint_id": "001bcc87-6070-4192-bd39-be95af890cd0",
+  "workplace_id": "a611ca13-be22-4c38-8b41-937b5d410e9a"
+ },
+ {
+  "workplace_contactpoint_id": "82aa1d86-0854-49e9-8149-63023580346b",
+  "contactpoint_id": "939b7ace-c044-4a8b-981e-cb196ab2e24e",
+  "workplace_id": "a611ca13-be22-4c38-8b41-937b5d410e9a"
+ },
+ {
+  "workplace_contactpoint_id": "a3ee3f71-43a8-41af-9feb-428c29bec3fd",
+  "contactpoint_id": "c44cdefa-756a-4df4-a806-c88efeef61e2",
+  "workplace_id": "a611ca13-be22-4c38-8b41-937b5d410e9a"
+ }
+]

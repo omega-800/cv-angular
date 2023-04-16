@@ -1,0 +1,38 @@
+[
+ {
+  "personcategory_id": "05b81ae3-d144-4505-881e-02dedd270b36",
+  "name": "me",
+  "name_e": "",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "personcategory_id": "483357ef-2845-4ef6-81d4-86053b6568cf",
+  "name": "berufsbildner",
+  "name_e": "",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "personcategory_id": "a729297b-722c-4504-ae85-116096646192",
+  "name": "lehrer",
+  "name_e": "",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "personcategory_id": "c25da96c-9ea7-44c2-ac4c-837e57cd9760",
+  "name": "familie",
+  "name_e": "",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ }
+]

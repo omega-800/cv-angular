@@ -1,0 +1,15 @@
+@import 'src/scss/variables';
+@import 'src/scss/link';
+
+:host {
+    & a {
+        @include link;
+        @include flex-center;
+        height:$elem-height;
+        width:$elem-height;
+        & img {
+            object-fit: contain;
+            width:80%;
+        }
+    }
+}

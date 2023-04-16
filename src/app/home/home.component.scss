@@ -2,7 +2,17 @@
 
 :host {
     width: $wrapper-width;
-    & h1 {
-        font-family: $sans;
+    padding:$wrapper-padding;
+    & #aboutme{
+        @include flex-row;
+        & #profilepic {
+            border-radius: $border-radius-circle;
+            width:$img-width;
+        }
+        & #details{
+            & .socials {
+                @include flex-row;
+            }
+        }
     }
 }

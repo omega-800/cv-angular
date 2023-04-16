@@ -1,0 +1,77 @@
+[
+ {
+  "table_name": "applicationsubcategory"
+ },
+ {
+  "table_name": "projectcategory"
+ },
+ {
+  "table_name": "project_projectcategory"
+ },
+ {
+  "table_name": "application_operatingsystem"
+ },
+ {
+  "table_name": "country"
+ },
+ {
+  "table_name": "skillcategory"
+ },
+ {
+  "table_name": "skillsubcategory"
+ },
+ {
+  "table_name": "applicationtype"
+ },
+ {
+  "table_name": "skill"
+ },
+ {
+  "table_name": "skill_skillsubcategory"
+ },
+ {
+  "table_name": "operatingsystem"
+ },
+ {
+  "table_name": "country_language"
+ },
+ {
+  "table_name": "contactpoint"
+ },
+ {
+  "table_name": "address"
+ },
+ {
+  "table_name": "workplace"
+ },
+ {
+  "table_name": "workplace_contactpoint"
+ },
+ {
+  "table_name": "school"
+ },
+ {
+  "table_name": "school_contactpoint"
+ },
+ {
+  "table_name": "career"
+ },
+ {
+  "table_name": "personcategory"
+ },
+ {
+  "table_name": "person"
+ },
+ {
+  "table_name": "person_country"
+ },
+ {
+  "table_name": "project"
+ },
+ {
+  "table_name": "project_skill"
+ },
+ {
+  "table_name": "project_author"
+ }
+]

@@ -2,10 +2,14 @@
 
 @mixin link {
     padding:$elem-padding;
-    border-radius: $border-radius;
+    border-radius: $elem-border-radius;
     text-decoration: none;
     color: $black;
-    font-family: $mono;
+    font: {
+        family:$mono;
+        size:$elem-size;
+    }
+    background-color: $cool;
     &:hover {
         @include darken-little($cool);
     }

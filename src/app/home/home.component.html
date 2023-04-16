@@ -1,10 +1,17 @@
 <div id="aboutme" class="box">
-    <img src="" alt="">
+    <img src="/assets/{{ me.image }}" alt="Profile picture" id="profilepic">
     <div class="box" id="details">
-        <h1>Welcome</h1>
-        <p id="introtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum hic omnis alias excepturi ipsum, numquam eos voluptatibus corrupti amet. Deleniti provident voluptate earum ea quibusdam cumque, adipisci aut voluptas sapiente.</p>
+        <h1>Welcome {{ me.firstname +" "+ me.lastname}}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum hic omnis alias excepturi ipsum, numquam eos voluptatibus corrupti amet. Deleniti provident voluptate earum ea quibusdam cumque, adipisci aut voluptas sapiente.</p>
         <div class="socials">
-            <app-socials-button link="link" type="mail" name="name" image=""></app-socials-button>
+            <app-socials-button link="{{me.github}}" [type]="lt.GITHUB" name="Mein Github Profil"></app-socials-button>
+            <app-socials-button link="{{me.url}}" [type]="lt.URL" name="Meine Webseite"></app-socials-button>
+            <app-socials-button link="{{myContact.phone}}" [type]="lt.PHONE" name="Meine Telefonnummer"></app-socials-button>
+            <app-socials-button link="{{myContact.email}}" [type]="lt.MAIL" name="Meine E-Mail"></app-socials-button>
         </div>
     </div>
+</div>
+<div id="aboutskills" class="box">
+    <h2>Skills</h2>
+    
 </div>

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { linkTypes, LinkType, LinkTypes } from '../constants';
 @Component({
   selector: 'app-socials-button',
   templateUrl: './socials-button.component.html',
@@ -7,15 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class SocialsButtonComponent {
   @Input() link!: string;
-  @Input() type!: string;
-  @Input() image!: string;
+  @Input() type!: LinkType;
   @Input() name!: string;
   
   public href: string = "";
 
   ngOnInit() {
-    this.href = this.type == "mail" ? "mailto:"+this.link
-    : this.type == "tel" ? "tel:"+this.link
-    : this.link;
+    this.href = this.type.prefix + this.link;
   }
 }
