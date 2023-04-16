@@ -9,12 +9,13 @@ import { Skill } from 'src/app/services/skill/skill.model';
 })
 export class SkillsPercentListComponent {
   allSkills:{ [key:string]: Skill[] } = {};
+  types:string[];
 
   constructor(private skillService:SkillService) { 
     this.skillService.getSkillTypes().forEach(type => {
       this.allSkills[type] = this.skillService.getSkillsByType(type);
     });
+    this.types = this.skillService.getSkillTypes();
   }
 
-  
 }

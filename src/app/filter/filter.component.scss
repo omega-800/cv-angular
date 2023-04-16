@@ -1,0 +1,8 @@
+@import 'src/scss/mixins';
+
+:host{
+    @include flex-row;
+    & button {
+        @include link;
+    }
+}

@@ -1,0 +1,8 @@
+<form #filterForm="ngForm">
+    {{filterForm.value | json}}
+    <div class="filter-item" *ngFor="let filter of filterValues">
+        <label for="{{filter}}">{{filter}}</label>
+        <input ngModel type="checkbox" name="{{filter}}" value="{{filter}}">
+    </div>
+</form>
+

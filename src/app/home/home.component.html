@@ -1,7 +1,7 @@
 <div id="aboutme" class="box">
     <img src="/assets/{{ me.image }}" alt="Profile picture" id="profilepic">
     <div class="box" id="details">
-        <h1>Welcome {{ me.firstname +" "+ me.lastname}}</h1>
+        <h1>{{ me.firstname +" "+ me.lastname}} ist {{me.birthdate | age}} alt</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum hic omnis alias excepturi ipsum, numquam eos voluptatibus corrupti amet. Deleniti provident voluptate earum ea quibusdam cumque, adipisci aut voluptas sapiente.</p>
         <div class="socials">
             <app-socials-button link="{{me.github}}" [type]="lt.GITHUB" name="Mein Github Profil"></app-socials-button>

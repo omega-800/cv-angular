@@ -10,4 +10,5 @@ import { Skill } from 'src/app/services/skill/skill.model';
 export class SkillsPercentComponent {
   @Input() skills!: Skill[];
   @Input() name!: string;
+
 }

@@ -1,24 +1,11 @@
-import { Injectable } from '@angular/core';
-import * as personData from 'src/data/person.json';
-import { Person } from './person.model';
+import { Pipe, PipeTransform } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
+@Pipe({
+  name: 'age'
 })
-export class PersonService {
-  people:Person[] = (personData as any).default;
+export class AgePipe implements PipeTransform {
 
-  constructor() { }
-
-  getPersonByName(name:string):Person {
-    return Object.values(this.people).filter(person => person.firstname === name)[0];
-  }
-
-  getPeople():Person[] {
-    return this.people;
-  }
-
-  getAge(value: string):string{
+  transform(value: string, ...args: string[]): string {
     let date = new Date(value);
     let now = new Date();
 
@@ -57,7 +44,6 @@ export class PersonService {
     if (secDiff < 0) {
       secDiff += 60;
     }
-    return yearDiff + 'Y ' + monthDiff + 'M ' + dayDiff + 'D ' + hourDiff + 'h ' + minuteDiff + 'm ' + secDiff + 's ';
+    return yearDiff + 'Y ' + monthDiff + 'M ' + dayDiff + 'D '/* + hourDiff + 'h ' + minuteDiff + 'm ' + secDiff + 's '*/;
   }
-  
 }
