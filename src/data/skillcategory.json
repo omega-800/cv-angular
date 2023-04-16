@@ -1,52 +1,52 @@
 [
  {
-  "skillcategory_id": "a51cb2af-90a9-40d3-9cf2-4862c894f411",
-  "name": "Kunst",
-  "name_e": "Art",
-  "name_r": "Искусство",
-  "description": "Kategorie für Kunstfertigkeiten",
-  "description_e": "Category for artistic skills",
-  "description_r": "Категория для художественных навыков",
-  "percent": "30"
- },
- {
-  "skillcategory_id": "cb537e98-0336-488d-bd70-e889d6d05c5a",
-  "name": "Allgemein",
-  "name_e": "General",
-  "name_r": "Общее",
-  "description": "Kategorie für allgemeine Fähigkeiten",
-  "description_e": "Category for general skills",
-  "description_r": "Категория для общих навыков",
-  "percent": "10"
- },
- {
-  "skillcategory_id": "de78e356-f68c-4181-b308-43b2795ab327",
-  "name": "Pädagogik",
-  "name_e": "Education",
-  "name_r": "Образование",
-  "description": "Kategorie für pädagogische Fähigkeiten",
-  "description_e": "Category for educational skills",
-  "description_r": "Категория для педагогических навыков",
-  "percent": "10"
- },
- {
-  "skillcategory_id": "f1ef7bdc-78e8-4338-9a72-6933f8958946",
+  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
   "name": "Informatik",
   "name_e": "Computer Science",
   "name_r": "Информатика",
   "description": "Kategorie für informatische Fähigkeiten",
   "description_e": "Category for computer science skills",
   "description_r": "Категория для навыков в области компьютерных наук",
-  "percent": "30"
+  "percent": 30
  },
  {
-  "skillcategory_id": "f6f737f1-11c1-4fd5-82a7-036eacacce99",
+  "skillcategory_id": "0e68da2a-79ff-4dfb-b54d-d1e67e6affef",
   "name": "Gesundheit",
   "name_e": "Health",
   "name_r": "Здоровье",
   "description": "Kategorie für gesundheitsbezogene Fähigkeiten",
   "description_e": "Category for health-related skills",
   "description_r": "Категория для навыков связанных со здоровьем",
-  "percent": "20"
+  "percent": 20
+ },
+ {
+  "skillcategory_id": "939206c9-32a7-4330-9bd0-4b647dd8d1f7",
+  "name": "Allgemein",
+  "name_e": "General",
+  "name_r": "Общее",
+  "description": "Kategorie für allgemeine Fähigkeiten",
+  "description_e": "Category for general skills",
+  "description_r": "Категория для общих навыков",
+  "percent": 10
+ },
+ {
+  "skillcategory_id": "ecb4e32a-e60a-4ab6-88dc-81ea9c313df5",
+  "name": "Pädagogik",
+  "name_e": "Education",
+  "name_r": "Образование",
+  "description": "Kategorie für pädagogische Fähigkeiten",
+  "description_e": "Category for educational skills",
+  "description_r": "Категория для педагогических навыков",
+  "percent": 10
+ },
+ {
+  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
+  "name": "Kunst",
+  "name_e": "Art",
+  "name_r": "Искусство",
+  "description": "Kategorie für Kunstfertigkeiten",
+  "description_e": "Category for artistic skills",
+  "description_r": "Категория для художественных навыков",
+  "percent": 30
  }
 ]

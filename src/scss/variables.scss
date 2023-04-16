@@ -68,3 +68,9 @@ $trans-cb: cubic-bezier(.46,0,.37,.82) 0.5s;
     justify-content:center;
     align-items:center;
 }
+
+@mixin flex-list {
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+}

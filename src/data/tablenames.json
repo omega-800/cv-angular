@@ -12,6 +12,9 @@
   "table_name": "application_operatingsystem"
  },
  {
+  "table_name": "career"
+ },
+ {
   "table_name": "country"
  },
  {
@@ -52,9 +55,6 @@
  },
  {
   "table_name": "school_contactpoint"
- },
- {
-  "table_name": "career"
  },
  {
   "table_name": "personcategory"

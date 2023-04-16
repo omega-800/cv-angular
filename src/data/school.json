@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "2dc3ef93-b659-461b-9e48-808c483571b1",
+  "school_id": "0cd28ec0-1b88-48b9-b418-c3b0138c165b",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -13,42 +13,10 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "",
   "image": "",
-  "address_id": "93d6460c-ccf9-4802-b97a-45abecf9cff6"
+  "address_id": "2cdacc97-e0b6-413e-821c-bf12d8b8bcda"
  },
  {
-  "school_id": "5c193d43-5470-4a58-a68e-c0d9ae2f83d8",
-  "type": "Informatikmittelschule",
-  "type_e": "",
-  "type_d": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "name": "Hottingen",
-  "name_e": "",
-  "name_r": "",
-  "url": "https://www.ksh.ch/angebot/informatikmittelschule",
-  "logo": "",
-  "image": "",
-  "address_id": "375e87fb-c8ec-4115-896c-e4a390023a2c"
- },
- {
-  "school_id": "babf5fdb-c283-4f96-b54e-ade70116d867",
-  "type": "gymnasium",
-  "type_e": "",
-  "type_d": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "name": "Hohe Promenade",
-  "name_e": "",
-  "name_r": "",
-  "url": "https://www.kshp.ch/",
-  "logo": "",
-  "image": "",
-  "address_id": "25789a0b-e42d-4090-af6a-bb0b593ea785"
- },
- {
-  "school_id": "ca364bff-6383-4076-9d10-8f6fb1ee4610",
+  "school_id": "276d5374-bfb1-4909-b14b-79797c6b24e7",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -61,10 +29,26 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "",
   "image": "",
-  "address_id": "fc5a7cd5-0b8a-4661-98ae-de31ca2eb63b"
+  "address_id": "0de84ee9-0d98-402c-bd57-1382b42fa288"
  },
  {
-  "school_id": "cca14737-0381-4cf7-bba0-ef782345de21",
+  "school_id": "3c63d954-57bb-46ce-85a0-9e4decf04836",
+  "type": "Informatikmittelschule",
+  "type_e": "",
+  "type_d": "",
+  "description": "",
+  "description_e": "",
+  "description_r": "",
+  "name": "Hottingen",
+  "name_e": "",
+  "name_r": "",
+  "url": "https://www.ksh.ch/angebot/informatikmittelschule",
+  "logo": "",
+  "image": "",
+  "address_id": "0e36969a-66ba-4eab-b346-c7de774135bb"
+ },
+ {
+  "school_id": "dbd603be-487f-47b9-9650-1a658d0dcb63",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -77,6 +61,22 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "",
   "image": "",
-  "address_id": "87cbc459-b327-44e7-8f52-cc1354f081aa"
+  "address_id": "50b48669-5291-4ce7-96c8-8b8c56c64a5c"
+ },
+ {
+  "school_id": "e0111850-5eb1-4e3d-819c-f7eab0a80ac3",
+  "type": "gymnasium",
+  "type_e": "",
+  "type_d": "",
+  "description": "",
+  "description_e": "",
+  "description_r": "",
+  "name": "Hohe Promenade",
+  "name_e": "",
+  "name_r": "",
+  "url": "https://www.kshp.ch/",
+  "logo": "",
+  "image": "",
+  "address_id": "619829e4-10df-4562-a354-83903f26b6eb"
  }
 ]

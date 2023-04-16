@@ -1,58 +1,58 @@
 [
  {
-  "address_id": "25789a0b-e42d-4090-af6a-bb0b593ea785",
-  "street": "Promenadengasse 11",
-  "city": "Zürich",
-  "zip": "8001",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "375e87fb-c8ec-4115-896c-e4a390023a2c",
-  "street": "Minervastrasse 14",
-  "city": "Zürich",
-  "zip": "8090",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "38ecb35f-43db-4eb2-9aa1-ef04377f0a81",
-  "street": "Stettbachstrasse 129G",
-  "city": "Zürich",
-  "zip": "8051",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "5cb33193-f925-4115-857c-db4430ab291d",
-  "street": "Barzloostrasse 20",
-  "city": "Pfäffikon ZH",
-  "zip": "8033",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "87cbc459-b327-44e7-8f52-cc1354f081aa",
-  "street": "Stettbachstrasse 88",
-  "city": "Zürich",
-  "zip": "8051",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "8d8ead54-0381-4e67-9ea4-3c7b64fde40d",
-  "street": "Lochackerstrasse 4",
-  "city": "Embrach",
-  "zip": "8424",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "93d6460c-ccf9-4802-b97a-45abecf9cff6",
-  "street": "Seestrasse 110",
-  "city": "Horgen",
-  "zip": "8810",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
- },
- {
-  "address_id": "fc5a7cd5-0b8a-4661-98ae-de31ca2eb63b",
+  "address_id": "0de84ee9-0d98-402c-bd57-1382b42fa288",
   "street": "Herzogenmühlestrasse 60",
   "city": "Zürich",
-  "zip": "8051",
-  "country_id": "75992539-6e94-4405-b5a6-e31b33270b83"
+  "zip": 8051,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "0e36969a-66ba-4eab-b346-c7de774135bb",
+  "street": "Minervastrasse 14",
+  "city": "Zürich",
+  "zip": 8090,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "2cdacc97-e0b6-413e-821c-bf12d8b8bcda",
+  "street": "Seestrasse 110",
+  "city": "Horgen",
+  "zip": 8810,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "4c04fa4d-4357-4fd5-92f4-20910f7fa72e",
+  "street": "Stettbachstrasse 129G",
+  "city": "Zürich",
+  "zip": 8051,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "50b48669-5291-4ce7-96c8-8b8c56c64a5c",
+  "street": "Stettbachstrasse 88",
+  "city": "Zürich",
+  "zip": 8051,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "619829e4-10df-4562-a354-83903f26b6eb",
+  "street": "Promenadengasse 11",
+  "city": "Zürich",
+  "zip": 8001,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "71a3813f-ec2d-417a-b2cd-f5c71efb116c",
+  "street": "Lochackerstrasse 4",
+  "city": "Embrach",
+  "zip": 8424,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
+ },
+ {
+  "address_id": "f061a9f8-4fb4-4370-90f8-1efc7fe3af12",
+  "street": "Barzloostrasse 20",
+  "city": "Pfäffikon ZH",
+  "zip": 8033,
+  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed"
  }
 ]

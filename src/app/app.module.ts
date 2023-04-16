@@ -8,6 +8,10 @@ import { CareerComponent } from './career/career.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SocialsButtonComponent } from './socials-button/socials-button.component';
 import { HeaderComponent } from './header/header.component';
+import { SkillsPercentComponent } from './skills/skills-percent/skills-percent.component';
+import { SkillItemComponent } from './skills/skill-item/skill-item.component';
+import { SkillcategoryPercentComponent } from './skills/skillcategory-percent/skillcategory-percent.component';
+import { SkillsPercentListComponent } from './skills/skills-percent-list/skills-percent-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HeaderComponent } from './header/header.component';
     CareerComponent,
     PageNotFoundComponent,
     SocialsButtonComponent,
-    HeaderComponent
+    HeaderComponent,
+    SkillsPercentComponent,
+    SkillItemComponent,
+    SkillcategoryPercentComponent,
+    SkillsPercentListComponent
   ],
   imports: [
     BrowserModule,

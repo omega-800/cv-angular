@@ -1,0 +1,19 @@
+@import 'src/scss/variables';
+@import 'src/scss/link';
+
+:host {
+    & .skill-container {
+        @include flex-list;
+        &> div {
+            & a, p{
+                @include link;
+                width:100%;
+            }
+        }
+    }
+    @for $i from 1 to 21 {
+        & .percent-#{$i * 5} {
+            width:$i * 5%;
+        }
+    }
+}

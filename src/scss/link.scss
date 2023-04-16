@@ -1,15 +1,17 @@
 @import 'variables';
 
 @mixin link {
+    display:inline-block;
     padding:$elem-padding;
+    margin:0;
     border-radius: $elem-border-radius;
     text-decoration: none;
     color: $black;
+    background-color: $cool;
     font: {
         family:$mono;
         size:$elem-size;
     }
-    background-color: $cool;
     &:hover {
         @include darken-little($cool);
     }
