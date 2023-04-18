@@ -1,27 +1,27 @@
 [
  {
-  "country_id": "1e5c3792-4e2e-4ef0-bfdc-199466f4ddf3",
-  "name": "Amerika",
-  "name_e": "",
-  "name_r": "",
-  "shortname": "US"
- },
- {
-  "country_id": "5e101bf0-7767-40e5-a950-fc8926420815",
-  "name": "Russland",
-  "name_e": "",
-  "name_r": "",
-  "shortname": "RU"
- },
- {
-  "country_id": "c759e5f7-92bc-4552-9c9d-683467762eed",
+  "country_id": "d0545fe5-2276-45a9-9b0b-1f69ce7d9f04",
   "name": "Schweiz",
   "name_e": "",
   "name_r": "",
   "shortname": "CH"
  },
  {
-  "country_id": "ef164e5b-890b-4a48-85ba-8b55e1829801",
+  "country_id": "afab8c50-2bed-4ced-bef3-cb773f9c3a16",
+  "name": "Amerika",
+  "name_e": "",
+  "name_r": "",
+  "shortname": "US"
+ },
+ {
+  "country_id": "28284b65-1bd7-46a8-9dc5-c0d346096188",
+  "name": "Russland",
+  "name_e": "",
+  "name_r": "",
+  "shortname": "RU"
+ },
+ {
+  "country_id": "8d0a1ec4-d8a9-4ff3-adb5-56666fe44e19",
   "name": "Frankreich",
   "name_e": "",
   "name_r": "",

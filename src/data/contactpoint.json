@@ -1,130 +1,130 @@
 [
  {
-  "contactpoint_id": "0f71a5f1-0d34-41dd-96d7-5101c8bbf023",
-  "name": "WEGAS support",
-  "name_e": "",
-  "name_r": "",
-  "phone": "0",
-  "email": "wegas@inteco.ch"
- },
- {
-  "contactpoint_id": "2cfb199d-3bff-444d-9d5c-ed28fd8aa8b2",
-  "name": "Sekretariat",
-  "name_e": "",
-  "name_r": "",
-  "phone": "447274600",
-  "email": ""
- },
- {
-  "contactpoint_id": "31c616f2-5838-440a-aff4-e348d37a1c24",
-  "name": "Sekretariat",
-  "name_e": "",
-  "name_r": "",
-  "phone": "442446464",
-  "email": "sekretariat@kshp.ch"
- },
- {
-  "contactpoint_id": "357dcb8b-09cf-4e47-890b-1e426ce7e411",
-  "name": "me",
-  "name_e": "",
-  "name_r": "",
-  "phone": "772156436",
-  "email": "gshevoroshkin@gmail.com"
- },
- {
-  "contactpoint_id": "3628292a-a2d9-4d6c-8f62-c470f9d65222",
+  "contactpoint_id": "2414408b-a063-478e-a349-e2b6e68b43c0",
   "name": "info point",
   "name_e": "",
   "name_r": "",
-  "phone": "552565758",
+  "phone": 552565758,
   "email": "info@inteco.ch"
  },
  {
-  "contactpoint_id": "45ecbe72-ff54-4f63-81eb-6a2c2a67c1c4",
-  "name": "Sekretariat",
-  "name_e": "",
-  "name_r": "",
-  "phone": "444133080",
-  "email": ""
- },
- {
-  "contactpoint_id": "53827d06-7b6f-4763-a8e3-05a26364eaf7",
-  "name": "mom",
-  "name_e": "",
-  "name_r": "",
-  "phone": "762240414",
-  "email": ""
- },
- {
-  "contactpoint_id": "7cba3e99-b8ee-451d-8f5a-deeba8efae40",
-  "name": "niki",
-  "name_e": "",
-  "name_r": "",
-  "phone": "787280585",
-  "email": ""
- },
- {
-  "contactpoint_id": "87ce6b9a-040f-456e-9a77-2a4367c107a4",
-  "name": "dad",
-  "name_e": "",
-  "name_r": "",
-  "phone": "786081068",
-  "email": "alexshev@yahoo.com"
- },
- {
-  "contactpoint_id": "ae4d913b-5174-43a2-ae84-b51a27ade453",
-  "name": "Technik support",
-  "name_e": "",
-  "name_r": "",
-  "phone": "0",
-  "email": "support@inteco.ch"
- },
- {
-  "contactpoint_id": "aeb7d290-af6d-4a60-950b-410fe8b2bcd3",
-  "name": "Schulleitung",
-  "name_e": "",
-  "name_r": "",
-  "phone": "444133100",
-  "email": "kurt.bauer@schulen.zuerich.ch"
- },
- {
-  "contactpoint_id": "c77e8e9e-d187-4fb9-9944-952841b6af56",
-  "name": "betina",
-  "name_e": "",
-  "name_r": "",
-  "phone": "0",
-  "email": "betina.hiestand@inteco.ch"
- },
- {
-  "contactpoint_id": "db544b4f-699e-493f-955a-41a5caee4db6",
-  "name": "michi",
-  "name_e": "",
-  "name_r": "",
-  "phone": "786237232",
-  "email": ""
- },
- {
-  "contactpoint_id": "e1b18ae7-44ce-45dc-8d98-71449a315754",
-  "name": "info point",
-  "name_e": "",
-  "name_r": "",
-  "phone": "525502773",
-  "email": "swissoffice@ernesto-vargas.com"
- },
- {
-  "contactpoint_id": "e8e02f86-9fa0-4473-a491-32deae84bfca",
-  "name": "Sekretariat",
-  "name_e": "",
-  "name_r": "",
-  "phone": "442665757",
-  "email": "hottingen@ksh.ch"
- },
- {
-  "contactpoint_id": "f4ec9336-3d9c-4aba-8e84-8c432367bdcb",
+  "contactpoint_id": "64c10da7-bce8-4bd3-8bbc-f91b3d85c5ec",
   "name": "Web support",
   "name_e": "",
   "name_r": "",
-  "phone": "0",
+  "phone": 0,
   "email": "webmaster@inteco.ch"
+ },
+ {
+  "contactpoint_id": "cc01b107-efa3-4113-b1d3-33ec30bc5f36",
+  "name": "Technik support",
+  "name_e": "",
+  "name_r": "",
+  "phone": 0,
+  "email": "support@inteco.ch"
+ },
+ {
+  "contactpoint_id": "cdd906a5-9333-4bd6-ab7e-9855a6dfb068",
+  "name": "WEGAS support",
+  "name_e": "",
+  "name_r": "",
+  "phone": 0,
+  "email": "wegas@inteco.ch"
+ },
+ {
+  "contactpoint_id": "dbee0f86-8f14-4227-a194-5285d56c6998",
+  "name": "info point",
+  "name_e": "",
+  "name_r": "",
+  "phone": 525502773,
+  "email": "swissoffice@ernesto-vargas.com"
+ },
+ {
+  "contactpoint_id": "5dd4202a-f59e-4ccd-beb3-9eeb907ff7fc",
+  "name": "Sekretariat",
+  "name_e": "",
+  "name_r": "",
+  "phone": 444133080,
+  "email": ""
+ },
+ {
+  "contactpoint_id": "2b4b44fb-a6a8-4a09-881c-487eb7cc3fb8",
+  "name": "Sekretariat",
+  "name_e": "",
+  "name_r": "",
+  "phone": 442446464,
+  "email": "sekretariat@kshp.ch"
+ },
+ {
+  "contactpoint_id": "0adc726d-1b16-4f48-b47d-b35c8c6c2331",
+  "name": "Schulleitung",
+  "name_e": "",
+  "name_r": "",
+  "phone": 444133100,
+  "email": "kurt.bauer@schulen.zuerich.ch"
+ },
+ {
+  "contactpoint_id": "b7a9e784-cb0c-4a3d-b844-f7aef8249d4a",
+  "name": "Sekretariat",
+  "name_e": "",
+  "name_r": "",
+  "phone": 442665757,
+  "email": "hottingen@ksh.ch"
+ },
+ {
+  "contactpoint_id": "78e0e5f1-484f-48f8-a628-a3f670e70dad",
+  "name": "Sekretariat",
+  "name_e": "",
+  "name_r": "",
+  "phone": 447274600,
+  "email": ""
+ },
+ {
+  "contactpoint_id": "ef9dda1e-baa8-4fc2-ae21-51e9e5acaf48",
+  "name": "me",
+  "name_e": "",
+  "name_r": "",
+  "phone": 772156436,
+  "email": "gshevoroshkin@gmail.com"
+ },
+ {
+  "contactpoint_id": "70da7094-afdc-4eca-9c56-1f958fd11995",
+  "name": "mom",
+  "name_e": "",
+  "name_r": "",
+  "phone": 762240414,
+  "email": ""
+ },
+ {
+  "contactpoint_id": "c6535185-6f26-4d35-afa8-981f4fb1cdc4",
+  "name": "dad",
+  "name_e": "",
+  "name_r": "",
+  "phone": 786081068,
+  "email": "alexshev@yahoo.com"
+ },
+ {
+  "contactpoint_id": "a84c3d2e-ce6a-4530-b3be-ec43b3177e5c",
+  "name": "niki",
+  "name_e": "",
+  "name_r": "",
+  "phone": 787280585,
+  "email": ""
+ },
+ {
+  "contactpoint_id": "cea4f0dd-344a-4608-89b7-1a93a5e476fd",
+  "name": "michi",
+  "name_e": "",
+  "name_r": "",
+  "phone": 786237232,
+  "email": ""
+ },
+ {
+  "contactpoint_id": "67a94867-d619-4a69-ac03-34451d3364f7",
+  "name": "betina",
+  "name_e": "",
+  "name_r": "",
+  "phone": 0,
+  "email": "betina.hiestand@inteco.ch"
  }
 ]

@@ -1,36 +1,16 @@
 [
  {
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Informatik",
-  "name_e": "Computer Science",
-  "name_r": "Информатика",
-  "description": "Kategorie für informatische Fähigkeiten",
-  "description_e": "Category for computer science skills",
-  "description_r": "Категория для навыков в области компьютерных наук",
+  "skillcategory_id": "7286d999-5020-4c86-9475-249f61e539ab",
+  "name": "Kunst",
+  "name_e": "Art",
+  "name_r": "Искусство",
+  "description": "Kategorie für Kunstfertigkeiten",
+  "description_e": "Category for artistic skills",
+  "description_r": "Категория для художественных навыков",
   "percent": 30
  },
  {
-  "skillcategory_id": "0e68da2a-79ff-4dfb-b54d-d1e67e6affef",
-  "name": "Gesundheit",
-  "name_e": "Health",
-  "name_r": "Здоровье",
-  "description": "Kategorie für gesundheitsbezogene Fähigkeiten",
-  "description_e": "Category for health-related skills",
-  "description_r": "Категория для навыков связанных со здоровьем",
-  "percent": 20
- },
- {
-  "skillcategory_id": "939206c9-32a7-4330-9bd0-4b647dd8d1f7",
-  "name": "Allgemein",
-  "name_e": "General",
-  "name_r": "Общее",
-  "description": "Kategorie für allgemeine Fähigkeiten",
-  "description_e": "Category for general skills",
-  "description_r": "Категория для общих навыков",
-  "percent": 10
- },
- {
-  "skillcategory_id": "ecb4e32a-e60a-4ab6-88dc-81ea9c313df5",
+  "skillcategory_id": "ab648cf6-bf5b-4c68-bd8b-723f2b374d79",
   "name": "Pädagogik",
   "name_e": "Education",
   "name_r": "Образование",
@@ -40,13 +20,33 @@
   "percent": 10
  },
  {
-  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
-  "name": "Kunst",
-  "name_e": "Art",
-  "name_r": "Искусство",
-  "description": "Kategorie für Kunstfertigkeiten",
-  "description_e": "Category for artistic skills",
-  "description_r": "Категория для художественных навыков",
+  "skillcategory_id": "634959f1-2840-497c-bc84-53814aa153a4",
+  "name": "Gesundheit",
+  "name_e": "Health",
+  "name_r": "Здоровье",
+  "description": "Kategorie für gesundheitsbezogene Fähigkeiten",
+  "description_e": "Category for health-related skills",
+  "description_r": "Категория для навыков связанных со здоровьем",
+  "percent": 20
+ },
+ {
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Informatik",
+  "name_e": "Computer Science",
+  "name_r": "Информатика",
+  "description": "Kategorie für informatische Fähigkeiten",
+  "description_e": "Category for computer science skills",
+  "description_r": "Категория для навыков в области компьютерных наук",
   "percent": 30
+ },
+ {
+  "skillcategory_id": "254a440c-3cf8-4cf6-aff7-2944357a9805",
+  "name": "Allgemein",
+  "name_e": "General",
+  "name_r": "Общее",
+  "description": "Kategorie für allgemeine Fähigkeiten",
+  "description_e": "Category for general skills",
+  "description_r": "Категория для общих навыков",
+  "percent": 10
  }
 ]

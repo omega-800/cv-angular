@@ -1,7 +1,7 @@
 [
  {
-  "personcategory_id": "639a5694-66c6-44ce-a81f-e8af38a80509",
-  "name": "berufsbildner",
+  "personcategory_id": "1158d2b0-0041-4449-bf90-cfe4d1259862",
+  "name": "me",
   "name_e": "",
   "name_r": "",
   "description": "",
@@ -9,16 +9,7 @@
   "description_r": ""
  },
  {
-  "personcategory_id": "b3ab334e-de9e-4142-a487-38f96b2bc10a",
-  "name": "lehrer",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "personcategory_id": "d9156ab1-4824-44a9-ad20-b1a45d4cfdf1",
+  "personcategory_id": "4e112588-2eab-435a-ae83-0b3a84371a9f",
   "name": "familie",
   "name_e": "",
   "name_r": "",
@@ -27,8 +18,17 @@
   "description_r": ""
  },
  {
-  "personcategory_id": "f9bb6baf-8970-4660-b923-1e645e9c1a4c",
-  "name": "me",
+  "personcategory_id": "19f2c946-1283-412e-9ce4-7cc0903bf9ba",
+  "name": "berufsbildner",
+  "name_e": "",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "personcategory_id": "a6049694-ac14-499e-b556-c3e9c5f5dcd7",
+  "name": "lehrer",
   "name_e": "",
   "name_r": "",
   "description": "",

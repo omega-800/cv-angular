@@ -1,34 +1,6 @@
 [
  {
-  "career_id": "3793e808-9712-47cb-b355-dde0ddcffa9d",
-  "name": "ims",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2017,
-  "yearto": 2020,
-  "document": "",
-  "workplace_id": "",
-  "school_id": "1dd75007-ad9c-4a47-8ab0-d0a303815765"
- },
- {
-  "career_id": "3bd2ab44-c728-4e69-a819-24ef6cae80b5",
-  "name": "probstei",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2008,
-  "yearto": 2014,
-  "document": "",
-  "workplace_id": "",
-  "school_id": ""
- },
- {
-  "career_id": "5ff83ca4-fc17-4876-bb77-474ad7275165",
+  "career_id": "28651813-2e06-47b1-9a5a-778741e3dd5e",
   "name": "inteco",
   "name_e": "",
   "name_r": "",
@@ -38,11 +10,11 @@
   "yearfrom": 2022,
   "yearto": 2023,
   "document": "",
-  "workplace_id": "9197db7c-4247-4ed4-a94d-a8deac8c1b60",
+  "workplace_id": "4a826101-0b4a-40d3-80f9-b488084e65ad",
   "school_id": ""
  },
  {
-  "career_id": "609ac662-24f8-4544-b607-71229c9981c2",
+  "career_id": "01f2dc4c-1a36-433b-8156-b029a8c07c0d",
   "name": "ernesto vargas",
   "name_e": "",
   "name_r": "",
@@ -52,39 +24,11 @@
   "yearfrom": 2020,
   "yearto": 2021,
   "document": "",
-  "workplace_id": "145e532d-0099-4feb-adfb-339f26d0a4de",
+  "workplace_id": "03f4d499-b47a-4010-95ca-64841f79716c",
   "school_id": ""
  },
  {
-  "career_id": "70009ca2-0b60-4ef6-b318-de26f0e99d97",
-  "name": "hopro",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2014,
-  "yearto": 2016,
-  "document": "",
-  "workplace_id": "",
-  "school_id": "f95b61c5-3dce-416b-80be-2f10150d9a87"
- },
- {
-  "career_id": "90bc5d06-12f1-483b-b5c1-03e2a4943a3d",
-  "name": "ims",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2017,
-  "yearto": 2020,
-  "document": "",
-  "workplace_id": "",
-  "school_id": "3c63d954-57bb-46ce-85a0-9e4decf04836"
- },
- {
-  "career_id": "b22038f3-a357-4f28-85ba-2dc87c02ea28",
+  "career_id": "2ecd6367-2d58-4286-829a-c7d7f4f10b89",
   "name": "bzz",
   "name_e": "",
   "name_r": "",
@@ -95,11 +39,11 @@
   "yearto": 2020,
   "document": "",
   "workplace_id": "",
-  "school_id": "0cd28ec0-1b88-48b9-b418-c3b0138c165b"
+  "school_id": "fe34bf7d-e9fa-49e4-a546-bf8c61534833"
  },
  {
-  "career_id": "c4f9ee38-3194-4687-98ee-bb2315e55010",
-  "name": "bzz",
+  "career_id": "f8e05642-8747-400e-b3e9-de9f0285e1a1",
+  "name": "ims",
   "name_e": "",
   "name_r": "",
   "description": "",
@@ -109,24 +53,24 @@
   "yearto": 2020,
   "document": "",
   "workplace_id": "",
-  "school_id": "1bd2a2b9-94f9-4fb9-9c5e-fed73972950b"
+  "school_id": "2a18e631-2b52-42bf-aaef-2e229127bb63"
  },
  {
-  "career_id": "ddf2d17b-888a-41d9-ae60-4c02087d236f",
-  "name": "probstei",
+  "career_id": "5e32db6c-5b87-4731-82c3-7025be2a5f16",
+  "name": "sek",
   "name_e": "",
   "name_r": "",
   "description": "",
   "description_e": "",
   "description_r": "",
-  "yearfrom": 2008,
-  "yearto": 2014,
+  "yearfrom": 2016,
+  "yearto": 2017,
   "document": "",
   "workplace_id": "",
-  "school_id": ""
+  "school_id": "834e7b6e-2fa4-40bd-b824-eb295b4a2c49"
  },
  {
-  "career_id": "e4f6dbb7-54e7-4b0d-a9ec-dee39a610039",
+  "career_id": "4c84ba44-b47f-49aa-bf1a-9188cfd91f89",
   "name": "hopro",
   "name_e": "",
   "name_r": "",
@@ -137,62 +81,20 @@
   "yearto": 2016,
   "document": "",
   "workplace_id": "",
-  "school_id": "e0111850-5eb1-4e3d-819c-f7eab0a80ac3"
+  "school_id": "7301d711-7751-43b1-913a-c25fac3fb6c6"
  },
  {
-  "career_id": "ec0649b1-9d5d-4848-9b50-598aeddf0ee1",
-  "name": "sek",
+  "career_id": "66a2b596-44b0-4908-8f4e-d4913c36ac96",
+  "name": "probstei",
   "name_e": "",
   "name_r": "",
   "description": "",
   "description_e": "",
   "description_r": "",
-  "yearfrom": 2016,
-  "yearto": 2017,
+  "yearfrom": 2008,
+  "yearto": 2014,
   "document": "",
   "workplace_id": "",
-  "school_id": "949f6107-de99-45e3-b6cd-3bf9f4e884e5"
- },
- {
-  "career_id": "edcf6913-72d1-4df6-9187-219d247395d5",
-  "name": "ernesto vargas",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2020,
-  "yearto": 2021,
-  "document": "",
-  "workplace_id": "6b607a04-fda4-404f-ad2e-029a81a8fd14",
-  "school_id": ""
- },
- {
-  "career_id": "f566a367-cb9b-46c7-97c4-0d38a1449dd6",
-  "name": "sek",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2016,
-  "yearto": 2017,
-  "document": "",
-  "workplace_id": "",
-  "school_id": "276d5374-bfb1-4909-b14b-79797c6b24e7"
- },
- {
-  "career_id": "fbafd17c-54eb-466b-a640-9872071d8fe4",
-  "name": "inteco",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": "",
-  "yearfrom": 2022,
-  "yearto": 2023,
-  "document": "",
-  "workplace_id": "6b034cab-1180-4150-a5c3-3f1432ad3083",
   "school_id": ""
  }
 ]

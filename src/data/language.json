@@ -1,0 +1,54 @@
+[
+ {
+  "language_id": "b52ed92f-b304-4a6a-8d7d-54b17ebfe006",
+  "name": "Deutsch",
+  "name_e": "",
+  "name_r": "",
+  "description": "Seit Geburt",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": "",
+  "shortname": "DE"
+ },
+ {
+  "language_id": "ee6ec2d0-be7c-4751-b5b5-03a2b493ef71",
+  "name": "Englisch",
+  "name_e": "",
+  "name_r": "",
+  "description": "Vatersprache",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": "",
+  "shortname": "EN"
+ },
+ {
+  "language_id": "ea0b99dc-78e6-4e02-9539-fc814afff65a",
+  "name": "Russisch",
+  "name_e": "",
+  "name_r": "",
+  "description": "Muttersprache",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": "",
+  "shortname": "RU"
+ },
+ {
+  "language_id": "9d26b8ac-63b1-41ba-8732-c0f4f4b6e0f2",
+  "name": "Französisch",
+  "name_e": "",
+  "name_r": "",
+  "description": "Schulwissen",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": "",
+  "shortname": "FR"
+ }
+]

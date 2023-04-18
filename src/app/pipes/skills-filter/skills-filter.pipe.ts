@@ -11,7 +11,7 @@ export class SkillsFilterPipe implements PipeTransform {
       return skills;
     }
     if(types){
-      skills = skills.filter(skill => types.includes(skill.type));
+      //skills = skills.filter(skill => types.includes(skill.type));
     }
 
     return skills;

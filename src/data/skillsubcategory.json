@@ -1,47 +1,7 @@
 [
  {
-  "skillsubcategory_id": "041add24-c41d-41c3-80a5-5c30b8013a42",
-  "skillcategory_id": "ecb4e32a-e60a-4ab6-88dc-81ea9c313df5",
-  "name": "Verein",
-  "name_e": "",
-  "name_r": "",
-  "description": "Ein Verein bietet die perfekte Möglichkeit, sich mit Gleichgesinnten zu treffen und gemeinsam an einem Ziel zu arbeiten. Es ist inspirierend zu sehen, wie die Mitglieder des Vereins zusammenarbeiten und sich gegenseitig unterstützen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "057e1515-8d1a-44d9-939e-765c9376139e",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Spielentwicklung",
-  "name_e": "",
-  "name_r": "",
-  "description": "Erstellung von Videospielen für Konsolen, PC oder mobile Geräte unter Verwendung verschiedener Programmiersprachen und Spiele-Engines.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "0b4e4fe4-bf74-4437-9253-669030ac44e6",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Mobile App Entwicklung",
-  "name_e": "",
-  "name_r": "",
-  "description": "Erstellung von Anwendungen für mobile Geräte wie Smartphones und Tablets.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "1f7aaf77-a2b8-4866-ad62-0e34ab34b8f9",
-  "skillcategory_id": "ecb4e32a-e60a-4ab6-88dc-81ea9c313df5",
-  "name": "Einzelunterricht",
-  "name_e": "",
-  "name_r": "",
-  "description": "Als Lehrer oder Tutor hat man die Möglichkeit, die individuellen Bedürfnisse und Fähigkeiten jedes Schülers zu berücksichtigen und ihnen dabei zu helfen, ihr volles Potenzial auszuschöpfen. Es ist unglaublich befriedigend, den Fortschritt der Schülerinnen und Schüler zu beobachten und zu sehen, wie sie ihr Wissen und ihre Fähigkeiten erweitern.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "3430c978-53ed-4969-9cf2-71e8107c5a65",
-  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
+  "skillsubcategory_id": "f9af72a9-8b3a-4705-ab90-bd500eede755",
+  "skillcategory_id": "7286d999-5020-4c86-9475-249f61e539ab",
   "name": "Musik",
   "name_e": "",
   "name_r": "",
@@ -50,138 +10,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "438e7180-7e8f-4cd1-b659-26b60b4ea5f5",
-  "skillcategory_id": "0e68da2a-79ff-4dfb-b54d-d1e67e6affef",
-  "name": "Geist",
-  "name_e": "",
-  "name_r": "",
-  "description": "Geistige Herausforderungen sind für mich genauso wichtig wie körperliche Aktivität. Ich liebe es, neue Dinge zu lernen und meine Fähigkeiten zu erweitern. Meditation und Yoga helfen mir, meinen Geist zu beruhigen und mich zu konzentrieren. Lesen und Schreiben sind für mich eine Quelle der Inspiration und der Reflexion.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "46a30ba3-7708-487c-bd27-189364381b1a",
-  "skillcategory_id": "0e68da2a-79ff-4dfb-b54d-d1e67e6affef",
-  "name": "Natur",
-  "name_e": "",
-  "name_r": "",
-  "description": "Es gibt nichts Besseres als eine Verbindung mit der Natur. Egal ob es Spaziergänge im Wald sind oder das Bewundern der Landschaft, die Natur bietet eine Quelle der Entspannung und Inspiration. Jedes mal lasse ich mich aufs Neue von ihrer Schönheit begeistern.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "529686b0-f3fe-4eb2-b6e6-8711ab851659",
-  "skillcategory_id": "0e68da2a-79ff-4dfb-b54d-d1e67e6affef",
-  "name": "Ernährung",
-  "name_e": "",
-  "name_r": "",
-  "description": "Ich achte auf eine ausgewogene und gesunde Ernährung, um mich fit und energiegeladen zu fühlen. Kochen ist für mich eine kreative Aktivität, die ich gerne mit Freunden und Familie teile. Ich interessiere mich für neue Lebensmittel und experimentiere gerne mit verschiedenen Küchen und Geschmacksrichtungen. Eine gesunde Ernährung hilft mir, mich gut zu fühlen und das Beste aus meinem Tag zu machen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "5a990e26-a2ea-4a3b-8d74-46585391c261",
-  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
-  "name": "Werken",
-  "name_e": "",
-  "name_r": "",
-  "description": "Werken ist für mich eine Leidenschaft, bei der ich mich voll und ganz auf meine Arbeit konzentrieren kann. Es erfordert Geduld, Kreativität und Geschicklichkeit, um ein Werkstück herzustellen, aber das Ergebnis ist umso lohnender. Ich geniesse es, Dinge mit meinen eigenen Händen zu erschaffen und mein handwerkliches Geschick zu verbessern.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "6e6a6103-33a2-42c8-acd3-28150c320227",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Datenbankentwicklung",
-  "name_e": "",
-  "name_r": "",
-  "description": "Entwurf und Implementierung von Datenbanken zur Speicherung und Organisation großer Datenmengen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "6f510541-fd58-4e96-bff2-bcdb3f627d9f",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "SEO",
-  "name_e": "",
-  "name_r": "",
-  "description": " Suchmaschinenoptimierung bezieht sich auf die Techniken, die verwendet werden, um eine Website oder eine Online-Präsenz in den Suchergebnissen einer Suchmaschine zu verbessern. Ziel ist es, eine höhere Sichtbarkeit und damit mehr Besucher auf der Webseite zu erreichen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "7a8f68d9-8080-4eae-822a-43ddacde5511",
-  "skillcategory_id": "ecb4e32a-e60a-4ab6-88dc-81ea9c313df5",
-  "name": "Schule",
-  "name_e": "",
-  "name_r": "",
-  "description": "Es gibt nichts Schöneres, als das Wissen und die Fähigkeiten an die nächste Generation weiterzugeben und zu sehen, wie sich die Schülerinnen und Schüler zu selbstbewussten und gebildeten Menschen entwickeln.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "85bb7048-8b29-4826-8c32-0678f47a1a33",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Datenbearbeitung",
-  "name_e": "",
-  "name_r": "",
-  "description": "",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "97cc658e-c92f-46aa-a6bb-146cc6133ab8",
-  "skillcategory_id": "939206c9-32a7-4330-9bd0-4b647dd8d1f7",
-  "name": "Sprachen",
-  "name_e": "",
-  "name_r": "",
-  "description": "Die Fähigkeit, Sprachen fließend zu sprechen, lesen und schreiben.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "999b80be-e3eb-4fcd-8d11-501879f5cae3",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Frontend",
-  "name_e": "",
-  "name_r": "",
-  "description": "Erstellung von benutzerorientierten Websites oder Webanwendungen unter Verwendung von Technologien wie HTML, CSS und JavaScript.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "9f2a0371-9f64-4c43-8e3a-d1061288488c",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Datenmanagement",
-  "name_e": "",
-  "name_r": "",
-  "description": "Entwurf und Implementierung von Anwendungen zur Manipulation und Organisation großer Datenmengen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "b2b5b945-3b3c-4ad6-9100-6c682a68d7bc",
-  "skillcategory_id": "0e68da2a-79ff-4dfb-b54d-d1e67e6affef",
-  "name": "Sport",
-  "name_e": "",
-  "name_r": "",
-  "description": "Sich körperlich zu betätigen ist für mich eine Möglichkeit, meinen Geist zu entspannen und den Körper fit und gesund zu halten. Durch Sport kann ich meine Grenzen testen und mich ständig verbessern. Ich genieße es, mich in der Natur zu bewegen und dabei neue Orte und Landschaften zu entdecken. Außerdem macht es mir Spaß in Mannschaften zu spielen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "bc970d21-9485-4b5e-bad6-76f1d5cf984d",
-  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
-  "name": "Textilarbeit",
-  "name_e": "",
-  "name_r": "",
-  "description": "Wenn ich mit Textilien arbeite, fühle ich mich wie ein Künstler, der mit Stoffen als Farben und Texturen als Pinselstriche arbeitet. Jedes Stück, das ich entwerfe und nähe, ist einzigartig und erzählt eine eigene Geschichte. Es ist eine wunderbare Art, meine Kreativität auszudrücken und meine persönlichen Stilvorlieben zu zeigen.",
-  "description_e": "",
-  "description_r": ""
- },
- {
-  "skillsubcategory_id": "bd31a092-ece7-40d0-8d47-19fa55f70dc3",
-  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
+  "skillsubcategory_id": "90f8f07f-77e5-4703-bc41-29b7c6e8632a",
+  "skillcategory_id": "7286d999-5020-4c86-9475-249f61e539ab",
   "name": "Gestalten",
   "name_e": "",
   "name_r": "",
@@ -190,8 +20,118 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "c7dfeec3-78b5-4971-9800-559c21341e4b",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
+  "skillsubcategory_id": "d8c35b1c-cb34-4ffe-8476-7c02e71dd4eb",
+  "skillcategory_id": "7286d999-5020-4c86-9475-249f61e539ab",
+  "name": "Werken",
+  "name_e": "",
+  "name_r": "",
+  "description": "Werken ist für mich eine Leidenschaft, bei der ich mich voll und ganz auf meine Arbeit konzentrieren kann. Es erfordert Geduld, Kreativität und Geschicklichkeit, um ein Werkstück herzustellen, aber das Ergebnis ist umso lohnender. Ich geniesse es, Dinge mit meinen eigenen Händen zu erschaffen und mein handwerkliches Geschick zu verbessern.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "30d0e848-7700-4b64-b654-6a9eb7be0d50",
+  "skillcategory_id": "7286d999-5020-4c86-9475-249f61e539ab",
+  "name": "Textilarbeit",
+  "name_e": "",
+  "name_r": "",
+  "description": "Wenn ich mit Textilien arbeite, fühle ich mich wie ein Künstler, der mit Stoffen als Farben und Texturen als Pinselstriche arbeitet. Jedes Stück, das ich entwerfe und nähe, ist einzigartig und erzählt eine eigene Geschichte. Es ist eine wunderbare Art, meine Kreativität auszudrücken und meine persönlichen Stilvorlieben zu zeigen.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "69b6aac4-0d99-4b93-a334-5008276308a5",
+  "skillcategory_id": "7286d999-5020-4c86-9475-249f61e539ab",
+  "name": "Modellieren",
+  "name_e": "",
+  "name_r": "",
+  "description": "Durch das Formen von Ton, Gips, virtuellen Objekten oder anderen Materialien kann ich meine Ideen in dreidimensionale Objekte verwandeln. Es ist ein erfüllendes Gefühl, ein Werkstück zu erschaffen, das ich anschließend betrachten und bewundern kann.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "b8eaa61f-3022-4ab7-b88b-d907917cfc85",
+  "skillcategory_id": "ab648cf6-bf5b-4c68-bd8b-723f2b374d79",
+  "name": "Schule",
+  "name_e": "",
+  "name_r": "",
+  "description": "Es gibt nichts Schöneres, als das Wissen und die Fähigkeiten an die nächste Generation weiterzugeben und zu sehen, wie sich die Schülerinnen und Schüler zu selbstbewussten und gebildeten Menschen entwickeln.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "c0f54bec-2503-49ac-840f-b0f3ee06e53f",
+  "skillcategory_id": "ab648cf6-bf5b-4c68-bd8b-723f2b374d79",
+  "name": "Verein",
+  "name_e": "",
+  "name_r": "",
+  "description": "Ein Verein bietet die perfekte Möglichkeit, sich mit Gleichgesinnten zu treffen und gemeinsam an einem Ziel zu arbeiten. Es ist inspirierend zu sehen, wie die Mitglieder des Vereins zusammenarbeiten und sich gegenseitig unterstützen.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "d4009da1-2e25-4cca-970d-d4462ecc2432",
+  "skillcategory_id": "ab648cf6-bf5b-4c68-bd8b-723f2b374d79",
+  "name": "Einzelunterricht",
+  "name_e": "",
+  "name_r": "",
+  "description": "Als Lehrer oder Tutor hat man die Möglichkeit, die individuellen Bedürfnisse und Fähigkeiten jedes Schülers zu berücksichtigen und ihnen dabei zu helfen, ihr volles Potenzial auszuschöpfen. Es ist unglaublich befriedigend, den Fortschritt der Schülerinnen und Schüler zu beobachten und zu sehen, wie sie ihr Wissen und ihre Fähigkeiten erweitern.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "94e7d0f5-2e01-41cc-88cc-555d3982c029",
+  "skillcategory_id": "634959f1-2840-497c-bc84-53814aa153a4",
+  "name": "Natur",
+  "name_e": "",
+  "name_r": "",
+  "description": "Es gibt nichts Besseres als eine Verbindung mit der Natur. Egal ob es Spaziergänge im Wald sind oder das Bewundern der Landschaft, die Natur bietet eine Quelle der Entspannung und Inspiration. Jedes mal lasse ich mich aufs Neue von ihrer Schönheit begeistern.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "cdff6ee6-f770-4665-9b96-389da7b068f6",
+  "skillcategory_id": "634959f1-2840-497c-bc84-53814aa153a4",
+  "name": "Sport",
+  "name_e": "",
+  "name_r": "",
+  "description": "Sich körperlich zu betätigen ist für mich eine Möglichkeit, meinen Geist zu entspannen und den Körper fit und gesund zu halten. Durch Sport kann ich meine Grenzen testen und mich ständig verbessern. Ich genieße es, mich in der Natur zu bewegen und dabei neue Orte und Landschaften zu entdecken. Außerdem macht es mir Spaß in Mannschaften zu spielen.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "48652fb8-4e4c-4528-8fb9-094dc6bafd91",
+  "skillcategory_id": "634959f1-2840-497c-bc84-53814aa153a4",
+  "name": "Ernährung",
+  "name_e": "",
+  "name_r": "",
+  "description": "Ich achte auf eine ausgewogene und gesunde Ernährung, um mich fit und energiegeladen zu fühlen. Kochen ist für mich eine kreative Aktivität, die ich gerne mit Freunden und Familie teile. Ich interessiere mich für neue Lebensmittel und experimentiere gerne mit verschiedenen Küchen und Geschmacksrichtungen. Eine gesunde Ernährung hilft mir, mich gut zu fühlen und das Beste aus meinem Tag zu machen.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "482c4f26-ae04-4d54-a67d-d0c65e1a77a0",
+  "skillcategory_id": "634959f1-2840-497c-bc84-53814aa153a4",
+  "name": "Geist",
+  "name_e": "",
+  "name_r": "",
+  "description": "Geistige Herausforderungen sind für mich genauso wichtig wie körperliche Aktivität. Ich liebe es, neue Dinge zu lernen und meine Fähigkeiten zu erweitern. Meditation und Yoga helfen mir, meinen Geist zu beruhigen und mich zu konzentrieren. Lesen und Schreiben sind für mich eine Quelle der Inspiration und der Reflexion.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "a7914767-173b-4118-b824-a37c33cc2f7b",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Frontend",
+  "name_e": "",
+  "name_r": "",
+  "description": "Erstellung von benutzerorientierten Websites oder Webanwendungen unter Verwendung von Technologien wie HTML, CSS und JavaScript.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "773f3825-a819-40fd-a928-3a0e71f67937",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
   "name": "Backend",
   "name_e": "",
   "name_r": "",
@@ -200,38 +140,48 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "d0766199-6488-4f0f-a472-8e22244e1b84",
-  "skillcategory_id": "939206c9-32a7-4330-9bd0-4b647dd8d1f7",
-  "name": "Wissen",
+  "skillsubcategory_id": "66606650-3d19-4320-978f-e58d4b5e260c",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Mobile App Entwicklung",
   "name_e": "",
   "name_r": "",
-  "description": "Die Fähigkeit, Wissen in verschiedenen Bereichen zu sammeln, zu verstehen und anzuwenden.",
+  "description": "Erstellung von Anwendungen für mobile Geräte wie Smartphones und Tablets.",
   "description_e": "",
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "d482788c-74c5-4d2d-aadb-cb936f8a1102",
-  "skillcategory_id": "939206c9-32a7-4330-9bd0-4b647dd8d1f7",
-  "name": "Softskills",
+  "skillsubcategory_id": "e47179fa-c8be-48e8-b9a3-86e9a7e5ec13",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Spielentwicklung",
   "name_e": "",
   "name_r": "",
-  "description": "Persönliche Fähigkeiten, die bei der Interaktion mit anderen Menschen am Arbeitsplatz oder in sozialen Situationen von Vorteil sind, wie zum Beispiel Kommunikation, Teamarbeit, Zeitmanagement und Problemlösung.",
+  "description": "Erstellung von Videospielen für Konsolen, PC oder mobile Geräte unter Verwendung verschiedener Programmiersprachen und Spiele-Engines.",
   "description_e": "",
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "ddd64204-c30e-4631-b0ae-0e8bab2a1c00",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
-  "name": "Office",
+  "skillsubcategory_id": "377bcb14-918b-492d-afc4-9c91c16bcd3e",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Datenbankentwicklung",
   "name_e": "",
   "name_r": "",
-  "description": "Eine Sammlung von Anwendungen wie Word, Excel, PowerPoint und Outlook, die häufig in Büros und Unternehmen verwendet wird, um Dokumente zu erstellen, Tabellenkalkulationen durchzuführen, Präsentationen zu gestalten und E-Mails zu verwalten.",
+  "description": "Entwurf und Implementierung von Datenbanken zur Speicherung und Organisation großer Datenmengen.",
   "description_e": "",
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "f84b8feb-91a4-476a-87f6-088b6f062710",
-  "skillcategory_id": "017683e8-2193-48e5-8bb8-cedf07dba575",
+  "skillsubcategory_id": "933c4d2e-4e5f-404e-b150-f1b6e22a94c7",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Datenmanagement",
+  "name_e": "",
+  "name_r": "",
+  "description": "Entwurf und Implementierung von Anwendungen zur Manipulation und Organisation großer Datenmengen.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "8a20616a-f382-4b82-aa3c-c4ed2c35e7e4",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
   "name": "Bildbearbeitung",
   "name_e": "",
   "name_r": "",
@@ -240,12 +190,62 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "f8a8a916-64d2-4f67-898f-1b09c826356d",
-  "skillcategory_id": "f29953cb-3d5c-4526-b187-1f1e48e2adcb",
-  "name": "Modellieren",
+  "skillsubcategory_id": "4cd7900a-685a-49ec-a7e2-44a8424606ea",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Office",
   "name_e": "",
   "name_r": "",
-  "description": "Durch das Formen von Ton, Gips, virtuellen Objekten oder anderen Materialien kann ich meine Ideen in dreidimensionale Objekte verwandeln. Es ist ein erfüllendes Gefühl, ein Werkstück zu erschaffen, das ich anschließend betrachten und bewundern kann.",
+  "description": "Eine Sammlung von Anwendungen wie Word, Excel, PowerPoint und Outlook, die häufig in Büros und Unternehmen verwendet wird, um Dokumente zu erstellen, Tabellenkalkulationen durchzuführen, Präsentationen zu gestalten und E-Mails zu verwalten.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "ae3f5b60-34f5-4e2b-b5f9-3c410643910a",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "SEO",
+  "name_e": "",
+  "name_r": "",
+  "description": " Suchmaschinenoptimierung bezieht sich auf die Techniken, die verwendet werden, um eine Website oder eine Online-Präsenz in den Suchergebnissen einer Suchmaschine zu verbessern. Ziel ist es, eine höhere Sichtbarkeit und damit mehr Besucher auf der Webseite zu erreichen.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "38c62ee4-98f3-4df9-934f-1c807b196808",
+  "skillcategory_id": "9d8ffb29-e481-45e9-91b6-b75c30918842",
+  "name": "Datenbearbeitung",
+  "name_e": "",
+  "name_r": "",
+  "description": "",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "24ba5388-6246-401c-8aa2-492e496e6521",
+  "skillcategory_id": "254a440c-3cf8-4cf6-aff7-2944357a9805",
+  "name": "Softskills",
+  "name_e": "",
+  "name_r": "",
+  "description": "Persönliche Fähigkeiten, die bei der Interaktion mit anderen Menschen am Arbeitsplatz oder in sozialen Situationen von Vorteil sind, wie zum Beispiel Kommunikation, Teamarbeit, Zeitmanagement und Problemlösung.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "9c745abb-99f0-497f-843b-f1eaa9104483",
+  "skillcategory_id": "254a440c-3cf8-4cf6-aff7-2944357a9805",
+  "name": "Sprachen",
+  "name_e": "",
+  "name_r": "",
+  "description": "Die Fähigkeit, Sprachen fließend zu sprechen, lesen und schreiben.",
+  "description_e": "",
+  "description_r": ""
+ },
+ {
+  "skillsubcategory_id": "8c7ad345-ae74-4c52-83bd-207786292a51",
+  "skillcategory_id": "254a440c-3cf8-4cf6-aff7-2944357a9805",
+  "name": "Wissen",
+  "name_e": "",
+  "name_r": "",
+  "description": "Die Fähigkeit, Wissen in verschiedenen Bereichen zu sammeln, zu verstehen und anzuwenden.",
   "description_e": "",
   "description_r": ""
  }

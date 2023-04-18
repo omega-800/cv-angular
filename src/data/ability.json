@@ -1,0 +1,122 @@
+[
+ {
+  "ability_id": "e3454eb9-05a5-4c9e-8703-60f257897fa1",
+  "name": "Selbstständigkeit",
+  "name_e": "",
+  "name_r": "",
+  "description": "Selbstständigkeit bezieht sich auf die Fähigkeit, unabhängig zu handeln und Verantwortung für die eigenen Entscheidungen und Handlungen zu übernehmen.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "1b834386-2275-4b1e-a760-20c6e2bc8d38",
+  "name": "Teamwork",
+  "name_e": "",
+  "name_r": "",
+  "description": "Teamwork bezieht sich auf die Fähigkeit, effektiv in einer Gruppe zu arbeiten. Teamwork erfordert Zusammenarbeit, Kommunikation und Kompromissbereitschaft, um gemeinsame Ziele zu erreichen.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "ce352802-c309-4a70-aa7e-7b3e28489d7a",
+  "name": "Logisches Denken",
+  "name_e": "",
+  "name_r": "",
+  "description": "Logisches Denken bezieht sich auf die Fähigkeit, komplexe Probleme zu analysieren und zu lösen, indem man rationale und systematische Schritte unternimmt.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "d94a12e4-71a3-494f-ac1b-378a87f7ecc7",
+  "name": "Kritikfähigkeit",
+  "name_e": "",
+  "name_r": "",
+  "description": "Kritikfähigkeit bezieht sich auf die Fähigkeit, konstruktive Kritik zu akzeptieren und davon zu lernen. Kritikfähigkeit erfordert Offenheit und die Bereitschaft, aus Fehlern zu lernen.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "0ffadae8-cd33-4b99-ab7e-5d4426f3ac80",
+  "name": "Kreativität",
+  "name_e": "",
+  "name_r": "",
+  "description": "Kreativität bezieht sich auf die Fähigkeit, neue und originelle Ideen zu entwickeln und umzusetzen. Kreativität kann auch helfen, Probleme auf unkonventionelle Weise zu lösen.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "fe279826-a16a-420f-adb1-722aa3d9f30e",
+  "name": "Kommunikation",
+  "name_e": "",
+  "name_r": "",
+  "description": "Kommunikation bezieht sich auf die Fähigkeit, effektiv zu sprechen und zuzuhören, um Botschaften zu vermitteln und zu verstehen. Kommunikation ist auch im täglichen Leben wichtig.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "7bf05a67-8d14-4d4b-8c7f-e02840578330",
+  "name": "Lernfähigkeit",
+  "name_e": "",
+  "name_r": "",
+  "description": "Lernfähigkeit bezieht sich auf die Fähigkeit, schnell und effektiv neue Informationen und Fähigkeiten zu erwerben. Lernfähigkeit erfordert Offenheit und die Bereitschaft, aus Erfahrungen und Fehlern zu lernen.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "ed33e8e3-fe95-4971-b9f7-e12450e679b1",
+  "name": "Organisation",
+  "name_e": "",
+  "name_r": "",
+  "description": "Organisation bezieht sich auf die Fähigkeit, effektiv Zeit, Ressourcen und Aufgaben zu planen und zu verwalten. Organisation kann auch helfen, den Alltag effektiver zu gestalten.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "ae399b16-9811-4e23-99e6-42247d2d9880",
+  "name": "Empathie",
+  "name_e": "",
+  "name_r": "",
+  "description": "Die Fähigkeit, sich in andere Menschen hineinzuversetzen und deren Gefühle zu verstehen und nachzuvollziehen.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ },
+ {
+  "ability_id": "c5189dc7-5534-457e-9d78-ec4df69b575e",
+  "name": "Geduld",
+  "name_e": "",
+  "name_r": "",
+  "description": "Die Fähigkeit, in schwierigen oder herausfordernden Situationen ruhig zu bleiben und darauf zu vertrauen, dass sich die Dinge zum Guten wenden werden. Geduld hilft dabei, auch langfristige Ziele zu verfolgen und Hindernisse zu überwinden.",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": ""
+ }
+]
