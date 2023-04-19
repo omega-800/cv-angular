@@ -1,11 +1,15 @@
 @import 'src/scss/mixins';
+@import 'src/scss/variables';
 
 :host{
     @include flex-row;
     & form {
         width:100%;
     }
-    & .filter-item-p {
+    & .filter {
         @include link;
+    }
+    & .active {
+        @include darken-little($cool);
     }
 }

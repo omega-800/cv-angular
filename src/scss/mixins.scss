@@ -31,7 +31,7 @@
 }
 
 @mixin darken-little($color) {
-    background-color: darken($color, 10%);
+    background-color: darken($color, 15%);
     transition: background-color $trans-cb;
 }
 

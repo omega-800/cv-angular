@@ -1,0 +1,11 @@
+<form #filterForm="ngForm">
+    {{filterForm.value | json}}
+    <div class="filter-item" *ngFor="let filter of filterValues | keyvalue">
+        <label for="{{filter.key}}">{{filter.value}}</label>
+        <input ngModel type="checkbox" name="{{filter.key}}" value="{{filter.key}}">
+    </div>
+</form>
+<div *ngFor="let filter of filterValues | keyvalue">
+    <div #filterItem class="filter" (click)="filterItem.classList.toggle('active')">{{filter.value}}</div>
+</div>
+

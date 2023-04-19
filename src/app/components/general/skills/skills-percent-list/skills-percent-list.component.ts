@@ -9,11 +9,8 @@ import { SkillCategoriesService } from 'src/app/services/skill/skill-categories.
   styleUrls: ['./skills-percent-list.component.scss']
 })
 export class SkillsPercentListComponent {
-  //allSkills:{ [key:string]: Skill[] } = {};
-  //types:string[];
   types:{[key:string]:string};
   allSkillSubCategories:SkillSubCategory[];
-  allOnlySkills:SkillOnly[];
   allSkills:Skill[];
   allSkillsByType:{[key:string]:Skill[]} = {};
 
@@ -23,7 +20,6 @@ export class SkillsPercentListComponent {
     });
     this.types = this.skillService.getSkillTypes();*/
     this.types = this.skillService.getSkillTypes();
-    this.allOnlySkills = this.skillService.getOnlySkills();
     this.allSkillSubCategories = this.skillCategoriesService.getSkillSubCategories();
     this.allSkills = this.skillService.getSkills();
     for (const [key, value] of Object.entries(this.types)) {

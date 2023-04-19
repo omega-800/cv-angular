@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PersonService } from '../services/person/person.service';
-import { Person } from '../services/person/person.model';
-import { LinkTypes, linkTypes } from '../constants';
-import { Contact } from '../services/contact/contact.model';
-import { ContactService } from '../services/contact/contact.service';
-import { AgePipe } from '../pipes/age/age.pipe';
+import { PersonService } from 'src/app/services/person/person.service';
+import { Person } from 'src/app/services/person/person.model';
+import { LinkTypes, linkTypes } from 'src/app/constants';
+import { Contact } from 'src/app/services/contact/contact.model';
+import { ContactService } from 'src/app/services/contact/contact.service';
+import { AgePipe } from 'src/app/pipes/age/age.pipe';
 
 @Component({
   selector: 'app-home',

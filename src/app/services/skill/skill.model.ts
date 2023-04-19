@@ -37,7 +37,7 @@ export interface SkillSubCategoryOnly {
   description_r: string;
 }
 
-export interface SkillNew {
+export interface Skill {
   skill_id: string;
   identifier: string;
   hobby: boolean;
@@ -68,7 +68,7 @@ export interface SkillNew {
   applicationtype?: ApplicationType;
 }
 
-export interface Skill {
+export interface SkillOld {
   skill_id: string;
   identifier: string;
   hobby: boolean;
@@ -109,10 +109,25 @@ export interface Skill_SkillSubCategory {
 }
 
 export const SkillTypes = {
-  app: "Applikation", 
-  skill: "Skill", 
-  aktivität: "Aktivität", 
-  sprache: "Sprache",
-  wissen: "Wissen"
+  application: "Applikation", 
+  ability: "Skill", 
+  activity: "Aktivität", 
+  language: "Sprache",
+  knowledge: "Wissen"
 } as const;
 
+export interface SkillFilter {
+  category: string[],
+  subcategory: string[],
+  type: string[],
+  hobby: boolean,
+  applicationtype?: string[]
+}
+
+export interface SkillFilter2 {
+  category: {[key:string]:string},
+  subcategory: {[key:string]:string},
+  type: {[key:string]:string},
+  hobby: boolean,
+  applicationtype?: {[key:string]:string}
+}
