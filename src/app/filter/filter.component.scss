@@ -2,7 +2,10 @@
 
 :host{
     @include flex-row;
-    & button {
+    & form {
+        width:100%;
+    }
+    & .filter-item-p {
         @include link;
     }
 }

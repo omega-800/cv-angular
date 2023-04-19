@@ -2,8 +2,10 @@
 <div class="skill-container" *ngFor="let skill of skills | skillsFilter:['Applikation']">
     <div class="percent-{{skill.knowledgepercent}}">
         {{skill.identifier}}
+        <p *ngIf="!skill.identifier">{{skill.knowledgepercent}}% {{skill.identifier}}</p>
+        <a *ngIf="skill.identifier" href="{{skill.identifier}}"  target="_blank">{{skill.knowledgepercent}}% {{skill.identifier}}</a>
         <!--p *ngIf="!skill.url">{{skill.knowledgepercent}}% {{skill.name}}</!--p>
-        <a-- *ngIf="skill.url" href="{{skill.url}}">{{skill.knowledgepercent}}% {{skill.name}}</a-->
+        <a-- *ngIf="skill.url" href="{{skill.url}}"  target="_blank">{{skill.knowledgepercent}}% {{skill.name}}</a-->
     </div>
 </div>
 

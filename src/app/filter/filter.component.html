@@ -5,4 +5,7 @@
         <input ngModel type="checkbox" name="{{filter}}" value="{{filter}}">
     </div>
 </form>
+<div *ngFor="let filter of filterValues">
+    <p class="filter-item-p">{{filter}}</p>
+</div>
 

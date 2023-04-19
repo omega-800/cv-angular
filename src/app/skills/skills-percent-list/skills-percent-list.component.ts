@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SkillService } from 'src/app/services/skill/skill.service';
 import { Skill, SkillOnly, SkillSubCategory } from 'src/app/services/skill/skill.model';
+import { SkillCategoriesService } from 'src/app/services/skill/skill-categories.service';
 
 @Component({
   selector: 'app-skills-percent-list',
@@ -13,15 +14,21 @@ export class SkillsPercentListComponent {
   types:{[key:string]:string};
   allSkillSubCategories:SkillSubCategory[];
   allOnlySkills:SkillOnly[];
+  allSkills:Skill[];
+  allSkillsByType:{[key:string]:Skill[]} = {};
 
-  constructor(private skillService:SkillService) { 
+  constructor(private skillService:SkillService, private skillCategoriesService:SkillCategoriesService) { 
     /*this.skillService.getSkillTypes().forEach(type => {
       this.allSkills[type] = this.skillService.getSkillsByType(type);
     });
     this.types = this.skillService.getSkillTypes();*/
     this.types = this.skillService.getSkillTypes();
     this.allOnlySkills = this.skillService.getOnlySkills();
-    this.allSkillSubCategories = this.skillService.getSkillSubCategories();
+    this.allSkillSubCategories = this.skillCategoriesService.getSkillSubCategories();
+    this.allSkills = this.skillService.getSkills();
+    for (const [key, value] of Object.entries(this.types)) {
+      this.allSkillsByType[value] = this.skillService.getSkillsByType(value);
+    }
   }
 
 }
