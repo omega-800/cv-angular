@@ -5,8 +5,10 @@
     width: 100%;
     padding:$wrapper-padding;
     border:$defborder;
+    margin: $padding 0;
     @include flex-column;
     & .top {
+        width:100%;
         @include flex-row;
         & img {
             border-radius: $border-radius-circle;

@@ -1,1 +1,20 @@
-<p>career works!</p>
+<div *ngFor="let career of careers">
+    <!--app-contentbox 
+        [image]='{"id":career.name,"name":career.name,"path":career.type.logo,"alt":career.type.name}'
+        title="{{career.type.name}}: {{career.name}}" 
+        description="{{career.yearfrom}} - {{career.yearto}}"> 
+    </app-contentbox-->
+
+    <app-contentbox *ngIf="career.type == ct.SCHOOL"
+        [image]='{"id":career.school?.name!,"name":career.school?.name!,"path":career.type.logo,"alt":career.type.name}'
+        title="{{career.type.name}}: {{career.school?.name!}}" 
+        description="{{career.yearfrom}} - {{career.yearto}}"> 
+    </app-contentbox>
+
+    <app-contentbox *ngIf="career.type == ct.WORK"
+        [image]='{"id":career.workplace?.name!,"name":career.workplace?.name!,"path":career.type.logo,"alt":career.type.name}'
+        title="{{career.type.name}}: {{career.workplace?.name!}}" 
+        description="{{career.yearfrom}} - {{career.yearto}}"> 
+    </app-contentbox>
+
+</div>

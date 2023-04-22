@@ -1,5 +1,10 @@
 @import 'variables.scss';
 
+@mixin wrapper {
+    width: $wrapper-width;
+    padding:$wrapper-padding;
+}
+
 @mixin pill {
     display:inline-block;
     padding:$elem-padding;
