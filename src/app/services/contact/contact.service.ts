@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import * as contactData from 'src/data/contactpoint.json';
-import { Contact, ContactEntity } from './contact.model';
+import { ContactOnly, ContactEntity } from './contact.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
-  contactsData:Contact[] = (contactData as any).default;
+  onlyContacts:ContactOnly[] = (contactData as any).default;
   contacts:ContactEntity[];
 
   constructor() { 
-    this.contacts = this.contactsData.map(contact => {return {...contact, id:"contact_"+contact.contactpoint_id}})
+    this.contacts = this.onlyContacts.map(contact => {return {...contact, id:"contact_"+contact.contactpoint_id}})
   }
 
   getContactById(id:string):ContactEntity{

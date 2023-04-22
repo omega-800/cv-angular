@@ -3,7 +3,7 @@ import { ContentEntity } from "src/app/services/entities.model";
 export interface AbilityEntity extends ContentEntity {
   ability_id: string;
 }
-export interface Ability {
+export interface AbilityOnly {
   ability_id: string;
   name: string;
   name_e: string;

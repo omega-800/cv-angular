@@ -1,12 +1,12 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Skill } from 'src/app/services/skill/skill.model';
+import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
 @Pipe({
   name: 'skillsFilter'
 })
 export class SkillsFilterPipe implements PipeTransform {
 
-  transform(skills:Skill[], types:string[], ...args:string[]): Skill[] {
+  transform(skills:SkillEntity[], types:string[], ...args:string[]): SkillEntity[] {
     if(!skills){
       return skills;
     }

@@ -8,7 +8,7 @@ export interface ContactEntity extends Entity{
   email: string;
 }
 
-export interface Contact{
+export interface ContactOnly {
   contactpoint_id: string;
   name: string;
   name_e: string;

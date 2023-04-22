@@ -2,21 +2,22 @@ import { Injectable } from '@angular/core';
 import * as skillCategoryData from 'src/data/skillcategory.json'
 import * as skillSubCategoryData from 'src/data/skillsubcategory.json'
 import * as skill_skillSubCategoryData from 'src/data/skill_skillsubcategory.json'
-import { SkillCategory, SkillSubCategory, Skill_SkillSubCategory, SkillSubCategoryOnly, SkillOnly, SkillCategoryEntity, SkillSubCategoryEntity } from './skill.model';
+import { SkillOnly } from '../skill/skill.model';
+import { SkillSubCategoryOnly, SkillCategoryOnly, Skill_SkillSubCategory, SkillCategoryEntity, SkillSubCategoryEntity } from './skill-categories.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillCategoriesService {
   onlySkillSubCategories:SkillSubCategoryOnly[] = (skillSubCategoryData as any).default;
-  skillCategoriesData:SkillCategory[] = (skillCategoryData as any).default;
+  onlySkillCategories:SkillCategoryOnly[] = (skillCategoryData as any).default;
   skillSubCategoryLinks:Skill_SkillSubCategory[] = (skill_skillSubCategoryData as any).default;
 
   skillCategories:SkillCategoryEntity[];
   skillSubCategories:SkillSubCategoryEntity[];
 
   constructor() { 
-    this.skillCategories = this.skillCategoriesData.map(cat => {return { ...cat, id: cat.skillcategory_id}})
+    this.skillCategories = this.onlySkillCategories.map(cat => {return { ...cat, id: cat.skillcategory_id}})
     this.skillSubCategories = this.onlySkillSubCategories.map(subCat => this.fillSubCategory(subCat));
   }
   
@@ -43,10 +44,6 @@ export class SkillCategoriesService {
 
   fillSubCategory(subCat:SkillSubCategoryOnly):SkillSubCategoryEntity {
     return {...subCat, skillcategory: this.getSkillCategoryById(subCat.skillcategory_id), id:subCat.skillsubcategory_id};
-  }
-
-  getOnlySkillSubCategories():SkillSubCategoryOnly[] {
-    return this.onlySkillSubCategories;
   }
 
 }

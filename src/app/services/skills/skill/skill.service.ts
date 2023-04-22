@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Skill, SkillCategory, SkillEntity, SkillOnly, SkillSubCategory, SkillSubCategoryOnly, SkillTypes, Skill_SkillSubCategory } from './skill.model';
+import { SkillEntity, SkillOnly, SkillTypes} from './skill.model';
 import * as skillData from 'src/data/skill.json'
-import { ApplicationService } from '../application/application.service';
-import { LanguageService } from '../language/language.service';
-import { KnowledgeService } from '../knowledge/knowledge.service';
-import { ActivityService } from '../activity/activity.service';
-import { AbilityService } from '../ability/ability.service';
-import { SkillCategoriesService } from './skill-categories.service';
 import { FiltersEntity } from 'src/app/store/filter/filter.model';
+import { AbilityService } from '../ability/ability.service';
+import { ActivityService } from '../activity/activity.service';
+import { ApplicationService } from '../application/application.service';
+import { KnowledgeService } from '../knowledge/knowledge.service';
+import { LanguageService } from '../language/language.service';
+import { SkillCategoriesService } from '../skill-categories/skill-categories.service';
 var _ = require('underscore');
 
 @Injectable({
@@ -44,15 +44,6 @@ export class SkillService {
       ],
     };
   }
-
-  /*getSkillUrl(skill:Skill):string {
-    let str = skill.type === SkillTypes.app ? skill.application?.url :
-    skill.type === SkillTypes.sprache ? skill.language?.url :
-    skill.type === SkillTypes.wissen ? skill.knowledge?.url :
-    skill.type === SkillTypes.aktivität ? skill.activity?.url :
-    skill.type === SkillTypes.skill ? skill.ability?.url : "";
-    return str === undefined ? "" : str;
-  }*/
   
   getSkills():SkillEntity[] {
     return this.skills;
@@ -87,15 +78,4 @@ export class SkillService {
     return {...skill, id: "skill_"+skill.skill_id, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), type:"", name:"", name_e:"", name_r:"", description:"", description_e:"", description_r:"", thumbnail:"", image:"", url:""};
   }
 
-  getOnlySkills():SkillOnly[] {
-    return this.onlySkills;
-  }
-
-  getOnlySkillById(id:string):SkillOnly {
-    return Object.values(this.onlySkills).filter(skill => skill.skill_id === id)[0];
-  }
-
-  getOnlyHobbies():SkillOnly[] {
-    return Object.values(this.onlySkills).filter(skill => skill.hobby);
-  }
 }

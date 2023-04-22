@@ -24,7 +24,7 @@ export interface PersonEntity extends ImageEntity, LinkEntity {
   contactpoint_id: string;
 }
 
-export interface Person {
+export interface PersonOnly {
   person_id: string;
   firstname: string;
   lastname: string;

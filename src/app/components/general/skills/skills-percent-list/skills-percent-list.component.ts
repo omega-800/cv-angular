@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { SkillService } from 'src/app/services/skill/skill.service';
-import { Skill, SkillEntity, SkillOnly, SkillSubCategory, SkillSubCategoryEntity } from 'src/app/services/skill/skill.model';
-import { SkillCategoriesService } from 'src/app/services/skill/skill-categories.service';
+import { SkillService } from 'src/app/services/skills/skill/skill.service';
+import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
+import { SkillCategoriesService } from 'src/app/services/skills/skill-categories/skill-categories.service';
+import { SkillSubCategoryEntity } from 'src/app/services/skills/skill-categories/skill-categories.model';
 
 @Component({
   selector: 'app-skills-percent-list',

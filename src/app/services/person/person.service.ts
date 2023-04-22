@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import * as personData from 'src/data/person.json';
-import { Person, PersonEntity } from './person.model';
+import { PersonOnly, PersonEntity } from './person.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonService {
-  peopleData:Person[] = (personData as any).default;
-  people:PersonEntity[] = this.peopleData.map(person => {return {...person, id: "person_"+person.person_id, name: person.firstname}});
+  onlyPeople:PersonOnly[] = (personData as any).default;
+  people:PersonEntity[] = this.onlyPeople.map(person => {return {...person, id: "person_"+person.person_id, name: person.firstname}});
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Application, ApplicationEntity, ApplicationOnly, ApplicationType, ApplicationTypeEntity } from './application.model';
+import { ApplicationEntity, ApplicationOnly, ApplicationTypeOnly, ApplicationTypeEntity } from './application.model';
 import * as applicationData from 'src/data/application.json'
 import * as applicationTypeData from 'src/data/applicationtype.json'
 
@@ -9,9 +9,9 @@ import * as applicationTypeData from 'src/data/applicationtype.json'
 
 export class ApplicationService {
   onlyApplications:ApplicationOnly[] = (applicationData as any).default;
-  onlyApplicationTypes:ApplicationType[] = (applicationTypeData as any).default;
+  onlyApplicationTypes:ApplicationTypeOnly[] = (applicationTypeData as any).default;
+  
   applicationTypes:ApplicationTypeEntity[];
-
   applications:ApplicationEntity[];
 
   constructor() {

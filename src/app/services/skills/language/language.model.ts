@@ -1,11 +1,12 @@
 import { ContentEntity } from "src/app/services/entities.model";
 
-export interface ActivityEntity extends ContentEntity {
-  activity_id: string;
+export interface LanguageEntity extends ContentEntity {
+  language_id: string;
+  shortname: string;
 }
 
-export interface Activity {
-  activity_id: string;
+export interface LanguageOnly {
+  language_id: string;
   name: string;
   name_e: string;
   name_r: string;
@@ -15,4 +16,5 @@ export interface Activity {
   thumbnail: string;
   image: string;
   url: string;
+  shortname: string;
 }

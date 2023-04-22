@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Activity, ActivityEntity } from './activity.model';
+import { ActivityOnly, ActivityEntity } from './activity.model';
 import * as activityData from 'src/data/activity.json'
 
 @Injectable({
@@ -7,7 +7,7 @@ import * as activityData from 'src/data/activity.json'
 })
 
 export class ActivityService {
-  onlyActivities:Activity[] = (activityData as any).default;
+  onlyActivities:ActivityOnly[] = (activityData as any).default;
   activities:ActivityEntity[];
 
   constructor() {

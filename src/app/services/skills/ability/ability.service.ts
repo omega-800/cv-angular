@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ability, AbilityEntity } from './ability.model';
+import { AbilityOnly, AbilityEntity } from './ability.model';
 import * as abilityData from 'src/data/ability.json'
 
 @Injectable({
@@ -7,7 +7,7 @@ import * as abilityData from 'src/data/ability.json'
 })
 
 export class AbilityService {
-  onlyAbilities:Ability[] = (abilityData as any).default;
+  onlyAbilities:AbilityOnly[] = (abilityData as any).default;
   abilities:AbilityEntity[];
 
   constructor() { 

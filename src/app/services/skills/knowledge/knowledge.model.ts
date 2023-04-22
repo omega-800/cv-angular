@@ -4,7 +4,7 @@ export interface KnowledgeEntity extends ContentEntity {
   knowledge_id: string;
 }
 
-export interface Knowledge {
+export interface KnowledgeOnly {
   knowledge_id: string;
   name: string;
   name_e: string;

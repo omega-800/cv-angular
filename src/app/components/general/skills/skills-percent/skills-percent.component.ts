@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SkillService } from 'src/app/services/skill/skill.service';
-import { Skill, SkillEntity } from 'src/app/services/skill/skill.model';
+import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
 @Component({
   selector: 'app-skills-percent',
