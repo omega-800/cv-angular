@@ -16,8 +16,10 @@ import { SkillsPercentListComponent } from './components/general/skills/skills-p
 import { FilterComponent } from './components/general/filter/filter.component';
 import { SkillsFilterPipe } from './pipes/skills-filter/skills-filter.pipe';
 import { AgePipe } from './pipes/age/age.pipe';
-import { StoreModule } from '@ngrx/store';
 import { ListComponent } from './components/general/list/list.component';
+import { NgxsModule } from '@ngxs/store';
+import { FilterState } from './store/filter/filter.state';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,7 @@ import { ListComponent } from './components/general/list/list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({}, {})
+    NgxsModule.forRoot([FilterState])
   ],
   providers: [],
   bootstrap: [AppComponent]

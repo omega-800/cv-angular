@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class FilterComponent {
   @Input() filterValues!:{[key:string]:string};
+  @Input() name!: string;
   filtersSelected:{[key:string]:boolean} = {};
   
   constructor() {
