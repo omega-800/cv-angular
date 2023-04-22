@@ -19,6 +19,7 @@ import { AgePipe } from './pipes/age/age.pipe';
 import { ListComponent } from './components/general/list/list.component';
 import { NgxsModule } from '@ngxs/store';
 import { FilterState } from './store/filter/filter.state';
+import { ContentboxComponent } from './components/general/contentbox/contentbox.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FilterState } from './store/filter/filter.state';
     FilterComponent,
     SkillsFilterPipe,
     AgePipe,
-    ListComponent
+    ListComponent,
+    ContentboxComponent
   ],
   imports: [
     BrowserModule,

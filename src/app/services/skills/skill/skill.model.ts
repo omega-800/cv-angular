@@ -1,6 +1,6 @@
 import { ApplicationTypeEntity } from "../application/application.model";
 import { ContentEntity } from "src/app/services/entities.model";
-import { SkillSubCategoryEntity } from "../skill-categories/skill-categories.model";
+import { SkillSubCategoryEntity } from "../skill-category/skill-category.model";
 
 
 export interface SkillEntity extends ContentEntity {

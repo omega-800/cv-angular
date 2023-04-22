@@ -7,7 +7,7 @@ import { ActivityService } from '../activity/activity.service';
 import { ApplicationService } from '../application/application.service';
 import { KnowledgeService } from '../knowledge/knowledge.service';
 import { LanguageService } from '../language/language.service';
-import { SkillCategoriesService } from '../skill-categories/skill-categories.service';
+import { SkillCategoriesService } from '../skill-category/skill-category.service';
 var _ = require('underscore');
 
 @Injectable({

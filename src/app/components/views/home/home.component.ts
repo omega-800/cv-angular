@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PersonService } from 'src/app/services/person/person.service';
-import { PersonEntity } from 'src/app/services/person/person.model';
-import { LinkTypes, linkTypes } from 'src/app/components/components.model';
+import { PersonEntity } from 'src/app/services/person/person/person.model';
+import { ImageComponent, LinkTypes, linkTypes } from 'src/app/components/components.model';
 import { ContactEntity } from 'src/app/services/contact/contact.model';
 import { ContactService } from 'src/app/services/contact/contact.service';
 import { AgePipe } from 'src/app/pipes/age/age.pipe';
+import { PersonService } from 'src/app/services/person/person/person.service';
 
 @Component({
   selector: 'app-home',
@@ -13,14 +13,19 @@ import { AgePipe } from 'src/app/pipes/age/age.pipe';
 })
 export class HomeComponent {
   me:PersonEntity;
-  myContact:ContactEntity;
   lt:Readonly<LinkTypes>;
+  image:ImageComponent;
   //age:string;
 
-  constructor(private personService:PersonService, private contactService:ContactService) { 
+  constructor(private personService:PersonService) { 
     this.me = this.personService.getPersonByName("Georgiy");
-    this.myContact = this.contactService.getContactById(this.me.contactpoint_id);
     this.lt = linkTypes;
+    this.image = {
+      id:"home_profilepic",
+      name:"profilePic",
+      path: `/assets/${this.me.image}`,
+      alt:"Profile picture"
+    }
     //this.age = this.personService.getAge(this.me.birthdate);
     //setInterval(this.updateAge, 1000);
   }

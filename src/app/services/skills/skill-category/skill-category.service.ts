@@ -3,7 +3,7 @@ import * as skillCategoryData from 'src/data/skillcategory.json'
 import * as skillSubCategoryData from 'src/data/skillsubcategory.json'
 import * as skill_skillSubCategoryData from 'src/data/skill_skillsubcategory.json'
 import { SkillOnly } from '../skill/skill.model';
-import { SkillSubCategoryOnly, SkillCategoryOnly, Skill_SkillSubCategory, SkillCategoryEntity, SkillSubCategoryEntity } from './skill-categories.model';
+import { SkillSubCategoryOnly, SkillCategoryOnly, Skill_SkillSubCategory, SkillCategoryEntity, SkillSubCategoryEntity } from './skill-category.model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class SkillCategoriesService {
   skillSubCategories:SkillSubCategoryEntity[];
 
   constructor() { 
-    this.skillCategories = this.onlySkillCategories.map(cat => {return { ...cat, id: cat.skillcategory_id}})
+    this.skillCategories = this.onlySkillCategories.map(cat => {return { ...cat, id: "skillCategory_"+cat.skillcategory_id}})
     this.skillSubCategories = this.onlySkillSubCategories.map(subCat => this.fillSubCategory(subCat));
   }
   
@@ -26,7 +26,7 @@ export class SkillCategoriesService {
   }
 
   getSkillCategoryById(id:string):SkillCategoryEntity {
-    return Object.values(this.skillCategories).filter(skillCat => skillCat.id === id)[0];
+    return Object.values(this.skillCategories).filter(skillCat => skillCat.skillcategory_id === id)[0];
   }
 
   getSkillSubCategories():SkillSubCategoryEntity[] {
@@ -34,16 +34,16 @@ export class SkillCategoriesService {
   }
 
   getSkillSubCategoryById(id:string):SkillSubCategoryEntity {
-    return Object.values(this.skillSubCategories).filter(skillSubCat => skillSubCat.id === id)[0];
+    return Object.values(this.skillSubCategories).filter(skillSubCat => skillSubCat.skillsubcategory_id === id)[0];
   }
   
   getSkillSubCategoriesOfSkill(skill:SkillOnly):SkillSubCategoryEntity[] {
     let subCategoriesOfSkill:string[] = Object.values(this.skillSubCategoryLinks).filter(link => link.skill_id === skill.skill_id).map(filteredLink => filteredLink.skillsubcategory_id);
-    return Object.values(this.skillSubCategories).filter(skillSubCat => subCategoriesOfSkill.includes(skillSubCat.id));
+    return Object.values(this.skillSubCategories).filter(skillSubCat => subCategoriesOfSkill.includes(skillSubCat.skillsubcategory_id));
   }
 
   fillSubCategory(subCat:SkillSubCategoryOnly):SkillSubCategoryEntity {
-    return {...subCat, skillcategory: this.getSkillCategoryById(subCat.skillcategory_id), id:subCat.skillsubcategory_id};
+    return {...subCat, skillcategory: this.getSkillCategoryById(subCat.skillcategory_id), id:"skillSubCategory_"+subCat.skillsubcategory_id};
   }
 
 }

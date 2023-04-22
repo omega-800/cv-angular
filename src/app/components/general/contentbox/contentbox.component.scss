@@ -1,0 +1,19 @@
+@import 'src/scss/variables.scss';
+@import 'src/scss/mixins.scss';
+
+:host {
+    width: 100%;
+    padding:$wrapper-padding;
+    border:$defborder;
+    @include flex-column;
+    & .top {
+        @include flex-row;
+        & img {
+            border-radius: $border-radius-circle;
+            width:$img-width;
+        }
+    }
+    & .bottom {
+        @include flex-row;
+    }
+}
