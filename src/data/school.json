@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "8cc33e50-a2d1-4089-bfc2-0c421452d1ab",
+  "school_id": "eaa81541-aae3-477c-9910-2b198f65bbf3",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -13,10 +13,10 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "",
   "image": "",
-  "address_id": "8f0edcf9-bf64-463f-9ad5-45b9bb98c8e3"
+  "address_id": "94b06acf-2d3b-4b35-9e1e-97d7c0d750b6"
  },
  {
-  "school_id": "7301d711-7751-43b1-913a-c25fac3fb6c6",
+  "school_id": "c1cbd1c3-4cf6-4998-ab0a-b032cfd0b909",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
@@ -29,10 +29,10 @@
   "url": "https://www.kshp.ch/",
   "logo": "",
   "image": "",
-  "address_id": "24229cad-92f2-4e32-9468-8832a844c8c5"
+  "address_id": "4895ba23-d67a-4003-a5db-feed67cc1d1a"
  },
  {
-  "school_id": "834e7b6e-2fa4-40bd-b824-eb295b4a2c49",
+  "school_id": "74135b8c-ccec-471f-8db7-bd657007ac8e",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -45,10 +45,10 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "",
   "image": "",
-  "address_id": "25a78a19-c9c8-470c-91d1-a4355d220bf7"
+  "address_id": "c64bd813-a869-4b53-b19f-fbbd04c462e5"
  },
  {
-  "school_id": "2a18e631-2b52-42bf-aaef-2e229127bb63",
+  "school_id": "b6c58b33-6de7-425e-9133-2b022a511b27",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -61,10 +61,10 @@
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
   "logo": "",
   "image": "",
-  "address_id": "05c0925b-aefb-4f65-a884-8b2079fde3dc"
+  "address_id": "97f9b272-7b1a-4b8e-b334-f87ef6d4c699"
  },
  {
-  "school_id": "fe34bf7d-e9fa-49e4-a546-bf8c61534833",
+  "school_id": "514e38e0-b1e5-4ff0-b381-d4eda1cc8db8",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -77,6 +77,6 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "",
   "image": "",
-  "address_id": "06df5544-3230-4e86-bad1-a3c296d4cc87"
+  "address_id": "b0f46ba4-f0b2-4885-a2c9-12dc3487d8d6"
  }
 ]

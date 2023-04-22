@@ -1,11 +1,11 @@
-import { State, Action, StateContext } from '@ngxs/store';
+import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { ToggleFilter } from './filter.actions';
-import { FilterItem, Filters } from './filter.model';
+import { FiltersEntity } from './filter.model';
 import { Injectable } from '@angular/core';
 
 export interface FilterStateModel {
   name: string;
-  filters: Filters[];
+  filters: FiltersEntity[];
 }
 
 @State<FilterStateModel>({
@@ -16,11 +16,17 @@ export interface FilterStateModel {
       {
         id: 'asdf',
         name: 'skills',
-        items: [
+        categories: [
           {
             id: 'asdf',
-            name: 'react',
-            selected: true,
+            name: 'apps',
+            tags:[
+              {
+                id: 'asdf',
+                name: 'react',
+                selected: true
+              }
+            ]
           },
         ],
       },
@@ -41,5 +47,10 @@ export class FilterState {
         ...state.filters,
       },
     });
+  }
+  
+  @Selector([FilterState])
+  static filters(state: FilterStateModel):FiltersEntity[] {
+      return state.filters;
   }
 }

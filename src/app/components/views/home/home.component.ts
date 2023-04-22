@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PersonService } from 'src/app/services/person/person.service';
 import { Person } from 'src/app/services/person/person.model';
-import { LinkTypes, linkTypes } from 'src/app/constants';
+import { LinkTypes, linkTypes } from 'src/app/components/components.model';
 import { Contact } from 'src/app/services/contact/contact.model';
 import { ContactService } from 'src/app/services/contact/contact.service';
 import { AgePipe } from 'src/app/pipes/age/age.pipe';

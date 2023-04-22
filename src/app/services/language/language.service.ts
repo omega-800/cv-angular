@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Language } from './language.model';
+import { Language, LanguageEntity } from './language.model';
 import * as languageData from 'src/data/language.json'
 
 @Injectable({
@@ -7,15 +7,18 @@ import * as languageData from 'src/data/language.json'
 })
 
 export class LanguageService {
-  languages:Language[] = (languageData as any).default;
+  languagesData:Language[] = (languageData as any).default;
+  languages:LanguageEntity[];
 
-  constructor() { }
+  constructor() { 
+    this.languages = this.languagesData.map(language => {return {...language, id:"language_"+language.language_id}}) 
+  }
 
-  getLanguages():Language[] {
+  getLanguages():LanguageEntity[] {
     return this.languages;
   }
 
-  getLanguageById(id:string):Language {
+  getLanguageById(id:string):LanguageEntity {
     return Object.values(this.languages).filter(language => language.language_id === id)[0];
   }
 }

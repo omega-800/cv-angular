@@ -1,3 +1,9 @@
+import { ContentEntity } from "src/app/services/entities.model";
+
+export interface KnowledgeEntity extends ContentEntity {
+  knowledge_id: string;
+}
+
 export interface Knowledge {
   knowledge_id: string;
   name: string;

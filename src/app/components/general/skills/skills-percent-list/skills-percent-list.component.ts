@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SkillService } from 'src/app/services/skill/skill.service';
-import { Skill, SkillOnly, SkillSubCategory } from 'src/app/services/skill/skill.model';
+import { Skill, SkillEntity, SkillOnly, SkillSubCategory, SkillSubCategoryEntity } from 'src/app/services/skill/skill.model';
 import { SkillCategoriesService } from 'src/app/services/skill/skill-categories.service';
 
 @Component({
@@ -10,9 +10,9 @@ import { SkillCategoriesService } from 'src/app/services/skill/skill-categories.
 })
 export class SkillsPercentListComponent {
   types:{[key:string]:string};
-  allSkillSubCategories:SkillSubCategory[];
-  allSkills:Skill[];
-  allSkillsByType:{[key:string]:Skill[]} = {};
+  allSkillSubCategories:SkillSubCategoryEntity[];
+  allSkills:SkillEntity[];
+  allSkillsByType:{[key:string]:SkillEntity[]} = {};
 
   constructor(private skillService:SkillService, private skillCategoriesService:SkillCategoriesService) { 
     /*this.skillService.getSkillTypes().forEach(type => {

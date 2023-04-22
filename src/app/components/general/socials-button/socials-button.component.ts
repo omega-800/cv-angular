@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { linkTypes, LinkType, LinkTypes } from '../../../constants';
+import { linkTypes, LinkType, LinkTypes } from 'src/app/components/components.model';
 @Component({
   selector: 'app-socials-button',
   templateUrl: './socials-button.component.html',

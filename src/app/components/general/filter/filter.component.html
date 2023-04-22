@@ -1,3 +1,4 @@
+<p>{{filtersSelected$ | async | json}}</p>
 <form #filterForm="ngForm">
     {{filterForm.value | json}}
     <div class="filter-item" *ngFor="let filter of filterValues | keyvalue">

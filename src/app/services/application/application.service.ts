@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Application, ApplicationOnly, ApplicationType } from './application.model';
+import { Application, ApplicationEntity, ApplicationOnly, ApplicationType, ApplicationTypeEntity } from './application.model';
 import * as applicationData from 'src/data/application.json'
 import * as applicationTypeData from 'src/data/applicationtype.json'
 
@@ -8,33 +8,34 @@ import * as applicationTypeData from 'src/data/applicationtype.json'
 })
 
 export class ApplicationService {
-  applications:Application[];
-  onlyApplications:ApplicationOnly[];
-  applicationTypes:ApplicationType[];
+  onlyApplications:ApplicationOnly[] = (applicationData as any).default;
+  onlyApplicationTypes:ApplicationType[] = (applicationTypeData as any).default;
+  applicationTypes:ApplicationTypeEntity[];
+
+  applications:ApplicationEntity[];
 
   constructor() {
-    this.onlyApplications = (applicationData as any).default;
-    this.applicationTypes = (applicationTypeData as any).default;
+    this.applicationTypes = this.onlyApplicationTypes.map(type => {return {...type, id:"application_"+type.applicationtype_id}});
     this.applications = this.onlyApplications.map(app => this.fillApplicationType(app));
   }
 
-  getApplications():Application[] {
+  getApplications():ApplicationEntity[] {
     return this.applications;
   }
   
-  getApplicationTypes():ApplicationType[] {
+  getApplicationTypes():ApplicationTypeEntity[] {
     return this.applicationTypes;
   }
 
-  getApplicationById(id:string):Application {
+  getApplicationById(id:string):ApplicationEntity {
     return Object.values(this.applications).filter(application => application.application_id === id)[0];
   }
   
-  getApplicationTypeById(id:string):ApplicationType {
+  getApplicationTypeById(id:string):ApplicationTypeEntity {
     return Object.values(this.applicationTypes).filter(applicationtype => applicationtype.applicationtype_id === id)[0];
   }
 
-  fillApplicationType(app:ApplicationOnly):Application {
-    return {...app, applicationtype: this.getApplicationTypeById(app.applicationtype_id)};
+  fillApplicationType(app:ApplicationOnly):ApplicationEntity {
+    return {...app, applicationtype: this.getApplicationTypeById(app.applicationtype_id), id:app.application_id};
   }
 }

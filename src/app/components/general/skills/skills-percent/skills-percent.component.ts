@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SkillService } from 'src/app/services/skill/skill.service';
-import { Skill } from 'src/app/services/skill/skill.model';
+import { Skill, SkillEntity } from 'src/app/services/skill/skill.model';
 
 @Component({
   selector: 'app-skills-percent',
@@ -8,7 +8,7 @@ import { Skill } from 'src/app/services/skill/skill.model';
   styleUrls: ['./skills-percent.component.scss']
 })
 export class SkillsPercentComponent {
-  @Input() skills!: Skill[];
+  @Input() skills!: SkillEntity[];
   @Input() name!: string;
 
 }

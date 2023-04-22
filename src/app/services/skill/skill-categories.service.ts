@@ -2,48 +2,47 @@ import { Injectable } from '@angular/core';
 import * as skillCategoryData from 'src/data/skillcategory.json'
 import * as skillSubCategoryData from 'src/data/skillsubcategory.json'
 import * as skill_skillSubCategoryData from 'src/data/skill_skillsubcategory.json'
-import { SkillCategory, SkillSubCategory, Skill_SkillSubCategory, SkillSubCategoryOnly, SkillOnly } from './skill.model';
+import { SkillCategory, SkillSubCategory, Skill_SkillSubCategory, SkillSubCategoryOnly, SkillOnly, SkillCategoryEntity, SkillSubCategoryEntity } from './skill.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillCategoriesService {
-  skillCategories:SkillCategory[];
-  skillSubCategories:SkillSubCategory[];
-  skillSubCategoryLinks:Skill_SkillSubCategory[];
-  onlySkillSubCategories:SkillSubCategoryOnly[];
+  onlySkillSubCategories:SkillSubCategoryOnly[] = (skillSubCategoryData as any).default;
+  skillCategoriesData:SkillCategory[] = (skillCategoryData as any).default;
+  skillSubCategoryLinks:Skill_SkillSubCategory[] = (skill_skillSubCategoryData as any).default;
+
+  skillCategories:SkillCategoryEntity[];
+  skillSubCategories:SkillSubCategoryEntity[];
 
   constructor() { 
-    this.onlySkillSubCategories = (skillSubCategoryData as any).default;
-
-    this.skillCategories = (skillCategoryData as any).default;
-    this.skillSubCategoryLinks = (skill_skillSubCategoryData as any).default;
+    this.skillCategories = this.skillCategoriesData.map(cat => {return { ...cat, id: cat.skillcategory_id}})
     this.skillSubCategories = this.onlySkillSubCategories.map(subCat => this.fillSubCategory(subCat));
   }
   
-  getSkillCategories():SkillCategory[] {
+  getSkillCategories():SkillCategoryEntity[] {
     return this.skillCategories;
   }
 
-  getSkillCategoryById(id:string):SkillCategory {
-    return Object.values(this.skillCategories).filter(skillCat => skillCat.skillcategory_id === id)[0];
+  getSkillCategoryById(id:string):SkillCategoryEntity {
+    return Object.values(this.skillCategories).filter(skillCat => skillCat.id === id)[0];
   }
 
-  getSkillSubCategories():SkillSubCategory[] {
+  getSkillSubCategories():SkillSubCategoryEntity[] {
     return this.skillSubCategories;
   }
 
-  getSkillSubCategoryById(id:string):SkillSubCategory {
-    return Object.values(this.skillSubCategories).filter(skillSubCat => skillSubCat.skillsubcategory_id === id)[0];
+  getSkillSubCategoryById(id:string):SkillSubCategoryEntity {
+    return Object.values(this.skillSubCategories).filter(skillSubCat => skillSubCat.id === id)[0];
   }
   
-  getSkillSubCategoriesOfSkill(skill:SkillOnly):SkillSubCategory[] {
+  getSkillSubCategoriesOfSkill(skill:SkillOnly):SkillSubCategoryEntity[] {
     let subCategoriesOfSkill:string[] = Object.values(this.skillSubCategoryLinks).filter(link => link.skill_id === skill.skill_id).map(filteredLink => filteredLink.skillsubcategory_id);
-    return Object.values(this.skillSubCategories).filter(subCategory => subCategoriesOfSkill.includes(subCategory.skillsubcategory_id));
+    return Object.values(this.skillSubCategories).filter(skillSubCat => subCategoriesOfSkill.includes(skillSubCat.id));
   }
 
-  fillSubCategory(subCat:SkillSubCategoryOnly):SkillSubCategory {
-    return {...subCat, skillcategory: this.getSkillCategoryById(subCat.skillcategory_id)};
+  fillSubCategory(subCat:SkillSubCategoryOnly):SkillSubCategoryEntity {
+    return {...subCat, skillcategory: this.getSkillCategoryById(subCat.skillcategory_id), id:subCat.skillsubcategory_id};
   }
 
   getOnlySkillSubCategories():SkillSubCategoryOnly[] {

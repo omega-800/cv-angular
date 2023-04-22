@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Activity } from './activity.model';
+import { Activity, ActivityEntity } from './activity.model';
 import * as activityData from 'src/data/activity.json'
 
 @Injectable({
@@ -7,15 +7,18 @@ import * as activityData from 'src/data/activity.json'
 })
 
 export class ActivityService {
-  activitys:Activity[] = (activityData as any).default;
+  onlyActivities:Activity[] = (activityData as any).default;
+  activities:ActivityEntity[];
 
-  constructor() { }
+  constructor() {
+    this.activities = this.onlyActivities.map(item => {return {...item, id:"activity_"+item.activity_id}})
+   }
 
-  getActivitys():Activity[] {
-    return this.activitys;
+  getActivitys():ActivityEntity[] {
+    return this.activities;
   }
 
-  getActivityById(id:string):Activity {
-    return Object.values(this.activitys).filter(activity => activity.activity_id === id)[0];
+  getActivityById(id:string):ActivityEntity {
+    return Object.values(this.activities).filter(activity => activity.activity_id === id)[0];
   }
 }

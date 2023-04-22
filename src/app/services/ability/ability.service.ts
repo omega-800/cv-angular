@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ability } from './ability.model';
+import { Ability, AbilityEntity } from './ability.model';
 import * as abilityData from 'src/data/ability.json'
 
 @Injectable({
@@ -7,15 +7,18 @@ import * as abilityData from 'src/data/ability.json'
 })
 
 export class AbilityService {
-  abilitys:Ability[] = (abilityData as any).default;
+  onlyAbilities:Ability[] = (abilityData as any).default;
+  abilities:AbilityEntity[];
 
-  constructor() { }
-
-  getAbilitys():Ability[] {
-    return this.abilitys;
+  constructor() { 
+    this.abilities = this.onlyAbilities.map(item => {return {...item, id:"ability_"+item.ability_id}});
   }
 
-  getAbilityById(id:string):Ability {
-    return Object.values(this.abilitys).filter(ability => ability.ability_id === id)[0];
+  getAbilitys():AbilityEntity[] {
+    return this.abilities;
+  }
+
+  getAbilityById(id:string):AbilityEntity {
+    return Object.values(this.abilities).filter(ability => ability.ability_id === id)[0];
   }
 }

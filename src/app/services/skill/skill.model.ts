@@ -3,6 +3,12 @@ import { Language } from "../language/language.model";
 import { Knowledge } from "../knowledge/knowledge.model";
 import { Activity } from "../activity/activity.model";
 import { Ability } from "../ability/ability.model";
+import { ContentEntity, NamedEntity } from "src/app/services/entities.model";
+
+export interface SkillCategoryEntity extends NamedEntity {
+  skillcategory_id: string;
+  percent: number;
+}
 
 export interface SkillCategory {
   skillcategory_id: string;
@@ -13,6 +19,11 @@ export interface SkillCategory {
   description_e: string;
   description_r: string;
   percent: number;
+}
+
+export interface SkillSubCategoryEntity extends NamedEntity {
+  skillsubcategory_id: string;
+  skillcategory: SkillCategoryEntity;
 }
 
 export interface SkillSubCategory {
@@ -35,6 +46,28 @@ export interface SkillSubCategoryOnly {
   description: string;
   description_e: string;
   description_r: string;
+}
+
+export interface SkillEntity extends ContentEntity {
+  skill_id: string;
+  identifier: string;
+  hobby: boolean;
+  knowledgepercent: number;
+  proficiencylevel: string;
+  proficiencylevel_e: string;
+  proficiencylevel_r: string;
+  yearsofexperience: number;
+  type:string;
+  skillsubcategories: SkillSubCategoryEntity[];
+  shortname?: string;
+  alternatename?: string;
+  alternatename_e?: string;
+  alternatename_r?: string;
+  keywords?: string;
+  keywords_e?: string;
+  keywords_r?: string;
+  version?: string;
+  applicationtype?: ApplicationType;
 }
 
 export interface Skill {
