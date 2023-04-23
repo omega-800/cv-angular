@@ -16,6 +16,7 @@
         }
     }
     & .bottom {
+        width:100%;
         @include flex-row;
     }
 }

@@ -5,9 +5,7 @@
     padding:$wrapper-padding;
 }
 
-@mixin pill {
-    display:inline-block;
-    padding:$elem-padding;
+@mixin slimpill {
     margin:0;
     border-radius: $elem-border-radius;
     color: $black;
@@ -16,6 +14,12 @@
         family:$mono;
         size:$elem-size;
     }
+}
+
+@mixin pill {
+    @include slimpill;
+    display:inline-block;
+    padding:$elem-padding;
 }
 
 @mixin link {
@@ -51,6 +55,19 @@
         content:space-around;
     }
     justify-content: space-around;
+}
+
+@mixin flex-e2e {
+    display:flex;
+    flex: {
+        direction:row;
+        wrap:wrap;
+    }
+    align: {
+        items:center;
+        content:space-between;
+    }
+    justify-content: space-between;
 }
 
 @mixin flex-column {

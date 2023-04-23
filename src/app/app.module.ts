@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { CareerComponent } from './components/views/career/career.component';
 import { PageNotFoundComponent } from './components/views/page-not-found/page-not-found.component';
-import { SocialsButtonComponent } from './components/general/socials-button/socials-button.component';
 import { HeaderComponent } from './components/general/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { SkillsPercentComponent } from './components/general/skills/skills-percent/skills-percent.component';
@@ -20,6 +19,10 @@ import { ListComponent } from './components/general/list/list.component';
 import { NgxsModule } from '@ngxs/store';
 import { FilterState } from './store/filter/filter.state';
 import { ContentboxComponent } from './components/general/contentbox/contentbox.component';
+import { CarouselComponent } from './components/general/carousel/carousel.component';
+import { ContactpointComponent } from './components/general/contactpoint/contactpoint.component';
+import { ButtonComponent } from './components/general/button/button.component';
+import { AddressComponent } from './components/general/address/address.component';
 
 
 @NgModule({
@@ -28,7 +31,6 @@ import { ContentboxComponent } from './components/general/contentbox/contentbox.
     HomeComponent,
     CareerComponent,
     PageNotFoundComponent,
-    SocialsButtonComponent,
     HeaderComponent,
     SkillsPercentComponent,
     SkillItemComponent,
@@ -38,7 +40,11 @@ import { ContentboxComponent } from './components/general/contentbox/contentbox.
     SkillsFilterPipe,
     AgePipe,
     ListComponent,
-    ContentboxComponent
+    ContentboxComponent,
+    CarouselComponent,
+    ContactpointComponent,
+    ButtonComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,

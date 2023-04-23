@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SocialsButtonComponent } from './socials-button.component';
+import { AddressComponent } from './address.component';
 
-describe('SocialsButtonComponent', () => {
-  let component: SocialsButtonComponent;
-  let fixture: ComponentFixture<SocialsButtonComponent>;
+describe('AddressComponent', () => {
+  let component: AddressComponent;
+  let fixture: ComponentFixture<AddressComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SocialsButtonComponent ]
+      declarations: [ AddressComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SocialsButtonComponent);
+    fixture = TestBed.createComponent(AddressComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

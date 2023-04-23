@@ -5,6 +5,7 @@ import { ContactEntity } from 'src/app/services/contact/contact.model';
 import { ContactService } from 'src/app/services/contact/contact.service';
 import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { PersonService } from 'src/app/services/person/person/person.service';
+import { contactMail, contactPhone, openLink } from '../../general/links.util';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +13,11 @@ import { PersonService } from 'src/app/services/person/person/person.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  me:PersonEntity;
+  me:PersonEntity = this.personService.getPersonByName("Georgiy");
   lt:Readonly<LinkTypes>;
   image:ImageComponent;
+
+  mailText:string = "";
   //age:string;
 
   constructor(private personService:PersonService) { 
@@ -35,5 +38,17 @@ export class HomeComponent {
   }
   */
   ngOnInit():void {
+  }
+  mailMe = () => {
+    return contactMail(this.me.contact.email, this.me.gender, this.me.lastname);
+  }
+  callMe = () => {
+    return contactPhone(this.me.contact.phone);
+  }
+  myLink = () => {
+    return openLink(this.me.url);
+  }
+  myGithub = () => {
+    return openLink(this.me.github);
   }
 }

@@ -2,4 +2,7 @@
 
 :host {
     @include wrapper;
+    & .contactPoints{
+        width:100%;
+    }
 }

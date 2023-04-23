@@ -1,0 +1,5 @@
+<h5>{{contact.name}}</h5>
+<div class="contactButtons">
+    <app-button *ngIf="contact.phone" [onClick]="cp(contact.phone)" [type]="lt.PHONE" name="{{contact.name!}}"></app-button>
+    <app-button *ngIf="contact.email" [onClick]="cm(contact.email)" [type]="lt.MAIL" name="{{contact.name!}}"></app-button>
+</div>

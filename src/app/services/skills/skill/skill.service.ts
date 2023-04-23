@@ -72,7 +72,6 @@ export class SkillService {
       return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...activityService.getActivityById(skill.activity_id), id: "skill_"+skill.skill_id, type:SkillTypes.activity};
     }
     if(skill.ability_id !== ""){  
-      console.log(skill);
       return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...abilityService.getAbilityById(skill.ability_id), id: "skill_"+skill.skill_id, type:SkillTypes.ability};
     }
     return {...skill, id: "skill_"+skill.skill_id, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), type:"", name:"", name_e:"", name_r:"", description:"", description_e:"", description_r:"", thumbnail:"", image:"", url:""};

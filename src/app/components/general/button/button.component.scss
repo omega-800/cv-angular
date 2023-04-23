@@ -2,7 +2,7 @@
 @import 'src/scss/mixins.scss';
 
 :host {
-    & a {
+    & span {
         @include link;
         @include flex-center;
         height:$elem-height;

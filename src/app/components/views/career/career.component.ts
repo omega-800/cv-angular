@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { ImageComponent } from '../../components.model';
+import { ImageComponent, LinkTypes, linkTypes } from '../../components.model';
 import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
+import { contactPhone, contactMail } from '../../general/links.util';
 
 @Component({
   selector: 'app-career',
