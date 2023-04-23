@@ -2,21 +2,58 @@
 @import 'src/scss/mixins.scss';
 
 :host {
-    width: 100%;
-    padding:$wrapper-padding;
-    border:$defborder;
-    margin: $padding 0;
-    @include flex-column;
-    & .top {
-        width:100%;
-        @include flex-row;
-        & img {
-            border-radius: $border-radius-circle;
-            width:$img-width;
+    & >div{
+        width: 100%;
+        border:$defborder;
+        margin: $padding 0;
+        @include flex-column;
+        & .head{
+            width:100%;
+            @include flex-e2e;
+        }
+        & .top {
+            width:100%;
+            @include flex-e2e;
+            & .mainImg, .previewImg {
+                border-radius: $border-radius-circle;
+            }
+        }
+        & .arrowImg{
+            @include link-image;
         }
     }
-    & .bottom {
-        width:100%;
-        @include flex-row;
+    & >:not(.active) {
+        & .arrowImg {
+            transform: rotate(180deg);
+        }
+        & .previewImg{
+            display:block;
+            width:$contentbox-left-s;
+        }
+        & .bottom, .mainImg {
+            display:none;
+        }
+        & .desc {
+            width:$contentbox-right-s;
+            & p, h4{
+                display:none;
+            }
+        }
+    }
+    & >.active {
+        & .mainImg {
+            width: $contentbox-left-b;
+            display:block;
+        }
+        & .previewImg {
+            display:none;
+        }
+        & .desc {
+            width:$contentbox-right-b;
+        }
+        & .bottom {
+            width:100%;
+            @include flex-e2e;
+        }
     }
 }

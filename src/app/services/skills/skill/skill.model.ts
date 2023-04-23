@@ -2,7 +2,6 @@ import { ApplicationTypeEntity } from "../application/application.model";
 import { ContentEntity } from "src/app/services/entities.model";
 import { SkillSubCategoryEntity } from "../skill-category/skill-category.model";
 
-
 export interface SkillEntity extends ContentEntity {
   skill_id: string;
   identifier: string;
@@ -48,19 +47,3 @@ export const SkillTypes = {
   language: "Sprache",
   knowledge: "Wissen"
 } as const;
-
-export interface SkillFilter {
-  category: string[],
-  subcategory: string[],
-  type: string[],
-  hobby: boolean,
-  applicationtype?: string[]
-}
-
-export interface SkillFilter2 {
-  category: {[key:string]:string},
-  subcategory: {[key:string]:string},
-  type: {[key:string]:string},
-  hobby: boolean,
-  applicationtype?: {[key:string]:string}
-}

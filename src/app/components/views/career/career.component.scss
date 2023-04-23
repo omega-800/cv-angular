@@ -2,7 +2,26 @@
 
 :host {
     @include wrapper;
-    & .contactPoints{
+    & .bottomLinks{
+        @include flex-e2e;
         width:100%;
+        & >div{
+            @include flex-list;
+            &>img{
+                @include link-image;
+            }
+            & h5 {
+                @include pill;
+            }
+            & .contactButtons{
+                @include flex-e2e;
+            }
+            align-self:flex-start;
+            width:50%;
+            height:100%;
+        }
+        & div:not(.active)>*:not(img){
+            display:none;
+        }
     }
 }

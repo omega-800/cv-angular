@@ -9,5 +9,5 @@ export const contactPhone = (phone:string) => {
 }
 
 export const openLink = (link:string) => {
-    window.location.href = link;
+    window.open(link, '_blank');
 }

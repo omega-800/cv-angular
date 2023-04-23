@@ -1,6 +1,8 @@
+import { ImageComponent } from "src/app/components/components.model";
 import { Entity, NamedEntity } from "../../entities.model";
 import { SchoolEntity } from "../school/school.model";
 import { WorkplaceEntity } from "../workplace/workplace.model";
+import { personIcon, schoolIcon, workIcon } from "src/app/components/components.constants";
 
 export interface CareerEntity extends NamedEntity {
     career_id: string;
@@ -29,7 +31,7 @@ export interface CareerOnly {
 
 export interface CareerTypeEntity extends Entity {
   name:string,
-  logo:string
+  logo:ImageComponent
 }
 
 export interface CareerTypes {
@@ -43,22 +45,22 @@ export const careerTypes:Readonly<CareerTypes> = {
   SCHOOL: {
     id:"careerType_school",
     name:"Schule", 
-    logo:"assets/img/school.svg"
+    logo:schoolIcon
   },
   WORK: {
     id:"careerType_work",
     name: "Arbeit", 
-    logo:"assets/img/work.svg"
+    logo:workIcon
   },
   SOLO: {
     id:"careerType_solo",
     name: "Selbstständig", 
-    logo:"assets/img/profile.svg"
+    logo:personIcon
   }, 
   OTHER: {
     id:"careerType_other",
     name: "Andere", 
-    logo:"assets/img/work.svg"
+    logo:workIcon
   } 
 } as const;
 

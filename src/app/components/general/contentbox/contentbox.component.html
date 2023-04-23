@@ -1,10 +1,19 @@
-<div class="top">
-    <img src="{{image.path}}" alt="{{image.alt}}">
-    <div class="desc">
-        <h3>{{title}}</h3>
-        <p>{{description}}</p>
+<div #cbToggle>
+    <div class="head">
+        <h3 *ngIf="!link">{{title}}</h3>
+        <h3 *ngIf="link"><a href="{{link}}" target="_blank">{{title}}</a></h3>
+        <img class="arrowImg" (click)="cbToggle.classList.toggle('active')" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}">
     </div>
-</div>
-<div class="bottom">
-    <ng-content></ng-content>
+    <div class="top">
+        <img *ngIf="imagePreview" class="previewImg" src="{{imagePreview.path}}" alt="{{imagePreview.alt}}">
+        <img *ngIf="!imagePreview" class="previewImg" src="{{image.path}}" alt="{{image.alt}}">
+        <img class="mainImg" src="{{image.path}}" alt="{{image.alt}}">
+        <div class="desc">
+            <h4 *ngIf="subTitle">{{subTitle}}</h4>
+            <p>{{description}}</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <ng-content></ng-content>
+    </div>
 </div>

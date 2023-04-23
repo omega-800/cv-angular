@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ImageComponent, LinkTypes, linkTypes } from '../../components.model';
 import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
-import { contactPhone, contactMail } from '../../general/links.util';
+import { contactIcon, addressIcon } from '../../components.constants';
+import { ImageComponent } from '../../components.model';
 
 @Component({
   selector: 'app-career',
@@ -12,8 +12,11 @@ import { contactPhone, contactMail } from '../../general/links.util';
 export class CareerComponent {
   careers:CareerEntity[];
   ct:CareerTypes = careerTypes;
+  contactIcon:ImageComponent = contactIcon;
+  addressIcon:ImageComponent = addressIcon;
 
   constructor(careerService:CareerService){
     this.careers = careerService.getCareers();
   }
 }
+

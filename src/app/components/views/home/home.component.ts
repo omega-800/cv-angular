@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { PersonEntity } from 'src/app/services/person/person/person.model';
-import { ImageComponent, LinkTypes, linkTypes } from 'src/app/components/components.model';
+import { ImageComponent, LinkTypes } from 'src/app/components/components.model';
 import { ContactEntity } from 'src/app/services/contact/contact.model';
 import { ContactService } from 'src/app/services/contact/contact.service';
 import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { contactMail, contactPhone, openLink } from '../../general/links.util';
+import { linkTypes } from '../../components.constants';
 
 @Component({
   selector: 'app-home',

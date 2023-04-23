@@ -4,6 +4,7 @@ import { CareerEntity, CareerOnly, careerTypes } from './career.model';
 import { WorkplaceService } from '../workplace/workplace.service';
 import { isNgTemplate } from '@angular/compiler';
 import { SchoolService } from '../school/school.service';
+import { SchoolEntity } from '../school/school.model';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,8 @@ export class CareerService {
       return {...career, id:"career_"+career.career_id, workplace:workplaceService.getWorkplaceById(career.workplace_id), type:careerTypes.WORK}
     }
     if(career.school_id !== ""){
-      return {...career, id:"career_"+career.career_id, school:schoolService.getSchoolById(career.school_id), type:careerTypes.SCHOOL}
+      let school:SchoolEntity = schoolService.getSchoolById(career.school_id);
+      return {...career, id:"career_"+career.career_id, school:school, type:careerTypes.SCHOOL, description:school.type}
     }
     return {...career, id:career.career_id, type:careerTypes.OTHER}
   }

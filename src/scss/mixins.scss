@@ -32,6 +32,12 @@
     }
 }
 
+@mixin link-image {
+    @include link;
+    height:$elem-height;
+    width:$elem-height;
+}
+
 @mixin prefix($property, $value, $prefixes) {
     @each $prefix in $prefixes {
         -#{$prefix}-#{$property}: $value;

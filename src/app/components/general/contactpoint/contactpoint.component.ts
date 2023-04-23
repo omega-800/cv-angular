@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { ContactEntity } from 'src/app/services/contact/contact.model';
-import { LinkTypes, linkTypes } from '../../components.model';
+import { LinkTypes } from '../../components.model';
 import { contactPhone, contactMail } from '../links.util';
+import { linkTypes } from '../../components.constants';
 
 @Component({
   selector: 'app-contactpoint',
@@ -13,7 +14,7 @@ export class ContactpointComponent {
   lt:LinkTypes=linkTypes;
 
   constructor() {}
-
+  
   cp = (phone:string) => {
     return () => contactPhone(phone);
   }
