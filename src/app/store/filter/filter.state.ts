@@ -1,7 +1,7 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { ToggleFilter } from './filter.actions';
-import { FiltersEntity } from './filter.model';
 import { Injectable } from '@angular/core';
+import { FiltersEntity } from 'src/app/services/filter/filter.model';
 
 export interface FilterStateModel {
   name: string;
@@ -24,7 +24,8 @@ export interface FilterStateModel {
               {
                 id: 'asdf',
                 name: 'react',
-                selected: true
+                selected: true,
+                value:"id"
               }
             ]
           },

@@ -1,16 +1,15 @@
+import { Entity } from "../entities.model"
 
-export interface SkillFilter {
-    category: string[],
-    subcategory: string[],
-    type: string[],
-    hobby: boolean,
-    applicationtype?: string[]
-  }
-  
-  export interface SkillFilter2 {
-    category: {[key:string]:string},
-    subcategory: {[key:string]:string},
-    type: {[key:string]:string},
-    hobby: boolean,
-    applicationtype?: {[key:string]:string}
-  }
+export interface FiltersEntity extends Entity {
+  categories?: FilterCategoryEntity[];
+}
+
+export interface FilterCategoryEntity extends Entity {
+  selected?: boolean;
+  tags: TagEntity[];
+}
+
+export interface TagEntity extends Entity {
+  value:string|boolean|number;
+  selected: boolean;
+}
