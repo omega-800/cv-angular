@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SkillEntity, SkillOnly, SkillTypes} from './skill.model';
 import * as skillData from 'src/data/skill.json'
-import { FiltersEntity } from 'src/app/store/filter/filter.model';
 import { AbilityService } from '../ability/ability.service';
 import { ActivityService } from '../activity/activity.service';
 import { ApplicationService } from '../application/application.service';
@@ -19,11 +18,11 @@ export class SkillService {
   skills:SkillEntity[];
 
   constructor(skillCategoriesService:SkillCategoriesService, applicationService:ApplicationService, languageService:LanguageService, knowledgeService:KnowledgeService, activityService:ActivityService, abilityService:AbilityService) { 
-    this.getFilters();
+    //this.getFilters();
     //this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
     this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
   }
-
+/*
   getFilters():FiltersEntity{
     let x = _.uniq(_.map(this.skills, 'name'));
     return{
@@ -44,7 +43,12 @@ export class SkillService {
       ],
     };
   }
-  
+  */
+ 
+  getSkillById(id:string):SkillEntity {
+    return Object.values(this.skills).filter(skill => skill.skill_id === id)[0];
+  }
+
   getSkills():SkillEntity[] {
     return this.skills;
   }

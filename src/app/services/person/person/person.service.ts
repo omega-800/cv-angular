@@ -30,6 +30,10 @@ export class PersonService {
   getPersonByName(name:string):PersonEntity {
     return Object.values(this.people).filter(person => person.firstname === name)[0];
   }
+  
+  getPersonById(id:string):PersonEntity {
+    return Object.values(this.people).filter(person => person.person_id === id)[0];
+  }
 
   fillPerson(person:PersonOnly, addressService:AddressService, workplaceService:WorkplaceService, schoolService:SchoolService, personCategoryService:PersonCategoryService, contactService:ContactService, countryService:CountryService):PersonEntity {
     let address:AddressEntity = addressService.getAddressById(person.address_id);

@@ -27,6 +27,10 @@ export class CareerService {
     }
     return {...career, id:career.career_id, type:careerTypes.OTHER}
   }
+  
+  getCareerById(id:string):CareerEntity {
+    return Object.values(this.careers).filter(career => career.career_id === id)[0];
+  }
 
   getCareers():CareerEntity[] {
     return this.careers;
