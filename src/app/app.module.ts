@@ -23,6 +23,7 @@ import { CarouselComponent } from './components/general/carousel/carousel.compon
 import { ContactpointComponent } from './components/general/contactpoint/contactpoint.component';
 import { ButtonComponent } from './components/general/button/button.component';
 import { AddressComponent } from './components/general/address/address.component';
+import { ProjectsComponent } from './components/views/projects/projects.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { AddressComponent } from './components/general/address/address.component
     CarouselComponent,
     ContactpointComponent,
     ButtonComponent,
-    AddressComponent
+    AddressComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

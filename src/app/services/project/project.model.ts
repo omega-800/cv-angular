@@ -7,7 +7,7 @@ import { SkillEntity } from "../skills/skill/skill.model";
 export interface ProjectEntity extends ContentEntity {
     project_id: string;
     github: string;
-    date: string;
+    date: Date;
     client: PersonEntity;
     workplace: WorkplaceEntity;
     authors: PersonEntity[];

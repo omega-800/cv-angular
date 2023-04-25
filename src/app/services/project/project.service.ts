@@ -22,6 +22,10 @@ export class ProjectService {
   constructor(personService: PersonService, workplaceService: WorkplaceService, skillService: SkillService) {
     this.projects = this.onlyProjects.map(project => this.fillProject(project, personService, workplaceService, skillService));
   }
+
+  getProjects():ProjectEntity[] {
+    return this.projects;
+  }
   
   getProjectById(id:string):ProjectEntity {
     return Object.values(this.projects).filter(project => project.project_id === id)[0];
@@ -34,7 +38,8 @@ export class ProjectService {
       workplace: workplaceService.getWorkplaceById(project.workplace_id), 
       authors: this.projectAuthorLinks.filter(link => link.project_id == project.project_id).map(link => personService.getPersonById(link.author_id)),
       skills: this.projectSkillLinks.filter(link => link.project_id == project.project_id).map(link => skillService.getSkillById(link.skill_id)),
-      id: project.project_id 
+      id: project.project_id,
+      date: new Date()
     }
   }
 }
