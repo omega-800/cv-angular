@@ -1,0 +1,99 @@
+#age-verification-error{
+	color:red;
+}
+
+.verification-form input{
+    width: auto !important;
+    display: inline;
+	font-family:'roboto_mono', Courier, monospace;
+	padding: 0;
+    margin: 0;
+    line-height: normal;
+    font-size: 13px;
+}
+
+.verification-form{
+	font-family:'roboto_mono', Courier, monospace;
+}
+
+.age-verification{
+	float: left;
+	width:100%;
+    align-items: stretch;
+}
+
+.age-verification,
+.id-verification, 
+.pass-verification{
+	display:flex;
+	flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.id-verification, 
+.pass-verification{
+    align-items: center;
+}
+
+.id-verification > *, 
+.pass-verification > *{
+	display:flex;
+	flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+#id-verification-form,
+#pass-verification-form{
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.id-bottom, 
+.pass-bottom, 
+.id-top, 
+.pass-top{
+	display:flex;
+	flex-direction: column;
+    border: 1px solid black;
+    width:100%;	
+}
+
+.id-top, 
+.pass-top{
+    border-radius: 10px 10px 0 0;
+}
+.id-top{
+	height:100px;
+}
+.pass-top{
+	height:150px;
+}
+
+.id-bottom, 
+.pass-bottom {
+    border-radius: 0 0 10px 10px;
+}
+
+.id-row, 
+.pass-row,
+.age-verification-info {
+    padding: 10px;
+}
+
+.age-verification-info{
+	color:grey;
+}
+
+#pass-profilepic{
+	width: 80px;
+    margin: 10px;
+}
+
+.hidden {
+	display:none;
+}
+
+

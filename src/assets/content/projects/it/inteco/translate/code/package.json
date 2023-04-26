@@ -1,0 +1,24 @@
+{
+  "name": "translate",
+  "version": "1.0.0",
+  "description": "Translates values of .properties files",
+  "main": "translate.js",
+  "dependencies": {
+    "@google-cloud/translate": "^7.0.5",
+    "@types/node": "^18.11.18",
+    "@types/prompt-sync": "^4.2.0",
+    "axios": "^1.2.3",
+    "fs": "0.0.1-security",
+    "google-translate-api-browser": "^3.0.0",
+    "googletrans": "^1.0.4",
+    "prompt-sync": "^4.2.0",
+    "replace": "^1.2.2",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Georgiy Chirokikh Shevoroshkin",
+  "license": "ISC"
+}

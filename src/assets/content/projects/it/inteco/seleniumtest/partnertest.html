@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.true{color: green; border: 1px solid green;}
+.false{color: red; border: 1px solid red;}
+td,th{color: black; border: 1px solid black;}
+th{position:sticky; top:0; background-color:white;}
+</style>
+</head>
+<body>
+<table style:"border: 1px solid black;">
+<thead>
+<tr>
+<th>Nr</th>
+<th>Object</th>
+<th>Name</th>
+<th>Has Logo</th>
+<th>Has Description</th>
+<th>Has Image</th>
+<th>Has Products</th>
+<th>Has Filter</th>
+<th>Filter Works</th>
+<th>Has Website</th>
+<th>Website Works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="bold">1</td>
+<td>country</td><td>USA</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">2</td>
+<td>country</td><td>Deutschland</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">3</td>
+<td>country</td><td>Italien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">4</td>
+<td>country</td><td>Spanien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">5</td>
+<td>country</td><td>Schweiz</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">6</td>
+<td>country</td><td>Frankreich</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">7</td>
+<td>country</td><td>Österreich</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">8</td>
+<td>country</td><td>Kroatien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">9</td>
+<td>country</td><td>Slowenien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">10</td>
+<td>country</td><td>Japan</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">11</td>
+<td>country</td><td>Chile</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">12</td>
+<td>region</td><td>USA/Kalifornien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">13</td>
+<td>region</td><td>USA/Oregon</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">14</td>
+<td>region</td><td>Deutschland/Rheinland-Pfalz / Saarland</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">15</td>
+<td>region</td><td>Deutschland/Hessen</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">16</td>
+<td>region</td><td>Italien/Piemonte</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">17</td>
+<td>region</td><td>Italien/Veneto</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">18</td>
+<td>region</td><td>Italien/Friuli</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">19</td>
+<td>region</td><td>Italien/Alto Adige</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">20</td>
+<td>region</td><td>Italien/Lombardia</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">21</td>
+<td>region</td><td>Italien/Toscana</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">22</td>
+<td>region</td><td>Italien/Campania</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">23</td>
+<td>region</td><td>Italien/Puglia</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">24</td>
+<td>region</td><td>Italien/Sicilia</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">25</td>
+<td>region</td><td>Italien/Sardegna</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">26</td>
+<td>region</td><td>Italien/Trentino</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">27</td>
+<td>region</td><td>Spanien/Katalonien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">28</td>
+<td>region</td><td>Spanien/Kastilien-León</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">29</td>
+<td>region</td><td>Spanien/La Rioja</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">30</td>
+<td>region</td><td>Schweiz/Zentralschweiz</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">31</td>
+<td>region</td><td>Schweiz/Ostschweiz</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">32</td>
+<td>region</td><td>Schweiz/Westschweiz</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">33</td>
+<td>region</td><td>Schweiz/Südschweiz</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">34</td>
+<td>region</td><td>Frankreich/Bordeaux</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">35</td>
+<td>region</td><td>Frankreich/Südfrankreich</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">36</td>
+<td>region</td><td>Frankreich/Burgund</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">37</td>
+<td>region</td><td>Frankreich/Champagne</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">38</td>
+<td>region</td><td>Frankreich/Cognac</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">39</td>
+<td>region</td><td>Frankreich/Gascogne</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">40</td>
+<td>region</td><td>Österreich/Tirol</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">41</td>
+<td>region</td><td>Österreich/Steiermark</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">42</td>
+<td>region</td><td>Österreich/Burgenland</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">43</td>
+<td>region</td><td>Kroatien/Istrien</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">44</td>
+<td>region</td><td>Slowenien/Primorska - Adria-Küstenland</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">45</td>
+<td>region</td><td>Japan/Chubu</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">46</td>
+<td>region</td><td>Chile/Valle de Aconcagua</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">47</td>
+<td>region</td><td>Chile/Valle del Huasco</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">48</td>
+<td>region</td><td>Chile/Valle de Colchagua</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr>
+<td class="bold">49</td>
+<td>partner</td><td>USA/Kalifornien/The Alpha Omega Collective</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">50</td>
+<td>partner</td><td>USA/Kalifornien/Mount Brave</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">51</td>
+<td>partner</td><td>USA/Kalifornien/Lokoya</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">52</td>
+<td>partner</td><td>USA/Kalifornien/The unfiltered Collection</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">53</td>
+<td>partner</td><td>USA/Kalifornien/Opus One Winery</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">54</td>
+<td>partner</td><td>USA/Kalifornien/Anakota</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">55</td>
+<td>partner</td><td>USA/Oregon/Domaine Serene</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">56</td>
+<td>partner</td><td>Deutschland/Rheinland-Pfalz / Saarland/Reichsgraf von Kesselstatt</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">57</td>
+<td>partner</td><td>Deutschland/Rheinland-Pfalz / Saarland/Atlan &amp; Artisan</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">58</td>
+<td>partner</td><td>Deutschland/Rheinland-Pfalz / Saarland/Reichsgraf von Kesselstatt</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">59</td>
+<td>partner</td><td>Deutschland/Rheinland-Pfalz / Saarland/Reichsgraf von Kesselstatt</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">60</td>
+<td>partner</td><td>Deutschland/Hessen/August Kesseler</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">61</td>
+<td>partner</td><td>Italien/Piemonte/Lavorazione Legnami</td><td class="false">False</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">62</td>
+<td>partner</td><td>Italien/Piemonte/Enrico Serafino</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">63</td>
+<td>partner</td><td>Italien/Piemonte/Cantina Coppo</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">64</td>
+<td>partner</td><td>Italien/Piemonte/Enrico Serafino</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">65</td>
+<td>partner</td><td>Italien/Piemonte/Enrico Serafino</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">66</td>
+<td>partner</td><td>Italien/Piemonte/Enrico Serafino</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">67</td>
+<td>partner</td><td>Italien/Piemonte/Enrico Serafino</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">68</td>
+<td>partner</td><td>Italien/Piemonte/Roberto Voerzio</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">69</td>
+<td>partner</td><td>Italien/Piemonte/Gin Arte</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">70</td>
+<td>partner</td><td>Italien/Piemonte/Roberto Cavalli Vodka</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">71</td>
+<td>partner</td><td>Italien/Piemonte/Azienda Agricola Zaccaria</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">72</td>
+<td>partner</td><td>Italien/Veneto/Cecilia Beretta</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">73</td>
+<td>partner</td><td>Italien/Veneto/Pasqua</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">74</td>
+<td>partner</td><td>Italien/Veneto/La Giuva</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">75</td>
+<td>partner</td><td>Italien/Veneto/Vantorosso</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">76</td>
+<td>partner</td><td>Italien/Veneto/Santa Margherita</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">77</td>
+<td>partner</td><td>Italien/Friuli/Michele Moschioni</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">78</td>
+<td>partner</td><td>Italien/Friuli/Borgo San Daniele</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">79</td>
+<td>partner</td><td>Italien/Friuli/Silvio Jermann</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">80</td>
+<td>partner</td><td>Italien/Alto Adige/Kellerei Kaltern</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">81</td>
+<td>partner</td><td>Italien/Alto Adige/Villa Laviosa</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">82</td>
+<td>partner</td><td>Italien/Alto Adige/Cantina Terlano</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">83</td>
+<td>partner</td><td>Italien/Lombardia/Ca' del Bosco</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">84</td>
+<td>partner</td><td>Italien/Lombardia/Il Borgo del Balsamico</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">85</td>
+<td>partner</td><td>Italien/Toscana/Icario</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">86</td>
+<td>partner</td><td>Italien/Toscana/Tenuta Tignanello</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">87</td>
+<td>partner</td><td>Italien/Toscana/Tenuta di Arceno</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">88</td>
+<td>partner</td><td>Italien/Toscana/Tenuta degli Dei</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">89</td>
+<td>partner</td><td>Italien/Toscana/Tenuta Sette Ponti</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">90</td>
+<td>partner</td><td>Italien/Toscana/Antonio Mattei</td><td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">91</td>
+<td>partner</td><td>Italien/Toscana/Monteverro</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">92</td>
+<td>partner</td><td>Italien/Toscana/Poggio Argentiera</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">93</td>
+<td>partner</td><td>Italien/Toscana/Caiarossa</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">94</td>
+<td>partner</td><td>Italien/Toscana/Tua Rita</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">95</td>
+<td>partner</td><td>Italien/Toscana/Castello del Terriccio</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">96</td>
+<td>partner</td><td>Italien/Toscana/Masseto</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">97</td>
+<td>partner</td><td>Italien/Toscana/Podere Giodo</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">98</td>
+<td>partner</td><td>Italien/Toscana/Montepeloso</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">99</td>
+<td>partner</td><td>Italien/Campania/San Salvatore 1988</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">100</td>
+<td>partner</td><td>Italien/Puglia/MUMA Gin</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">101</td>
+<td>partner</td><td>Italien/Puglia/Antico Frantoio Muraglia</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">102</td>
+<td>partner</td><td>Italien/Sicilia/Podere Giodo</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">103</td>
+<td>partner</td><td>Italien/Sicilia/Palmento Costanzo</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">104</td>
+<td>partner</td><td>Italien/Sicilia/Feudo Maccari</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">105</td>
+<td>partner</td><td>Italien/Sardegna/Sella &amp; Mosca</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">106</td>
+<td>partner</td><td>Italien/Trentino/Palazzo Lodron</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">107</td>
+<td>partner</td><td>Spanien/Katalonien/Vinyes d'en Gabriel</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">108</td>
+<td>partner</td><td>Spanien/Katalonien/Clos Maria Wines</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">109</td>
+<td>partner</td><td>Spanien/Katalonien/Costers del Priorat</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">110</td>
+<td>partner</td><td>Spanien/Katalonien/Perinet</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">111</td>
+<td>partner</td><td>Spanien/Katalonien/Alvaro Palacios</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">112</td>
+<td>partner</td><td>Spanien/Kastilien-León/Dominio de Pingus</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">113</td>
+<td>partner</td><td>Spanien/Kastilien-León/Bodegas Pinea</td><td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">114</td>
+<td>partner</td><td>Spanien/La Rioja/Bodegas Remelluri by Telmo Rodriguez</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">115</td>
+<td>partner</td><td>Schweiz/Zentralschweiz/Weingut zum Sternen</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">116</td>
+<td>partner</td><td>Schweiz/Ostschweiz/Kellerei Rötiberg</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">117</td>
+<td>partner</td><td>Schweiz/Westschweiz/Domaine Les Grand Clos</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">118</td>
+<td>partner</td><td>Schweiz/Westschweiz/Hasler Weine</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">119</td>
+<td>partner</td><td>Schweiz/Westschweiz/Maison Rouge</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">120</td>
+<td>partner</td><td>Schweiz/Südschweiz/Cormano Vini</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">121</td>
+<td>partner</td><td>Schweiz/Südschweiz/Vinattieri</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">122</td>
+<td>partner</td><td>Schweiz/Südschweiz/MRK - Rainer Design</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">123</td>
+<td>partner</td><td>Frankreich/Bordeaux/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">124</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château La Grezette</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">125</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Cos d'Estournel</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">126</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château les Bertrands</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">127</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Pichon Longueville Comtesse de Lalande</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">128</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Lynch Bages</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">129</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Branaire</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">130</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château de Pressac</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">131</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Valandraud</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">132</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château La Confession</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">133</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Pèby Faugères</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">134</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Faugères</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">135</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Rocheyron</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">136</td>
+<td>partner</td><td>Frankreich/Bordeaux/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">137</td>
+<td>partner</td><td>Frankreich/Bordeaux/Domaine de Chevalier</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">138</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Les Hauts de Smith</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">139</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château de Francs</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">140</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Lafaurie-Peyraguey</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">141</td>
+<td>partner</td><td>Frankreich/Bordeaux/Château Cap de Faugères</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">142</td>
+<td>partner</td><td>Frankreich/Südfrankreich/Mas Llossanes</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">143</td>
+<td>partner</td><td>Frankreich/Südfrankreich/Guillaume Gonnet</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">144</td>
+<td>partner</td><td>Frankreich/Südfrankreich/Guillaume Gonnet</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">145</td>
+<td>partner</td><td>Frankreich/Südfrankreich/Guillaume Gonnet</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">146</td>
+<td>partner</td><td>Frankreich/Südfrankreich/Maison Saint AIX</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">147</td>
+<td>partner</td><td>Frankreich/Südfrankreich/Chêne Bleu</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">148</td>
+<td>partner</td><td>Frankreich/Burgund/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">149</td>
+<td>partner</td><td>Frankreich/Champagne/Deutz</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">150</td>
+<td>partner</td><td>Frankreich/Champagne/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">151</td>
+<td>partner</td><td>Frankreich/Champagne/Louis Roederer</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">152</td>
+<td>partner</td><td>Frankreich/Cognac/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">153</td>
+<td>partner</td><td>Frankreich/Gascogne/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">154</td>
+<td>partner</td><td>Österreich/Tirol/MagnuMaster</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">155</td>
+<td>partner</td><td>Österreich/Steiermark/Hannes Sabathi</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">156</td>
+<td>partner</td><td>Österreich/Steiermark/Weingut Wohlmuth</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">157</td>
+<td>partner</td><td>Österreich/Burgenland/Keringer Massiv Wine</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">158</td>
+<td>partner</td><td>Österreich/Burgenland/Kracher Weinlaubenhof</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">159</td>
+<td>partner</td><td>Österreich/Burgenland/Gernot Heinrich</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">160</td>
+<td>partner</td><td>Österreich/Burgenland/Reunion</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">161</td>
+<td>partner</td><td>Kroatien/Istrien/Chiavalon</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">162</td>
+<td>partner</td><td>Slowenien/Primorska - Adria-Küstenland/TILIA Estate</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">163</td>
+<td>partner</td><td>Japan/Chubu/Pont des Arts</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">164</td>
+<td>partner</td><td>Chile/Valle de Aconcagua/Seña</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+</tr>
+<tr>
+<td class="bold">165</td>
+<td>partner</td><td>Chile/Valle del Huasco/Tara</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">166</td>
+<td>partner</td><td>Chile/Valle del Huasco/Ilegal Malted Wine</td><td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="false">False</td>
+</tr>
+<tr>
+<td class="bold">167</td>
+<td>partner</td><td>Chile/Valle de Colchagua/Vina Ventisquero</td><td class="true">True</td>
+<td class="false">False</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="true">True</td>
+<td class="false">False</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+
+    <title>Shop User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="${this.request.contextPath}/.resources/admin-css/admin-all.css" type="text/css" rel="stylesheet" />
+    
+	<script type="text/javascript" src="${this.request.contextPath}/.resources/js/external/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="${this.request.contextPath}/.resources/admin-js/customViewConfigPages.js"></script>
+
+    [#--
+      Local Style
+      (It is better practice to do the styling in intecoTheme.css or even better in a new css file
+      under [customShop -> "/.resources/admin-css/"] which than has to be added to intecoSetup.css)
+    --]
+    <style type="text/css">
+
+ 	  </style>
+
+  </head>
+    [#if message?exists]
+    <div class="pageframe" style="width:300px;">
+        <pre>${message}</pre>
+        <hr />
+    </div>
+    [/#if]
+  	<div class="pageframe" style="width:300px;">
+      <!-- ab hier eigener code-->
+      <h3>Age restriction</h3>
+      <form method="post" action="" enctype="multipart/form-data" id="ageRestriction">
+        <label for="weine">Weine</label>: <br/>
+        <input type="text" value="${this.weine}" name="weine"/> <br/><br/>
+        <label for="spirituosen">Spirituosen</label>: <br/>
+        <input type="text" value="${this.spirituosen}" name="spirituosen"/> <br/><br/>
+        <label for="bier">Bier</label>: <br/>
+        <input type="text" value="${this.bier}" name="bier"/> <br/><br/>
+        <label for="andere">Andere</label>: <br/>
+        <input type="text" value="${this.andere}" name="andere"/> <br/><br/>
+
+        <input type="hidden" name="command" value="saveMinAge" />
+        <input type="submit" value="Speichern" /><br/>
+      </form>
+      <!-- ende eigener code -->
+    </div>
+     
+  </body>
+</html>
+

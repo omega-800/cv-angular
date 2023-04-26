@@ -1,0 +1,203 @@
+
+/* confirm age popup */
+#confirmAge {
+	position: fixed;
+  	z-index: 999;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow: auto;
+  	background-color: rgba(0,0,0,0.4);
+  	display:none;
+  	font-size:24px;
+}
+
+#confirmAge #modal {
+	position:fixed;
+	top:10%;
+	left:10%;
+	background-color:#dfdfdf;
+  	width: 80%;
+  	height: 80%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	line-height:1.2;
+  	border-radius:10px;
+}
+
+#confirmAge #modal div {
+	width:100%;	
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+#confirmAge #modal div * {
+	width:80%;
+	align-self:center;
+}
+
+#confirmAge #modal div:first-child {
+	background-color: hsla(353, 65%, 55%, 1);
+	height:20%;
+  	border-radius:10px 10px 0 0;
+}
+
+#confirmAge #modal div:last-child {
+	background-color: #dfdfdf;
+	height:20%;
+  	border-radius:0 0 10px 10px;
+}
+
+#confirmAge #modal div:nth-child(even) {
+	background-color: #dfdfdf;
+	height:55%;
+	margin-top: 5%;
+}
+
+#confirmAge h1{
+	color:#dfdfdf;
+	text-align:center;
+	font-size:2em;
+}
+
+#confirmAge p{
+	text-align:justify;
+	font-size:1em;
+}
+
+#confirmAge .button {
+	text-align:center;
+	margin: auto 0;
+	padding: 12px 0;
+	font-size:1em;
+}
+
+@media screen and (max-device-width: 600px) {
+	#confirmAge #modal {
+	  	width: 90%;
+	  	height: 80%;
+	  	top:10%;
+	  	left:5%;
+	}
+	
+	#confirmAge h1{
+		font-size:6em;
+	}
+	
+	#confirmAge p, #confirmAge .button{
+		font-size:4em;
+	}
+}
+
+/* confirm age popup small */
+#confirmAgeSmall {
+	position: fixed;
+  	z-index: 999;
+  	left: 10px;
+  	bottom: 10px;
+  	width: calc(100% - 20px);
+  	height: 15%;
+  	overflow: auto;
+  	display:none;
+  	border-radius:4px;
+  	font-size:12px;
+}
+
+#confirmAgeSmall #modal {
+	background-color:#dfdfdf;
+  	width: 100%;
+  	height: 100%;
+	display:grid;
+	grid-template-columns: 1% 85% 1% 12% 1%;
+	grid-template-rows: 30% 5% 60% 5%;
+	grid-template-areas:
+	"title	title	title	title	title"
+	".		.		.		.		."
+	".		text	.		button	."
+	".		.		.		.		.";
+}
+
+#confirmAgeSmall #modal div {
+	width:100%;	
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:left;
+}
+
+#confirmAgeSmall #modal div:first-child {
+	grid-area:title;
+	background-color: hsla(353, 65%, 55%, 1);
+}
+
+#confirmAgeSmall #modal div:last-child {
+	grid-area:button;
+	background-color: #dfdfdf;
+}
+
+#confirmAgeSmall #modal div:nth-child(even) {
+	grid-area:text;
+	background-color: #dfdfdf;
+}
+
+#confirmAgeSmall h1{
+	color:#dfdfdf;
+	margin:auto 0 auto 1%;
+	font-size:1.7em;
+}
+
+#confirmAgeSmall p{
+	margin:auto 0;
+	text-align: justify;
+	font-size:1em;
+}
+
+#confirmAgeSmall .button{
+	margin:auto;
+	text-align:center;
+	font-size:1em;
+}
+
+@media screen and (max-device-width: 600px) {
+	#confirmAgeSmall {
+	  	width: 100%;
+	  	height: 25%; 
+	  	bottom:0;
+	  	left:0;
+	}
+	
+	#confirmAgeSmall h1{
+		font-size:4em;
+		margin:0 auto;
+	}
+	
+	#confirmAgeSmall p, #confirmAgeSmall .button{
+		text-align:center;
+		font-size:3em;
+		line-height:1.2;
+	}
+	
+	#confirmAgeSmall #modal {
+		grid-template-columns: 5% 90% 5%;
+		grid-template-rows: 20% 1% 55% 1% 22% 1%;
+		grid-template-areas:
+		"title	title	title"
+		".		.		."
+		".		text	."
+		".		.		."
+		".		button	."
+		".		.		.";
+	}
+}
+
+@-moz-document url-prefix() {
+	@media screen and (max-device-width: 600px) {
+	 	#confirmAge, #confirmAgeSmall {
+			font-size: 4px;  
+	    }
+	}
+}

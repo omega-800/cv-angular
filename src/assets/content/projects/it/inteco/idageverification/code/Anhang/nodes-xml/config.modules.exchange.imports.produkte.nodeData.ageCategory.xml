@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="ageCategory" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:contentNode</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+    <sv:value>mix:lockable</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>363cc5b4-f33d-44b7-9bd4-8b7a404dfa4b</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:property sv:name="name" sv:type="String">
+    <sv:value>ageCategory</sv:value>
+  </sv:property>
+  <sv:property sv:name="sql" sv:type="String">
+    <sv:value>SELECT CASE WHEN os20_typ IN('rotw','weis','sues','rose', 'scha') THEN "weine" WHEN os20_typ = 'spir' THEN "spirituosen" WHEN LEFT(os20_shop_stcd , 5) = 61650 THEN "bier" ELSE "andere" END FROM os20 WHERE os20_artnr = "$1"</sv:value>
+  </sv:property>
+  <sv:property sv:name="type" sv:type="String">
+    <sv:value>String</sv:value>
+  </sv:property>
+  <sv:node sv:name="MetaData">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:metaData</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activated" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:activatorid" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:authorid" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+      <sv:value>2012-12-07T13:57:38.476+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastaction" sv:type="Date">
+      <sv:value>2020-10-30T12:44:25.580+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+      <sv:value>2023-03-08T10:35:58.634+01:00</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>
