@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './components/views/page-not-found/page-no
 import { ProjectsComponent } from './components/views/projects/projects.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'career', component: CareerComponent },
   { path: 'projects', component: ProjectsComponent },

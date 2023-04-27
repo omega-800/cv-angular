@@ -15,6 +15,15 @@ export class ContentboxComponent {
   @Input() image!: ImageComponent;
   @Input() imagePreview?: ImageComponent;
   arrowIcon:ImageComponent = arrowIcon;
+  images:string[];
 
-  constructor () {}
+  constructor () {
+    this.images = [];
+  }
+
+  ngOnInit(){
+    if(this.image.path.endsWith("/")){
+
+    }
+  }
 }
