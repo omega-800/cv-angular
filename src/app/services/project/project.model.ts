@@ -1,3 +1,4 @@
+import { ImageComponent } from "src/app/components/components.model";
 import { CareerEntity } from "../career/career/career.model";
 import { WorkplaceEntity } from "../career/workplace/workplace.model";
 import { ContentEntity } from "../entities.model";
@@ -12,6 +13,7 @@ export interface ProjectEntity extends ContentEntity {
     workplace: WorkplaceEntity;
     authors: PersonEntity[];
     skills: SkillEntity[];
+    images: ImageComponent[];
 }
 
 export interface ProjectOnly {

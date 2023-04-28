@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ImageComponent } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
 
@@ -7,23 +7,21 @@ import { arrowIcon } from '../../components.constants';
   templateUrl: './contentbox.component.html',
   styleUrls: ['./contentbox.component.scss']
 })
-export class ContentboxComponent {
+export class ContentboxComponent implements OnInit{
   @Input() title!: string;
   @Input() subTitle?: string;
   @Input() description!: string;
   @Input() link?: string;
-  @Input() image!: ImageComponent;
+  @Input() images!: ImageComponent[];
   @Input() imagePreview?: ImageComponent;
   arrowIcon:ImageComponent = arrowIcon;
-  images:string[];
+  isCarousel:boolean = false;
 
-  constructor () {
-    this.images = [];
-  }
+  constructor () {}
 
   ngOnInit(){
-    if(this.image.path.endsWith("/")){
-
+    if(this.images.length > 1){
+      this.isCarousel = true;
     }
   }
 }
