@@ -1,3 +1,4 @@
+
 {
   "hosting": {
     "public": "public",
@@ -11,3 +12,4 @@
     "rules": "storage.rules"
   }
 }
+

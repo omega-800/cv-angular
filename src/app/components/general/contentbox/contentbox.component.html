@@ -6,8 +6,9 @@
     </div>
     <div class="top">
         <img *ngIf="imagePreview" class="previewImg" src="{{imagePreview.path}}" alt="{{imagePreview.alt}}">
-        <img *ngIf="!imagePreview" class="previewImg" src="{{image.path}}" alt="{{image.alt}}">
-        <img class="mainImg" src="{{image.path}}" alt="{{image.alt}}">
+        <!--img *ngIf="!imagePreview" class="previewImg" src="{{images[0].path}}" alt="{{images[0].alt}}"-->
+        <img *ngIf="isCarousel" class="mainImg" src="{{images[0].path}}" alt="{{images[0].alt}}">
+        <img *ngIf="!isCarousel" class="mainImg" src="{{images[0].path}}" alt="{{images[0].alt}}">
         <div class="desc">
             <h4 *ngIf="subTitle">{{subTitle}}</h4>
             <p>{{description}}</p>

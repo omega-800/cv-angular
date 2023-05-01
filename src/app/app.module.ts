@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/views/home/home.component';
@@ -24,7 +23,9 @@ import { ContactpointComponent } from './components/general/contactpoint/contact
 import { ButtonComponent } from './components/general/button/button.component';
 import { AddressComponent } from './components/general/address/address.component';
 import { ProjectsComponent } from './components/views/projects/projects.component';
-
+import { environment } from 'src/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireStorageModule  } from '@angular/fire/compat/storage';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,9 @@ import { ProjectsComponent } from './components/views/projects/projects.componen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxsModule.forRoot([FilterState])
+    NgxsModule.forRoot([FilterState]),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
