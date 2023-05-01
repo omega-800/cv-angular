@@ -7,8 +7,8 @@ import * as languageData from 'src/data/language.json'
 })
 
 export class LanguageService {
-  onlyLanguages:LanguageOnly[] = (languageData as any).default;
-  languages:LanguageEntity[];
+  private onlyLanguages:LanguageOnly[] = (languageData as any).default;
+  private languages:LanguageEntity[];
 
   constructor() { 
     this.languages = this.onlyLanguages.map(language => {return {...language, id:"language_"+language.language_id}}) 

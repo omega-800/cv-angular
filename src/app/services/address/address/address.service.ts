@@ -7,10 +7,10 @@ import { CountryService } from '../country/country.service';
   providedIn: 'root'
 })
 export class AddressService {
-  onlyAddresses:AddressOnly[] = (addressData as any).default;
-  addresses:AddressEntity[];
+  private onlyAddresses:AddressOnly[] = (addressData as any).default;
+  private addresses:AddressEntity[];
 
-  constructor(countryService:CountryService) { 
+  constructor(private countryService:CountryService) { 
     this.addresses = this.onlyAddresses.map(address => {return {...address, id: "address_"+address.address_id, name:address.street, country: countryService.getCountryById(address.country_id)}})
   }
 

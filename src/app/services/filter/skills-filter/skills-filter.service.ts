@@ -48,10 +48,10 @@ export class SkillsFilterService {
   applicationtype: FilterCategoryEntity;
   skillFilters: SkillFiltersEntity;
 
-  constructor(skillService:SkillService, skillCategoriesService:SkillCategoriesService, applicationService:ApplicationService) { 
-    this.category = this.getCategoryFilters(skillCategoriesService);
-    this.subcategory = this.getSubCategoryFilters(skillCategoriesService);
-    this.applicationtype = this.getApplicationTypeFilters(applicationService);
+  constructor(private skillService:SkillService, private skillCategoriesService:SkillCategoriesService, private applicationService:ApplicationService) { 
+    this.category = this.getCategoryFilters();
+    this.subcategory = this.getSubCategoryFilters();
+    this.applicationtype = this.getApplicationTypeFilters();
     this.skillFilters = {
       id:"filter_skill", 
       name:"Skills", 
@@ -67,34 +67,34 @@ export class SkillsFilterService {
     return this.skillFilters;
   }
 
-  getCategoryFilters(skillCategoriesService:SkillCategoriesService):FilterCategoryEntity {
+  getCategoryFilters():FilterCategoryEntity {
     return {
       id:"filter_skill_category",
       name:"Category",
       selected:true,
-      tags: skillCategoriesService.getSkillCategories().map(skillCat => {
+      tags: this.skillCategoriesService.getSkillCategories().map(skillCat => {
         return { id:"filter_skill_category_"+skillCat.id, name:skillCat.name, selected: false, value: skillCat.skillcategory_id}
       })
     };
   }
 
-  getSubCategoryFilters(skillCategoriesService:SkillCategoriesService):FilterCategoryEntity {
+  getSubCategoryFilters():FilterCategoryEntity {
     return {
       id:"filter_skill_subcategory",
       name:"Subcategory",
       selected:true,
-      tags: skillCategoriesService.getSkillSubCategories().map(skillSubCat => {
+      tags: this.skillCategoriesService.getSkillSubCategories().map(skillSubCat => {
         return { id:"filter_skill_subcategory_"+skillSubCat.id, name:skillSubCat.name, selected: false, value: skillSubCat.skillsubcategory_id}
       })
     };
   }
   
-  getApplicationTypeFilters(applicationService:ApplicationService):FilterCategoryEntity {
+  getApplicationTypeFilters():FilterCategoryEntity {
     return {
       id:"filter_skill_applicationtype",
       name:"Application type",
       selected:true,
-      tags: applicationService.getApplicationTypes().map(appType => {
+      tags: this.applicationService.getApplicationTypes().map(appType => {
         return { id:"filter_skill_applicationtype_"+appType.id, name:appType.name, selected: false, value: appType.applicationtype_id}
       })
     };

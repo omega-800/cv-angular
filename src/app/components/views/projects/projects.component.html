@@ -1,6 +1,6 @@
 <div *ngFor="let project of projects">
     <app-contentbox 
-        [images]='project.images'
+        [image]='{id:"firebase_link",alt:"",name:"",path:project.image}'
         title="{{project.name}}" 
         subTitle="{{project.name}}" 
         description="{{project.description}}"

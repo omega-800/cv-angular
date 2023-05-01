@@ -7,8 +7,8 @@ import * as activityData from 'src/data/activity.json'
 })
 
 export class ActivityService {
-  onlyActivities:ActivityOnly[] = (activityData as any).default;
-  activities:ActivityEntity[];
+  private onlyActivities:ActivityOnly[] = (activityData as any).default;
+  private activities:ActivityEntity[];
 
   constructor() {
     this.activities = this.onlyActivities.map(item => {return {...item, id:"activity_"+item.activity_id}})

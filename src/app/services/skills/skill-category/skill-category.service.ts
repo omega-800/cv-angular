@@ -9,12 +9,12 @@ import { SkillSubCategoryOnly, SkillCategoryOnly, Skill_SkillSubCategory, SkillC
   providedIn: 'root'
 })
 export class SkillCategoriesService {
-  onlySkillSubCategories:SkillSubCategoryOnly[] = (skillSubCategoryData as any).default;
-  onlySkillCategories:SkillCategoryOnly[] = (skillCategoryData as any).default;
-  skillSubCategoryLinks:Skill_SkillSubCategory[] = (skill_skillSubCategoryData as any).default;
+  private onlySkillSubCategories:SkillSubCategoryOnly[] = (skillSubCategoryData as any).default;
+  private onlySkillCategories:SkillCategoryOnly[] = (skillCategoryData as any).default;
+  private skillSubCategoryLinks:Skill_SkillSubCategory[] = (skill_skillSubCategoryData as any).default;
 
-  skillCategories:SkillCategoryEntity[];
-  skillSubCategories:SkillSubCategoryEntity[];
+  private skillCategories:SkillCategoryEntity[];
+  private skillSubCategories:SkillSubCategoryEntity[];
 
   constructor() { 
     this.skillCategories = this.onlySkillCategories.map(cat => {return { ...cat, id: "skillCategory_"+cat.skillcategory_id}})

@@ -14,13 +14,13 @@ var _ = require('underscore');
 })
 export class SkillService {
 
-  onlySkills:SkillOnly[] = (skillData as any).default;
-  skills:SkillEntity[];
+  private onlySkills:SkillOnly[] = (skillData as any).default;
+  private skills:SkillEntity[];
 
-  constructor(skillCategoriesService:SkillCategoriesService, applicationService:ApplicationService, languageService:LanguageService, knowledgeService:KnowledgeService, activityService:ActivityService, abilityService:AbilityService) { 
+  constructor(private skillCategoriesService:SkillCategoriesService, private applicationService:ApplicationService, private languageService:LanguageService, private knowledgeService:KnowledgeService, private activityService:ActivityService, private abilityService:AbilityService) { 
     //this.getFilters();
     //this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
-    this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
+    this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill));
   }
 /*
   getFilters():FiltersEntity{
@@ -62,23 +62,23 @@ export class SkillService {
     return Object.values(this.skills).filter(skill => skill.type === type);
   }
   
-  fillSkillProps(skill:SkillOnly, skillCategoriesService:SkillCategoriesService, applicationService:ApplicationService, languageService:LanguageService, knowledgeService:KnowledgeService, activityService:ActivityService, abilityService:AbilityService):SkillEntity {
+  fillSkillProps(skill:SkillOnly):SkillEntity {
     if(skill.application_id !== ""){ 
-      return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...applicationService.getApplicationById(skill.application_id), id: "skill_"+skill.skill_id, type:SkillTypes.application}; 
+      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.applicationService.getApplicationById(skill.application_id), id: "skill_"+skill.skill_id, type:SkillTypes.application}; 
     }
     if(skill.language_id !== ""){
-      return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...languageService.getLanguageById(skill.language_id), id: "skill_"+skill.skill_id, type:SkillTypes.language}; 
+      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.languageService.getLanguageById(skill.language_id), id: "skill_"+skill.skill_id, type:SkillTypes.language}; 
     }
     if(skill.knowledge_id !== ""){  
-      return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...knowledgeService.getKnowledgeById(skill.knowledge_id), id: "skill_"+skill.skill_id, type:SkillTypes.knowledge};
+      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.knowledgeService.getKnowledgeById(skill.knowledge_id), id: "skill_"+skill.skill_id, type:SkillTypes.knowledge};
     }
     if(skill.activity_id !== ""){ 
-      return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...activityService.getActivityById(skill.activity_id), id: "skill_"+skill.skill_id, type:SkillTypes.activity};
+      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.activityService.getActivityById(skill.activity_id), id: "skill_"+skill.skill_id, type:SkillTypes.activity};
     }
     if(skill.ability_id !== ""){  
-      return {...skill, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...abilityService.getAbilityById(skill.ability_id), id: "skill_"+skill.skill_id, type:SkillTypes.ability};
+      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.abilityService.getAbilityById(skill.ability_id), id: "skill_"+skill.skill_id, type:SkillTypes.ability};
     }
-    return {...skill, id: "skill_"+skill.skill_id, skillsubcategories: skillCategoriesService.getSkillSubCategoriesOfSkill(skill), type:"", name:"", name_e:"", name_r:"", description:"", description_e:"", description_r:"", thumbnail:"", image:"", url:""};
+    return {...skill, id: "skill_"+skill.skill_id, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), type:"", name:"", name_e:"", name_r:"", description:"", description_e:"", description_r:"", thumbnail:"", image:"", url:""};
   }
 
 }

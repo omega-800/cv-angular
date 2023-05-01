@@ -6,8 +6,8 @@ import { ContactOnly, ContactEntity } from './contact.model';
   providedIn: 'root'
 })
 export class ContactService {
-  onlyContacts:ContactOnly[] = (contactData as any).default;
-  contacts:ContactEntity[];
+  private onlyContacts:ContactOnly[] = (contactData as any).default;
+  private contacts:ContactEntity[];
 
   constructor() { 
     this.contacts = this.onlyContacts.map(contact => {return {...contact, id:"contact_"+contact.contactpoint_id}})

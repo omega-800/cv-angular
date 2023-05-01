@@ -8,11 +8,11 @@ import * as applicationTypeData from 'src/data/applicationtype.json'
 })
 
 export class ApplicationService {
-  onlyApplications:ApplicationOnly[] = (applicationData as any).default;
-  onlyApplicationTypes:ApplicationTypeOnly[] = (applicationTypeData as any).default;
+  private onlyApplications:ApplicationOnly[] = (applicationData as any).default;
+  private onlyApplicationTypes:ApplicationTypeOnly[] = (applicationTypeData as any).default;
   
-  applicationTypes:ApplicationTypeEntity[];
-  applications:ApplicationEntity[];
+  private applicationTypes:ApplicationTypeEntity[];
+  private applications:ApplicationEntity[];
 
   constructor() {
     this.applicationTypes = this.onlyApplicationTypes.map(type => {return {...type, id:"application_"+type.applicationtype_id}});

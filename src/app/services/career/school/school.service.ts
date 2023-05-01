@@ -10,17 +10,17 @@ import { ContactEntity } from '../../contact/contact.model';
   providedIn: 'root'
 })
 export class SchoolService {
-  onlySchools:SchoolOnly[] = (schoolData as any).default;
-  schoolContactLinks:School_Contact[] = (school_contactData as any).default;
-  schools:SchoolEntity[];
+  private onlySchools:SchoolOnly[] = (schoolData as any).default;
+  private schoolContactLinks:School_Contact[] = (school_contactData as any).default;
+  private schools:SchoolEntity[];
 
-  constructor(addressService:AddressService, contactService:ContactService) { 
-    this.schools = this.onlySchools.map(school => this.fillSchool(school, addressService, contactService)) 
+  constructor(private addressService:AddressService, private contactService:ContactService) { 
+    this.schools = this.onlySchools.map(school => this.fillSchool(school)) 
   }
 
-  fillSchool(school:SchoolOnly, addressService:AddressService, contactService:ContactService):SchoolEntity {
-    let contacts:ContactEntity[] = this.schoolContactLinks.filter(link => link.school_id === school.school_id).map(link => contactService.getContactById(link.contactpoint_id))
-    return {...school, id:"school_"+school.school_id, thumbnail:school.logo, address:addressService.getAddressById(school.address_id), contactpoints: contacts}
+  fillSchool(school:SchoolOnly):SchoolEntity {
+    let contacts:ContactEntity[] = this.schoolContactLinks.filter(link => link.school_id === school.school_id).map(link => this.contactService.getContactById(link.contactpoint_id))
+    return {...school, id:"school_"+school.school_id, thumbnail:school.logo, address:this.addressService.getAddressById(school.address_id), contactpoints: contacts}
   }
 
   getSchoolById(id:string):SchoolEntity {

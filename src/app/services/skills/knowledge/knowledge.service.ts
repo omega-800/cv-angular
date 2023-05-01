@@ -6,8 +6,8 @@ import * as knowledgeData from 'src/data/knowledge.json'
   providedIn: 'root'
 })
 export class KnowledgeService {
-  onlyKnowledges:KnowledgeOnly[] = (knowledgeData as any).default;
-  knowledges:KnowledgeEntity[];
+  private onlyKnowledges:KnowledgeOnly[] = (knowledgeData as any).default;
+  private knowledges:KnowledgeEntity[];
 
   constructor() { 
     this.knowledges = this.onlyKnowledges.map(item => {return {...item, id:"knowledge_"+item.knowledge_id}})

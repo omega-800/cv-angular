@@ -10,7 +10,7 @@ import { ProjectService } from 'src/app/services/project/project.service';
 export class ProjectsComponent {
   projects:ProjectEntity[];
 
-  constructor(projectService:ProjectService) {
+  constructor(private projectService:ProjectService) {
     this.projects = projectService.getProjects();
   }
 }

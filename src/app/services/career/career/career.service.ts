@@ -10,19 +10,19 @@ import { SchoolEntity } from '../school/school.model';
   providedIn: 'root'
 })
 export class CareerService {
-  onlyCareers:CareerOnly[] = (careerData as any).default;
-  careers:CareerEntity[];
+  private onlyCareers:CareerOnly[] = (careerData as any).default;
+  private careers:CareerEntity[];
 
-  constructor(workplaceService:WorkplaceService, schoolService:SchoolService) { 
-    this.careers = this.onlyCareers.map(item => this.fillCareer(item, workplaceService, schoolService))
+  constructor(private workplaceService:WorkplaceService, private schoolService:SchoolService) { 
+    this.careers = this.onlyCareers.map(item => this.fillCareer(item))
   }
 
-  fillCareer(career:CareerOnly, workplaceService:WorkplaceService, schoolService:SchoolService):CareerEntity {
+  fillCareer(career:CareerOnly):CareerEntity {
     if(career.workplace_id !== ""){
-      return {...career, id:"career_"+career.career_id, workplace:workplaceService.getWorkplaceById(career.workplace_id), type:careerTypes.WORK}
+      return {...career, id:"career_"+career.career_id, workplace:this.workplaceService.getWorkplaceById(career.workplace_id), type:careerTypes.WORK}
     }
     if(career.school_id !== ""){
-      let school:SchoolEntity = schoolService.getSchoolById(career.school_id);
+      let school:SchoolEntity = this.schoolService.getSchoolById(career.school_id);
       return {...career, id:"career_"+career.career_id, school:school, type:careerTypes.SCHOOL, description:school.type}
     }
     return {...career, id:career.career_id, type:careerTypes.OTHER}

@@ -15,7 +15,7 @@ export class CareerComponent {
   contactIcon:ImageComponent = contactIcon;
   addressIcon:ImageComponent = addressIcon;
 
-  constructor(careerService:CareerService){
+  constructor(private careerService:CareerService){
     this.careers = careerService.getCareers();
   }
 }

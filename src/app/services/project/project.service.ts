@@ -20,22 +20,21 @@ import { contactIcon } from 'src/app/components/components.constants';
   providedIn: 'root'
 })
 export class ProjectService {
-  onlyProjects: ProjectOnly[] = (projectData as any).default;
-  projectAuthorLinks: Project_Author[] = (projectAuthorData as any).default;
-  projectSkillLinks: Project_Skill[] = (projectSkillData as any).default;
+  private onlyProjects: ProjectOnly[] = (projectData as any).default;
+  private projectAuthorLinks: Project_Author[] = (projectAuthorData as any).default;
+  private projectSkillLinks: Project_Skill[] = (projectSkillData as any).default;
 
-  projects: ProjectEntity[];
+  private projects: ProjectEntity[];
 
-  constructor(personService: PersonService, workplaceService: WorkplaceService, skillService: SkillService, storage:AngularFireStorage) {
+  constructor(private personService: PersonService, private workplaceService: WorkplaceService, private skillService: SkillService, private storage:AngularFireStorage) {
     //storage.ref('/projects/art/art/drawing/IMG-20180115-WA0008.jpeg').getDownloadURL().subscribe(val => console.log(val));
-    //this.projects = this.onlyProjects.map(project => this.fillProject(project, personService, workplaceService, skillService, storage));
-    this.projects = [];
-    this.onlyProjects.map(project => this.getDownloadURLs(project, personService, workplaceService, skillService, storage));
+    this.projects = this.onlyProjects.map(project => this.fillProject(project, []));
+    //this.projects = [];
+    //this.onlyProjects.map(project => this.getDownloadURLs(project, personService, workplaceService, skillService, storage));
     console.log(this.projects);
   }
 
   getProjects():ProjectEntity[] {
-    console.log(this.projects);
     return this.projects;
   }
   
@@ -43,10 +42,10 @@ export class ProjectService {
     return Object.values(this.projects).filter(project => project.project_id === id)[0];
   }
 
-  getDownloadURLs(project: ProjectOnly, personService: PersonService, workplaceService: WorkplaceService, skillService: SkillService, storage:AngularFireStorage) {
+  getDownloadURLs(project: ProjectOnly) {
     let images:ImageComponent[] = [];
     if(project.image !== ""){
-    storage.ref('/'+project.image).listAll().subscribe({
+    this.storage.ref('/'+project.image).listAll().subscribe({
       next: (list:ListResult) => {
         list.items.forEach((itemRef) => {
           itemRef.getDownloadURL().then((url: string) => {
@@ -63,22 +62,21 @@ export class ProjectService {
       error: (e) => console.log(e),
       complete: () => {
         console.log(images)
-        this.projects.push(this.fillProject(project, personService, workplaceService, skillService, images))
+        this.projects.push(this.fillProject(project, images))
       }
     })
   }else {
-    this.projects.push(this.fillProject(project, personService, workplaceService, skillService, [contactIcon]))
+    this.projects.push(this.fillProject(project, [contactIcon]))
   }
   }
 
-  fillProject(project: ProjectOnly, personService: PersonService, workplaceService: WorkplaceService, skillService: SkillService, images:ImageComponent[]): ProjectEntity {
-    console.log(this.projects);
+  fillProject(project: ProjectOnly, images:ImageComponent[]): ProjectEntity {
     return { 
       ...project, 
-      client: personService.getPersonById(project.client_id), 
-      workplace: workplaceService.getWorkplaceById(project.workplace_id), 
-      authors: this.projectAuthorLinks.filter(link => link.project_id == project.project_id).map(link => personService.getPersonById(link.author_id)),
-      skills: this.projectSkillLinks.filter(link => link.project_id == project.project_id).map(link => skillService.getSkillById(link.skill_id)),
+      client: this.personService.getPersonById(project.client_id), 
+      workplace: this.workplaceService.getWorkplaceById(project.workplace_id), 
+      authors: this.projectAuthorLinks.filter(link => link.project_id == project.project_id).map(link => this.personService.getPersonById(link.author_id)),
+      skills: this.projectSkillLinks.filter(link => link.project_id == project.project_id).map(link => this.skillService.getSkillById(link.skill_id)),
       id: "project_"+project.project_id,
       date: new Date(),
       images: images

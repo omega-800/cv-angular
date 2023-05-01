@@ -10,17 +10,17 @@ import { ContactEntity } from '../../contact/contact.model';
   providedIn: 'root'
 })
 export class WorkplaceService {
-  onlyWorkplaces:WorkplaceOnly[] = (workplaceData as any).default;
-  workplaceContactLinks:Workplace_Contact[] = (workplace_contactData as any).default;
-  workplaces:WorkplaceEntity[];
+  private onlyWorkplaces:WorkplaceOnly[] = (workplaceData as any).default;
+  private workplaceContactLinks:Workplace_Contact[] = (workplace_contactData as any).default;
+  private workplaces:WorkplaceEntity[];
 
-  constructor(addressService:AddressService, contactService:ContactService) { 
-    this.workplaces = this.onlyWorkplaces.map(workplace => this.fillWorkplace(workplace, addressService, contactService)) 
+  constructor(private addressService:AddressService, private contactService:ContactService) { 
+    this.workplaces = this.onlyWorkplaces.map(workplace => this.fillWorkplace(workplace)) 
   }
 
-  fillWorkplace(workplace:WorkplaceOnly, addressService:AddressService, contactService:ContactService):WorkplaceEntity {
-    let contacts:ContactEntity[] = this.workplaceContactLinks.filter(link => link.workplace_id === workplace.workplace_id).map(link => contactService.getContactById(link.contactpoint_id))
-    return {...workplace, id:"workplace_"+workplace.workplace_id, thumbnail:workplace.logo, address:addressService.getAddressById(workplace.address_id), contactpoints: contacts}
+  fillWorkplace(workplace:WorkplaceOnly):WorkplaceEntity {
+    let contacts:ContactEntity[] = this.workplaceContactLinks.filter(link => link.workplace_id === workplace.workplace_id).map(link => this.contactService.getContactById(link.contactpoint_id))
+    return {...workplace, id:"workplace_"+workplace.workplace_id, thumbnail:workplace.logo, address:this.addressService.getAddressById(workplace.address_id), contactpoints: contacts}
   }
   getWorkplaceById(id:string):WorkplaceEntity {
     return Object.values(this.workplaces).filter(workplace => workplace.workplace_id === id)[0]; 

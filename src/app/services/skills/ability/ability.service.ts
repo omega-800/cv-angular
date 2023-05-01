@@ -7,8 +7,8 @@ import * as abilityData from 'src/data/ability.json'
 })
 
 export class AbilityService {
-  onlyAbilities:AbilityOnly[] = (abilityData as any).default;
-  abilities:AbilityEntity[];
+  private onlyAbilities:AbilityOnly[] = (abilityData as any).default;
+  private abilities:AbilityEntity[];
 
   constructor() { 
     this.abilities = this.onlyAbilities.map(item => {return {...item, id:"ability_"+item.ability_id}});
