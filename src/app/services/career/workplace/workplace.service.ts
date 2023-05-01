@@ -19,7 +19,7 @@ export class WorkplaceService {
   }
 
   fillWorkplace(workplace:WorkplaceOnly, addressService:AddressService, contactService:ContactService):WorkplaceEntity {
-    let contacts:ContactEntity[] = this.workplaceContactLinks.filter(link => link.workplace_id == workplace.workplace_id).map(link => contactService.getContactById(link.contactpoint_id))
+    let contacts:ContactEntity[] = this.workplaceContactLinks.filter(link => link.workplace_id === workplace.workplace_id).map(link => contactService.getContactById(link.contactpoint_id))
     return {...workplace, id:"workplace_"+workplace.workplace_id, thumbnail:workplace.logo, address:addressService.getAddressById(workplace.address_id), contactpoints: contacts}
   }
   getWorkplaceById(id:string):WorkplaceEntity {

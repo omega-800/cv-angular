@@ -19,7 +19,7 @@ export class SchoolService {
   }
 
   fillSchool(school:SchoolOnly, addressService:AddressService, contactService:ContactService):SchoolEntity {
-    let contacts:ContactEntity[] = this.schoolContactLinks.filter(link => link.school_id == school.school_id).map(link => contactService.getContactById(link.contactpoint_id))
+    let contacts:ContactEntity[] = this.schoolContactLinks.filter(link => link.school_id === school.school_id).map(link => contactService.getContactById(link.contactpoint_id))
     return {...school, id:"school_"+school.school_id, thumbnail:school.logo, address:addressService.getAddressById(school.address_id), contactpoints: contacts}
   }
 
