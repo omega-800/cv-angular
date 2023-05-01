@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Einstellungen Shop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="${this.request.contextPath}/.resources/admin-css/admin-all.css" type="text/css" rel="stylesheet" />
+    <script src="${this.request.contextPath}/.resources/shop/js/jscolor.min.js"></script>
+  </head>
+  <body id="mgnl" class="mgnlBgLight">
+    [#if message?exists]
+    <div class="pageframe" style="width:300px;">
+        <pre>${message}</pre>
+        <hr />
+    </div>
+    [/#if]
+  	<div class="pageframe" style="width:300px;">
+      <h3>Popup</h3>
+      <form method="post" action="" enctype="multipart/form-data" id="popupForm">
+        <input type="checkbox" name="popupEnabled" value="true" [#if this.popupEnabled=="true"]checked[/#if]/> Enabled<br/>
+        <input type="checkbox" name="popupBig" value="true" [#if this.popupBig=="true"]checked[/#if]/> Big Popup<br/><br/>
+        Titel: <br/>
+        <input type="text" value="${this.popupTitle}" name="popupTitle"/> <br/><br/>
+        Beschreibung: <br/>
+        <textarea form="popupForm" type="text" value="${this.popupText}" name="popupText" style="height:100px;">${this.popupText}</textarea> <br/><br/>
+        Button text: <br/>
+        <input type="text" value="${this.popupButtonText}" name="popupButtonText" /> <br/><br/>
+        <input type="hidden" name="command" value="savePopupText" />
+        <input type="submit" value="Speichern" /><br/>
+      </form>
+    </div>
+     
+  </body>
+</html>

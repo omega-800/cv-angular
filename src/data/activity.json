@@ -1,7 +1,7 @@
 [
  {
-  "activity_id": "4bed2d1c-2d63-4c1f-8759-b122ec75fc5a",
-  "name": "Origami",
+  "activity_id": "64f655d9-53a0-4b2a-b0c8-54ef97e951f4",
+  "name": "Papierarbeit",
   "name_e": "",
   "name_r": "",
   "description": "",
@@ -12,7 +12,7 @@
   "url": ""
  },
  {
-  "activity_id": "cb8fb909-c66f-4b58-849b-b450892606f0",
+  "activity_id": "8f4ed383-8eab-4b74-9f3c-6b5f2405985f",
   "name": "Zeichnen",
   "name_e": "",
   "name_r": "",
@@ -24,7 +24,7 @@
   "url": ""
  },
  {
-  "activity_id": "a8f541da-7bda-48a3-92ea-cc0d55b78396",
+  "activity_id": "c7061e30-e659-4adc-a3c3-47f5d521263d",
   "name": "Graffiti",
   "name_e": "",
   "name_r": "",
@@ -36,7 +36,7 @@
   "url": ""
  },
  {
-  "activity_id": "e7a06f9c-48b8-4b0b-8f07-503b6475053e",
+  "activity_id": "253bfd84-c4f3-4d34-a6e0-6c2fbd18e633",
   "name": "Holzarbeit",
   "name_e": "",
   "name_r": "",
@@ -48,7 +48,7 @@
   "url": ""
  },
  {
-  "activity_id": "d954566d-4d2c-47cc-811a-b8e67fd9d213",
+  "activity_id": "993022ce-f34c-4658-bd7a-135e2bb17b5c",
   "name": "Nähen",
   "name_e": "",
   "name_r": "",
@@ -60,7 +60,7 @@
   "url": ""
  },
  {
-  "activity_id": "68c3f46c-1789-4997-9ed9-1bec7f6f64f9",
+  "activity_id": "3b124db9-d02f-43ab-b608-9bb35fd92ad0",
   "name": "Gitarre",
   "name_e": "",
   "name_r": "",
@@ -72,7 +72,7 @@
   "url": ""
  },
  {
-  "activity_id": "bc703c65-f1bb-4018-a524-c7bbc9e99210",
+  "activity_id": "6d7f3607-5f1f-410b-87b3-799add185e8f",
   "name": "Bass",
   "name_e": "",
   "name_r": "",
@@ -84,7 +84,7 @@
   "url": ""
  },
  {
-  "activity_id": "50842c5c-ced2-4799-888f-378d2e2d30f4",
+  "activity_id": "5e5c5c34-8621-483f-a966-4cfa2e4ed729",
   "name": "Schlagzeug",
   "name_e": "",
   "name_r": "",
@@ -96,7 +96,7 @@
   "url": ""
  },
  {
-  "activity_id": "5292e707-d294-483a-85d3-65706476bb07",
+  "activity_id": "4d2b9d55-61c7-42c0-a1f4-4aa0011962ce",
   "name": "Produzieren",
   "name_e": "",
   "name_r": "",
@@ -108,7 +108,7 @@
   "url": ""
  },
  {
-  "activity_id": "f14851b7-5c34-4ee4-bd13-2488b0be7f4c",
+  "activity_id": "e03006a7-887f-4e94-b35f-c119439543bb",
   "name": "Hort",
   "name_e": "",
   "name_r": "",
@@ -120,7 +120,7 @@
   "url": ""
  },
  {
-  "activity_id": "950427f4-0109-40e9-a4ba-aa595277bb2e",
+  "activity_id": "58be6435-5e87-4e66-be64-da02577fab18",
   "name": "Fahrrad",
   "name_e": "",
   "name_r": "",
@@ -132,7 +132,7 @@
   "url": ""
  },
  {
-  "activity_id": "7276bfa7-39fa-4788-b75b-4a05ae3a4298",
+  "activity_id": "33a130f9-ba6b-410b-972c-9e324aa8a77c",
   "name": "Volleyball",
   "name_e": "",
   "name_r": "",
@@ -144,7 +144,7 @@
   "url": ""
  },
  {
-  "activity_id": "5ce8f25c-8ed7-4e62-b6b1-dac025346814",
+  "activity_id": "cbfeff64-e2b4-455e-bad1-9ba2b6520de7",
   "name": "Skateboard",
   "name_e": "",
   "name_r": "",
@@ -156,7 +156,7 @@
   "url": ""
  },
  {
-  "activity_id": "7b2d53eb-a8d5-4a59-b46b-ee49ec20b6c3",
+  "activity_id": "3be44d11-70ca-4e38-83d5-88f8d4501742",
   "name": "Tischtennis",
   "name_e": "",
   "name_r": "",
@@ -168,7 +168,7 @@
   "url": ""
  },
  {
-  "activity_id": "99a75d24-5f22-4d02-a92c-313dd18a47af",
+  "activity_id": "e91c8b0e-6fd7-416d-afda-4a25b6e620b9",
   "name": "Wandern",
   "name_e": "",
   "name_r": "",
@@ -180,7 +180,7 @@
   "url": ""
  },
  {
-  "activity_id": "4e074d5a-19bb-42fd-a735-70eb9bfa11e4",
+  "activity_id": "6aee9525-b25a-4a34-b883-508ea2f22e59",
   "name": "CEVI",
   "name_e": "",
   "name_r": "",
@@ -192,7 +192,7 @@
   "url": ""
  },
  {
-  "activity_id": "b0138429-1fc5-4b0e-992e-46ce15feb671",
+  "activity_id": "78adeee9-321f-4ad9-afdf-bf33034568b4",
   "name": "Englischunterricht",
   "name_e": "",
   "name_r": "",
@@ -204,7 +204,7 @@
   "url": ""
  },
  {
-  "activity_id": "9a9c481a-2367-433a-aeb0-1ed998f3fdcf",
+  "activity_id": "1468409c-0c7a-474f-8ae6-2d3b884ed54b",
   "name": "Mathematikunterricht",
   "name_e": "",
   "name_r": "",
@@ -216,7 +216,7 @@
   "url": ""
  },
  {
-  "activity_id": "69821622-55fe-4adc-8e55-36d8708713b7",
+  "activity_id": "8a0a1fb8-353b-4b04-b3b2-fb5eb234c62f",
   "name": "Informatikunterricht",
   "name_e": "",
   "name_r": "",

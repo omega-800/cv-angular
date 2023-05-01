@@ -1,0 +1,168 @@
+Object,Name,Has Logo,Has Description,Has Image,Has Products,Has Filter,Filter Works,Has Website,Website Works
+country,USA,True,True,True
+country,Deutschland,True,True,True
+country,Italien,True,True,True
+country,Spanien,True,True,True
+country,Schweiz,True,True,True
+country,Frankreich,True,True,True
+country,Österreich,True,True,True
+country,Kroatien,True,True,True
+country,Slowenien,True,True,True
+country,Japan,True,True,True
+country,Chile,True,True,True
+region,USA/Kalifornien,True,True,True
+region,USA/Oregon,True,True,True
+region,Deutschland/Rheinland-Pfalz / Saarland,True,True,True
+region,Deutschland/Hessen,True,True,True
+region,Italien/Piemonte,True,True,True
+region,Italien/Veneto,True,True,True
+region,Italien/Friuli,True,True,True
+region,Italien/Alto Adige,True,True,True
+region,Italien/Lombardia,True,True,True
+region,Italien/Toscana,True,True,True
+region,Italien/Campania,True,True,True
+region,Italien/Puglia,True,True,True
+region,Italien/Sicilia,True,True,True
+region,Italien/Sardegna,True,True,True
+region,Italien/Trentino,True,True,True
+region,Spanien/Katalonien,True,True,True
+region,Spanien/Kastilien-León,True,True,True
+region,Spanien/La Rioja,True,True,True
+region,Schweiz/Zentralschweiz,True,True,True
+region,Schweiz/Ostschweiz,True,True,True
+region,Schweiz/Westschweiz,True,True,True
+region,Schweiz/Südschweiz,True,True,True
+region,Frankreich/Bordeaux,True,True,True
+region,Frankreich/Südfrankreich,True,True,True
+region,Frankreich/Burgund,True,True,True
+region,Frankreich/Champagne,True,True,True
+region,Frankreich/Cognac,True,True,True
+region,Frankreich/Gascogne,True,True,True
+region,Österreich/Tirol,True,True,True
+region,Österreich/Steiermark,True,True,True
+region,Österreich/Burgenland,True,True,True
+region,Kroatien/Istrien,True,True,True
+region,Slowenien/Primorska - Adria-Küstenland,True,True,True
+region,Japan/Chubu,True,True,True
+region,Chile/Valle de Aconcagua,True,True,True
+region,Chile/Valle del Huasco,True,True,True
+region,Chile/Valle de Colchagua,True,True,True
+partner,USA/Kalifornien/The Alpha Omega Collective,True,True,True,True,True,True,True,True
+partner,USA/Kalifornien/Mount Brave,True,True,True,True,True,False,True,True
+partner,USA/Kalifornien/Lokoya,True,True,False,True,True,False,True,True
+partner,USA/Kalifornien/The unfiltered Collection,True,True,True,True,True,False,True,True
+partner,USA/Kalifornien/Opus One Winery,True,True,True,True,True,False,True,False
+partner,USA/Kalifornien/Anakota,True,True,True,True,True,False,True,True
+partner,USA/Oregon/Domaine Serene,True,True,True,True,True,False,True,True
+partner,Deutschland/Rheinland-Pfalz / Saarland/Reichsgraf von Kesselstatt,True,True,True,True,True,False,True,True
+partner,Deutschland/Rheinland-Pfalz / Saarland/Atlan &amp; Artisan,True,True,True,True,True,False,True,True
+partner,Deutschland/Rheinland-Pfalz / Saarland/Reichsgraf von Kesselstatt,True,True,True,True,True,False,True,True
+partner,Deutschland/Rheinland-Pfalz / Saarland/Reichsgraf von Kesselstatt,True,True,True,True,True,False,True,True
+partner,Deutschland/Hessen/August Kesseler,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Lavorazione Legnami,False,False,False,True,False,False,True,True
+partner,Italien/Piemonte/Enrico Serafino,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Cantina Coppo,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Enrico Serafino,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Enrico Serafino,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Enrico Serafino,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Enrico Serafino,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Roberto Voerzio,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Gin Arte,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Roberto Cavalli Vodka,True,True,True,True,True,False,True,True
+partner,Italien/Piemonte/Azienda Agricola Zaccaria,True,True,True,True,True,False,True,True
+partner,Italien/Veneto/Cecilia Beretta,True,True,True,True,True,False,True,True
+partner,Italien/Veneto/Pasqua,True,True,True,True,True,False,True,True
+partner,Italien/Veneto/La Giuva,True,True,True,True,True,False,True,True
+partner,Italien/Veneto/Vantorosso,True,True,True,True,True,False,True,True
+partner,Italien/Veneto/Santa Margherita,True,True,True,True,True,False,True,True
+partner,Italien/Friuli/Michele Moschioni,True,True,True,True,True,False,True,True
+partner,Italien/Friuli/Borgo San Daniele,True,True,True,True,True,False,True,False
+partner,Italien/Friuli/Silvio Jermann,True,True,True,True,True,False,True,True
+partner,Italien/Alto Adige/Kellerei Kaltern,True,True,True,True,True,False,True,True
+partner,Italien/Alto Adige/Villa Laviosa,True,True,True,True,True,False,True,True
+partner,Italien/Alto Adige/Cantina Terlano,True,True,True,True,True,False,True,True
+partner,Italien/Lombardia/Ca' del Bosco,True,True,True,True,True,False,True,True
+partner,Italien/Lombardia/Il Borgo del Balsamico,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Icario,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Tenuta Tignanello,True,True,True,True,False,False,True,True
+partner,Italien/Toscana/Tenuta di Arceno,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Tenuta degli Dei,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Tenuta Sette Ponti,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Antonio Mattei,True,False,True,True,True,False,True,True
+partner,Italien/Toscana/Monteverro,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Poggio Argentiera,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Caiarossa,True,True,True,True,True,False,True,True
+partner,Italien/Toscana/Tua Rita,True,True,True,True,True,True,True,True
+partner,Italien/Toscana/Castello del Terriccio,True,True,True,True,True,True,True,True
+partner,Italien/Toscana/Masseto,True,True,True,True,True,True,True,True
+partner,Italien/Toscana/Podere Giodo,True,True,True,True,True,True,True,True
+partner,Italien/Toscana/Montepeloso,True,True,True,True,True,True,True,True
+partner,Italien/Campania/San Salvatore 1988,True,True,True,True,False,False,True,True
+partner,Italien/Puglia/MUMA Gin,True,True,True,True,False,False,True,True
+partner,Italien/Puglia/Antico Frantoio Muraglia,True,True,True,True,True,True,True,True
+partner,Italien/Sicilia/Podere Giodo,True,True,True,True,True,True,True,True
+partner,Italien/Sicilia/Palmento Costanzo,True,True,True,True,True,True,True,True
+partner,Italien/Sicilia/Feudo Maccari,True,True,True,True,True,True,True,True
+partner,Italien/Sardegna/Sella &amp; Mosca,True,True,True,True,False,False,True,True
+partner,Italien/Trentino/Palazzo Lodron,True,True,True,True,True,True,True,True
+partner,Spanien/Katalonien/Vinyes d'en Gabriel,True,True,True,True,True,True,True,True
+partner,Spanien/Katalonien/Clos Maria Wines,True,True,True,True,True,True,True,True
+partner,Spanien/Katalonien/Costers del Priorat,True,True,True,True,True,True,True,True
+partner,Spanien/Katalonien/Perinet,True,True,True,True,True,True,True,True
+partner,Spanien/Katalonien/Alvaro Palacios,True,True,True,True,True,True,True,True
+partner,Spanien/Kastilien-León/Dominio de Pingus,True,True,True,True,True,True,True,True
+partner,Spanien/Kastilien-León/Bodegas Pinea,False,True,True,True,True,True,True,True
+partner,Spanien/La Rioja/Bodegas Remelluri by Telmo Rodriguez,True,True,True,True,True,True,False,False
+partner,Schweiz/Zentralschweiz/Weingut zum Sternen,True,True,True,True,True,True,True,True
+partner,Schweiz/Ostschweiz/Kellerei Rötiberg,True,True,True,True,True,True,True,True
+partner,Schweiz/Westschweiz/Domaine Les Grand Clos,True,True,True,True,False,False,True,True
+partner,Schweiz/Westschweiz/Hasler Weine,True,True,True,True,False,False,True,True
+partner,Schweiz/Westschweiz/Maison Rouge,True,True,True,True,True,True,True,True
+partner,Schweiz/Südschweiz/Cormano Vini,True,True,True,True,True,True,True,True
+partner,Schweiz/Südschweiz/Vinattieri,True,True,True,True,False,False,True,True
+partner,Schweiz/Südschweiz/MRK - Rainer Design,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Pont des Arts,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château La Grezette,True,True,True,True,False,False,True,True
+partner,Frankreich/Bordeaux/Château Cos d'Estournel,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château les Bertrands,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Pichon Longueville Comtesse de Lalande,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Lynch Bages,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Branaire,True,True,True,True,False,False,True,True
+partner,Frankreich/Bordeaux/Château de Pressac,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Valandraud,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château La Confession,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Pèby Faugères,True,True,True,True,True,True,True,False
+partner,Frankreich/Bordeaux/Château Faugères,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Rocheyron,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Pont des Arts,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Domaine de Chevalier,True,True,True,True,True,True,False,False
+partner,Frankreich/Bordeaux/Château Les Hauts de Smith,True,True,True,True,False,False,True,True
+partner,Frankreich/Bordeaux/Château de Francs,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Lafaurie-Peyraguey,True,True,True,True,True,True,True,True
+partner,Frankreich/Bordeaux/Château Cap de Faugères,True,True,True,True,True,True,True,True
+partner,Frankreich/Südfrankreich/Mas Llossanes,True,True,True,True,True,False,True,True
+partner,Frankreich/Südfrankreich/Guillaume Gonnet,True,True,True,True,True,False,True,True
+partner,Frankreich/Südfrankreich/Guillaume Gonnet,True,True,True,True,True,False,True,True
+partner,Frankreich/Südfrankreich/Guillaume Gonnet,True,True,True,True,True,False,True,True
+partner,Frankreich/Südfrankreich/Maison Saint AIX,True,True,True,True,True,False,True,True
+partner,Frankreich/Südfrankreich/Chêne Bleu,True,True,True,True,True,False,True,True
+partner,Frankreich/Burgund/Pont des Arts,True,True,True,True,True,False,True,True
+partner,Frankreich/Champagne/Deutz,True,True,True,True,False,False,True,True
+partner,Frankreich/Champagne/Pont des Arts,True,True,True,True,True,False,True,True
+partner,Frankreich/Champagne/Louis Roederer,True,True,True,True,True,False,True,True
+partner,Frankreich/Cognac/Pont des Arts,True,True,True,True,True,False,True,True
+partner,Frankreich/Gascogne/Pont des Arts,True,True,True,True,True,False,True,True
+partner,Österreich/Tirol/MagnuMaster,True,True,True,True,False,False,True,True
+partner,Österreich/Steiermark/Hannes Sabathi,True,True,True,True,False,False,True,True
+partner,Österreich/Steiermark/Weingut Wohlmuth,True,True,True,True,True,False,True,True
+partner,Österreich/Burgenland/Keringer Massiv Wine,True,True,True,True,True,False,True,True
+partner,Österreich/Burgenland/Kracher Weinlaubenhof,True,True,True,True,True,False,True,True
+partner,Österreich/Burgenland/Gernot Heinrich,True,True,True,True,True,False,True,True
+partner,Österreich/Burgenland/Reunion,True,True,True,True,False,False,True,True
+partner,Kroatien/Istrien/Chiavalon,True,True,True,True,True,False,True,True
+partner,Slowenien/Primorska - Adria-Küstenland/TILIA Estate,True,True,True,True,True,True,True,True
+partner,Japan/Chubu/Pont des Arts,True,True,True,True,True,True,True,True
+partner,Chile/Valle de Aconcagua/Seña,True,True,True,True,True,True,True,True
+partner,Chile/Valle del Huasco/Tara,True,True,True,True,True,True,True,False
+partner,Chile/Valle del Huasco/Ilegal Malted Wine,True,True,True,True,False,False,True,False
+partner,Chile/Valle de Colchagua/Vina Ventisquero,True,False,True,True,True,True,True,False

@@ -1,0 +1,8 @@
+<div *ngFor="let project of projects">
+    <app-contentbox 
+        [image]='{"id":project.name,"name":project.name,"path":project.image,"alt":project.name}'
+        title="{{project.name}}" 
+        subTitle="{{project.name}}" 
+        description="{{project.description}}"
+        link="{{project.url}}"></app-contentbox>
+</div>

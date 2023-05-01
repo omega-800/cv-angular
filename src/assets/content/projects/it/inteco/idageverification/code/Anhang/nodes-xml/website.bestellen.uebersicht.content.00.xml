@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="00" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:component</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+    <sv:value>mix:lockable</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>f14aa25f-19d8-4fea-8762-b8d8e153d79c</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:createdBy" sv:type="String">
+    <sv:value>admin</sv:value>
+  </sv:property>
+  <sv:node sv:name="MetaData">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:metaData</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:authorid" sv:type="String">
+      <sv:value>superuser</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+      <sv:value>2023-03-13T20:13:53.332+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+      <sv:value>2023-03-20T13:50:58.144+01:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:template" sv:type="String">
+      <sv:value>shop:components/IDAgeVerification</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="contactForm">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:area</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>mix:lockable</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>2cf293c0-1910-44db-a7e6-c13dbbd2e7d0</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:createdBy" sv:type="String">
+      <sv:value>admin</sv:value>
+    </sv:property>
+    <sv:node sv:name="MetaData">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:metaData</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:authorid" sv:type="String">
+        <sv:value>superuser</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+        <sv:value>2023-03-20T13:50:58.144+01:00</sv:value>
+      </sv:property>
+    </sv:node>
+    <sv:node sv:name="0">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:component</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+        <sv:value>mix:lockable</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:uuid" sv:type="String">
+        <sv:value>c2ba2574-40cc-48f5-b407-f1f9ba814b90</sv:value>
+      </sv:property>
+      <sv:property sv:name="contactContentType" sv:type="String">
+        <sv:value>html</sv:value>
+      </sv:property>
+      <sv:property sv:name="contactMail" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="contactMailBody" sv:type="String">
+        <sv:value xsi:type="xs:base64Binary">PGltZyBzcmM9IiR7ZGVmYXVsdEJhc2VVcmx9Ly5zaG9wUmVzb3VyY2VzL2ltZy9sb2dvX2VtYWlsLnBuZyIgLz4NCjxicj4NCjxicj4NCjxicj4NCjxiPlNlaHIgZ2VlaHJ0ZS9yICR7dGl0bGUhfSAke2xhc3RuYW1lIX08L2I+DQo8YnI+DQo8YnI+DQo8YnI+DQpTaWUgd8O8bnNjaGVuIGVpbmUgbWFudWVsbGUgQWx0ZXJzw7xiZXJwcsO8ZnVuZy4NCjxicj4NCjxicj4NCldpciB3ZXJkZW4gSWhyZW4gQW50cmFnIHByw7xmZW4gdW5kIHVucyBtaXQgSWhuZW4gaW4gVmVyYmluZHVuZyBzZXR6dGVuLg0KPGJyPg0KPGJyPg0KPGJyPg0KPGJyPg0KPHAgc3R5bGU9Im1hcmdpbi1sZWZ0OjRweDtmb250LXNpemU6IDEzcHg7IGxpbmUtaGVpZ2h0OiAyMXB4OyBmb250LWZhbWlseTogbXlmb250X2Jvb2ssIHNhbnMtc2VyaWY7Ij4NCiAgPHN0cm9uZyBzdHlsZT0iZm9udC13ZWlnaHQ6bm9ybWFsOyBmb250LWZhbWlseTogbXlmb250X2JvbGQsIHNhbnMtc2VyaWY7Ij4ke2NsaWVudC5uYW1lfTwvc3Ryb25nPjxicj4NCiAgWyNpZiBjbGllbnQuc3RyZWV0P2hhc19jb250ZW50XSR7Y2xpZW50LnN0cmVldH08YnI+Wy8jaWZdDQogIFsjaWYgY2xpZW50LnBsej9oYXNfY29udGVudF0ke2NsaWVudC5wbHp9PGJyPlsvI2lmXQ0KICA8YnI+DQogIFsjaWYgY2xpZW50LnRlbGVmb24/aGFzX2NvbnRlbnRdJHtjbGllbnQudGVsZWZvbn08YnI+Wy8jaWZdDQogIFsjaWYgY2xpZW50LmZheD9oYXNfY29udGVudF0ke2NsaWVudC5mYXh9PGJyPlsvI2lmXQ0KICA8YnI+DQogIFsjaWYgY2xpZW50Lm1haWw/aGFzX2NvbnRlbnRdPGEgc3R5bGU9ImNvbG9yOiMke3Nob3Bmbi5nZXRTdHlsZSgnY29sb3InKX07IiBocmVmPSJtYWlsdG86JHtjbGllbnQubWFpbH0iPiR7Y2xpZW50Lm1haWx9Wy8jaWZdPC9hPjxicj4NCiAgWyNpZiBjbGllbnQuZG9tYWluP2hhc19jb250ZW50XTxhIHN0eWxlPSJjb2xvcjojJHtzaG9wZm4uZ2V0U3R5bGUoJ2NvbG9yJyl9OyIgaHJlZj0iaHR0cDovLyR7Y2xpZW50LmRvbWFpbn0iPiR7Y2xpZW50LmRvbWFpbn1bLyNpZl08L2E+PGJyPg0KICA8L3A+DQo8YnI+DQo=</sv:value>
+      </sv:property>
+      <sv:property sv:name="contactMailFrom" sv:type="String">
+        <sv:value>webmaster@inteco.ch</sv:value>
+      </sv:property>
+      <sv:property sv:name="contactMailSubject" sv:type="String">
+        <sv:value>Anfrage auf Altersüberprüfung</sv:value>
+      </sv:property>
+      <sv:property sv:name="formTitle" sv:type="String">
+        <sv:value>Anfrage auf Altersüberprüfung</sv:value>
+      </sv:property>
+      <sv:property sv:name="internalContentType" sv:type="String">
+        <sv:value>html</sv:value>
+      </sv:property>
+      <sv:property sv:name="internalMail" sv:type="Boolean">
+        <sv:value>true</sv:value>
+      </sv:property>
+      <sv:property sv:name="internalMailBody" sv:type="String">
+        <sv:value xsi:type="xs:base64Binary">SmVtYW5kIGhhdCBhbmdlZnJhZ3QsIHNlaW4gR2VidXJ0c2RhdHVtIHZvbiBJaG5lbiBtYW51ZWxsIMO8YmVycHLDvGZlbiB6dSBsYXNzZW48YnIvPg0KPGJyLz4NCkVtYWlsOiAke2VtYWlsfTxici8+DQpOYW1lOiAke25hbWV9PGJyLz4NCk5hY2huYW1lOiAke2xhc3RuYW1lfTxici8+DQo=</sv:value>
+      </sv:property>
+      <sv:property sv:name="internalMailFrom" sv:type="String">
+        <sv:value>webmaster@inteco.ch</sv:value>
+      </sv:property>
+      <sv:property sv:name="internalMailSubject" sv:type="String">
+        <sv:value>Anfrage auf Altersüberprüfung</sv:value>
+      </sv:property>
+      <sv:property sv:name="internalMailTo" sv:type="String">
+        <sv:value>georgiy.shevoroshkin@inteco.ch</sv:value>
+      </sv:property>
+      <sv:property sv:name="jcr:createdBy" sv:type="String">
+        <sv:value>admin</sv:value>
+      </sv:property>
+      <sv:property sv:name="recapture" sv:type="String">
+        <sv:value>false</sv:value>
+      </sv:property>
+      <sv:property sv:name="successMsg" sv:type="String">
+        <sv:value>Anfrage wurde versendet</sv:value>
+      </sv:property>
+      <sv:node sv:name="MetaData">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:metaData</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:authorid" sv:type="String">
+          <sv:value>superuser</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+          <sv:value>2023-03-15T15:24:26.059+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+          <sv:value>2023-03-20T13:50:58.144+01:00</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:template" sv:type="String">
+          <sv:value>shop:components/form/formEmail</sv:value>
+        </sv:property>
+      </sv:node>
+      <sv:node sv:name="fieldsets">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+          <sv:value>mix:lockable</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>1f69f330-2ee4-4483-a5cb-6875add72674</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:node sv:name="MetaData">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:metaData</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:authorid" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+            <sv:value>2023-03-16T16:30:38.988+01:00</sv:value>
+          </sv:property>
+        </sv:node>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+            <sv:value>mix:lockable</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>14349453-bacd-4dff-a89f-b035e3013d4e</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:node sv:name="MetaData">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:metaData</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:authorid" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+              <sv:value>2023-03-15T15:24:33.037+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+              <sv:value>2023-03-16T16:30:38.988+01:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:template" sv:type="String">
+              <sv:value>shop:components/form/fieldset</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="fields">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>f212282b-61f8-4a26-9d9b-b595388c0a49</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2023-03-16T16:30:38.988+01:00</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>363b762f-dd8d-4ed6-932d-0e8f3efdca80</sv:value>
+              </sv:property>
+              <sv:property sv:name="controlName" sv:type="String">
+                <sv:value>lastname</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mandatory" sv:type="Boolean">
+                <sv:value>true</sv:value>
+              </sv:property>
+              <sv:property sv:name="rows" sv:type="Long">
+                <sv:value>1</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Name</sv:value>
+              </sv:property>
+              <sv:property sv:name="validation" sv:type="String">
+                <sv:value>none</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2023-03-15T15:24:49.552+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2023-03-16T16:30:04.990+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:template" sv:type="String">
+                  <sv:value>shop:components/form/edit</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>e6f3cc3c-0ab1-4463-837f-5aeb4c702bc2</sv:value>
+              </sv:property>
+              <sv:property sv:name="controlName" sv:type="String">
+                <sv:value>name</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mandatory" sv:type="Boolean">
+                <sv:value>true</sv:value>
+              </sv:property>
+              <sv:property sv:name="rows" sv:type="Long">
+                <sv:value>1</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Vorname</sv:value>
+              </sv:property>
+              <sv:property sv:name="validation" sv:type="String">
+                <sv:value>none</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2023-03-15T15:25:06.738+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2023-03-16T16:30:38.987+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:template" sv:type="String">
+                  <sv:value>shop:components/form/edit</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+            <sv:node sv:name="01">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2036d0a6-3038-40db-a858-21830d4ef422</sv:value>
+              </sv:property>
+              <sv:property sv:name="controlName" sv:type="String">
+                <sv:value>email</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mandatory" sv:type="Boolean">
+                <sv:value>true</sv:value>
+              </sv:property>
+              <sv:property sv:name="rows" sv:type="Long">
+                <sv:value>1</sv:value>
+              </sv:property>
+              <sv:property sv:name="title" sv:type="String">
+                <sv:value>Email</sv:value>
+              </sv:property>
+              <sv:property sv:name="validation" sv:type="String">
+                <sv:value>email</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2023-03-15T15:25:25.544+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2023-03-15T15:25:25.545+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:template" sv:type="String">
+                  <sv:value>shop:components/form/edit</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+            <sv:node sv:name="02">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>a17148cf-11ea-4d7a-9176-f9dbf3317328</sv:value>
+              </sv:property>
+              <sv:property sv:name="buttonText" sv:type="String">
+                <sv:value>Absenden</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="pleaseWait" sv:type="Boolean">
+                <sv:value>false</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2023-03-15T15:25:46.686+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2023-03-15T15:25:46.687+01:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:template" sv:type="String">
+                  <sv:value>shop:components/form/submit</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+</sv:node>
