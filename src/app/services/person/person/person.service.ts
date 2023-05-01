@@ -41,7 +41,7 @@ export class PersonService {
     let school:SchoolEntity = schoolService.getSchoolById(person.school_id);
     let personcategory:PersonCategoryEntity = personCategoryService.getPersonCategoryById(person.personcategory_id);
     let contact:ContactEntity = contactService.getContactById(person.contactpoint_id);
-    let countries:CountryEntity[] = this.personCountryLink.filter(link => link.person_id == person.person_id).map(link => countryService.getCountryById(link.country_id));
+    let countries:CountryEntity[] = this.personCountryLink.filter(link => link.person_id === person.person_id).map(link => countryService.getCountryById(link.country_id));
     return {...person, id: "person_"+person.person_id, name: person.firstname, address:address, workplace:workplace, school:school, personcategory:personcategory, contact: contact, countries:countries};
   }
 

@@ -32,8 +32,8 @@ export class ProjectService {
       ...project, 
       client: personService.getPersonById(project.client_id), 
       workplace: workplaceService.getWorkplaceById(project.workplace_id), 
-      authors: this.projectAuthorLinks.filter(link => link.project_id == project.project_id).map(link => personService.getPersonById(link.author_id)),
-      skills: this.projectSkillLinks.filter(link => link.project_id == project.project_id).map(link => skillService.getSkillById(link.skill_id)),
+      authors: this.projectAuthorLinks.filter(link => link.project_id === project.project_id).map(link => personService.getPersonById(link.author_id)),
+      skills: this.projectSkillLinks.filter(link => link.project_id === project.project_id).map(link => skillService.getSkillById(link.skill_id)),
       id: project.project_id 
     }
   }
