@@ -6,54 +6,58 @@
         width: 100%;
         border:$defborder;
         margin: $padding 0;
-        @include flex-column;
-        & .head{
-            width:100%;
-            @include flex-e2e;
-        }
-        & .top {
-            width:100%;
-            @include flex-e2e;
-            & .mainImg, .previewImg {
-                border-radius: $border-radius-circle;
-            }
-        }
+        display:grid;
         & .arrowImg{
+            grid-area: arrow;
             @include link-image;
+        }
+        & h3 {
+            grid-area:title;
         }
     }
     & >:not(.active) {
-        & .arrowImg {
-            transform: rotate(180deg);
-        }
+        grid-template-columns: 1fr 2fr $elem-height;
+        grid-template-areas: "image title arrow";
         & .previewImg{
-            display:block;
-            width:$contentbox-left-s;
+            @include preview-image;
+            grid-area:image;
+        }
+        & h3 {
+            grid-area:title;
+            justify-self: start;
+        }
+        & .arrowImg {
+            grid-area: arrow;
+            justify-self: end;
+            transform: rotate(180deg);
         }
         & .bottom, .mainImg {
             display:none;
         }
         & .desc {
-            width:$contentbox-right-s;
-            & p, h4{
-                display:none;
-            }
+            display:none;
         }
     }
     & >.active {
+        grid-template-columns: 1fr 1fr $elem-height;
+        grid-template-rows: $elem-height auto auto;
+        grid-template-areas: 
+        "image  title   arrow"
+        "image  desc    desc"
+        "bottom bottom  bottom";
         & .mainImg {
-            width: $contentbox-left-b;
-            display:block;
+            grid-area:image;
+            @include main-image;
+        }
+        & .desc {
+            grid-area:desc;
+        }
+        & .bottom {
+            grid-area:bottom;
+            @include flex-e2e;
         }
         & .previewImg {
             display:none;
-        }
-        & .desc {
-            width:$contentbox-right-b;
-        }
-        & .bottom {
-            width:100%;
-            @include flex-e2e;
         }
     }
 }

@@ -15,7 +15,7 @@ function listDirectory(path: string): FileLists {
     if (stats.isDirectory()) {
       const subList = listDirectory(filePath);
       for (const subdir in subList) {
-        fileList[`${file}/${subdir}`] = subList[subdir];
+        fileList[`${subdir}`] = subList[subdir];
       }
     } else {
       const directory = path.split('/').slice(1).join('/');
@@ -27,5 +27,6 @@ function listDirectory(path: string): FileLists {
   return fileList;
 }
 
-const fileList = listDirectory('root');
+const fileList = listDirectory('src/assets/content');
 console.log(JSON.stringify(fileList, null, 2));
+fs.writeFileSync('src/assets/fileStructure.json', JSON.stringify(fileList, null, 2));

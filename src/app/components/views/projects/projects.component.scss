@@ -1,0 +1,6 @@
+@import 'src/scss/variables.scss';
+@import 'src/scss/mixins.scss';
+
+:host {
+    @include wrapper;
+}

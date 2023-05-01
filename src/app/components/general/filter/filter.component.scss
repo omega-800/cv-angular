@@ -10,6 +10,6 @@
         @include link;
     }
     & .active {
-        @include darken-little($cool);
+        @include darken-little(background-color, $cool);
     }
 }

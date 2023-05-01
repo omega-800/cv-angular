@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { ListResult } from '@angular/fire/compat/storage/interfaces';
+import { ImageComponent } from 'src/app/components/components.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,34 +13,25 @@ export class ImagesService {
   }
 
   getImageURLs(path:string): string[] {
-    
+    let paths:string[] = [];
+
     if(path.endsWith("/")){
-      this.storage.ref('/'+this.image.path).listAll().subscribe({
+      this.storage.ref('/'+path).listAll().subscribe({
         next: (list:ListResult) => {
           list.items.forEach((itemRef) => {
             itemRef.getDownloadURL().then((url: string) => {
               //console.log(url);
-              this.images.push({
-                id:"image_"+itemRef.name,
-                name:"Image of "+this.image.name,
-                alt:"Image of "+this.image.alt,
-                path:url
-              })
+              paths.push(url)
             });
           });
         }, 
         error: (e) => console.log(e),
         complete: () => {
-          console.log(this.images)
-          if(this.images !== undefined && this.images.length > 0){
-            console.log("this.images")
-            this.isCarousel = true;
-            this.hasImage = true;
-          }
+          //console.log(paths);
         }
       })
     }
 
-    return [];
+    return paths;
   }
 }

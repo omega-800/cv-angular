@@ -1,8 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ImageComponent } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
-import { AngularFireStorage } from '@angular/fire/compat/storage';
-import { ListResult } from '@angular/fire/compat/storage/interfaces';
+import * as assets from 'src/assets/fileStructure.json';
 
 @Component({
   selector: 'app-contentbox',
@@ -16,15 +15,71 @@ export class ContentboxComponent implements OnInit {
   @Input() link?: string;
   @Input() image!: ImageComponent;
   @Input() imagePreview?: ImageComponent;
+
   arrowIcon:ImageComponent = arrowIcon;
   isCarousel:boolean = false;
-  images: ImageComponent[] = [];
   hasImage:boolean = false;
+  images:ImageComponent[] = [];
+  preview:ImageComponent = {id:"",name:"",alt:"",path:""};
+  main:ImageComponent = {id:"",name:"",alt:"",path:""};
 
-  constructor (private storage:AngularFireStorage) {
+  constructor (/*private storage:AngularFireStorage*/) {
   }
 
   ngOnInit(){
     
+    this.preview = this.imagePreview === undefined ? this.image : this.imagePreview;
+    if(this.image.path != "") {
+      if(!this.image.path.endsWith("/")) {
+        this.hasImage = true;
+      } else {
+        let files = assets["assets/content"+this.image.path.slice(0, -1) as keyof typeof assets];
+        if(files && files.length > 0){
+          this.hasImage = true;
+          this.images = files.map(file => {
+            return {
+              id:file,
+              name:this.title+" "+file,
+              alt:"Image of "+this.title,
+              path:"assets/content"+this.image.path+file
+            }
+          })
+          if(this.images.length == 1){
+            this.image = this.images[0];
+          } else {
+            this.isCarousel = true;
+          }
+          this.preview = this.imagePreview === undefined ? this.images[0] : this.imagePreview;
+        }
+      }
+    }
+    /*
+    if(this.image.id == "firebase_link"){
+      if(this.image.path.endsWith("/")){
+        this.storage.ref('/'+this.image.path).listAll().subscribe({
+          next: (list:ListResult) => {
+            list.items.forEach((itemRef) => {
+              itemRef.getDownloadURL().then((url: string) => {
+                this.images.push({
+                  id:itemRef.fullPath,
+                  name:this.image.name,
+                  alt:this.image.alt,
+                  path:url
+                })
+              });
+            });
+          }, 
+          error: (e) => console.log(e),
+          complete: () => {
+            this.hasImage = true;
+            this.isCarousel = true;
+            this.imagePreview === undefined ? this.preview = this.images[0] : this.preview = this.imagePreview;
+            this.preview = this.images[0];
+            //console.log(this.images);
+          }
+        })
+      }
+    }
+    */
   }
 }

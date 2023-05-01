@@ -12,5 +12,6 @@ export class ProjectsComponent {
 
   constructor(private projectService:ProjectService) {
     this.projects = projectService.getProjects();
+    //this.projects = [projectService.getProjectById("60d8c8bc-3061-406c-80bf-6188a236a7c1")];
   }
 }

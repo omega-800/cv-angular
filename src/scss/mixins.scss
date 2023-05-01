@@ -27,15 +27,27 @@
     text-decoration: none;
     border:none;
     &:hover {
-        @include darken-little($cool);
+        @include darken-little(background-color, $cool);
         cursor:pointer;
     }
 }
 
-@mixin link-image {
-    @include link;
+@mixin main-image {
+    max-height:$img-width;
+    max-width:$img-width;
+    display:block;
+    margin:auto;
+}
+
+@mixin preview-image {
+    border-radius: $border-radius-circle;
     height:$elem-height;
     width:$elem-height;
+}
+
+@mixin link-image {
+    @include link;
+    @include preview-image;
 }
 
 @mixin prefix($property, $value, $prefixes) {
@@ -45,9 +57,9 @@
     #{$property}: $value;
 }
 
-@mixin darken-little($color) {
-    background-color: darken($color, 15%);
-    transition: background-color $trans-cb;
+@mixin darken-little($property, $color) {
+    #{$property}: darken($color, 15%);
+    transition: #{$property} $trans-cb;
 }
 
 @mixin flex-row {

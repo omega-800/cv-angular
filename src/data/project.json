@@ -1,6 +1,6 @@
 [
  {
-  "project_id": "60d8c8bc-3061-406c-80bf-6188a236a7c1",
+  "project_id": "a579901a-7a1d-469b-a37f-c1f72e9bda8a",
   "name": "ID Altersverifikation",
   "name_e": "",
   "name_r": "",
@@ -9,14 +9,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/idageverification/",
+  "image": "/projects/it/inteco/idageverification/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "25f040d6-9c79-4788-a2cd-cd3513eeb2c4",
+  "project_id": "d2795dc7-f432-48e0-841a-de747de759bc",
   "name": "Produzentenseite",
   "name_e": "",
   "name_r": "",
@@ -25,14 +25,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/producer/",
+  "image": "/projects/it/inteco/producer/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "3700e517-96d5-4d5c-84a9-4c1392f7ed31",
+  "project_id": "8e1f0ac6-f75a-4ea5-acb2-7758cf602e25",
   "name": "SCSS Skript",
   "name_e": "",
   "name_r": "",
@@ -41,14 +41,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/scss_script/",
+  "image": "/projects/it/inteco/scss_script/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "908a2214-b994-4bad-98b7-768bbf3b8744",
+  "project_id": "81554ee5-3893-4f47-8b9e-ef054573052f",
   "name": "Übersetzungsskript",
   "name_e": "",
   "name_r": "",
@@ -57,14 +57,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/translate/",
+  "image": "/projects/it/inteco/translate/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "79b6b642-4050-4b52-952f-8ba15b76e76e",
+  "project_id": "0805f240-54fb-4433-81f6-9821a63806b7",
   "name": "Testen mittels Selenium",
   "name_e": "",
   "name_r": "",
@@ -73,14 +73,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/seleniumtest/",
+  "image": "/projects/it/inteco/seleniumtest/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "793c4374-ff22-4915-abba-979f83c2f885",
+  "project_id": "71961f34-370d-421b-87bb-99b52a27df1b",
   "name": "i18n",
   "name_e": "",
   "name_r": "",
@@ -89,14 +89,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/i18n/",
+  "image": "/projects/it/inteco/i18n/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "391be7e5-13fb-45f9-b317-e6c6362b9268",
+  "project_id": "9f5380b8-6978-4b3c-bcae-5213f78349af",
   "name": "Passwort zurücksetzen",
   "name_e": "",
   "name_r": "",
@@ -105,14 +105,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/passreset/",
+  "image": "/projects/it/inteco/passreset/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "4be41cb8-1453-4125-bf1a-e4eef43cd02f",
+  "project_id": "f4114e4f-c385-4814-ba40-2815eb6221e0",
   "name": "Share Buttons",
   "name_e": "",
   "name_r": "",
@@ -121,14 +121,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/sharebtn/",
+  "image": "/projects/it/inteco/sharebtn/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "5994ad38-9d8c-4e47-b61a-f9bc0edb2d10",
+  "project_id": "462bd68c-4a3f-4db9-98a2-5f7b9fc0418f",
   "name": "SEO Analyse",
   "name_e": "",
   "name_r": "",
@@ -137,14 +137,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/seo_analysis/",
+  "image": "/projects/it/inteco/seo_analysis/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "ba6a1d99-0b17-416e-8ca0-7a40fa807494",
+  "project_id": "9e676229-d648-49af-8803-21ac44ef9f6d",
   "name": "Geschmacksprofil",
   "name_e": "",
   "name_r": "",
@@ -153,14 +153,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/tasteprofile/",
+  "image": "/projects/it/inteco/tasteprofile/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "3a92ddc8-9457-4ce8-9d51-e5d0aad67c51",
+  "project_id": "f31f23ac-7791-476d-a068-4f50f3d89b9b",
   "name": "Popup",
   "name_e": "",
   "name_r": "",
@@ -169,14 +169,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/popup/",
+  "image": "/projects/it/inteco/popup/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "a1d56c4e-2b0e-426a-8a52-e84ed4559624",
+  "project_id": "d6f31802-76d6-4f6a-a169-0572f8cc3934",
   "name": "Konfigurationsseiten Magnolia",
   "name_e": "",
   "name_r": "",
@@ -185,14 +185,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/admincenter/",
+  "image": "/projects/it/inteco/admincenter/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "b815e05e-0593-49f5-bf8c-17bfeb671592",
+  "project_id": "13fef0e3-1566-4d92-a428-e1c8ed7c0386",
   "name": "Webseiten aufsetzen",
   "name_e": "",
   "name_r": "",
@@ -201,14 +201,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/aufsetzen/",
+  "image": "/projects/it/inteco/aufsetzen/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "27279d18-22f1-48da-9f6b-c16ff18295a3",
+  "project_id": "b66e255d-b412-4b63-83e4-db4b9b05a53a",
   "name": "Webseiten warten",
   "name_e": "",
   "name_r": "",
@@ -217,14 +217,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/inteco/warten/",
+  "image": "/projects/it/inteco/warten/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "edbd81e8-fa1e-4c9c-937e-9f04126d3662"
+  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266"
  },
  {
-  "project_id": "ce7561b9-dc83-40e1-b1d5-3df81e5db99e",
+  "project_id": "bf77c13f-0334-481e-baba-ef6ffdff414b",
   "name": "Webscraping automatisation",
   "name_e": "",
   "name_r": "",
@@ -233,14 +233,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/python/ernestovargas",
+  "image": "/projects/it/python/ernestovargas/",
   "github": "https://github.com/omega-800/AutomationPython",
   "date": "",
   "client_id": "",
-  "career_id": "ac30e662-c5f9-4b2c-be49-171ffb016ed3"
+  "career_id": "b91e2bd7-6cef-4a93-979b-4d41bc0ab03a"
  },
  {
-  "project_id": "06590cce-51b2-4737-9018-d0a650702fcc",
+  "project_id": "54e1db25-a278-4da4-8c5d-f2978f609248",
   "name": "Portfolio",
   "name_e": "",
   "name_r": "",
@@ -249,14 +249,14 @@
   "description_r": "",
   "url": "https://portfolio-chirokikh-georgiy.web.app/",
   "thumbnail": "",
-  "image": "projects/it/web/cv_old",
+  "image": "/projects/it/web/cv_old/",
   "github": "https://github.com/omega-800/curriculum-vitae-typescript",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "14feaeab-3bc2-42da-886d-107ad4fe0f00",
+  "project_id": "2dadb030-6a85-4766-a42f-89aea6c6e87f",
   "name": "Finanzplaner",
   "name_e": "",
   "name_r": "",
@@ -272,7 +272,7 @@
   "career_id": ""
  },
  {
-  "project_id": "5c241d06-3156-44ee-92a8-062b9841af4a",
+  "project_id": "1565394d-ad6c-4016-9edb-cddba37ead29",
   "name": "Textbasiertes Spiel Python",
   "name_e": "",
   "name_r": "",
@@ -288,7 +288,7 @@
   "career_id": ""
  },
  {
-  "project_id": "fa66462d-2bc9-4655-a49d-b2f64889ade5",
+  "project_id": "7020c972-f716-40bb-91c9-5656304b0c97",
   "name": "Textbasiertes Spiel C#",
   "name_e": "",
   "name_r": "",
@@ -304,7 +304,7 @@
   "career_id": ""
  },
  {
-  "project_id": "d6eb707b-3839-40b5-899b-756da046a9ec",
+  "project_id": "37bda539-2556-4a76-9d2d-2e23e3401805",
   "name": "Roguelike Dungeon Spiel 1",
   "name_e": "",
   "name_r": "",
@@ -313,14 +313,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/unity/dungeon",
+  "image": "/projects/it/unity/dungeon/",
   "github": "https://github.com/omega-800/dungeon_game",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "a4123839-b308-4ab8-bc7f-14396946c9f5",
+  "project_id": "914760e0-4f8d-4e67-b169-15a7f924b903",
   "name": "Roguelike Dungeon Spiel 2",
   "name_e": "",
   "name_r": "",
@@ -336,7 +336,7 @@
   "career_id": ""
  },
  {
-  "project_id": "9ea1652e-d42c-47b2-aeea-d189eb9b2d8e",
+  "project_id": "f80f8672-e3cd-40e9-a463-01de8d2b4b7d",
   "name": "Roguelike Dungeon Spiel 3",
   "name_e": "",
   "name_r": "",
@@ -352,7 +352,7 @@
   "career_id": ""
  },
  {
-  "project_id": "f5667b9e-47d6-461b-a329-43a175230c57",
+  "project_id": "489e214e-cc1a-4930-9879-ed7b6de2b10d",
   "name": "Raketen Spiel",
   "name_e": "",
   "name_r": "",
@@ -361,14 +361,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/unity/rocket",
+  "image": "/projects/it/unity/rocket/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "11420b24-94f6-4480-9498-d0163f88f095",
+  "project_id": "10f033ef-b6bb-4509-b41f-86ab4f225008",
   "name": "Minecraft Kopie",
   "name_e": "",
   "name_r": "",
@@ -384,7 +384,7 @@
   "career_id": ""
  },
  {
-  "project_id": "e360fcce-ed86-4022-b9ab-9d8f516ed12a",
+  "project_id": "713dffb8-6bed-497e-901a-a78b6930511e",
   "name": "Textbasiertes Spiel Java",
   "name_e": "",
   "name_r": "",
@@ -393,14 +393,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/java/textgame",
+  "image": "/projects/it/java/textgame/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "46702355-e1e2-4dc8-8877-b74e4161dd64",
+  "project_id": "3ab6dd05-4b89-43d9-8a58-1c3ef8fda155",
   "name": "Java UNO Spiel",
   "name_e": "",
   "name_r": "",
@@ -409,14 +409,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/java/uno",
+  "image": "/projects/it/java/uno/",
   "github": "",
   "date": "",
   "client_id": "",
-  "career_id": "6c751b1a-33dd-45dd-b033-4e907980d2f6"
+  "career_id": "337357e0-7c66-4f8f-ad09-b148b3b4423e"
  },
  {
-  "project_id": "20a500f4-d99b-439d-ae9a-4b30479ba5aa",
+  "project_id": "f9da558b-26e5-4f7c-966f-5f128b42e82a",
   "name": "Immobilien Webseite",
   "name_e": "",
   "name_r": "",
@@ -425,14 +425,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/web/immob",
+  "image": "/projects/it/web/immob/",
   "github": "",
   "date": "",
-  "client_id": "06988b91-4626-4959-9313-fe39f88f66fc",
+  "client_id": "5a023809-a2db-4624-8c01-5f14c44e4860",
   "career_id": ""
  },
  {
-  "project_id": "384b0d00-3a3e-4900-8e61-4222303e18cc",
+  "project_id": "f6e27aa6-d77c-4206-a4a6-5517234eba52",
   "name": "RusFrauenTreff Webseite",
   "name_e": "",
   "name_r": "",
@@ -441,14 +441,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/it/web/rus",
+  "image": "/projects/it/web/rus/",
   "github": "https://github.com/omega-800/rusfrauentreff",
   "date": "",
-  "client_id": "d53e8431-e226-4c21-8072-62751e447887",
+  "client_id": "aa3e71cf-415c-429e-bf7f-7f29f1eba41a",
   "career_id": ""
  },
  {
-  "project_id": "67a6e6a1-061c-4cc8-becd-a445cbc5cdfb",
+  "project_id": "4a55ad62-8e0e-44fa-8313-891443a25e16",
   "name": "Teddy",
   "name_e": "",
   "name_r": "",
@@ -457,14 +457,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/textile/teddy/",
+  "image": "/projects/art/textile/teddy/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "072ed92a-893d-4e98-a2d9-4c8133723806",
+  "project_id": "a7cdecfc-411b-461b-a347-d7e2ef1991a5",
   "name": "Tie Dye",
   "name_e": "",
   "name_r": "",
@@ -473,14 +473,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/textile/tiedye/",
+  "image": "/projects/art/textile/tiedye/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "0c0508b7-6a6b-4b12-acf0-c056275da209",
+  "project_id": "53c73759-6f38-41fa-a162-47c1643e8f4a",
   "name": "Portemonnaie",
   "name_e": "",
   "name_r": "",
@@ -489,14 +489,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/textile/wallet/",
+  "image": "/projects/art/textile/wallet/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "e1fc3adf-ddb3-47a9-be2b-f90a69d7080a",
+  "project_id": "596c8c83-e5c1-48e8-af39-393c7349cc1d",
   "name": "Pullover",
   "name_e": "",
   "name_r": "",
@@ -505,14 +505,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/textile/pullover/",
+  "image": "/projects/art/textile/pullover/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "9e2a36d7-858e-4c75-b9cd-8ea4fc97d8a8",
+  "project_id": "25d721dc-dd59-47e8-9346-7d464443cbb2",
   "name": "Heavy Metal Veste",
   "name_e": "",
   "name_r": "",
@@ -528,7 +528,7 @@
   "career_id": ""
  },
  {
-  "project_id": "fe8ad609-fd5f-4152-8f87-bbea687dd631",
+  "project_id": "94ffa01d-b64f-4b85-ab8e-b0f825d4fe1a",
   "name": "Punk Pullover",
   "name_e": "",
   "name_r": "",
@@ -544,7 +544,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c7ba2523-ddd5-4f0e-8432-f076fea71ffb",
+  "project_id": "16ef6a71-eb73-429d-b873-bb861622d6d8",
   "name": "Holzbesteck",
   "name_e": "",
   "name_r": "",
@@ -560,7 +560,7 @@
   "career_id": ""
  },
  {
-  "project_id": "69312044-e0ac-47e1-900e-626e7246b1af",
+  "project_id": "beb74313-a2a7-4d0b-8a3c-02643903f7a6",
   "name": "Holzohrenring",
   "name_e": "",
   "name_r": "",
@@ -569,14 +569,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/wood/plug/",
+  "image": "/projects/art/wood/plug/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "bfc7940b-5acf-4346-a239-34e7abf6e757",
+  "project_id": "4068005c-f82f-48dd-b96f-24d0e41f4e06",
   "name": "Bemaltes Eigentum",
   "name_e": "",
   "name_r": "",
@@ -592,7 +592,7 @@
   "career_id": ""
  },
  {
-  "project_id": "89c76a7a-fcf4-489d-a325-e4e8ce7700b6",
+  "project_id": "9f8acc04-ce24-4b13-be99-75b7a20302df",
   "name": "Turnsack und Seemannssack",
   "name_e": "",
   "name_r": "",
@@ -608,7 +608,7 @@
   "career_id": ""
  },
  {
-  "project_id": "dba540bf-8840-4477-a44b-63d1bf25dffa",
+  "project_id": "98493fde-a397-4b05-8003-e2d7e9c24593",
   "name": "Legales Graffiti",
   "name_e": "",
   "name_r": "",
@@ -617,14 +617,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/art/spray/",
+  "image": "/projects/art/art/spray/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "4e1720d1-b7f3-4398-85b2-1b11ac26640b",
+  "project_id": "e3f6bc58-3a26-4449-b5eb-e16c838d1c5d",
   "name": "Kusudama",
   "name_e": "",
   "name_r": "",
@@ -633,14 +633,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/paper/kusudama/",
+  "image": "/projects/art/paper/kusudama/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "3cea0e12-ca48-4851-adbd-220d5e2b18cc",
+  "project_id": "a75f112c-8327-4431-8490-3e63cce8dc0c",
   "name": "Origami",
   "name_e": "",
   "name_r": "",
@@ -649,14 +649,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/paper/origami/",
+  "image": "/projects/art/paper/origami/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "a46770a3-6e1c-4568-84a0-2a6a9ab53dde",
+  "project_id": "18d7bfba-e36a-4f00-be0d-34172669c287",
   "name": "Zeichnungen",
   "name_e": "",
   "name_r": "",
@@ -665,14 +665,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/art/drawing/",
+  "image": "/projects/art/art/drawing/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "fc87cb2e-5d04-47d5-9aa9-37b5f69ef5bf",
+  "project_id": "40260c7f-ab76-491b-8431-5bfd9c77a0a8",
   "name": "Mosaik",
   "name_e": "",
   "name_r": "",
@@ -681,14 +681,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/other/mosaic/",
+  "image": "/projects/art/other/mosaic/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "855a8e57-6b65-4906-b88d-784f3a08528d",
+  "project_id": "4f9193c8-e8b8-47e7-b85d-b9d911eda71c",
   "name": "Katzenbaum",
   "name_e": "",
   "name_r": "",
@@ -697,14 +697,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/wood/cat/",
+  "image": "/projects/art/wood/cat/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "e9eda4fb-826f-47e9-a824-a205182cd784",
+  "project_id": "2d678490-713f-4f5f-b496-44ecb5f9800e",
   "name": "Malen",
   "name_e": "",
   "name_r": "",
@@ -713,14 +713,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/art/paint/",
+  "image": "/projects/art/art/paint/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "f7c0aafe-9fe5-45ca-a476-b4e73a802ff8",
+  "project_id": "d85d01b6-130d-4196-8315-17f8367ad5e0",
   "name": "Gitarre",
   "name_e": "",
   "name_r": "",
@@ -736,7 +736,7 @@
   "career_id": ""
  },
  {
-  "project_id": "80f353f3-f057-4712-9d3e-d7c699bb0253",
+  "project_id": "3259cb6e-e090-4c32-996b-c41b90869578",
   "name": "Bass",
   "name_e": "",
   "name_r": "",
@@ -752,7 +752,7 @@
   "career_id": ""
  },
  {
-  "project_id": "d364b7b7-92af-493a-9622-835c351a12d7",
+  "project_id": "740272f3-b4be-4230-80e5-ea8a8e0e5951",
   "name": "Schlagzeug",
   "name_e": "",
   "name_r": "",
@@ -768,7 +768,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4b2306fd-67b6-42d5-934b-2cb7ea687c63",
+  "project_id": "b8a4e75f-e2f4-4400-a261-5f5c652eb845",
   "name": "Ableton",
   "name_e": "",
   "name_r": "",
@@ -784,7 +784,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4ab8f5e6-6d1f-4abe-a192-445506ab1eef",
+  "project_id": "a00baafd-9912-43ce-b130-cff8945dc157",
   "name": "FL Studio",
   "name_e": "",
   "name_r": "",
@@ -800,7 +800,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4794d49d-d193-4565-8ac2-707603b603b9",
+  "project_id": "a7cd64e0-43fa-4a13-b3ed-28c7bdcb27e8",
   "name": "Faden",
   "name_e": "",
   "name_r": "",
@@ -809,14 +809,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/art/other/string/",
+  "image": "/projects/art/other/string/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "e8b2f87e-6d73-4f5e-bc8f-a8308110e6f8",
+  "project_id": "3d4c9781-63a5-4b99-9301-38f930edf52b",
   "name": "CEVI",
   "name_e": "",
   "name_r": "",
@@ -832,7 +832,7 @@
   "career_id": ""
  },
  {
-  "project_id": "ddf9733f-467f-452e-ab56-f3022e6b6751",
+  "project_id": "80b8e6cc-91f8-437e-adee-5242118429a9",
   "name": "Fahrrad",
   "name_e": "",
   "name_r": "",
@@ -848,7 +848,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c04ca5d0-4241-4568-be4b-db5d2e62b56d",
+  "project_id": "3227c1cd-e847-4dfc-adae-76e58dfc1061",
   "name": "Volleyball",
   "name_e": "",
   "name_r": "",
@@ -864,7 +864,7 @@
   "career_id": ""
  },
  {
-  "project_id": "51ebd8c1-d9cb-4d83-b5e7-a8ea558d27f6",
+  "project_id": "74806ea5-70ae-4b05-9477-0bc037ac0cfb",
   "name": "Skateboard",
   "name_e": "",
   "name_r": "",
@@ -880,7 +880,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c061e6e8-3358-43b4-81d8-620f6cc3d575",
+  "project_id": "fbe1eeeb-3401-403f-a385-3c6707792607",
   "name": "Tischtennis",
   "name_e": "",
   "name_r": "",
@@ -889,14 +889,14 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/health/sports/tabletennis/",
+  "image": "/projects/health/sports/tabletennis/",
   "github": "",
   "date": "",
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "97b1e921-7aec-4e3a-8bc3-41cd297cc915",
+  "project_id": "77416b50-b732-415b-9d41-1a503ee58766",
   "name": "Campen",
   "name_e": "",
   "name_r": "",
@@ -912,7 +912,7 @@
   "career_id": ""
  },
  {
-  "project_id": "19bf1233-cf88-4ba7-92ed-514944338f06",
+  "project_id": "504864e5-cad0-4e20-8f2c-cff66fb32ba6",
   "name": "Wandern",
   "name_e": "",
   "name_r": "",
@@ -928,7 +928,7 @@
   "career_id": ""
  },
  {
-  "project_id": "b1e6bb2e-1692-4f1c-a64a-2d120f374c31",
+  "project_id": "d39dcfd1-3884-4033-8d11-9d40d88068e9",
   "name": "Kochen",
   "name_e": "",
   "name_r": "",
@@ -944,7 +944,7 @@
   "career_id": ""
  },
  {
-  "project_id": "92766878-34e5-4147-aa92-250427ca6264",
+  "project_id": "1e122f0e-8197-4e70-8d00-8469514a38fe",
   "name": "Lebkuchen",
   "name_e": "",
   "name_r": "",
@@ -953,7 +953,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "projects/health/cooking/lebkuchen/",
+  "image": "/projects/health/cooking/lebkuchen/",
   "github": "",
   "date": "",
   "client_id": "",

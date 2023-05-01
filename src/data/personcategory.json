@@ -1,6 +1,6 @@
 [
  {
-  "personcategory_id": "90ade910-09d5-4bf9-8336-18bb70d4f3dc",
+  "personcategory_id": "129dfc07-315f-48d9-ab4b-26d8c97e4639",
   "name": "me",
   "name_e": "",
   "name_r": "",
@@ -9,7 +9,7 @@
   "description_r": ""
  },
  {
-  "personcategory_id": "9f63dace-8b9b-45b6-b8d0-554a38ab4315",
+  "personcategory_id": "dade03a1-f863-404a-8732-94b20b454921",
   "name": "familie",
   "name_e": "",
   "name_r": "",
@@ -18,7 +18,7 @@
   "description_r": ""
  },
  {
-  "personcategory_id": "d0ff939e-5eb9-4868-b486-973d292c4ad4",
+  "personcategory_id": "ea35351d-adaf-4a2f-ae44-4422539d030e",
   "name": "berufsbildner",
   "name_e": "",
   "name_r": "",
@@ -27,7 +27,7 @@
   "description_r": ""
  },
  {
-  "personcategory_id": "f31eb1e7-508a-4917-8820-a5e729eebc3c",
+  "personcategory_id": "ed879129-7b36-4d66-84f3-2bc77ae880b9",
   "name": "lehrer",
   "name_e": "",
   "name_r": "",

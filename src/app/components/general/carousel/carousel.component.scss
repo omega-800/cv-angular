@@ -1,0 +1,71 @@
+@import 'src/scss/variables.scss';
+@import 'src/scss/mixins.scss';
+
+:host {
+    position:relative;
+    & .slide{
+        display:none;
+        &.active {
+            height:$img-width;
+            width:$img-width;
+            @include flex-center;
+            & img {
+                @include main-image;
+            }
+        }
+    }
+    & .dots{
+        @include flex-row;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:$elem-size * 2;
+        & >div {
+            height:$elem-size;
+            width:$elem-size;
+            border-radius: $border-radius-circle;
+            background-color:$cool;
+            &:hover{
+                cursor:pointer;
+                @include darken-little(background-color, $cool);
+            }
+            &.active{
+                @include darken-little(background-color, $cool);
+            }
+        }
+    }
+    & .arrow{
+        position:absolute;
+        top:0;
+        height:calc(100% - ($elem-size * 2));
+        width:50%;
+        & i {
+            position:absolute;
+            top:50%;
+            border: $defborder;
+            border-width: 0 $elem-padding $elem-padding 0;
+            padding: $elem-padding;
+            display: inline-block;
+            &:hover{
+                cursor:pointer;
+                @include darken-little(border-color, $cool);
+            }
+        }
+        &.left{
+            left:0;
+            & i {
+                left:0;
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+        }
+        &.right{
+            right:0;
+            & i {
+                right:0;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+        }
+    }
+}

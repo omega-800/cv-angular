@@ -1,11 +1,5 @@
 [
  {
-  "table_name": "application_operatingsystem"
- },
- {
-  "table_name": "project_author"
- },
- {
   "table_name": "skillcategory"
  },
  {
@@ -39,6 +33,9 @@
   "table_name": "operatingsystem"
  },
  {
+  "table_name": "application_operatingsystem"
+ },
+ {
   "table_name": "country_language"
  },
  {
@@ -57,10 +54,10 @@
   "table_name": "workplace_contactpoint"
  },
  {
-  "table_name": "school_contactpoint"
+  "table_name": "school"
  },
  {
-  "table_name": "school"
+  "table_name": "school_contactpoint"
  },
  {
   "table_name": "career"
@@ -79,5 +76,8 @@
  },
  {
   "table_name": "project_skill"
+ },
+ {
+  "table_name": "project_author"
  }
 ]

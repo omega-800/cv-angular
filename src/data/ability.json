@@ -1,6 +1,6 @@
 [
  {
-  "ability_id": "c7888db3-a468-422b-9b91-5df8b7690cb3",
+  "ability_id": "d63bbac5-4b2c-43cb-a2d9-a526ef5bb823",
   "name": "Selbstständigkeit",
   "name_e": "",
   "name_r": "",
@@ -12,7 +12,7 @@
   "url": ""
  },
  {
-  "ability_id": "d6eb9bfa-8c9d-4619-b2f4-fd104ee54dcf",
+  "ability_id": "9c8dc283-220e-42b7-bef5-be9e3fdf7b54",
   "name": "Teamwork",
   "name_e": "",
   "name_r": "",
@@ -24,7 +24,7 @@
   "url": ""
  },
  {
-  "ability_id": "055c97b4-54ea-414f-bdc9-7bd32308a4d3",
+  "ability_id": "329bd675-a3b5-4768-8cb2-3a23603f3e81",
   "name": "Logisches Denken",
   "name_e": "",
   "name_r": "",
@@ -36,7 +36,7 @@
   "url": ""
  },
  {
-  "ability_id": "f95cb8cb-bb25-4ad6-b345-be9dbc1f9c4e",
+  "ability_id": "09dba87f-4915-404c-bb24-ee79153064b4",
   "name": "Kritikfähigkeit",
   "name_e": "",
   "name_r": "",
@@ -48,7 +48,7 @@
   "url": ""
  },
  {
-  "ability_id": "56cdcc4c-4181-4d00-9f56-b7eda44c2a7a",
+  "ability_id": "dec94c3f-5b31-4e96-aec6-3bb996d2fd07",
   "name": "Kreativität",
   "name_e": "",
   "name_r": "",
@@ -60,7 +60,7 @@
   "url": ""
  },
  {
-  "ability_id": "d21579c9-5d06-41b9-803a-d0bd492c3538",
+  "ability_id": "eaa4ac04-895c-487e-a621-1bcb4b784dba",
   "name": "Kommunikation",
   "name_e": "",
   "name_r": "",
@@ -72,7 +72,7 @@
   "url": ""
  },
  {
-  "ability_id": "fdf2d20a-f230-4298-8ae9-e96b6988f277",
+  "ability_id": "eb9acc54-1687-4d47-aa6f-202a52270bb6",
   "name": "Lernfähigkeit",
   "name_e": "",
   "name_r": "",
@@ -84,7 +84,7 @@
   "url": ""
  },
  {
-  "ability_id": "f39b5107-72db-4e39-bdd4-ba99edd4ca7b",
+  "ability_id": "9d3de1c3-f913-495b-bb87-dc032932f1eb",
   "name": "Organisation",
   "name_e": "",
   "name_r": "",
@@ -96,7 +96,7 @@
   "url": ""
  },
  {
-  "ability_id": "64061fdb-741b-4202-b68d-b9b177b0f927",
+  "ability_id": "efc4fb62-3da1-4771-a492-5b279c59cca0",
   "name": "Empathie",
   "name_e": "",
   "name_r": "",
@@ -108,7 +108,7 @@
   "url": ""
  },
  {
-  "ability_id": "43fcfb40-f154-42d1-a346-24c7c6b1f966",
+  "ability_id": "76afafea-ef6d-4ea3-86e5-4dc1b51b0580",
   "name": "Geduld",
   "name_e": "",
   "name_r": "",

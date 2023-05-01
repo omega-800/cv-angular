@@ -27,11 +27,7 @@ export class ProjectService {
   private projects: ProjectEntity[];
 
   constructor(private personService: PersonService, private workplaceService: WorkplaceService, private skillService: SkillService, private storage:AngularFireStorage) {
-    //storage.ref('/projects/art/art/drawing/IMG-20180115-WA0008.jpeg').getDownloadURL().subscribe(val => console.log(val));
     this.projects = this.onlyProjects.map(project => this.fillProject(project, []));
-    //this.projects = [];
-    //this.onlyProjects.map(project => this.getDownloadURLs(project, personService, workplaceService, skillService, storage));
-    console.log(this.projects);
   }
 
   getProjects():ProjectEntity[] {
@@ -40,34 +36,6 @@ export class ProjectService {
   
   getProjectById(id:string):ProjectEntity {
     return Object.values(this.projects).filter(project => project.project_id === id)[0];
-  }
-
-  getDownloadURLs(project: ProjectOnly) {
-    let images:ImageComponent[] = [];
-    if(project.image !== ""){
-    this.storage.ref('/'+project.image).listAll().subscribe({
-      next: (list:ListResult) => {
-        list.items.forEach((itemRef) => {
-          itemRef.getDownloadURL().then((url: string) => {
-            //console.log(url);
-            images.push({
-              id:"image_"+itemRef.name,
-              name:"Image of "+project.name,
-              alt:"Image of "+project.name,
-              path:url
-            })
-          });
-        });
-      }, 
-      error: (e) => console.log(e),
-      complete: () => {
-        console.log(images)
-        this.projects.push(this.fillProject(project, images))
-      }
-    })
-  }else {
-    this.projects.push(this.fillProject(project, [contactIcon]))
-  }
   }
 
   fillProject(project: ProjectOnly, images:ImageComponent[]): ProjectEntity {
