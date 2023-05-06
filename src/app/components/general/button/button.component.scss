@@ -4,6 +4,7 @@
 :host {
     & span {
         @include link;
+        @include pill;
         @include flex-center;
         height:$elem-height;
         width:$elem-height;

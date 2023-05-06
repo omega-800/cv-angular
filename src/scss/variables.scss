@@ -4,6 +4,12 @@ $white: rgb(237, 242, 244);
 $cool: rgb(142, 141, 190);
 $bitter: rgb(237, 106, 90);
 $apple: rgb(135, 163, 48);
+$transparent-darken: rgba(0,0,0,0.1);
+$transparent-lighten: rgba(255,255,255,0.3);
+
+$opacity-min: 30%;
+$opacity-mid: 65%;
+$opacity-max: 85%;
 
 $mobile-max: 480px;
 $tablet-max: 768px;
@@ -12,13 +18,13 @@ $laptop-max: 1024px;
 $wrapper-width:90%;
 $wrapper-width-large:80%;
 $border-radius-circle: 50%;
-$padding:0.5em;
-$elem-size:1em;
+$elem-size:1rem;
 $elem-padding:$elem-size / 2;
 $elem-border-radius: $elem-size * 2;
 $elem-height: $elem-size * 4;
-$wrapper-padding: 2em 0;
-$img-width:15em;
+$wrapper-padding: 2rem 0;
+$img-width:15rem;
+$thin:0.15rem;
 
 $contentbox-left-s:30%;
 $contentbox-right-s:70%;

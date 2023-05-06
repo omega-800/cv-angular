@@ -5,7 +5,7 @@
     width: 100%;
     & .navbar {
         background-color: $cool;
-        padding: $padding;
+        padding: $elem-padding;
         & ul {
             @include flex-row;
             margin: 0;
@@ -14,9 +14,10 @@
                 list-style: none;
                 & a {
                     @include link;
+                    @include pill;
                 }
                 & .active {
-                    background-color: $white;
+                    @include darken-little(background-color, $cool);
                 }
             }
         }

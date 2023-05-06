@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "17ca966a-c82d-430a-b049-c1a7402ce5e7",
+  "school_id": "c7bcae87-5805-4188-9754-16119897df27",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -13,10 +13,10 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "",
   "image": "",
-  "address_id": "5eb58d2e-25fc-40d0-9664-42340b8a0ed6"
+  "address_id": "7b81d870-2548-4cd1-9b9f-6c61e2e766d1"
  },
  {
-  "school_id": "949f4190-5678-472c-b1a4-29372f5d28cf",
+  "school_id": "2246a1ba-ade5-4c82-9bb0-c1c66451746b",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
@@ -29,10 +29,10 @@
   "url": "https://www.kshp.ch/",
   "logo": "",
   "image": "",
-  "address_id": "5d2f1545-d5f3-43a1-a684-7d03eacac289"
+  "address_id": "69af70a8-40a6-4ec7-91bc-b4bce4753576"
  },
  {
-  "school_id": "b79a3636-6c2d-4f15-8f15-4f40f5e676aa",
+  "school_id": "69d6908c-fe11-490c-b334-74d1444572e8",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -45,10 +45,10 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "",
   "image": "",
-  "address_id": "9e6eec22-d3f5-4229-96ce-59c9af704e78"
+  "address_id": "3b8cf956-59c7-4361-8794-7f257b8a9f95"
  },
  {
-  "school_id": "d1312c8c-4b20-48ff-a87c-11a8871812bc",
+  "school_id": "0b39dcff-d59f-45fc-9a03-c764aa22f454",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -61,10 +61,10 @@
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
   "logo": "",
   "image": "",
-  "address_id": "050c696a-0a9d-4788-b2bb-2520f7dbd829"
+  "address_id": "f2e8fde2-e776-4c66-99c8-a34fc9b0d716"
  },
  {
-  "school_id": "506e0c4d-45f9-4329-bcce-27f0609279d9",
+  "school_id": "62f7c09b-cd0a-4878-95f7-ec7228130224",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -77,6 +77,6 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "",
   "image": "",
-  "address_id": "236a345e-6623-4f50-892a-94eef61df27a"
+  "address_id": "d9cab5c8-f442-41db-b20d-925acf061b51"
  }
 ]

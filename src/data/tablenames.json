@@ -1,17 +1,5 @@
 [
  {
-  "table_name": "skillcategory"
- },
- {
-  "table_name": "skillsubcategory"
- },
- {
-  "table_name": "applicationtype"
- },
- {
-  "table_name": "application"
- },
- {
   "table_name": "skill"
  },
  {
@@ -40,6 +28,18 @@
  },
  {
   "table_name": "country"
+ },
+ {
+  "table_name": "skillcategory"
+ },
+ {
+  "table_name": "skillsubcategory"
+ },
+ {
+  "table_name": "applicationtype"
+ },
+ {
+  "table_name": "application"
  },
  {
   "table_name": "address"

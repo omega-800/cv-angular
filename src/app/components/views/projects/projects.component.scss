@@ -3,4 +3,8 @@
 
 :host {
     @include wrapper;
+    & .skillpill{
+        @include pill;
+        @include darken-little(background-color, $cool);
+    }
 }

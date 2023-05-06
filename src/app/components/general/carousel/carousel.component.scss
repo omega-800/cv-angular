@@ -3,11 +3,13 @@
 
 :host {
     position:relative;
-    & .slide{
+    width:100%;
+    background-color: $apple;
+    & .slide {
         display:none;
         &.active {
-            height:$img-width;
-            width:$img-width;
+            @include main-image-proportions;
+            min-height:$img-width;
             @include flex-center;
             & img {
                 @include main-image;
@@ -17,52 +19,72 @@
     & .dots{
         @include flex-row;
         position:absolute;
-        bottom:0;
+        top:0;
         width:100%;
-        height:$elem-size * 2;
+        height:$elem-border-radius;
         & >div {
             height:$elem-size;
             width:$elem-size;
+            border:$thin solid $cool;
             border-radius: $border-radius-circle;
-            background-color:$cool;
+            @include darken-little(border-color, $cool);
+            position:relative;
+            &::after{
+                content:"";
+                @include darken-little(border-color, $cool);
+                width:80%;
+                height:80%;
+                top:10%;
+                left:10%;
+                border-radius: $border-radius-circle;
+                display:block;
+                position:absolute;
+            }
+            //background-color:$cool;
             &:hover{
                 cursor:pointer;
-                @include darken-little(background-color, $cool);
+                background-color:$cool;
             }
             &.active{
-                @include darken-little(background-color, $cool);
+                background-color:$cool;
             }
         }
     }
     & .arrow{
         position:absolute;
-        top:0;
-        height:calc(100% - ($elem-size * 2));
+        bottom:0;
+        height:calc(100% - $elem-border-radius);
         width:50%;
+        &:hover{
+            cursor:pointer;
+            & i{
+                @include transition(opacity, $opacity-mid);
+            }
+        }
         & i {
+            border: $elem-size solid $cool;
+            border-width: 0 $elem-size $elem-size 0;
+            @include transition(opacity, $opacity-min);
             position:absolute;
             top:50%;
-            border: $defborder;
-            border-width: 0 $elem-padding $elem-padding 0;
-            padding: $elem-padding;
+            padding: $elem-size;
             display: inline-block;
             &:hover{
-                cursor:pointer;
-                @include darken-little(border-color, $cool);
+                @include transition(opacity, $opacity-max);
             }
         }
         &.left{
             left:0;
             & i {
-                left:0;
+                left:$elem-size;
                 transform: rotate(135deg);
                 -webkit-transform: rotate(135deg);
             }
         }
         &.right{
             right:0;
-            & i {
-                right:0;
+            & i, img {
+                right:$elem-size;
                 transform: rotate(-45deg);
                 -webkit-transform: rotate(-45deg);
             }

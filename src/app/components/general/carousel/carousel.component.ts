@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ImageComponent } from '../../components.model';
+import { arrowIcon } from '../../components.constants';
 
 @Component({
   selector: 'app-carousel',
@@ -9,6 +10,7 @@ import { ImageComponent } from '../../components.model';
 export class CarouselComponent {
   @Input() images!:ImageComponent[];
   current:number = 0;
+  arrowIcon:ImageComponent = arrowIcon;
 
   constructor(){}
 

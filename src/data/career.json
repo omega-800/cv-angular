@@ -1,6 +1,6 @@
 [
  {
-  "career_id": "46ff847b-051f-4c0e-ab71-3438cd657266",
+  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3",
   "name": "inteco",
   "name_e": "",
   "name_r": "",
@@ -10,11 +10,11 @@
   "yearfrom": 2022,
   "yearto": 2023,
   "document": "",
-  "workplace_id": "a7fd6490-e04e-4507-9ff4-75c8baf204b0",
+  "workplace_id": "00ec3504-4087-441f-877c-ad3d2328e3b5",
   "school_id": ""
  },
  {
-  "career_id": "b91e2bd7-6cef-4a93-979b-4d41bc0ab03a",
+  "career_id": "50f28560-0e12-4878-aba0-eae024fd54d1",
   "name": "ernestovargas",
   "name_e": "",
   "name_r": "",
@@ -24,11 +24,11 @@
   "yearfrom": 2020,
   "yearto": 2021,
   "document": "",
-  "workplace_id": "ac4bfae8-833b-4eae-86ef-5ecb2c9ae198",
+  "workplace_id": "1ab01853-ad2e-4ab0-9729-441daa1785af",
   "school_id": ""
  },
  {
-  "career_id": "337357e0-7c66-4f8f-ad09-b148b3b4423e",
+  "career_id": "f05ce4ed-bcc4-49a8-a235-c62b510b6789",
   "name": "bzz",
   "name_e": "",
   "name_r": "",
@@ -39,10 +39,10 @@
   "yearto": 2020,
   "document": "",
   "workplace_id": "",
-  "school_id": "506e0c4d-45f9-4329-bcce-27f0609279d9"
+  "school_id": "62f7c09b-cd0a-4878-95f7-ec7228130224"
  },
  {
-  "career_id": "dc54e5a8-1f56-4fff-a332-9c1e3499bdfc",
+  "career_id": "8647b55c-4ace-4d45-862a-dd00f6a5654c",
   "name": "ims",
   "name_e": "",
   "name_r": "",
@@ -53,10 +53,10 @@
   "yearto": 2020,
   "document": "",
   "workplace_id": "",
-  "school_id": "d1312c8c-4b20-48ff-a87c-11a8871812bc"
+  "school_id": "0b39dcff-d59f-45fc-9a03-c764aa22f454"
  },
  {
-  "career_id": "6d6ce0c3-4210-4ad3-b7ff-f6eaa1e6f57f",
+  "career_id": "e63ca028-8545-4524-b260-770c7245118a",
   "name": "sek",
   "name_e": "",
   "name_r": "",
@@ -67,10 +67,10 @@
   "yearto": 2017,
   "document": "",
   "workplace_id": "",
-  "school_id": "b79a3636-6c2d-4f15-8f15-4f40f5e676aa"
+  "school_id": "69d6908c-fe11-490c-b334-74d1444572e8"
  },
  {
-  "career_id": "d55c71e0-d73e-4478-854b-bba2412c87c4",
+  "career_id": "457749ef-4851-43af-8600-64a7d1bfed2f",
   "name": "hopro",
   "name_e": "",
   "name_r": "",
@@ -81,10 +81,10 @@
   "yearto": 2016,
   "document": "",
   "workplace_id": "",
-  "school_id": "949f4190-5678-472c-b1a4-29372f5d28cf"
+  "school_id": "2246a1ba-ade5-4c82-9bb0-c1c66451746b"
  },
  {
-  "career_id": "9ac49f49-77f9-4c07-a4a2-ced85681824d",
+  "career_id": "60002b99-c352-468b-8575-3482db4c2b23",
   "name": "probstei",
   "name_e": "",
   "name_r": "",
@@ -95,6 +95,6 @@
   "yearto": 2014,
   "document": "",
   "workplace_id": "",
-  "school_id": "17ca966a-c82d-430a-b049-c1a7402ce5e7"
+  "school_id": "c7bcae87-5805-4188-9754-16119897df27"
  }
 ]

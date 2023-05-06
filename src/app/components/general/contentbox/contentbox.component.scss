@@ -1,50 +1,76 @@
 @import 'src/scss/variables.scss';
 @import 'src/scss/mixins.scss';
+@import 'src/scss/screens.scss';
 
 :host {
     & >div{
         width: 100%;
-        border:$defborder;
-        margin: $padding 0;
-        display:grid;
-        & .arrowImg{
-            grid-area: arrow;
-            @include link-image;
-        }
-        & h3 {
-            grid-area:title;
+        //border:$defborder;
+        background-color: $cool;
+        border-radius:$elem-border-radius;
+        margin: $elem-padding 0;
+        @include default-grid;
+        & .preview {
+            @include link;
+            @include slimpill;
+            @include default-grid;
+            & .arrowImg{
+                grid-area: arrow;
+                @include preview-image;
+                padding: $elem-padding;
+            }
+            & .title {
+                grid-area:title;
+                @include flex-list;
+                padding: 0 $elem-padding;
+            }
         }
     }
     & >:not(.active) {
-        grid-template-columns: 1fr 2fr $elem-height;
-        grid-template-areas: "image title arrow";
-        & .previewImg{
-            @include preview-image;
-            grid-area:image;
+        & .preview {
+            grid-template-columns: $elem-height 1fr $elem-height;
+            grid-template-areas: "image title arrow";
+            & .previewImg {
+                grid-area:image;
+                @include preview-image;
+            }
+            & .arrowImg {
+                justify-self: end;
+                transform: rotate(180deg);
+            }
         }
-        & h3 {
-            grid-area:title;
-            justify-self: start;
-        }
-        & .arrowImg {
-            grid-area: arrow;
-            justify-self: end;
-            transform: rotate(180deg);
-        }
-        & .bottom, .mainImg {
-            display:none;
-        }
-        & .desc {
+        & >:not(.preview) {
             display:none;
         }
     }
     & >.active {
-        grid-template-columns: 1fr 1fr $elem-height;
-        grid-template-rows: $elem-height auto auto;
-        grid-template-areas: 
-        "image  title   arrow"
-        "image  desc    desc"
-        "bottom bottom  bottom";
+        @include mobile-screen {
+            grid-template-columns: 1fr;
+            grid-template-rows: $elem-height auto auto auto;
+            grid-template-areas: 
+            "preview"
+            "desc"
+            "image"
+            "bottom";
+        }
+        @include desktop-screen {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: $elem-height auto auto;
+            grid-template-areas: 
+            "preview  preview"
+            "image  desc"
+            "image bottom";            
+        }
+        & .preview {
+            grid-area:preview;
+            grid-template-columns: 1fr $elem-height;
+            grid-template-areas: "title arrow";
+            border-bottom-left-radius:0;
+            border-bottom-right-radius: 0;
+            & .previewImg {
+                display:none;
+            }
+        }
         & .mainImg {
             grid-area:image;
             @include main-image;
@@ -56,8 +82,6 @@
             grid-area:bottom;
             @include flex-e2e;
         }
-        & .previewImg {
-            display:none;
-        }
+        padding-bottom:$elem-border-radius;
     }
 }

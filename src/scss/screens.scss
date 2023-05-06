@@ -12,14 +12,14 @@
     }
 }
 
-@mixin laptop-screen {
-    @media (min-width: #{$tablet-max + 1px}) and (max-width: #{$laptop-max}) {
+@mixin desktop-screen {
+    @media (min-width: #{$tablet-max + 1px})/* and (max-width: #{$laptop-max}) */{
       @content;
     }
 }
-
+/*
 @mixin large-screen {
     @media (min-width: #{$laptop-max + 1px}) {
       @content;
     }
-}
+}*/

@@ -8,6 +8,7 @@
     }
     & .filter {
         @include link;
+        @include pill;
     }
     & .active {
         @include darken-little(background-color, $cool);
