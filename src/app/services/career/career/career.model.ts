@@ -1,4 +1,4 @@
-import { ImageComponent } from "src/app/components/components.model";
+import { ImageComp } from "src/app/components/components.model";
 import { Entity, NamedEntity } from "../../entities.model";
 import { SchoolEntity } from "../school/school.model";
 import { WorkplaceEntity } from "../workplace/workplace.model";
@@ -31,7 +31,7 @@ export interface CareerOnly {
 
 export interface CareerTypeEntity extends Entity {
   name:string,
-  logo:ImageComponent
+  logo:ImageComp
 }
 
 export interface CareerTypes {

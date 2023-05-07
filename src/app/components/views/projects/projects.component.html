@@ -1,10 +1,41 @@
+<h1>Projects</h1>
 <app-contentbox *ngFor="let project of projects"
     [image]='{id:"firebase_link",alt:"",name:"",path:project.image}'
     title="{{project.name}}" 
     subTitle="{{project.name}}" 
     description="{{project.description}}"
     link="{{project.url}}">
-    <div *ngFor="let skill of project.skills" class="skillpill">
-        {{skill.name}}
+    <div *ngIf="project.github || project.url" class="bot links">
+        <h5>Links:</h5>
+        <div class="content">
+            <app-button *ngIf="project.github" [onClick]="ol(project.github)" [type]="lt.GITHUB" [name]="lt.GITHUB.name"></app-button>
+            <app-button *ngIf="project.url" [onClick]="ol(project.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
+        </div>
+    </div>
+    <div *ngIf="project.client" class="bot client">
+        <h5>Entwickelt für:</h5>
+        <div class="content">
+            <app-button [onClick]="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"></app-button>
+        </div>
+    </div>
+    <div *ngIf="project.authors" class="bot authors">
+        <h5>Author{{project.authors.length > 1 ? 'en' : ''}}:</h5>
+        <div class="content">
+            <app-button *ngFor="let author of project.authors" [onClick]="openClient(author.id)" [type]="lt.PERSON" [name]="author.name"></app-button>
+        </div>
+    </div>
+    <div *ngIf="project.career" class="bot career">
+        <h5>Entwickelt bei:</h5>
+        <div class="content">
+            <app-button [onClick]="openCareer(project.career.id)" [type]="lt.OTHER" [name]="project.career.name"></app-button>            
+        </div>
+    </div>
+    <div class="bot skills">
+        <h5>Skills:</h5>
+        <div class="content">
+            <div *ngFor="let skill of project.skills" class="skillpill">
+                {{skill.name}}
+            </div>            
+        </div>
     </div>
 </app-contentbox>

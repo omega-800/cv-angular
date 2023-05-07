@@ -1,36 +1,36 @@
 import { Entity } from "../services/entities.model";
 
-export interface Component {
+export interface Comp {
     id: string,
     name: string,
     entities?: Entity[]
 }
 
-export interface ContentComponent extends Component {
+export interface ContentComp extends Comp {
     title: string,
     description: string,
-    images?: ImageComponent[],
-    skills?: ButtonComponent[],
-    links?: ButtonComponent[]
+    images?: ImageComp[],
+    skills?: ButtonComp[],
+    links?: ButtonComp[]
 }
 
-export interface ButtonComponent extends Component {
+export interface ButtonComp extends Comp {
     onClick: Function,
     type: LinkType
 }
 
-export interface TagComponent extends ButtonComponent {
+export interface TagComp extends ButtonComp {
     selected: boolean
 }
 
-export interface ImageComponent extends Component {
+export interface ImageComp extends Comp {
     path: string,
     alt: string,
     previewPath?: string
 }
 
-export interface LinkType extends Component {
-    image:ImageComponent,
+export interface LinkType extends Comp {
+    image:ImageComp,
     prefix:string
 }
 
@@ -39,5 +39,6 @@ export interface LinkTypes {
     MAIL:LinkType,
     PHONE:LinkType,
     URL:LinkType,
+    PERSON:LinkType,
     OTHER:LinkType,
 }

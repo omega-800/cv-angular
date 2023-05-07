@@ -1,0 +1,27 @@
+@import 'src/scss/variables.scss';
+@import 'src/scss/mixins.scss';
+
+@mixin img-height($prop, $mod) {
+    @include mobile-screen {
+        #{$prop}:calc($img-height-m + $mod);
+    }
+    @include tablet-screen {
+        #{$prop}:calc($img-height-t + $mod);
+    }
+    @include desktop-screen {
+        #{$prop}:calc($img-height-d + $mod);
+    }
+}
+
+@mixin main-image-container {
+    width:100%;
+    border-radius: $elem-border-radius;
+    @include img-height(height, 0vh);
+}
+
+@mixin main-image {
+    min-width: $img-width;
+    min-height: $img-width;
+    max-width:100%;
+    @include img-height(max-height, 0vh);
+}

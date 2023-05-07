@@ -1,0 +1,21 @@
+@import 'src/scss/variables.scss';
+@import 'src/scss/mixins.scss';
+
+@mixin arrow($direction, $transform) {
+    #{$direction}:0;
+    & div {
+        position:absolute;
+        top:50%;
+        @include transition(#{$direction},-15%);
+        & i {
+            #{$direction}:$elem-padding;
+            transform: rotate(#{$transform});
+            -webkit-transform: rotate(#{$transform});
+        }
+    }
+    &:hover{
+        & div {
+            #{$direction}:0;
+        }
+    }
+}

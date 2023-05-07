@@ -1,6 +1,5 @@
-import { ImageComponent } from "src/app/components/components.model";
+import { ImageComp } from "src/app/components/components.model";
 import { CareerEntity } from "../career/career/career.model";
-import { WorkplaceEntity } from "../career/workplace/workplace.model";
 import { ContentEntity } from "../entities.model";
 import { PersonEntity } from "../person/person/person.model";
 import { SkillEntity } from "../skills/skill/skill.model";
@@ -10,10 +9,10 @@ export interface ProjectEntity extends ContentEntity {
     github: string;
     date: Date;
     client: PersonEntity;
-    workplace: WorkplaceEntity;
+    career: CareerEntity;
     authors: PersonEntity[];
     skills: SkillEntity[];
-    images: ImageComponent[];
+    images: ImageComp[];
 }
 
 export interface ProjectOnly {
@@ -30,7 +29,7 @@ export interface ProjectOnly {
   github: string;
   date: string;
   client_id: string;
-  workplace_id: string;
+  career_id: string;
 }
 
 export interface Project_Author {

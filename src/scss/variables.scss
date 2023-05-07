@@ -7,6 +7,8 @@ $apple: rgb(135, 163, 48);
 $transparent-darken: rgba(0,0,0,0.1);
 $transparent-lighten: rgba(255,255,255,0.3);
 
+$little: 15%;
+
 $opacity-min: 30%;
 $opacity-mid: 65%;
 $opacity-max: 85%;
@@ -17,14 +19,20 @@ $laptop-max: 1024px;
 
 $wrapper-width:90%;
 $wrapper-width-large:80%;
+$wrapper-padding: 2rem 0;
+
 $border-radius-circle: 50%;
+
 $elem-size:1rem;
 $elem-padding:$elem-size / 2;
 $elem-border-radius: $elem-size * 2;
 $elem-height: $elem-size * 4;
-$wrapper-padding: 2rem 0;
-$img-width:15rem;
 $thin:0.15rem;
+
+$img-width:15rem;
+$img-height-m: 60vh;
+$img-height-t: 40vh;
+$img-height-d: 50vh;
 
 $contentbox-left-s:30%;
 $contentbox-right-s:70%;
@@ -33,6 +41,7 @@ $contentbox-left-b:50%;
 $contentbox-right-b:50%;
 
 $defborder: solid $cool $elem-padding;
+$darkborder: solid darken($cool, $little) $thin;
 
 $mono: RedHatMono, Courier, monospace;
 $sans: WorkSans, Helvetica, sans-serif;

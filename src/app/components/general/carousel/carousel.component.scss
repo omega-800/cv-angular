@@ -1,92 +1,83 @@
 @import 'src/scss/variables.scss';
 @import 'src/scss/mixins.scss';
+@import 'carousel.mixin.scss';
 
 :host {
-    position:relative;
     width:100%;
-    background-color: $apple;
-    & .slide {
-        display:none;
-        &.active {
-            @include main-image-proportions;
-            min-height:$img-width;
-            @include flex-center;
-            & img {
-                @include main-image;
+    //background-color: $apple;
+    & .carousel {
+        position:relative;
+        & .slide {
+            display:none;
+            &.active {
+                @include flex-center;
+            }
+        }
+        & .arrow{
+            position:absolute;
+            bottom:0;
+            height:100%;
+            width:50%;
+            z-index:2;
+            overflow: hidden;
+            &:hover{
+                cursor:pointer;
+                & i{
+                    @include transition(opacity, $opacity-mid);
+                }
+            }
+            & i {
+                border: $elem-size solid $cool;
+                border-width: 0 $elem-size $elem-size 0;
+                @include transition(opacity, $opacity-min);
+                position:absolute;
+                top:50%;
+                padding: $elem-size;
+                display: inline-block;
+                &:hover{
+                    @include transition(opacity, $opacity-max);
+                }
+            }
+            &.left{
+                @include arrow(left, 135deg);
+            }
+            &.right{
+                @include arrow(right, -45deg);
             }
         }
     }
     & .dots{
         @include flex-row;
-        position:absolute;
-        top:0;
         width:100%;
-        height:$elem-border-radius;
+        padding-top:$elem-padding;
         & >div {
             height:$elem-size;
-            width:$elem-size;
+            width:$elem-border-radius;
             border:$thin solid $cool;
-            border-radius: $border-radius-circle;
+            border-radius: $elem-size;
             @include darken-little(border-color, $cool);
             position:relative;
             &::after{
                 content:"";
-                @include darken-little(border-color, $cool);
                 width:80%;
                 height:80%;
                 top:10%;
                 left:10%;
-                border-radius: $border-radius-circle;
-                display:block;
+                border-radius: $elem-size;
                 position:absolute;
             }
-            //background-color:$cool;
             &:hover{
                 cursor:pointer;
-                background-color:$cool;
+                &::after{
+                    @include darken-little(background-color, $cool);
+                    display:block;
+                }
             }
             &.active{
-                background-color:$cool;
-            }
-        }
-    }
-    & .arrow{
-        position:absolute;
-        bottom:0;
-        height:calc(100% - $elem-border-radius);
-        width:50%;
-        &:hover{
-            cursor:pointer;
-            & i{
-                @include transition(opacity, $opacity-mid);
-            }
-        }
-        & i {
-            border: $elem-size solid $cool;
-            border-width: 0 $elem-size $elem-size 0;
-            @include transition(opacity, $opacity-min);
-            position:absolute;
-            top:50%;
-            padding: $elem-size;
-            display: inline-block;
-            &:hover{
-                @include transition(opacity, $opacity-max);
-            }
-        }
-        &.left{
-            left:0;
-            & i {
-                left:$elem-size;
-                transform: rotate(135deg);
-                -webkit-transform: rotate(135deg);
-            }
-        }
-        &.right{
-            right:0;
-            & i, img {
-                right:$elem-size;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
+                &::after{
+                    @include darken-little(background-color, $cool);
+                    display:block;
+                }
             }
         }
     }

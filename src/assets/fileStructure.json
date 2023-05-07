@@ -368,14 +368,14 @@
     "popup.js"
   ],
   "assets/content/projects/it/inteco/producer": [
-    "filter.png",
-    "kalifornien.png",
-    "mobile.png",
-    "napavalley.png",
-    "partner.png",
-    "partnerdetail.png",
-    "tablet.png",
-    "usa.png"
+    "a.png",
+    "b.png",
+    "c.png",
+    "d.png",
+    "e.png",
+    "f.png",
+    "g.png",
+    "h.png"
   ],
   "assets/content/projects/it/inteco/producer/info": [
     "Zeichnung.png",
@@ -480,14 +480,10 @@
     "btc.png"
   ],
   "assets/content/projects/it/web/cv_old": [
-    "portfolio-chirokikh-georgiy.web.app_ (1).png",
-    "portfolio-chirokikh-georgiy.web.app_ (2).png",
-    "portfolio-chirokikh-georgiy.web.app_ (3).png",
-    "portfolio-chirokikh-georgiy.web.app_ (4).png",
-    "portfolio-chirokikh-georgiy.web.app_ (5).png",
-    "portfolio-chirokikh-georgiy.web.app_ (6).png",
-    "portfolio-chirokikh-georgiy.web.app_ (7).png",
-    "portfolio-chirokikh-georgiy.web.app_.png"
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png"
   ],
   "assets/content/projects/it/web/html": [
     "html_avocado.png",

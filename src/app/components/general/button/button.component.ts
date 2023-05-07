@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { LinkType } from '../../components.model';
+import { LinkType, LinkTypes } from '../../components.model';
+import { linkTypes } from '../../components.constants';
 
 @Component({
   selector: 'app-button',
@@ -11,6 +12,7 @@ export class ButtonComponent {
 
   @Input() type!: LinkType;
   @Input() name!: string;
+  lt:LinkTypes = linkTypes;
   /*
   public href: string = "";
 

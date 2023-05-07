@@ -1,16 +1,16 @@
 <div *ngIf="hasImage" #cbToggle>
     <div class="preview" (click)="cbToggle.classList.toggle('active')">
-        <img *ngIf="preview" class="previewImg" src="{{preview.path}}" alt="{{preview.alt}}">
+        <img *ngIf="preview" class="previewImg" src="{{preview.path}}" alt="{{preview.alt}}" loading="lazy">
         
-        <div class="title">
-            <h3 *ngIf="!link">{{title}}</h3>
-            <h3 *ngIf="link"><a href="{{link}}" target="_blank">{{title}}</a></h3>    
-        </div>
+        <h3 class="title" *ngIf="!link">{{title}}</h3>
+        <h3 class="title" *ngIf="link"><a href="{{link}}" target="_blank">{{title}}</a></h3>
         
-        <img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}">
+        <img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
     </div>
-    <app-carousel *ngIf="isCarousel" class="mainImg" [images]="images"></app-carousel>
-    <img *ngIf="!isCarousel" class="mainImg" src="{{image.path}}" alt="{{image.alt}}">
+    <div class="mainImg">
+        <app-carousel *ngIf="isCarousel" [images]="images"></app-carousel>
+        <app-image *ngIf="!isCarousel" [image]="image"></app-image>
+    </div>
     
     <div class="desc">
         <h4 *ngIf="subTitle">{{subTitle}}</h4>

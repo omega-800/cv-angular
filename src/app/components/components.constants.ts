@@ -1,69 +1,69 @@
-import { LinkTypes, ImageComponent } from "./components.model";
+import { LinkTypes, ImageComp } from "./components.model";
 
-export const contactIcon:Readonly<ImageComponent>={
+export const contactIcon:Readonly<ImageComp>={
     id:'icon_contact',
     name:'Contact',
     path:'assets/img/contact.svg',
     alt:'Contact icon'
 };
 
-export const addressIcon:Readonly<ImageComponent>={
+export const addressIcon:Readonly<ImageComp>={
     id:'icon_address',
     name:'Address',
     path:'assets/img/location.svg',
     alt:'Address icon'
 };
 
-export const githubIcon:Readonly<ImageComponent>={
+export const githubIcon:Readonly<ImageComp>={
     id:'icon_github',
     name:'Github',
     path:'assets/img/github.svg',
     alt:'Github icon'
 };
 
-export const mailIcon:Readonly<ImageComponent>={
+export const mailIcon:Readonly<ImageComp>={
     id:'icon_mail',
     name:'Email',
     path:'assets/img/mail.svg',
     alt:'Email icon'
 };
 
-export const phoneIcon:Readonly<ImageComponent>={
+export const phoneIcon:Readonly<ImageComp>={
     id:'icon_phone',
     name:'Phone',
     path:'assets/img/phone.svg',
     alt:'Phone icon'
 };
 
-export const urlIcon:Readonly<ImageComponent>={
+export const urlIcon:Readonly<ImageComp>={
     id:'icon_url',
     name:'URL',
     path:'assets/img/url.svg',
     alt:'URL icon'
 };
 
-export const arrowIcon:Readonly<ImageComponent>={
+export const arrowIcon:Readonly<ImageComp>={
     id:'icon_arrow',
     name:'Arrow',
     path:'assets/img/arrow.svg',
     alt:'Arrow icon'
 };
 
-export const workIcon:Readonly<ImageComponent>={
+export const workIcon:Readonly<ImageComp>={
     id:'icon_work',
     name:'Workplace',
     path:'assets/img/work.svg',
     alt:'Workplace icon'
 };
 
-export const schoolIcon:Readonly<ImageComponent>={
+export const schoolIcon:Readonly<ImageComp>={
     id:'icon_school',
     name:'School',
     path:'assets/img/school.svg',
     alt:'School icon'
 };
 
-export const personIcon:Readonly<ImageComponent>={
+export const personIcon:Readonly<ImageComp>={
     id:'icon_person',
     name:'Person',
     path:'assets/img/profile.svg',
@@ -93,6 +93,12 @@ export const linkTypes:Readonly<LinkTypes> = {
         id:"linkType_url",
         name:"url", 
         image:urlIcon, 
+        prefix:""
+    },
+    PERSON: {
+        id:"linkType_person",
+        name:"person", 
+        image:personIcon, 
         prefix:""
     },
     OTHER: {

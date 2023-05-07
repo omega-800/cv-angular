@@ -3,11 +3,8 @@
 
 :host {
     @include flex-e2e;
-    @include slimpill;
+    border-top:$darkborder;
     width:100%;
-    & h5 {
-        @include pill;
-    }
     & .contactButtons{
         @include flex-e2e;
     }

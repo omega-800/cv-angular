@@ -2,8 +2,16 @@
 @import 'screens.scss';
 
 @mixin wrapper {
-    width: $wrapper-width;
     padding:$wrapper-padding;
+    @include mobile-screen {
+        width: $wrapper-width;
+    }
+    @include tablet-screen {
+        width: calc($wrapper-width / 1.2);
+    }
+    @include desktop-screen {
+        width: calc($wrapper-width / 1.8);
+    }
 }
 
 @mixin slimpill {
@@ -32,25 +40,6 @@
     }
 }
 
-@mixin main-image-proportions {
-    max-width:100%;
-    max-height:80vh;
-    min-width: $img-width;
-    min-height: $img-width;
-    @include desktop-screen {
-    }
-    @include tablet-screen {
-        max-height:$img-width;
-        max-width:$img-width;
-    }
-}
-
-@mixin main-image {
-    @include main-image-proportions;
-    display:block;
-    margin:auto;
-}
-
 @mixin preview-image {
     border-radius: $border-radius-circle;
     height:$elem-height;
@@ -66,14 +55,13 @@
 }
 
 @mixin darken-little($property, $color) {
-    #{$property}: darken($color, 15%);
+    #{$property}: darken($color, $little);
     transition: #{$property} $trans-cb;
 }
 
 @mixin transition($property, $value) {
     #{$property}: $value;
     transition: #{$property} $trans-cb;
-
 }
 
 @mixin default-grid {

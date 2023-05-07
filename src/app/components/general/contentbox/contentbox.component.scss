@@ -5,7 +5,6 @@
 :host {
     & >div{
         width: 100%;
-        //border:$defborder;
         background-color: $cool;
         border-radius:$elem-border-radius;
         margin: $elem-padding 0;
@@ -14,7 +13,7 @@
             @include link;
             @include slimpill;
             @include default-grid;
-            & .arrowImg{
+            & .arrowImg {
                 grid-area: arrow;
                 @include preview-image;
                 padding: $elem-padding;
@@ -44,6 +43,7 @@
         }
     }
     & >.active {
+        padding-bottom:$elem-border-radius;
         @include mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: $elem-height auto auto auto;
@@ -53,8 +53,16 @@
             "image"
             "bottom";
         }
+        @include tablet-screen {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: $elem-height auto auto;
+            grid-template-areas: 
+            "preview  preview"
+            "image  desc"
+            "bottom bottom";            
+        }
         @include desktop-screen {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: $elem-height auto auto;
             grid-template-areas: 
             "preview  preview"
@@ -67,21 +75,19 @@
             grid-template-areas: "title arrow";
             border-bottom-left-radius:0;
             border-bottom-right-radius: 0;
+            padding:0;
             & .previewImg {
                 display:none;
             }
         }
         & .mainImg {
             grid-area:image;
-            @include main-image;
         }
         & .desc {
             grid-area:desc;
         }
         & .bottom {
             grid-area:bottom;
-            @include flex-e2e;
         }
-        padding-bottom:$elem-border-radius;
     }
 }

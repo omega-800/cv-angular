@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ImageComponent } from '../../components.model';
+import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
 
 @Component({
@@ -8,9 +8,9 @@ import { arrowIcon } from '../../components.constants';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  @Input() images!:ImageComponent[];
+  @Input() images!:ImageComp[];
   current:number = 0;
-  arrowIcon:ImageComponent = arrowIcon;
+  arrowIcon:ImageComp = arrowIcon;
 
   constructor(){}
 

@@ -2,15 +2,12 @@
 @import 'src/scss/mixins.scss';
 
 :host {
-    & span {
+    @include flex-center;
+    & img {
+        @include preview-image;
         @include link;
-        @include pill;
-        @include flex-center;
-        height:$elem-height;
-        width:$elem-height;
-        & img {
-            object-fit: contain;
-            width:80%;
-        }
+    }
+    & p {
+        @include slimpill;
     }
 }

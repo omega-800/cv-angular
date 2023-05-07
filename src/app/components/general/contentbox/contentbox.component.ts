@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ImageComponent } from '../../components.model';
+import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
 
@@ -13,15 +13,15 @@ export class ContentboxComponent implements OnInit {
   @Input() subTitle?: string;
   @Input() description!: string;
   @Input() link?: string;
-  @Input() image!: ImageComponent;
-  @Input() imagePreview?: ImageComponent;
+  @Input() image!: ImageComp;
+  @Input() imagePreview?: ImageComp;
 
-  arrowIcon:ImageComponent = arrowIcon;
+  arrowIcon:ImageComp = arrowIcon;
   isCarousel:boolean = false;
   hasImage:boolean = false;
-  images:ImageComponent[] = [];
-  preview:ImageComponent = {id:"",name:"",alt:"",path:""};
-  main:ImageComponent = {id:"",name:"",alt:"",path:""};
+  images:ImageComp[] = [];
+  preview:ImageComp = {id:"",name:"",alt:"",path:""};
+  main:ImageComp = {id:"",name:"",alt:"",path:""};
 
   constructor (/*private storage:AngularFireStorage*/) {
   }

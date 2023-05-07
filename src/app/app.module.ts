@@ -26,6 +26,7 @@ import { ProjectsComponent } from './components/views/projects/projects.componen
 import { environment } from 'src/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireStorageModule  } from '@angular/fire/compat/storage';
+import { ImageComponent } from './components/general/image/image.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AngularFireStorageModule  } from '@angular/fire/compat/storage';
     ContactpointComponent,
     ButtonComponent,
     AddressComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

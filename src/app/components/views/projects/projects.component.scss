@@ -3,6 +3,13 @@
 
 :host {
     @include wrapper;
+    & .bot {
+        width:100%;
+        border-top:$darkborder;
+        & .content {
+            @include flex-e2e;
+        }
+    }
     & .skillpill{
         @include pill;
         @include darken-little(background-color, $cool);
