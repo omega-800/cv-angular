@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "c7bcae87-5805-4188-9754-16119897df27",
+  "school_id": "b74f1624-6aa5-4071-9d7b-520d9d380f1c",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -13,10 +13,10 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "",
   "image": "",
-  "address_id": "7b81d870-2548-4cd1-9b9f-6c61e2e766d1"
+  "address_id": "be101e21-5ba5-40ef-9bfd-b65dcbaae543"
  },
  {
-  "school_id": "2246a1ba-ade5-4c82-9bb0-c1c66451746b",
+  "school_id": "16bbed95-3b89-4ac4-9c8c-b1db9e6989e4",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
@@ -29,10 +29,10 @@
   "url": "https://www.kshp.ch/",
   "logo": "",
   "image": "",
-  "address_id": "69af70a8-40a6-4ec7-91bc-b4bce4753576"
+  "address_id": "308c30f5-c372-4fbc-bfb9-de7e8d0b0891"
  },
  {
-  "school_id": "69d6908c-fe11-490c-b334-74d1444572e8",
+  "school_id": "7737d8fa-3814-49e1-a27b-1adc24305a45",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -45,10 +45,10 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "",
   "image": "",
-  "address_id": "3b8cf956-59c7-4361-8794-7f257b8a9f95"
+  "address_id": "b04ac1cd-95b2-4885-95e6-67db098c9059"
  },
  {
-  "school_id": "0b39dcff-d59f-45fc-9a03-c764aa22f454",
+  "school_id": "9eb7e058-13d3-4d50-9587-145628b10622",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -61,10 +61,10 @@
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
   "logo": "",
   "image": "",
-  "address_id": "f2e8fde2-e776-4c66-99c8-a34fc9b0d716"
+  "address_id": "608d562c-ba0a-4617-b3d1-e844a123a6ba"
  },
  {
-  "school_id": "62f7c09b-cd0a-4878-95f7-ec7228130224",
+  "school_id": "2386a296-5e7e-484c-844f-837052a54f0c",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -77,6 +77,6 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "",
   "image": "",
-  "address_id": "d9cab5c8-f442-41db-b20d-925acf061b51"
+  "address_id": "a704ad63-8e95-4ec8-a8f2-77e9265304d6"
  }
 ]

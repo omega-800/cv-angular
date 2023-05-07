@@ -1,0 +1,32 @@
+[
+ {
+  "client_id": "6d611738-4631-408d-8c04-2ea0b63cb5d9",
+  "name": "Firstwine",
+  "description": "",
+  "url": "https://www.firstwine.ch/startseite"
+ },
+ {
+  "client_id": "a26d185d-72ce-4aad-a8fe-5d8ec7227a27",
+  "name": "DM Vini",
+  "description": "",
+  "url": "https://www.dmvini.ch/startseite"
+ },
+ {
+  "client_id": "89edf2a0-aa7f-4a38-aa79-ab8a368f2967",
+  "name": "Maria Bühler",
+  "description": "",
+  "url": "https://www.buehlerweine.ch/startseite"
+ },
+ {
+  "client_id": "2274e3eb-b449-4355-9173-f4faab64ba5f",
+  "name": "Wy Galerie",
+  "description": "",
+  "url": "https://www.wy-galerie-grueningen.ch/startseite"
+ },
+ {
+  "client_id": "98697174-e4d8-4e17-ae8c-e88e82f972da",
+  "name": "Terroir-ist",
+  "description": "",
+  "url": "https://www.terroir-ist.ch/startseite.html"
+ }
+]

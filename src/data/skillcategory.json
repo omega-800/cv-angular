@@ -1,6 +1,6 @@
 [
  {
-  "skillcategory_id": "b0e78f91-b525-47d6-ab55-07cd7c07a5d4",
+  "skillcategory_id": "f2a14666-6ef6-466b-9064-0d875dcbd80b",
   "name": "Kunst",
   "name_e": "Art",
   "name_r": "Искусство",
@@ -10,7 +10,7 @@
   "percent": 30
  },
  {
-  "skillcategory_id": "baefb220-943b-4837-ab63-6b6f3259a10e",
+  "skillcategory_id": "1d03540e-b847-4395-9be1-1730dc44f496",
   "name": "Pädagogik",
   "name_e": "Education",
   "name_r": "Образование",
@@ -20,7 +20,7 @@
   "percent": 10
  },
  {
-  "skillcategory_id": "437900cc-26e8-4ee3-965f-ec1bb0f02851",
+  "skillcategory_id": "8083d29f-ae3c-49c6-90b8-ba19be757b97",
   "name": "Gesundheit",
   "name_e": "Health",
   "name_r": "Здоровье",
@@ -30,7 +30,7 @@
   "percent": 20
  },
  {
-  "skillcategory_id": "01f8a10c-cf71-48fe-978f-bb46f3252717",
+  "skillcategory_id": "089c5232-ec9b-4d65-830d-6584a7ebd756",
   "name": "Informatik",
   "name_e": "Computer Science",
   "name_r": "Информатика",
@@ -40,7 +40,7 @@
   "percent": 30
  },
  {
-  "skillcategory_id": "5ba39726-5f2d-4b14-b7f9-2dacc69423a3",
+  "skillcategory_id": "301c071e-f180-46a6-b3a6-a8d7f7459d59",
   "name": "Allgemein",
   "name_e": "General",
   "name_r": "Общее",

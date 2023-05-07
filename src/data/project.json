@@ -1,10 +1,10 @@
 [
  {
-  "project_id": "d1984222-877c-46ea-9fec-5740b969d654",
+  "project_id": "c8baf518-1e53-445c-9af2-d4e2ba309086",
   "name": "ID Altersverifikation",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Die Inteco EDV AG setzt für Getränkehändler Webshops um. Da viele dieser Kunden alkoholhaltige Getränke verkaufen, musste laut den neuen Onlinegesetzen der Schweiz eine Altersüberprüfungsmethode im Webshop implementiert werden. \nMir wurde der Auftrag vermittelt, eine Altersüberprüfung in den Webshops einzubauen, welche durch die Kennzahlen der Schweizer ID oder des Schweizer Passes erfolgen soll.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -13,14 +13,14 @@
   "github": "",
   "date": "2023-01-11T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "b5801353-aa63-40dd-8e82-89a5f0c99bab",
+  "project_id": "be9ef4b7-6510-4158-bcc5-71bbc76851ba",
   "name": "Produzentenseite",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Ich setzte die Seite «Partner» im neuen Webshop vom Kunden Firstwine um, auf welcher die Getränkeproduzenten nach Ortschaft sortiert ersichtlich sind. Ihr alter Webshop besass schon diese Unterseite und im neuen Shop wurde eine Komponente erstellt, die durch einen neuen, rekursiven Ansatz die Produzenten auflistet.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -29,14 +29,14 @@
   "github": "",
   "date": "2022-11-30T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "1c64a732-5543-4890-a8aa-834dea27874a",
+  "project_id": "446faebf-02b3-405d-a4cf-0faf4fa9fed6",
   "name": "SCSS Skript",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Ein weiterer Auftrag war das Refaktorisieren des SCSS Quellcodes, damit dieser mit der neuen Version des SCSS VS Code Plugins Kompiliert werden konnte. Da hauptsächlich die gleichen Fehler behoben werden mussten, schrieb ich ein Shell-Skript welches mithilfe von Regular Expressions die betroffenen Zeilen ersetzte.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -45,14 +45,14 @@
   "github": "",
   "date": "2022-11-14T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "d3eca09a-07bb-4252-8fab-50a998b38bb1",
+  "project_id": "5f177351-37d9-4481-a0a9-b7707370b636",
   "name": "Übersetzungsskript",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Bei der Integration der Internationalisierung in die von der Inteco edv AG entwickelten Webseiten mussten viele Werte übersetzt werden, welche in .properties Dateien gespeichert waren. Um den Prozess teils zu automatisieren schrieb ich ein Python- und danach ein TypeScript-Skript, welches mithilfe von Regular Expressions durch die Werte aus der gegebenen Datei iteriert und entweder (nach optionaler Bestätigung) ersetzt oder überspringt falls sie schon übersetzt waren.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -61,14 +61,14 @@
   "github": "",
   "date": "2023-02-01T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "f4cdf979-2074-450e-8dc2-eb3d361a9e9a",
+  "project_id": "c17bb018-fe90-4b37-ad67-29476538abac",
   "name": "Testen mittels Selenium",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Bei der implementation der Produzentenseite schrieb ich in Python mithilfe von Selenium ein Skript, welches das Frontend der erstellten Seite auf bestimmte Kriterien testete und die Resultate in eine Tabelle eingetragen hat.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -77,10 +77,10 @@
   "github": "",
   "date": "2022-12-19T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "1525fec7-6fd3-4382-8959-2b4a77349c7e",
+  "project_id": "e837fba3-fec5-4a2d-b358-0910ae3fc2f1",
   "name": "i18n",
   "name_e": "",
   "name_r": "",
@@ -93,14 +93,14 @@
   "github": "",
   "date": "2023-01-31T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "d407953d-c063-4123-873b-f312b38ceac2",
+  "project_id": "0b14288c-5113-477c-93c1-73c68bf13d70",
   "name": "Passwort zurücksetzen",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Da mir auffiel, dass bei der Anfrage auf ein neues Passwort dieses in einfachem Text per E-Mail versendet wurde, erarbeitete ich eine sicherere Methode das Passwort zurückzusetzen. Diese erfolgt durch das versenden eines Links, welcher auf eine Seite führt, worauf der User sein Passwort selber setzt (nachdem die Gültigkeit des Links überprüft wurde).",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -109,14 +109,14 @@
   "github": "",
   "date": "2022-10-19T22:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "a1a1c4ce-baac-4ae6-bc97-5bf3c4fd5414",
+  "project_id": "611e1654-fba1-4891-9427-0037cd6b577f",
   "name": "Share Buttons",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Einer meiner ersten Aufträge bei der Inteco edv AG war es, auf der Produktdetailseite Share-Buttons einzufügen, sowie das Schema Markup, welches die Vorschau des Produktes beim Teilen ermöglichte.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -125,14 +125,14 @@
   "github": "",
   "date": "2022-06-30T22:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "cc157e55-f8c0-4a30-b594-4a496b3ac9df",
+  "project_id": "e4ea21ad-14f8-418b-967c-c171c4022428",
   "name": "SEO Analyse",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Innerhalb des Praktikums bei Inteco erarbeitete ich mir viel Wissen über (das unendliche Thema) SEO, welches ich in einem Dokument zusammenfasste und durch eine Präsentation unserem Webentwicklungs-Team vorstellte. Teilweise begann ich selbst damit einen Teil, welchen wir als Entwickler zu SEO beitragen können, umzusetzen.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -141,14 +141,14 @@
   "github": "",
   "date": "2022-08-31T22:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "5812f599-a5ce-4185-8459-706a0df280f9",
+  "project_id": "24c46620-e74b-49ed-8b3f-011d7d0942fc",
   "name": "Geschmacksprofil",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Mein erster Auftrag als Praktikant war es, ein Geschmacksprofil auf der Produktdetailseite der Weine zu erstellen, an dem ersichtlich sein soll, wie der Wein schmeckt.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -157,14 +157,14 @@
   "github": "",
   "date": "2022-06-19T22:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "93a45431-823f-4805-9e60-37dc44434433",
+  "project_id": "e6bf8743-962d-4c37-b568-3231dff4d1af",
   "name": "Popup",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Im Auftrag vom Terroir-ist erstellte ich ein Konfigurierbares Popup, um als User das Alter bestätigen zu können.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -173,10 +173,10 @@
   "github": "",
   "date": "2023-03-04T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "40c6c3de-d5d3-4f1d-a413-8543c277bda4",
+  "project_id": "c903003c-dd08-426a-9d80-a6eee88f49b8",
   "name": "Konfigurationsseiten Magnolia",
   "name_e": "",
   "name_r": "",
@@ -189,14 +189,14 @@
   "github": "",
   "date": "2023-02-23T23:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "421b7cb5-0519-43a4-b5b2-f6d983f137df",
+  "project_id": "1e583b89-b9bf-4f21-807a-d00e9e962e29",
   "name": "Webseiten aufsetzen",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "In meiner Zeit als Praktikant hatte ich zwei Webseiten auf Tomcat7 Servern sowie Docker neu aufgesetzt und livegeschaltet für Kunden, die vom alten Webshop in den neuen migrierten.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -205,14 +205,14 @@
   "github": "",
   "date": "2022-08-04T22:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "0212669d-6808-49ed-99b5-15b6b4730eef",
+  "project_id": "fe34ed18-5cc8-4426-bba6-71c15062b5b6",
   "name": "Webseiten warten",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Ich wartete bei der Inteco edv AG bei mehreren Kunden Ihre Webseiten mit und setzte erwünschte Features um. Dabei sammelte ich viele Erfahrungen mit Frontend sowie Backend Technologien.",
   "description_e": "",
   "description_r": "",
   "url": "",
@@ -221,10 +221,10 @@
   "github": "",
   "date": "2022-07-04T22:00:00.000Z",
   "client_id": "",
-  "career_id": "1a9c848a-aa54-41fa-9c05-9f142b91c2d3"
+  "career_id": "b944075b-7ee0-4d94-b17e-97ab11f15959"
  },
  {
-  "project_id": "3b63286c-94d5-4789-9f9e-2e927d6fe406",
+  "project_id": "cd9498ac-3706-424e-a562-a4b66ed67da0",
   "name": "Webscraping automatisation",
   "name_e": "",
   "name_r": "",
@@ -237,10 +237,10 @@
   "github": "https://github.com/omega-800/AutomationPython",
   "date": "2020-12-17T23:00:00.000Z",
   "client_id": "",
-  "career_id": "50f28560-0e12-4878-aba0-eae024fd54d1"
+  "career_id": "3a5c828f-7f15-4f03-865a-2974ca4f5865"
  },
  {
-  "project_id": "c3f4af8b-e61f-4b43-847e-cc63ce38e349",
+  "project_id": "b9ffe538-9819-4a3e-a1b5-466d24c7b85a",
   "name": "Portfolio",
   "name_e": "",
   "name_r": "",
@@ -256,7 +256,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4161bc72-0b26-4c6b-afbf-d03259761978",
+  "project_id": "9488e3a2-b7b1-4b78-8f02-2b0b46a0a17b",
   "name": "Finanzplaner",
   "name_e": "",
   "name_r": "",
@@ -272,7 +272,7 @@
   "career_id": ""
  },
  {
-  "project_id": "6add6464-1157-4c88-8c45-402f947dbe09",
+  "project_id": "c3ac7d59-6672-4445-b104-f33d6a1813cb",
   "name": "Textbasiertes Spiel Python",
   "name_e": "",
   "name_r": "",
@@ -288,7 +288,7 @@
   "career_id": ""
  },
  {
-  "project_id": "433e268a-13fe-475b-88c1-30dab8167063",
+  "project_id": "2d3bfd96-a54f-4d5a-a941-a7a00d02253c",
   "name": "Textbasiertes Spiel C#",
   "name_e": "",
   "name_r": "",
@@ -304,7 +304,7 @@
   "career_id": ""
  },
  {
-  "project_id": "e47ab8a8-98e7-4823-b76d-246e7584275a",
+  "project_id": "bba65447-7bad-4257-a984-0055fda76173",
   "name": "Roguelike Dungeon Spiel 1",
   "name_e": "",
   "name_r": "",
@@ -320,7 +320,7 @@
   "career_id": ""
  },
  {
-  "project_id": "8d6f1389-2e3d-435c-9f66-836d36e033c5",
+  "project_id": "57d74011-84d9-4d2a-856b-7021a7884c11",
   "name": "Roguelike Dungeon Spiel 2",
   "name_e": "",
   "name_r": "",
@@ -336,7 +336,7 @@
   "career_id": ""
  },
  {
-  "project_id": "78f8d73f-6c93-4db1-b335-8d5f8565e540",
+  "project_id": "84b58dd0-597e-48bf-abb8-f9c0781a33ba",
   "name": "Roguelike Dungeon Spiel 3",
   "name_e": "",
   "name_r": "",
@@ -352,7 +352,7 @@
   "career_id": ""
  },
  {
-  "project_id": "186f7dc0-baa5-4292-a5c7-f0b679130627",
+  "project_id": "8c783f4d-e4e5-4d4b-a5e0-d744369eb266",
   "name": "Raketen Spiel",
   "name_e": "",
   "name_r": "",
@@ -368,7 +368,7 @@
   "career_id": ""
  },
  {
-  "project_id": "9dd449d1-ba82-4d72-b3ac-bad779686f05",
+  "project_id": "9cb9b7e5-34ca-4167-9b7b-d0a64a46dda5",
   "name": "Minecraft Kopie",
   "name_e": "",
   "name_r": "",
@@ -384,7 +384,7 @@
   "career_id": ""
  },
  {
-  "project_id": "48dc83fa-b993-4402-86c5-7b57154e77e1",
+  "project_id": "a74e0eb6-3a01-492f-9859-cebfe8296a60",
   "name": "Textbasiertes Spiel Java",
   "name_e": "",
   "name_r": "",
@@ -400,7 +400,7 @@
   "career_id": ""
  },
  {
-  "project_id": "6586106a-f737-4865-aecf-77b18767f3a2",
+  "project_id": "5d83c474-bd32-4aa0-b3d9-d7611b107799",
   "name": "Java UNO Spiel",
   "name_e": "",
   "name_r": "",
@@ -413,10 +413,10 @@
   "github": "",
   "date": "2019-02-19T23:00:00.000Z",
   "client_id": "",
-  "career_id": "f05ce4ed-bcc4-49a8-a235-c62b510b6789"
+  "career_id": "28f9a9ed-eb73-4c95-9c16-9ac533c5a6c3"
  },
  {
-  "project_id": "f556fb6a-949a-4a38-9061-32f2651b9222",
+  "project_id": "3a42b040-a844-458b-af6d-a7530098b9a2",
   "name": "Immobilien Webseite",
   "name_e": "",
   "name_r": "",
@@ -428,11 +428,11 @@
   "image": "/projects/it/web/immob/",
   "github": "",
   "date": "2017-11-19T23:00:00.000Z",
-  "client_id": "80840ead-1fdb-46c5-8c71-02775704f5de",
+  "client_id": "640fc377-6523-48da-a184-936352ae54b2",
   "career_id": ""
  },
  {
-  "project_id": "2a18254b-7b2a-47ca-9253-38d377e3dc0e",
+  "project_id": "2de52575-6523-4009-bdfc-7a22bc937620",
   "name": "RusFrauenTreff Webseite",
   "name_e": "",
   "name_r": "",
@@ -444,11 +444,11 @@
   "image": "/projects/it/web/rus/",
   "github": "https://github.com/omega-800/rusfrauentreff",
   "date": "2017-04-19T22:00:00.000Z",
-  "client_id": "7150066d-b8ba-4513-a0cf-b3ef3fabbbb7",
+  "client_id": "2986b873-71ba-439c-ac67-81066c5b22c6",
   "career_id": ""
  },
  {
-  "project_id": "914ada19-34a9-4d38-a5b6-eb6eed309347",
+  "project_id": "2cae7e37-16a7-4821-9ddd-95689d0886c9",
   "name": "Teddy",
   "name_e": "",
   "name_r": "",
@@ -464,7 +464,7 @@
   "career_id": ""
  },
  {
-  "project_id": "e488f66e-17f3-4b65-a218-e87159340427",
+  "project_id": "068514c8-ceab-4d5d-83f6-d7f9c212004e",
   "name": "Tie Dye",
   "name_e": "",
   "name_r": "",
@@ -480,7 +480,7 @@
   "career_id": ""
  },
  {
-  "project_id": "eaa9b8c2-2cb1-427b-97be-36d70aa595c2",
+  "project_id": "2a86ab1d-419a-4d82-a6ac-3298c7f24dba",
   "name": "Portemonnaie",
   "name_e": "",
   "name_r": "",
@@ -496,7 +496,7 @@
   "career_id": ""
  },
  {
-  "project_id": "940e86c1-9d71-44fa-a6fb-2cd5f51f4d5a",
+  "project_id": "d044daa5-65df-4075-be79-9c3a570e8220",
   "name": "Pullover",
   "name_e": "",
   "name_r": "",
@@ -512,7 +512,7 @@
   "career_id": ""
  },
  {
-  "project_id": "0262572b-673a-4ab5-b4c2-016a93fa0a53",
+  "project_id": "ea647994-46f0-4672-9fad-632d7005900d",
   "name": "Heavy Metal Veste",
   "name_e": "",
   "name_r": "",
@@ -528,7 +528,7 @@
   "career_id": ""
  },
  {
-  "project_id": "fdbab7d2-d15d-4293-9e7e-ca85c07e0169",
+  "project_id": "31ce3845-3c6a-45bf-8fac-84e557eb5416",
   "name": "Punk Pullover",
   "name_e": "",
   "name_r": "",
@@ -544,7 +544,7 @@
   "career_id": ""
  },
  {
-  "project_id": "04b72fa9-1750-43b5-b3e3-616c125d7f68",
+  "project_id": "0a003a79-6055-4566-b1da-d04a25236da5",
   "name": "Holzbesteck",
   "name_e": "",
   "name_r": "",
@@ -560,7 +560,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c3f0e0bb-79ff-443d-a211-fd07ac76f046",
+  "project_id": "8e02a91e-db59-44e9-8896-5295371409eb",
   "name": "Holzohrenring",
   "name_e": "",
   "name_r": "",
@@ -576,7 +576,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c940846d-81e1-449d-91b9-43eb32ad2a57",
+  "project_id": "020f9d7b-9a6f-4b6e-ae80-89f12a3f157c",
   "name": "Bemaltes Eigentum",
   "name_e": "",
   "name_r": "",
@@ -592,7 +592,7 @@
   "career_id": ""
  },
  {
-  "project_id": "aba76ded-8ca9-4d5c-9ce4-042202caf657",
+  "project_id": "74416175-69db-452e-8eae-4f6f5e0cb696",
   "name": "Turnsack und Seemannssack",
   "name_e": "",
   "name_r": "",
@@ -608,7 +608,7 @@
   "career_id": ""
  },
  {
-  "project_id": "5c22b737-a5e1-401e-8dde-bfd46737b2b5",
+  "project_id": "0df3ac09-efcd-488a-b129-1860bc15830f",
   "name": "Legales Graffiti",
   "name_e": "",
   "name_r": "",
@@ -624,7 +624,7 @@
   "career_id": ""
  },
  {
-  "project_id": "db6a2008-c1b5-4569-895b-146d8685abee",
+  "project_id": "f7310f8a-40fc-42dd-bb23-27833042bcaa",
   "name": "Kusudama",
   "name_e": "",
   "name_r": "",
@@ -640,7 +640,7 @@
   "career_id": ""
  },
  {
-  "project_id": "11094711-4f7a-4335-a293-550c44eb1469",
+  "project_id": "c9965730-76a1-4c9f-bfc6-4ea27645e115",
   "name": "Origami",
   "name_e": "",
   "name_r": "",
@@ -656,7 +656,7 @@
   "career_id": ""
  },
  {
-  "project_id": "2dfcff97-1451-4be9-b4ca-3fab280f9c0a",
+  "project_id": "d06802ef-49ad-44b5-b988-8bf437b7ae90",
   "name": "Zeichnungen",
   "name_e": "",
   "name_r": "",
@@ -672,7 +672,7 @@
   "career_id": ""
  },
  {
-  "project_id": "8a49920f-ec21-4a71-a15a-0f41c9ea0fde",
+  "project_id": "2feff5f4-365d-43da-8483-47f8310ed849",
   "name": "Mosaik",
   "name_e": "",
   "name_r": "",
@@ -688,7 +688,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c5640c2a-5946-4d06-b4b0-4b1162c04ca2",
+  "project_id": "13ed4e30-2b7b-4c7e-8178-9e562ce1e2af",
   "name": "Katzenbaum",
   "name_e": "",
   "name_r": "",
@@ -704,7 +704,7 @@
   "career_id": ""
  },
  {
-  "project_id": "25a1f8b6-9e9a-4129-b73f-c455fa252e4d",
+  "project_id": "c733b13f-262b-446b-85ef-fcc83948d920",
   "name": "Malen",
   "name_e": "",
   "name_r": "",
@@ -720,7 +720,7 @@
   "career_id": ""
  },
  {
-  "project_id": "811c06f0-11d8-4221-8b66-c05252ce46b9",
+  "project_id": "5e5b53b4-4cba-4c94-af94-9654059f3623",
   "name": "Gitarre",
   "name_e": "",
   "name_r": "",
@@ -736,7 +736,7 @@
   "career_id": ""
  },
  {
-  "project_id": "ccf6e33e-0908-4420-8cc4-845f72440cbf",
+  "project_id": "0c1e373e-81ed-4d21-a8ce-868a919db579",
   "name": "Bass",
   "name_e": "",
   "name_r": "",
@@ -752,7 +752,7 @@
   "career_id": ""
  },
  {
-  "project_id": "17935339-ecc3-42f1-8cb4-c62af41a8d03",
+  "project_id": "acd7f859-639d-4f11-b586-d5efb0fe0730",
   "name": "Schlagzeug",
   "name_e": "",
   "name_r": "",
@@ -768,7 +768,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4e954c5e-902c-4def-a2de-ec040cce7366",
+  "project_id": "61e635b9-f360-4b14-85f5-f4d293435b1a",
   "name": "Ableton",
   "name_e": "",
   "name_r": "",
@@ -784,7 +784,7 @@
   "career_id": ""
  },
  {
-  "project_id": "558bf4c1-9c8b-4b8e-af58-0c70a1b0b78c",
+  "project_id": "0b424f79-c500-44c8-9e9c-db77242da0ea",
   "name": "FL Studio",
   "name_e": "",
   "name_r": "",
@@ -800,7 +800,7 @@
   "career_id": ""
  },
  {
-  "project_id": "a3fbfe28-4c33-4ea6-8051-046986d2850a",
+  "project_id": "9b8747bd-49d8-43cf-9b90-5d803e2a2eed",
   "name": "Faden",
   "name_e": "",
   "name_r": "",
@@ -816,7 +816,7 @@
   "career_id": ""
  },
  {
-  "project_id": "d1e4350a-d268-44d4-a761-ef7b8ec74d41",
+  "project_id": "7ef3222f-c211-4731-be44-d01753187c0e",
   "name": "CEVI",
   "name_e": "",
   "name_r": "",
@@ -832,7 +832,7 @@
   "career_id": ""
  },
  {
-  "project_id": "37df832f-fd45-406b-9a65-443936aa7313",
+  "project_id": "764c9016-8921-48b9-82a2-ef2093ff9750",
   "name": "Fahrrad",
   "name_e": "",
   "name_r": "",
@@ -848,7 +848,7 @@
   "career_id": ""
  },
  {
-  "project_id": "3409ffd9-9f82-4750-96d3-ead0aacdfbac",
+  "project_id": "6376a445-0ee4-4676-b07b-9972bb558d54",
   "name": "Volleyball",
   "name_e": "",
   "name_r": "",
@@ -864,7 +864,7 @@
   "career_id": ""
  },
  {
-  "project_id": "adb6f8a4-572b-4d10-a50f-a66957d7ac03",
+  "project_id": "ce804f6d-5837-47b1-9d12-a32ffe3485c5",
   "name": "Skateboard",
   "name_e": "",
   "name_r": "",
@@ -880,7 +880,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4a9358e9-6010-4b00-b260-633e97e2f1f8",
+  "project_id": "2306a10f-b682-48aa-a01c-13d086e8eb64",
   "name": "Tischtennis",
   "name_e": "",
   "name_r": "",
@@ -896,7 +896,7 @@
   "career_id": ""
  },
  {
-  "project_id": "73f4fd2f-c717-40b0-819c-12f6093231d8",
+  "project_id": "490ed8ac-ea4a-4d11-ba05-98db72511c31",
   "name": "Campen",
   "name_e": "",
   "name_r": "",
@@ -912,7 +912,7 @@
   "career_id": ""
  },
  {
-  "project_id": "136b75e2-ca97-424e-8cec-324ff111d1bb",
+  "project_id": "df5c1458-3e30-4696-98f7-47b1017dd0e6",
   "name": "Wandern",
   "name_e": "",
   "name_r": "",
@@ -928,7 +928,7 @@
   "career_id": ""
  },
  {
-  "project_id": "e60ff5ea-002f-47a0-a670-1d9254e83424",
+  "project_id": "5a51e83c-d402-46e9-9c4e-324f38c2fc83",
   "name": "Kochen",
   "name_e": "",
   "name_r": "",
@@ -944,7 +944,7 @@
   "career_id": ""
  },
  {
-  "project_id": "8bd8bb77-7c20-4ec3-9c52-36c5fbc57421",
+  "project_id": "850a9c03-d314-4293-81d0-4ed9a02eab9e",
   "name": "Lebkuchen",
   "name_e": "",
   "name_r": "",

@@ -13,6 +13,7 @@ import { FilterState } from 'src/app/store/filter/filter.state';
 export class FilterComponent {
   @Input() filterValues!:{[key:string]:string};
   @Input() name!: string;
+  @Input() filters!: FiltersEntity[];
   filtersSelected$:Observable<FiltersEntity[]>;
   
   constructor(private store:Store) {

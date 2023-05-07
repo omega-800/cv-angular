@@ -1,2 +1,3 @@
 <img src="{{type.image.path}}" alt="icon for {{name}} link" loading="lazy" (click)="onClick()">
-<p *ngIf="type === lt.OTHER || type === lt.PERSON" (click)="onClick()">{{name}}</p>
+<!--p *ngIf="type === lt.OTHER || type === lt.PERSON" (click)="onClick()">{{name}}</p-->
+<ng-content></ng-content>

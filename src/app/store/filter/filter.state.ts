@@ -3,6 +3,7 @@ import { ToggleFilter } from './filter.actions';
 import { Injectable } from '@angular/core';
 import { FiltersEntity } from 'src/app/services/filter/filter.model';
 
+
 export interface FilterStateModel {
   name: string;
   filters: FiltersEntity[];

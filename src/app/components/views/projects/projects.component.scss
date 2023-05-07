@@ -9,6 +9,9 @@
         & .content {
             @include flex-e2e;
         }
+        & app-button p {
+            @include slimpill;
+        }
     }
     & .skillpill{
         @include pill;

@@ -1,8 +1,9 @@
 import { ImageComp } from "src/app/components/components.model";
-import { CareerEntity } from "../career/career/career.model";
-import { ContentEntity } from "../entities.model";
-import { PersonEntity } from "../person/person/person.model";
-import { SkillEntity } from "../skills/skill/skill.model";
+import { CareerEntity } from "../../career/career/career.model";
+import { ContentEntity } from "../../entities.model";
+import { PersonEntity } from "../../person/person/person.model";
+import { SkillEntity } from "../../skills/skill/skill.model";
+import { ClientEntity } from "../client/client.model";
 
 export interface ProjectEntity extends ContentEntity {
     project_id: string;
@@ -13,6 +14,7 @@ export interface ProjectEntity extends ContentEntity {
     authors: PersonEntity[];
     skills: SkillEntity[];
     images: ImageComp[];
+    clients: ClientEntity[];
 }
 
 export interface ProjectOnly {
@@ -42,4 +44,10 @@ export interface Project_Skill {
   project_skill_id: string;
   project_id: string;
   skill_id: string;
+}
+
+export interface Project_Client {
+  project_client_id: string;
+  project_id: string;
+  client_id: string;
 }

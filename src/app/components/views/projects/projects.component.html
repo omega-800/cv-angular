@@ -1,4 +1,7 @@
 <h1>Projects</h1>
+
+<app-filter name="projects" [filters]="[skillsFilter]"></app-filter>
+
 <app-contentbox *ngFor="let project of projects"
     [image]='{id:"firebase_link",alt:"",name:"",path:project.image}'
     title="{{project.name}}" 
@@ -12,22 +15,28 @@
             <app-button *ngIf="project.url" [onClick]="ol(project.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
         </div>
     </div>
-    <div *ngIf="project.client" class="bot client">
-        <h5>Entwickelt für:</h5>
-        <div class="content">
-            <app-button [onClick]="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"></app-button>
-        </div>
-    </div>
     <div *ngIf="project.authors" class="bot authors">
         <h5>Author{{project.authors.length > 1 ? 'en' : ''}}:</h5>
         <div class="content">
-            <app-button *ngFor="let author of project.authors" [onClick]="openClient(author.id)" [type]="lt.PERSON" [name]="author.name"></app-button>
+            <app-button *ngFor="let author of project.authors" [onClick]="openClient(author.id)" [type]="lt.PERSON" [name]="author.name"><p>{{author.name}}</p></app-button>
+        </div>
+    </div>
+    <div *ngIf="project.client" class="bot client">
+        <h5>Entwickelt für:</h5>
+        <div class="content">
+            <app-button [onClick]="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"><p>{{project.client.name}}</p></app-button>
+        </div>
+    </div>
+    <div *ngIf="project.clients.length > 0" class="bot client">
+        <h5>Entwickelt für:</h5>
+        <div class="content">
+            <app-button *ngFor="let client of project.clients" [onClick]="ol(client.url)" [type]="lt.URL" [name]="client.name"><p>{{client.name}}</p></app-button>
         </div>
     </div>
     <div *ngIf="project.career" class="bot career">
         <h5>Entwickelt bei:</h5>
         <div class="content">
-            <app-button [onClick]="openCareer(project.career.id)" [type]="lt.OTHER" [name]="project.career.name"></app-button>            
+            <app-button [onClick]="openCareer(project.career.id)" [type]="lt.OTHER" [name]="project.career.name"><p>{{project.career.name}}</p></app-button>            
         </div>
     </div>
     <div class="bot skills">
