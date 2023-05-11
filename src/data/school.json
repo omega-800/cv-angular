@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "b74f1624-6aa5-4071-9d7b-520d9d380f1c",
+  "school_id": "397c36bd-bb59-46f3-8aad-8e889b550178",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -13,10 +13,10 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "",
   "image": "",
-  "address_id": "be101e21-5ba5-40ef-9bfd-b65dcbaae543"
+  "address_id": "d55bb931-e722-496b-97bb-7c2757d400e5"
  },
  {
-  "school_id": "16bbed95-3b89-4ac4-9c8c-b1db9e6989e4",
+  "school_id": "e2a398ec-abb1-4401-98b7-c7292acaf560",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
@@ -29,10 +29,10 @@
   "url": "https://www.kshp.ch/",
   "logo": "",
   "image": "",
-  "address_id": "308c30f5-c372-4fbc-bfb9-de7e8d0b0891"
+  "address_id": "8324cf6d-1170-44ab-a2bb-f9416bd7db77"
  },
  {
-  "school_id": "7737d8fa-3814-49e1-a27b-1adc24305a45",
+  "school_id": "e7bf7ab4-ffd4-476c-8b28-bcccf1d20242",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -45,10 +45,10 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "",
   "image": "",
-  "address_id": "b04ac1cd-95b2-4885-95e6-67db098c9059"
+  "address_id": "989cde13-9e74-4227-aab1-99f51e9d9ce7"
  },
  {
-  "school_id": "9eb7e058-13d3-4d50-9587-145628b10622",
+  "school_id": "253ba3d6-b1c1-4752-bb6d-cc5a2550b5b4",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -61,10 +61,10 @@
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
   "logo": "",
   "image": "",
-  "address_id": "608d562c-ba0a-4617-b3d1-e844a123a6ba"
+  "address_id": "43723585-e9df-4b4e-945d-ebe67de11cf8"
  },
  {
-  "school_id": "2386a296-5e7e-484c-844f-837052a54f0c",
+  "school_id": "e956a40a-b150-46a9-8d80-585e9abdd2f3",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -77,6 +77,6 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "",
   "image": "",
-  "address_id": "a704ad63-8e95-4ec8-a8f2-77e9265304d6"
+  "address_id": "9239d4cd-0843-4094-ac5a-0403d7662c13"
  }
 ]

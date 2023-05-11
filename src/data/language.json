@@ -1,6 +1,6 @@
 [
  {
-  "language_id": "f301c60e-da7e-485f-abe1-469fd9c4d396",
+  "language_id": "2378d402-3175-4d43-8eda-55354f0bb929",
   "name": "Deutsch",
   "name_e": "",
   "name_r": "",
@@ -13,7 +13,7 @@
   "shortname": "DE"
  },
  {
-  "language_id": "8b011568-6c45-4b51-a36e-675781a14a9e",
+  "language_id": "1e887b85-f913-47aa-9dfb-4a264f0b83ff",
   "name": "Englisch",
   "name_e": "",
   "name_r": "",
@@ -26,7 +26,7 @@
   "shortname": "EN"
  },
  {
-  "language_id": "688afab8-58c8-4ce4-af4e-365dd7df60f9",
+  "language_id": "f0d71f97-dc28-41ce-9035-64660de68370",
   "name": "Russisch",
   "name_e": "",
   "name_r": "",
@@ -39,7 +39,7 @@
   "shortname": "RU"
  },
  {
-  "language_id": "6d21dbf4-1e7f-45ab-90f4-4e1fc08ca1f5",
+  "language_id": "352a93e4-2b7d-4ade-acbe-379ae1f50924",
   "name": "Französisch",
   "name_e": "",
   "name_r": "",
@@ -50,5 +50,18 @@
   "image": "",
   "url": "",
   "shortname": "FR"
+ },
+ {
+  "language_id": "b65be1bb-898d-4c51-9ced-7a7022b4817c",
+  "name": "Latein",
+  "name_e": "",
+  "name_r": "",
+  "description": "Grundkenntnisse",
+  "description_e": "",
+  "description_r": "",
+  "thumbnail": "",
+  "image": "",
+  "url": "",
+  "shortname": "LAT"
  }
 ]

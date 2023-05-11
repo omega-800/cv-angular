@@ -1,28 +1,31 @@
-@import 'src/scss/mixins.scss';
+@import "src/scss/mixins.scss";
 
 :host {
     @include wrapper;
-    & .bottomLinks{
+    & .bottomLinks {
         @include flex-e2e;
-        width:100%;
-        & >div{
+        width: 100%;
+        & > div {
             @include flex-list;
-            &>img{
+            & > img {
                 @include link;
                 @include preview-image;
             }
             & h5 {
                 @include pill;
             }
-            & .contactButtons{
+            & .contactButtons {
                 @include flex-e2e;
             }
-            align-self:flex-start;
-            width:50%;
-            height:100%;
+            align-self: flex-start;
+            width: 50%;
+            height: 100%;
         }
-        & div:not(.active)>*:not(img){
-            display:none;
+        & div:not(.active) > *:not(img) {
+            display: none;
         }
+    }
+    & .skills:not(.active) > *:not(h4) {
+        display: none;
     }
 }

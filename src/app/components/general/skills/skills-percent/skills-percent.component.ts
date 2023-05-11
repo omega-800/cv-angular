@@ -9,5 +9,4 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 export class SkillsPercentComponent {
   @Input() skills!: SkillEntity[];
   @Input() name!: string;
-
 }

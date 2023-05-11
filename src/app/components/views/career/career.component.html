@@ -17,6 +17,10 @@
                     <app-address [address]="item.address"></app-address>
                 </div>
             </div>
+            <div #skills class="skills">
+                <h4 (click)="skills.classList.toggle('active')">Angewandte Skills</h4>
+                <app-skills-percent [skills]="career.skills" name="(Häufigkeit in %)"></app-skills-percent>
+            </div>
         </app-contentbox>
     </ng-container>
 </div>

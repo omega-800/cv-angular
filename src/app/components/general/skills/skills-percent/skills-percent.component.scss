@@ -2,6 +2,7 @@
 @import 'src/scss/mixins.scss';
 
 :host {
+    width: 100%;
     & .skill-container {
         @include flex-list;
         &> div {

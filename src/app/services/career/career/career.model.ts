@@ -3,6 +3,7 @@ import { Entity, NamedEntity } from "../../entities.model";
 import { SchoolEntity } from "../school/school.model";
 import { WorkplaceEntity } from "../workplace/workplace.model";
 import { personIcon, schoolIcon, workIcon } from "src/app/components/components.constants";
+import { SkillEntity } from "../../skills/skill/skill.model";
 
 export interface CareerEntity extends NamedEntity {
     career_id: string;
@@ -12,6 +13,7 @@ export interface CareerEntity extends NamedEntity {
     document: string;
     workplace?: WorkplaceEntity;
     school?: SchoolEntity;
+    skills: SkillEntity[];
 }
 
 export interface CareerOnly {
@@ -32,6 +34,13 @@ export interface CareerOnly {
 export interface CareerTypeEntity extends Entity {
   name:string,
   logo:ImageComp
+}
+
+export interface Career_Skill {
+  career_skill_id: string;
+  skill_id: string;
+  career_id: string;
+  percent: number;
 }
 
 export interface CareerTypes {

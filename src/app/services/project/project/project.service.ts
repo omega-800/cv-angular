@@ -7,7 +7,6 @@ import { ProjectEntity, ProjectOnly, Project_Author, Project_Skill, Project_Clie
 import { PersonService } from '../../person/person/person.service';
 import { CareerService } from '../../career/career/career.service';
 import { SkillService } from '../../skills/skill/skill.service';
-import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { ImageComp } from "src/app/components/components.model";
 import { ClientService } from '../client/client.service';
 

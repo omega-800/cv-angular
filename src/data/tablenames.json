@@ -18,13 +18,13 @@
   "table_name": "language"
  },
  {
+  "table_name": "knowledge"
+ },
+ {
   "table_name": "activity"
  },
  {
   "table_name": "ability"
- },
- {
-  "table_name": "knowledge"
  },
  {
   "table_name": "skill_skillsubcategory"
@@ -45,12 +45,6 @@
   "table_name": "address"
  },
  {
-  "table_name": "school"
- },
- {
-  "table_name": "school_contactpoint"
- },
- {
   "table_name": "workplace"
  },
  {
@@ -60,7 +54,16 @@
   "table_name": "workplace_contactpoint"
  },
  {
+  "table_name": "school"
+ },
+ {
+  "table_name": "school_contactpoint"
+ },
+ {
   "table_name": "career"
+ },
+ {
+  "table_name": "career_skill"
  },
  {
   "table_name": "person"
