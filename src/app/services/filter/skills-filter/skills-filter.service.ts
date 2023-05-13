@@ -55,11 +55,7 @@ export class SkillsFilterService {
     this.skillFilters = {
       id:"filter_skill", 
       name:"Skills", 
-      category:this.category, 
-      subcategory:this.subcategory, 
-      type:this.type, 
-      hobby:this.hobby, 
-      applicationtype: this.applicationtype
+      categories:[this.category, this.subcategory,  this.type, this.hobby, this.applicationtype]
     }
   }
 

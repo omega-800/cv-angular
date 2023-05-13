@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { FiltersEntity } from 'src/app/services/filter/filter.model';
+import { FiltersEntity, TagEntity } from 'src/app/services/filter/filter.model';
 import { FilterState } from 'src/app/store/filter/filter.state';
 
 @Component({
@@ -11,15 +11,23 @@ import { FilterState } from 'src/app/store/filter/filter.state';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent {
-  @Input() filterValues!:{[key:string]:string};
+
+  @Input() filters!:FiltersEntity;
+
+  toggleTag(tag:TagEntity){
+
+  }
+
+
+  /*@Input() filterValues!:{[key:string]:string};
   @Input() name!: string;
   @Input() filters!: FiltersEntity[];
   filtersSelected$:Observable<FiltersEntity[]>;
   
   constructor(private store:Store) {
-    /*for (const [key, value] of Object.entries(this.filterValues)) {
+    for (const [key, value] of Object.entries(this.filterValues)) {
       this.filtersSelected[value] = false;
-    };*/
+    };
     this.filtersSelected$ = this.store
       .select(FilterState.filters)
       .pipe();
@@ -27,6 +35,6 @@ export class FilterComponent {
 
   onFilterChange(){
     //elem.classList.add('selected');
-  }
+  } */
 
 }

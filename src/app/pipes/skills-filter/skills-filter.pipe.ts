@@ -7,10 +7,7 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 export class SkillsFilterPipe implements PipeTransform {
 
   transform(skills:SkillEntity[], types:string[], ...args:string[]): SkillEntity[] {
-    if(!skills){
-      return skills;
-    }
-    if(types){
+    if(skills && types) {
       //skills = skills.filter(skill => types.includes(skill.type));
     }
 

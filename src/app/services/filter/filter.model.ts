@@ -13,3 +13,7 @@ export interface TagEntity extends Entity {
   value:string|boolean|number;
   selected: boolean;
 }
+
+export interface SortEntity extends Entity {
+  value:string;
+}

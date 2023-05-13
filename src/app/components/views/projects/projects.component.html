@@ -1,13 +1,14 @@
 <h1>Projects</h1>
 
-<app-filter name="projects" [filters]="[skillsFilter]"></app-filter>
+<app-filter name="projects" [filters]="skillsFilter"></app-filter>
+<app-sort [fields]="sortFields" (selectedEmitter)="sortProjectsBy($event)"></app-sort>
 
-<app-contentbox *ngFor="let project of projects"
-    [image]='{id:"firebase_link",alt:"",name:"",path:project.image}'
-    title="{{project.name}}" 
-    subTitle="{{project.name}}" 
-    description="{{project.description}}"
-    link="{{project.url}}">
+<app-contentbox *ngFor="let project of projects | projectsSort:sortValue:sortAsc"
+    [image]='{id:"img",alt:"",name:"",path:project.image}'
+    [title]="project.name" 
+    [subTitle]="project.date | date" 
+    [description]="project.description"
+    [link]="project.url">
     <div *ngIf="project.github || project.url" class="bot links">
         <h5>Links:</h5>
         <div class="content">

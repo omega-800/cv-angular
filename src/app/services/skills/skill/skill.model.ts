@@ -1,6 +1,6 @@
 import { ApplicationTypeEntity } from "../application/application.model";
 import { ContentEntity } from "src/app/services/entities.model";
-import { SkillSubCategoryEntity } from "../skill-category/skill-category.model";
+import { SkillCategoryEntity, SkillSubCategoryEntity } from "../skill-category/skill-category.model";
 
 export interface SkillEntity extends ContentEntity {
   skill_id: string;
@@ -12,6 +12,7 @@ export interface SkillEntity extends ContentEntity {
   proficiencylevel_r: string;
   yearsofexperience: number;
   type:string;
+  skillcategories: SkillCategoryEntity[];
   skillsubcategories: SkillSubCategoryEntity[];
   shortname?: string;
   alternatename?: string;

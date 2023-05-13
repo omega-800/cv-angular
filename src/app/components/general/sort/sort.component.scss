@@ -1,0 +1,10 @@
+@import 'src/scss/variables.scss';
+@import 'src/scss/mixins.scss';
+
+:host {
+    @include flex-row;
+    & div {
+        @include slimpill;
+        @include link;
+    }
+}

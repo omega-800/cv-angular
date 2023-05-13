@@ -14,7 +14,6 @@ import { SkillsPercentListComponent } from './components/general/skills/skills-p
 import { FilterComponent } from './components/general/filter/filter.component';
 import { SkillsFilterPipe } from './pipes/skills-filter/skills-filter.pipe';
 import { AgePipe } from './pipes/age/age.pipe';
-import { ListComponent } from './components/general/list/list.component';
 import { NgxsModule } from '@ngxs/store';
 import { FilterState } from './store/filter/filter.state';
 import { ContentboxComponent } from './components/general/contentbox/contentbox.component';
@@ -27,6 +26,10 @@ import { environment } from 'src/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireStorageModule  } from '@angular/fire/compat/storage';
 import { ImageComponent } from './components/general/image/image.component';
+import { SkillsSortPipe } from './pipes/skills-sort/skills-sort.pipe';
+import { SortComponent } from './components/general/sort/sort.component';
+import { ProjectsSortPipe } from './pipes/projects-sort/projects-sort.pipe';
+import { DatePipe } from './pipes/date/date.pipe';
 
 @NgModule({
   declarations: [
@@ -42,14 +45,17 @@ import { ImageComponent } from './components/general/image/image.component';
     FilterComponent,
     SkillsFilterPipe,
     AgePipe,
-    ListComponent,
     ContentboxComponent,
     CarouselComponent,
     ContactpointComponent,
     ButtonComponent,
     AddressComponent,
     ProjectsComponent,
-    ImageComponent
+    ImageComponent,
+    SkillsSortPipe,
+    SortComponent,
+    ProjectsSortPipe,
+    DatePipe
   ],
   imports: [
     BrowserModule,

@@ -42,7 +42,7 @@ export class ProjectService {
       skills: this.projectSkillLinks.filter(link => link.project_id == project.project_id).map(link => this.skillService.getSkillById(link.skill_id)),
       clients: this.projectClientLinks.filter(link => link.project_id == project.project_id).map(link => this.clientService.getClientById(link.client_id)),
       id: "project_"+project.project_id,
-      date: new Date(),
+      date: new Date(project.date.slice(0, -5)),
       images: images
     }
   }

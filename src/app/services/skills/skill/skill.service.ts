@@ -64,21 +64,21 @@ export class SkillService {
   
   fillSkillProps(skill:SkillOnly):SkillEntity {
     if(skill.application_id !== ""){ 
-      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.applicationService.getApplicationById(skill.application_id), id: "skill_"+skill.skill_id, type:SkillTypes.application}; 
+      return {...skill, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.applicationService.getApplicationById(skill.application_id), id: "skill_"+skill.skill_id, type:SkillTypes.application}; 
     }
     if(skill.language_id !== ""){
-      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.languageService.getLanguageById(skill.language_id), id: "skill_"+skill.skill_id, type:SkillTypes.language}; 
+      return {...skill, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.languageService.getLanguageById(skill.language_id), id: "skill_"+skill.skill_id, type:SkillTypes.language}; 
     }
     if(skill.knowledge_id !== ""){  
-      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.knowledgeService.getKnowledgeById(skill.knowledge_id), id: "skill_"+skill.skill_id, type:SkillTypes.knowledge};
+      return {...skill, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.knowledgeService.getKnowledgeById(skill.knowledge_id), id: "skill_"+skill.skill_id, type:SkillTypes.knowledge};
     }
     if(skill.activity_id !== ""){ 
-      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.activityService.getActivityById(skill.activity_id), id: "skill_"+skill.skill_id, type:SkillTypes.activity};
+      return {...skill, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.activityService.getActivityById(skill.activity_id), id: "skill_"+skill.skill_id, type:SkillTypes.activity};
     }
     if(skill.ability_id !== ""){  
-      return {...skill, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.abilityService.getAbilityById(skill.ability_id), id: "skill_"+skill.skill_id, type:SkillTypes.ability};
+      return {...skill, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.abilityService.getAbilityById(skill.ability_id), id: "skill_"+skill.skill_id, type:SkillTypes.ability};
     }
-    return {...skill, id: "skill_"+skill.skill_id, skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), type:"", name:"", name_e:"", name_r:"", description:"", description_e:"", description_r:"", thumbnail:"", image:"", url:""};
+    return {...skill, id: "skill_"+skill.skill_id, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), type:"", name:"", name_e:"", name_r:"", description:"", description_e:"", description_r:"", thumbnail:"", image:"", url:""};
   }
 
 }

@@ -3,14 +3,24 @@
 
 :host{
     @include flex-row;
-    & form {
+    & h3 {
         width:100%;
     }
-    & .filter {
-        @include link;
-        @include pill;
-    }
-    & .active {
-        @include darken-little(background-color, $cool);
+
+    &>div {
+        width:100%;
+        & h4{
+            width:100%;
+        }
+        & .tags {
+            @include flex-e2e;
+            &> div {
+                @include slimpill;
+                @include link;
+            }
+        }
+        &:not(.active) > .tags{
+            display:none;
+        }
     }
 }

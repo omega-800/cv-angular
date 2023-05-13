@@ -41,6 +41,16 @@ export class SkillCategoriesService {
     let subCategoriesOfSkill:string[] = Object.values(this.skillSubCategoryLinks).filter(link => link.skill_id === skill.skill_id).map(filteredLink => filteredLink.skillsubcategory_id);
     return Object.values(this.skillSubCategories).filter(skillSubCat => subCategoriesOfSkill.includes(skillSubCat.skillsubcategory_id));
   }
+  
+  getSkillCategoriesOfSkill(skill:SkillOnly):SkillCategoryEntity[] {
+    let subCategoriesOfSkill:SkillSubCategoryEntity[] = this.getSkillSubCategoriesOfSkill(skill);
+    let categoriesOfSkill:SkillCategoryEntity[] = subCategoriesOfSkill.map(cat => cat.skillcategory);
+    return categoriesOfSkill.filter((value, index, self) =>
+      index === self.findIndex(t => (
+        t.skillcategory_id === value.skillcategory_id
+      ))
+    )
+  }
 
   fillSubCategory(subCat:SkillSubCategoryOnly):SkillSubCategoryEntity {
     return {...subCat, skillcategory: this.getSkillCategoryById(subCat.skillcategory_id), id:"skillSubCategory_"+subCat.skillsubcategory_id};

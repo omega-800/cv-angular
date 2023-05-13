@@ -1,0 +1,8 @@
+<p>Sortieren nach:</p>
+<select #sortFields name="sortFields" id="sortFields" [(ngModel)]="selectedValue" (change)="selectItem()">
+    <option *ngFor="let field of fields; first as isFirst" [ngValue]="field">{{field.name}}</option>
+</select>
+<select #sortAsc name="sortAsc" id="sortAsc" [(ngModel)]="ascending" (change)="selectItem()">
+    <option [ngValue]="true">Aufsteigend</option>
+    <option [ngValue]="false">Absteigend</option>
+</select>

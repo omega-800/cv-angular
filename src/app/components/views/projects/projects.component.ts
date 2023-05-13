@@ -8,9 +8,10 @@ import { CareerEntity } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { PersonEntity } from 'src/app/services/person/person/person.model';
-import { ClientService } from 'src/app/services/project/client/client.service';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import { SkillFiltersEntity } from 'src/app/services/filter/skills-filter/skills-filter.model';
+import { ProjectProp, ProjectSortEntity, isOfTypeProjectProp, projectProps } from 'src/app/pipes/projects-sort/projects-sort.model';
+import { SortEntity } from 'src/app/services/filter/filter.model';
 
 @Component({
   selector: 'app-projects',
@@ -21,6 +22,23 @@ export class ProjectsComponent {
   projects:ProjectEntity[];
   lt:LinkTypes=linkTypes;
   skillsFilter: SkillFiltersEntity;
+  
+  sortFields:ProjectSortEntity[] = projectProps;
+  sortValue: ProjectSortEntity = {id:"date",value:"date",name:'date'};
+  sortAsc:boolean=true;
+  
+  sortProjectsBy(selected:{value:SortEntity,ascending:boolean}){
+    this.sortValue = {...selected.value, value:this.valueToProjectProp(selected.value.value)};
+    this.sortAsc = selected.ascending; 
+  }
+
+  valueToProjectProp(value:string):ProjectProp{
+    if(isOfTypeProjectProp(value)){
+      return <ProjectProp>value;
+    } else {
+      return "date";
+    }
+  }
 
   constructor(private projectService:ProjectService, private careerService: CareerService, private personService: PersonService, private skillsFilterService:SkillsFilterService) {
     this.projects = projectService.getProjects();
