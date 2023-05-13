@@ -1,5 +1,17 @@
 [
  {
+  "table_name": "project"
+ },
+ {
+  "table_name": "project_skill"
+ },
+ {
+  "table_name": "project_author"
+ },
+ {
+  "table_name": "project_client"
+ },
+ {
   "table_name": "skillcategory"
  },
  {
@@ -51,10 +63,10 @@
   "table_name": "contactpoint"
  },
  {
-  "table_name": "workplace_contactpoint"
+  "table_name": "school"
  },
  {
-  "table_name": "school"
+  "table_name": "workplace_contactpoint"
  },
  {
   "table_name": "school_contactpoint"
@@ -73,18 +85,6 @@
  },
  {
   "table_name": "person_country"
- },
- {
-  "table_name": "project"
- },
- {
-  "table_name": "project_skill"
- },
- {
-  "table_name": "project_author"
- },
- {
-  "table_name": "project_client"
  },
  {
   "table_name": "client"

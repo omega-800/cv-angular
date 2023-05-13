@@ -1,6 +1,6 @@
 [
  {
-  "workplace_id": "65916d4a-0e49-4404-aae9-37462944e04c",
+  "workplace_id": "78ea7be8-df3d-4229-832a-ca43d0e46ca1",
   "legalname": "inteco edv ag",
   "foundingdate": "1977-12-31T23:00:00.000Z",
   "founder": "Walter Tuchschmid",
@@ -13,10 +13,10 @@
   "url": "https://www.inteco.ch/",
   "logo": "https://u.jimcdn.com/cms/o/s2be375c9b7b44441/userlayout/img/logo.png",
   "image": "",
-  "address_id": "20df8b67-91f5-4175-bf00-07023b623f8d"
+  "address_id": "7ba3bae6-4b21-4e7a-b153-137f6cc206bd"
  },
  {
-  "workplace_id": "435338ea-a743-44db-aa87-75c6d2a7c3ab",
+  "workplace_id": "537878bf-437c-436d-935e-5bb0bc52509f",
   "legalname": "Ernesto Vargas®",
   "foundingdate": "1977-12-31T23:00:00.000Z",
   "founder": "Bernd Schoop",
@@ -29,6 +29,6 @@
   "url": "https://www.ernesto-vargas.com",
   "logo": "https://www.ernesto-vargas.com/shop/wp-content/uploads/2017/03/ev-logo2.png",
   "image": "",
-  "address_id": "9aa5b24f-4858-4264-9e4f-2596f06dcb98"
+  "address_id": "38e906e6-3dd5-42a4-8e2e-2662f87d50d4"
  }
 ]

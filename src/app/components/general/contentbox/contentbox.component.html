@@ -7,7 +7,7 @@
         
         <img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
     </div>
-    <div class="mainImg">
+    <div *ngIf="hasImage" class="mainImg">
         <app-carousel *ngIf="isCarousel" [images]="images"></app-carousel>
         <app-image *ngIf="!isCarousel" [image]="image"></app-image>
     </div>
