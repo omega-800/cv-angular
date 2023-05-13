@@ -1,9 +1,9 @@
 <h1>Projects</h1>
 
-<app-filter name="projects" [filters]="skillsFilter"></app-filter>
+<app-filter [filters]="skillsFilter" (filterEmitter)="filterProjectsBySkill($event)"></app-filter>
 <app-sort [fields]="sortFields" (selectedEmitter)="sortProjectsBy($event)"></app-sort>
 
-<app-contentbox *ngFor="let project of projects | projectsSort:sortValue:sortAsc"
+<app-contentbox *ngFor="let project of projects | projectsSort:sortValue:sortAsc | projectsFilter:selectedSkillFilter"
     [image]='{id:"img",alt:"",name:"",path:project.image}'
     [title]="project.name" 
     [subTitle]="project.date | date" 

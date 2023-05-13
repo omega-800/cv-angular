@@ -1,6 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { SkillSortEntity, skillProps, SkillProp, isOfTypeSkillProp } from 'src/app/pipes/skills-sort/skills-sort.model';
-import { SortEntity } from 'src/app/services/filter/filter.model';
+import { Component, Input, OnInit } from '@angular/core';
+import { SkillSortEntity, skillProps, SkillSortProp, isOfTypeSkillSortProp } from 'src/app/pipes/skills-sort/skills-sort.model';
+import { FullSortEntity, SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
+import { SkillFiltersEntity } from 'src/app/services/filter/skills-filter/skills-filter.model';
+import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
 @Component({
@@ -8,23 +10,38 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
   templateUrl: './skills-percent.component.html',
   styleUrls: ['./skills-percent.component.scss']
 })
-export class SkillsPercentComponent {
+export class SkillsPercentComponent implements OnInit {
   @Input() skills!: SkillEntity[];
   @Input() name!: string;
   sortFields:SkillSortEntity[] = skillProps;
   sortValue: SkillSortEntity = {id:"knowledgepercent",value:"knowledgepercent",name:'knowledgepercent'};
   sortAsc:boolean=true;
+  filter:SkillFiltersEntity;
+  selectedFilter:SelectedFilterEntity[] = [];
 
-  sortSkillsBy(selected:{value:SortEntity,ascending:boolean}){
-    this.sortValue = {...selected.value, value:this.valueToSkillProp(selected.value.value)};
+  constructor(private skillsFilterService:SkillsFilterService){
+    this.filter = this.skillsFilterService.getSkillFilters();
+  }
+
+  ngOnInit(): void {
+    this.filter = this.skillsFilterService.getSkillFiltersOfSkills(this.skills);
+  }
+
+  sortSkillsBy(selected:FullSortEntity){
+    this.sortValue = {...selected.value, value:this.valueToSkillSortProp(selected.value.value)};
     this.sortAsc = selected.ascending; 
   }
 
-  valueToSkillProp(value:string):SkillProp{
-    if(isOfTypeSkillProp(value)){
-      return <SkillProp>value;
+  valueToSkillSortProp(value:string):SkillSortProp{
+    if(isOfTypeSkillSortProp(value)){
+      return <SkillSortProp>value;
     } else {
       return "knowledgepercent";
     }
   }
+  
+  filterSkillsBy(selected:SelectedFilterEntity[]) {
+    this.selectedFilter = selected;
+  }
+
 }

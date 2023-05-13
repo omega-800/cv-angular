@@ -1,9 +1,9 @@
-import { SkillProp } from "src/app/pipes/skills-sort/skills-sort.model";
+import { SkillSortProp } from "src/app/pipes/skills-sort/skills-sort.model";
 import { Entity } from "../../entities.model";
 import { FiltersEntity, FilterCategoryEntity, TagEntity, SortEntity } from "../filter.model";
 
 export interface SkillFiltersEntity extends FiltersEntity {
-  categories?: FilterCategoryEntity[];
+  categories: FilterCategoryEntity[];
 }
 
 export interface SkillFilterCategoryEntity extends FilterCategoryEntity {
@@ -11,5 +11,5 @@ export interface SkillFilterCategoryEntity extends FilterCategoryEntity {
 }
 
 export interface SkillTagEntity extends TagEntity {
-    value:SkillProp;
+    value:SkillSortProp;
 }

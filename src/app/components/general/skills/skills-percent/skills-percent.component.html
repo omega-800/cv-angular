@@ -1,6 +1,7 @@
 <h5>{{name}}</h5>
+<app-filter [filters]="filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
 <app-sort [fields]="sortFields" (selectedEmitter)="sortSkillsBy($event)"></app-sort>
-<div class="skill-container" *ngFor="let skill of skills | skillsSort:sortValue:sortAsc">
+<div class="skill-container" *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter">
     <div class="percent-{{skill.knowledgepercent}}">
         <p *ngIf="!skill.url">{{skill.knowledgepercent}}% {{skill.name}}</p>
         <a *ngIf="skill.url" href="{{skill.url}}"  target="_blank">{{skill.knowledgepercent}}% {{skill.name}}</a>

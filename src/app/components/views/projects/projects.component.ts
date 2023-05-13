@@ -11,7 +11,8 @@ import { PersonEntity } from 'src/app/services/person/person/person.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import { SkillFiltersEntity } from 'src/app/services/filter/skills-filter/skills-filter.model';
 import { ProjectProp, ProjectSortEntity, isOfTypeProjectProp, projectProps } from 'src/app/pipes/projects-sort/projects-sort.model';
-import { SortEntity } from 'src/app/services/filter/filter.model';
+import { SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
+import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
 @Component({
   selector: 'app-projects',
@@ -26,6 +27,26 @@ export class ProjectsComponent {
   sortFields:ProjectSortEntity[] = projectProps;
   sortValue: ProjectSortEntity = {id:"date",value:"date",name:'date'};
   sortAsc:boolean=true;
+
+  projectSkills:SkillEntity[] = [];
+  selectedSkillFilter:SelectedFilterEntity[] = [];
+
+  constructor(private projectService:ProjectService, private careerService: CareerService, private personService: PersonService, private skillsFilterService:SkillsFilterService) {
+    this.projects = projectService.getProjects();
+    this.projects.forEach(project => {
+      project.skills.forEach(skill => {
+        if(!this.projectSkills.some(elem => elem.skill_id == skill.skill_id)){
+          this.projectSkills.push(skill);
+        }
+      })
+    })
+    this.skillsFilter = skillsFilterService.getSkillFiltersOfSkills(this.projectSkills);
+    //this.projects = [projectService.getProjectById("60d8c8bc-3061-406c-80bf-6188a236a7c1")];
+  }
+
+  filterProjectsBySkill(selected:SelectedFilterEntity[]) {
+    this.selectedSkillFilter = selected;
+  }
   
   sortProjectsBy(selected:{value:SortEntity,ascending:boolean}){
     this.sortValue = {...selected.value, value:this.valueToProjectProp(selected.value.value)};
@@ -38,12 +59,6 @@ export class ProjectsComponent {
     } else {
       return "date";
     }
-  }
-
-  constructor(private projectService:ProjectService, private careerService: CareerService, private personService: PersonService, private skillsFilterService:SkillsFilterService) {
-    this.projects = projectService.getProjects();
-    this.skillsFilter = skillsFilterService.getSkillFilters();
-    //this.projects = [projectService.getProjectById("60d8c8bc-3061-406c-80bf-6188a236a7c1")];
   }
 
   ol = (href:string) => {

@@ -1,5 +1,4 @@
 <h2>Skills</h2>
-<app-filter [filters]="filter"></app-filter>
 <!--{{types|json}} -->
 <div *ngFor="let skillset of allSkillsByType | keyvalue">
     <app-skills-percent name="{{skillset.key}}" [skills]="skillset.value"></app-skills-percent>

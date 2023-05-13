@@ -1,4 +1,4 @@
-<p>Sortieren nach:</p>
+<h4 class="sortTitle">Sortieren nach:</h4>
 <select #sortFields name="sortFields" id="sortFields" [(ngModel)]="selectedValue" (change)="selectItem()">
     <option *ngFor="let field of fields; first as isFirst" [ngValue]="field">{{field.name}}</option>
 </select>

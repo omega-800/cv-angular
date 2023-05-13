@@ -1,9 +1,9 @@
-<h3>Filter</h3>
+<h4 class="filterTitle">Filtern nach:</h4>
 
 <div #cat *ngFor="let category of filters.categories">
-    <h4 (click)="cat.classList.toggle('active')">{{category.name}}</h4>
+    <h5 class="categoryTitle" (click)="cat.classList.toggle('active')">{{category.name}}</h5>
     <div class="tags">
-        <div *ngFor="let tag of category.tags" (click)="toggleTag(tag)">{{tag.name}}</div>
+        <div #t *ngFor="let tag of category.tags" (click)="toggleTag(category, tag); t.classList.toggle('active')">{{tag.name}}</div>
     </div>
 </div>
 

@@ -2,7 +2,7 @@
 @import 'src/scss/mixins.scss';
 
 :host {
-    @include flex-row;
+    @include flex-e2e;
     & div {
         @include slimpill;
         @include link;

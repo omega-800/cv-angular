@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
-import { SkillProp, SkillSortEntity } from './skills-sort.model';
+import { SkillSortProp, SkillSortEntity } from './skills-sort.model';
 
 @Pipe({
   name: 'skillsSort'

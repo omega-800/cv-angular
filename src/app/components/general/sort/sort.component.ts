@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { SortEntity } from 'src/app/services/filter/filter.model';
+import { FullSortEntity, SortEntity } from 'src/app/services/filter/filter.model';
 
 @Component({
   selector: 'app-sort',
@@ -8,7 +8,7 @@ import { SortEntity } from 'src/app/services/filter/filter.model';
 })
 export class SortComponent implements OnInit{
   @Input() fields!:SortEntity[];
-  @Output() selectedEmitter = new EventEmitter<{value:SortEntity, ascending:boolean}>();
+  @Output() selectedEmitter = new EventEmitter<FullSortEntity>();
 
   ascending:boolean = true;
   selectedValue:SortEntity = {id:"",name:"",value:""};
@@ -19,6 +19,6 @@ export class SortComponent implements OnInit{
   }
 
   selectItem() {
-    this.selectedEmitter.emit({value: this.selectedValue, ascending: this.ascending});
+    this.selectedEmitter.emit({id:"sort_"+this.selectedValue.value+"_"+this.ascending?"ASC":"DESC",name:"Sort Entity",value: this.selectedValue, ascending: this.ascending});
   }
 }

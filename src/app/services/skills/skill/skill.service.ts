@@ -19,8 +19,8 @@ export class SkillService {
 
   constructor(private skillCategoriesService:SkillCategoriesService, private applicationService:ApplicationService, private languageService:LanguageService, private knowledgeService:KnowledgeService, private activityService:ActivityService, private abilityService:AbilityService) { 
     //this.getFilters();
-    //this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
-    this.skills = this.onlySkills.map(skill =>this.fillSkillProps(skill));
+    //this.skills = this.onlySkills.map(skill =>this.fillSkillSortProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
+    this.skills = this.onlySkills.map(skill =>this.fillSkillSortProps(skill));
   }
 /*
   getFilters():FiltersEntity{
@@ -53,7 +53,7 @@ export class SkillService {
     return this.skills;
   }
   
-  getSkillTypes():{[key:string]:string} {
+  getSkillTypes() {
     return SkillTypes;
     //return _.keys(_.countBy(this.onlySkills, function(skill:Skill) { return skill.type; }));
   }
@@ -62,7 +62,7 @@ export class SkillService {
     return Object.values(this.skills).filter(skill => skill.type === type);
   }
   
-  fillSkillProps(skill:SkillOnly):SkillEntity {
+  fillSkillSortProps(skill:SkillOnly):SkillEntity {
     if(skill.application_id !== ""){ 
       return {...skill, skillcategories: this.skillCategoriesService.getSkillCategoriesOfSkill(skill), skillsubcategories: this.skillCategoriesService.getSkillSubCategoriesOfSkill(skill), ...this.applicationService.getApplicationById(skill.application_id), id: "skill_"+skill.skill_id, type:SkillTypes.application}; 
     }

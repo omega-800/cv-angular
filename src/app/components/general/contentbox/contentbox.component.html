@@ -1,4 +1,4 @@
-<div *ngIf="hasImage" #cbToggle>
+<div #cbToggle>
     <div class="preview" (click)="cbToggle.classList.toggle('active')">
         <img *ngIf="preview" class="previewImg" src="{{preview.path}}" alt="{{preview.alt}}" loading="lazy">
         

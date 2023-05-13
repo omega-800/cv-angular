@@ -30,6 +30,7 @@ import { SkillsSortPipe } from './pipes/skills-sort/skills-sort.pipe';
 import { SortComponent } from './components/general/sort/sort.component';
 import { ProjectsSortPipe } from './pipes/projects-sort/projects-sort.pipe';
 import { DatePipe } from './pipes/date/date.pipe';
+import { ProjectsFilterPipe } from './pipes/projects-filter/projects-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { DatePipe } from './pipes/date/date.pipe';
     SkillsSortPipe,
     SortComponent,
     ProjectsSortPipe,
-    DatePipe
+    DatePipe,
+    ProjectsFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,7 @@ import { DatePipe } from './pipes/date/date.pipe';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule 
   ],
-  providers: [],
+  providers: [SkillsFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

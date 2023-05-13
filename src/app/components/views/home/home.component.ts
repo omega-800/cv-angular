@@ -7,6 +7,8 @@ import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { contactMail, contactPhone, openLink } from '../../general/links.util';
 import { linkTypes } from '../../components.constants';
+import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
+import { SkillService } from 'src/app/services/skills/skill/skill.service';
 
 @Component({
   selector: 'app-home',
@@ -17,11 +19,13 @@ export class HomeComponent {
   me:PersonEntity = this.personService.getPersonByName("Georgiy");
   lt:Readonly<LinkTypes>;
   image:ImageComp;
+  skills:SkillEntity[];
 
   mailText:string = "";
   //age:string;
 
-  constructor(private personService:PersonService) { 
+  constructor(private personService:PersonService, private skillService:SkillService) { 
+    this.skills = this.skillService.getSkills();
     this.me = this.personService.getPersonByName("Georgiy");
     this.lt = linkTypes;
     this.image = {

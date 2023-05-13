@@ -3,20 +3,26 @@
 
 :host{
     @include flex-row;
-    & h3 {
+    & .filterTitle {
         width:100%;
     }
 
     &>div {
-        width:100%;
-        & h4{
+        cursor: pointer;
+        &.active {
             width:100%;
-        }
-        & .tags {
-            @include flex-e2e;
-            &> div {
-                @include slimpill;
-                @include link;
+            & .categoryTitle {
+                width:100%;
+            }
+            & .tags {
+                @include flex-e2e;
+                &> div {
+                    @include slimpill;
+                    @include link;
+                }
+                &>.active{
+                    @include darken-little(background-color, $cool);
+                }
             }
         }
         &:not(.active) > .tags{

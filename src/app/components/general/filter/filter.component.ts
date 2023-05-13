@@ -1,8 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { FiltersEntity, TagEntity } from 'src/app/services/filter/filter.model';
+import { FilterCategoryEntity, FiltersEntity, SelectedFilterEntity, TagEntity } from 'src/app/services/filter/filter.model';
 import { FilterState } from 'src/app/store/filter/filter.state';
 
 @Component({
@@ -11,13 +11,14 @@ import { FilterState } from 'src/app/store/filter/filter.state';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent {
-
   @Input() filters!:FiltersEntity;
+  @Output() filterEmitter = new EventEmitter<SelectedFilterEntity[]>();
+  selectedFilter:SelectedFilterEntity[] = [];
 
-  toggleTag(tag:TagEntity){
-
+  toggleTag(category:FilterCategoryEntity, tag:TagEntity){
+    this.selectedFilter.some(elem => elem.category == category.id && elem.value == tag.value) ? this.selectedFilter.splice(this.selectedFilter.findIndex(elem => elem.category == category.id && elem.value == tag.value), 1) : this.selectedFilter.push({id:tag.id, name:tag.name, category:category.id, value:tag.value});
+    this.filterEmitter.emit(this.selectedFilter);
   }
-
 
   /*@Input() filterValues!:{[key:string]:string};
   @Input() name!: string;
