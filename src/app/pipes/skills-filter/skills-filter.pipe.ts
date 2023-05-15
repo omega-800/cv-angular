@@ -22,12 +22,12 @@ export class SkillsFilterPipe implements PipeTransform {
 
     filters.forEach(filter => {
       if (!applies) {
-        applies = filter.category === skillFilterProps.knowledge ? skill.knowledgepercent == filter.value :
-          filter.category === skillFilterProps.category ? skill.skillcategories.some(cat => cat.skillcategory_id == filter.value) :
-            filter.category === skillFilterProps.subcategory ? skill.skillsubcategories.some(subCat => subCat.skillsubcategory_id == filter.value) :
-              filter.category === skillFilterProps.type ? skill.type == filter.value :
-                filter.category === skillFilterProps.hobby ? skill.hobby == filter.value :
-                  filter.category === skillFilterProps.apptype ? skill.applicationtype?.applicationtype_id == filter.value :
+        applies = filter.category === skillFilterProps.knowledge ? filter.value.includes(skill.knowledgepercent) :
+          filter.category === skillFilterProps.category ? skill.skillcategories.some(cat => filter.value.includes(cat.skillcategory_id)) :
+            filter.category === skillFilterProps.subcategory ? skill.skillsubcategories.some(subCat => filter.value.includes(subCat.skillsubcategory_id)) :
+              filter.category === skillFilterProps.type ? filter.value.includes(skill.type) :
+                filter.category === skillFilterProps.hobby ? filter.value.includes(skill.hobby) :
+                  filter.category === skillFilterProps.apptype ? filter.value.includes(skill.applicationtype?.applicationtype_id!) :
                     false;
       }
     })

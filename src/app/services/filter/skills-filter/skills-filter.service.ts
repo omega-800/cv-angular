@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { SkillService } from '../../skills/skill/skill.service';
 import { SkillCategoryEntity, SkillSubCategoryEntity } from '../../skills/skill-category/skill-category.model';
-import { FilterCategoryEntity, FiltersEntity } from '../filter.model';
+import { FilterCategoryEntity, FilterRangeEntity, FiltersEntity } from '../filter.model';
 import { SkillEntity } from '../../skills/skill/skill.model';
 import { SkillCategoriesService } from '../../skills/skill-category/skill-category.service';
 import { ApplicationService } from '../../skills/application/application.service';
@@ -37,8 +37,10 @@ export class SkillsFilterService {
     let categories: SkillCategoryEntity[] = [];
     let appTypes: ApplicationTypeEntity[] = [];
     let types: string[] = [];
+    let percent: number[] = [];
     let hobbies: boolean[] = [];
     let filters: FilterCategoryEntity[] = [];
+    let ranges: FilterRangeEntity[] = [];
 
     skills.forEach(skill => {
       skill.skillsubcategories.forEach(subCat => {
@@ -60,18 +62,22 @@ export class SkillsFilterService {
       if (!hobbies.includes(skill.hobby)) {
         hobbies.push(skill.hobby);
       }
+      if (!percent.includes(skill.knowledgepercent)) {
+        percent.push(skill.knowledgepercent);
+      }
     })
-
     if (categories.length > 1) { filters.push(this.getCategoryFilters(categories)) }
     if (subCategories.length > 1) { filters.push(this.getSubCategoryFilters(subCategories)) }
     if (types.length > 1) { filters.push(this.getTypeFilters(types)) }
     if (appTypes.length > 1) { filters.push(this.getApplicationTypeFilters(appTypes)) }
+    if (percent.length > 2) { ranges.push(this.getKnowledgeRange(percent.sort((a, b) => a - b), 5)) }
     if (hobbies.includes(false) && hobbies.includes(true)) { filters.push(this.getHobbyFilters()) }
 
     return {
       id: "filter_skill",
       name: "Skills",
-      categories: filters
+      categories: filters,
+      ranges: ranges
     }
   }
 
@@ -145,4 +151,12 @@ export class SkillsFilterService {
     }
   }
 
+  getKnowledgeRange(items: number[], step: number): FilterRangeEntity {
+    return {
+      id: skillFilterProps.knowledge,
+      name: "Prozent",
+      values: items,
+      step: step
+    };
+  }
 }

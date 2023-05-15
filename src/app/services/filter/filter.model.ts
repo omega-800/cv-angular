@@ -2,11 +2,17 @@ import { Entity } from "../entities.model"
 
 export interface SelectedFilterEntity extends Entity {
   category: string;
-  value: TagType;
+  value: FilterType[];
 }
 
 export interface FiltersEntity extends Entity {
   categories: FilterCategoryEntity[];
+  ranges?: FilterRangeEntity[];
+}
+
+export interface FilterRangeEntity extends Entity {
+  values: RangeType[];
+  step: RangeType;
 }
 
 export interface FilterCategoryEntity extends Entity {
@@ -28,4 +34,6 @@ export interface FullSortEntity extends Entity {
   ascending: boolean;
 }
 
+export type FilterType = string | boolean | number | Date;
 export type TagType = string | boolean | number;
+export type RangeType = Date | number;

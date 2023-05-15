@@ -7,6 +7,14 @@
     </div>
 </div>
 
+<div #ran *ngFor="let range of filters.ranges">
+    <h5 class="categoryTitle" (click)="ran.classList.toggle('active')">{{range.name}}</h5>
+    <p class="rangeFrom">{{r1.value}}</p>
+    <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length-1]" [step]="range.step" value="{{range.values[0]}}" (input)="changeRange(range, r1)" class="slider slider1" #r1>
+    <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length-1]" [step]="range.step" value="{{range.values[range.values.length-1]}}" (input)="changeRange(range, r2)" class="slider slider2" #r2>
+    <p class="rangeTo">{{r2.value}}</p>
+</div>
+
 
 
 <!-- p>{{filtersSelected$ | async | json}}</p>

@@ -26,10 +26,10 @@ export class ProjectsFilterPipe implements PipeTransform {
         });
         projectFilters.forEach(filter => {
           if (!applies) {
-            applies = filter.category === projectFilterProps.link ? (filter.value == linkTypes.URL.id ? project.url != "" : filter.value == linkTypes.GITHUB.id ? project.github != "" : false) :
-              filter.category === projectFilterProps.author ? project.authors.some(author => author.person_id == filter.value) :
-                filter.category === projectFilterProps.career ? project.career !== undefined && project.career.career_id == filter.value :
-                  filter.category === projectFilterProps.client ? ((project.client !== undefined && project.client.person_id == filter.value) || (project.clients.some(client => client.client_id == filter.value))) : false;
+            applies = filter.category === projectFilterProps.link ? (filter.value.includes(linkTypes.URL.id) ? project.url != "" : filter.value.includes(linkTypes.GITHUB.id) ? project.github != "" : false) :
+              filter.category === projectFilterProps.author ? project.authors.some(author => filter.value.includes(author.person_id)) :
+                filter.category === projectFilterProps.career ? project.career !== undefined && filter.value.includes(project.career.career_id) :
+                  filter.category === projectFilterProps.client ? ((project.client !== undefined && filter.value.includes(project.client.person_id)) || (project.clients.some(client => filter.value.includes(client.client_id)))) : false;
           }
         });
         return applies;
