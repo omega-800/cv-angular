@@ -16,33 +16,33 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  me:PersonEntity = this.personService.getPersonByName("Georgiy");
-  lt:Readonly<LinkTypes>;
-  image:ImageComp;
-  skills:SkillEntity[];
+  me: PersonEntity = this.personService.getPersonByName("Georgiy");
+  lt: Readonly<LinkTypes>;
+  image: ImageComp;
+  skills: SkillEntity[];
 
-  mailText:string = "";
+  mailText: string = "";
   //age:string;
 
-  constructor(private personService:PersonService, private skillService:SkillService) { 
+  constructor(private personService: PersonService, private skillService: SkillService) {
     this.skills = this.skillService.getSkills();
     this.me = this.personService.getPersonByName("Georgiy");
     this.lt = linkTypes;
     this.image = {
-      id:"home_profilepic",
-      name:"profilePic",
+      id: "home_profilepic",
+      name: "profilePic",
       path: `/assets/${this.me.image}`,
-      alt:"Profile picture"
+      alt: "Profile picture"
     }
     //this.age = this.personService.getAge(this.me.birthdate);
     //setInterval(this.updateAge, 1000);
   }
-/*
-  updateAge(){
-    this.age = this.personService.getAge(this.me.birthdate);
-  }
-  */
-  ngOnInit():void {
+  /*
+    updateAge(){
+      this.age = this.personService.getAge(this.me.birthdate);
+    }
+    */
+  ngOnInit(): void {
   }
   mailMe = () => {
     return contactMail(this.me.contact.email, this.me.gender, this.me.lastname);

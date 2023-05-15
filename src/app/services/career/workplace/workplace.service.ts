@@ -10,19 +10,19 @@ import { ContactEntity } from '../../contact/contact.model';
   providedIn: 'root'
 })
 export class WorkplaceService {
-  private onlyWorkplaces:WorkplaceOnly[] = (workplaceData as any).default;
-  private workplaceContactLinks:Workplace_Contact[] = (workplace_contactData as any).default;
-  private workplaces:WorkplaceEntity[];
+  private onlyWorkplaces: WorkplaceOnly[] = (workplaceData as any).default;
+  private workplaceContactLinks: Workplace_Contact[] = (workplace_contactData as any).default;
+  private workplaces: WorkplaceEntity[];
 
-  constructor(private addressService:AddressService, private contactService:ContactService) { 
-    this.workplaces = this.onlyWorkplaces.map(workplace => this.fillWorkplace(workplace)) 
+  constructor(private addressService: AddressService, private contactService: ContactService) {
+    this.workplaces = this.onlyWorkplaces.map(workplace => this.fillWorkplace(workplace))
   }
 
-  fillWorkplace(workplace:WorkplaceOnly):WorkplaceEntity {
-    let contacts:ContactEntity[] = this.workplaceContactLinks.filter(link => link.workplace_id === workplace.workplace_id).map(link => this.contactService.getContactById(link.contactpoint_id))
-    return {...workplace, id:"workplace_"+workplace.workplace_id, thumbnail:workplace.logo, address:this.addressService.getAddressById(workplace.address_id), contactpoints: contacts}
+  fillWorkplace(workplace: WorkplaceOnly): WorkplaceEntity {
+    let contacts: ContactEntity[] = this.workplaceContactLinks.filter(link => link.workplace_id === workplace.workplace_id).map(link => this.contactService.getContactById(link.contactpoint_id))
+    return { ...workplace, id: "workplace_" + workplace.workplace_id, thumbnail: workplace.logo, address: this.addressService.getAddressById(workplace.address_id), contactpoints: contacts }
   }
-  getWorkplaceById(id:string):WorkplaceEntity {
-    return Object.values(this.workplaces).filter(workplace => workplace.workplace_id === id)[0]; 
+  getWorkplaceById(id: string): WorkplaceEntity {
+    return Object.values(this.workplaces).filter(workplace => workplace.workplace_id === id)[0];
   }
 }

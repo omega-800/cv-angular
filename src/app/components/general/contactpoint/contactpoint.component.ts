@@ -10,15 +10,15 @@ import { linkTypes } from '../../components.constants';
   styleUrls: ['./contactpoint.component.scss']
 })
 export class ContactpointComponent {
-  @Input() contact!:ContactEntity;
-  lt:LinkTypes=linkTypes;
+  @Input() contact!: ContactEntity;
+  lt: LinkTypes = linkTypes;
 
-  constructor() {}
-  
-  cp = (phone:string) => {
+  constructor() { }
+
+  cp = (phone: string) => {
     return () => contactPhone(phone);
   }
-  cm = (mail:string) => {
-    return () => contactMail(mail,'','');
+  cm = (mail: string) => {
+    return () => contactMail(mail, '', '');
   }
 }

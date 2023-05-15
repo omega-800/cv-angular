@@ -11,12 +11,12 @@ import { FilterState } from 'src/app/store/filter/filter.state';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent {
-  @Input() filters!:FiltersEntity;
+  @Input() filters!: FiltersEntity;
   @Output() filterEmitter = new EventEmitter<SelectedFilterEntity[]>();
-  selectedFilter:SelectedFilterEntity[] = [];
+  selectedFilter: SelectedFilterEntity[] = [];
 
-  toggleTag(category:FilterCategoryEntity, tag:TagEntity){
-    this.selectedFilter.some(elem => elem.category == category.id && elem.value == tag.value) ? this.selectedFilter.splice(this.selectedFilter.findIndex(elem => elem.category == category.id && elem.value == tag.value), 1) : this.selectedFilter.push({id:tag.id, name:tag.name, category:category.id, value:tag.value});
+  toggleTag(category: FilterCategoryEntity, tag: TagEntity) {
+    this.selectedFilter.some(elem => elem.category == category.id && elem.value == tag.value) ? this.selectedFilter.splice(this.selectedFilter.findIndex(elem => elem.category == category.id && elem.value == tag.value), 1) : this.selectedFilter.push({ id: tag.id, name: tag.name, category: category.id, value: tag.value });
     this.filterEmitter.emit(this.selectedFilter);
   }
 

@@ -1,8 +1,8 @@
 import { Entity } from "../entities.model"
 
-export interface SelectedFilterEntity extends Entity { 
-  category:string;
-  value:TagType;
+export interface SelectedFilterEntity extends Entity {
+  category: string;
+  value: TagType;
 }
 
 export interface FiltersEntity extends Entity {
@@ -15,12 +15,12 @@ export interface FilterCategoryEntity extends Entity {
 }
 
 export interface TagEntity extends Entity {
-  value:TagType;
+  value: TagType;
   selected: boolean;
 }
 
 export interface SortEntity extends Entity {
-  value:string;
+  value: string;
 }
 
 export interface FullSortEntity extends Entity {
@@ -28,4 +28,4 @@ export interface FullSortEntity extends Entity {
   ascending: boolean;
 }
 
-export type TagType = string|boolean|number;
+export type TagType = string | boolean | number;

@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SkillSortEntity, skillProps, SkillSortProp, isOfTypeSkillSortProp } from 'src/app/pipes/skills-sort/skills-sort.model';
-import { FullSortEntity, SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
-import { SkillFiltersEntity } from 'src/app/services/filter/skills-filter/skills-filter.model';
+import { skillSortProps} from 'src/app/pipes/skills-sort/skills-sort.model';
+import { FiltersEntity, FullSortEntity, SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
@@ -13,10 +12,10 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 export class SkillsPercentComponent implements OnInit {
   @Input() skills!: SkillEntity[];
   @Input() name!: string;
-  sortFields:SkillSortEntity[] = skillProps;
-  sortValue: SkillSortEntity = {id:"knowledgepercent",value:"knowledgepercent",name:'knowledgepercent'};
+  sortFields:SortEntity[] = skillSortProps;
+  sortValue: SortEntity = {id:"knowledgepercent",value:"knowledgepercent",name:'knowledgepercent'};
   sortAsc:boolean=true;
-  filter:SkillFiltersEntity;
+  filter:FiltersEntity;
   selectedFilter:SelectedFilterEntity[] = [];
 
   constructor(private skillsFilterService:SkillsFilterService){
@@ -28,18 +27,10 @@ export class SkillsPercentComponent implements OnInit {
   }
 
   sortSkillsBy(selected:FullSortEntity){
-    this.sortValue = {...selected.value, value:this.valueToSkillSortProp(selected.value.value)};
+    this.sortValue = selected.value;
     this.sortAsc = selected.ascending; 
   }
 
-  valueToSkillSortProp(value:string):SkillSortProp{
-    if(isOfTypeSkillSortProp(value)){
-      return <SkillSortProp>value;
-    } else {
-      return "knowledgepercent";
-    }
-  }
-  
   filterSkillsBy(selected:SelectedFilterEntity[]) {
     this.selectedFilter = selected;
   }

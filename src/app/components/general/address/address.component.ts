@@ -7,6 +7,6 @@ import { AddressEntity } from 'src/app/services/address/address/address.model';
   styleUrls: ['./address.component.scss']
 })
 export class AddressComponent {
-  @Input() address!:AddressEntity;
+  @Input() address!: AddressEntity;
 
 }

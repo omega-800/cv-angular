@@ -6,14 +6,14 @@ import { personIcon, schoolIcon, workIcon } from "src/app/components/components.
 import { SkillEntity } from "../../skills/skill/skill.model";
 
 export interface CareerEntity extends NamedEntity {
-    career_id: string;
-    yearfrom: number;
-    yearto: number;
-    type:CareerTypeEntity;
-    document: string;
-    workplace?: WorkplaceEntity;
-    school?: SchoolEntity;
-    skills: SkillEntity[];
+  career_id: string;
+  yearfrom: number;
+  yearto: number;
+  type: CareerTypeEntity;
+  document: string;
+  workplace?: WorkplaceEntity;
+  school?: SchoolEntity;
+  skills: SkillEntity[];
 }
 
 export interface CareerOnly {
@@ -32,8 +32,8 @@ export interface CareerOnly {
 }
 
 export interface CareerTypeEntity extends Entity {
-  name:string,
-  logo:ImageComp
+  name: string,
+  logo: ImageComp
 }
 
 export interface Career_Skill {
@@ -44,33 +44,33 @@ export interface Career_Skill {
 }
 
 export interface CareerTypes {
-  SCHOOL:CareerTypeEntity,
-  WORK:CareerTypeEntity,
-  SOLO:CareerTypeEntity,
-  OTHER:CareerTypeEntity
+  SCHOOL: CareerTypeEntity,
+  WORK: CareerTypeEntity,
+  SOLO: CareerTypeEntity,
+  OTHER: CareerTypeEntity
 }
 
-export const careerTypes:Readonly<CareerTypes> = {
+export const careerTypes: Readonly<CareerTypes> = {
   SCHOOL: {
-    id:"careerType_school",
-    name:"Schule", 
-    logo:schoolIcon
+    id: "careerType_school",
+    name: "Schule",
+    logo: schoolIcon
   },
   WORK: {
-    id:"careerType_work",
-    name: "Arbeit", 
-    logo:workIcon
+    id: "careerType_work",
+    name: "Arbeit",
+    logo: workIcon
   },
   SOLO: {
-    id:"careerType_solo",
-    name: "Selbstständig", 
-    logo:personIcon
-  }, 
+    id: "careerType_solo",
+    name: "Selbstständig",
+    logo: personIcon
+  },
   OTHER: {
-    id:"careerType_other",
-    name: "Andere", 
-    logo:workIcon
-  } 
+    id: "careerType_other",
+    name: "Andere",
+    logo: workIcon
+  }
 } as const;
 
 

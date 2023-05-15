@@ -1,19 +1,17 @@
 import { SortEntity } from "src/app/services/filter/filter.model";
 
-export interface ProjectSortEntity extends SortEntity {
-    value:ProjectProp;
-}
+export const projectSortValues = {
+  date: "date",
+  career: "career",
+  client: "client",
+  author: "authors",
+  name: "name"
+} as const;
 
-export type ProjectProp = "date" | "career" | "client" | "authors" | "name";
-
-export const projectProps:ProjectSortEntity[] = [
-    {id:"projectsortentity_date",name:"Datum",value:"date"},
-    {id:"projectsortentity_career",name:"Karriere",value:"career"},
-    {id:"projectsortentity_client",name:"Klient",value:"client"},
-    {id:"projectsortentity_authors",name:"Author",value:"authors"},
-    {id:"projectsortentity_name",name:"Name",value:"name"}
+export const projectSortProps: SortEntity[] = [
+  { id: "projectsortentity_date", name: "Datum", value: projectSortValues.date },
+  { id: "projectsortentity_career", name: "Karriere", value: projectSortValues.career },
+  { id: "projectsortentity_client", name: "Klient", value: projectSortValues.client },
+  { id: "projectsortentity_authors", name: "Author", value: projectSortValues.author },
+  { id: "projectsortentity_name", name: "Name", value: projectSortValues.name }
 ];
-
-export function isOfTypeProjectProp (prop: string): prop is ProjectProp {
-  return ["date", "career", "client", "authors", "name"].includes(prop);
-}

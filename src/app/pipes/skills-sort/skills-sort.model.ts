@@ -1,20 +1,18 @@
 import { SortEntity } from "src/app/services/filter/filter.model";
 
-export interface SkillSortEntity extends SortEntity {
-    value:SkillSortProp;
-}
+export const skillSortValues = {
+  knowledge: "knowledgepercent",
+  category: "skillcategories",
+  subcategory: "skillsubcategories",
+  type: "type",
+  name: "name"
+} as const;
 
-export type SkillSortProp = "knowledgepercent" | "skillcategories" | "skillsubcategories" | "type" | "name" /*| "applicationtype"*/;
-
-export const skillProps:SkillSortEntity[] = [
-    {id:"skillsortentity_knowledgepercent",name:"Prozent",value:"knowledgepercent"},
-    {id:"skillsortentity_category",name:"Kategorie",value:"skillcategories"},
-    {id:"skillsortentity_subcategory",name:"Sub-Kategorie",value:"skillsubcategories"},
-    {id:"skillsortentity_type",name:"Typ",value:"type"},
-    {id:"skillsortentity_name",name:"Name",value:"name"}/*,
+export const skillSortProps: SortEntity[] = [
+  { id: "skillsortentity_knowledgepercent", name: "Prozent", value: skillSortValues.knowledge },
+  { id: "skillsortentity_category", name: "Kategorie", value: skillSortValues.category },
+  { id: "skillsortentity_subcategory", name: "Sub-Kategorie", value: skillSortValues.subcategory },
+  { id: "skillsortentity_type", name: "Typ", value: skillSortValues.type },
+  { id: "skillsortentity_name", name: "Name", value: skillSortValues.name }/*,
     "applicationType"*/
- ];
-
-export function isOfTypeSkillSortProp (prop: string): prop is SkillSortProp {
-  return ['knowledgepercent', 'skillcategories', 'skillsubcategories', 'type', 'name'].includes(prop);
-}
+];

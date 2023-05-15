@@ -6,15 +6,15 @@ import { SkillEntity } from "../../skills/skill/skill.model";
 import { ClientEntity } from "../client/client.model";
 
 export interface ProjectEntity extends ContentEntity {
-    project_id: string;
-    github: string;
-    date: Date;
-    client: PersonEntity;
-    career: CareerEntity;
-    authors: PersonEntity[];
-    skills: SkillEntity[];
-    images: ImageComp[];
-    clients: ClientEntity[];
+  project_id: string;
+  github: string;
+  date: Date;
+  client: PersonEntity;
+  career: CareerEntity;
+  authors: PersonEntity[];
+  skills: SkillEntity[];
+  images: ImageComp[];
+  clients: ClientEntity[];
 }
 
 export interface ProjectOnly {

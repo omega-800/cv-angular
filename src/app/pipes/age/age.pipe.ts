@@ -34,12 +34,12 @@ export class AgePipe implements PipeTransform {
     if (hourDiff < 0) {
       hourDiff += 24;
     }
-    
+
     let minuteDiff = now.getMinutes() - date.getMinutes();
     if (minuteDiff < 0) {
       minuteDiff += 60;
     }
-    
+
     let secDiff = now.getSeconds() - date.getSeconds();
     if (secDiff < 0) {
       secDiff += 60;

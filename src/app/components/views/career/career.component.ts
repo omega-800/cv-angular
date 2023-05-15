@@ -10,12 +10,12 @@ import { ImageComp } from '../../components.model';
   styleUrls: ['./career.component.scss']
 })
 export class CareerComponent {
-  careers:CareerEntity[];
-  ct:CareerTypes = careerTypes;
-  contactIcon:ImageComp = contactIcon;
-  addressIcon:ImageComp = addressIcon;
+  careers: CareerEntity[];
+  ct: CareerTypes = careerTypes;
+  contactIcon: ImageComp = contactIcon;
+  addressIcon: ImageComp = addressIcon;
 
-  constructor(private careerService:CareerService){
+  constructor(private careerService: CareerService) {
     this.careers = careerService.getCareers();
   }
 }

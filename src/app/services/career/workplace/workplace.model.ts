@@ -2,13 +2,13 @@ import { AddressEntity } from "../../address/address/address.model";
 import { ContactEntity } from "../../contact/contact.model";
 import { ContentEntity } from "../../entities.model";
 
-export interface WorkplaceEntity extends ContentEntity{
-    workplace_id: string;
-    legalname: string;
-    foundingdate: string;
-    founder: string;
-    address: AddressEntity;
-    contactpoints:ContactEntity[];
+export interface WorkplaceEntity extends ContentEntity {
+  workplace_id: string;
+  legalname: string;
+  foundingdate: string;
+  founder: string;
+  address: AddressEntity;
+  contactpoints: ContactEntity[];
 }
 
 export interface WorkplaceOnly {

@@ -16,35 +16,35 @@ export class ContentboxComponent implements OnInit {
   @Input() image!: ImageComp;
   @Input() imagePreview?: ImageComp;
 
-  arrowIcon:ImageComp = arrowIcon;
-  isCarousel:boolean = false;
-  hasImage:boolean = false;
-  images:ImageComp[] = [];
-  preview:ImageComp = {id:"",name:"",alt:"",path:""};
-  main:ImageComp = {id:"",name:"",alt:"",path:""};
+  arrowIcon: ImageComp = arrowIcon;
+  isCarousel: boolean = false;
+  hasImage: boolean = false;
+  images: ImageComp[] = [];
+  preview: ImageComp = { id: "", name: "", alt: "", path: "" };
+  main: ImageComp = { id: "", name: "", alt: "", path: "" };
 
-  constructor (/*private storage:AngularFireStorage*/) {
+  constructor(/*private storage:AngularFireStorage*/) {
   }
 
-  ngOnInit(){
-    
+  ngOnInit() {
+
     this.preview = this.imagePreview === undefined ? this.image : this.imagePreview;
-    if(this.image.path != "") {
-      if(!this.image.path.endsWith("/")) {
+    if (this.image.path != "") {
+      if (!this.image.path.endsWith("/")) {
         this.hasImage = true;
       } else {
-        let files = assets["assets/content"+this.image.path.slice(0, -1) as keyof typeof assets];
-        if(files && files.length > 0){
+        let files = assets["assets/content" + this.image.path.slice(0, -1) as keyof typeof assets];
+        if (files && files.length > 0) {
           this.hasImage = true;
           this.images = files.map(file => {
             return {
-              id:file,
-              name:this.title+" "+file,
-              alt:"Image of "+this.title,
-              path:"assets/content"+this.image.path+file
+              id: file,
+              name: this.title + " " + file,
+              alt: "Image of " + this.title,
+              path: "assets/content" + this.image.path + file
             }
           })
-          if(this.images.length == 1){
+          if (this.images.length == 1) {
             this.image = this.images[0];
           } else {
             this.isCarousel = true;

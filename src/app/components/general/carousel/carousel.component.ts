@@ -8,16 +8,16 @@ import { arrowIcon } from '../../components.constants';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  @Input() images!:ImageComp[];
-  current:number = 0;
-  arrowIcon:ImageComp = arrowIcon;
+  @Input() images!: ImageComp[];
+  current: number = 0;
+  arrowIcon: ImageComp = arrowIcon;
 
-  constructor(){}
+  constructor() { }
 
-  showSlide(pos:number){
-    if(pos < 0){
-      this.current = this.images.length-1;
-    } else if (pos > this.images.length-1){
+  showSlide(pos: number) {
+    if (pos < 0) {
+      this.current = this.images.length - 1;
+    } else if (pos > this.images.length - 1) {
       this.current = 0;
     } else {
       this.current = pos;

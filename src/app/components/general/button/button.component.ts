@@ -12,7 +12,7 @@ export class ButtonComponent {
 
   @Input() type!: LinkType;
   @Input() name!: string;
-  lt:LinkTypes = linkTypes;
+  lt: LinkTypes = linkTypes;
   /*
   public href: string = "";
 

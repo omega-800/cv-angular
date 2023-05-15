@@ -30,15 +30,15 @@ export interface ImageComp extends Comp {
 }
 
 export interface LinkType extends Comp {
-    image:ImageComp,
-    prefix:string
+    image: ImageComp,
+    prefix: string
 }
 
 export interface LinkTypes {
-    GITHUB:LinkType,
-    MAIL:LinkType,
-    PHONE:LinkType,
-    URL:LinkType,
-    PERSON:LinkType,
-    OTHER:LinkType,
+    GITHUB: LinkType,
+    MAIL: LinkType,
+    PHONE: LinkType,
+    URL: LinkType,
+    PERSON: LinkType,
+    OTHER: LinkType,
 }

@@ -28,7 +28,7 @@ export interface PersonEntity extends ImageEntity, LinkEntity {
   school: SchoolEntity;
   personcategory: PersonCategoryEntity;
   contact: ContactEntity;
-  countries:CountryEntity[];
+  countries: CountryEntity[];
 }
 
 export interface PersonOnly {

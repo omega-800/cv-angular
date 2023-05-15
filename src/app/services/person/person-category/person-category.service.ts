@@ -6,15 +6,15 @@ import { PersonCategoryEntity, PersonCategoryOnly } from './person-category.mode
   providedIn: 'root'
 })
 export class PersonCategoryService {
-  private onlyPersonCategories:PersonCategoryOnly[] = (personCategoryData as any).default;
-  private personCategories:PersonCategoryEntity[];
+  private onlyPersonCategories: PersonCategoryOnly[] = (personCategoryData as any).default;
+  private personCategories: PersonCategoryEntity[];
 
-  constructor() { 
-    this.personCategories = this.onlyPersonCategories.map(item => {return {...item, id:"personCategory_"+item.personcategory_id}})
+  constructor() {
+    this.personCategories = this.onlyPersonCategories.map(item => { return { ...item, id: "personCategory_" + item.personcategory_id } })
   }
 
-  public getPersonCategoryById(id:string): PersonCategoryEntity {
+  public getPersonCategoryById(id: string): PersonCategoryEntity {
     return Object.values(this.personCategories).filter(personCat => personCat.personcategory_id === id)[0];
   }
-  
+
 }

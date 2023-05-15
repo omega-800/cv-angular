@@ -4,7 +4,7 @@ export interface SkillCategoryEntity extends NamedEntity {
     skillcategory_id: string;
     percent: number;
 }
-  
+
 export interface SkillCategoryOnly {
     skillcategory_id: string;
     name: string;
@@ -15,12 +15,12 @@ export interface SkillCategoryOnly {
     description_r: string;
     percent: number;
 }
-  
+
 export interface SkillSubCategoryEntity extends NamedEntity {
     skillsubcategory_id: string;
     skillcategory: SkillCategoryEntity;
 }
-  
+
 export interface SkillSubCategoryOnly {
     skillsubcategory_id: string;
     skillcategory_id: string;

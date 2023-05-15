@@ -3,9 +3,7 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { SkillCategoriesService } from 'src/app/services/skills/skill-category/skill-category.service';
 import { SkillSubCategoryEntity } from 'src/app/services/skills/skill-category/skill-category.model';
-import { SkillFiltersEntity } from 'src/app/services/filter/skills-filter/skills-filter.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
-import { SelectedFilterEntity } from 'src/app/services/filter/filter.model';
 
 @Component({
   selector: 'app-skills-percent-list',

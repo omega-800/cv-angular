@@ -2,7 +2,7 @@ export interface Entity {
     id: string;
     name: string;
 }
-  
+
 export interface NamedEntity extends Entity {
     name_e: string,
     name_r: string,
@@ -19,4 +19,4 @@ export interface LinkEntity extends Entity {
     url: string
 }
 
-export interface ContentEntity extends NamedEntity, ImageEntity, LinkEntity {}
+export interface ContentEntity extends NamedEntity, ImageEntity, LinkEntity { }

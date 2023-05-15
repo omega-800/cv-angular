@@ -1,7 +1,7 @@
 import { NamedEntity } from "../../entities.model";
 
 export interface PersonCategoryEntity extends NamedEntity {
-    personcategory_id: string;
+  personcategory_id: string;
 }
 
 export interface PersonCategoryOnly {

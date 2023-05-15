@@ -1,15 +1,8 @@
-import { SkillSortProp } from "src/app/pipes/skills-sort/skills-sort.model";
-import { Entity } from "../../entities.model";
-import { FiltersEntity, FilterCategoryEntity, TagEntity, SortEntity } from "../filter.model";
-
-export interface SkillFiltersEntity extends FiltersEntity {
-  categories: FilterCategoryEntity[];
-}
-
-export interface SkillFilterCategoryEntity extends FilterCategoryEntity {
-  tags: SkillTagEntity[];
-}
-
-export interface SkillTagEntity extends TagEntity {
-    value:SkillSortProp;
-}
+export const skillFilterProps = {
+  knowledge: "filter_skill_knowledgepercent",
+  category: "filter_skill_skillcategories",
+  subcategory: "filter_skill_skillsubcategories",
+  type: "filter_skill_type",
+  hobby: "filter_skill_hobby",
+  apptype: "filter_skill_applicationtype"
+} as const;

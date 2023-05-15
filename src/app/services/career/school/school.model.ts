@@ -3,12 +3,12 @@ import { ContactEntity } from "../../contact/contact.model";
 import { ContentEntity } from "../../entities.model";
 
 export interface SchoolEntity extends ContentEntity {
-    school_id: string;
-    type: string;
-    type_e: string;
-    type_d: string;
-    address: AddressEntity;
-    contactpoints:ContactEntity[];
+  school_id: string;
+  type: string;
+  type_e: string;
+  type_d: string;
+  address: AddressEntity;
+  contactpoints: ContactEntity[];
 }
 
 export interface SchoolOnly {

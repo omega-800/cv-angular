@@ -19,37 +19,37 @@ import { CountryService } from '../../address/country/country.service';
   providedIn: 'root'
 })
 export class PersonService {
-  private onlyPeople:PersonOnly[] = (personData as any).default;
-  private personCountryLink:Person_Country[] = (person_countryData as any).default;
-  private people:PersonEntity[];
+  private onlyPeople: PersonOnly[] = (personData as any).default;
+  private personCountryLink: Person_Country[] = (person_countryData as any).default;
+  private people: PersonEntity[];
 
-  constructor(private addressService:AddressService, private workplaceService:WorkplaceService, private schoolService:SchoolService, private personCategoryService:PersonCategoryService, private contactService:ContactService, private countryService:CountryService) { 
+  constructor(private addressService: AddressService, private workplaceService: WorkplaceService, private schoolService: SchoolService, private personCategoryService: PersonCategoryService, private contactService: ContactService, private countryService: CountryService) {
     this.people = this.onlyPeople.map(person => this.fillPerson(person))
   }
 
-  getPersonByName(name:string):PersonEntity {
+  getPersonByName(name: string): PersonEntity {
     return Object.values(this.people).filter(person => person.firstname === name)[0];
   }
-  
-  getPersonById(id:string):PersonEntity {
+
+  getPersonById(id: string): PersonEntity {
     return Object.values(this.people).filter(person => person.person_id === id)[0];
   }
 
-  fillPerson(person:PersonOnly):PersonEntity {
-    let address:AddressEntity = this.addressService.getAddressById(person.address_id);
-    let workplace:WorkplaceEntity = this.workplaceService.getWorkplaceById(person.workplace_id);
-    let school:SchoolEntity = this.schoolService.getSchoolById(person.school_id);
-    let personcategory:PersonCategoryEntity = this.personCategoryService.getPersonCategoryById(person.personcategory_id);
-    let contact:ContactEntity = this.contactService.getContactById(person.contactpoint_id);
-    let countries:CountryEntity[] = this.personCountryLink.filter(link => link.person_id === person.person_id).map(link => this.countryService.getCountryById(link.country_id));
-    return {...person, id: "person_"+person.person_id, name: person.firstname, address:address, workplace:workplace, school:school, personcategory:personcategory, contact: contact, countries:countries};
+  fillPerson(person: PersonOnly): PersonEntity {
+    let address: AddressEntity = this.addressService.getAddressById(person.address_id);
+    let workplace: WorkplaceEntity = this.workplaceService.getWorkplaceById(person.workplace_id);
+    let school: SchoolEntity = this.schoolService.getSchoolById(person.school_id);
+    let personcategory: PersonCategoryEntity = this.personCategoryService.getPersonCategoryById(person.personcategory_id);
+    let contact: ContactEntity = this.contactService.getContactById(person.contactpoint_id);
+    let countries: CountryEntity[] = this.personCountryLink.filter(link => link.person_id === person.person_id).map(link => this.countryService.getCountryById(link.country_id));
+    return { ...person, id: "person_" + person.person_id, name: person.firstname, address: address, workplace: workplace, school: school, personcategory: personcategory, contact: contact, countries: countries };
   }
 
-  getPeople():PersonEntity[] {
+  getPeople(): PersonEntity[] {
     return this.people;
   }
 
-  getAge(value: string):string{
+  getAge(value: string): string {
     let date = new Date(value);
     let now = new Date();
 
@@ -78,17 +78,17 @@ export class PersonService {
     if (hourDiff < 0) {
       hourDiff += 24;
     }
-    
+
     let minuteDiff = now.getMinutes() - date.getMinutes();
     if (minuteDiff < 0) {
       minuteDiff += 60;
     }
-    
+
     let secDiff = now.getSeconds() - date.getSeconds();
     if (secDiff < 0) {
       secDiff += 60;
     }
     return yearDiff + 'Y ' + monthDiff + 'M ' + dayDiff + 'D ' + hourDiff + 'h ' + minuteDiff + 'm ' + secDiff + 's ';
   }
-  
+
 }

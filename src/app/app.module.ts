@@ -24,7 +24,7 @@ import { AddressComponent } from './components/general/address/address.component
 import { ProjectsComponent } from './components/views/projects/projects.component';
 import { environment } from 'src/environment';
 import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireStorageModule  } from '@angular/fire/compat/storage';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { ImageComponent } from './components/general/image/image.component';
 import { SkillsSortPipe } from './pipes/skills-sort/skills-sort.pipe';
 import { SortComponent } from './components/general/sort/sort.component';
@@ -65,7 +65,7 @@ import { ProjectsFilterPipe } from './pipes/projects-filter/projects-filter.pipe
     FormsModule,
     NgxsModule.forRoot([FilterState]),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireStorageModule 
+    AngularFireStorageModule
   ],
   providers: [SkillsFilterPipe],
   bootstrap: [AppComponent]

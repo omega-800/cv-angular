@@ -11,7 +11,7 @@ export interface SkillEntity extends ContentEntity {
   proficiencylevel_e: string;
   proficiencylevel_r: string;
   yearsofexperience: number;
-  type:string;
+  type: string;
   skillcategories: SkillCategoryEntity[];
   skillsubcategories: SkillSubCategoryEntity[];
   shortname?: string;
@@ -42,9 +42,9 @@ export interface SkillOnly {
 }
 
 export const SkillTypes = {
-  application: "Applikation", 
-  ability: "Skill", 
-  activity: "Aktivität", 
+  application: "Applikation",
+  ability: "Skill",
+  activity: "Aktivität",
   language: "Sprache",
   knowledge: "Wissen"
 } as const;

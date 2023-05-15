@@ -10,11 +10,11 @@ export class ClientService {
 
   constructor() { }
 
-  getClients():ClientEntity[] {
+  getClients(): ClientEntity[] {
     return this.clients;
   }
-  
-  getClientById(id:string):ClientEntity {
+
+  getClientById(id: string): ClientEntity {
     return Object.values(this.clients).filter(client => client.client_id === id)[0];
   }
 }

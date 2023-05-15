@@ -6,18 +6,18 @@ import * as knowledgeData from 'src/data/knowledge.json'
   providedIn: 'root'
 })
 export class KnowledgeService {
-  private onlyKnowledges:KnowledgeOnly[] = (knowledgeData as any).default;
-  private knowledges:KnowledgeEntity[];
+  private onlyKnowledges: KnowledgeOnly[] = (knowledgeData as any).default;
+  private knowledges: KnowledgeEntity[];
 
-  constructor() { 
-    this.knowledges = this.onlyKnowledges.map(item => {return {...item, id:"knowledge_"+item.knowledge_id}})
+  constructor() {
+    this.knowledges = this.onlyKnowledges.map(item => { return { ...item, id: "knowledge_" + item.knowledge_id } })
   }
 
-  getKnowledges():KnowledgeEntity[] {
+  getKnowledges(): KnowledgeEntity[] {
     return this.knowledges;
   }
 
-  getKnowledgeById(id:string):KnowledgeEntity {
+  getKnowledgeById(id: string): KnowledgeEntity {
     return Object.values(this.knowledges).filter(knowledge => knowledge.knowledge_id === id)[0];
   }
 }

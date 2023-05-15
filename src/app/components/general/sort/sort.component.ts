@@ -6,12 +6,12 @@ import { FullSortEntity, SortEntity } from 'src/app/services/filter/filter.model
   templateUrl: './sort.component.html',
   styleUrls: ['./sort.component.scss']
 })
-export class SortComponent implements OnInit{
-  @Input() fields!:SortEntity[];
+export class SortComponent implements OnInit {
+  @Input() fields!: SortEntity[];
   @Output() selectedEmitter = new EventEmitter<FullSortEntity>();
 
-  ascending:boolean = true;
-  selectedValue:SortEntity = {id:"",name:"",value:""};
+  ascending: boolean = true;
+  selectedValue: SortEntity = { id: "", name: "", value: "" };
 
   ngOnInit(): void {
     this.ascending = true;
@@ -19,6 +19,6 @@ export class SortComponent implements OnInit{
   }
 
   selectItem() {
-    this.selectedEmitter.emit({id:"sort_"+this.selectedValue.value+"_"+this.ascending?"ASC":"DESC",name:"Sort Entity",value: this.selectedValue, ascending: this.ascending});
+    this.selectedEmitter.emit({ id: "sort_" + this.selectedValue.value + "_" + this.ascending ? "ASC" : "DESC", name: "Sort Entity", value: this.selectedValue, ascending: this.ascending });
   }
 }

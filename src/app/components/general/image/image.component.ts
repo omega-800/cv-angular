@@ -7,5 +7,5 @@ import { ImageComp } from '../../components.model';
   styleUrls: ['./image.component.scss']
 })
 export class ImageComponent {
-  @Input() image!:ImageComp;
+  @Input() image!: ImageComp;
 }
