@@ -21,14 +21,24 @@ export class SkillsFilterPipe implements PipeTransform {
     let applies: boolean = false;
 
     filters.forEach(filter => {
-      if (!applies) {
-        applies = filter.category === skillFilterProps.knowledge ? filter.value.includes(skill.knowledgepercent) :
-          filter.category === skillFilterProps.category ? skill.skillcategories.some(cat => filter.value.includes(cat.skillcategory_id)) :
-            filter.category === skillFilterProps.subcategory ? skill.skillsubcategories.some(subCat => filter.value.includes(subCat.skillsubcategory_id)) :
-              filter.category === skillFilterProps.type ? filter.value.includes(skill.type) :
-                filter.category === skillFilterProps.hobby ? filter.value.includes(skill.hobby) :
-                  filter.category === skillFilterProps.apptype ? filter.value.includes(skill.applicationtype?.applicationtype_id!) :
-                    false;
+      if (filter.range && filter.category === skillFilterProps.knowledge) {
+        let min: number = Number(filter.value[0]);
+        let max: number = Number(filter.value[1]);
+        if (min > max) {
+          [min, max] = [max, min];
+        }
+        applies = skill.knowledgepercent >= min && skill.knowledgepercent <= max;
+      }
+    })
+
+    filters.forEach(filter => {
+      if (applies && !filter.range) {
+        applies = filter.category === skillFilterProps.category ? skill.skillcategories.some(cat => filter.value.includes(cat.skillcategory_id)) :
+          filter.category === skillFilterProps.subcategory ? skill.skillsubcategories.some(subCat => filter.value.includes(subCat.skillsubcategory_id)) :
+            filter.category === skillFilterProps.type ? filter.value.includes(skill.type) :
+              filter.category === skillFilterProps.hobby ? filter.value.includes(skill.hobby) :
+                filter.category === skillFilterProps.apptype ? filter.value.includes(skill.applicationtype?.applicationtype_id!) :
+                  false;
       }
     })
 

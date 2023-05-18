@@ -33,7 +33,7 @@ export class ContentboxComponent implements OnInit {
       if (!this.image.path.endsWith("/")) {
         this.hasImage = true;
       } else {
-        let files = assets["assets/content" + this.image.path.slice(0, -1) as keyof typeof assets];
+        let files = assets["src/assets/content" + this.image.path.slice(0, -1) as keyof typeof assets];
         if (files && files.length > 0) {
           this.hasImage = true;
           this.images = files.map(file => {
@@ -49,7 +49,12 @@ export class ContentboxComponent implements OnInit {
           } else {
             this.isCarousel = true;
           }
-          this.preview = this.imagePreview === undefined ? this.images[0] : this.imagePreview;
+          this.preview = this.imagePreview === undefined ? {
+            id: "image_" + this.title,
+            name: this.title,
+            alt: "Preview image of " + this.title,
+            path: "assets/content" + this.image.path + "thumbnail.webp"
+          } : this.imagePreview;
         }
       }
     }

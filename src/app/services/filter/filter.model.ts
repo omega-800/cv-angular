@@ -2,6 +2,7 @@ import { Entity } from "../entities.model"
 
 export interface SelectedFilterEntity extends Entity {
   category: string;
+  range: boolean;
   value: FilterType[];
 }
 

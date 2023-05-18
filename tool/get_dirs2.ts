@@ -27,6 +27,6 @@ function listDirectory(path: string): FileLists {
   return fileList;
 }
 
-const fileList = listDirectory('src/assets/content');
+const fileList = listDirectory('../src/assets/content');
 console.log(JSON.stringify(fileList, null, 2));
-fs.writeFileSync('src/assets/fileStructure.json', JSON.stringify(fileList, null, 2));
+fs.writeFileSync('../src/assets/fileStructure.json', JSON.stringify(fileList, null, 2));

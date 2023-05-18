@@ -1,10 +1,10 @@
 {
-  "assets/content/bewerbung": [
+  "src/assets/content/bewerbung": [
     "Bewerbung_BlueMouse.pdf",
     "bewerbung.docx",
     "bewerbung.pdf"
   ],
-  "assets/content/certificates/languages": [
+  "src/assets/content/certificates/languages": [
     "0_1_Französisch.jpg",
     "0_2_Russisch.jpg",
     "1_Französisch_1.jpg",
@@ -12,7 +12,7 @@
     "2_Russisch_1.jpg",
     "2_Russisch_2.jpg"
   ],
-  "assets/content/certificates/other": [
+  "src/assets/content/certificates/other": [
     "0_1_ECDL.jpg",
     "0_2_Abacus.jpg",
     "0_3_Multicheck.jpg",
@@ -23,7 +23,7 @@
     "3_Multicheck_3.jpg",
     "3_Multicheck_4.jpg"
   ],
-  "assets/content/certificates/school": [
+  "src/assets/content/certificates/school": [
     "0_1_Berufsschule.jpg",
     "0_2_Kantonsschule.jpg",
     "0_3_Sekundarschule.jpg",
@@ -41,7 +41,7 @@
     "4_3_14-15_h.jpg",
     "4_4_14-15_f.jpg"
   ],
-  "assets/content/profilepic": [
+  "src/assets/content/profilepic": [
     "Bewerbungsbild.jpg",
     "Bewerbungsbild_web.jpg",
     "photo_0.jpg",
@@ -50,7 +50,332 @@
     "profilepic.jpg",
     "profilepic_square.jpg"
   ],
-  "assets/content/projects/art/art/drawing": [
+  "src/assets/content/projects/art/art/drawing": [
+    "IMG-20180115-WA0008.webp",
+    "IMG-20180908-WA0000.webp",
+    "IMG-20190824-WA0003.webp",
+    "IMG-20190829-WA0004(1).webp",
+    "IMG-20190920-WA0004.webp",
+    "IMG-20200205-WA0010.webp",
+    "IMG-20200211-WA0005.webp",
+    "IMG-20200305-WA0004.webp",
+    "IMG_20190914_164035303.webp",
+    "IMG_20190914_164104499.webp",
+    "IMG_20191117_004804194.webp",
+    "IMG_20200126_141737087.webp",
+    "IMG_20200126_141756422.webp",
+    "IMG_20200126_141827288.webp",
+    "IMG_20200126_141846293.webp",
+    "IMG_20200126_141917343.webp",
+    "IMG_20200126_141945659.webp",
+    "IMG_20200304_124728.webp",
+    "IMG_20200316_131535.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/art/paint": [
+    "IMG-20201008-WA0004.webp",
+    "IMG-20201008-WA0006.webp",
+    "IMG_20190914_164150078.webp",
+    "IMG_20200411_201316.webp",
+    "IMG_20200525_161222712.webp",
+    "IMG_20200527_123745671.webp",
+    "IMG_20200612_151241127_HDR.webp",
+    "IMG_20200612_151246060.webp",
+    "IMG_20200612_151252478.webp",
+    "IMG_20200811_140831.webp",
+    "IMG_20200811_140856.webp",
+    "IMG_20200811_140916.webp",
+    "IMG_20200811_140930.webp",
+    "Snapchat-1512769248.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/art/spray": [
+    "IMG-20190825-WA0006.webp",
+    "IMG-20190825-WA0007.webp",
+    "IMG-20190831-WA0018.webp",
+    "IMG-20190831-WA0019.webp",
+    "IMG-20200201-WA0027.webp",
+    "IMG-20200305-WA0016.webp",
+    "IMG-20200305-WA0036.webp",
+    "IMG-20200417-WA0019.webp",
+    "IMG-20200621-WA0017.webp",
+    "IMG-20201206-WA0000.webp",
+    "IMG-20201206-WA0001.webp",
+    "IMG-20220422-WA0000.webp",
+    "IMG-20221106-WA0007.webp",
+    "IMG-20221106-WA0027.webp",
+    "IMG-20221106-WA0028.webp",
+    "IMG_20190817_181341786.webp",
+    "IMG_20190824_213106560.webp",
+    "IMG_20190828_193232965.webp",
+    "IMG_20190905_192136975.webp",
+    "IMG_20191011_181053273.webp",
+    "IMG_20191106_190354710.webp",
+    "IMG_20200201_175917924.webp",
+    "IMG_20200223_143112139.webp",
+    "IMG_20200305_180810.webp",
+    "IMG_20200314_205424.webp",
+    "IMG_20200314_210545.webp",
+    "IMG_20200316_171119.webp",
+    "IMG_20200316_171948.webp",
+    "IMG_20200330_191231.webp",
+    "IMG_20200417_142324.webp",
+    "IMG_20200418_191747.webp",
+    "IMG_20200418_202453.webp",
+    "IMG_20200419_133903.webp",
+    "IMG_20200419_134442.webp",
+    "IMG_20200510_150427.webp",
+    "IMG_20200510_164421.webp",
+    "IMG_20200518_195333946_HDR.webp",
+    "IMG_20200518_195857971.webp",
+    "IMG_20200518_205608000.webp",
+    "IMG_20200527_215829358.webp",
+    "IMG_20200527_215849260.webp",
+    "IMG_20200527_223549211.webp",
+    "IMG_20200605_201410361.webp",
+    "IMG_20200626_131702198_HDR.webp",
+    "IMG_20201126_210250.webp",
+    "IMG_20201126_210306.webp",
+    "IMG_20201206_153316.webp",
+    "IMG_20201206_160919.webp",
+    "IMG_20210424_202802_1.webp",
+    "IMG_20210425_163328.webp",
+    "IMG_20210425_163337.webp",
+    "IMG_2022-04-21-20-51-46-071.webp",
+    "Screenshot_20200223-203654.webp",
+    "Snapchat-1204804508.webp",
+    "Snapchat-1593840974.mp4",
+    "Snapchat-1713183982.webp",
+    "Snapchat-637363521.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/other/mosaic": [
+    "IMG_20190914_163927123.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/other/string": [
+    "IMG_20190914_162331666.webp",
+    "IMG_20190914_162341553.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/paper/kusudama": [
+    "1.webp",
+    "10.webp",
+    "11.webp",
+    "12.webp",
+    "13.webp",
+    "14.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "8.webp",
+    "9.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/paper/origami": [
+    "A.webp",
+    "AA.webp",
+    "IMG_20200811_141220.webp",
+    "IMG_20221223_201836553.webp",
+    "IMG_20221223_201851650.webp",
+    "IMG_20221223_201902220.webp",
+    "IMG_20221223_201929042.webp",
+    "IMG_20221223_201940360.webp",
+    "IMG_20221223_201943959.webp",
+    "IMG_20221223_202001647.webp",
+    "IMG_20221225_125029388.webp",
+    "IMG_20221225_125033559.webp",
+    "IMG_20221225_125037941.webp",
+    "IMG_20221225_125039479.webp",
+    "IMG_20221225_125043220.webp",
+    "IMG_20221225_184348174.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/textile/pullover": [
+    "IMG-20230206-WA0006.webp",
+    "IMG-20230206-WA0008.webp",
+    "IMG-20230401-WA0003.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/textile/teddy": [
+    "IMG-20190910-WA0002.webp",
+    "IMG_20190910_101957000.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/textile/tiedye": [
+    "A.webp",
+    "IMG_20220606_142233252.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/textile/wallet": [
+    "A.webp",
+    "IMG-20230401-WA0005.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/wood/cat": [
+    "IMG-20230407-WA0008.webp",
+    "IMG-20230407-WA0009.webp",
+    "IMG-20230407-WA0010.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/wood/plug": [
+    "IMG-20230113-WA0001.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/cooking/lebkuchen": [
+    "IMG-20221125-WA0015.webp",
+    "IMG-20221125-WA0016.webp",
+    "IMG-20221125-WA0017.webp",
+    "IMG-20221125-WA0018.webp",
+    "IMG-20221125-WA0019.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/sports/tabletennis": [
+    "IMG-20230407-WA0006.webp",
+    "IMG-20230407-WA0007.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/aufsetzen": [
+    "buehlerweine.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/idageverification": [
+    "config.webp",
+    "id.webp",
+    "mail.webp",
+    "mail1.webp",
+    "mail2.webp",
+    "pass.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/popup": [
+    "big.webp",
+    "config.webp",
+    "small.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/producer": [
+    "a.webp",
+    "b.webp",
+    "c.webp",
+    "d.webp",
+    "e.webp",
+    "f.webp",
+    "g.webp",
+    "h.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/scss_script": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/sharebtn": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/tasteprofile": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/translate": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/warten": [
+    "firstwinenew.webp",
+    "terroirist.webp",
+    "thumbnail.webp",
+    "waespi.webp"
+  ],
+  "src/assets/content/projects/it/java/glassfish": [
+    "glassfish_byod.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/java/glassfish_books": [
+    "glassfish_books.webp",
+    "glassfish_books2.webp",
+    "glassfish_books3.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/java/random": [
+    "java_klassen.webp",
+    "java_klassen2.webp",
+    "java_konverter.webp",
+    "java_sort.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/java/swing": [
+    "java_swing.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/java/textgame": [
+    "java_game.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/java/uno": [
+    "java_uno.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/python/ernestovargas": [
+    "python_ernestovargas.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/unity/dungeon": [
+    "cSharp_dungeon.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/unity/rocket": [
+    "cSharp_rocket.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/btc": [
+    "btc.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/cv_old": [
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/html": [
+    "html_avocado.webp",
+    "html_drugpedia.webp",
+    "html_vallora.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/immob": [
+    "html_dad.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/jukebox": [
+    "html_jukebox.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/php": [
+    "php_galerie.webp",
+    "php_karten.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/php_forms": [
+    "php_formulare.webp",
+    "php_formulare2.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/react_shirtshop": [
+    "react_shirtshop1.webp",
+    "react_shirtshop2.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/web/rus": [
+    "html_rus.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_old/art/art/drawing": [
     "IMG-20180115-WA0008.jpeg",
     "IMG-20180908-WA0000.jpeg",
     "IMG-20190824-WA0003.jpeg",
@@ -71,7 +396,7 @@
     "IMG_20200304_124728.jpg",
     "IMG_20200316_131535.jpg"
   ],
-  "assets/content/projects/art/art/paint": [
+  "src/assets/content/projects_old/art/art/paint": [
     "IMG-20201008-WA0004.jpeg",
     "IMG-20201008-WA0006.jpeg",
     "IMG_20190914_164150078.jpg",
@@ -87,7 +412,7 @@
     "IMG_20200811_140930.jpg",
     "Snapchat-1512769248.jpg"
   ],
-  "assets/content/projects/art/art/spray": [
+  "src/assets/content/projects_old/art/art/spray": [
     "IMG-20190825-WA0006.jpg",
     "IMG-20190825-WA0007.jpg",
     "IMG-20190831-WA0018.jpg",
@@ -146,19 +471,19 @@
     "Snapchat-1713183982.jpg",
     "Snapchat-637363521.jpg"
   ],
-  "assets/content/projects/art/other": [
+  "src/assets/content/projects_old/art/other": [
     "IMG-20200417-WA0003.jpeg",
     "IMG_20191111_093755104.jpg",
     "IMG_20191111_093804784.jpg"
   ],
-  "assets/content/projects/art/other/mosaic": [
+  "src/assets/content/projects_old/art/other/mosaic": [
     "IMG_20190914_163927123.jpg"
   ],
-  "assets/content/projects/art/other/string": [
+  "src/assets/content/projects_old/art/other/string": [
     "IMG_20190914_162331666.jpg",
     "IMG_20190914_162341553.jpg"
   ],
-  "assets/content/projects/art/paper/kusudama": [
+  "src/assets/content/projects_old/art/paper/kusudama": [
     "1.jpg",
     "10.jpg",
     "11.jpg",
@@ -174,7 +499,7 @@
     "8.jpg",
     "9.jpg"
   ],
-  "assets/content/projects/art/paper/origami": [
+  "src/assets/content/projects_old/art/paper/origami": [
     "A.jpg",
     "AA.jpg",
     "IMG_20200811_141220.jpg",
@@ -192,7 +517,7 @@
     "IMG_20221225_125043220.jpg",
     "IMG_20221225_184348174.jpg"
   ],
-  "assets/content/projects/art/tats": [
+  "src/assets/content/projects_old/art/tats": [
     "IMG-20200225-WA0000.jpg",
     "IMG-20210602-WA0000.jpg",
     "IMG-20210602-WA0001.jpg",
@@ -208,58 +533,58 @@
     "Snapchat-1113019817.jpg",
     "Snapchat-1716400129.jpg"
   ],
-  "assets/content/projects/art/textile/pullover": [
+  "src/assets/content/projects_old/art/textile/pullover": [
     "IMG-20230206-WA0006.jpeg",
     "IMG-20230206-WA0008.jpeg",
     "IMG-20230401-WA0003.jpeg"
   ],
-  "assets/content/projects/art/textile/teddy": [
+  "src/assets/content/projects_old/art/textile/teddy": [
     "IMG-20190910-WA0002.jpeg",
     "IMG_20190910_101957000.jpg"
   ],
-  "assets/content/projects/art/textile/tiedye": [
+  "src/assets/content/projects_old/art/textile/tiedye": [
     "A.jpg",
     "IMG_20220606_142233252.jpg"
   ],
-  "assets/content/projects/art/textile/wallet": [
+  "src/assets/content/projects_old/art/textile/wallet": [
     "A.jpeg",
     "IMG-20230401-WA0005.jpeg"
   ],
-  "assets/content/projects/art/wood/cat": [
+  "src/assets/content/projects_old/art/wood/cat": [
     "IMG-20230407-WA0008.jpeg",
     "IMG-20230407-WA0009.jpeg",
     "IMG-20230407-WA0010.jpeg"
   ],
-  "assets/content/projects/art/wood/plug": [
+  "src/assets/content/projects_old/art/wood/plug": [
     "IMG-20230113-WA0001.jpeg"
   ],
-  "assets/content/projects/health/cooking/lebkuchen": [
+  "src/assets/content/projects_old/health/cooking/lebkuchen": [
     "IMG-20221125-WA0015.jpg",
     "IMG-20221125-WA0016.jpg",
     "IMG-20221125-WA0017.jpg",
     "IMG-20221125-WA0018.jpg",
     "IMG-20221125-WA0019.jpg"
   ],
-  "assets/content/projects/health/sports/tabletennis": [
+  "src/assets/content/projects_old/health/sports/tabletennis": [
     "IMG-20230407-WA0006.jpg",
     "IMG-20230407-WA0007.jpg"
   ],
-  "assets/content/projects/it/inteco/aufsetzen": [
+  "src/assets/content/projects_old/it/inteco/aufsetzen": [
     "buehlerweine.png"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Anhang/bilder": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/bilder": [
     "iperka.png",
     "user-icon.svg"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Anhang/diagramme": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/diagramme": [
     "Klassendiagramm.png",
     "flussdiagramm.png",
     "probeIPA_UseCase.png"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Anhang/font": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/font": [
     "RobotoMono-Regular.ttf"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Anhang/nodes-xml": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/nodes-xml": [
     "config.modules.adminInterface.config.menu.settings.configPageIntern.xml",
     "config.modules.exchange.imports.produkte.nodeData.ageCategory.xml",
     "config.modules.shop.pages.ConfigPageIntern.xml",
@@ -271,7 +596,7 @@
     "website.bestellen.uebersicht.content.00.xml",
     "website.konto.anpassen.content.00.xml"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Anhang/screenshots": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/screenshots": [
     "AgeRestriction.png",
     "ConfigPageIntern.png",
     "ConfigPageInternLink.png",
@@ -296,7 +621,7 @@
     "userroles.png",
     "zeitplan.png"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Anhang/sourcecode": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/sourcecode": [
     "BasketFactory.java",
     "BlockUnderage.java",
     "ConfigPageIntern.html",
@@ -319,13 +644,13 @@
     "messages_fr.properties",
     "messages_it.properties"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Roboto_Mono": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Roboto_Mono": [
     "LICENSE.txt",
     "README.txt",
     "RobotoMono-Italic-VariableFont_wght.ttf",
     "RobotoMono-VariableFont_wght.ttf"
   ],
-  "assets/content/projects/it/inteco/idageverification/code/Roboto_Mono/static": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code/Roboto_Mono/static": [
     "RobotoMono-Bold.ttf",
     "RobotoMono-BoldItalic.ttf",
     "RobotoMono-ExtraLight.ttf",
@@ -341,13 +666,13 @@
     "RobotoMono-Thin.ttf",
     "RobotoMono-ThinItalic.ttf"
   ],
-  "assets/content/projects/it/inteco/idageverification/code": [
+  "src/assets/content/projects_old/it/inteco/idageverification/code": [
     "ipa.docx",
     "numgen.py",
     "praesentation.pptx",
     "probeIPA_altersueberpruefung.pdf"
   ],
-  "assets/content/projects/it/inteco/idageverification": [
+  "src/assets/content/projects_old/it/inteco/idageverification": [
     "config.png",
     "id.png",
     "mail.png",
@@ -355,19 +680,19 @@
     "mail2.png",
     "pass.png"
   ],
-  "assets/content/projects/it/inteco/popup": [
+  "src/assets/content/projects_old/it/inteco/popup": [
     "big.png",
     "config.png",
     "small.png"
   ],
-  "assets/content/projects/it/inteco/popup/code": [
+  "src/assets/content/projects_old/it/inteco/popup/code": [
     "SettingsShopPage.html",
     "ageConfirmPopup.ftl",
     "link.txt",
     "popup.css",
     "popup.js"
   ],
-  "assets/content/projects/it/inteco/producer": [
+  "src/assets/content/projects_old/it/inteco/producer": [
     "a.png",
     "b.png",
     "c.png",
@@ -377,25 +702,25 @@
     "g.png",
     "h.png"
   ],
-  "assets/content/projects/it/inteco/producer/info": [
+  "src/assets/content/projects_old/it/inteco/producer/info": [
     "Zeichnung.png",
     "Zeichnung1 (1).png",
     "activity_diagram.png",
     "laender.png",
     "probe_ipa.docx"
   ],
-  "assets/content/projects/it/inteco/scss_script/code": [
+  "src/assets/content/projects_old/it/inteco/scss_script/code": [
     "scss_replace.sh"
   ],
-  "assets/content/projects/it/inteco/scss_script": [
+  "src/assets/content/projects_old/it/inteco/scss_script": [
     "screenshot.png"
   ],
-  "assets/content/projects/it/inteco/seleniumtest": [
+  "src/assets/content/projects_old/it/inteco/seleniumtest": [
     "partnertest.csv",
     "partnertest.html",
     "partnertest.py"
   ],
-  "assets/content/projects/it/inteco/seo_analysis": [
+  "src/assets/content/projects_old/it/inteco/seo_analysis": [
     "SEO.docx",
     "SEO.pptx",
     "WEB-Accessibility-240323-2215.pdf",
@@ -404,13 +729,13 @@
     "WEB-Tools-240323-2215.pdf",
     "seo_rio.md"
   ],
-  "assets/content/projects/it/inteco/sharebtn": [
+  "src/assets/content/projects_old/it/inteco/sharebtn": [
     "screenshot.png"
   ],
-  "assets/content/projects/it/inteco/tasteprofile": [
+  "src/assets/content/projects_old/it/inteco/tasteprofile": [
     "screenshot.png"
   ],
-  "assets/content/projects/it/inteco/translate/code/messages": [
+  "src/assets/content/projects_old/it/inteco/translate/code/messages": [
     "data_de.properties",
     "data_de.propertiesNEW",
     "data_en.properties",
@@ -427,7 +752,7 @@
     "n_fr.properties",
     "n_it.properties"
   ],
-  "assets/content/projects/it/inteco/translate/code": [
+  "src/assets/content/projects_old/it/inteco/translate/code": [
     "package-lock.json",
     "package.json",
     "translate.js",
@@ -436,79 +761,79 @@
     "translate.ts",
     "tsconfig.json"
   ],
-  "assets/content/projects/it/inteco/translate": [
+  "src/assets/content/projects_old/it/inteco/translate": [
     "screenshot.png"
   ],
-  "assets/content/projects/it/inteco/warten": [
+  "src/assets/content/projects_old/it/inteco/warten": [
     "firstwinenew.png",
     "terroirist.png",
     "waespi.png"
   ],
-  "assets/content/projects/it/java/glassfish": [
+  "src/assets/content/projects_old/it/java/glassfish": [
     "glassfish_byod.png"
   ],
-  "assets/content/projects/it/java/glassfish_books": [
+  "src/assets/content/projects_old/it/java/glassfish_books": [
     "glassfish_books.png",
     "glassfish_books2.png",
     "glassfish_books3.png"
   ],
-  "assets/content/projects/it/java/random": [
+  "src/assets/content/projects_old/it/java/random": [
     "java_klassen.png",
     "java_klassen2.png",
     "java_konverter.png",
     "java_sort.png"
   ],
-  "assets/content/projects/it/java/swing": [
+  "src/assets/content/projects_old/it/java/swing": [
     "java_swing.png"
   ],
-  "assets/content/projects/it/java/textgame": [
+  "src/assets/content/projects_old/it/java/textgame": [
     "java_game.png"
   ],
-  "assets/content/projects/it/java/uno": [
+  "src/assets/content/projects_old/it/java/uno": [
     "java_uno.png"
   ],
-  "assets/content/projects/it/python/ernestovargas": [
+  "src/assets/content/projects_old/it/python/ernestovargas": [
     "python_ernestovargas.png"
   ],
-  "assets/content/projects/it/unity/dungeon": [
+  "src/assets/content/projects_old/it/unity/dungeon": [
     "cSharp_dungeon.png"
   ],
-  "assets/content/projects/it/unity/rocket": [
+  "src/assets/content/projects_old/it/unity/rocket": [
     "cSharp_rocket.png"
   ],
-  "assets/content/projects/it/web/btc": [
+  "src/assets/content/projects_old/it/web/btc": [
     "btc.png"
   ],
-  "assets/content/projects/it/web/cv_old": [
+  "src/assets/content/projects_old/it/web/cv_old": [
     "1.png",
     "2.png",
     "3.png",
     "4.png"
   ],
-  "assets/content/projects/it/web/html": [
+  "src/assets/content/projects_old/it/web/html": [
     "html_avocado.png",
     "html_drugpedia.png",
     "html_vallora.png"
   ],
-  "assets/content/projects/it/web/immob": [
+  "src/assets/content/projects_old/it/web/immob": [
     "html_dad.png"
   ],
-  "assets/content/projects/it/web/jukebox": [
+  "src/assets/content/projects_old/it/web/jukebox": [
     "html_jukebox.png"
   ],
-  "assets/content/projects/it/web/php": [
+  "src/assets/content/projects_old/it/web/php": [
     "php_galerie.png",
     "php_karten.png"
   ],
-  "assets/content/projects/it/web/php_forms": [
+  "src/assets/content/projects_old/it/web/php_forms": [
     "php_formulare.png",
     "php_formulare2.png"
   ],
-  "assets/content/projects/it/web/react_shirtshop": [
+  "src/assets/content/projects_old/it/web/react_shirtshop": [
     "react_shirtshop1.png",
     "react_shirtshop2.png"
   ],
-  "assets/content/projects/it/web/rus": [
+  "src/assets/content/projects_old/it/web/rus": [
     "html_rus.png"
   ]
 }

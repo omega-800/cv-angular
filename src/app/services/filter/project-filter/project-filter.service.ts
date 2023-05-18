@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FilterCategoryEntity, FiltersEntity } from '../filter.model';
+import { FilterCategoryEntity, FilterRangeEntity, FiltersEntity } from '../filter.model';
 import { ProjectService } from '../../project/project/project.service';
 import { PersonEntity } from '../../person/person/person.model';
 import { ProjectEntity } from '../../project/project/project.model';
@@ -30,6 +30,8 @@ export class ProjectFilterService {/*
     let careers: CareerEntity[] = [];
     let clients: ClientEntity[] = [];
     let clientPerson: PersonEntity[] = [];
+    let dates: Date[] = [];
+    let ranges: FilterRangeEntity[] = [];
     let filters: FilterCategoryEntity[] = [];
 
     projects.forEach(project => {
@@ -46,17 +48,20 @@ export class ProjectFilterService {/*
         clientPerson.push(project.client);
         clients.push({ client_id: project.client.person_id, id: project.client.person_id, name: project.client.firstname, description: project.client.firstname + " " + project.client.lastname, url: "mailto:" + project.client.contact.email })
       }
+      if (!dates.some(date => date.getFullYear() == project.date.getFullYear())) { dates.push(project.date) }
     })
 
     if (links.length > 0) { filters.push(this.getLinksFilters(links)) }
     if (authors.length > 1) { filters.push(this.getAuthorFilters(authors)) }
     if (careers.length > 1) { filters.push(this.getCareerFilters(careers)) }
     if (clients.length > 1) { filters.push(this.getClientFilters(clients)) }
+    if (dates.length > 1) { ranges.push(this.getDateRange(dates)) }
 
     return {
       id: "filter_project",
       name: "Projects",
-      categories: filters
+      categories: filters,
+      ranges: ranges
     }
   }
 
@@ -101,6 +106,15 @@ export class ProjectFilterService {/*
       tags: clients.map(client => {
         return { id: projectFilterProps.client + "_" + client.name, name: client.name, selected: false, value: client.client_id }
       })
+    };
+  }
+
+  getDateRange(dates: Date[]): FilterRangeEntity {
+    return {
+      id: projectFilterProps.date,
+      name: "Jahr",
+      step: 1,
+      values: dates.filter(date => !isNaN(Number(date))).map(date => date.getFullYear()).sort((a, b) => a - b)
     };
   }
 }

@@ -70,7 +70,7 @@ export class SkillsFilterService {
     if (subCategories.length > 1) { filters.push(this.getSubCategoryFilters(subCategories)) }
     if (types.length > 1) { filters.push(this.getTypeFilters(types)) }
     if (appTypes.length > 1) { filters.push(this.getApplicationTypeFilters(appTypes)) }
-    if (percent.length > 2) { ranges.push(this.getKnowledgeRange(percent.sort((a, b) => a - b), 5)) }
+    if (percent.length > 2) { ranges.push(this.getKnowledgeRange(percent, 5)) }
     if (hobbies.includes(false) && hobbies.includes(true)) { filters.push(this.getHobbyFilters()) }
 
     return {
@@ -155,7 +155,7 @@ export class SkillsFilterService {
     return {
       id: skillFilterProps.knowledge,
       name: "Prozent",
-      values: items,
+      values: items.sort((a, b) => a - b),
       step: step
     };
   }
