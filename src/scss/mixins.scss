@@ -15,7 +15,7 @@
 }
 
 @mixin slimpill {
-    margin: $thin;
+    margin: $thin 0;
     color: $fontcolor1;
     background-color: $cool;
     border: none;
@@ -99,7 +99,7 @@
 @mixin default-grid {
     display: grid;
     //column-gap: $elem-padding;
-    column-gap: $thin;
+    column-gap: $thin * 2;
 }
 
 @mixin flex-row {

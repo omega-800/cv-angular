@@ -43,6 +43,10 @@ a {
     background-color: $cool;
 }
 
+.filters {
+    margin-bottom:$elem-size;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

@@ -5,20 +5,35 @@
             [image]='{"id":item.name,"name":item.name,"path":career.type.logo.path,"alt":career.type.name}'
             title="{{item.name}}" 
             subTitle="{{career.yearfrom}} - {{career.yearto}}" 
-            description="{{career.description}}"
-            link="{{item.url}}"> 
+            description="{{career.description}}"> 
             <div class="bot bottomLinks">
-                <div #cp class="contactPoints">
-                    <img src="{{contactIcon.path}}" alt="{{contactIcon.alt}}" (click)="cp.classList.toggle('active')" loading="lazy">
+                <div class="contactPoints">
+                    <div class="title">
+                        <img src="{{contactIcon.path}}" alt="{{contactIcon.alt}}" loading="lazy">
+                        <h4>Kontakt{{item.contactpoints.length > 1 ? "e" : ""}}</h4>
+                    </div>
                     <app-contactpoint *ngFor="let contact of item.contactpoints" [contact]="contact"></app-contactpoint>
                 </div>
-                <div #addr class="address">
-                    <img src="{{addressIcon.path}}" alt="{{addressIcon.alt}}" (click)="addr.classList.toggle('active')" loading="lazy">
+                <div class="web">
+                    <div class="title">
+                        <img src="{{urlIcon.path}}" alt="{{urlIcon.alt}}" loading="lazy">
+                        <h4>Webseite</h4>
+                    </div>
+                    <app-button [onClick]="ol(item.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
+                </div>
+                <div class="address">
+                    <div class="title">
+                        <img src="{{addressIcon.path}}" alt="{{addressIcon.alt}}" loading="lazy">
+                        <h4>Adresse</h4>
+                    </div>
                     <app-address [address]="item.address"></app-address>
                 </div>
             </div>
             <div #skills class="bot skills">
-                <h4 (click)="skills.classList.toggle('active')">Angewandte Skills</h4>
+                <div class="showSkills" (click)="skills.classList.toggle('active'); img.classList.toggle('active')">
+                    <img #img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
+                    <h4>Angewandte Skills</h4>
+                </div>
                 <app-skills-percent [skills]="career.skills" name="(Häufigkeit in %)"></app-skills-percent>
             </div>
         </app-contentbox>

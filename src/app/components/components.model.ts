@@ -40,5 +40,6 @@ export interface LinkTypes {
     PHONE: LinkType,
     URL: LinkType,
     PERSON: LinkType,
+    MAP: LinkType,
     OTHER: LinkType,
 }

@@ -3,32 +3,76 @@
 :host {
     @include wrapper;
     & .bot {
-        @include slimpill;
         width: 100%;
     }
     & .bottomLinks {
-        @include flex-e2e;
+        @include default-grid;
+        @include mobile-screen {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "contact"
+                "address"
+                "web";
+        }
+        @include tablet-screen {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "contact  address"
+                "web address";
+        }
+        @include desktop-screen {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "contact  address"
+                "web address";
+        }
         & > div {
+            @include slimpill;
             @include flex-list;
-            & > img {
-                @include link;
-                @include preview-image;
-            }
-            & h5 {
-                @include pill;
-            }
+            flex:1;
             & .contactButtons {
                 @include flex-e2e;
             }
             align-self: flex-start;
-            width: 50%;
-            height: 100%;
+            & > div {
+                & > img {
+                    @include small-image;
+                }
+                & > * {
+                    display: inline-block;
+                }
+            }
         }
-        & div:not(.active) > *:not(img) {
+        & .contactPoints{
+            grid-area: contact;
+        }
+        & .address{
+            grid-area: address;
+            & app-address{
+                width:100%;
+            }
+        }
+        & .web{
+            grid-area: web;
+        }
+    }
+    & .skills{
+        @include slimpill;
+        &:not(.active) > *:not(.showSkills) {
             display: none;
         }
     }
-    & .skills:not(.active) > *:not(h4) {
-        display: none;
+    & .showSkills {
+        @include flex-row-nojust;
+        cursor: pointer;
+        & .arrowImg {
+            @include small-image;
+            &:not(.active) {
+                transform: rotate(180deg);
+            }
+        }
     }
 }

@@ -6,7 +6,6 @@
     & .skill-item {
         @include flex-row-nojust;
         @include pill;
-        margin: $thin 0;
         &:has(a) {
             @include link;
         }

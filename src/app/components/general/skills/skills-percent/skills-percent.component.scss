@@ -3,9 +3,6 @@
 
 :host {
     width: 100%;
-    & .filters {
-        background-color: $cool;
-    }
     & .skill-container {
         @include flex-list;
         & > div {

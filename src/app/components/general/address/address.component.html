@@ -1,3 +1,6 @@
-<p>{{address.street}}</p>
-<p>{{address.zip}} {{address.city}}</p>
-<p>{{address.country.name}}</p>
+<div class="address">
+    <p>{{address.street}}</p>
+    <p>{{address.zip}} {{address.city}}</p>
+    <p>{{address.country.name}}</p>
+</div>
+<app-button [onClick]="map(address)" [type]="lt.MAP" name="Google Maps"></app-button>

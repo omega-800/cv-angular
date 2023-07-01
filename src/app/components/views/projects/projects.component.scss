@@ -7,6 +7,9 @@
         @include slimpill;
         & .content {
             @include flex-e2e;
+            & > * {
+                width:auto;
+            }
         }
         & app-button p {
             @include slimpill;

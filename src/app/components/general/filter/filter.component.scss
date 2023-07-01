@@ -1,5 +1,6 @@
 @import "src/scss/mixins.scss";
 @import "src/scss/variables.scss";
+@import "src/scss/screens.scss";
 
 :host {
     & .filterComp {
@@ -7,13 +8,20 @@
             width: 100%;
             @include flex-e2e;
         }
-
         & .filterItems {
             display: none;
             &.active {
                 @include flex-row-nojust;
                 & > div {
-                    width: calc(25% - ($elem-padding * 2));
+                    @include mobile-screen {
+                        width: calc(50% - ($elem-padding * 2));
+                    }
+                    @include tablet-screen {
+                        width: calc((100% / 3) - ($elem-padding * 2));
+                    }
+                    @include desktop-screen {
+                        width: calc(25% - ($elem-padding * 2));
+                    }
                     margin: $elem-padding;
                     cursor: pointer;
                     position: relative;

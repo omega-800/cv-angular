@@ -144,6 +144,12 @@ export const linkTypes: Readonly<LinkTypes> = {
         image: personIcon,
         prefix: ""
     },
+    MAP: {
+        id: "linkType_map",
+        name: "map",
+        image: addressIcon,
+        prefix: "https://www.google.com/maps/search/?api=1&query="
+    },
     OTHER: {
         id: "linkType_other",
         name: "other",

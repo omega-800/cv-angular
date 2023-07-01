@@ -5,5 +5,6 @@
     @include wrapper;
     app-button {
         @include slimpill;
+        flex:1;
     }
 }

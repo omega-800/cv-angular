@@ -12,13 +12,14 @@ export class SortComponent implements OnInit {
   @Input() fields!: SortEntity[];
   @Output() selectedEmitter = new EventEmitter<FullSortEntity>();
 
-  ascending: boolean = true;
+  ascending: boolean = false;
   selectedValue: SortEntity = { id: "", name: "", value: "" };
   arrowIcon: ImageComp = arrowIcon;
 
   ngOnInit(): void {
-    this.ascending = true;
+    this.ascending = false;
     this.selectedValue = this.fields[0];
+    this.selectItem();
   }
 
   selectItem() {
