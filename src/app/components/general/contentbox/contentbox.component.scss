@@ -5,13 +5,11 @@
 :host {
     & > div {
         width: 100%;
-        background-color: $cool;
         //border-radius:$elem-border-radius;
         margin: $elem-padding 0;
         @include default-grid;
         & .preview {
             @include link;
-            @include slimpill;
             @include default-grid;
             & .arrowImg {
                 grid-area: arrow;
@@ -22,8 +20,11 @@
                 grid-area: title;
                 @include flex-list;
                 padding: 0 $elem-padding;
-                color: $dark1;
+                color: $fontcolor1;
             }
+        }
+        & > div:not(.bottom) {
+            @include slimpill;
         }
     }
     & > :not(.active) {
@@ -89,6 +90,7 @@
         }
         & .bottom {
             grid-area: bottom;
+            @include flex-row-just;
         }
     }
 }

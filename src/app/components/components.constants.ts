@@ -49,6 +49,13 @@ export const arrowIcon: Readonly<ImageComp> = {
     alt: 'Arrow icon'
 };
 
+export const personIcon: Readonly<ImageComp> = {
+    id: 'icon_person',
+    name: 'Person',
+    path: 'assets/img/profile.svg',
+    alt: 'Person icon'
+};
+
 export const workIcon: Readonly<ImageComp> = {
     id: 'icon_work',
     name: 'Workplace',
@@ -63,12 +70,48 @@ export const schoolIcon: Readonly<ImageComp> = {
     alt: 'School icon'
 };
 
-export const personIcon: Readonly<ImageComp> = {
-    id: 'icon_person',
-    name: 'Person',
-    path: 'assets/img/profile.svg',
-    alt: 'Person icon'
+export const heartIcon: Readonly<ImageComp> = {
+    id: 'icon_heart',
+    name: 'Heart',
+    path: 'assets/img/heart.svg',
+    alt: 'Heart icon'
 };
+
+export const globeIcon: Readonly<ImageComp> = {
+    id: 'icon_globe',
+    name: 'Globe',
+    path: 'assets/img/globe.svg',
+    alt: 'Globe icon'
+};
+
+export const imageIcon: Readonly<ImageComp> = {
+    id: 'icon_image',
+    name: 'Image',
+    path: 'assets/img/image.svg',
+    alt: 'Image icon'
+};
+
+export const paintIcon: Readonly<ImageComp> = {
+    id: 'icon_paint',
+    name: 'Paint',
+    path: 'assets/img/paint.svg',
+    alt: 'Paint icon'
+};
+
+export const smileIcon: Readonly<ImageComp> = {
+    id: 'icon_smile',
+    name: 'Smile',
+    path: 'assets/img/smile.svg',
+    alt: 'Smile icon'
+};
+
+export const codeIcon: Readonly<ImageComp> = {
+    id: 'icon_code',
+    name: 'Code',
+    path: 'assets/img/code.svg',
+    alt: 'Code icon'
+};
+
 
 export const linkTypes: Readonly<LinkTypes> = {
     GITHUB: {

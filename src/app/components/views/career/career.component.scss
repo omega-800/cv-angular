@@ -2,9 +2,12 @@
 
 :host {
     @include wrapper;
+    & .bot {
+        @include slimpill;
+        width: 100%;
+    }
     & .bottomLinks {
         @include flex-e2e;
-        width: 100%;
         & > div {
             @include flex-list;
             & > img {

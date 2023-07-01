@@ -23,12 +23,18 @@
                         .range {
                             position: absolute;
                             @include flex-list;
-                            background-color: $white;
+                            background-color: $cool;
                             width: 100%;
                             z-index: 10;
                             border-left: $defborderthin;
                             border-right: $defborderthin;
-                            & > p {
+                            & > .tag {
+                                & .tagIcon {
+                                    @include small-image;
+                                }
+                                & > * {
+                                    display: inline-block;
+                                }
                                 border-left: $defborderthin;
                                 margin-top: $elem-padding;
                                 margin-left: $thin;
@@ -36,7 +42,7 @@
                                 &.active {
                                     border-left: $defborder;
                                     &:hover {
-                                        @include darken-little(border-color, $cool);
+                                        @include darken-little(border-color, $light2);
                                     }
                                 }
                                 &:hover {
@@ -58,9 +64,7 @@
             @include flex-row-nojust;
             cursor: pointer;
             & .arrowImg {
-                height: $elem-size;
-                width: $elem-size;
-                margin-right: $elem-padding;
+                @include small-image;
                 &:not(.active) {
                     transform: rotate(180deg);
                 }

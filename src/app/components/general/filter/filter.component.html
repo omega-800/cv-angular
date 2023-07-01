@@ -13,7 +13,10 @@
                 <h5 class="categoryTitle">{{category.name}}</h5>
             </div>
             <div class="tags">
-                <p #t *ngFor="let tag of category.tags" (click)="toggleTag(category, tag); t.classList.toggle('active')" class="tag">{{tag.name}}</p>
+                <div #t *ngFor="let tag of category.tags" (click)="toggleTag(category, tag); t.classList.toggle('active')" class="tag">
+                    <img *ngIf="tag.image" src="{{tag.image.path}}" alt="{{tag.image.alt}}" class="tagIcon" loading="lazy"/>
+                    <p>{{tag.name}}</p>
+                </div>
             </div>
         </div>
 

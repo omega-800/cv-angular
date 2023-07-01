@@ -1,8 +1,10 @@
+import { ImageComp } from "src/app/components/components.model";
 import { NamedEntity } from "../../entities.model";
 
 export interface SkillCategoryEntity extends NamedEntity {
     skillcategory_id: string;
     percent: number;
+    image: ImageComp
 }
 
 export interface SkillCategoryOnly {

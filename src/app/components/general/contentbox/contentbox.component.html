@@ -12,9 +12,9 @@
         <app-image *ngIf="!isCarousel" [image]="image"></app-image>
     </div>
     
-    <div class="desc">
+    <div *ngIf="subTitle || description" class="desc">
         <h4 *ngIf="subTitle">{{subTitle}}</h4>
-        <p>{{description}}</p>
+        <p *ngIf="description">{{description}}</p>
     </div>
     <div class="bottom">
         <ng-content></ng-content>

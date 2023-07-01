@@ -1,0 +1,25 @@
+@import "src/scss/variables.scss";
+@import "src/scss/mixins.scss";
+
+:host {
+    width: 100%;
+    & .skill-item {
+        @include flex-row-nojust;
+        @include pill;
+        margin: $thin 0;
+        &:has(a) {
+            @include link;
+        }
+        & .skill-cat-img {
+            @include small-image;
+        }
+        & > * {
+            display: inline-block;
+        }
+        @for $i from 1 to 21 {
+            &.percent-#{$i * 5} {
+                width: $i * 5%;
+            }
+        }
+    }
+}

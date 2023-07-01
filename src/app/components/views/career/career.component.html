@@ -7,7 +7,7 @@
             subTitle="{{career.yearfrom}} - {{career.yearto}}" 
             description="{{career.description}}"
             link="{{item.url}}"> 
-            <div class="bottomLinks">
+            <div class="bot bottomLinks">
                 <div #cp class="contactPoints">
                     <img src="{{contactIcon.path}}" alt="{{contactIcon.alt}}" (click)="cp.classList.toggle('active')" loading="lazy">
                     <app-contactpoint *ngFor="let contact of item.contactpoints" [contact]="contact"></app-contactpoint>
@@ -17,7 +17,7 @@
                     <app-address [address]="item.address"></app-address>
                 </div>
             </div>
-            <div #skills class="skills">
+            <div #skills class="bot skills">
                 <h4 (click)="skills.classList.toggle('active')">Angewandte Skills</h4>
                 <app-skills-percent [skills]="career.skills" name="(Häufigkeit in %)"></app-skills-percent>
             </div>

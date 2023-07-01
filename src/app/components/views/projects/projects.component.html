@@ -11,42 +11,40 @@
     [description]="project.description"
     [link]="project.url">
     <div *ngIf="project.github || project.url" class="bot links">
-        <h5>Links:</h5>
+        <h5>Link{{project.github && project.url ? 's' : ''}}</h5>
         <div class="content">
             <app-button *ngIf="project.github" [onClick]="ol(project.github)" [type]="lt.GITHUB" [name]="lt.GITHUB.name"></app-button>
             <app-button *ngIf="project.url" [onClick]="ol(project.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
         </div>
     </div>
     <div *ngIf="project.authors" class="bot authors">
-        <h5>Author{{project.authors.length > 1 ? 'en' : ''}}:</h5>
+        <h5>Author{{project.authors.length > 1 ? 'en' : ''}}</h5>
         <div class="content">
             <app-button *ngFor="let author of project.authors" [onClick]="openClient(author.id)" [type]="lt.PERSON" [name]="author.name"><p>{{author.name}}</p></app-button>
         </div>
     </div>
     <div *ngIf="project.client" class="bot client">
-        <h5>Entwickelt für:</h5>
+        <h5>Entwickelt für</h5>
         <div class="content">
             <app-button [onClick]="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"><p>{{project.client.name}}</p></app-button>
         </div>
     </div>
     <div *ngIf="project.clients.length > 0" class="bot client">
-        <h5>Entwickelt für:</h5>
+        <h5>Entwickelt für</h5>
         <div class="content">
             <app-button *ngFor="let client of project.clients" [onClick]="ol(client.url)" [type]="lt.URL" [name]="client.name"><p>{{client.name}}</p></app-button>
         </div>
     </div>
     <div *ngIf="project.career" class="bot career">
-        <h5>Entwickelt bei:</h5>
+        <h5>Entwickelt bei</h5>
         <div class="content">
             <app-button [onClick]="openCareer(project.career.id)" [type]="lt.OTHER" [name]="project.career.name"><p>{{project.career.name}}</p></app-button>            
         </div>
     </div>
     <div class="bot skills">
-        <h5>Skills:</h5>
+        <h5>Skill{{project.skills.length > 1 ? 's' : ''}}</h5>
         <div class="content">
-            <div *ngFor="let skill of project.skills" class="skillpill">
-                {{skill.name}}
-            </div>            
+            <app-skill-item *ngFor="let skill of project.skills" [showPercent]="false" [skill]="skill"></app-skill-item>            
         </div>
     </div>
 </app-contentbox>

@@ -91,7 +91,7 @@ export class SkillsFilterService {
       name: "Kategorie",
       selected: true,
       tags: categories.map(skillCat => {
-        return { id: skillFilterProps.category + "_" + skillCat.skillcategory_id, name: skillCat.name, selected: false, value: skillCat.skillcategory_id }
+        return { id: skillFilterProps.category + "_" + skillCat.skillcategory_id, name: skillCat.name, selected: false, value: skillCat.skillcategory_id, image: skillCat.image }
       })
     };
   }

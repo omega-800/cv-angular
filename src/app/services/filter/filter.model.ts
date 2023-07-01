@@ -1,3 +1,4 @@
+import { ImageComp } from "src/app/components/components.model";
 import { Entity } from "../entities.model"
 
 export interface SelectedFilterEntity extends Entity {
@@ -24,6 +25,7 @@ export interface FilterCategoryEntity extends Entity {
 export interface TagEntity extends Entity {
   value: TagType;
   selected: boolean;
+  image?: ImageComp;
 }
 
 export interface SortEntity extends Entity {

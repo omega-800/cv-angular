@@ -1,20 +1,18 @@
-@import 'src/scss/variables.scss';
-@import 'src/scss/mixins.scss';
+@import "src/scss/variables.scss";
+@import "src/scss/mixins.scss";
 
 :host {
     @include wrapper;
     & .bot {
-        width:100%;
-        border-top:$darkborder;
+        @include slimpill;
         & .content {
             @include flex-e2e;
         }
         & app-button p {
             @include slimpill;
         }
-    }
-    & .skillpill{
-        @include pill;
-        @include darken-little(background-color, $cool);
+        &:not(.skills) {
+            flex: 1;
+        }
     }
 }

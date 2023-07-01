@@ -1,6 +1,9 @@
-@import 'src/scss/variables.scss';
-@import 'src/scss/mixins.scss';
+@import "src/scss/variables.scss";
+@import "src/scss/mixins.scss";
 
 :host {
     @include wrapper;
+    app-button {
+        @include slimpill;
+    }
 }

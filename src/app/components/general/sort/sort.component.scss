@@ -7,9 +7,7 @@
         & .sortTitle {
             @include flex-row-nojust;
             & .arrowImg {
-                height: $elem-size;
-                width: $elem-size;
-                margin-right: $elem-padding;
+                @include small-image;
                 transform: rotate(90deg);
             }
         }

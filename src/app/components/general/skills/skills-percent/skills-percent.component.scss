@@ -9,24 +9,8 @@
     & .skill-container {
         @include flex-list;
         & > div {
-            & a,
-            p {
-                width: 100%;
-            }
-            & p {
-                @include pill;
-                font-size: calc($elem-size / 1.75);
-            }
-            & a {
-                @include link;
-                @include pill;
-                font-size: calc($elem-size / 1.75);
-            }
-        }
-    }
-    @for $i from 1 to 21 {
-        & .percent-#{$i * 5} {
-            width: $i * 5%;
+            @include flex-row-nojust;
+            @include pill;
         }
     }
 }

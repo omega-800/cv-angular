@@ -15,8 +15,8 @@
 }
 
 @mixin slimpill {
-    margin: $thin 0;
-    color: $dark2;
+    margin: $thin;
+    color: $fontcolor1;
     background-color: $cool;
     border: none;
     border-top: $defborderthin;
@@ -34,7 +34,6 @@
 }
 
 @mixin link {
-    text-decoration: none;
     &:hover {
         @include darken-little(background-color, $cool);
         cursor: pointer;
@@ -74,6 +73,12 @@
     padding: $elem-padding;
 }
 
+@mixin small-image {
+    height: $elem-size;
+    width: $elem-size;
+    margin-right: $elem-padding;
+}
+
 @mixin prefix($property, $value, $prefixes) {
     @each $prefix in $prefixes {
         -#{$prefix}-#{$property}: $value;
@@ -93,7 +98,8 @@
 
 @mixin default-grid {
     display: grid;
-    column-gap: $elem-padding;
+    //column-gap: $elem-padding;
+    column-gap: $thin;
 }
 
 @mixin flex-row {
@@ -109,14 +115,20 @@
     justify-content: space-around;
 }
 
-@mixin flex-row-nojust {
+@mixin flex-row-just {
     display: flex;
     flex: {
         direction: row;
         wrap: wrap;
     }
-    align: {
-        items: center;
+    justify-content: space-evenly;
+}
+
+@mixin flex-row-nojust {
+    display: flex;
+    flex: {
+        direction: row;
+        wrap: wrap;
     }
 }
 

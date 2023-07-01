@@ -5,27 +5,42 @@
 }
 
 h1,
-h2,
+h2 {
+    margin: 0;
+    font-family: $mono;
+    color: $fontcolor2;
+}
+
 h3,
 h4,
 h5,
 h6 {
     margin: 0;
     font-family: $mono;
-    color: $light2;
+    color: $fontcolor1;
 }
 
 p,
 form {
     margin: 0;
     font-family: $sans;
+    color: $fontcolor1;
+}
+
+a {
+    text-decoration: none;
+    color: $fontcolor1;
+    font {
+        family: $sans;
+        weight: bold;
+    }
 }
 
 .filterComp,
 .sortComp {
     border-top: $defborderthin;
-    padding: $wrapper-margin;
-    background-color: $dark1;
+    padding: $elem-padding;
+    background-color: $cool;
 }
 
 ::-webkit-scrollbar {
