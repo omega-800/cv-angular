@@ -1,11 +1,23 @@
-$black:rgb(22, 22, 19);
-$dark:rgb(43, 43, 38);
-$white: rgb(237, 242, 244);
-$cool: rgb(142, 141, 190);
-$bitter: rgb(237, 106, 90);
-$apple: rgb(135, 163, 48);
-$transparent-darken: rgba(0,0,0,0.1);
-$transparent-lighten: rgba(255,255,255,0.3);
+$black: rgb(20, 27, 30); // 141B1E
+$dark1: rgb(35, 42, 45); // 232A2D
+$dark2: rgb(45, 52, 55); // 2D3437
+$light1: rgb(179, 185, 184); // B3B9B8
+$light2: rgb(189, 195, 194); // BDC3C2
+$red1: rgb(229, 116, 116); // E57474
+$red2: rgb(239, 126, 126); // EF7E7E
+$green1: rgb(140, 207, 126); // 8CCF7E
+$green2: rgb(150, 217, 136); // 96D988
+$yellow1: rgb(229, 199, 107); // E5C76B
+$yellow2: rgb(244, 214, 122); // F4D67A
+$blue1: rgb(103, 176, 232); // 67B0E8
+$blue2: rgb(113, 186, 242); // 71BAF2
+$purple1: rgb(196, 127, 213); // C47FD5
+$purple2: rgb(206, 137, 223); // CE89DF
+$cyan1: rgb(108, 191, 191); // 6CBFBF
+$cyan2: rgb(103, 203, 231); // 67CBE7
+
+$transparent-darken: rgba(0, 0, 0, 0.1);
+$transparent-lighten: rgba(255, 255, 255, 0.3);
 
 $little: 15%;
 
@@ -17,36 +29,50 @@ $mobile-max: 480px;
 $tablet-max: 768px;
 $laptop-max: 1024px;
 
-$wrapper-width:90%;
-$wrapper-width-large:80%;
+$wrapper-width: 90%;
+$wrapper-width-large: 80%;
 $wrapper-padding: 2rem 0;
+$wrapper-margin: 1rem 0;
 
 $border-radius-circle: 50%;
 
-$elem-size:1rem;
-$elem-padding:$elem-size / 2;
+$elem-size: 1rem;
+$elem-padding: $elem-size / 2;
 $elem-border-radius: $elem-size * 2;
 $elem-height: $elem-size * 4;
-$thin:0.15rem;
+$thin: 0.15rem;
 
-$img-width:15rem;
+$img-width: 15rem;
 $img-height-m: 60vh;
 $img-height-t: 40vh;
 $img-height-d: 50vh;
 
-$contentbox-left-s:30%;
-$contentbox-right-s:70%;
+$contentbox-left-s: 30%;
+$contentbox-right-s: 70%;
 
-$contentbox-left-b:50%;
-$contentbox-right-b:50%;
+$contentbox-left-b: 50%;
+$contentbox-right-b: 50%;
 
+/*$black: rgb(22, 22, 19);
+$dark: rgb(43, 43, 38);*/
+$white: rgb(237, 242, 244);
+//$cool: rgb(142, 141, 190);
+$cool: $blue1;
+$bitter: rgb(237, 106, 90);
+$apple: rgb(135, 163, 48);
+/*
+$defborderthin: solid $cool $thin;
 $defborder: solid $cool $elem-padding;
 $darkborder: solid darken($cool, $little) $thin;
+*/
+$defborderthin: solid $light2 $thin;
+$defborder: solid $light2 $elem-padding;
+$darkborder: solid darken($light2, $little) $thin;
 
 $mono: RedHatMono, Courier, monospace;
 $sans: WorkSans, Helvetica, sans-serif;
 
-$trans-cb: cubic-bezier(.46,0,.37,.82) 0.5s;
+$trans-cb: cubic-bezier(0.46, 0, 0.37, 0.82) 0.3s;
 
 @font-face {
     font-family: RedHatMono;

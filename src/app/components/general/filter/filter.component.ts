@@ -1,9 +1,11 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { FilterCategoryEntity, FilterRangeEntity, FilterType, FiltersEntity, SelectedFilterEntity, TagEntity } from 'src/app/services/filter/filter.model';
 import { FilterState } from 'src/app/store/filter/filter.state';
+import { arrowIcon } from '../../components.constants';
+import { ImageComp } from '../../components.model';
 
 @Component({
   selector: 'app-filter',
@@ -12,10 +14,19 @@ import { FilterState } from 'src/app/store/filter/filter.state';
 })
 export class FilterComponent implements OnInit {
   @Input() filters!: FiltersEntity;
+  @Input() filterName!: string;
   @Output() filterEmitter = new EventEmitter<SelectedFilterEntity[]>();
   selectedFilter: SelectedFilterEntity[] = [];
+  arrowIcon: ImageComp = arrowIcon;
 
-  constructor() { }
+  constructor(private cdref: ChangeDetectorRef) {
+  }
+
+  ngAfterContentChecked() {
+
+    this.cdref.detectChanges();
+
+  }
 
   ngOnInit() {
     this.filters.ranges?.forEach(range => this.selectedFilter.push({ id: range.id, name: range.name, range: true, category: range.id, value: [range.values[0], range.values[range.values.length - 1]] }))

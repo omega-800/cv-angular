@@ -1,7 +1,7 @@
 <h1>Projects</h1>
 
-<app-filter [filters]="skillsFilter" (filterEmitter)="filterProjectsBySkill($event)"></app-filter>
-<app-filter [filters]="projectsFilter" (filterEmitter)="filterProjects($event)"></app-filter>
+<app-filter [filters]="skillsFilter" filterName="Filtern nach Skill" (filterEmitter)="filterProjectsBySkill($event)"></app-filter>
+<app-filter [filters]="projectsFilter" filterName="Filtern nach Projekteigenschaft" (filterEmitter)="filterProjects($event)"></app-filter>
 <app-sort [fields]="sortFields" (selectedEmitter)="sortProjectsBy($event)"></app-sort>
 
 <app-contentbox *ngFor="let project of projects | projectsSort:sortValue:sortAsc | projectsFilter:selectedSkillFilter:selectedProjectFilter"

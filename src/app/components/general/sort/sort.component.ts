@@ -1,5 +1,7 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { arrowIcon } from '../../components.constants';
 import { FullSortEntity, SortEntity } from 'src/app/services/filter/filter.model';
+import { ImageComp } from '../../components.model';
 
 @Component({
   selector: 'app-sort',
@@ -12,6 +14,7 @@ export class SortComponent implements OnInit {
 
   ascending: boolean = true;
   selectedValue: SortEntity = { id: "", name: "", value: "" };
+  arrowIcon: ImageComp = arrowIcon;
 
   ngOnInit(): void {
     this.ascending = true;

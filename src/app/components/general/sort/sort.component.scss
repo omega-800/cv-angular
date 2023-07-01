@@ -1,10 +1,23 @@
-@import 'src/scss/variables.scss';
-@import 'src/scss/mixins.scss';
+@import "src/scss/variables.scss";
+@import "src/scss/mixins.scss";
 
 :host {
-    @include flex-e2e;
-    & div {
-        @include slimpill;
-        @include link;
+    & .sortComp {
+        @include flex-e2e;
+        & .sortTitle {
+            @include flex-row-nojust;
+            & .arrowImg {
+                height: $elem-size;
+                width: $elem-size;
+                margin-right: $elem-padding;
+                transform: rotate(90deg);
+            }
+        }
+        & select {
+            @include slimpill;
+            & option {
+                @include link;
+            }
+        }
     }
 }

@@ -44,7 +44,6 @@ export class ProjectsComponent {
     })
     this.skillsFilter = skillsFilterService.getSkillFiltersOfSkills(this.projectSkills);
     this.projectsFilter = projectFilterService.getProjectFiltersOfProjects(this.projects);
-    console.log(this.projectsFilter)
     //this.projects = [projectService.getProjectById("60d8c8bc-3061-406c-80bf-6188a236a7c1")];
   }
 

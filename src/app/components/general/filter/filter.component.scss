@@ -1,32 +1,74 @@
-@import 'src/scss/mixins.scss';
-@import 'src/scss/variables.scss';
+@import "src/scss/mixins.scss";
+@import "src/scss/variables.scss";
 
-:host{
-    @include flex-row;
-    & .filterTitle {
-        width:100%;
-    }
+:host {
+    & .filterComp {
+        & .filterTitle {
+            width: 100%;
+            @include flex-e2e;
+        }
 
-    &>div {
-        cursor: pointer;
-        &.active {
-            width:100%;
-            & .categoryTitle {
-                width:100%;
-            }
-            & .tags {
-                @include flex-e2e;
-                &> div {
-                    @include slimpill;
-                    @include link;
-                }
-                &>.active{
-                    @include darken-little(background-color, $cool);
+        & .filterItems {
+            display: none;
+            &.active {
+                @include flex-row-nojust;
+                & > div {
+                    width: calc(25% - ($elem-padding * 2));
+                    margin: $elem-padding;
+                    cursor: pointer;
+                    position: relative;
+                    border-top: $defborderthin;
+                    &.active {
+                        & .tags,
+                        .range {
+                            position: absolute;
+                            @include flex-list;
+                            background-color: $white;
+                            width: 100%;
+                            z-index: 10;
+                            border-left: $defborderthin;
+                            border-right: $defborderthin;
+                            & > p {
+                                border-left: $defborderthin;
+                                margin-top: $elem-padding;
+                                margin-left: $thin;
+                                cursor: pointer;
+                                &.active {
+                                    border-left: $defborder;
+                                    &:hover {
+                                        @include darken-little(border-color, $cool);
+                                    }
+                                }
+                                &:hover {
+                                    @include transition(border-left, $defborder);
+                                }
+                            }
+                        }
+                    }
+                    &:not(.active) {
+                        & .tags,
+                        .range {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
-        &:not(.active) > .tags{
-            display:none;
+        & .showFilter {
+            @include flex-row-nojust;
+            cursor: pointer;
+            & .arrowImg {
+                height: $elem-size;
+                width: $elem-size;
+                margin-right: $elem-padding;
+                &:not(.active) {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        & .filterReset {
+            @include link;
+            @include slimpill;
         }
     }
 }

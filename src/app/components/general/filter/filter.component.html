@@ -1,20 +1,35 @@
-<h4 class="filterTitle">Filtern nach:</h4>
-
-<h5 (click)="reset()" class="filterReset">Filter zurücksetzen</h5>
-
-<div #cat *ngFor="let category of filters.categories">
-    <h5 class="categoryTitle" (click)="cat.classList.toggle('active')">{{category.name}}</h5>
-    <div class="tags" #tags>
-        <div #t *ngFor="let tag of category.tags" (click)="toggleTag(category, tag); t.classList.toggle('active')" class="tag">{{tag.name}}</div>
+<div class="filterComp">
+    <div class="filterTitle">
+        <div class="showFilter" (click)="content.classList.toggle('active'); img.classList.toggle('active')">
+            <img #img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
+            <h4>{{filterName}}</h4>
+        </div>
+        <h4 (click)="reset()" class="filterReset">Zurücksetzen</h4>
     </div>
-</div>
+    <div #content class="filterItems">
+        <div #cat *ngFor="let category of filters.categories">
+            <div class="showFilter" (click)="cat.classList.toggle('active'); imgF.classList.toggle('active')">
+                <img #imgF class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
+                <h5 class="categoryTitle">{{category.name}}</h5>
+            </div>
+            <div class="tags">
+                <p #t *ngFor="let tag of category.tags" (click)="toggleTag(category, tag); t.classList.toggle('active')" class="tag">{{tag.name}}</p>
+            </div>
+        </div>
 
-<div #ran *ngFor="let range of filters.ranges">
-    <h5 class="categoryTitle" (click)="ran.classList.toggle('active')">{{range.name}}</h5>
-    <p class="rangeFrom">{{r1.value}}</p>
-    <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length-1]" [step]="range.step" value="{{range.values[0]}}" (input)="changeRange(range, r1)" class="slider slider1" #r1>
-    <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length-1]" [step]="range.step" value="{{range.values[range.values.length-1]}}" (input)="changeRange(range, r2)" class="slider slider2" #r2>
-    <p class="rangeTo">{{r2.value}}</p>
+        <div #ran *ngFor="let range of filters.ranges">
+            <div class="showFilter" (click)="ran.classList.toggle('active'); imgR.classList.toggle('active')">
+                <img #imgR class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
+                <h5 class="categoryTitle">{{range.name}}</h5>
+            </div>
+            <div class="range">
+                <p class="rangeFrom">{{r1.value}}</p>
+                <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length-1]" [step]="range.step" value="{{range.values[0]}}" (input)="changeRange(range, r1)" class="slider slider1" #r1>
+                <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length-1]" [step]="range.step" value="{{range.values[range.values.length-1]}}" (input)="changeRange(range, r2)" class="slider slider2" #r2>
+                <p class="rangeTo">{{r2.value}}</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 

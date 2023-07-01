@@ -1,12 +1,12 @@
-@import 'src/scss/variables.scss';
-@import 'src/scss/mixins.scss';
-@import 'src/scss/screens.scss';
+@import "src/scss/variables.scss";
+@import "src/scss/mixins.scss";
+@import "src/scss/screens.scss";
 
 :host {
-    & >div{
+    & > div {
         width: 100%;
         background-color: $cool;
-        border-radius:$elem-border-radius;
+        //border-radius:$elem-border-radius;
         margin: $elem-padding 0;
         @include default-grid;
         & .preview {
@@ -19,18 +19,19 @@
                 padding: $elem-padding;
             }
             & .title {
-                grid-area:title;
+                grid-area: title;
                 @include flex-list;
                 padding: 0 $elem-padding;
+                color: $dark1;
             }
         }
     }
-    & >:not(.active) {
+    & > :not(.active) {
         & .preview {
             grid-template-columns: $elem-height 1fr $elem-height;
             grid-template-areas: "image title arrow";
             & .previewImg {
-                grid-area:image;
+                grid-area: image;
                 @include preview-image;
             }
             & .arrowImg {
@@ -38,56 +39,56 @@
                 transform: rotate(180deg);
             }
         }
-        & >:not(.preview) {
-            display:none;
+        & > :not(.preview) {
+            display: none;
         }
     }
-    & >.active {
-        padding-bottom:$elem-border-radius;
+    & > .active {
+        padding-bottom: $elem-border-radius;
         @include mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: $elem-height auto auto auto;
-            grid-template-areas: 
-            "preview"
-            "desc"
-            "image"
-            "bottom";
+            grid-template-areas:
+                "preview"
+                "desc"
+                "image"
+                "bottom";
         }
         @include tablet-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: $elem-height auto auto;
-            grid-template-areas: 
-            "preview  preview"
-            "image  desc"
-            "bottom bottom";            
+            grid-template-areas:
+                "preview  preview"
+                "image  desc"
+                "bottom bottom";
         }
         @include desktop-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: $elem-height auto auto;
-            grid-template-areas: 
-            "preview  preview"
-            "image  desc"
-            "image bottom";            
+            grid-template-areas:
+                "preview  preview"
+                "image  desc"
+                "image bottom";
         }
         & .preview {
-            grid-area:preview;
+            grid-area: preview;
             grid-template-columns: 1fr $elem-height;
             grid-template-areas: "title arrow";
-            border-bottom-left-radius:0;
+            border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
-            padding:0;
+            padding: 0;
             & .previewImg {
-                display:none;
+                display: none;
             }
         }
         & .mainImg {
-            grid-area:image;
+            grid-area: image;
         }
         & .desc {
-            grid-area:desc;
+            grid-area: desc;
         }
         & .bottom {
-            grid-area:bottom;
+            grid-area: bottom;
         }
     }
 }

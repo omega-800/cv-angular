@@ -1,13 +1,17 @@
-@import 'src/scss/variables.scss';
-@import 'src/scss/mixins.scss';
+@import "src/scss/variables.scss";
+@import "src/scss/mixins.scss";
 
 :host {
     width: 100%;
+    & .filters {
+        background-color: $cool;
+    }
     & .skill-container {
         @include flex-list;
-        &> div {
-            & a, p{
-                width:100%;
+        & > div {
+            & a,
+            p {
+                width: 100%;
             }
             & p {
                 @include pill;
@@ -22,7 +26,7 @@
     }
     @for $i from 1 to 21 {
         & .percent-#{$i * 5} {
-            width:$i * 5%;
+            width: $i * 5%;
         }
     }
 }

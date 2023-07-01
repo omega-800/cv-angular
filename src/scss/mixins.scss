@@ -1,8 +1,8 @@
-@import 'variables.scss';
-@import 'screens.scss';
+@import "variables.scss";
+@import "screens.scss";
 
 @mixin wrapper {
-    padding:$wrapper-padding;
+    padding: $wrapper-padding;
     @include mobile-screen {
         width: $wrapper-width;
     }
@@ -15,36 +15,63 @@
 }
 
 @mixin slimpill {
-    margin:0;
-    border-radius: $elem-border-radius;
-    color: $black;
+    margin: $thin 0;
+    color: $dark2;
     background-color: $cool;
+    border: none;
+    border-top: $defborderthin;
+    border-bottom: $defborderthin;
     font: {
-        family:$mono;
-        size:$elem-size;
+        family: $mono;
+        size: $elem-size;
     }
 }
 
 @mixin pill {
     @include slimpill;
-    display:inline-block;
-    padding:$elem-padding;
+    display: inline-block;
+    padding: $elem-padding;
 }
 
 @mixin link {
     text-decoration: none;
-    border:none;
     &:hover {
         @include darken-little(background-color, $cool);
-        cursor:pointer;
+        cursor: pointer;
+    }
+}
+/*
+@mixin slimpill {
+    margin: 0;
+    border-radius: $elem-border-radius;
+    color: $black;
+    background-color: $cool;
+    font: {
+        family: $mono;
+        size: $elem-size;
     }
 }
 
+@mixin pill {
+    @include slimpill;
+    display: inline-block;
+    padding: $elem-padding;
+}
+
+@mixin link {
+    text-decoration: none;
+    border: none;
+    &:hover {
+        @include darken-little(background-color, $cool);
+        cursor: pointer;
+    }
+}
+*/
 @mixin preview-image {
     border-radius: $border-radius-circle;
-    height:$elem-height;
-    width:$elem-height;
-    padding:$elem-padding;
+    height: $elem-height;
+    width: $elem-height;
+    padding: $elem-padding;
 }
 
 @mixin prefix($property, $value, $prefixes) {
@@ -65,52 +92,63 @@
 }
 
 @mixin default-grid {
-    display:grid;
-    column-gap:$elem-padding;
+    display: grid;
+    column-gap: $elem-padding;
 }
 
 @mixin flex-row {
-    display:flex;
+    display: flex;
     flex: {
-        direction:row;
-        wrap:wrap;
+        direction: row;
+        wrap: wrap;
     }
     align: {
-        items:center;
-        content:space-around;
+        items: center;
+        content: space-around;
     }
     justify-content: space-around;
 }
 
-@mixin flex-e2e {
-    display:flex;
+@mixin flex-row-nojust {
+    display: flex;
     flex: {
-        direction:row;
-        wrap:wrap;
+        direction: row;
+        wrap: wrap;
     }
     align: {
-        items:center;
-        content:space-between;
+        items: center;
+    }
+}
+
+@mixin flex-e2e {
+    display: flex;
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+    align: {
+        items: center;
+        content: space-between;
     }
     justify-content: space-between;
 }
 
 @mixin flex-column {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @mixin flex-center {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin flex-list {
-    display:flex;
-    flex-direction:column;
-    align-items:baseline;
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
 }
