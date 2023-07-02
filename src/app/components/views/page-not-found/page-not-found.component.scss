@@ -1,5 +1,8 @@
-@import 'src/scss/mixins.scss';
+@import "src/scss/mixins.scss";
 
-:host{
+:host {
     @include wrapper;
+    p {
+        @include slimpill;
+    }
 }

@@ -2,15 +2,15 @@
     <div class="filterTitle">
         <div class="showFilter" (click)="content.classList.toggle('active'); img.classList.toggle('active')">
             <img #img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
-            <h4>{{filterName}}</h4>
+            <h3>{{filterName}}</h3>
         </div>
-        <h4 (click)="reset()" class="filterReset">Zurücksetzen</h4>
+        <h3 (click)="reset()" class="filterReset">Zurücksetzen</h3>
     </div>
     <div #content class="filterItems">
         <div #cat *ngFor="let category of filters.categories">
             <div class="showFilter" (click)="cat.classList.toggle('active'); imgF.classList.toggle('active')">
                 <img #imgF class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
-                <h5 class="categoryTitle">{{category.name}}</h5>
+                <h4 class="categoryTitle">{{category.name}}</h4>
             </div>
             <div class="tags">
                 <div #t *ngFor="let tag of category.tags" (click)="toggleTag(category, tag); t.classList.toggle('active')" class="tag">
@@ -23,7 +23,7 @@
         <div #ran *ngFor="let range of filters.ranges">
             <div class="showFilter" (click)="ran.classList.toggle('active'); imgR.classList.toggle('active')">
                 <img #imgR class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
-                <h5 class="categoryTitle">{{range.name}}</h5>
+                <h4 class="categoryTitle">{{range.name}}</h4>
             </div>
             <div class="range">
                 <p class="rangeFrom">{{r1.value}}</p>

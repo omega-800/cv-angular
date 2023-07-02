@@ -2,8 +2,8 @@
     <div class="preview" (click)="cbToggle.classList.toggle('active')">
         <img *ngIf="preview" class="previewImg" src="{{preview.path}}" alt="{{preview.alt}}" loading="lazy">
         
-        <h3 class="title" *ngIf="!link">{{title}}</h3>
-        <h3 class="title" *ngIf="link"><a href="{{link}}" target="_blank">{{title}}</a></h3>
+        <h2 class="title" *ngIf="!link">{{title}}</h2>
+        <h2 class="title" *ngIf="link"><a href="{{link}}" target="_blank">{{title}}</a></h2>
         
         <img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
     </div>
@@ -13,7 +13,7 @@
     </div>
     
     <div *ngIf="subTitle || description" class="desc">
-        <h4 *ngIf="subTitle">{{subTitle}}</h4>
+        <h3 *ngIf="subTitle">{{subTitle}}</h3>
         <p *ngIf="description">{{description}}</p>
     </div>
     <div class="bottom">

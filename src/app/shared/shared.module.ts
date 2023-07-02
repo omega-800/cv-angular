@@ -17,7 +17,6 @@ import { ProjectsFilterPipe } from '../pipes/projects-filter/projects-filter.pip
 import { ProjectsSortPipe } from '../pipes/projects-sort/projects-sort.pipe';
 import { SkillsFilterPipe } from '../pipes/skills-filter/skills-filter.pipe';
 import { SkillsSortPipe } from '../pipes/skills-sort/skills-sort.pipe';
-import { DatePipe } from '../pipes/date/date.pipe';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -33,11 +32,7 @@ import { FormsModule } from '@angular/forms';
     ImageComponent,
     SkillsSortPipe,
     SortComponent,
-    ProjectsSortPipe,
-    DatePipe,
-    ProjectsFilterPipe,
     ContentboxComponent,
-    AgePipe,
     ButtonComponent,
     SkillsPercentComponent
   ],
@@ -57,11 +52,7 @@ import { FormsModule } from '@angular/forms';
     ImageComponent,
     SkillsSortPipe,
     SortComponent,
-    ProjectsSortPipe,
-    DatePipe,
-    ProjectsFilterPipe,
     ContentboxComponent,
-    AgePipe,
     ButtonComponent,
     SkillsPercentComponent,
     CommonModule,
@@ -69,9 +60,7 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     SkillsFilterPipe,
-    AgePipe,
-    ProjectsFilterPipe,
-    DatePipe
+    SkillsSortPipe
   ]
 })
 export class SharedModule { }

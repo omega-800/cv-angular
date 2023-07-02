@@ -1,7 +1,7 @@
 <div class="sortComp">
     <div class="sortTitle">
         <img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
-        <h4>Sortieren nach</h4>
+        <h3>Sortieren nach</h3>
     </div>
     <select #sortFields name="sortFields" id="sortFields" [(ngModel)]="selectedValue" (change)="selectItem()">
         <option *ngFor="let field of fields" [ngValue]="field">{{field.name}}</option>
