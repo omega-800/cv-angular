@@ -19,7 +19,7 @@ export class SkillsPercentComponent implements OnInit {
   selectedFilter: SelectedFilterEntity[] = [];
 
   constructor(private skillsFilterService: SkillsFilterService) {
-    this.filter = this.skillsFilterService.getSkillFilters();
+    this.filter = {id:'',name:'',categories:[]};
   }
 
   ngOnInit(): void {

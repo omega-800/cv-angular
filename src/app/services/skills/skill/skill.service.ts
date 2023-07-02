@@ -7,7 +7,6 @@ import { ApplicationService } from '../application/application.service';
 import { KnowledgeService } from '../knowledge/knowledge.service';
 import { LanguageService } from '../language/language.service';
 import { SkillCategoriesService } from '../skill-category/skill-category.service';
-var _ = require('underscore');
 
 @Injectable({
   providedIn: 'root'
@@ -18,32 +17,8 @@ export class SkillService {
   private skills: SkillEntity[];
 
   constructor(private skillCategoriesService: SkillCategoriesService, private applicationService: ApplicationService, private languageService: LanguageService, private knowledgeService: KnowledgeService, private activityService: ActivityService, private abilityService: AbilityService) {
-    //this.getFilters();
-    //this.skills = this.onlySkills.map(skill =>this.fillSkillSortProps(skill, skillCategoriesService, applicationService, languageService, knowledgeService, activityService, abilityService));
     this.skills = this.onlySkills.map(skill => this.fillSkillSortProps(skill));
   }
-  /*
-    getFilters():FiltersEntity{
-      let x = _.uniq(_.map(this.skills, 'name'));
-      return{
-        id: 'skills',
-        name: 'skillsFilters',
-        categories: [
-          {
-            id: 'asdf',
-            name: 'apps',
-            tags:[
-              {
-                id: 'asdf',
-                name: 'react',
-                selected: true
-              }
-            ]
-          },
-        ],
-      };
-    }
-    */
 
   getSkillById(id: string): SkillEntity {
     return Object.values(this.skills).filter(skill => skill.skill_id === id)[0];
@@ -55,7 +30,6 @@ export class SkillService {
 
   getSkillTypes() {
     return SkillTypes;
-    //return _.keys(_.countBy(this.onlySkills, function(skill:Skill) { return skill.type; }));
   }
 
   getSkillsByType(type: string): SkillEntity[] {

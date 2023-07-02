@@ -33,7 +33,7 @@ export class ProjectsComponent {
   selectedSkillFilter: SelectedFilterEntity[] = [];
   selectedProjectFilter: SelectedFilterEntity[] = [];
 
-  constructor(private projectService: ProjectService, private careerService: CareerService, private personService: PersonService, private skillsFilterService: SkillsFilterService, private projectFilterService: ProjectFilterService) {
+  constructor(projectService: ProjectService, private careerService: CareerService, private personService: PersonService, skillsFilterService: SkillsFilterService, projectFilterService: ProjectFilterService) {
     this.projects = projectService.getProjects();
     this.projects.forEach(project => {
       project.skills.forEach(skill => {
@@ -44,7 +44,6 @@ export class ProjectsComponent {
     })
     this.skillsFilter = skillsFilterService.getSkillFiltersOfSkills(this.projectSkills);
     this.projectsFilter = projectFilterService.getProjectFiltersOfProjects(this.projects);
-    //this.projects = [projectService.getProjectById("60d8c8bc-3061-406c-80bf-6188a236a7c1")];
   }
 
   filterProjectsBySkill(selected: SelectedFilterEntity[]) {

@@ -21,7 +21,7 @@ export class CareerComponent {
   urlIcon: ImageComp = urlIcon;
   lt: LinkTypes = linkTypes;
 
-  constructor(private careerService: CareerService) {
+  constructor(careerService: CareerService) {
     this.careers = careerService.getCareers();
   }
 
