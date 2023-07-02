@@ -25,7 +25,7 @@ export class ProjectsSortPipe implements PipeTransform {
         projects = projects.sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase() ?
           (ascending ? 1 : -1) : (ascending ? -1 : 1));
       } else if (sortBy.value === projectSortValues.client) {
-        projects = projects.sort((a, b) => a.career === undefined ? 1 : b.career === undefined ? -1 :
+        projects = projects.sort((a, b) => a.client === undefined ? 1 : b.client === undefined ? -1 :
           a.client.name.toLowerCase() > b.client.name.toLowerCase() ?
             (ascending ? 1 : -1) : (ascending ? -1 : 1));
       } else if (sortBy.value === projectSortValues.author) {
