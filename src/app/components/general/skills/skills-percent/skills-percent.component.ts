@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { skillSortProps } from 'src/app/pipes/skills-sort/skills-sort.model';
 import { FiltersEntity, FullSortEntity, SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
@@ -7,7 +7,8 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 @Component({
   selector: 'app-skills-percent',
   templateUrl: './skills-percent.component.html',
-  styleUrls: ['./skills-percent.component.scss']
+  styleUrls: ['./skills-percent.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SkillsPercentComponent implements OnInit {
   @Input() skills!: SkillEntity[];

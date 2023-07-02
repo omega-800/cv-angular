@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ProjectEntity } from 'src/app/services/project/project/project.model';
 import { ProjectService } from 'src/app/services/project/project/project.service';
 import { openLink } from '../../general/links.util';
@@ -17,7 +17,8 @@ import { ProjectFilterService } from 'src/app/services/filter/project-filter/pro
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjectsComponent {
   projects: ProjectEntity[];

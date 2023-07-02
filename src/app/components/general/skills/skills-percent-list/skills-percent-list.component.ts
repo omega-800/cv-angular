@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { SkillService } from 'src/app/services/skills/skill/skill.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { SkillCategoriesService } from 'src/app/services/skills/skill-category/skill-category.service';
@@ -8,7 +8,8 @@ import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skill
 @Component({
   selector: 'app-skills-percent-list',
   templateUrl: './skills-percent-list.component.html',
-  styleUrls: ['./skills-percent-list.component.scss']
+  styleUrls: ['./skills-percent-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SkillsPercentListComponent {
   types:{[key:string]:string};

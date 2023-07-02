@@ -1,9 +1,6 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PersonEntity } from 'src/app/services/person/person/person.model';
 import { ImageComp, LinkTypes } from 'src/app/components/components.model';
-import { ContactEntity } from 'src/app/services/contact/contact.model';
-import { ContactService } from 'src/app/services/contact/contact.service';
-import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { contactMail, contactPhone, openLink } from '../../general/links.util';
 import { linkTypes } from '../../components.constants';
@@ -13,7 +10,8 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
   me: PersonEntity = this.personService.getPersonByName("Georgiy");
@@ -22,7 +20,6 @@ export class HomeComponent {
   skills: SkillEntity[];
 
   mailText: string = "";
-  //age:string;
 
   constructor(private personService: PersonService, private skillService: SkillService) {
     this.skills = this.skillService.getSkills();
@@ -34,14 +31,7 @@ export class HomeComponent {
       path: `/assets/${this.me.image}`,
       alt: "Profile picture"
     }
-    //this.age = this.personService.getAge(this.me.birthdate);
-    //setInterval(this.updateAge, 1000);
   }
-  /*
-    updateAge(){
-      this.age = this.personService.getAge(this.me.birthdate);
-    }
-    */
   ngOnInit(): void {
   }
   mailMe = () => {

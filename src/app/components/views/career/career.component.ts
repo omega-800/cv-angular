@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import { contactIcon, addressIcon, arrowIcon, urlIcon } from '../../components.constants';
@@ -10,7 +10,8 @@ import { LinkTypes } from '../../components.model';
 @Component({
   selector: 'app-career',
   templateUrl: './career.component.html',
-  styleUrls: ['./career.component.scss']
+  styleUrls: ['./career.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CareerComponent {
   careers: CareerEntity[];

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
@@ -6,7 +6,8 @@ import * as assets from 'src/assets/fileStructure.json';
 @Component({
   selector: 'app-contentbox',
   templateUrl: './contentbox.component.html',
-  styleUrls: ['./contentbox.component.scss']
+  styleUrls: ['./contentbox.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContentboxComponent implements OnInit {
   @Input() title!: string;
