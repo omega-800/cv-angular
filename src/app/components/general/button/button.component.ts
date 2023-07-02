@@ -1,23 +1,15 @@
-import { Component, Input } from '@angular/core';
-import { LinkType, LinkTypes } from '../../components.model';
-import { linkTypes } from '../../components.constants';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { LinkType } from '../../components.model';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  styleUrls: ['./button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent {
   @Input() onClick!: () => void;
 
   @Input() type!: LinkType;
   @Input() name!: string;
-  lt: LinkTypes = linkTypes;
-  /*
-  public href: string = "";
-
-  ngOnInit() {
-    this.href = this.type.prefix + this.link;
-  }*/
-
 }

@@ -1,10 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
 @Component({
   selector: 'app-skill-item',
   templateUrl: './skill-item.component.html',
-  styleUrls: ['./skill-item.component.scss']
+  styleUrls: ['./skill-item.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SkillItemComponent implements OnInit {
   @Input() skill!: SkillEntity;

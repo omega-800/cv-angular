@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { FilterCategoryEntity, FilterRangeEntity, FiltersEntity } from '../filter.model';
-import { ProjectService } from '../../project/project/project.service';
 import { PersonEntity } from '../../person/person/person.model';
 import { ProjectEntity } from '../../project/project/project.model';
 import { CareerEntity } from '../../career/career/career.model';
@@ -12,16 +11,9 @@ import { projectFilterProps } from './project-filter.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ProjectFilterService {/*
-  linksFilters: FilterCategoryEntity;
-  authorFilters: FilterCategoryEntity;
-  careerFilters: FilterCategoryEntity;
-  clientFilters: FilterCategoryEntity;
-  projectFilters: FiltersEntity;*/
+export class ProjectFilterService {
 
-  constructor(private projectService: ProjectService) { /*
-    this.linksFilters = this.getLinksFilters([""]);
-    this.authorFilters = this.getAuthorFilters();*/
+  constructor() {
   }
 
   getProjectFiltersOfProjects(projects: ProjectEntity[]): FiltersEntity {

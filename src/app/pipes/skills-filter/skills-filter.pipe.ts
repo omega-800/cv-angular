@@ -2,7 +2,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { SelectedFilterEntity } from 'src/app/services/filter/filter.model';
 import { skillFilterProps } from 'src/app/services/filter/skills-filter/skills-filter.model';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
-import { forEach } from 'underscore';
 
 @Pipe({
   name: 'skillsFilter',

@@ -1,11 +1,7 @@
-import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
-import { Store } from '@ngxs/store';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { FilterCategoryEntity, FilterRangeEntity, FilterType, FiltersEntity, SelectedFilterEntity, TagEntity } from 'src/app/services/filter/filter.model';
-import { FilterState } from 'src/app/store/filter/filter.state';
-import { arrowIcon } from '../../components.constants';
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FilterCategoryEntity, FilterRangeEntity, FiltersEntity, SelectedFilterEntity, TagEntity } from 'src/app/services/filter/filter.model';
 import { ImageComp } from '../../components.model';
+import { arrowIcon } from '../../components.constants';
 
 @Component({
   selector: 'app-filter',
@@ -23,9 +19,7 @@ export class FilterComponent implements OnInit {
   }
 
   ngAfterContentChecked() {
-
     this.cdref.detectChanges();
-
   }
 
   ngOnInit() {
@@ -33,22 +27,6 @@ export class FilterComponent implements OnInit {
   }
 
   toggleTag(category: FilterCategoryEntity, tag: TagEntity) {
-    /*
-    this.selectedFilter.map(elem => {
-      return elem.category == category.id && elem.value.includes(tag.value) ? elem.value.splice(elem.value.indexOf(tag.value)):elem;
-    })*/
-    /*if (this.selectedFilter.some(elem => elem.category == category.id)) {
-      if (this.selectedFilter.filter(elem => elem.category == category.id)[0].value.includes(tag.value)) {
-        this.selectedFilter.filter(elem => elem.category == category.id)[0].value.splice(this.selectedFilter.filter(elem => elem.category == category.id)[0].value.indexOf(tag.value), 1);
-        if (this.selectedFilter.filter(elem => elem.category == category.id)[0].value.length == 0) {
-          this.selectedFilter.splice(this.selectedFilter.findIndex(elem => elem.category == category.id), 1)
-        }
-      } else {
-        this.selectedFilter.filter(elem => elem.category == category.id)[0].value.push(tag.value);
-      }
-    } else {
-      this.selectedFilter.push({ id: category.id, name: category.name, category: category.id, value: [tag.value] })
-    }*/
     let changed = false;
     this.selectedFilter.forEach(elem => {
       if (elem.category == category.id) {

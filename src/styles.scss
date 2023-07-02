@@ -1,7 +1,39 @@
 @import "scss/variables.scss";
+@import "scss/mixins.scss";
 
 * {
     box-sizing: border-box;
+}
+
+@include mobile-screen{
+    @for $i from 1 to 6 {
+        h#{$i} {
+            font-size: #{calc((((6 - $i) * 1.2) + 5) / 10)}em;
+        }
+    }
+    p, form, a {
+        font-size: 0.6em;
+    }
+}
+@include tablet-screen{
+    @for $i from 1 to 6 {
+        h#{$i} {
+            font-size: #{calc((((6 - $i) * 1.3) + 6) / 10)}em;
+        }
+    }
+    p, form, a {
+        font-size: 0.8em;
+    }
+}
+@include desktop-screen{
+    @for $i from 1 to 6 {
+        h#{$i} {
+            font-size: #{calc((((6 - $i) * 2) + 8) / 10)}em;
+        }
+    }
+    p, form, a {
+        font-size: 1em;
+    }
 }
 
 h1,

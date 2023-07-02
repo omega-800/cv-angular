@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import { contactIcon, addressIcon, arrowIcon, urlIcon } from '../../components.constants';
@@ -21,7 +21,7 @@ export class CareerComponent {
   urlIcon: ImageComp = urlIcon;
   lt: LinkTypes = linkTypes;
 
-  constructor(private careerService: CareerService) {
+  constructor(careerService: CareerService) {
     this.careers = careerService.getCareers();
   }
 

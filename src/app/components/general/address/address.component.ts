@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { AddressEntity } from 'src/app/services/address/address/address.model';
 import { addressIcon, linkTypes } from '../../components.constants';
 import { ImageComp, LinkTypes } from '../../components.model';
@@ -7,7 +7,8 @@ import { openLink } from '../links.util';
 @Component({
   selector: 'app-address',
   templateUrl: './address.component.html',
-  styleUrls: ['./address.component.scss']
+  styleUrls: ['./address.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AddressComponent {
   @Input() address!: AddressEntity;

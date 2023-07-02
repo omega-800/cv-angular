@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
@@ -6,7 +6,8 @@ import * as assets from 'src/assets/fileStructure.json';
 @Component({
   selector: 'app-contentbox',
   templateUrl: './contentbox.component.html',
-  styleUrls: ['./contentbox.component.scss']
+  styleUrls: ['./contentbox.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContentboxComponent implements OnInit {
   @Input() title!: string;
@@ -23,7 +24,7 @@ export class ContentboxComponent implements OnInit {
   preview: ImageComp = { id: "", name: "", alt: "", path: "" };
   main: ImageComp = { id: "", name: "", alt: "", path: "" };
 
-  constructor(/*private storage:AngularFireStorage*/) {
+  constructor() {
   }
 
   ngOnInit() {
@@ -59,33 +60,5 @@ export class ContentboxComponent implements OnInit {
         }
       }
     }
-    /*
-    if(this.image.id == "firebase_link"){
-      if(this.image.path.endsWith("/")){
-        this.storage.ref('/'+this.image.path).listAll().subscribe({
-          next: (list:ListResult) => {
-            list.items.forEach((itemRef) => {
-              itemRef.getDownloadURL().then((url: string) => {
-                this.images.push({
-                  id:itemRef.fullPath,
-                  name:this.image.name,
-                  alt:this.image.alt,
-                  path:url
-                })
-              });
-            });
-          }, 
-          error: (e) => console.log(e),
-          complete: () => {
-            this.hasImage = true;
-            this.isCarousel = true;
-            this.imagePreview === undefined ? this.preview = this.images[0] : this.preview = this.imagePreview;
-            this.preview = this.images[0];
-            //console.log(this.images);
-          }
-        })
-      }
-    }
-    */
   }
 }

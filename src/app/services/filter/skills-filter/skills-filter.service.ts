@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
-import { SkillService } from '../../skills/skill/skill.service';
 import { SkillCategoryEntity, SkillSubCategoryEntity } from '../../skills/skill-category/skill-category.model';
-import { FilterCategoryEntity, FilterRangeEntity, FiltersEntity } from '../filter.model';
+import { FilterCategoryEntity, FilterRangeEntity } from '../filter.model';
 import { SkillEntity } from '../../skills/skill/skill.model';
-import { SkillCategoriesService } from '../../skills/skill-category/skill-category.service';
-import { ApplicationService } from '../../skills/application/application.service';
 import { ApplicationTypeEntity } from '../../skills/application/application.model';
 import { skillFilterProps } from './skills-filter.model';
 
@@ -12,24 +9,8 @@ import { skillFilterProps } from './skills-filter.model';
   providedIn: 'root'
 })
 export class SkillsFilterService {
-  categoryFilters: FilterCategoryEntity;
-  subcategoryFilters: FilterCategoryEntity;
-  typeFilters: FilterCategoryEntity;
-  hobbyFilters: FilterCategoryEntity;
-  applicationtypeFilters: FilterCategoryEntity;
-  skillFilters: FiltersEntity;
 
-  constructor(private skillService: SkillService, private skillCategoriesService: SkillCategoriesService, private applicationService: ApplicationService) {
-    this.categoryFilters = this.getCategoryFilters(this.skillCategoriesService.getSkillCategories());
-    this.subcategoryFilters = this.getSubCategoryFilters(this.skillCategoriesService.getSkillSubCategories());
-    this.applicationtypeFilters = this.getApplicationTypeFilters(this.applicationService.getApplicationTypes());
-    this.typeFilters = this.getTypeFilters(Object.entries(this.skillService.getSkillTypes()).map(([key, value]) => value));
-    this.hobbyFilters = this.getHobbyFilters();
-    this.skillFilters = {
-      id: "filter_skill",
-      name: "Skills",
-      categories: [this.categoryFilters, this.subcategoryFilters, this.typeFilters, this.hobbyFilters, this.applicationtypeFilters]
-    }
+  constructor() {
   }
 
   getSkillFiltersOfSkills(skills: SkillEntity[]): any {
@@ -79,10 +60,6 @@ export class SkillsFilterService {
       categories: filters,
       ranges: ranges
     }
-  }
-
-  getSkillFilters(): FiltersEntity {
-    return this.skillFilters;
   }
 
   getCategoryFilters(categories: SkillCategoryEntity[]): FilterCategoryEntity {
