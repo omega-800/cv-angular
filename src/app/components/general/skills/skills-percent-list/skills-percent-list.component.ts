@@ -3,7 +3,6 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { SkillCategoriesService } from 'src/app/services/skills/skill-category/skill-category.service';
 import { SkillSubCategoryEntity } from 'src/app/services/skills/skill-category/skill-category.model';
-import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 
 @Component({
   selector: 'app-skills-percent-list',
@@ -17,11 +16,7 @@ export class SkillsPercentListComponent {
   allSkills:SkillEntity[];
   allSkillsByType:{[key:string]:SkillEntity[]} = {};
 
-  constructor(private skillService:SkillService, private skillCategoriesService:SkillCategoriesService, private skillsFilterService:SkillsFilterService,) { 
-    /*this.skillService.getSkillTypes().forEach(type => {
-      this.allSkills[type] = this.skillService.getSkillsByType(type);
-    });
-    this.types = this.skillService.getSkillTypes();*/
+  constructor(private skillService:SkillService, private skillCategoriesService:SkillCategoriesService) { 
     this.types = this.skillService.getSkillTypes();
     this.allSkillSubCategories = this.skillCategoriesService.getSkillSubCategories();
     this.allSkills = this.skillService.getSkills();

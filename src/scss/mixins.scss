@@ -21,10 +21,7 @@
     border: none;
     border-top: $defborderthin;
     border-bottom: $defborderthin;
-    font: {
-        family: $mono;
-        size: $elem-size;
-    }
+    font-family: $mono;
 }
 
 @mixin pill {

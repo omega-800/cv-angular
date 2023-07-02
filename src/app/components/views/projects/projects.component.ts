@@ -17,8 +17,7 @@ import { ProjectFilterService } from 'src/app/services/filter/project-filter/pro
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
   projects: ProjectEntity[];

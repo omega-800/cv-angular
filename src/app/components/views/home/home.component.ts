@@ -10,8 +10,7 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
   me: PersonEntity = this.personService.getPersonByName("Georgiy");

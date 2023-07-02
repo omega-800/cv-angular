@@ -10,8 +10,7 @@ import { LinkTypes } from '../../components.model';
 @Component({
   selector: 'app-career',
   templateUrl: './career.component.html',
-  styleUrls: ['./career.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./career.component.scss']
 })
 export class CareerComponent {
   careers: CareerEntity[];
