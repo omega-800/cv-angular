@@ -4,11 +4,11 @@
     <app-filter [filters]="projectsFilter" filterName="Filtern nach Projekteigenschaft" (filterEmitter)="filterProjects($event)"></app-filter>
     <app-sort [fields]="sortFields" (selectedEmitter)="sortProjectsBy($event)"></app-sort>
 </div>
-
+<!-- [subTitle]="project.date | date" -->
 <app-contentbox *ngFor="let project of projects | projectsSort:sortValue:sortAsc | projectsFilter:selectedSkillFilter:selectedProjectFilter"
     [image]='{id:"img",alt:"",name:"",path:project.image}'
     [title]="project.name" 
-    [subTitle]="project.date | date" 
+    [subTitle]="'CHANGEINPOST'" 
     [description]="project.description"
     [link]="project.url">
     <div *ngIf="project.github || project.url" class="bot links">

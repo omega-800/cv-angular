@@ -75,11 +75,17 @@ $sans: WorkSans, Helvetica, sans-serif;
 $trans-cb: cubic-bezier(0.46, 0, 0.37, 0.82) 0.3s;
 
 @font-face {
-    font-family: RedHatMono;
+    font: {
+        family: RedHatMono;
+        display: swap;
+    }
     src: url(../assets/fonts/Red_Hat_Mono/static/RedHatMono-Medium.ttf);
 }
 
 @font-face {
-    font-family: WorkSans;
+    font: {
+        family: WorkSans;
+        display: swap;
+    }
     src: url(../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
 }

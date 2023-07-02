@@ -1,2 +1,2 @@
-<div class="img-bg"><div [ngStyle]="{'background-image': 'url(' + image.path + ')'}"></div></div>
+<div class="img-bg"><div [ngStyle]="loaded ? {'background-image': 'url(' + image.path + ')'} : {}"></div></div>
 <img src="{{image.path}}" alt="{{image.alt}}" loading="lazy">

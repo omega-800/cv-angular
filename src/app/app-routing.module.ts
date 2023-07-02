@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/views/home/home.component';
-import { CareerComponent } from './components/views/career/career.component';
-import { PageNotFoundComponent } from './components/views/page-not-found/page-not-found.component';
-import { ProjectsComponent } from './components/views/projects/projects.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'career', component: CareerComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: '**', component: PageNotFoundComponent },
+  {
+    path: '',
+    loadChildren: () => import('./components/views/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./components/views/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'career',
+    loadChildren: () => import('./components/views/career/career.module').then(m => m.CareerModule)
+  },
+  {
+    path: 'projects',
+    loadChildren: () => import('./components/views/projects/projects.module').then(m => m.ProjectsModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./components/views/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)
+  },
 ];
 
 @NgModule({

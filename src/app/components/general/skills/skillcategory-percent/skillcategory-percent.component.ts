@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './skillcategory-percent.component.html',
   styleUrls: ['./skillcategory-percent.component.scss']
 })
-export class SkillcategoryPercentComponent {
+export class SkillCategoryPercentComponent {
 
 }
