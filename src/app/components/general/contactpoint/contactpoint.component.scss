@@ -1,10 +1,10 @@
-@import 'src/scss/mixins.scss';
+@import "src/scss/mixins.scss";
 
 :host {
     @include flex-e2e;
-    @include slimpill;
-    width:100%;
-    & .contactButtons{
+    border-top: $defborderthin;
+    width: 100%;
+    & .contactButtons {
         @include flex-e2e;
     }
 }

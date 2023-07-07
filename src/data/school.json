@@ -1,10 +1,10 @@
 [
  {
-  "school_id": "c2735f4d-db2a-40d1-ac0c-e85e5939e405",
+  "school_id": "af1180fe-e4f0-426a-b2ca-ca27e9baab2f",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
-  "description": "",
+  "description": "Die Primarschule Probstei liegt in Zürich-Schwamendingen, nahe des Zentrums und gerade unterhalb des Zürichberg-Waldes.",
   "description_e": "",
   "description_r": "",
   "name": "Probstei",
@@ -13,14 +13,14 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "",
   "image": "",
-  "address_id": "cd2b357b-fd48-4add-a160-37a729b090d5"
+  "address_id": "ebaffb52-2ee6-4f98-93d1-1a4614133932"
  },
  {
-  "school_id": "b4d98593-a3e2-4c99-8bd6-f17eb9d6d3c4",
+  "school_id": "fe77077c-a246-4c33-90f4-29b65d0a882c",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
-  "description": "",
+  "description": "Die Kantonsschule Hohe Promenade (KSHP) ist eine öffentliche Mittelschule in Zürich mit den Maturitätsprofilen alt- und neusprachlich.",
   "description_e": "",
   "description_r": "",
   "name": "Hohe Promenade",
@@ -29,14 +29,14 @@
   "url": "https://www.kshp.ch/",
   "logo": "",
   "image": "",
-  "address_id": "6a449cef-4882-4fbc-9e58-0c96d7044ba6"
+  "address_id": "33307690-3510-4c42-a6a7-4c6cd0316af5"
  },
  {
-  "school_id": "d04820ce-60f4-4883-a227-d98d3fdc6389",
+  "school_id": "bd037cc6-4539-4581-958f-abd30ed59428",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
-  "description": "",
+  "description": "Die Schule Herzogenmühle ist eine Sekundarschule mit zwei Abteilungen A und B und jeweils drei Anforderungsstufen in den Fächern Mathematik und Französisch.",
   "description_e": "",
   "description_r": "",
   "name": "Herzogenmühle",
@@ -45,14 +45,14 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "",
   "image": "",
-  "address_id": "be0f68fa-f90a-44c1-b01b-b167a733928e"
+  "address_id": "94737ae0-5ff2-4ec0-828e-dcefbe9e680e"
  },
  {
-  "school_id": "1ddd99b4-cd33-48e6-9fdb-0b2c4b7376a3",
+  "school_id": "30008ea9-763e-4575-b42b-22513efd8f44",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
-  "description": "",
+  "description": "Die Informatikmittelschule (IMS) in Hottingen vermittelt während drei Jahren eine berufspraktische Informatikausbildung kombiniert mit einem schulischen Schwerpunkt in Wirtschaft und Recht.",
   "description_e": "",
   "description_r": "",
   "name": "Hottingen",
@@ -61,14 +61,14 @@
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
   "logo": "",
   "image": "",
-  "address_id": "663d0987-a741-4b59-870a-06b11e6001ab"
+  "address_id": "cb963708-75d5-48e5-be22-1237f9789da0"
  },
  {
-  "school_id": "2a3085fb-2694-48b5-a047-c93656556b68",
+  "school_id": "c3a8f26b-56a4-417a-8d28-585dac186bf1",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
-  "description": "",
+  "description": "Das Bildungszentrum Zürichsee (BZZ) ist ein Berufs- und Weiterbildungszentrum im Schweizer Kanton Zürich mit Standorten in Horgen und Stäfa.",
   "description_e": "",
   "description_r": "",
   "name": "Berufsbildungszentrum Zürichsee",
@@ -77,6 +77,6 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "",
   "image": "",
-  "address_id": "eac79243-ba0d-4c57-bb77-ef077a0e7ddf"
+  "address_id": "466e53a6-c972-45e8-a95a-5138131bc5c6"
  }
 ]

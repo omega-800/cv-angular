@@ -1,37 +1,37 @@
 [
  {
-  "personcategory_id": "3577641b-ba87-4e23-a030-3d062bd9e800",
+  "personcategory_id": "748efa62-c49d-4af4-bd06-a9a59030d7bb",
   "name": "me",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Ich",
   "description_e": "",
   "description_r": ""
  },
  {
-  "personcategory_id": "32f2d850-23d6-48de-91fa-722174044b6a",
+  "personcategory_id": "110a8a99-2a1c-4a09-a7f2-be48483452e2",
   "name": "familie",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Familie",
   "description_e": "",
   "description_r": ""
  },
  {
-  "personcategory_id": "f55e537a-e701-4f00-acdb-cf845f89b4f8",
+  "personcategory_id": "89a91f60-35a4-4bed-97a9-66881d13f5e0",
   "name": "berufsbildner",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Berufsbildner*in",
   "description_e": "",
   "description_r": ""
  },
  {
-  "personcategory_id": "26688a6e-bf1f-432f-a00f-53e494a52f56",
+  "personcategory_id": "b287aac1-4eb8-48e1-9c98-67e10cc16e6f",
   "name": "lehrer",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Lehrer*in",
   "description_e": "",
   "description_r": ""
  }

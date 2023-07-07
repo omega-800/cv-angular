@@ -10,7 +10,7 @@
         width: calc($wrapper-width / 1.2);
     }
     @include desktop-screen {
-        width: calc($wrapper-width / 1.8);
+        width: calc($wrapper-width / 1.7);
     }
 }
 
@@ -20,7 +20,7 @@
     background-color: $cool;
     border: none;
     border-top: $defborderthin;
-    border-bottom: $defborderthin;
+    //border-bottom: $defborderthin;
     font-family: $mono;
 }
 

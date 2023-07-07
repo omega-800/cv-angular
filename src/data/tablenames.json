@@ -1,21 +1,9 @@
 [
  {
-  "table_name": "project"
+  "table_name": "country"
  },
  {
-  "table_name": "project_skill"
- },
- {
-  "table_name": "project_author"
- },
- {
-  "table_name": "project_client"
- },
- {
-  "table_name": "skillcategory"
- },
- {
-  "table_name": "skillsubcategory"
+  "table_name": "address"
  },
  {
   "table_name": "applicationtype"
@@ -24,61 +12,37 @@
   "table_name": "application"
  },
  {
-  "table_name": "skill"
- },
- {
-  "table_name": "language"
- },
- {
-  "table_name": "knowledge"
- },
- {
-  "table_name": "activity"
- },
- {
-  "table_name": "ability"
- },
- {
-  "table_name": "skill_skillsubcategory"
+  "table_name": "application_operatingsystem"
  },
  {
   "table_name": "operatingsystem"
  },
  {
-  "table_name": "application_operatingsystem"
- },
- {
-  "table_name": "country_language"
- },
- {
-  "table_name": "country"
- },
- {
-  "table_name": "address"
- },
- {
-  "table_name": "workplace"
- },
- {
-  "table_name": "contactpoint"
- },
- {
   "table_name": "school"
- },
- {
-  "table_name": "workplace_contactpoint"
- },
- {
-  "table_name": "school_contactpoint"
  },
  {
   "table_name": "career"
  },
  {
+  "table_name": "workplace"
+ },
+ {
   "table_name": "career_skill"
  },
  {
+  "table_name": "skill"
+ },
+ {
+  "table_name": "country_language"
+ },
+ {
+  "table_name": "language"
+ },
+ {
   "table_name": "person"
+ },
+ {
+  "table_name": "contactpoint"
  },
  {
   "table_name": "personcategory"
@@ -87,6 +51,42 @@
   "table_name": "person_country"
  },
  {
+  "table_name": "project"
+ },
+ {
+  "table_name": "project_author"
+ },
+ {
   "table_name": "client"
+ },
+ {
+  "table_name": "project_client"
+ },
+ {
+  "table_name": "project_skill"
+ },
+ {
+  "table_name": "school_contactpoint"
+ },
+ {
+  "table_name": "ability"
+ },
+ {
+  "table_name": "activity"
+ },
+ {
+  "table_name": "knowledge"
+ },
+ {
+  "table_name": "skill_skillsubcategory"
+ },
+ {
+  "table_name": "skillsubcategory"
+ },
+ {
+  "table_name": "skillcategory"
+ },
+ {
+  "table_name": "workplace_contactpoint"
  }
 ]

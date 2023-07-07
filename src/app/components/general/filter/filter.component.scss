@@ -4,6 +4,7 @@
 
 :host {
     & .filterComp {
+        @include slimpill;
         & .filterTitle {
             width: 100%;
             @include flex-e2e;
@@ -35,7 +36,7 @@
                             width: 100%;
                             z-index: 10;
                             border-left: $defborderthin;
-                            border-right: $defborderthin;
+                            //border-right: $defborderthin;
                             & > .tag {
                                 & .tagIcon {
                                     @include small-image;
