@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
-import { SkillCategoryEntity, SkillSubCategoryEntity } from '../../skills/skill-category/skill-category.model';
+import {
+  SkillCategoryEntity,
+  SkillSubCategoryEntity,
+} from '../../skills/skill-category/skill-category.model';
 import { FilterCategoryEntity, FilterRangeEntity } from '../filter.model';
 import { SkillEntity } from '../../skills/skill/skill.model';
 import { ApplicationTypeEntity } from '../../skills/application/application.model';
 import { skillFilterProps } from './skills-filter.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SkillsFilterService {
-
-  constructor() {
-  }
+  constructor() {}
 
   getSkillFiltersOfSkills(skills: SkillEntity[]): any {
     let subCategories: SkillSubCategoryEntity[] = [];
@@ -23,18 +24,32 @@ export class SkillsFilterService {
     let filters: FilterCategoryEntity[] = [];
     let ranges: FilterRangeEntity[] = [];
 
-    skills.forEach(skill => {
-      skill.skillsubcategories.forEach(subCat => {
-        if (!subCategories.some(elem => elem.skillsubcategory_id == subCat.skillsubcategory_id)) {
+    skills.forEach((skill) => {
+      skill.skillsubcategories.forEach((subCat) => {
+        if (
+          !subCategories.some(
+            (elem) => elem.skillsubcategory_id == subCat.skillsubcategory_id
+          )
+        ) {
           subCategories.push(subCat);
         }
-      })
-      skill.skillcategories.forEach(cat => {
-        if (!categories.some(elem => elem.skillcategory_id == cat.skillcategory_id)) {
+      });
+      skill.skillcategories.forEach((cat) => {
+        if (
+          !categories.some(
+            (elem) => elem.skillcategory_id == cat.skillcategory_id
+          )
+        ) {
           categories.push(cat);
         }
-      })
-      if (skill.applicationtype !== undefined && !appTypes.some(elem => elem.applicationtype_id == skill.applicationtype?.applicationtype_id)) {
+      });
+      if (
+        skill.applicationtype !== undefined &&
+        !appTypes.some(
+          (elem) =>
+            elem.applicationtype_id == skill.applicationtype?.applicationtype_id
+        )
+      ) {
         appTypes.push(skill.applicationtype);
       }
       if (!types.includes(skill.type)) {
@@ -46,94 +61,134 @@ export class SkillsFilterService {
       if (!percent.includes(skill.knowledgepercent)) {
         percent.push(skill.knowledgepercent);
       }
-    })
-    if (categories.length > 1) { filters.push(this.getCategoryFilters(categories)) }
-    if (subCategories.length > 1) { filters.push(this.getSubCategoryFilters(subCategories)) }
-    if (types.length > 1) { filters.push(this.getTypeFilters(types)) }
-    if (appTypes.length > 1) { filters.push(this.getApplicationTypeFilters(appTypes)) }
-    if (percent.length > 2) { ranges.push(this.getKnowledgeRange(percent, 5)) }
-    if (hobbies.includes(false) && hobbies.includes(true)) { filters.push(this.getHobbyFilters()) }
+    });
+    if (categories.length > 1) {
+      filters.push(this.getCategoryFilters(categories));
+    }
+    if (subCategories.length > 1) {
+      filters.push(this.getSubCategoryFilters(subCategories));
+    }
+    if (types.length > 1) {
+      filters.push(this.getTypeFilters(types));
+    }
+    if (appTypes.length > 1) {
+      filters.push(this.getApplicationTypeFilters(appTypes));
+    }
+    if (percent.length > 2) {
+      ranges.push(this.getKnowledgeRange(percent, 5));
+    }
+    if (hobbies.includes(false) && hobbies.includes(true)) {
+      filters.push(this.getHobbyFilters());
+    }
 
     return {
-      id: "filter_skill",
-      name: "Skills",
+      id: 'filter_skill',
+      name: 'Skills',
       categories: filters,
-      ranges: ranges
-    }
+      ranges: ranges,
+    };
   }
 
   getCategoryFilters(categories: SkillCategoryEntity[]): FilterCategoryEntity {
     return {
       id: skillFilterProps.category,
-      name: "Kategorie",
+      name: 'Kategorie',
       selected: true,
-      tags: categories.map(skillCat => {
-        return { id: skillFilterProps.category + "_" + skillCat.skillcategory_id, name: skillCat.name, selected: false, value: skillCat.skillcategory_id, image: skillCat.image }
-      })
+      tags: categories.map((skillCat) => {
+        return {
+          id: skillFilterProps.category + '_' + skillCat.skillcategory_id,
+          name: skillCat.name,
+          selected: false,
+          value: skillCat.skillcategory_id,
+          image: skillCat.image,
+        };
+      }),
     };
   }
 
-  getSubCategoryFilters(subCategories: SkillSubCategoryEntity[]): FilterCategoryEntity {
+  getSubCategoryFilters(
+    subCategories: SkillSubCategoryEntity[]
+  ): FilterCategoryEntity {
     return {
       id: skillFilterProps.subcategory,
-      name: "Unterkategorie",
+      name: 'Unterkategorie',
       selected: true,
-      tags: subCategories.map(skillSubCat => {
-        return { id: skillFilterProps.subcategory + "_" + skillSubCat.skillsubcategory_id, name: skillSubCat.name, selected: false, value: skillSubCat.skillsubcategory_id }
-      })
+      tags: subCategories.map((skillSubCat) => {
+        return {
+          id:
+            skillFilterProps.subcategory +
+            '_' +
+            skillSubCat.skillsubcategory_id,
+          name: skillSubCat.name,
+          selected: false,
+          value: skillSubCat.skillsubcategory_id,
+        };
+      }),
     };
   }
 
-  getApplicationTypeFilters(appTypes: ApplicationTypeEntity[]): FilterCategoryEntity {
+  getApplicationTypeFilters(
+    appTypes: ApplicationTypeEntity[]
+  ): FilterCategoryEntity {
     return {
       id: skillFilterProps.apptype,
-      name: "Applikationstyp",
+      name: 'Applikationstyp',
       selected: true,
-      tags: appTypes.map(appType => {
-        return { id: skillFilterProps.apptype + "_" + appType.applicationtype_id, name: appType.name, selected: false, value: appType.applicationtype_id }
-      })
+      tags: appTypes.map((appType) => {
+        return {
+          id: skillFilterProps.apptype + '_' + appType.applicationtype_id,
+          name: appType.name,
+          selected: false,
+          value: appType.applicationtype_id,
+        };
+      }),
     };
   }
 
   getTypeFilters(types: string[]): FilterCategoryEntity {
     return {
       id: skillFilterProps.type,
-      name: "Typ",
+      name: 'Typ',
       selected: true,
-      tags: types.map(type => {
-        return { id: skillFilterProps.type + "_" + type, name: type, selected: false, value: type }
-      })
+      tags: types.map((type) => {
+        return {
+          id: skillFilterProps.type + '_' + type,
+          name: type,
+          selected: false,
+          value: type,
+        };
+      }),
     };
   }
 
   getHobbyFilters(): FilterCategoryEntity {
     return {
       id: skillFilterProps.hobby,
-      name: "Hobby",
+      name: 'Hobby',
       selected: true,
       tags: [
         {
-          id: skillFilterProps.hobby + "_true",
-          name: "Freizeitbeschäftigung",
+          id: skillFilterProps.hobby + '_true',
+          name: 'Freizeitbeschäftigung',
           selected: false,
-          value: true
+          value: true,
         },
         {
-          id: skillFilterProps.hobby + "_false",
-          name: "Keine Freizeitbeschäftigung",
+          id: skillFilterProps.hobby + '_false',
+          name: 'Keine Freizeitbeschäftigung',
           selected: false,
-          value: false
-        }
-      ]
-    }
+          value: false,
+        },
+      ],
+    };
   }
 
   getKnowledgeRange(items: number[], step: number): FilterRangeEntity {
     return {
       id: skillFilterProps.knowledge,
-      name: "Prozent",
+      name: 'Prozent',
       values: items.sort((a, b) => a - b),
-      step: step
+      step: step,
     };
   }
 }

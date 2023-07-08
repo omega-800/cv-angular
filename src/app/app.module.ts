@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { environment } from 'src/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HeaderComponent } from './components/general/header/header.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -16,5 +17,6 @@ import { HeaderComponent } from './components/general/header/header.component';
     BrowserModule,
   ],
   bootstrap: [AppComponent],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })
 export class AppModule {}

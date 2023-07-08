@@ -24,7 +24,7 @@
       border-bottom-left-radius: $elem-size * 2;
       & .skill-cat-img {
         position: absolute;
-        top: $elem-padding;
+        top: calc(50% - $elem-padding);
         left: $elem-padding;
         &:nth-child(2) {
           left: $elem-padding + $elem-size;
@@ -32,7 +32,9 @@
       }
     }
     & .skill-title-container {
-      margin-left: $elem-size * 3;
+      &.margin-left {
+        margin-left: $elem-size * 3;
+      }
       & > * {
         display: inline-block;
       }

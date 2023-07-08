@@ -68,7 +68,7 @@ export class SkillService {
         icon: {
           id: 'icon_' + skill.skill_id,
           name: skill.identifier + ' Icon',
-          path: "assets/" + app.thumbnail,
+          path: 'assets/' + app.thumbnail,
           alt: app.name + ' Icon',
         },
       };
@@ -89,7 +89,7 @@ export class SkillService {
         icon: {
           id: 'icon_' + skill.skill_id,
           name: skill.identifier + ' Icon',
-          path: "assets/" + language.thumbnail,
+          path: 'assets/' + language.thumbnail,
           alt: language.name + ' Icon',
         },
       };
@@ -110,7 +110,7 @@ export class SkillService {
         icon: {
           id: 'icon_' + skill.skill_id,
           name: skill.identifier + ' Icon',
-          path: "assets/" + knowledge.thumbnail,
+          path: 'assets/' + knowledge.thumbnail,
           alt: knowledge.name + ' Icon',
         },
       };
@@ -131,7 +131,7 @@ export class SkillService {
         icon: {
           id: 'icon_' + skill.skill_id,
           name: skill.identifier + ' Icon',
-          path: "assets/" + activity.thumbnail,
+          path: 'assets/' + activity.thumbnail,
           alt: activity.name + ' Icon',
         },
       };
@@ -152,7 +152,7 @@ export class SkillService {
         icon: {
           id: 'icon_' + skill.skill_id,
           name: skill.identifier + ' Icon',
-          path: "assets/" + ability.thumbnail,
+          path: 'assets/' + ability.thumbnail,
           alt: ability.name + ' Icon',
         },
       };
@@ -171,14 +171,24 @@ export class SkillService {
       description: '',
       description_e: '',
       description_r: '',
-      thumbnail: '',
-      image: '',
       url: '',
       icon: {
         id: 'no_icon',
         name: 'No Icon',
         path: '',
         alt: 'No Icon',
+      },
+      image: {
+        id: 'no_image',
+        name: 'No image',
+        path: '',
+        alt: 'No image',
+      },
+      thumbnail: {
+        id: 'no_thumbnail',
+        name: 'No thumbnail',
+        path: '',
+        alt: 'No thumbnail',
       },
     };
   }

@@ -1,6 +1,7 @@
-import { AddressEntity } from "../../address/address/address.model";
-import { ContactEntity } from "../../contact/contact.model";
-import { ContentEntity } from "../../entities.model";
+import { ImageComp } from 'src/app/components/components.model';
+import { AddressEntity } from '../../address/address/address.model';
+import { ContactEntity } from '../../contact/contact.model';
+import { ContentEntity } from '../../entities.model';
 
 export interface WorkplaceEntity extends ContentEntity {
   workplace_id: string;

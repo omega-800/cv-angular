@@ -2,7 +2,7 @@
   [name]="skillText"
   [icon]="skill.icon"
   [description]="skill.description"
-  [direction]="direction.RIGHT"
+  [direction]="direction.TOP"
   [link]="
     skill.url
       ? {
@@ -14,7 +14,9 @@
       : undefined
   "
 >
-  <h6>Kategorie{{ skill.skillcategories.length > 1 ? "n" : "" }}</h6>
+  <p class="cat-title">
+    Kategorie{{ skill.skillcategories.length > 1 ? "n" : "" }}
+  </p>
   <div *ngFor="let category of skill.skillcategories" class="cat-container">
     <img
       class="skill-cat-img"
@@ -41,13 +43,19 @@
       loading="lazy"
     />
   </div>
-  <div class="skill-title-container">
+  <div
+    [class]="
+      showPercent
+        ? 'skill-title-container margin-left'
+        : 'skill-title-container'
+    "
+  >
     <img
       class="skill-icon"
       src="{{ skill.icon.path }}"
       alt="{{ skill.icon.alt }}"
       loading="lazy"
     />
-    <h4 class="skill-title">{{ skillText }}</h4>
+    <p class="skill-title">{{ skillText }}</p>
   </div>
 </div>

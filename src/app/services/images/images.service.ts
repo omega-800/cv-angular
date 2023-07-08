@@ -3,32 +3,32 @@ import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { ListResult } from '@angular/fire/compat/storage/interfaces';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ImagesService {
-
-  constructor(private storage: AngularFireStorage) {
-
-  }
+  constructor(private storage: AngularFireStorage) {}
 
   getImageURLs(path: string): string[] {
     let paths: string[] = [];
 
-    if (path.endsWith("/")) {
-      this.storage.ref('/' + path).listAll().subscribe({
-        next: (list: ListResult) => {
-          list.items.forEach((itemRef) => {
-            itemRef.getDownloadURL().then((url: string) => {
-              //console.log(url);
-              paths.push(url)
+    if (path.endsWith('/')) {
+      this.storage
+        .ref('/' + path)
+        .listAll()
+        .subscribe({
+          next: (list: ListResult) => {
+            list.items.forEach((itemRef) => {
+              itemRef.getDownloadURL().then((url: string) => {
+                //console.log(url);
+                paths.push(url);
+              });
             });
-          });
-        },
-        error: (e) => console.log(e),
-        complete: () => {
-          //console.log(paths);
-        }
-      })
+          },
+          error: (e) => console.log(e),
+          complete: () => {
+            //console.log(paths);
+          },
+        });
     }
 
     return paths;

@@ -1,9 +1,31 @@
 <h1>Home</h1>
-<app-contentbox [image]="image" title="Welcome" description="Hallihallo. Ich heisse {{me.firstname}} {{me.lastname}} und bin {{me.birthdate | age}} alt">
-    <app-button [onClick]="myGithub" [type]="lt.GITHUB" name="Mein Github Profil"></app-button>
-    <app-button [onClick]="myLink" [type]="lt.URL" name="Meine Webseite"></app-button>
-    <app-button [onClick]="callMe" [type]="lt.PHONE" name="Meine Telefonnummer"></app-button>
-    <app-button [onClick]="mailMe" [type]="lt.MAIL" name="Meine E-Mail"></app-button>
+<app-contentbox
+  [image]="me.image"
+  title="Welcome"
+  description="Hallihallo. Ich heisse {{ me.firstname }} {{
+    me.lastname
+  }} und bin {{ me.birthdate | age }} alt"
+>
+  <app-button
+    [onClick]="myGithub"
+    [type]="lt.GITHUB"
+    name="Mein Github Profil"
+  ></app-button>
+  <app-button
+    [onClick]="myLink"
+    [type]="lt.URL"
+    name="Meine Webseite"
+  ></app-button>
+  <app-button
+    [onClick]="callMe"
+    [type]="lt.PHONE"
+    name="Meine Telefonnummer"
+  ></app-button>
+  <app-button
+    [onClick]="mailMe"
+    [type]="lt.MAIL"
+    name="Meine E-Mail"
+  ></app-button>
 </app-contentbox>
 <!-- app-skills-percent-list -->
 <app-skills-percent name="Meine Skills" [skills]="skills"></app-skills-percent>

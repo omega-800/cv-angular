@@ -10,39 +10,34 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  me: PersonEntity = this.personService.getPersonByName("Georgiy");
+  me: PersonEntity = this.personService.getPersonByName('Georgiy');
   lt: Readonly<LinkTypes>;
-  image: ImageComp;
   skills: SkillEntity[];
 
-  mailText: string = "";
+  mailText: string = '';
 
-  constructor(private personService: PersonService, private skillService: SkillService) {
+  constructor(
+    private personService: PersonService,
+    private skillService: SkillService
+  ) {
     this.skills = this.skillService.getSkills();
-    this.me = this.personService.getPersonByName("Georgiy");
+    this.me = this.personService.getPersonByName('Georgiy');
     this.lt = linkTypes;
-    this.image = {
-      id: "home_profilepic",
-      name: "profilePic",
-      path: `/assets/${this.me.image}`,
-      alt: "Profile picture"
-    }
   }
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   mailMe = () => {
     return contactMail(this.me.contact.email, this.me.gender, this.me.lastname);
-  }
+  };
   callMe = () => {
     return contactPhone(this.me.contact.phone);
-  }
+  };
   myLink = () => {
     return openLink(this.me.url);
-  }
+  };
   myGithub = () => {
     return openLink(this.me.github);
-  }
+  };
 }
