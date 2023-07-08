@@ -12,9 +12,7 @@ import { SkillCategoryPercentComponent } from '../components/general/skills/skil
 import { SkillsPercentListComponent } from '../components/general/skills/skills-percent-list/skills-percent-list.component';
 import { SkillsPercentComponent } from '../components/general/skills/skills-percent/skills-percent.component';
 import { SortComponent } from '../components/general/sort/sort.component';
-import { AgePipe } from '../pipes/age/age.pipe';
-import { ProjectsFilterPipe } from '../pipes/projects-filter/projects-filter.pipe';
-import { ProjectsSortPipe } from '../pipes/projects-sort/projects-sort.pipe';
+import { TooltipComponent } from '../components/general/tooltip/tooltip.component';
 import { SkillsFilterPipe } from '../pipes/skills-filter/skills-filter.pipe';
 import { SkillsSortPipe } from '../pipes/skills-sort/skills-sort.pipe';
 import { FormsModule } from '@angular/forms';
@@ -34,12 +32,10 @@ import { FormsModule } from '@angular/forms';
     SortComponent,
     ContentboxComponent,
     ButtonComponent,
-    SkillsPercentComponent
+    SkillsPercentComponent,
+    TooltipComponent,
   ],
-  imports: [
-    CommonModule,
-    FormsModule
-  ],
+  imports: [CommonModule, FormsModule],
   exports: [
     SkillItemComponent,
     SkillCategoryPercentComponent,
@@ -56,11 +52,9 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     SkillsPercentComponent,
     CommonModule,
-    FormsModule
+    FormsModule,
+    TooltipComponent,
   ],
-  providers: [
-    SkillsFilterPipe,
-    SkillsSortPipe
-  ]
+  providers: [SkillsFilterPipe, SkillsSortPipe],
 })
-export class SharedModule { }
+export class SharedModule {}

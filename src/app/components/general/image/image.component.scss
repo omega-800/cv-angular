@@ -15,7 +15,7 @@
         width: 100%;
         height: 100%;
         //border-radius: $elem-border-radius;
-        z-index: 0;
+        z-index: $below-bottom;
         & > div {
             width: 100%;
             height: 100%;
@@ -23,11 +23,11 @@
             background-position: center;
             filter: blur($elem-size);
             -webkit-filter: blur($elem-size);
-            z-index: 0;
+            z-index: $below-bottom;
         }
     }
     & img {
         @include main-image;
-        z-index: 1;
+        z-index: $bottom;
     }
 }

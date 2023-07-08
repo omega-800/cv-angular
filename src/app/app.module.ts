@@ -7,17 +7,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { HeaderComponent } from './components/general/header/header.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     AppRoutingModule,
     /*NgxsModule.forRoot([FilterState]),*/
     AngularFireModule.initializeApp(environment.firebase),
     /*AngularFireStorageModule,*/
-    BrowserModule
+    BrowserModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

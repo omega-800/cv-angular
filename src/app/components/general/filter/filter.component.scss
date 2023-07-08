@@ -34,7 +34,7 @@
                             @include flex-list;
                             background-color: $cool;
                             width: 100%;
-                            z-index: 10;
+                            z-index: $above-top;
                             border-left: $defborderthin;
                             //border-right: $defborderthin;
                             & > .tag {

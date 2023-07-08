@@ -74,6 +74,12 @@ $sans: WorkSans, Helvetica, sans-serif;
 
 $trans-cb: cubic-bezier(0.46, 0, 0.37, 0.82) 0.3s;
 
+$below-bottom: 0;
+$bottom: 1;
+$middle: 2;
+$top: 3;
+$above-top: 4;
+
 @font-face {
     font: {
         family: RedHatMono;

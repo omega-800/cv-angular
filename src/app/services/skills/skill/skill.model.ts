@@ -1,6 +1,10 @@
-import { ApplicationTypeEntity } from "../application/application.model";
-import { ContentEntity } from "src/app/services/entities.model";
-import { SkillCategoryEntity, SkillSubCategoryEntity } from "../skill-category/skill-category.model";
+import { ApplicationTypeEntity } from '../application/application.model';
+import { ContentEntity } from 'src/app/services/entities.model';
+import {
+  SkillCategoryEntity,
+  SkillSubCategoryEntity,
+} from '../skill-category/skill-category.model';
+import { ImageComp } from 'src/app/components/components.model';
 
 export interface SkillEntity extends ContentEntity {
   skill_id: string;
@@ -23,6 +27,7 @@ export interface SkillEntity extends ContentEntity {
   keywords_r?: string;
   version?: string;
   applicationtype?: ApplicationTypeEntity;
+  icon: ImageComp;
 }
 
 export interface SkillOnly {
@@ -42,9 +47,9 @@ export interface SkillOnly {
 }
 
 export const SkillTypes = {
-  application: "Applikation",
-  ability: "Skill",
-  activity: "Aktivität",
-  language: "Sprache",
-  knowledge: "Wissen"
+  application: 'Applikation',
+  ability: 'Skill',
+  activity: 'Aktivität',
+  language: 'Sprache',
+  knowledge: 'Wissen',
 } as const;

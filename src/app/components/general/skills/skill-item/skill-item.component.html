@@ -1,8 +1,53 @@
-<div [class]="showPercent ? 'percent-' + skill.knowledgepercent + ' skill-item' : 'skill-item'">
-  <div class="skill-cat-img-container">
-    <img class="skill-cat-img" *ngFor="let category of skill.skillcategories" src="{{category.image.path}}" alt="{{category.image.alt}}" loading="lazy" />
+<app-tooltip
+  [name]="skillText"
+  [icon]="skill.icon"
+  [description]="skill.description"
+  [direction]="direction.RIGHT"
+  [link]="
+    skill.url
+      ? {
+          id: 'link_for_' + skill.identifier,
+          name: 'Weiterführender Link',
+          type: lt.URL,
+          url: skill.url
+        }
+      : undefined
+  "
+>
+  <h6>Kategorie{{ skill.skillcategories.length > 1 ? "n" : "" }}</h6>
+  <div *ngFor="let category of skill.skillcategories" class="cat-container">
+    <img
+      class="skill-cat-img"
+      src="{{ category.image.path }}"
+      alt="{{ category.image.alt }}"
+      loading="lazy"
+    />
+    <p>{{ category.name }}</p>
   </div>
-  <p *ngIf="!skill.url">{{skillText}}</p>
-  <a *ngIf="skill.url" href="{{skill.url}}" target="_blank">{{skillText}}</a>
-  <img class="skill-icon" src="assets/{{skill.thumbnail}}" alt="{{skill.thumbnail}}" loading="lazy" />
+</app-tooltip>
+<div
+  [class]="
+    showPercent
+      ? 'percent-' + skill.knowledgepercent + ' skill-item'
+      : 'skill-item'
+  "
+>
+  <div *ngIf="showPercent" class="skill-cat-img-container">
+    <img
+      class="skill-cat-img"
+      *ngFor="let category of skill.skillcategories"
+      src="{{ category.image.path }}"
+      alt="{{ category.image.alt }}"
+      loading="lazy"
+    />
+  </div>
+  <div class="skill-title-container">
+    <img
+      class="skill-icon"
+      src="{{ skill.icon.path }}"
+      alt="{{ skill.icon.alt }}"
+      loading="lazy"
+    />
+    <h4 class="skill-title">{{ skillText }}</h4>
+  </div>
 </div>

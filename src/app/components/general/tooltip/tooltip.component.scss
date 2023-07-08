@@ -1,0 +1,61 @@
+@import "src/scss/mixins.scss";
+@import "src/scss/variables.scss";
+
+:host {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    & .tooltip {
+        background-color: $light2;
+        z-index: $above-top;
+        border-radius: $elem-size * 2;
+        padding: $elem-size;
+        position: absolute;
+        & .tooltip-icon {
+            @include small-image;
+        }
+        & .name-container,
+        .link-container {
+            width: 100%;
+            & * {
+                display: inline-block;
+            }
+        }
+        & .tooltip-content {
+            margin: $elem-padding 0;
+        }
+        & .link-container:hover {
+            cursor: pointer;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+        &.direction-top {
+            bottom: calc(100% + $elem-size);
+            left: calc(50% - 12.5vw);
+            width: 25vw;
+            &::after {
+                left: calc(50% - $elem-size);
+                top: 100%;
+                border-left: $elem-size solid transparent;
+                border-right: $elem-size solid transparent;
+                border-top: $elem-size solid $light2;
+            }
+        }
+        &.direction-right {
+            bottom: calc(50% - 12.5vw);
+            left: calc(100% + $elem-size);
+            height: 25vw;
+            &::after {
+                right: 100%;
+                top: calc(50% - $elem-size);
+                border-top: $elem-size solid transparent;
+                border-bottom: $elem-size solid transparent;
+                border-right: $elem-size solid $light2;
+            }
+        }
+    }
+}

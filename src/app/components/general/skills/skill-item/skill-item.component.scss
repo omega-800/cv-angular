@@ -1,43 +1,55 @@
 @import "src/scss/mixins.scss";
+@import "src/scss/variables.scss";
 
 :host {
   width: 100%;
+  position: relative;
+  & .skill-cat-img,
+  .skill-icon {
+    @include small-image;
+  }
   & .skill-item {
     @include flex-row-nojust;
     @include pill;
-    position:relative;
-    border-radius: $elem-size*2;
-    &:has(a) {
-      @include link;
-    }
-    & .skill-cat-img, .skill-icon {
-      @include small-image;
-    }
+    position: relative;
+    border-radius: $elem-size * 2;
     & .skill-cat-img-container {
-      position:absolute;
-      height:100%;
-      width:$elem-size*2;
+      position: absolute;
+      height: 100%;
+      width: $elem-size * 3;
       background-color: $light2;
-      top:0;
-      left:0;
-      border-top-left-radius: $elem-size*2;
-      border-bottom-left-radius: $elem-size*2;
-      & .skill-cat-img{
-        position: inherit;
-        top:$elem-padding;
-        left:$elem-padding;
+      top: 0;
+      left: 0;
+      border-top-left-radius: $elem-size * 2;
+      border-bottom-left-radius: $elem-size * 2;
+      & .skill-cat-img {
+        position: absolute;
+        top: $elem-padding;
+        left: $elem-padding;
+        &:nth-child(2) {
+          left: $elem-padding + $elem-size;
+        }
       }
     }
-    & > * {
-      display: inline-block;
-    }
-    & p,a{
-      margin-left:$elem-size*2;
+    & .skill-title-container {
+      margin-left: $elem-size * 3;
+      & > * {
+        display: inline-block;
+      }
     }
     @for $i from 1 through 20 {
       &.percent-#{$i * 5} {
-        width: $i * 5%;
+        width: 20% + ($i * 4%);
       }
     }
+  }
+  & app-tooltip {
+    display: none;
+    & .cat-container > * {
+      display: inline-block;
+    }
+  }
+  &:hover app-tooltip {
+    display: block;
   }
 }

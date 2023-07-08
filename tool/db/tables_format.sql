@@ -2,25 +2,45 @@
 -- Please log an issue at https://redmine.postgresql.org/projects/pgadmin4/issues/new if you find any bugs, including reproduction steps.
 BEGIN;
 
-
-DROP TABLE IF EXISTS public.address;
-DROP TABLE IF EXISTS public.application;
-DROP TABLE IF EXISTS public.application_operatingsystem;
-DROP TABLE IF EXISTS public.career;
-DROP TABLE IF EXISTS public.career_skill;
-DROP TABLE IF EXISTS public.country_language;
-DROP TABLE IF EXISTS public.person;
-DROP TABLE IF EXISTS public.person_country;
-DROP TABLE IF EXISTS public.project;
-DROP TABLE IF EXISTS public.project_author;
-DROP TABLE IF EXISTS public.project_client;
-DROP TABLE IF EXISTS public.project_skill;
-DROP TABLE IF EXISTS public.school;
-DROP TABLE IF EXISTS public.school_contactpoint;
-DROP TABLE IF EXISTS public.skill;
-DROP TABLE IF EXISTS public.skillsubcategory;
-DROP TABLE IF EXISTS public.workplace;
-DROP TABLE IF EXISTS public.workplace_contactpoint;
+DROP TABLE IF EXISTS career CASCADE;
+DROP TABLE IF EXISTS career_skill CASCADE;
+DROP TABLE IF EXISTS project_skill CASCADE;
+DROP TABLE IF EXISTS project_author CASCADE;
+DROP TABLE IF EXISTS skill CASCADE;
+DROP TABLE IF EXISTS skillCategory CASCADE;
+DROP TABLE IF EXISTS skillSubCategory CASCADE;
+DROP TABLE IF EXISTS knowledge CASCADE;
+DROP TABLE IF EXISTS activity CASCADE;
+DROP TABLE IF EXISTS ability CASCADE;
+DROP TABLE IF EXISTS operatingSystem CASCADE;
+DROP TABLE IF EXISTS applicationType CASCADE;
+DROP TABLE IF EXISTS applicationCategory CASCADE;
+DROP TABLE IF EXISTS application CASCADE;
+DROP TABLE IF EXISTS application_operatingSystem CASCADE;
+DROP TABLE IF EXISTS project CASCADE;
+DROP TABLE IF EXISTS hobby_hobbyCategory CASCADE;
+DROP TABLE IF EXISTS hobby CASCADE;
+DROP TABLE IF EXISTS hobbyCategory CASCADE;
+DROP TABLE IF EXISTS person_country CASCADE;
+DROP TABLE IF EXISTS person CASCADE;
+DROP TABLE IF EXISTS personCategory CASCADE;
+DROP TABLE IF EXISTS organization CASCADE;
+DROP TABLE IF EXISTS school_contactPoint CASCADE;
+DROP TABLE IF EXISTS school CASCADE;
+DROP TABLE IF EXISTS workplace_contactPoint CASCADE;
+DROP TABLE IF EXISTS workplace CASCADE;
+DROP TABLE IF EXISTS contactPoint CASCADE;
+DROP TABLE IF EXISTS address CASCADE;
+DROP TABLE IF EXISTS country_language CASCADE;
+DROP TABLE IF EXISTS country CASCADE;
+DROP TABLE IF EXISTS language CASCADE;
+DROP TABLE IF EXISTS category CASCADE;
+DROP TABLE IF EXISTS skill_skillSubCategory CASCADE;
+DROP TABLE IF EXISTS applicationSubCategory CASCADE;
+DROP TABLE IF EXISTS projectCategory CASCADE;
+DROP TABLE IF EXISTS project_projectCategory CASCADE;
+DROP TABLE IF EXISTS client CASCADE;
+DROP TABLE IF EXISTS project_client CASCADE;
 
 CREATE TABLE IF NOT EXISTS public.ability
 (
