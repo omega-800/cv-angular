@@ -52,6 +52,7 @@
         [onClick]="openClient(author.id)"
         [type]="lt.PERSON"
         [name]="author.name"
+        [image]="author.image ? author.image : undefined"
         ><p>{{ author.name }}</p></app-button
       >
     </div>

@@ -1,4 +1,11 @@
 <div class="filterComp">
+  <div class="filterSelected">
+    <div *ngFor="let category of selectedFilter" class="selectedItem">
+      <div *ngFor="let item of category.value" class="selectedItem">
+        {{ item }}
+      </div>
+    </div>
+  </div>
   <div class="filterTitle">
     <div
       class="showFilter"

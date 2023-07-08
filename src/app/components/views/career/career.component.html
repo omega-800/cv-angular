@@ -4,13 +4,13 @@
     *ngIf="career.type === ct.SCHOOL ? career.school : career.workplace as item"
   >
     <app-contentbox
-      [image]="{
+      [imagePreview]="{
         id: item.name,
         name: item.name,
         path: career.type.logo.path,
         alt: career.type.name
       }"
-      [imagePreview]="item.thumbnail"
+      [image]="item.thumbnail"
       title="{{ item.name }}"
       subTitle="{{ career.yearfrom }} - {{ career.yearto }}"
       description="{{ career.description }}"

@@ -65,12 +65,7 @@ export class SkillService {
         ...app,
         id: 'skill_' + skill.skill_id,
         type: SkillTypes.application,
-        icon: {
-          id: 'icon_' + skill.skill_id,
-          name: skill.identifier + ' Icon',
-          path: 'assets/' + app.thumbnail,
-          alt: app.name + ' Icon',
-        },
+        icon: app.thumbnail,
       };
     }
     if (skill.language_id !== '') {
@@ -86,12 +81,7 @@ export class SkillService {
         ...language,
         id: 'skill_' + skill.skill_id,
         type: SkillTypes.language,
-        icon: {
-          id: 'icon_' + skill.skill_id,
-          name: skill.identifier + ' Icon',
-          path: 'assets/' + language.thumbnail,
-          alt: language.name + ' Icon',
-        },
+        icon: language.thumbnail,
       };
     }
     if (skill.knowledge_id !== '') {
@@ -107,12 +97,7 @@ export class SkillService {
         ...knowledge,
         id: 'skill_' + skill.skill_id,
         type: SkillTypes.knowledge,
-        icon: {
-          id: 'icon_' + skill.skill_id,
-          name: skill.identifier + ' Icon',
-          path: 'assets/' + knowledge.thumbnail,
-          alt: knowledge.name + ' Icon',
-        },
+        icon: knowledge.thumbnail,
       };
     }
     if (skill.activity_id !== '') {
@@ -128,12 +113,7 @@ export class SkillService {
         ...activity,
         id: 'skill_' + skill.skill_id,
         type: SkillTypes.activity,
-        icon: {
-          id: 'icon_' + skill.skill_id,
-          name: skill.identifier + ' Icon',
-          path: 'assets/' + activity.thumbnail,
-          alt: activity.name + ' Icon',
-        },
+        icon: activity.thumbnail,
       };
     }
     if (skill.ability_id !== '') {
@@ -149,12 +129,7 @@ export class SkillService {
         ...ability,
         id: 'skill_' + skill.skill_id,
         type: SkillTypes.ability,
-        icon: {
-          id: 'icon_' + skill.skill_id,
-          name: skill.identifier + ' Icon',
-          path: 'assets/' + ability.thumbnail,
-          alt: ability.name + ' Icon',
-        },
+        icon: ability.thumbnail,
       };
     }
     return {

@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "7a418b02-c46b-4fba-af89-e2f6bd2c6cbc",
+  "school_id": "095c4768-f992-4157-9776-f894f07cb666",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -11,12 +11,12 @@
   "name_e": "",
   "name_r": "",
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
-  "logo": "",
+  "logo": "assets/content/career/probstei.svg",
   "image": "",
-  "address_id": "2957cc06-b1e3-443e-be36-7f1934cde07f"
+  "address_id": "99aeab1d-d9cd-4559-9b39-d5adc3505a46"
  },
  {
-  "school_id": "9d9167b4-da4b-4d0b-abd6-4658bc55b6fb",
+  "school_id": "52f95762-eaa8-4fa3-946d-ec5055b6d14a",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
@@ -27,12 +27,12 @@
   "name_e": "",
   "name_r": "",
   "url": "https://www.kshp.ch/",
-  "logo": "",
+  "logo": "assets/content/career/hohepromenade.svg",
   "image": "",
-  "address_id": "0d62c5c6-59ba-44e8-a649-abe74f1bfbb2"
+  "address_id": "358e568c-3c02-4277-82b1-47b71a1b70c1"
  },
  {
-  "school_id": "5d44e569-ff9f-4b2a-8eee-aa5cc33ba44b",
+  "school_id": "daba0b04-5211-4e03-b817-35aec926410b",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -43,12 +43,12 @@
   "name_e": "",
   "name_r": "",
   "url": "https://www.schule-herzli.ch/",
-  "logo": "",
+  "logo": "assets/content/career/herzli.svg",
   "image": "",
-  "address_id": "f47b5fd0-36d8-4789-8768-3b48bc4493d4"
+  "address_id": "d1b8543f-4182-4c64-8fac-59ce613c1d50"
  },
  {
-  "school_id": "d25b5948-b518-4dfa-83ff-b7bfb23ed6fd",
+  "school_id": "6cda48c2-9d56-4328-9c8e-8e1feb906651",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -59,12 +59,12 @@
   "name_e": "",
   "name_r": "",
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
-  "logo": "",
+  "logo": "assets/content/career/hottingen.webp",
   "image": "",
-  "address_id": "36ae9f27-9d42-43b9-88fc-805b12f9e994"
+  "address_id": "6b66e98b-5d17-4818-8d66-7f4b521822fd"
  },
  {
-  "school_id": "9b185480-7171-4690-ae87-a7f28ac1b635",
+  "school_id": "8e574a9c-19ca-4104-834f-e4f21d28621f",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -75,8 +75,8 @@
   "name_e": "",
   "name_r": "",
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
-  "logo": "",
+  "logo": "assets/content/career/bzz.webp",
   "image": "",
-  "address_id": "308a39ac-d4c7-484d-a662-02ed628fd5bc"
+  "address_id": "fabd3bf2-7592-4864-aa5a-3267bc05fcf4"
  }
 ]

@@ -88,11 +88,11 @@ export class ProjectsComponent {
 
   openCareer = (id: string) => {
     let career: CareerEntity = this.careerService.getCareerById(id);
-    return () => openLink('/careers/' + career.name);
+    return () => openLink('/careers#' + career.name);
   };
 
   openClient = (id: string) => {
     let person: PersonEntity = this.personService.getPersonById(id);
-    return () => openLink('/careers/' + person.name);
+    return () => openLink('/careers#' + person.name);
   };
 }

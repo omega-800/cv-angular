@@ -1,6 +1,14 @@
 <img
+  *ngIf="!image"
   src="{{ type.image.path }}"
   alt="icon for {{ name }} link"
+  loading="lazy"
+  (click)="onClick()"
+/>
+<img
+  *ngIf="image"
+  src="{{ image.path }}"
+  alt="{{ image.alt }}"
   loading="lazy"
   (click)="onClick()"
 />
