@@ -5,14 +5,34 @@
   & .skill-item {
     @include flex-row-nojust;
     @include pill;
+    position:relative;
+    border-radius: $elem-size*2;
     &:has(a) {
       @include link;
     }
-    & .skill-cat-img {
+    & .skill-cat-img, .skill-icon {
       @include small-image;
+    }
+    & .skill-cat-img-container {
+      position:absolute;
+      height:100%;
+      width:$elem-size*2;
+      background-color: $light2;
+      top:0;
+      left:0;
+      border-top-left-radius: $elem-size*2;
+      border-bottom-left-radius: $elem-size*2;
+      & .skill-cat-img{
+        position: inherit;
+        top:$elem-padding;
+        left:$elem-padding;
+      }
     }
     & > * {
       display: inline-block;
+    }
+    & p,a{
+      margin-left:$elem-size*2;
     }
     @for $i from 1 through 20 {
       &.percent-#{$i * 5} {
