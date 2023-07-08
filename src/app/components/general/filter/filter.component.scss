@@ -1,6 +1,22 @@
 @import "src/scss/mixins.scss";
 @import "src/scss/variables.scss";
 @import "src/scss/screens.scss";
+$w: 20em;
+$h: 1em;
+@mixin track() {
+    background: none; /* get rid of Firefox track background */
+    height: 100%;
+    width: 100%;
+}
+
+@mixin thumb() {
+    background: currentcolor;
+    border: none; /* get rid of Firefox thumb border */
+    border-radius: 0; /* get rid of Firefox corner rounding */
+    pointer-events: auto; /* catch clicks */
+    width: $h;
+    height: $h;
+}
 
 :host {
     & .filterComp {
@@ -10,60 +26,134 @@
             @include flex-e2e;
         }
         & .filterItems {
-            display: none;
+            & .filterCategories,
+            .filterRange {
+                display: none;
+            }
             &.active {
-                @include flex-row-nojust;
-                & > div {
-                    @include mobile-screen {
-                        width: calc(50% - ($elem-padding * 2));
-                    }
-                    @include tablet-screen {
-                        width: calc((100% / 3) - ($elem-padding * 2));
-                    }
-                    @include desktop-screen {
-                        width: calc(25% - ($elem-padding * 2));
-                    }
-                    margin: $elem-padding;
-                    cursor: pointer;
-                    position: relative;
-                    border-top: $defborderthin;
-                    &.active {
-                        & .tags,
-                        .range {
-                            position: absolute;
-                            @include flex-list;
-                            background-color: $cool;
-                            width: 100%;
-                            z-index: $above-top;
-                            border-left: $defborderthin;
-                            //border-right: $defborderthin;
-                            & > .tag {
-                                & .tagIcon {
-                                    @include small-image;
-                                }
-                                & > * {
-                                    display: inline-block;
-                                }
+                & > .filterCategories {
+                    @include flex-row-nojust;
+                    & > div {
+                        @include mobile-screen {
+                            width: calc(50% - ($elem-padding * 2));
+                        }
+                        @include tablet-screen {
+                            width: calc((100% / 3) - ($elem-padding * 2));
+                        }
+                        @include desktop-screen {
+                            width: calc(25% - ($elem-padding * 2));
+                        }
+                        margin: $elem-padding;
+                        cursor: pointer;
+                        position: relative;
+                        border-top: $defborderthin;
+                        &.active {
+                            & .tags {
+                                position: absolute;
+                                @include flex-list;
+                                background-color: $cool;
+                                width: 100%;
+                                z-index: $above-top;
                                 border-left: $defborderthin;
-                                margin-top: $elem-padding;
-                                margin-left: $thin;
-                                cursor: pointer;
-                                &.active {
-                                    border-left: $defborder;
-                                    &:hover {
-                                        @include darken-little(border-color, $light2);
+                                //border-right: $defborderthin;
+                                & > .tag {
+                                    & .tagIcon {
+                                        @include small-image;
                                     }
-                                }
-                                &:hover {
-                                    @include transition(border-left, $defborder);
+                                    & > * {
+                                        display: inline-block;
+                                    }
+                                    border-left: $defborderthin;
+                                    margin-top: $elem-padding;
+                                    margin-left: $thin;
+                                    cursor: pointer;
+                                    &.active {
+                                        border-left: $defborder;
+                                        &:hover {
+                                            @include darken-little(border-color, $light2);
+                                        }
+                                    }
+                                    &:hover {
+                                        @include transition(border-left, $defborder);
+                                    }
                                 }
                             }
                         }
+                        &:not(.active) {
+                            & .tags {
+                                display: none;
+                            }
+                        }
                     }
-                    &:not(.active) {
-                        & .tags,
-                        .range {
-                            display: none;
+                }
+                & .filterRange {
+                    width: 100%;
+                    display: block;
+                    & .range {
+                        & .wrap {
+                            display: grid;
+                            grid-template-rows: max-content $h;
+                            grid-template-columns: 1fr;
+                            overflow: hidden; // in case <label> elements overflow
+                            position: relative;
+                            background: /* emulate track with wrapper background */ linear-gradient(
+                                0deg,
+                                #ccc $h,
+                                transparent 0
+                            );
+                            & .sr-only {
+                                position: absolute;
+                                clip-path: inset(50%);
+                            }
+
+                            & input[type="range"] {
+                                grid-column: 1;
+                                grid-row: 2;
+                                &::-webkit-slider-runnable-track,
+                                &::-webkit-slider-thumb,
+                                & {
+                                    -webkit-appearance: none;
+                                }
+                                background: none; /* get rid of white Chrome background */
+                                color: #000;
+                                font: inherit; /* fix too small font-size in both Chrome & Firefox */
+                                margin: 0;
+                                pointer-events: none; /* let clicks pass through */
+
+                                &::-webkit-slider-runnable-track {
+                                    @include track;
+                                }
+                                &::-moz-range-track {
+                                    @include track;
+                                }
+
+                                &::-webkit-slider-thumb {
+                                    @include thumb;
+                                }
+                                &::-moz-range-thumb {
+                                    @include thumb;
+                                }
+                            }
+                            --dif: calc(var(--max) - var(--min));
+
+                            &::before,
+                            &::after {
+                                grid-column: 1 / span 2;
+                                grid-row: 3;
+                                height: 1em;
+                                background: #95a;
+                                content: "";
+                            }
+
+                            &::before {
+                                margin-left: calc((var(--a) - var(--min)) / var(--dif) * 100%);
+                                width: calc((var(--b) - var(--a)) / var(--dif) * 100%);
+                            }
+
+                            &::after {
+                                margin-left: calc((var(--b) - var(--min)) / var(--dif) * 100%);
+                                width: calc((var(--a) - var(--b)) / var(--dif) * 100%);
+                            }
                         }
                     }
                 }
