@@ -1,5 +1,25 @@
-<div [class]="showPercent ? 'percent-'+skill.knowledgepercent+' skill-item' : 'skill-item'">
-    <img class="skill-cat-img" *ngFor="let category of skill.skillcategories" src="{{category.image.path}}" alt="{{category.image.alt}}" loading="lazy">
-    <p *ngIf="!skill.url">{{skillText}}</p>
-    <a *ngIf="skill.url" href="{{skill.url}}" target="_blank">{{skillText}}</a>
+<div
+  [class]="
+    showPercent
+      ? 'percent-' + skill.knowledgepercent + ' skill-item'
+      : 'skill-item'
+  "
+>
+  <img
+    class="skill-cat-img"
+    *ngFor="let category of skill.skillcategories"
+    src="{{ category.image.path }}"
+    alt="{{ category.image.alt }}"
+    loading="lazy"
+  />
+  <p *ngIf="!skill.url">{{ skillText }}</p>
+  <a *ngIf="skill.url" href="{{ skill.url }}" target="_blank">{{
+    skillText
+  }}</a>
+  <img
+    class="skill-cat-img"
+    src="assets/{{ skill.thumbnail }}"
+    alt="{{ skill.thumbnail }}"
+    loading="lazy"
+  />
 </div>

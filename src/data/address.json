@@ -1,58 +1,58 @@
 [
  {
-  "address_id": "5e26b349-f023-4d67-85c6-e4855cf27d0e",
+  "address_id": "3dd1b4b4-257f-4d21-8f0d-4c14867947bc",
   "street": "Stettbachstrasse 129G",
   "city": "Zürich",
   "zip": 8051,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "7ba3bae6-4b21-4e7a-b153-137f6cc206bd",
+  "address_id": "c0f83948-1054-4491-8c50-30b30f626969",
   "street": "Barzloostrasse 20",
   "city": "Pfäffikon ZH",
   "zip": 8033,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "38e906e6-3dd5-42a4-8e2e-2662f87d50d4",
+  "address_id": "d0ec23ac-c9a8-4556-aaae-941e23feed89",
   "street": "Lochackerstrasse 4",
   "city": "Embrach",
   "zip": 8424,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "cd2b357b-fd48-4add-a160-37a729b090d5",
+  "address_id": "ebaffb52-2ee6-4f98-93d1-1a4614133932",
   "street": "Stettbachstrasse 88",
   "city": "Zürich",
   "zip": 8051,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "6a449cef-4882-4fbc-9e58-0c96d7044ba6",
+  "address_id": "33307690-3510-4c42-a6a7-4c6cd0316af5",
   "street": "Promenadengasse 11",
   "city": "Zürich",
   "zip": 8001,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "be0f68fa-f90a-44c1-b01b-b167a733928e",
+  "address_id": "94737ae0-5ff2-4ec0-828e-dcefbe9e680e",
   "street": "Herzogenmühlestrasse 60",
   "city": "Zürich",
   "zip": 8051,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "663d0987-a741-4b59-870a-06b11e6001ab",
+  "address_id": "cb963708-75d5-48e5-be22-1237f9789da0",
   "street": "Minervastrasse 14",
   "city": "Zürich",
   "zip": 8090,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  },
  {
-  "address_id": "eac79243-ba0d-4c57-bb77-ef077a0e7ddf",
+  "address_id": "466e53a6-c972-45e8-a95a-5138131bc5c6",
   "street": "Seestrasse 110",
   "city": "Horgen",
   "zip": 8810,
-  "country_id": "e6a46740-b75e-470c-8e45-5577646d9125"
+  "country_id": "6a587b30-29db-4949-b18b-32bcfe32c082"
  }
 ]

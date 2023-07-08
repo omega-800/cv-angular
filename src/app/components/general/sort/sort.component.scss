@@ -2,6 +2,7 @@
 
 :host {
     & .sortComp {
+        @include slimpill;
         @include flex-e2e;
         & .sortTitle {
             @include flex-row-nojust;

@@ -1,5 +1,7 @@
-@import 'src/scss/mixins.scss';
+@import "src/scss/mixins.scss";
+@import "src/scss/variables.scss";
 
 :host {
-    @include pill;
+    border-top: $defborderthin;
+    @include flex-e2e;
 }
