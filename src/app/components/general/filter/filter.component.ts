@@ -2,7 +2,6 @@ import {
   ChangeDetectorRef,
   Component,
   EventEmitter,
-  HostBinding,
   Input,
   OnInit,
   Output,
@@ -81,11 +80,24 @@ export class FilterComponent implements OnInit {
     );
   }
 
-  changeRange(range: FilterRangeEntity, ref: HTMLInputElement) {
-    this.selectedFilter.filter((elem) => elem.category == range.id)[0].value[
-      ref.classList.contains('slider1') ? 0 : 1
-    ] = ref.value;
-    ref.value = ref.value;
+  changeRange(
+    range: FilterRangeEntity,
+    sliderOne: HTMLInputElement,
+    sliderTwo: HTMLInputElement,
+    outputOne: HTMLOutputElement,
+    outputTwo: HTMLOutputElement
+  ) {
+    let isFirstSmaller = sliderOne.value <= sliderTwo.value;
+    let [smaller, larger] = isFirstSmaller
+      ? [sliderOne.value, sliderTwo.value]
+      : [sliderTwo.value, sliderOne.value];
+    this.selectedFilter.filter((elem) => elem.category == range.id)[0].value = [
+      smaller,
+      larger,
+    ];
+    [outputOne.innerHTML, outputTwo.innerHTML] = [sliderOne.value, sliderTwo.value] = isFirstSmaller 
+    ? [smaller, larger] 
+    : [larger, smaller];
     this.filterEmitter.emit(this.selectedFilter);
   }
 
@@ -104,6 +116,16 @@ export class FilterComponent implements OnInit {
     document
       .querySelectorAll('.tag')
       .forEach((elem) => elem.classList.remove('active'));
+  }
+
+  isDefaultRangeValue(range: SelectedFilterEntity): boolean {
+    let selected = this.filters.ranges?.filter(
+      (elem) => elem.id == range.id
+    )[0];
+    return (
+      selected?.values[0] == range.value[0] &&
+      selected?.values[selected?.values.length - 1] == range.value[1]
+    );
   }
 
   /*@Input() filterValues!:{[key:string]:string};

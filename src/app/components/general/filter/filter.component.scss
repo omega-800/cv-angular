@@ -1,26 +1,38 @@
 @import "src/scss/mixins.scss";
 @import "src/scss/variables.scss";
 @import "src/scss/screens.scss";
-$w: 20em;
-$h: 1em;
+
+$range-width: 80%;
+$range-height: $elem-size;
+$thumb-radius: calc(0.5 * $range-height);
+$range-useful-width: calc(100% - $range-height);
+
 @mixin track() {
-    background: none; /* get rid of Firefox track background */
+    background: none;
     height: 100%;
     width: 100%;
 }
 
 @mixin thumb() {
     background: currentcolor;
-    border: none; /* get rid of Firefox thumb border */
-    border-radius: 0; /* get rid of Firefox corner rounding */
-    pointer-events: auto; /* catch clicks */
-    width: $h;
-    height: $h;
+    border: none;
+    border-radius: 0;
+    pointer-events: auto;
+    width: $range-height;
+    height: $range-height;
+    border-radius: 50%;
 }
 
 :host {
+    & .filterSelected {
+        @include flex-row;
+        & .selectedItem {
+            @include slimpill;
+        }
+    }
     & .filterComp {
         @include slimpill;
+        padding: $elem-padding;
         & .filterTitle {
             width: 100%;
             @include flex-e2e;
@@ -90,17 +102,20 @@ $h: 1em;
                     width: 100%;
                     display: block;
                     & .range {
+                        @include flex-e2e;
+                        & output {
+                            width: calc((100% - $range-width) / 2);
+                            text-align: center;
+                        }
                         & .wrap {
                             display: grid;
-                            grid-template-rows: max-content $h;
+                            grid-template-rows: max-content $range-height;
+                            width: $range-width;
                             grid-template-columns: 1fr;
-                            overflow: hidden; // in case <label> elements overflow
+                            overflow: hidden;
                             position: relative;
-                            background: /* emulate track with wrapper background */ linear-gradient(
-                                0deg,
-                                #ccc $h,
-                                transparent 0
-                            );
+                            background: linear-gradient(0deg, $light2 $range-height, transparent 0);
+                            border-radius: $range-height;
                             & .sr-only {
                                 position: absolute;
                                 clip-path: inset(50%);
@@ -109,16 +124,17 @@ $h: 1em;
                             & input[type="range"] {
                                 grid-column: 1;
                                 grid-row: 2;
+                                z-index: $top;
                                 &::-webkit-slider-runnable-track,
                                 &::-webkit-slider-thumb,
                                 & {
                                     -webkit-appearance: none;
                                 }
-                                background: none; /* get rid of white Chrome background */
-                                color: #000;
-                                font: inherit; /* fix too small font-size in both Chrome & Firefox */
+                                background: none;
+                                color: $dark1;
+                                font: inherit;
                                 margin: 0;
-                                pointer-events: none; /* let clicks pass through */
+                                pointer-events: none;
 
                                 &::-webkit-slider-runnable-track {
                                     @include track;
@@ -126,7 +142,6 @@ $h: 1em;
                                 &::-moz-range-track {
                                     @include track;
                                 }
-
                                 &::-webkit-slider-thumb {
                                     @include thumb;
                                 }
@@ -139,20 +154,24 @@ $h: 1em;
                             &::before,
                             &::after {
                                 grid-column: 1 / span 2;
-                                grid-row: 3;
+                                grid-row: 2;
                                 height: 1em;
-                                background: #95a;
+                                background: $cool;
                                 content: "";
                             }
 
                             &::before {
-                                margin-left: calc((var(--a) - var(--min)) / var(--dif) * 100%);
-                                width: calc((var(--b) - var(--a)) / var(--dif) * 100%);
+                                margin-left: calc(
+                                    #{$thumb-radius} + (var(--a) - var(--min)) / var(--dif) *#{$range-useful-width}
+                                );
+                                width: calc((var(--b) - var(--a)) / var(--dif) *#{$range-useful-width});
                             }
 
                             &::after {
-                                margin-left: calc((var(--b) - var(--min)) / var(--dif) * 100%);
-                                width: calc((var(--a) - var(--b)) / var(--dif) * 100%);
+                                margin-left: calc(
+                                    #{$thumb-radius} + (var(--b) - var(--min)) / var(--dif) *#{$range-useful-width}
+                                );
+                                width: calc((var(--a) - var(--b)) / var(--dif) *#{$range-useful-width});
                             }
                         }
                     }
