@@ -28,6 +28,9 @@ $range-useful-width: calc(100% - $range-height);
         @include flex-row;
         & .selectedItem {
             @include slimpill;
+            & > * {
+                display: inline-block;
+            }
         }
     }
     & .filterComp {

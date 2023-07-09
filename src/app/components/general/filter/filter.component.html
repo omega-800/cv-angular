@@ -1,13 +1,13 @@
 <div class="filterSelected">
   <div *ngFor="let category of selectedFilter" class="selectedCategory">
     <ng-container *ngIf="category.range">
-      <div *ngIf="!isDefaultRangeValue(category)" class="selectedItem">
+      <div *ngIf="!isDefaultRangeValue(category)" class="selectedItem" (click)="resetRange(category)">
         <p>{{ category.value[0] }} - {{ category.value[1] }}</p>
         <span>X</span>
       </div>
     </ng-container>
     <ng-container *ngIf="!category.range">
-      <div *ngFor="let item of category.value" class="selectedItem">
+      <div *ngFor="let item of category.value" class="selectedItem" (click)="toggleTag(category.id, category.name, item)">
         <p>{{ item }}</p>
         <span>X</span>
       </div>
@@ -55,8 +55,9 @@
           <div
             #t
             *ngFor="let tag of category.tags"
-            (click)="toggleTag(category, tag); t.classList.toggle('active')"
+            (click)="toggleTag(category.id, category.name, tag.value); t.classList.toggle('active')"
             class="tag"
+            [id]="tag.id"
           >
             <img
               *ngIf="tag.image"
@@ -80,7 +81,7 @@
         }}; --max: {{ range.values[range.values.length - 1] }}"
       >
         <output #o1 class="rangeFrom" for="{{ range.id }}_1">{{
-          r1.value
+          r1.value > r2.value ? r1.value : r2.value
         }}</output>
         <div class="wrap">
           <label class="sr-only" for="{{ range.id }}_1">Value A:</label>
@@ -89,7 +90,7 @@
             [min]="range.values[0]"
             [max]="range.values[range.values.length - 1]"
             [step]="range.step"
-            value="{{ range.values[0] }}"
+            [value]="range.values[0]"
             (input)="changeRange(range, r1, r2, o1, o2)"
             class="slider slider1"
             id="{{ range.id }}_1"
@@ -101,7 +102,7 @@
             [min]="range.values[0]"
             [max]="range.values[range.values.length - 1]"
             [step]="range.step"
-            value="{{ range.values[range.values.length - 1] }}"
+            [value]="range.values[range.values.length - 1]"
             (input)="changeRange(range, r1, r2, o1, o2)"
             class="slider slider2"
             id="{{ range.id }}_2"

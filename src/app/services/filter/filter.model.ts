@@ -23,7 +23,7 @@ export interface FilterCategoryEntity extends Entity {
 }
 
 export interface TagEntity extends Entity {
-  value: TagType;
+  value: FilterType;
   selected: boolean;
   image?: ImageComp;
 }
@@ -38,5 +38,4 @@ export interface FullSortEntity extends Entity {
 }
 
 export type FilterType = string | boolean | number | Date;
-export type TagType = string | boolean | number;
 export type RangeType = Date | number;

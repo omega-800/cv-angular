@@ -7,11 +7,10 @@ import {
   Output,
 } from '@angular/core';
 import {
-  FilterCategoryEntity,
   FilterRangeEntity,
   FiltersEntity,
   SelectedFilterEntity,
-  TagEntity,
+  FilterType,
 } from 'src/app/services/filter/filter.model';
 import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
@@ -26,6 +25,7 @@ export class FilterComponent implements OnInit {
   @Input() filterName!: string;
   @Output() filterEmitter = new EventEmitter<SelectedFilterEntity[]>();
   selectedFilter: SelectedFilterEntity[] = [];
+  //selectedFilter: FiltersEntity = {id:'selected-filter',name:'Selected Filter',categories:[], ranges:[]};
   arrowIcon: ImageComp = arrowIcon;
 
   constructor(private cdref: ChangeDetectorRef) {}
@@ -46,31 +46,31 @@ export class FilterComponent implements OnInit {
     );
   }
 
-  toggleTag(category: FilterCategoryEntity, tag: TagEntity) {
+  toggleTag(categoryID: string, categoryName:string, tagValue: FilterType) {
     let changed = false;
     this.selectedFilter.forEach((elem) => {
-      if (elem.category == category.id) {
-        if (elem.value.includes(tag.value)) {
-          elem.value.splice(elem.value.indexOf(tag.value), 1);
+      if (elem.category == categoryID) {
+        if (elem.value.includes(tagValue)) {
+          elem.value.splice(elem.value.indexOf(tagValue), 1);
           if (elem.value.length == 0) {
             this.selectedFilter.splice(
-              this.selectedFilter.findIndex((el) => el.category == category.id),
+              this.selectedFilter.findIndex((el) => el.category == categoryID),
               1
             );
           }
         } else {
-          elem.value.push(tag.value);
+          elem.value.push(tagValue);
         }
         changed = true;
       }
     });
     if (!changed) {
       this.selectedFilter.push({
-        id: category.id,
-        name: category.name,
+        id: categoryID,
+        name: categoryName,
         range: false,
-        category: category.id,
-        value: [tag.value],
+        category: categoryID,
+        value: [tagValue],
       });
     }
     this.filterEmitter.emit(
@@ -87,18 +87,24 @@ export class FilterComponent implements OnInit {
     outputOne: HTMLOutputElement,
     outputTwo: HTMLOutputElement
   ) {
-    let isFirstSmaller = sliderOne.value <= sliderTwo.value;
-    let [smaller, larger] = isFirstSmaller
+    let [smaller, larger] = parseInt(sliderOne.value) < parseInt(sliderTwo.value)
       ? [sliderOne.value, sliderTwo.value]
       : [sliderTwo.value, sliderOne.value];
     this.selectedFilter.filter((elem) => elem.category == range.id)[0].value = [
       smaller,
       larger,
     ];
-    [outputOne.innerHTML, outputTwo.innerHTML] = [sliderOne.value, sliderTwo.value] = isFirstSmaller 
-    ? [smaller, larger] 
-    : [larger, smaller];
+    [outputOne.innerHTML, outputTwo.innerHTML] = [smaller, larger];
     this.filterEmitter.emit(this.selectedFilter);
+  }
+
+  resetRange(selectedRange:SelectedFilterEntity){
+    let rangeValues = this.filters.ranges?.filter((range) => range.id == selectedRange.id)[0].values;
+    if(rangeValues!==undefined){
+      this.selectedFilter.filter((elem) => elem.category == selectedRange.id)[0].value = [
+        rangeValues[0], rangeValues[rangeValues.length - 1]
+      ];
+    }
   }
 
   reset() {
