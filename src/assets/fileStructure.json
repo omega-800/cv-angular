@@ -1,8 +1,17 @@
 {
   "src/assets/content/bewerbung": [
-    "Bewerbung_BlueMouse.pdf",
     "bewerbung.docx",
-    "bewerbung.pdf"
+    "bewerbung.pdf",
+    "Bewerbung_BlueMouse.pdf"
+  ],
+  "src/assets/content/career": [
+    "bzz.webp",
+    "ernesto_vargas.svg",
+    "herzli.svg",
+    "hohepromenade.svg",
+    "hottingen.webp",
+    "inteco.svg",
+    "probstei.svg"
   ],
   "src/assets/content/certificates/languages": [
     "0_1_Französisch.jpg",
@@ -48,7 +57,9 @@
     "photo_1.jpg",
     "photo_1.psd",
     "profilepic.jpg",
-    "profilepic_square.jpg"
+    "profilepic_square.jpg",
+    "profilepic_square.webp",
+    "profilepic_square_old.jpg"
   ],
   "src/assets/content/projects/art/art/drawing": [
     "IMG-20180115-WA0008.webp",
@@ -149,6 +160,34 @@
     "Snapchat-637363521.webp",
     "thumbnail.webp"
   ],
+  "src/assets/content/projects/art/music/ableton": [
+    "Screenshot 2023-07-16 131714.webp",
+    "Screenshot 2023-07-16 131822.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/music/bass": [
+    "A.webp",
+    "IMG_20230709_115444707.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/music/drums": [
+    "IMG_20230709_115405593.webp",
+    "IMG_20230709_115419434.webp",
+    "IMG_20230709_115432240_BURST000_COVER_TOP.webp",
+    "IMG_20230709_115615524.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/music/flstudio": [
+    "IMG_20230709_115452952.webp",
+    "IMG_20230709_115457877.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/music/guitar": [
+    "IMG_20230709_115505750.webp",
+    "IMG_20230709_115540192.webp",
+    "IMG_20230709_115554779.webp",
+    "thumbnail.webp"
+  ],
   "src/assets/content/projects/art/other/mosaic": [
     "IMG_20190914_163927123.webp",
     "thumbnail.webp"
@@ -206,7 +245,7 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/art/textile/tiedye": [
-    "A.webp",
+    "AA.webp",
     "IMG_20220606_142233252.webp",
     "thumbnail.webp"
   ],
@@ -222,6 +261,7 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/art/wood/plug": [
+    "A.webp",
     "IMG-20230113-WA0001.webp",
     "thumbnail.webp"
   ],
@@ -238,8 +278,24 @@
     "IMG-20230407-WA0007.webp",
     "thumbnail.webp"
   ],
+  "src/assets/content/projects/it/csharp/stranded": [
+    "Screenshot 2023-07-16 131354.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/admincenter": [
+    "Screenshot 2023-07-16 123709.webp",
+    "Screenshot 2023-07-16 123752.webp",
+    "thumbnail.webp"
+  ],
   "src/assets/content/projects/it/inteco/aufsetzen": [
     "buehlerweine.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/comparison": [
+    "Screenshot 2023-07-16 124146.webp",
+    "Screenshot 2023-07-16 124235.webp",
+    "Screenshot 2023-07-16 124310.webp",
+    "Screenshot 2023-07-16 124336.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/idageverification": [
@@ -321,6 +377,17 @@
   ],
   "src/assets/content/projects/it/python/ernestovargas": [
     "python_ernestovargas.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/python/finance": [
+    "Screenshot 2023-07-16 121846.webp",
+    "Screenshot 2023-07-16 122104.webp",
+    "Screenshot 2023-07-16 122858.webp",
+    "Screenshot 2023-07-16 123044.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/python/stranded": [
+    "Screenshot 2023-07-16 130740.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/unity/dungeon": [
@@ -577,8 +644,8 @@
     "user-icon.svg"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/diagramme": [
-    "Klassendiagramm.png",
     "flussdiagramm.png",
+    "Klassendiagramm.png",
     "probeIPA_UseCase.png"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/font": [
@@ -597,21 +664,21 @@
     "website.konto.anpassen.content.00.xml"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/screenshots": [
-    "AgeRestriction.png",
-    "ConfigPageIntern.png",
-    "ConfigPageInternLink.png",
-    "IDAgeVerificationComp.png",
-    "IDAgeVerificationNode.png",
     "ageCategory.png",
     "ageCategoryImport.png",
+    "AgeRestriction.png",
     "basketRule.png",
     "bootstrap.png",
+    "ConfigPageIntern.png",
+    "ConfigPageInternLink.png",
     "formEmail.png",
     "formEmail1.png",
     "formEmail2.png",
     "formEmail3.png",
     "galaxus.png",
     "id.png",
+    "IDAgeVerificationComp.png",
+    "IDAgeVerificationNode.png",
     "kleemans.png",
     "minAgeJCR.png",
     "ordner.png",
@@ -622,27 +689,33 @@
     "zeitplan.png"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/sourcecode": [
+    "ageCategoryImport.sql",
     "BasketFactory.java",
     "BlockUnderage.java",
     "ConfigPageIntern.html",
     "ConfigPageIntern.java",
+    "formEmail1.ftl",
+    "formEmail2.ftl",
     "IDAgeVerification.css",
     "IDAgeVerification.ftl",
     "IDAgeVerification.js",
     "IDAgeVerificationModel.java",
+    "messages_de.properties",
+    "messages_en.properties",
+    "messages_fr.properties",
+    "messages_it.properties",
     "SessionSettingsFactory.java",
     "ShopModuleVersionHandler.java",
     "ShopUserPage.html",
     "ShopUserPage.java",
     "TemplatingFunctions.java",
-    "UserFactory.java",
-    "ageCategoryImport.sql",
-    "formEmail1.ftl",
-    "formEmail2.ftl",
-    "messages_de.properties",
-    "messages_en.properties",
-    "messages_fr.properties",
-    "messages_it.properties"
+    "UserFactory.java"
+  ],
+  "src/assets/content/projects_old/it/inteco/idageverification/code": [
+    "ipa.docx",
+    "numgen.py",
+    "praesentation.pptx",
+    "probeIPA_altersueberpruefung.pdf"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Roboto_Mono": [
     "LICENSE.txt",
@@ -666,12 +739,6 @@
     "RobotoMono-Thin.ttf",
     "RobotoMono-ThinItalic.ttf"
   ],
-  "src/assets/content/projects_old/it/inteco/idageverification/code": [
-    "ipa.docx",
-    "numgen.py",
-    "praesentation.pptx",
-    "probeIPA_altersueberpruefung.pdf"
-  ],
   "src/assets/content/projects_old/it/inteco/idageverification": [
     "config.png",
     "id.png",
@@ -686,11 +753,11 @@
     "small.png"
   ],
   "src/assets/content/projects_old/it/inteco/popup/code": [
-    "SettingsShopPage.html",
     "ageConfirmPopup.ftl",
     "link.txt",
     "popup.css",
-    "popup.js"
+    "popup.js",
+    "SettingsShopPage.html"
   ],
   "src/assets/content/projects_old/it/inteco/producer": [
     "a.png",
@@ -703,11 +770,11 @@
     "h.png"
   ],
   "src/assets/content/projects_old/it/inteco/producer/info": [
-    "Zeichnung.png",
-    "Zeichnung1 (1).png",
     "activity_diagram.png",
     "laender.png",
-    "probe_ipa.docx"
+    "probe_ipa.docx",
+    "Zeichnung.png",
+    "Zeichnung1 (1).png"
   ],
   "src/assets/content/projects_old/it/inteco/scss_script/code": [
     "scss_replace.sh"
@@ -723,11 +790,11 @@
   "src/assets/content/projects_old/it/inteco/seo_analysis": [
     "SEO.docx",
     "SEO.pptx",
+    "seo_rio.md",
     "WEB-Accessibility-240323-2215.pdf",
     "WEB-Performance-240323-2215.pdf",
     "WEB-SEO-240323-2213.pdf",
-    "WEB-Tools-240323-2215.pdf",
-    "seo_rio.md"
+    "WEB-Tools-240323-2215.pdf"
   ],
   "src/assets/content/projects_old/it/inteco/sharebtn": [
     "screenshot.png"

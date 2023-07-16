@@ -1,10 +1,10 @@
 [
  {
-  "activity_id": "11fc39d9-5795-485b-b8d0-278e2fde473d",
+  "activity_id": "53e68812-41eb-444e-8b2a-a9dc94f69331",
   "name": "Papierarbeit",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Origami ist eine faszinierende Kunstform, die mich begeistert, da sie Kreativität und Präzision vereint. Durch das Falten von Papier kann ich komplexe Formen und Figuren erschaffen und gleichzeitig meine Feinmotorik schulen. Es ist eine meditative Tätigkeit, die mir Freude bereitet und mein ästhetisches Empfinden anspricht.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/papercraft.svg",
@@ -12,11 +12,11 @@
   "url": ""
  },
  {
-  "activity_id": "32d67494-3607-480d-8b78-cdf63ec8a150",
+  "activity_id": "9dd65174-bb4c-4837-b418-4c74e92eb9ca",
   "name": "Zeichnen",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Das Zeichnen ist für mich eine Ausdrucksform, mit der ich meine Ideen und Emotionen auf visuelle Weise vermitteln kann. Es ermöglicht mir, meine Kreativität auszuleben und neue Perspektiven zu entdecken. Beim Zeichnen kann ich mich in eine Welt der Fantasie begeben und meine eigenen Geschichten erzählen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/drawing.svg",
@@ -24,11 +24,11 @@
   "url": ""
  },
  {
-  "activity_id": "bf6c5103-4844-4573-bfc9-e49f1f0c8726",
+  "activity_id": "f8fa809a-c8b1-4a56-8279-cc4d475e211f",
   "name": "Graffiti",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Graffiti ist für mich eine Möglichkeit, Kunst im öffentlichen Raum zu schaffen und meine Individualität auszudrücken. Es erlaubt mir, mit Farben und Formen zu experimentieren und gleichzeitig eine Botschaft oder Stimmung zu vermitteln. Graffiti vereint Kreativität, Street Culture und soziale Kommunikation auf eine einzigartige Weise.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/spraypaint.svg",
@@ -36,11 +36,11 @@
   "url": ""
  },
  {
-  "activity_id": "7d8b724d-2111-4e1c-896e-10bbb7cc657f",
+  "activity_id": "26dcf038-9a80-4d91-88d6-5d25bd6d4f54",
   "name": "Holzarbeit",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Die Arbeit mit Holz bietet mir die Möglichkeit, etwas mit meinen eigenen Händen zu erschaffen. Es ist eine Mischung aus handwerklichem Geschick und künstlerischer Gestaltung. Die Verbindung von Naturmaterialien und der Prozess des Formens und Gestaltens von Holzstücken fasziniert mich und lässt mich die Schönheit und Vielseitigkeit dieses Materials schätzen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/woodwork.svg",
@@ -48,11 +48,11 @@
   "url": ""
  },
  {
-  "activity_id": "736d9ee9-5937-4829-8521-8ee198f6e0fb",
+  "activity_id": "1041f57e-033b-4f93-bf14-2b92e9c7d8b0",
   "name": "Nähen",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Das Nähen ist für mich eine praktische und kreative Fähigkeit, die es mir ermöglicht, meine eigenen Kleidungsstücke und Accessoires zu gestalten. Es ist ein Prozess der Transformation von Stoffen, bei dem ich meine Vorstellungskraft einsetzen kann, um einzigartige Designs zu kreieren. Das Nähen ermöglicht es mir, meine Liebe zur Nachhaltigkeit und zum Handwerk zu kombinieren.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/sewing.svg",
@@ -60,11 +60,11 @@
   "url": ""
  },
  {
-  "activity_id": "e5be8605-63c2-4cce-9e08-3823cf3cd237",
+  "activity_id": "f5b65501-e6b0-4d94-9bba-c0d4a763142c",
   "name": "Gitarre",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Die Gitarre ist mein treuer Begleiter in musikalischen Momenten. Das Spielen der Gitarre erlaubt mir, meine Emotionen und Gefühle durch die Klänge und Rhythmen der Musik auszudrücken. Es ist eine Form der kreativen Selbstentfaltung und ermöglicht mir, mich mit anderen Musikern zu verbinden und gemeinsam Harmonien zu schaffen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/guitar.svg",
@@ -72,11 +72,11 @@
   "url": ""
  },
  {
-  "activity_id": "366eecce-9193-4db1-8eb3-0380705524da",
+  "activity_id": "8f7df4b6-8722-41d4-99e7-af0b3525711a",
   "name": "Bass",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": " Der Bass ist ein essenzieller Bestandteil der Musik, der für Stabilität und Groove sorgt. Das Spielen des Basses erfüllt mich mit Energie und ermöglicht es mir, mich in den rhythmischen Puls der Musik einzufügen. Der Bass ist ein Instrument, das mich dazu bringt, mich auf die Essenz der Musik zu konzentrieren und die Verbindung zwischen Melodie und Rhythmus zu erforschen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/bass.svg",
@@ -84,11 +84,11 @@
   "url": ""
  },
  {
-  "activity_id": "88fa53cf-03a2-4ba5-9aac-8a63346bee52",
+  "activity_id": "fe7fa41f-202c-4f26-82bf-674e072930b2",
   "name": "Schlagzeug",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Das Schlagzeug ist mein Ventil, um mich rhythmisch auszudrücken und meine Energie freizusetzen. Es erlaubt mir, verschiedene Klangfarben und Texturen zu erzeugen und mich in den Rhythmus einzufühlen. Das Schlagzeugspielen fördert meine Koordination, Konzentration und Ausdauer und ermöglicht es mir, mit anderen Musikern zusammenzuspielen und gemeinsam eine mitreißende Performance zu schaffen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/drums.svg",
@@ -96,11 +96,11 @@
   "url": ""
  },
  {
-  "activity_id": "49822e69-6102-4878-a2f4-f5a55165b25e",
+  "activity_id": "e6df76eb-632b-4d21-80d7-455588444b34",
   "name": "Produzieren",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Das Produzieren von Musik ist für mich wie das Erschaffen einer eigenen Klangwelt. Es erlaubt mir, verschiedene Instrumente und Klänge zu kombinieren, um meine musikalischen Ideen zum Leben zu erwecken. Das Produzieren gibt mir die Freiheit, mein musikalisches Gespür und meine technischen Fähigkeiten zu nutzen, um Songs und Kompositionen zu arrangieren und ihnen meinen eigenen Stil zu verleihen. Es ist ein Prozess der Kreativität und des Experimentierens, bei dem ich die Rolle des Klanggestalters einnehme.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/beats.svg",
@@ -108,11 +108,11 @@
   "url": ""
  },
  {
-  "activity_id": "2fe35649-e718-4e0a-af22-3418fa23c586",
+  "activity_id": "806d93c1-49ec-4af7-9614-9abe6b9c7483",
   "name": "Hort",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Die Arbeit im Hort bereitet mir große Freude, da ich die Möglichkeit habe, Kinder auf ihrem Weg zu begleiten und ihnen dabei zu helfen, ihre Persönlichkeit und Fähigkeiten zu entfalten. Es ist eine verantwortungsvolle Aufgabe, die es mir ermöglicht, eine unterstützende und bereichernde Umgebung zu schaffen, in der die Kinder spielen, lernen und wachsen können.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/nursery.svg",
@@ -120,11 +120,11 @@
   "url": ""
  },
  {
-  "activity_id": "c5625874-a691-4701-8074-f127836bc8cd",
+  "activity_id": "81e61b6d-dbd7-4adb-9377-6832be7d6285",
   "name": "Fahrrad",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Das Fahrradfahren ist für mich nicht nur eine Fortbewegungsmethode, sondern auch eine Quelle der Freiheit und des Abenteuers. Es verbindet mich mit der Natur und gibt mir die Möglichkeit, mich aktiv zu bewegen und dabei die Umwelt zu schonen. Beim Fahrradfahren kann ich den Alltagsstress hinter mir lassen und die Welt aus einer anderen Perspektive erleben.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/bike.svg",
@@ -132,11 +132,11 @@
   "url": ""
  },
  {
-  "activity_id": "a021f2a9-45b2-4929-99f6-90c18f3cb290",
+  "activity_id": "96f66381-88f9-4269-8690-3433c825c637",
   "name": "Volleyball",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Volleyball ist ein Teamsport, der mir die Möglichkeit gibt, meine Leidenschaft für Bewegung und Wettbewerb auszuleben. Es ist eine dynamische Sportart, die Koordination, Ausdauer und Teamwork erfordert. Beim Volleyball kann ich meine Fähigkeiten verbessern, neue Strategien entwickeln und mich gleichzeitig körperlich und mental herausfordern.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/volleyball.svg",
@@ -144,11 +144,11 @@
   "url": ""
  },
  {
-  "activity_id": "f0c0dcb1-2460-4489-a771-7e74d62bca7b",
+  "activity_id": "a5d6c608-3b78-4ffe-b3f6-5e5f783f84d4",
   "name": "Skateboard",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": " Das Skateboarden ist für mich eine aufregende und kreative Art der Fortbewegung. Es erlaubt mir, meine Balance und Koordination zu schulen und gleichzeitig meine Kreativität auszudrücken. Beim Skateboarden kann ich neue Tricks lernen, meine Grenzen ausloten und mich in einer Gemeinschaft von Gleichgesinnten austauschen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/skateboard.svg",
@@ -156,11 +156,11 @@
   "url": ""
  },
  {
-  "activity_id": "2c28a5fd-dd59-4b65-9a71-b81390355760",
+  "activity_id": "819f77b8-72a4-45a9-9d2a-3dcdd78d6790",
   "name": "Tischtennis",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Tischtennis ist ein schneller und präziser Sport, der mir die Möglichkeit gibt, meine Reaktionsfähigkeit und mein Auge-Hand-Koordination zu verbessern. Es ist eine Sportart, die Geschicklichkeit und Taktik erfordert und gleichzeitig viel Spaß macht. Beim Tischtennis kann ich meine Konzentration schärfen und mich in spannenden Wettkämpfen mit anderen messen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/tabletennis.svg",
@@ -168,11 +168,11 @@
   "url": ""
  },
  {
-  "activity_id": "df6039c4-8977-48bf-84b5-edc4f82bac2e",
+  "activity_id": "edea8bc7-4331-417e-8d9b-9cf2fbc86f48",
   "name": "Wandern",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Das Wandern ist für mich eine Möglichkeit, dem stressigen Alltag zu entfliehen und die Schönheit der Natur zu genießen. Es ermöglicht mir, meinen Geist zu beruhigen, während ich neue Landschaften erkunde und frische Luft einatme. Beim Wandern kann ich meine körperliche Fitness verbessern und mich mit der Natur verbunden fühlen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/hiking.svg",
@@ -180,11 +180,11 @@
   "url": ""
  },
  {
-  "activity_id": "ff8d0cd1-97a9-4d07-99e3-a0f9c84f1356",
+  "activity_id": "14d7dd54-c13d-4a6b-98ad-a32acd357755",
   "name": "CEVI",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Der CEVI ist eine Organisation, die es mir ermöglicht, mich in der Gemeinschaft zu engagieren und Verantwortung zu übernehmen. Als Pfadfinder habe ich die Möglichkeit, neue Fähigkeiten zu erlernen, Outdoor-Abenteuer zu planen und erleben und dabei Werte wie Teamwork, Respekt und Nachhaltigkeit zu fördern. Der CEVI bietet mir die Chance, neue Freundschaften zu knüpfen, meine Organisatorischen Fähigkeiten zu fördern und mich persönlich weiterzuentwickeln.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/cevi.svg",
@@ -192,11 +192,11 @@
   "url": ""
  },
  {
-  "activity_id": "a3cc2f52-f405-4eb9-a80d-daf1a7eef62f",
+  "activity_id": "9a7f180a-54f0-486c-bcee-d9213d65094b",
   "name": "Englischunterricht",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Als Englisch-Nachhilfelehrer liegt mir die Verbesserung der Sprachkenntnisse meiner Schüler am Herzen. Ich fördere ihre Kommunikationsfähigkeiten und ermutige sie zum aktiven Sprechen, Lesen und Schreiben. Mit abwechslungsreichem Unterrichtsmaterial und interaktiven Aktivitäten unterstütze ich sie dabei, ihre Ausdrucksfähigkeit und interkulturelle Kompetenz zu stärken.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/teaching.svg",
@@ -204,11 +204,11 @@
   "url": ""
  },
  {
-  "activity_id": "96c3d53a-8b68-40da-9266-adef619f797d",
+  "activity_id": "6d943632-13b8-4c26-9f44-9b3670e16b23",
   "name": "Mathematikunterricht",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Als Mathematik-Nachhilfelehrer ist es mein Ziel, Schülern dabei zu helfen, mathematische Konzepte zu verstehen und ihr logisches Denken zu entwickeln. Ich nutze verschiedene Lernstrategien und visuelle Hilfsmittel, um den Zugang zur Mathematik zu erleichtern. Meine Aufgabe ist es, die Schüler in ihrem mathematischen Denken zu fördern und ihnen die Bedeutung der Mathematik im Alltag und in anderen Fachbereichen nahezubringen.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/teaching.svg",
@@ -216,11 +216,11 @@
   "url": ""
  },
  {
-  "activity_id": "f00deea9-6157-4228-a0e4-c8f24bad5725",
+  "activity_id": "d08c515e-e51a-4668-8d10-3f9081ad8c7c",
   "name": "Informatikunterricht",
   "name_e": "",
   "name_r": "",
-  "description": "",
+  "description": "Als Informatik-Nachhilfelehrer begeistere ich Schüler für Technologie und Programmierung. Ich lege Wert auf praktische Erfahrungen und kreatives Denken. Durch das Erlernen von Programmiersprachen und das Lösen von Problemen lernen die Schüler grundlegende Konzepte. Der Unterricht fördert Teamarbeit und die Entwicklung eigener Projekte, um die Bedeutung von Kommunikation und Zusammenarbeit in der Informatik zu vermitteln. Mein Ziel ist es, die Schüler auf die Herausforderungen und Möglichkeiten der digitalen Welt vorzubereiten.",
   "description_e": "",
   "description_r": "",
   "thumbnail": "assets/icons/teaching.svg",

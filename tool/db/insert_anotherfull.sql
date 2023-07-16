@@ -302,25 +302,25 @@ INSERT INTO skill_skillSubCategory (skill_id, skillSubCategory_id) VALUES
     ((SELECT skill_id FROM skill WHERE identifier = 'graphql'), (SELECT skillSubCategory_id FROM skillSubCategory WHERE name = 'Backend'));
 
 INSERT INTO activity (name, description, thumbnail) VALUES
-    ('Papierarbeit', '', 'assets/icons/papercraft.svg'),
-    ('Zeichnen', '', 'assets/icons/drawing.svg'),
-    ('Graffiti', '', 'assets/icons/spraypaint.svg'),
-    ('Holzarbeit', '', 'assets/icons/woodwork.svg'),
-    ('Nähen', '', 'assets/icons/sewing.svg'),
-    ('Gitarre', '', 'assets/icons/guitar.svg'),
-    ('Bass', '', 'assets/icons/bass.svg'),
-    ('Schlagzeug', '', 'assets/icons/drums.svg'),
-    ('Produzieren', '', 'assets/icons/beats.svg'),
-    ('Hort', '', 'assets/icons/nursery.svg'),
-    ('Fahrrad', '', 'assets/icons/bike.svg'),
-    ('Volleyball', '', 'assets/icons/volleyball.svg'),
-    ('Skateboard', '', 'assets/icons/skateboard.svg'),
-    ('Tischtennis', '', 'assets/icons/tabletennis.svg'),
-    ('Wandern', '', 'assets/icons/hiking.svg'),
-    ('CEVI', '', 'assets/icons/cevi.svg'),
-    ('Englischunterricht', '', 'assets/icons/teaching.svg'),
-    ('Mathematikunterricht', '', 'assets/icons/teaching.svg'),
-    ('Informatikunterricht', '', 'assets/icons/teaching.svg');
+    ('Papierarbeit', 'Origami ist eine faszinierende Kunstform, die mich begeistert, da sie Kreativität und Präzision vereint. Durch das Falten von Papier kann ich komplexe Formen und Figuren erschaffen und gleichzeitig meine Feinmotorik schulen. Es ist eine meditative Tätigkeit, die mir Freude bereitet und mein ästhetisches Empfinden anspricht.', 'assets/icons/papercraft.svg'),
+    ('Zeichnen', 'Das Zeichnen ist für mich eine Ausdrucksform, mit der ich meine Ideen und Emotionen auf visuelle Weise vermitteln kann. Es ermöglicht mir, meine Kreativität auszuleben und neue Perspektiven zu entdecken. Beim Zeichnen kann ich mich in eine Welt der Fantasie begeben und meine eigenen Geschichten erzählen.', 'assets/icons/drawing.svg'),
+    ('Graffiti', 'Graffiti ist für mich eine Möglichkeit, Kunst im öffentlichen Raum zu schaffen und meine Individualität auszudrücken. Es erlaubt mir, mit Farben und Formen zu experimentieren und gleichzeitig eine Botschaft oder Stimmung zu vermitteln. Graffiti vereint Kreativität, Street Culture und soziale Kommunikation auf eine einzigartige Weise.', 'assets/icons/spraypaint.svg'),
+    ('Holzarbeit', 'Die Arbeit mit Holz bietet mir die Möglichkeit, etwas mit meinen eigenen Händen zu erschaffen. Es ist eine Mischung aus handwerklichem Geschick und künstlerischer Gestaltung. Die Verbindung von Naturmaterialien und der Prozess des Formens und Gestaltens von Holzstücken fasziniert mich und lässt mich die Schönheit und Vielseitigkeit dieses Materials schätzen.', 'assets/icons/woodwork.svg'),
+    ('Nähen', 'Das Nähen ist für mich eine praktische und kreative Fähigkeit, die es mir ermöglicht, meine eigenen Kleidungsstücke und Accessoires zu gestalten. Es ist ein Prozess der Transformation von Stoffen, bei dem ich meine Vorstellungskraft einsetzen kann, um einzigartige Designs zu kreieren. Das Nähen ermöglicht es mir, meine Liebe zur Nachhaltigkeit und zum Handwerk zu kombinieren.', 'assets/icons/sewing.svg'),
+    ('Gitarre', 'Die Gitarre ist mein treuer Begleiter in musikalischen Momenten. Das Spielen der Gitarre erlaubt mir, meine Emotionen und Gefühle durch die Klänge und Rhythmen der Musik auszudrücken. Es ist eine Form der kreativen Selbstentfaltung und ermöglicht mir, mich mit anderen Musikern zu verbinden und gemeinsam Harmonien zu schaffen.', 'assets/icons/guitar.svg'),
+    ('Bass', ' Der Bass ist ein essenzieller Bestandteil der Musik, der für Stabilität und Groove sorgt. Das Spielen des Basses erfüllt mich mit Energie und ermöglicht es mir, mich in den rhythmischen Puls der Musik einzufügen. Der Bass ist ein Instrument, das mich dazu bringt, mich auf die Essenz der Musik zu konzentrieren und die Verbindung zwischen Melodie und Rhythmus zu erforschen.', 'assets/icons/bass.svg'),
+    ('Schlagzeug', 'Das Schlagzeug ist mein Ventil, um mich rhythmisch auszudrücken und meine Energie freizusetzen. Es erlaubt mir, verschiedene Klangfarben und Texturen zu erzeugen und mich in den Rhythmus einzufühlen. Das Schlagzeugspielen fördert meine Koordination, Konzentration und Ausdauer und ermöglicht es mir, mit anderen Musikern zusammenzuspielen und gemeinsam eine mitreißende Performance zu schaffen.', 'assets/icons/drums.svg'),
+    ('Produzieren', 'Das Produzieren von Musik ist für mich wie das Erschaffen einer eigenen Klangwelt. Es erlaubt mir, verschiedene Instrumente und Klänge zu kombinieren, um meine musikalischen Ideen zum Leben zu erwecken. Das Produzieren gibt mir die Freiheit, mein musikalisches Gespür und meine technischen Fähigkeiten zu nutzen, um Songs und Kompositionen zu arrangieren und ihnen meinen eigenen Stil zu verleihen. Es ist ein Prozess der Kreativität und des Experimentierens, bei dem ich die Rolle des Klanggestalters einnehme.', 'assets/icons/beats.svg'),
+    ('Hort', 'Die Arbeit im Hort bereitet mir große Freude, da ich die Möglichkeit habe, Kinder auf ihrem Weg zu begleiten und ihnen dabei zu helfen, ihre Persönlichkeit und Fähigkeiten zu entfalten. Es ist eine verantwortungsvolle Aufgabe, die es mir ermöglicht, eine unterstützende und bereichernde Umgebung zu schaffen, in der die Kinder spielen, lernen und wachsen können.', 'assets/icons/nursery.svg'),
+    ('Fahrrad', 'Das Fahrradfahren ist für mich nicht nur eine Fortbewegungsmethode, sondern auch eine Quelle der Freiheit und des Abenteuers. Es verbindet mich mit der Natur und gibt mir die Möglichkeit, mich aktiv zu bewegen und dabei die Umwelt zu schonen. Beim Fahrradfahren kann ich den Alltagsstress hinter mir lassen und die Welt aus einer anderen Perspektive erleben.', 'assets/icons/bike.svg'),
+    ('Volleyball', 'Volleyball ist ein Teamsport, der mir die Möglichkeit gibt, meine Leidenschaft für Bewegung und Wettbewerb auszuleben. Es ist eine dynamische Sportart, die Koordination, Ausdauer und Teamwork erfordert. Beim Volleyball kann ich meine Fähigkeiten verbessern, neue Strategien entwickeln und mich gleichzeitig körperlich und mental herausfordern.', 'assets/icons/volleyball.svg'),
+    ('Skateboard', ' Das Skateboarden ist für mich eine aufregende und kreative Art der Fortbewegung. Es erlaubt mir, meine Balance und Koordination zu schulen und gleichzeitig meine Kreativität auszudrücken. Beim Skateboarden kann ich neue Tricks lernen, meine Grenzen ausloten und mich in einer Gemeinschaft von Gleichgesinnten austauschen.', 'assets/icons/skateboard.svg'),
+    ('Tischtennis', 'Tischtennis ist ein schneller und präziser Sport, der mir die Möglichkeit gibt, meine Reaktionsfähigkeit und mein Auge-Hand-Koordination zu verbessern. Es ist eine Sportart, die Geschicklichkeit und Taktik erfordert und gleichzeitig viel Spaß macht. Beim Tischtennis kann ich meine Konzentration schärfen und mich in spannenden Wettkämpfen mit anderen messen.', 'assets/icons/tabletennis.svg'),
+    ('Wandern', 'Das Wandern ist für mich eine Möglichkeit, dem stressigen Alltag zu entfliehen und die Schönheit der Natur zu genießen. Es ermöglicht mir, meinen Geist zu beruhigen, während ich neue Landschaften erkunde und frische Luft einatme. Beim Wandern kann ich meine körperliche Fitness verbessern und mich mit der Natur verbunden fühlen.', 'assets/icons/hiking.svg'),
+    ('CEVI', 'Der CEVI ist eine Organisation, die es mir ermöglicht, mich in der Gemeinschaft zu engagieren und Verantwortung zu übernehmen. Als Pfadfinder habe ich die Möglichkeit, neue Fähigkeiten zu erlernen, Outdoor-Abenteuer zu planen und erleben und dabei Werte wie Teamwork, Respekt und Nachhaltigkeit zu fördern. Der CEVI bietet mir die Chance, neue Freundschaften zu knüpfen, meine Organisatorischen Fähigkeiten zu fördern und mich persönlich weiterzuentwickeln.', 'assets/icons/cevi.svg'),
+    ('Englischunterricht', 'Als Englisch-Nachhilfelehrer liegt mir die Verbesserung der Sprachkenntnisse meiner Schüler am Herzen. Ich fördere ihre Kommunikationsfähigkeiten und ermutige sie zum aktiven Sprechen, Lesen und Schreiben. Mit abwechslungsreichem Unterrichtsmaterial und interaktiven Aktivitäten unterstütze ich sie dabei, ihre Ausdrucksfähigkeit und interkulturelle Kompetenz zu stärken.', 'assets/icons/teaching.svg'),
+    ('Mathematikunterricht', 'Als Mathematik-Nachhilfelehrer ist es mein Ziel, Schülern dabei zu helfen, mathematische Konzepte zu verstehen und ihr logisches Denken zu entwickeln. Ich nutze verschiedene Lernstrategien und visuelle Hilfsmittel, um den Zugang zur Mathematik zu erleichtern. Meine Aufgabe ist es, die Schüler in ihrem mathematischen Denken zu fördern und ihnen die Bedeutung der Mathematik im Alltag und in anderen Fachbereichen nahezubringen.', 'assets/icons/teaching.svg'),
+    ('Informatikunterricht', 'Als Informatik-Nachhilfelehrer begeistere ich Schüler für Technologie und Programmierung. Ich lege Wert auf praktische Erfahrungen und kreatives Denken. Durch das Erlernen von Programmiersprachen und das Lösen von Problemen lernen die Schüler grundlegende Konzepte. Der Unterricht fördert Teamarbeit und die Entwicklung eigener Projekte, um die Bedeutung von Kommunikation und Zusammenarbeit in der Informatik zu vermitteln. Mein Ziel ist es, die Schüler auf die Herausforderungen und Möglichkeiten der digitalen Welt vorzubereiten.', 'assets/icons/teaching.svg');
 
 INSERT INTO skill (identifier, yearsOfExperience, knowledgePercent, hobby, activity_id) VALUES
     ('papercraft', 0, 90, TRUE, (SELECT activity_id FROM activity WHERE name = 'Papierarbeit')),
@@ -621,22 +621,24 @@ INSERT INTO client (name, description, url) VALUES
     ('Terroir-ist','','https://www.terroir-ist.ch/startseite.html');
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('ID Altersverifikation','Die Inteco EDV AG setzt für Getränkehändler Webshops um. Da viele dieser Kunden alkoholhaltige Getränke verkaufen, musste laut den neuen Onlinegesetzen der Schweiz eine Altersüberprüfungsmethode im Webshop implementiert werden. Mir wurde der Auftrag vermittelt, eine Altersüberprüfung in den Webshops einzubauen, welche durch die Kennzahlen der Schweizer ID oder des Schweizer Passes erfolgen soll.',NULL,'/projects/it/inteco/idageverification/',NULL,NULL,'2023-01-12',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Produzentenseite','Ich setzte die Seite «Partner» im neuen Webshop vom Kunden Firstwine um, auf welcher die Getränkeproduzenten nach Ortschaft sortiert ersichtlich sind. Ihr alter Webshop besass schon diese Unterseite und im neuen Shop wurde eine Komponente erstellt, die durch einen neuen, rekursiven Ansatz die Produzenten auflistet.',NULL,'/projects/it/inteco/producer/',NULL,NULL,'2022-12-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('SCSS Skript','Ein weiterer Auftrag war das Refaktorisieren des SCSS Quellcodes, damit dieser mit der neuen Version des SCSS VS Code Plugins Kompiliert werden konnte. Da hauptsächlich die gleichen Fehler behoben werden mussten, schrieb ich ein Shell-Skript welches mithilfe von Regular Expressions die betroffenen Zeilen ersetzte.',NULL,'/projects/it/inteco/scss_script/',NULL,NULL,'2022-11-15',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Übersetzungsskript','Bei der Integration der Internationalisierung in die von der Inteco edv AG entwickelten Webseiten mussten viele Werte übersetzt werden, welche in .properties Dateien gespeichert waren. Um den Prozess teils zu automatisieren schrieb ich ein Python- und danach ein TypeScript-Skript, welches mithilfe von Regular Expressions durch die Werte aus der gegebenen Datei iteriert und entweder (nach optionaler Bestätigung) ersetzt oder überspringt falls sie schon übersetzt waren.',NULL,'/projects/it/inteco/translate/',NULL,NULL,'2023-02-02',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Testen mittels Selenium','Bei der implementation der Produzentenseite schrieb ich in Python mithilfe von Selenium ein Skript, welches das Frontend der erstellten Seite auf bestimmte Kriterien testete und die Resultate in eine Tabelle eingetragen hat.',NULL,'/projects/it/inteco/seleniumtest/',NULL,NULL,'2022-12-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('i18n','',NULL,'/projects/it/inteco/i18n/',NULL,NULL,'2023-02-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Passwort zurücksetzen','Da mir auffiel, dass bei der Anfrage auf ein neues Passwort dieses in einfachem Text per E-Mail versendet wurde, erarbeitete ich eine sicherere Methode das Passwort zurückzusetzen. Diese erfolgt durch das versenden eines Links, welcher auf eine Seite führt, worauf der User sein Passwort selber setzt (nachdem die Gültigkeit des Links überprüft wurde).',NULL,'/projects/it/inteco/passreset/',NULL,NULL,'2022-10-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Share Buttons','Einer meiner ersten Aufträge bei der Inteco edv AG war es, auf der Produktdetailseite Share-Buttons einzufügen, sowie das Schema Markup, welches die Vorschau des Produktes beim Teilen ermöglichte.',NULL,'/projects/it/inteco/sharebtn/',NULL,NULL,'2022-07-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('SEO Analyse','Innerhalb des Praktikums bei Inteco erarbeitete ich mir viel Wissen über (das unendliche Thema) SEO, welches ich in einem Dokument zusammenfasste und durch eine Präsentation unserem Webentwicklungs-Team vorstellte. Teilweise begann ich selbst damit einen Teil, welchen wir als Entwickler zu SEO beitragen können, umzusetzen.',NULL,'/projects/it/inteco/seo_analysis/',NULL,NULL,'2022-09-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Geschmacksprofil','Mein erster Auftrag als Praktikant war es, ein Geschmacksprofil auf der Produktdetailseite der Weine zu erstellen, an dem ersichtlich sein soll, wie der Wein schmeckt.',NULL,'/projects/it/inteco/tasteprofile/',NULL,NULL,'2022-06-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Popup','Im Auftrag vom Terroir-ist erstellte ich ein Konfigurierbares Popup, um als User das Alter bestätigen zu können.',NULL,'/projects/it/inteco/popup/',NULL,NULL,'2023-03-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Konfigurationsseiten Magnolia','',NULL,'/projects/it/inteco/admincenter/',NULL,NULL,'2023-02-24',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Webseiten aufsetzen','In meiner Zeit als Praktikant hatte ich zwei Webseiten auf Tomcat7 Servern sowie Docker neu aufgesetzt und livegeschaltet für Kunden, die vom alten Webshop in den neuen migrierten.',NULL,'/projects/it/inteco/aufsetzen/',NULL,NULL,'2022-08-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Webseiten warten','Ich wartete bei der Inteco edv AG bei mehreren Kunden Ihre Webseiten mit und setzte erwünschte Features um. Dabei sammelte ich viele Erfahrungen mit Frontend sowie Backend Technologien.',NULL,'/projects/it/inteco/warten/',NULL,NULL,'2022-07-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco'));
+    ('Produktvergleich','Als Abschlussarbeit entwickelte ich einen Produktvergleich mit drag-and-drop funktionalität für einen der Webshops in der Inteco. Dabei konnte ich einiges an Wissen in JavaScript, der HTML drag-and-drop API und Responsiveness lernen.',NULL,'assets/content/projects/it/inteco/comparison/',NULL,NULL,'2023-06-22',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('ID Altersverifikation','Die Inteco EDV AG setzt für Getränkehändler Webshops um. Da viele dieser Kunden alkoholhaltige Getränke verkaufen, musste laut den neuen Onlinegesetzen der Schweiz eine Altersüberprüfungsmethode im Webshop implementiert werden. Mir wurde der Auftrag vermittelt, eine Altersüberprüfung in den Webshops einzubauen, welche durch die Kennzahlen der Schweizer ID oder des Schweizer Passes erfolgen soll.',NULL,'assets/content/projects/it/inteco/idageverification/',NULL,NULL,'2023-01-12',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Produzentenseite','Ich setzte die Seite «Partner» im neuen Webshop vom Kunden Firstwine um, auf welcher die Getränkeproduzenten nach Ortschaft sortiert ersichtlich sind. Ihr alter Webshop besass schon diese Unterseite und im neuen Shop wurde eine Komponente erstellt, die durch einen neuen, rekursiven Ansatz die Produzenten auflistet.',NULL,'assets/content/projects/it/inteco/producer/',NULL,NULL,'2022-12-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('SCSS Skript','Ein weiterer Auftrag war das Refaktorisieren des SCSS Quellcodes, damit dieser mit der neuen Version des SCSS VS Code Plugins Kompiliert werden konnte. Da hauptsächlich die gleichen Fehler behoben werden mussten, schrieb ich ein Shell-Skript welches mithilfe von Regular Expressions die betroffenen Zeilen ersetzte.',NULL,'assets/content/projects/it/inteco/scss_script/',NULL,NULL,'2022-11-15',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Übersetzungsskript','Bei der Integration der Internationalisierung in die von der Inteco edv AG entwickelten Webseiten mussten viele Werte übersetzt werden, welche in .properties Dateien gespeichert waren. Um den Prozess teils zu automatisieren schrieb ich ein Python- und danach ein TypeScript-Skript, welches mithilfe von Regular Expressions durch die Werte aus der gegebenen Datei iteriert und entweder (nach optionaler Bestätigung) ersetzt oder überspringt falls sie schon übersetzt waren.',NULL,'assets/content/projects/it/inteco/translate/',NULL,NULL,'2023-02-02',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Testen mittels Selenium','Bei der implementation der Produzentenseite schrieb ich in Python mithilfe von Selenium ein Skript, welches das Frontend der erstellten Seite auf bestimmte Kriterien testete und die Resultate in eine Tabelle eingetragen hat.',NULL,'assets/content/projects/it/inteco/seleniumtest/',NULL,NULL,'2022-12-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('i18n','',NULL,'assets/content/projects/it/inteco/i18n/',NULL,NULL,'2023-02-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Passwort zurücksetzen','Da mir auffiel, dass bei der Anfrage auf ein neues Passwort dieses in einfachem Text per E-Mail versendet wurde, erarbeitete ich eine sicherere Methode das Passwort zurückzusetzen. Diese erfolgt durch das versenden eines Links, welcher auf eine Seite führt, worauf der User sein Passwort selber setzt (nachdem die Gültigkeit des Links überprüft wurde).',NULL,'assets/content/projects/it/inteco/passreset/',NULL,NULL,'2022-10-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Share Buttons','Einer meiner ersten Aufträge bei der Inteco edv AG war es, auf der Produktdetailseite Share-Buttons einzufügen, sowie das Schema Markup, welches die Vorschau des Produktes beim Teilen ermöglichte.',NULL,'assets/content/projects/it/inteco/sharebtn/',NULL,NULL,'2022-07-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('SEO Analyse','Innerhalb des Praktikums bei Inteco erarbeitete ich mir viel Wissen über (das unendliche Thema) SEO, welches ich in einem Dokument zusammenfasste und durch eine Präsentation unserem Webentwicklungs-Team vorstellte. Teilweise begann ich selbst damit einen Teil, welchen wir als Entwickler zu SEO beitragen können, umzusetzen.',NULL,'assets/content/projects/it/inteco/seo_analysis/',NULL,NULL,'2022-09-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Geschmacksprofil','Mein erster Auftrag als Praktikant war es, ein Geschmacksprofil auf der Produktdetailseite der Weine zu erstellen, an dem ersichtlich sein soll, wie der Wein schmeckt.',NULL,'assets/content/projects/it/inteco/tasteprofile/',NULL,NULL,'2022-06-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Popup','Im Auftrag vom Terroir-ist erstellte ich ein Konfigurierbares Popup, um als User das Alter bestätigen zu können.',NULL,'assets/content/projects/it/inteco/popup/',NULL,NULL,'2023-03-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Konfigurationsseiten Magnolia','',NULL,'assets/content/projects/it/inteco/admincenter/',NULL,NULL,'2023-02-24',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Webseiten aufsetzen','In meiner Zeit als Praktikant hatte ich zwei Webseiten auf Tomcat7 Servern sowie Docker neu aufgesetzt und livegeschaltet für Kunden, die vom alten Webshop in den neuen migrierten.',NULL,'assets/content/projects/it/inteco/aufsetzen/',NULL,NULL,'2022-08-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Webseiten warten','Ich wartete bei der Inteco edv AG bei mehreren Kunden Ihre Webseiten mit und setzte erwünschte Features um. Dabei sammelte ich viele Erfahrungen mit Frontend sowie Backend Technologien.',NULL,'assets/content/projects/it/inteco/warten/',NULL,NULL,'2022-07-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco'));
 
 INSERT INTO project_author (project_id, author_id) VALUES
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'ID Altersverifikation'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Produzentenseite'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'SCSS Skript'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
@@ -666,6 +668,20 @@ INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webseiten warten'),(SELECT client_id FROM client WHERE name = 'Terroir-ist'));*/
 
 INSERT INTO project_skill (project_id, skill_id) VALUES
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'java')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'freemarker')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'scss')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'js')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'magnolia')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'web-accessibility')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'html')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'inkscape')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'logic')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'organization')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
+    ((SELECT project_id FROM project WHERE name = 'Produktvergleich'),(SELECT skill_id FROM skill WHERE identifier = 'word')),
     ((SELECT project_id FROM project WHERE name = 'ID Altersverifikation'),(SELECT skill_id FROM skill WHERE identifier = 'java')),
     ((SELECT project_id FROM project WHERE name = 'ID Altersverifikation'),(SELECT skill_id FROM skill WHERE identifier = 'freemarker')),
     ((SELECT project_id FROM project WHERE name = 'ID Altersverifikation'),(SELECT skill_id FROM skill WHERE identifier = 'css')),
@@ -782,7 +798,7 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webseiten warten'),(SELECT skill_id FROM skill WHERE identifier = 'teamwork'));
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('Webscraping automatisation','',NULL,'/projects/it/python/ernestovargas/',NULL,'https://github.com/omega-800/AutomationPython','2020-12-18',NULL, (SELECT career_id FROM career WHERE name='ernestovargas'));
+    ('Webscraping automatisation','',NULL,'assets/content/projects/it/python/ernestovargas/',NULL,'https://github.com/omega-800/AutomationPython','2020-12-18',NULL, (SELECT career_id FROM career WHERE name='ernestovargas'));
 
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT person_id FROM person WHERE firstName = 'Georgiy'));
@@ -797,19 +813,19 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'independence'));
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('Portfolio','Für die Bewerbungsphase nach der Informatikmittelschule entwickelte ich eine Portfolio-Webseite. Dies war die alte Version der jetzigen Seite.',NULL,'/projects/it/web/cv_old/','https://portfolio-chirokikh-georgiy.web.app/','https://github.com/omega-800/curriculum-vitae-typescript','2019-06-20',NULL,NULL),
-    ('Finanzplaner','Um meine Einnahmen und Ausgaben im überblick zu halten und analysieren hatte ich eine Excel-Tabelle mit meinen Transaktionen erstellt. Um diese einfacher verwalten zu können und Prognosen zu erstellen, schrieb ich ein Python-script, welches die Daten aus der Tabelle in eine MySQL Datenbank speichern und als Excel-Tabelle wieder exportieren kann. Dazu programmierte ich verschiedene Funktionen wzB eine Prognose des ersparten in x Jahren, basierend auf den bisherigen Ausgaben.',NULL,NULL,NULL,'https://github.com/omega-800/budgetplanner-python','2023-03-17',NULL,NULL),
-    ('Textbasiertes Spiel Python','Ich wurde durch das Entdecken einer Python-Library für das Entwickeln textbasierter Spiele dazu inspiriert, ein eigenes Spiel zu schreiben. In dieser Geschichte strandet der Spieler auf einer Insel und muss ressourcen sammeln sowie Feinde bekämpfen, um schlussendlich das Ziel des Bauen eines Bootes um der Insel zu entfliehen zu erreichen.',NULL,NULL,NULL,'https://github.com/omega-800/stranded-python','2023-01-19',NULL,NULL),
-    ('Textbasiertes Spiel C#','Dieses Spiel ist die weiterführung, bzw die Neu-Implementation des Python Stranded Spiels. Da mir die Dynamische Typisierung sowie die Laufzeit von Python nicht gefiel, fing ich an dieses Spiel in C# zu entwickeln.',NULL,NULL,NULL,'https://github.com/omega-800/stranded','2023-01-29',NULL,NULL),
-    ('Roguelike Dungeon Spiel 1','Da mir die Spielentwicklung mittelsunity sehr gefallen hat, fing ich an ein eigener Roguelike Dungeon Spiel zu entwickeln. Die Sprites habe ich mittels Gimp designed.',NULL,'/projects/it/unity/dungeon/',NULL,'https://github.com/omega-800/dungeon_game','2019-03-29',NULL,NULL),
+    ('Portfolio','Für die Bewerbungsphase nach der Informatikmittelschule entwickelte ich eine Portfolio-Webseite. Dies war die alte Version der jetzigen Seite.',NULL,'assets/content/projects/it/web/cv_old/','https://portfolio-chirokikh-georgiy.web.app/','https://github.com/omega-800/curriculum-vitae-typescript','2019-06-20',NULL,NULL),
+    ('Finanzplaner','Um meine Einnahmen und Ausgaben im überblick zu halten und analysieren hatte ich eine Excel-Tabelle mit meinen Transaktionen erstellt. Um diese einfacher verwalten zu können und Prognosen zu erstellen, schrieb ich ein Python-script, welches die Daten aus der Tabelle in eine MySQL Datenbank speichern und als Excel-Tabelle wieder exportieren kann. Dazu programmierte ich verschiedene Funktionen wzB eine Prognose des ersparten in x Jahren, basierend auf den bisherigen Ausgaben.',NULL,'assets/content/projects/it/python/finance/',NULL,'https://github.com/omega-800/budgetplanner-python','2023-03-17',NULL,NULL),
+    ('Textbasiertes Spiel Python','Ich wurde durch das Entdecken einer Python-Library für das Entwickeln textbasierter Spiele dazu inspiriert, ein eigenes Spiel zu schreiben. In dieser Geschichte strandet der Spieler auf einer Insel und muss ressourcen sammeln sowie Feinde bekämpfen, um schlussendlich das Ziel des Bauen eines Bootes um der Insel zu entfliehen zu erreichen.',NULL,'assets/content/projects/it/python/stranded/',NULL,'https://github.com/omega-800/stranded-python','2023-01-19',NULL,NULL),
+    ('Textbasiertes Spiel C#','Dieses Spiel ist die weiterführung, bzw die Neu-Implementation des Python Stranded Spiels. Da mir die Dynamische Typisierung sowie die Laufzeit von Python nicht gefiel, fing ich an dieses Spiel in C# zu entwickeln.',NULL,'assets/content/projects/it/csharp/stranded/',NULL,'https://github.com/omega-800/stranded','2023-01-29',NULL,NULL),
+    ('Roguelike Dungeon Spiel 1','Da mir die Spielentwicklung mittelsunity sehr gefallen hat, fing ich an ein eigener Roguelike Dungeon Spiel zu entwickeln. Die Sprites habe ich mittels Gimp designed.',NULL,'assets/content/projects/it/unity/dungeon/',NULL,'https://github.com/omega-800/dungeon_game','2019-03-29',NULL,NULL),
     ('Roguelike Dungeon Spiel 2','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
     ('Roguelike Dungeon Spiel 3','Da mir die 2D-Roguelike Spiele sehr gefielen und ich Python lernen wollte, entwickelte ich so ein Spiel mittels Ursina. Die Sprites erstellte ich mittels Gimp.',NULL,NULL,NULL,'https://github.com/omega-800/roguelike-game','2022-09-10',NULL,NULL),
-    ('Raketen Spiel','In der Informatikmittelschule zeigte mir ein Kollege, wie man ein Spiel in Unity entwickelt. Dies ist das Ergebnis meines ersten Unity-Projektes. Die Rakete modellierte ich in Blender.',NULL,'/projects/it/unity/rocket/',NULL,NULL,'2018-11-01',NULL,NULL),
+    ('Raketen Spiel','In der Informatikmittelschule zeigte mir ein Kollege, wie man ein Spiel in Unity entwickelt. Dies ist das Ergebnis meines ersten Unity-Projektes. Die Rakete modellierte ich in Blender.',NULL,'assets/content/projects/it/unity/rocket/',NULL,NULL,'2018-11-01',NULL,NULL),
     ('Minecraft Kopie','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Textbasiertes Spiel Java','Dieses Spiel entwickelte ich, als ich Informatikunterricht gab. Mein Ziel war es, ein vom Code-Aufbau simples Spiel zu gestalten, um das den Lernenden beizubringen und zusammen zu schreiben.',NULL,'/projects/it/java/textgame/',NULL,NULL,'2019-05-01',NULL,NULL),
-    ('Java UNO Spiel','Während der Schulzeit entwickelte ich mit ein paar meiner Klassenkameraden ein UNO-Spiel mittels Java sowie Swing für die GUI-Implementation.',NULL,'/projects/it/java/uno/',NULL,NULL,'2019-02-20',NULL,(SELECT career_id FROM career WHERE name='bzz')),
-    ('Immobilien Webseite','Im Auftrag meines Vaters schrieb ich eine simple Webseite, damit er seine zu verkaufenden, renovierten Immobilien ausstellen konnte.',NULL,'/projects/it/web/immob/',NULL,NULL,'2017-11-20',(SELECT person_id FROM person WHERE firstName = 'Alexey'),NULL),
-    ('RusFrauenTreff Webseite','Für die Treffen russischer Frauen in Zürich entwickelte ich nach Bitte meiner Mutter eine Info-Homepage.',NULL,'/projects/it/web/rus/',NULL,'https://github.com/omega-800/rusfrauentreff','2017-04-20',(SELECT person_id FROM person WHERE firstName = 'Tatiana'),NULL);
+    ('Textbasiertes Spiel Java','Dieses Spiel entwickelte ich, als ich Informatikunterricht gab. Mein Ziel war es, ein vom Code-Aufbau simples Spiel zu gestalten, um das den Lernenden beizubringen und zusammen zu schreiben.',NULL,'assets/content/projects/it/java/textgame/',NULL,NULL,'2019-05-01',NULL,NULL),
+    ('Java UNO Spiel','Während der Schulzeit entwickelte ich mit ein paar meiner Klassenkameraden ein UNO-Spiel mittels Java sowie Swing für die GUI-Implementation.',NULL,'assets/content/projects/it/java/uno/',NULL,NULL,'2019-02-20',NULL,(SELECT career_id FROM career WHERE name='bzz')),
+    ('Immobilien Webseite','Im Auftrag meines Vaters schrieb ich eine simple Webseite, damit er seine zu verkaufenden, renovierten Immobilien ausstellen konnte.',NULL,'assets/content/projects/it/web/immob/',NULL,NULL,'2017-11-20',(SELECT person_id FROM person WHERE firstName = 'Alexey'),NULL),
+    ('RusFrauenTreff Webseite','Für die Treffen russischer Frauen in Zürich entwickelte ich nach Bitte meiner Mutter eine Info-Homepage.',NULL,'assets/content/projects/it/web/rus/',NULL,'https://github.com/omega-800/rusfrauentreff','2017-04-20',(SELECT person_id FROM person WHERE firstName = 'Tatiana'),NULL);
     
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
@@ -910,29 +926,29 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'RusFrauenTreff Webseite'),(SELECT skill_id FROM skill WHERE identifier = 'independence'));
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('Teddy','',NULL,'/projects/art/textile/teddy/',NULL,NULL,'2022-02-01',NULL,NULL),
-    ('Tie Dye','',NULL,'/projects/art/textile/tiedye/',NULL,NULL,'2022-04-01',NULL,NULL),
-    ('Portemonnaie','',NULL,'/projects/art/textile/wallet/',NULL,NULL,'2023-04-11',NULL,NULL),
-    ('Pullover','',NULL,'/projects/art/textile/pullover/',NULL,NULL,'2023-04-10',NULL,NULL),
+    ('Teddy','Für meinen Teddy nähte ich mehrere Jäckchen sowie einen hut, damit er auch in Winterzeiten warm hat aber auch stylisch aussieht.',NULL,'assets/content/projects/art/textile/teddy/',NULL,NULL,'2022-02-01',NULL,NULL),
+    ('Tie Dye','Diese Tie Dye Shirts habe ich aus meiner Faszination für die 60er US-Kultur und deren Auswirkungen auf die Gesellschaft erstellt. Aber auch weil ich die Muster schön finde.',NULL,'assets/content/projects/art/textile/tiedye/',NULL,NULL,'2022-04-01',NULL,NULL),
+    ('Portemonnaie','Damit ich einen sicheren Ort für mein geringes Kapital habe und Stoffe aus meinen alten Kleidern wiederverwenden kann, designte und nähte ich ein mehrfach-Portemonnaie mit Ressverschluss.',NULL,'assets/content/projects/art/textile/wallet/',NULL,NULL,'2023-04-11',NULL,NULL),
+    ('Pullover','Es macht mir spass, meine Kleider weiter zu verschönern und bemalen. Somit kann ich in einer gelangweilten Stunde aus einem eintönigen Pullover ein Kunstwerk erschaffen.',NULL,'assets/content/projects/art/textile/pullover/',NULL,NULL,'2023-04-10',NULL,NULL),
     ('Heavy Metal Veste','',NULL,NULL,NULL,NULL,'2017-05-01',NULL,NULL),
     ('Punk Pullover','',NULL,NULL,NULL,NULL,'2022-04-21',NULL,NULL),
-    ('Holzbesteck','',NULL,NULL,NULL,NULL,'2022-10-01',NULL,NULL),
-    ('Holzohrenring','',NULL,'/projects/art/wood/plug/',NULL,NULL,'2023-05-06',NULL,NULL),
-    ('Bemaltes Eigentum','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Turnsack und Seemannssack','',NULL,NULL,NULL,NULL,'2017-07-01',NULL,NULL),
-    ('Legales Graffiti','',NULL,'/projects/art/art/spray/',NULL,NULL,NULL,NULL,NULL),
-    ('Kusudama','',NULL,'/projects/art/paper/kusudama/',NULL,NULL,NULL,NULL,NULL),
-    ('Origami','',NULL,'/projects/art/paper/origami/',NULL,NULL,NULL,NULL,NULL),
-    ('Zeichnungen','',NULL,'/projects/art/art/drawing/',NULL,NULL,NULL,NULL,NULL),
-    ('Mosaik','',NULL,'/projects/art/other/mosaic/',NULL,NULL,NULL,NULL,NULL),
-    ('Katzenbaum','',NULL,'/projects/art/wood/cat/',NULL,NULL,'2023-05-11',NULL,NULL),
-    ('Malen','',NULL,'/projects/art/art/paint/',NULL,NULL,NULL,NULL,NULL),
-    ('Gitarre','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Bass','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Schlagzeug','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Ableton','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('FL Studio','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Faden','',NULL,'/projects/art/other/string/',NULL,NULL,NULL,NULL,NULL);
+    ('Holzbesteck','Als ich an einem Tag campen ging und kein Besteck dabei hatte, kam ich auf die Idee, dieses selbst zu schnitzen. Diese Erfahrung weckte mein Interesse an Holz und dessen Bearbeitungsmöglichkeiten.',NULL,NULL,NULL,NULL,'2022-10-01',NULL,NULL),
+    ('Holzohrenring','Diesen Plug habe ich als Miniprojekt geschnitzt. Diesen hatte ich immer dabei und konnte während des Wartens auf den Zug oder als Entspannungsübung Schritt nach Schritt vervollständigen.',NULL,'assets/content/projects/art/wood/plug/',NULL,NULL,'2023-05-06',NULL,NULL),
+    /*('Bemaltes Eigentum','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),*/
+    ('Turnsack und Seemannssack','Da meistens die industriell hergestellten Turnsäcke für meinen Geschmack zu klein sind, nähte ich aus Reststoff für mich passende Bags und Rucksäcke.',NULL,NULL,NULL,NULL,'2017-07-01',NULL,NULL),
+    ('Legales Graffiti',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'spraypaint'),NULL,'assets/content/projects/art/art/spray/',NULL,NULL,'2021-09-10',NULL,NULL),
+    ('Kusudama','',NULL,'assets/content/projects/art/paper/kusudama/',NULL,NULL,'2022-10-01',NULL,NULL),
+    ('Origami',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'papercraft'),NULL,'assets/content/projects/art/paper/origami/',NULL,NULL,'2023-06-18',NULL,NULL),
+    ('Zeichnungen',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'drawing'),NULL,'assets/content/projects/art/art/drawing/',NULL,NULL,'2019-07-01',NULL,NULL),
+    ('Mosaik','',NULL,'assets/content/projects/art/other/mosaic/',NULL,NULL,'2019-02-01',NULL,NULL),
+    ('Katzenbaum','',NULL,'assets/content/projects/art/wood/cat/',NULL,NULL,'2023-05-11',NULL,NULL),
+    ('Malen','',NULL,'assets/content/projects/art/art/paint/',NULL,NULL,'2020-06-01',NULL,NULL),
+    ('Gitarre',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'guitar'),NULL,'assets/content/projects/art/music/guitar/',NULL,NULL,'2015-06-18',NULL,NULL),
+    ('Bass',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'bass'),NULL,'assets/content/projects/art/music/bass/',NULL,NULL,'2022-11-11',NULL,NULL),
+    ('Schlagzeug',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'drums'),NULL,'assets/content/projects/art/music/drums/',NULL,NULL,'2023-01-22',NULL,NULL),
+    ('Ableton',(SELECT description FROM application LEFT JOIN skill ON application.application_id = skill.application_id WHERE identifier = 'ableton-live'),NULL,'assets/content/projects/art/music/ableton/',NULL,NULL,'2019-08-01',NULL,NULL),
+    ('FL Studio',(SELECT description FROM application LEFT JOIN skill ON application.application_id = skill.application_id WHERE identifier = 'fl-studio'),NULL,'assets/content/projects/art/music/flstudio/',NULL,NULL,'2019-12-01',NULL,NULL),
+    ('Faden','',NULL,'assets/content/projects/art/other/string/',NULL,NULL,'2021-03-20',NULL,NULL);
 
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Teddy'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
@@ -943,7 +959,7 @@ INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Punk Pullover'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Holzbesteck'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Holzohrenring'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
-    ((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
+    /*((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),*/
     ((SELECT project_id FROM project WHERE name = 'Turnsack und Seemannssack'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Legales Graffiti'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Kusudama'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
@@ -985,9 +1001,9 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Holzohrenring'),(SELECT skill_id FROM skill WHERE identifier = 'patience')),
     ((SELECT project_id FROM project WHERE name = 'Holzohrenring'),(SELECT skill_id FROM skill WHERE identifier = 'woodwork')),
     ((SELECT project_id FROM project WHERE name = 'Holzohrenring'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
-    ((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
+    /*((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
     ((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT skill_id FROM skill WHERE identifier = 'drawing')),
-    ((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
+    ((SELECT project_id FROM project WHERE name = 'Bemaltes Eigentum'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),*/
     ((SELECT project_id FROM project WHERE name = 'Turnsack und Seemannssack'),(SELECT skill_id FROM skill WHERE identifier = 'patience')),
     ((SELECT project_id FROM project WHERE name = 'Turnsack und Seemannssack'),(SELECT skill_id FROM skill WHERE identifier = 'sewing')),
     ((SELECT project_id FROM project WHERE name = 'Turnsack und Seemannssack'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
@@ -1044,15 +1060,15 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Faden'),(SELECT skill_id FROM skill WHERE identifier = 'independence'));
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('CEVI','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Fahrrad','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Volleyball','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Skateboard','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Tischtennis','',NULL,'/projects/health/sports/tabletennis/',NULL,NULL,NULL,NULL,NULL),
-    ('Campen','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Wandern','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Kochen','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-    ('Lebkuchen','',NULL,'/projects/health/cooking/lebkuchen/',NULL,NULL,'2022-12-21',NULL,NULL);
+    ('CEVI',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'cevi'),NULL,NULL,NULL,NULL,'2016-06-01',NULL,NULL),
+    ('Fahrrad',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'bike'),NULL,NULL,NULL,NULL,'2023-06-19',NULL,NULL),
+    ('Volleyball',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'volleyball'),NULL,NULL,NULL,NULL,'2023-04-11',NULL,NULL),
+    ('Skateboard',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'skateboard'),NULL,NULL,NULL,NULL,'2017-05-12',NULL,NULL),
+    ('Tischtennis',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'tabletennis'),NULL,'assets/content/projects/health/sports/tabletennis/',NULL,NULL,'2016-08-01',NULL,NULL),
+    ('Campen','',NULL,NULL,NULL,NULL,'2022-08-10',NULL,NULL),
+    ('Wandern',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'hiking'),NULL,NULL,NULL,NULL,'2022-08-18',NULL,NULL),
+    ('Kochen','',NULL,NULL,NULL,NULL,'2023-01-05',NULL,NULL),
+    ('Lebkuchen','',NULL,'assets/content/projects/health/cooking/lebkuchen/',NULL,NULL,'2022-12-21',NULL,NULL);
 
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Skateboard'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),

@@ -29,13 +29,12 @@ export class ContentboxComponent implements OnInit {
 
   ngOnInit() {
     const thumbnail: string = "thumbnail.webp";
-    const assetsPath: string = "assets/content";
     this.preview = this.imagePreview === undefined ? this.image : this.imagePreview;
     if (this.image.path != "") {
       if (!this.image.path.endsWith("/")) {
         this.hasImage = true;
       } else {
-        let files = assets["src/" + assetsPath + this.image.path.slice(0, -1) as keyof typeof assets];
+        let files = assets["src/" + this.image.path.slice(0, -1) as keyof typeof assets];
         if (files && files.length > 0) {
           this.hasImage = true;
           this.images = files.filter(file => { return file !== thumbnail }).map(file => {
@@ -43,14 +42,14 @@ export class ContentboxComponent implements OnInit {
               id: file,
               name: this.title + " " + file,
               alt: "Image of " + this.title,
-              path: assetsPath + this.image.path + file
+              path: this.image.path + file
             }
           })
           this.preview = this.imagePreview === undefined ? {
             id: "image_" + this.title,
             name: this.title,
             alt: "Preview image of " + this.title,
-            path: assetsPath + this.image.path + thumbnail
+            path: this.image.path + thumbnail
           } : this.imagePreview;
           if (this.images.length == 1) {
             this.image = this.images[0];
