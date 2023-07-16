@@ -14,6 +14,7 @@ export interface CareerEntity extends NamedEntity {
   workplace?: WorkplaceEntity;
   school?: SchoolEntity;
   skills: SkillEntity[];
+  url:string;
 }
 
 export interface CareerOnly {

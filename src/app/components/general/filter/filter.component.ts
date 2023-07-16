@@ -46,9 +46,14 @@ export class FilterComponent implements OnInit {
     );
   }
 
+  getName(categoryID:string, value:FilterType):string {
+    return this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == value)[0].name;
+  }
+
   toggleTag(categoryID: string, categoryName:string, tagValue: FilterType) {
     let changed = false;
-    this.selectedFilter.forEach((elem) => {
+    let htmlElem = document.getElementById(this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == tagValue)[0].id);
+    this.selectedFilter.every((elem) => {
       if (elem.category == categoryID) {
         if (elem.value.includes(tagValue)) {
           elem.value.splice(elem.value.indexOf(tagValue), 1);
@@ -58,10 +63,15 @@ export class FilterComponent implements OnInit {
               1
             );
           }
+          htmlElem?.classList.remove('active');
         } else {
+          htmlElem?.classList.add('active');
           elem.value.push(tagValue);
         }
         changed = true;
+        return false;
+      } else {
+        return true;
       }
     });
     if (!changed) {
@@ -72,6 +82,7 @@ export class FilterComponent implements OnInit {
         category: categoryID,
         value: [tagValue],
       });
+      htmlElem?.classList.add('active');
     }
     this.filterEmitter.emit(
       this.selectedFilter.sort((a, b) =>

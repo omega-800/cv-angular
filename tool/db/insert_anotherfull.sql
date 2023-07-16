@@ -382,9 +382,9 @@ INSERT INTO address(street, city, zip, country_id) VALUES
 
 INSERT INTO contactPoint(name, phone, email) VALUES 
     ('Info point', 0552565758, 'info@inteco.ch'),
-    ('Web support', 0, 'webmaster@inteco.ch'),
+    /*('Web support', 0, 'webmaster@inteco.ch'),
     ('Technik support', 0, 'support@inteco.ch'),
-    ('WEGAS support', 0, 'wegas@inteco.ch'),
+    ('WEGAS support', 0, 'wegas@inteco.ch'),*/
     ('Info point', 0525502773, 'swissoffice@ernesto-vargas.com'),
     ('Sekretariat', 0444133080, NULL),
     ('Sekretariat', 0442446464, 'sekretariat@kshp.ch'),
@@ -404,9 +404,9 @@ INSERT INTO workplace (description, name, legalName, url, logo, foundingDate, fo
 
 INSERT INTO workplace_contactPoint (workplace_id, contactPoint_id) VALUES
     ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'info@inteco.ch')),
-    ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'webmaster@inteco.ch')),
+    /*((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'webmaster@inteco.ch')),
     ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'support@inteco.ch')),
-    ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'wegas@inteco.ch')),
+    ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'wegas@inteco.ch')),*/
     ((SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'swissoffice@ernesto-vargas.com'));
 
 INSERT INTO school (description, name, url, logo, image, type, address_id) VALUES 

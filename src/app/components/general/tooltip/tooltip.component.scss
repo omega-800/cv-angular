@@ -11,6 +11,7 @@
         border-radius: $elem-size * 2;
         padding: $elem-size;
         position: absolute;
+        width:100%;
         & .tooltip-icon {
             @include small-image;
         }
@@ -46,9 +47,10 @@
             }
         }
         &.direction-right {
-            bottom: calc(50% - 12.5vw);
+            bottom: calc(50% - 5vw);
             left: calc(100% + $elem-size);
-            height: 25vw;
+            height: 10vw;
+            width:25vw;
             &::after {
                 right: 100%;
                 top: calc(50% - $elem-size);

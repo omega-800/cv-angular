@@ -60,7 +60,7 @@
         }
     }
     & .skills{
-        @include slimpill;
+        //@include slimpill;
         &:not(.active) > *:not(.showSkills) {
             display: none;
         }

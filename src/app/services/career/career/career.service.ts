@@ -11,6 +11,7 @@ import { WorkplaceService } from '../workplace/workplace.service';
 import { SchoolService } from '../school/school.service';
 import { SchoolEntity } from '../school/school.model';
 import { SkillService } from '../../skills/skill/skill.service';
+import { WorkplaceEntity } from '../workplace/workplace.model';
 
 @Injectable({
   providedIn: 'root',
@@ -30,11 +31,13 @@ export class CareerService {
 
   fillCareer(career: CareerOnly): CareerEntity {
     if (career.workplace_id !== '') {
+      let workplace:WorkplaceEntity =this.workplaceService.getWorkplaceById(career.workplace_id); 
       return {
         ...career,
         id: 'career_' + career.career_id,
-        workplace: this.workplaceService.getWorkplaceById(career.workplace_id),
+        workplace: workplace,
         type: careerTypes.WORK,
+        url: workplace.url,
         skills: this.careerSkillLinks
           .filter((link) => link.career_id == career.career_id)
           .map((link) => {
@@ -55,6 +58,7 @@ export class CareerService {
         school: school,
         type: careerTypes.SCHOOL,
         description: school.type,
+        url: school.url,
         skills: this.careerSkillLinks
           .filter((link) => link.career_id == career.career_id)
           .map((link) => {
@@ -69,6 +73,7 @@ export class CareerService {
       ...career,
       id: career.career_id,
       type: careerTypes.OTHER,
+      url:'',
       skills: this.careerSkillLinks
         .filter((link) => link.career_id == career.career_id)
         .map((link) => {

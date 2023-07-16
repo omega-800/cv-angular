@@ -31,6 +31,9 @@ $range-useful-width: calc(100% - $range-height);
             & > * {
                 display: inline-block;
             }
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     & .filterComp {

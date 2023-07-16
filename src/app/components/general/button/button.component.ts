@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { ImageComp, LinkType } from '../../components.model';
+import { ImageComp, LinkType, LinkTypes } from '../../components.model';
+import { Direction, linkTypes } from '../../components.constants';
 
 @Component({
   selector: 'app-button',
@@ -13,4 +14,7 @@ export class ButtonComponent {
   @Input() type!: LinkType;
   @Input() name!: string;
   @Input() image?: ImageComp;
+  
+  lt: LinkTypes = linkTypes;
+  d = Direction;
 }

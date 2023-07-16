@@ -1,824 +1,824 @@
 [
  {
-  "career_skill_id": "afd83cfa-1eee-4bfb-aebc-6d4cc9986f83",
-  "skill_id": "19fd76a3-2f70-42f3-8946-57bdb88b6a5f",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "60cf3198-d6ea-4f54-8822-c4a75f1c6a43",
+  "skill_id": "c0f72490-d1dc-40f2-8f15-4048ed2f5265",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 65
  },
  {
-  "career_skill_id": "568526b5-304a-47f5-83ba-4a51469eb6f7",
-  "skill_id": "89d05e2e-ae7e-43bf-a5a9-899117fd3346",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "48c685d9-1187-4c0f-b6c2-1df3556c1e88",
+  "skill_id": "ed73e451-d2c6-497e-aafa-10e013c687f7",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 35
  },
  {
-  "career_skill_id": "7d162d4e-e7b1-4629-820d-960d92a0a0fd",
-  "skill_id": "fe0cd672-4597-4263-8a77-7ff7b0435f19",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "e9364037-9ed3-49f4-aad1-c20225f5e104",
+  "skill_id": "cb34786d-cafd-421d-a7bd-270cd9108e70",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 5
  },
  {
-  "career_skill_id": "1d82ff5c-7bce-480b-8a3b-596b7f431321",
-  "skill_id": "41e0e800-aaa6-4455-b910-b091af25d2fa",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "72d4a085-10f5-4e99-b056-8c4f0888957e",
+  "skill_id": "df68e3d9-7974-4bd6-a98d-a1da187c82e1",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 10
  },
  {
-  "career_skill_id": "de880c18-9b02-4cec-ae99-406b58334d7f",
-  "skill_id": "b6175b57-3440-40e8-9154-963ea3812a8e",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "c546e7b5-ceb4-4eda-b3de-16e1dd7d5373",
+  "skill_id": "77f09a5e-6ce6-4eef-91b7-5af29ee6b718",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 30
  },
  {
-  "career_skill_id": "b68ee9c6-5f2a-4bf8-8557-58452731b8d7",
-  "skill_id": "128c5343-2863-442d-a2cd-98602b772cbc",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "be27a2d7-4b48-4fe6-b140-4ed4c3db6c3f",
+  "skill_id": "c32f13b3-3018-4903-ba68-f1035ad9cd0e",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 20
  },
  {
-  "career_skill_id": "acea2b75-adf5-443f-a2da-8ae171ffeb78",
-  "skill_id": "5c78105d-af89-43a4-bd00-52cdfb015848",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "18e219c0-7cf2-468a-8e02-d3644be506d3",
+  "skill_id": "2b04ac77-865b-402a-9d28-e5635bfb8c14",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 15
  },
  {
-  "career_skill_id": "f55aa111-2e4f-4aa1-ab75-e2e32b6cf395",
-  "skill_id": "f35c2e31-515e-48d6-8834-4dc9c603f4ba",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "0d852d7f-b77e-4968-bd7c-65d76f6f7b96",
+  "skill_id": "294b84cf-80db-4b18-a90f-fe847c3ccab7",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 25
  },
  {
-  "career_skill_id": "b198466b-625b-4498-8894-ae6c43202cc9",
-  "skill_id": "7e598ecc-17cf-47a3-8913-c86ac9afead8",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "6e9b953c-35f8-4563-a4af-5cd5c5d616ea",
+  "skill_id": "b924038b-4cbf-4cd8-ac27-422590dfc5a4",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 70
  },
  {
-  "career_skill_id": "d4714e6d-af11-4962-a8c6-2c72c89cb6c8",
-  "skill_id": "bc0226d7-54af-4429-8087-29664a5f8327",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "099eca14-b31c-4f60-863c-a3e3b14d7ffc",
+  "skill_id": "35887121-df2e-424b-9272-a371d244c20a",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 85
  },
  {
-  "career_skill_id": "4122624f-ad49-42c8-98d6-12f6c4792abf",
-  "skill_id": "ca09f11c-774f-4096-ae3e-f6d2540f83f5",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "38438ff3-394e-46dd-9e57-5fc12f7ed8fe",
+  "skill_id": "947b6565-61cd-4642-98c0-7b5e352593e9",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 45
  },
  {
-  "career_skill_id": "9996fa52-7b0f-4eec-86bc-bbb0ff148813",
-  "skill_id": "adcd43e0-ac7f-4b52-baa8-3e44e3ac9e27",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "f61ee184-f2f9-445b-93d8-4440c211f07a",
+  "skill_id": "639df030-d39b-4645-bef8-d8f75cdbd133",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 75
  },
  {
-  "career_skill_id": "0afea876-a63a-4200-acf4-3642f2f2ed78",
-  "skill_id": "80699692-124e-4923-85f9-0a2a14b5a8d3",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "9f5a85b8-c15c-4c90-a805-ea5647587ac6",
+  "skill_id": "ca7bfd47-c9ab-4e29-bde6-7d97492c6fb6",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 65
  },
  {
-  "career_skill_id": "0b678698-c2a9-4155-83ba-326e15a84427",
-  "skill_id": "d4c217dc-8cbd-48e5-9d36-d3cf3ce47152",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "e174ad17-2b1d-4fb9-b528-cd3e3323783f",
+  "skill_id": "d598cac7-4b11-4496-9c64-0a506fa1d430",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 45
  },
  {
-  "career_skill_id": "dd01aaa5-460f-4d0a-9da4-31f68280985d",
-  "skill_id": "5a53dc07-c221-4ef2-aa7d-ca8282b929b0",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "2210bc8a-a5f6-4b8d-9fcc-13b18c0623fc",
+  "skill_id": "2c50cb2a-4c86-4d6c-86c8-eee9796512f3",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 90
  },
  {
-  "career_skill_id": "21a7bc88-ba8f-447b-83e7-e8468be0c3ef",
-  "skill_id": "06067ee3-b631-4e3a-b6aa-01e7f0d1250a",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "6e3c59cf-a28c-4d47-8f7e-1a56816a2c27",
+  "skill_id": "28bb0fcb-f4d8-4697-8b56-7037f54cd2c2",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 10
  },
  {
-  "career_skill_id": "f5119535-cd8a-4c0b-b89e-4811956fddcf",
-  "skill_id": "43267d25-6f92-462c-8c43-3b2287e7ba90",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "08ff2ecb-6b64-4731-b623-f064fcbaa51a",
+  "skill_id": "445f47ff-6a05-4b56-90f3-f5c1e4ba075c",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 60
  },
  {
-  "career_skill_id": "f5ecac40-14d2-4df7-a746-154096f89980",
-  "skill_id": "493793ad-b4f0-4c17-a948-8c0d608363c5",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "2ae427e6-950c-4930-bc84-32fc58634f22",
+  "skill_id": "80f118c9-e441-44b1-b675-141c9f115767",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 90
  },
  {
-  "career_skill_id": "e08c2cee-148d-4755-b3b4-ca9395333656",
-  "skill_id": "823bf63a-2c48-4a6e-a79d-7aacb95391ed",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "a5f05414-8971-40ec-b95d-0fc6e85e2a30",
+  "skill_id": "deef28e8-0025-409d-9b2d-7aff16939014",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 100
  },
  {
-  "career_skill_id": "f54f1ed8-a9b6-4776-9d71-7734fa7653f6",
-  "skill_id": "536296ce-958a-4e80-a66b-e7b3d7574ca8",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "c046a335-fc54-4505-bbf8-c338f9cf313f",
+  "skill_id": "b7e1c6ae-bde7-4338-9794-6189fa638114",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 85
  },
  {
-  "career_skill_id": "03b31df7-4acd-4a12-b1e9-ebdf20eebb89",
-  "skill_id": "f6faf2fb-232a-4d43-8c76-8606a378f77f",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "f7903326-1024-45ba-9963-6bc018c564d6",
+  "skill_id": "03970843-ce28-4f87-b494-e28fca838105",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 10
  },
  {
-  "career_skill_id": "e427b8d6-5f4f-4590-a6cb-31de2caeb65b",
-  "skill_id": "568095fb-4974-4240-a696-83a233434374",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "62665466-0107-40b0-b85c-b5e184752c9d",
+  "skill_id": "239e545c-29fc-4095-8789-eee1030dcbf9",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 15
  },
  {
-  "career_skill_id": "8a5dfafb-9574-48de-a7a3-c90b52b3f419",
-  "skill_id": "a6536677-74d8-4353-9c1f-41667b3a92dc",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "84d115ea-b4f1-4858-9f1d-40dee2d0809a",
+  "skill_id": "44b276d7-ecec-42c5-92af-b0f54c0d6ec1",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 10
  },
  {
-  "career_skill_id": "8dcf3218-ef60-4265-aa7e-8e4c65af3d45",
-  "skill_id": "1395d5df-7f25-445e-b188-069f89d6688c",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "c69709bc-8a91-49d5-8a1b-a9a96d535496",
+  "skill_id": "d1c8f4b6-2bf4-4cb0-8b76-9fc3484ea790",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 25
  },
  {
-  "career_skill_id": "22865992-cf02-4a68-b61a-5cfd55aa1053",
-  "skill_id": "ebbdd99a-be4a-44dd-9946-8c250229df4d",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "ae81ba15-5332-484d-adad-573b19da8512",
+  "skill_id": "efb98cd8-b7a6-4522-a8b0-da77a4bccc82",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 30
  },
  {
-  "career_skill_id": "a25c1215-9035-450c-ae57-8fc853646296",
-  "skill_id": "2852334d-86e5-481c-921f-ce9d9b096486",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "3d9582d8-4615-4640-95b8-2529516f41d9",
+  "skill_id": "489df5b1-2f8e-4d93-876c-eca3c52f9e9c",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 40
  },
  {
-  "career_skill_id": "5f80a422-36ed-4257-850c-0d936f34c84d",
-  "skill_id": "31cbdc78-3380-4e38-bc21-587f5b57cc92",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "0f54d8be-a251-4dfe-b1f8-b93c5443527b",
+  "skill_id": "706185fd-9c22-4ddb-9b19-e3d587f389b8",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 30
  },
  {
-  "career_skill_id": "24320715-a218-46b5-8696-5b9508d3eb3a",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "da177564-ce42-45a7-ae3c-49db0ef2e2b6",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 70
  },
  {
-  "career_skill_id": "fde5acab-f0e5-433d-a47b-f6da28fdde09",
-  "skill_id": "74862c40-ab08-4391-b1fe-c2d17745fdc6",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "436df2f1-b242-4edf-afd7-60ca17714e5d",
+  "skill_id": "94546359-717a-42ec-8306-0ffbfb97e48c",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 80
  },
  {
-  "career_skill_id": "8bc6d0ad-ed27-4624-b678-51e809f568a6",
-  "skill_id": "071480f5-d7f9-439d-aeab-a9568a354dab",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "d2f60b19-0167-42df-897a-5c6c273ba177",
+  "skill_id": "4b2355b8-07bc-4d22-8534-4bc6f137fe25",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 30
  },
  {
-  "career_skill_id": "90591568-4240-43f7-864b-c8c3e080ecd3",
-  "skill_id": "62f21cec-7973-495d-9b16-27b10cfd267a",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "b3636381-4b61-429b-bc08-7bc027ee0804",
+  "skill_id": "4a4b6c9a-8e2a-4e65-98f4-84febd190475",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 90
  },
  {
-  "career_skill_id": "b7ab20f8-6cb7-4515-b4f4-9f84f5364ec6",
-  "skill_id": "98ba7012-23df-4e81-b105-5c66ada624c9",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "ee4e54de-2fb7-472a-9b43-32d7206128bc",
+  "skill_id": "0bee83ca-8886-4f29-bc2b-2d567f52a44b",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 55
  },
  {
-  "career_skill_id": "bc5a613f-df16-4b97-99d2-3ecb9494c76e",
-  "skill_id": "9243ca23-89f5-464c-8b3d-a281e2dad095",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "d30b6f75-a40a-4932-a349-ab6bf1e2224b",
+  "skill_id": "12af4fec-08b4-433a-8abd-a6f42a1d51cc",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 60
  },
  {
-  "career_skill_id": "e0c9e1a1-71be-4a8a-93b1-6a547628c83a",
-  "skill_id": "9265b4b9-c0e9-4833-8ea3-6b29d54365cc",
-  "career_id": "a5a6f3ef-774b-491c-a2f0-e641b7116b82",
+  "career_skill_id": "8741e170-bdb1-4485-b175-c9340784acac",
+  "skill_id": "685b3332-d635-4e32-8ba4-70e5298eb566",
+  "career_id": "27d15494-71d5-4284-988e-49ca9e59c245",
   "percent": 40
  },
  {
-  "career_skill_id": "33054824-26d2-4c74-9937-c58b4b49b8cc",
-  "skill_id": "5c78105d-af89-43a4-bd00-52cdfb015848",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "1f75299f-7911-45b5-8593-86742f9005bc",
+  "skill_id": "2b04ac77-865b-402a-9d28-e5635bfb8c14",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 65
  },
  {
-  "career_skill_id": "1ab1fab7-28d1-4000-b91d-90c248d122af",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "ce8a2c62-80ff-4f2f-8009-e8c4d6cedeb4",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 90
  },
  {
-  "career_skill_id": "60852354-6f34-4f37-bfdc-44fd575d5435",
-  "skill_id": "62f21cec-7973-495d-9b16-27b10cfd267a",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "d2174973-4762-4f2b-a170-c4ad32c3239c",
+  "skill_id": "4a4b6c9a-8e2a-4e65-98f4-84febd190475",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 95
  },
  {
-  "career_skill_id": "8e317836-86bc-43d2-8dec-674056603122",
-  "skill_id": "41e0e800-aaa6-4455-b910-b091af25d2fa",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "33fa7f8c-a736-4328-8cbc-d46225d67813",
+  "skill_id": "df68e3d9-7974-4bd6-a98d-a1da187c82e1",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 80
  },
  {
-  "career_skill_id": "b45dec3e-bf52-40f1-bc01-63f08a94adae",
-  "skill_id": "06067ee3-b631-4e3a-b6aa-01e7f0d1250a",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "6f43116a-c515-4952-8927-bdb678e941a2",
+  "skill_id": "28bb0fcb-f4d8-4697-8b56-7037f54cd2c2",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 75
  },
  {
-  "career_skill_id": "a45eca0a-adbd-4373-946f-ece837d3b416",
-  "skill_id": "98ba7012-23df-4e81-b105-5c66ada624c9",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "f3896fdb-59f3-4e65-9389-0b2edea95d0f",
+  "skill_id": "0bee83ca-8886-4f29-bc2b-2d567f52a44b",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 50
  },
  {
-  "career_skill_id": "ba43eb4b-6ec1-4840-bf55-c0f714a4fc30",
-  "skill_id": "b8e068a3-643b-4994-b970-d18de56445f0",
-  "career_id": "e8a453c8-60dc-416f-8c6b-8e3f03113ed9",
+  "career_skill_id": "c380ac50-3d6a-4047-bcfe-fbcc83198e36",
+  "skill_id": "8e92004c-b949-4581-8598-9b525569f7a1",
+  "career_id": "e70a3036-1cb4-4a99-b671-85b079a2d9b6",
   "percent": 60
  },
  {
-  "career_skill_id": "902ecc80-c7f3-4515-beab-4ec1cd207254",
-  "skill_id": "8d022ef2-1615-476a-b322-d2afaac98cb7",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "06aeefc6-72b3-4cc7-bd90-cf11fb32230f",
+  "skill_id": "203ca306-51e8-4e0f-acd2-1487a6adbde5",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 5
  },
  {
-  "career_skill_id": "5025816d-cad9-44fb-b4ce-d8ba255cd949",
-  "skill_id": "4db1c8ae-0c49-4fe9-b3e1-1a9172209f91",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "1f792103-8515-42fb-a119-81e909d6fa56",
+  "skill_id": "19097339-5948-452b-8a93-ff91aa113b65",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 10
  },
  {
-  "career_skill_id": "3dd7f7f5-159d-4cf5-a810-dc5270dc0399",
-  "skill_id": "3166f972-6316-4943-9761-94c9dbc2f3df",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "b2486a93-12f6-4792-a17a-7a0e8355787d",
+  "skill_id": "6c38768a-ede2-4d33-91c6-0509ae9cd942",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 20
  },
  {
-  "career_skill_id": "7ea737c9-64b3-49d4-83b2-16e5a2951517",
-  "skill_id": "9e5e5926-3337-4907-a7d3-b3dab22bc9d6",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "47c6418e-f008-40ad-a664-31cdedcad30d",
+  "skill_id": "b3a54854-7f2a-46b5-8717-0f4190a51cce",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 15
  },
  {
-  "career_skill_id": "51664890-f4f6-4e81-a756-2c9fe2777138",
-  "skill_id": "128c5343-2863-442d-a2cd-98602b772cbc",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "f1e32bc5-cee1-4b1d-bd0a-2631981f4e27",
+  "skill_id": "c32f13b3-3018-4903-ba68-f1035ad9cd0e",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 35
  },
  {
-  "career_skill_id": "a4e295ee-52f2-45ee-957e-4379c26e2c4e",
-  "skill_id": "f35c2e31-515e-48d6-8834-4dc9c603f4ba",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "5af3e295-3f30-49ee-9f14-08acea7d0044",
+  "skill_id": "294b84cf-80db-4b18-a90f-fe847c3ccab7",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 35
  },
  {
-  "career_skill_id": "a12e9917-88dd-4239-8427-fc835e830fa7",
-  "skill_id": "bc0226d7-54af-4429-8087-29664a5f8327",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "ff6029dd-70c4-41d3-a375-bed5fbefc509",
+  "skill_id": "35887121-df2e-424b-9272-a371d244c20a",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 50
  },
  {
-  "career_skill_id": "8c3277eb-c788-4c5b-8b7e-84fc2e2a32ae",
-  "skill_id": "ca09f11c-774f-4096-ae3e-f6d2540f83f5",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "69395df5-1312-40c1-b32a-43d9d3243d0c",
+  "skill_id": "947b6565-61cd-4642-98c0-7b5e352593e9",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 45
  },
  {
-  "career_skill_id": "4ca34a9b-6c9f-4888-b601-432aa2dd656a",
-  "skill_id": "80699692-124e-4923-85f9-0a2a14b5a8d3",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "aebcd3d6-a785-4024-a0ec-0e0a8c04bebc",
+  "skill_id": "ca7bfd47-c9ab-4e29-bde6-7d97492c6fb6",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 40
  },
  {
-  "career_skill_id": "6e4c9611-de18-4e45-864a-50202b31878c",
-  "skill_id": "8d5eaeed-06bc-462b-8d83-6ec5890d8c5f",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "dd20d222-a2bb-4bf8-9847-d2aa3151b1a1",
+  "skill_id": "5d9d6638-17ca-46d2-856d-3c2b4cffcef0",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 45
  },
  {
-  "career_skill_id": "95ddc03a-dbea-4068-a1b6-bb1a3b345268",
-  "skill_id": "5a53dc07-c221-4ef2-aa7d-ca8282b929b0",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "2a75cbd4-522b-4701-85b1-2ff49a85d256",
+  "skill_id": "2c50cb2a-4c86-4d6c-86c8-eee9796512f3",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 85
  },
  {
-  "career_skill_id": "efb64f8c-6c51-4b1f-9b10-112a5bc52b5c",
-  "skill_id": "43267d25-6f92-462c-8c43-3b2287e7ba90",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "d6cdcfd4-c852-4240-9e5d-9588afc4fcee",
+  "skill_id": "445f47ff-6a05-4b56-90f3-f5c1e4ba075c",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 65
  },
  {
-  "career_skill_id": "07b815e2-3afe-4641-a4c3-93d82efefff5",
-  "skill_id": "89d2287b-befd-4a9f-8537-819faef053e6",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "a3487983-2285-40f5-b696-c44d3f047fa1",
+  "skill_id": "2bae4f8a-01d6-4e42-88ea-f1a182072770",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 10
  },
  {
-  "career_skill_id": "a94b0db2-a71e-497f-9141-570625e750ae",
-  "skill_id": "205cacf3-490b-4f08-92ea-a46c17b27c57",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "4966446c-9dcc-4632-9d18-256ae27f26b8",
+  "skill_id": "73b68462-e8a3-4757-aaff-18ae674e1207",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 15
  },
  {
-  "career_skill_id": "380e7b0b-5aa5-40c8-86f6-a3e86549a8f8",
-  "skill_id": "7362b2fa-7d4c-49a1-9124-d09d09b33306",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "93608931-bad1-4dad-90d2-1b409681bdb0",
+  "skill_id": "4fbd307a-a1c7-4f5e-9641-7945583fa8c1",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 5
  },
  {
-  "career_skill_id": "2b7dcec9-b5c6-4d3e-a5f8-d0cac0a5d167",
-  "skill_id": "1395d5df-7f25-445e-b188-069f89d6688c",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "891edc8f-13d2-4b8e-b142-633a8ece3c68",
+  "skill_id": "d1c8f4b6-2bf4-4cb0-8b76-9fc3484ea790",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 10
  },
  {
-  "career_skill_id": "6c9cf9fb-9563-4c75-9926-f61b93a25e7d",
-  "skill_id": "31cbdc78-3380-4e38-bc21-587f5b57cc92",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "40b78ee3-ba7f-4fd3-b41b-c84bdc57c520",
+  "skill_id": "706185fd-9c22-4ddb-9b19-e3d587f389b8",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 40
  },
  {
-  "career_skill_id": "64a986ce-4264-4c52-bdfc-0d3940566e57",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "ba7f4750-9b53-4ac1-ad1e-21675f36de70",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 60
  },
  {
-  "career_skill_id": "1c62de3a-3134-4341-83bc-4a75540b6a53",
-  "skill_id": "071480f5-d7f9-439d-aeab-a9568a354dab",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "b5f5e410-2925-49b1-8a68-621f44b2ef56",
+  "skill_id": "4b2355b8-07bc-4d22-8534-4bc6f137fe25",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 65
  },
  {
-  "career_skill_id": "11ed30b8-88c8-4bc1-aa9e-12b92a83d1e8",
-  "skill_id": "62f21cec-7973-495d-9b16-27b10cfd267a",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "4ed144d4-4193-4d1f-aa22-356d52a4131a",
+  "skill_id": "4a4b6c9a-8e2a-4e65-98f4-84febd190475",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 90
  },
  {
-  "career_skill_id": "4e27a541-1fbd-49d3-9a25-68f4653941da",
-  "skill_id": "9243ca23-89f5-464c-8b3d-a281e2dad095",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "8261bb56-28ef-4f06-bf77-3ccdef0cf709",
+  "skill_id": "12af4fec-08b4-433a-8abd-a6f42a1d51cc",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 95
  },
  {
-  "career_skill_id": "4942759e-3b23-46b3-8ffb-6868ece641ff",
-  "skill_id": "9265b4b9-c0e9-4833-8ea3-6b29d54365cc",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "c0aa80e4-eeeb-4cc2-b987-68747888fcd1",
+  "skill_id": "685b3332-d635-4e32-8ba4-70e5298eb566",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 100
  },
  {
-  "career_skill_id": "b82d5e8d-e7a5-4a3c-a204-c316108df507",
-  "skill_id": "74862c40-ab08-4391-b1fe-c2d17745fdc6",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "337bc45e-281b-46e8-b011-3466b15e0b79",
+  "skill_id": "94546359-717a-42ec-8306-0ffbfb97e48c",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 80
  },
  {
-  "career_skill_id": "634d1e76-3856-43b3-b58a-9ae02c1241d7",
-  "skill_id": "d4c217dc-8cbd-48e5-9d36-d3cf3ce47152",
-  "career_id": "dcfb186f-a48a-452c-bf1c-5c7ef9c5ad51",
+  "career_skill_id": "60e0d479-251c-4d9a-ae2c-2bd8d0bd629f",
+  "skill_id": "d598cac7-4b11-4496-9c64-0a506fa1d430",
+  "career_id": "75e0dd50-fc9d-48d7-991f-69be2797c3ba",
   "percent": 10
  },
  {
-  "career_skill_id": "3fad33c5-ed0e-4bfa-a09e-b4e393d1d978",
-  "skill_id": "4295a897-3bb9-4750-9473-99941977655d",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "eb1c4278-85cf-4337-8221-67cf80f33757",
+  "skill_id": "d8e1debd-8252-41ca-ae86-d46b50d8b3c4",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 20
  },
  {
-  "career_skill_id": "9b7cb4f3-df71-4a32-8ba3-f6ae24a5fc43",
-  "skill_id": "fc272412-2e9b-47bd-b3bc-b25746fba441",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "834dff6e-9d43-4cc7-8aca-2d6a6478c04f",
+  "skill_id": "2dc4e03a-4f7e-4cfa-89ec-e56801c5c45f",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 70
  },
  {
-  "career_skill_id": "71a454d6-5a47-4f10-8b0a-582b94f08790",
-  "skill_id": "8c5ce86a-008c-4d2d-9396-e591fd1031a1",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "7358afbe-66df-4d87-9c64-832ea48f3af9",
+  "skill_id": "42133aed-b014-42ab-95fc-09e0a31a871d",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 15
  },
  {
-  "career_skill_id": "a23d6ecd-23f0-432d-b044-bb321ee8962d",
-  "skill_id": "5d31c6e9-2f9a-49e6-9814-8f03bc2b2128",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "3eca7f87-7e3b-48c2-a819-d01bfbd9da6f",
+  "skill_id": "01b9ae5b-11e5-4503-a4e1-db92abff1dee",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 5
  },
  {
-  "career_skill_id": "97a16df9-eb40-4eef-9a1e-5f2d924344a5",
-  "skill_id": "09c2db1a-7df7-4f24-96f2-f152e067540c",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "9c8cfa51-5560-4ed6-9764-266050a49a34",
+  "skill_id": "2553b389-4e6a-4c1d-b197-fb75c08b4031",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 5
  },
  {
-  "career_skill_id": "4ced5916-7380-4336-85f2-224e8f43195d",
-  "skill_id": "25147a2c-3645-4550-b73b-108b7a542dce",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "dbab901c-9990-44c3-8974-53a35c78b117",
+  "skill_id": "b4bbef19-fe68-4d1d-9979-a2548e581775",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 5
  },
  {
-  "career_skill_id": "dff695ed-fad0-4014-9e36-f307aea553f6",
-  "skill_id": "58df43a8-b8e7-4fb7-88a6-6950f2678e24",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "586e6d2e-61a3-4410-9db1-37cb2655ffdd",
+  "skill_id": "9ecc839a-4514-478b-87d1-91f1327ae0a0",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 5
  },
  {
-  "career_skill_id": "e44e81b9-8332-476a-a616-e085a8e28bb0",
-  "skill_id": "ca2416b6-89a6-4e15-8c73-801ceedd4f55",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "6f81f72e-6c19-468d-9732-75afbb141162",
+  "skill_id": "39b1d032-df96-4144-9d58-cddd0aa1ab46",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 5
  },
  {
-  "career_skill_id": "3542e67b-1672-4524-a277-330afaa8f32c",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "03428251-9e79-49e6-a5e0-8cd15b2baab4",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 75
  },
  {
-  "career_skill_id": "6baa870e-13f0-4109-a7ac-5966829abdca",
-  "skill_id": "31cbdc78-3380-4e38-bc21-587f5b57cc92",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "4160a08f-b9b8-4bc6-b832-be4b9ecb6fa0",
+  "skill_id": "706185fd-9c22-4ddb-9b19-e3d587f389b8",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 25
  },
  {
-  "career_skill_id": "0a29c425-97af-4aa8-90cd-abee0d4960bd",
-  "skill_id": "74862c40-ab08-4391-b1fe-c2d17745fdc6",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "6d3b0ce8-ced4-43fb-9112-05d329addc78",
+  "skill_id": "94546359-717a-42ec-8306-0ffbfb97e48c",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 50
  },
  {
-  "career_skill_id": "818f17b4-b96c-4504-9b9b-1c8c77f9e64c",
-  "skill_id": "071480f5-d7f9-439d-aeab-a9568a354dab",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "d420b991-7251-4e28-b7b7-915552ca3662",
+  "skill_id": "4b2355b8-07bc-4d22-8534-4bc6f137fe25",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 85
  },
  {
-  "career_skill_id": "7ce80a4a-2f3c-4e09-9792-e0946a08260a",
-  "skill_id": "98ba7012-23df-4e81-b105-5c66ada624c9",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "d720dd57-fef1-4021-89c9-93e3240d355a",
+  "skill_id": "0bee83ca-8886-4f29-bc2b-2d567f52a44b",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 50
  },
  {
-  "career_skill_id": "21abb8f6-41bb-4414-a8bd-d556a0039f57",
-  "skill_id": "62f21cec-7973-495d-9b16-27b10cfd267a",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "c841875a-4719-492d-baae-be16310db7e5",
+  "skill_id": "4a4b6c9a-8e2a-4e65-98f4-84febd190475",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 65
  },
  {
-  "career_skill_id": "775b9d7d-2be2-4762-9f32-9b8b7e893c6d",
-  "skill_id": "9243ca23-89f5-464c-8b3d-a281e2dad095",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "3259322d-28ed-49e3-bc71-1ddd1e5d5a59",
+  "skill_id": "12af4fec-08b4-433a-8abd-a6f42a1d51cc",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 30
  },
  {
-  "career_skill_id": "cf453349-d74b-42f6-8164-fa91345ed81e",
-  "skill_id": "14c1af1f-c586-4dde-8da1-3a794a2457c8",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "6708e936-4f2e-4e8d-bded-6dc130a3cf1e",
+  "skill_id": "09eb9c0f-6a4d-4cb7-8216-053c391d551b",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 10
  },
  {
-  "career_skill_id": "a0ae0ccb-1fdc-4229-9e91-2ef92cac25e5",
-  "skill_id": "69ac2470-ee24-4c45-a7d4-9ec0427c3b64",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "1c4aa593-36cc-41b9-b891-c0c543c62fc9",
+  "skill_id": "1025f7f6-2c0f-4262-b50d-afc8e3876396",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 10
  },
  {
-  "career_skill_id": "c4f51cc5-85fe-4f01-8b34-c985ebb7dda3",
-  "skill_id": "7e4acf01-8361-4f17-8da2-02d27e615a5b",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "8a8447c5-dda7-4fbf-94d4-669893a37a21",
+  "skill_id": "e4a110d9-617d-471a-881c-92832a43542b",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 10
  },
  {
-  "career_skill_id": "8d0eabc9-409d-490d-9322-92caa533a31d",
-  "skill_id": "128c5343-2863-442d-a2cd-98602b772cbc",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "35c815a3-351f-42ce-af37-e7de194b0f3c",
+  "skill_id": "c32f13b3-3018-4903-ba68-f1035ad9cd0e",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 25
  },
  {
-  "career_skill_id": "4c533d7f-1074-41cf-8185-b6c141ae814c",
-  "skill_id": "f35c2e31-515e-48d6-8834-4dc9c603f4ba",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "2a31f5d6-1f7b-4d93-b73e-7f305c43ecf7",
+  "skill_id": "294b84cf-80db-4b18-a90f-fe847c3ccab7",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 25
  },
  {
-  "career_skill_id": "e60a01f8-d177-4e4f-8e88-075a09909a70",
-  "skill_id": "5c78105d-af89-43a4-bd00-52cdfb015848",
-  "career_id": "a900ed17-0f63-4c44-be10-1963d792617a",
+  "career_skill_id": "5a951286-1393-4303-abd9-bb5e1ab3fb9f",
+  "skill_id": "2b04ac77-865b-402a-9d28-e5635bfb8c14",
+  "career_id": "16517331-abe6-40f5-a65d-3b794f9c3cfd",
   "percent": 10
  },
  {
-  "career_skill_id": "c0bb2fc5-25ca-40a1-8921-ba209f5a85d2",
-  "skill_id": "9265b4b9-c0e9-4833-8ea3-6b29d54365cc",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "aee2a865-6b98-4ee0-83db-975869c8f9f5",
+  "skill_id": "685b3332-d635-4e32-8ba4-70e5298eb566",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 90
  },
  {
-  "career_skill_id": "4a91b48f-4d80-496d-bcc7-25bd33872fd9",
-  "skill_id": "5abdce2d-c05b-47ea-a3e9-d426ca92f01e",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "35704cd6-939f-45d7-99ef-5adacdbb111a",
+  "skill_id": "e505d6cd-2f80-4012-8490-3979f7478117",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 40
  },
  {
-  "career_skill_id": "091cfcb1-3c13-4b0c-b748-22e794a4b01a",
-  "skill_id": "98ba7012-23df-4e81-b105-5c66ada624c9",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "b98209e4-fa24-40f5-868c-68a8024cbef7",
+  "skill_id": "0bee83ca-8886-4f29-bc2b-2d567f52a44b",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 30
  },
  {
-  "career_skill_id": "45807c0b-790e-4d1c-ba4a-483f4b58e4d3",
-  "skill_id": "071480f5-d7f9-439d-aeab-a9568a354dab",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "17feda3e-59dd-4f14-b54b-07885065f28c",
+  "skill_id": "4b2355b8-07bc-4d22-8534-4bc6f137fe25",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 85
  },
  {
-  "career_skill_id": "13fd3d19-7931-4f6a-8123-5ba0cabf565f",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "780003e5-4d82-4d38-a4f2-7fca27fae690",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 75
  },
  {
-  "career_skill_id": "4a0c3cae-935e-409c-938c-96709c4e97d6",
-  "skill_id": "f3a4f749-d1a6-4b37-8b85-45350ddaed8f",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "c9716369-67d4-4f2b-a591-41ca9b018851",
+  "skill_id": "66577f7a-9076-4043-92ad-6620405da385",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 60
  },
  {
-  "career_skill_id": "d8c26691-851e-4ccf-b1c4-242c92f99dd3",
-  "skill_id": "fc272412-2e9b-47bd-b3bc-b25746fba441",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "d6fd0513-dcb4-4e35-8125-c61797305937",
+  "skill_id": "2dc4e03a-4f7e-4cfa-89ec-e56801c5c45f",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 40
  },
  {
-  "career_skill_id": "87767309-a8c0-4749-919b-cbcc1906fe2a",
-  "skill_id": "25147a2c-3645-4550-b73b-108b7a542dce",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "1f12ddb9-032d-4ea8-895d-5195e3346fa8",
+  "skill_id": "b4bbef19-fe68-4d1d-9979-a2548e581775",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 5
  },
  {
-  "career_skill_id": "e161798e-f1b5-4376-ac04-db7e11ef6e6d",
-  "skill_id": "58df43a8-b8e7-4fb7-88a6-6950f2678e24",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "0ec72c3d-016a-43a3-be92-a141d2c17a97",
+  "skill_id": "9ecc839a-4514-478b-87d1-91f1327ae0a0",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 5
  },
  {
-  "career_skill_id": "062e5c74-0999-4213-89bd-56ee38daca9d",
-  "skill_id": "ca2416b6-89a6-4e15-8c73-801ceedd4f55",
-  "career_id": "f0e8b6c4-ea46-4187-a79c-d5516879575e",
+  "career_skill_id": "cec6f80c-f455-4765-a332-35e24f293e34",
+  "skill_id": "39b1d032-df96-4144-9d58-cddd0aa1ab46",
+  "career_id": "f1def278-d4a5-475c-85ed-3dece48039f9",
   "percent": 5
  },
  {
-  "career_skill_id": "68d40040-d56d-4ecc-87ed-874d1974e928",
-  "skill_id": "5423333c-0ac0-4ba4-9ae5-cb474a8e90c3",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "8e48239d-80db-4a43-b987-1a12b2df4e0a",
+  "skill_id": "e2050add-5c75-4a55-bf3d-0eba77f96eda",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 10
  },
  {
-  "career_skill_id": "2553e0fe-0f32-4ce9-8469-a364f374e35c",
-  "skill_id": "4295a897-3bb9-4750-9473-99941977655d",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "f644e9b8-a4cf-4df8-b105-15a2334d7478",
+  "skill_id": "d8e1debd-8252-41ca-ae86-d46b50d8b3c4",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 35
  },
  {
-  "career_skill_id": "2f091f93-e424-41f1-a5ef-a9585b692383",
-  "skill_id": "fc272412-2e9b-47bd-b3bc-b25746fba441",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "4f7841fd-d802-48fd-96a8-acb8af469a46",
+  "skill_id": "2dc4e03a-4f7e-4cfa-89ec-e56801c5c45f",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 50
  },
  {
-  "career_skill_id": "2a1cd45f-14e2-495c-b997-8014651db0dd",
-  "skill_id": "8c5ce86a-008c-4d2d-9396-e591fd1031a1",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "4f6033d0-5855-4f84-9160-f3be57dd6df1",
+  "skill_id": "42133aed-b014-42ab-95fc-09e0a31a871d",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 10
  },
  {
-  "career_skill_id": "10be54dd-2f0a-40b0-9086-2530a905d7f8",
-  "skill_id": "09c2db1a-7df7-4f24-96f2-f152e067540c",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "2c977884-be8b-41f6-8b1b-7e415ec67a3b",
+  "skill_id": "2553b389-4e6a-4c1d-b197-fb75c08b4031",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 20
  },
  {
-  "career_skill_id": "29d0eb61-7e05-494f-88e3-2b99b780c1d2",
-  "skill_id": "25147a2c-3645-4550-b73b-108b7a542dce",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "4eb1d207-11a8-4fbe-9d40-c4236b70c108",
+  "skill_id": "b4bbef19-fe68-4d1d-9979-a2548e581775",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 35
  },
  {
-  "career_skill_id": "a007ebec-905e-499b-8e03-7154e952f911",
-  "skill_id": "58df43a8-b8e7-4fb7-88a6-6950f2678e24",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "7e5804dc-c111-4338-a3f2-e39f05db788f",
+  "skill_id": "9ecc839a-4514-478b-87d1-91f1327ae0a0",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 25
  },
  {
-  "career_skill_id": "666f8bba-1af3-4e54-9534-8e11040feb92",
-  "skill_id": "ca2416b6-89a6-4e15-8c73-801ceedd4f55",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "f23b47cf-e74b-4567-b0f4-91b5853d4d64",
+  "skill_id": "39b1d032-df96-4144-9d58-cddd0aa1ab46",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 25
  },
  {
-  "career_skill_id": "0a145c36-3e70-4d5e-bd04-79329234ba4c",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "e53f139c-8c86-4851-b2ed-fb9d12bfbe4a",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 30
  },
  {
-  "career_skill_id": "32a48c7c-4d24-4cdc-bab8-e4dacc515405",
-  "skill_id": "31cbdc78-3380-4e38-bc21-587f5b57cc92",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "264c6130-493f-46f2-8b05-90a21972649a",
+  "skill_id": "706185fd-9c22-4ddb-9b19-e3d587f389b8",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 60
  },
  {
-  "career_skill_id": "7710482d-efad-47da-80c4-e2fe5c7e379b",
-  "skill_id": "071480f5-d7f9-439d-aeab-a9568a354dab",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "93b8d9ff-c993-45d4-9027-141a94921f36",
+  "skill_id": "4b2355b8-07bc-4d22-8534-4bc6f137fe25",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 25
  },
  {
-  "career_skill_id": "7ed94a37-908c-4447-9f19-da3fd8cb35e9",
-  "skill_id": "98ba7012-23df-4e81-b105-5c66ada624c9",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "0763dc19-744d-4e01-9cc4-15c46c4e7504",
+  "skill_id": "0bee83ca-8886-4f29-bc2b-2d567f52a44b",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 50
  },
  {
-  "career_skill_id": "f6c68ec2-5e3f-4249-a3ff-5aabf27f4096",
-  "skill_id": "62f21cec-7973-495d-9b16-27b10cfd267a",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "ed8e1496-310a-4c04-aed0-08ff86470d82",
+  "skill_id": "4a4b6c9a-8e2a-4e65-98f4-84febd190475",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 75
  },
  {
-  "career_skill_id": "ab4ea0a4-9a90-487f-a697-adb435c93d85",
-  "skill_id": "9243ca23-89f5-464c-8b3d-a281e2dad095",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "a7e8c20f-3438-453b-949f-41edd63d983c",
+  "skill_id": "12af4fec-08b4-433a-8abd-a6f42a1d51cc",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 55
  },
  {
-  "career_skill_id": "d99baf23-3c7f-41f1-bc5d-ed0645efe6d9",
-  "skill_id": "9265b4b9-c0e9-4833-8ea3-6b29d54365cc",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "3a5106b7-49b8-42b8-9df9-8d7923175b3d",
+  "skill_id": "685b3332-d635-4e32-8ba4-70e5298eb566",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 45
  },
  {
-  "career_skill_id": "151efeee-2d3a-4dce-9956-e597c13b5eb1",
-  "skill_id": "14c1af1f-c586-4dde-8da1-3a794a2457c8",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "352bda83-950d-42c2-b103-2ff2f9f30901",
+  "skill_id": "09eb9c0f-6a4d-4cb7-8216-053c391d551b",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 15
  },
  {
-  "career_skill_id": "91a22c6b-2664-47a4-96eb-2ce8ca580972",
-  "skill_id": "69ac2470-ee24-4c45-a7d4-9ec0427c3b64",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "90345635-33b6-4564-90ce-4168b3263a4c",
+  "skill_id": "1025f7f6-2c0f-4262-b50d-afc8e3876396",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 15
  },
  {
-  "career_skill_id": "7b5cb61d-38ad-45d4-8cfb-590178a4a1f5",
-  "skill_id": "7e4acf01-8361-4f17-8da2-02d27e615a5b",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "1b62cba0-c4b1-4d68-bd29-20d313e82ed0",
+  "skill_id": "e4a110d9-617d-471a-881c-92832a43542b",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 15
  },
  {
-  "career_skill_id": "f37f2aa9-c676-41df-ade7-a5f38dbafeef",
-  "skill_id": "128c5343-2863-442d-a2cd-98602b772cbc",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "0445ee01-ea43-437d-ab59-434942f46f90",
+  "skill_id": "c32f13b3-3018-4903-ba68-f1035ad9cd0e",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 5
  },
  {
-  "career_skill_id": "16c95b89-1842-4e32-8995-6cb76608a03d",
-  "skill_id": "f35c2e31-515e-48d6-8834-4dc9c603f4ba",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "2e930ea4-39a7-43f0-aab8-53521080df0f",
+  "skill_id": "294b84cf-80db-4b18-a90f-fe847c3ccab7",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 10
  },
  {
-  "career_skill_id": "493f43a6-2834-4d55-9678-b0abf4d5374f",
-  "skill_id": "b18acbfe-e9c9-474e-b78f-9ed7ad84f14f",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "a2d625df-cf51-41c4-a781-9bf61a9a0761",
+  "skill_id": "283b3f6f-bb18-4f9e-acdd-25e9e5433d5b",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 15
  },
  {
-  "career_skill_id": "16347f54-f91e-4aa1-b72b-465bd8f7b087",
-  "skill_id": "b8e068a3-643b-4994-b970-d18de56445f0",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "a5a1dc18-74eb-4f19-b5c0-4542a6cfb879",
+  "skill_id": "8e92004c-b949-4581-8598-9b525569f7a1",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 5
  },
  {
-  "career_skill_id": "e267188d-a433-4145-b8e9-501259cb5718",
-  "skill_id": "c9d93d1b-b3cb-4e1c-8b1e-8ab30df970b2",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "71b63a65-19ae-4687-a83e-cc6af2d5dbff",
+  "skill_id": "1e85b4e1-c303-4a68-b43d-5b3ca150737d",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 5
  },
  {
-  "career_skill_id": "30e6ffa6-13bb-4f30-af0f-8a423a1eecc5",
-  "skill_id": "5abdce2d-c05b-47ea-a3e9-d426ca92f01e",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "6dcde125-9bf8-44de-824f-ac6030aa0f25",
+  "skill_id": "e505d6cd-2f80-4012-8490-3979f7478117",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 25
  },
  {
-  "career_skill_id": "d1d3edbb-b306-4ec8-ade2-45969d26cec7",
-  "skill_id": "7d559d9b-73ac-4203-904d-c41a9bd709ac",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "30af8cea-db4f-4ebf-a212-490caf0095e9",
+  "skill_id": "55ee1417-151d-436b-a37e-073ce3a76e9d",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 5
  },
  {
-  "career_skill_id": "d90b32e7-ffce-4234-9a54-b9636e8d27a0",
-  "skill_id": "210ce014-53c0-47bc-98ff-537e5637f07e",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "ddc38bfb-ecdb-4ca0-83a2-6eab66ec7bae",
+  "skill_id": "f4977f18-f9cf-4296-85ee-9a95e2e449fb",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 5
  },
  {
-  "career_skill_id": "b018d4af-3837-44fa-8b8d-8ed23215085b",
-  "skill_id": "9343163b-e50c-4e6c-8df4-91befaacc0df",
-  "career_id": "a3bc6898-4fef-4afb-b63a-a236f5b5bec4",
+  "career_skill_id": "7f5f63bd-bc81-4b17-8ba2-f12d18c30c40",
+  "skill_id": "a9e84287-23c9-4f4e-a62a-40cf9cb935b0",
+  "career_id": "a670dd76-d3f6-4b57-a198-5d03ad09f572",
   "percent": 10
  },
  {
-  "career_skill_id": "d7416617-c511-4362-95dd-792f6b95bd60",
-  "skill_id": "4295a897-3bb9-4750-9473-99941977655d",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "387e8850-7cfb-4bc8-8150-5542df9386d5",
+  "skill_id": "d8e1debd-8252-41ca-ae86-d46b50d8b3c4",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 35
  },
  {
-  "career_skill_id": "23ecc251-42bb-46e4-90d8-997c761b517e",
-  "skill_id": "fc272412-2e9b-47bd-b3bc-b25746fba441",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "c201df56-0bf8-4438-a9dc-b228adddea6f",
+  "skill_id": "2dc4e03a-4f7e-4cfa-89ec-e56801c5c45f",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 25
  },
  {
-  "career_skill_id": "3c569718-2f8a-4d0f-9db2-ee55f2c3766e",
-  "skill_id": "09c2db1a-7df7-4f24-96f2-f152e067540c",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "f459a6ea-7fe4-42e1-97f0-749f57e3bf44",
+  "skill_id": "2553b389-4e6a-4c1d-b197-fb75c08b4031",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 15
  },
  {
-  "career_skill_id": "f5a31e15-9fe6-489b-92c1-bffb43194f86",
-  "skill_id": "193a236b-5675-44dc-a1a8-228cac44530f",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "5dd35c37-777e-49f6-9642-4ec983503785",
+  "skill_id": "226a51ea-f0c1-492c-9677-7d72e4410b81",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 40
  },
  {
-  "career_skill_id": "50607438-3403-49bf-8b4b-5a0118262bba",
-  "skill_id": "31cbdc78-3380-4e38-bc21-587f5b57cc92",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "cedcd374-3983-4de0-ac70-38e347169630",
+  "skill_id": "706185fd-9c22-4ddb-9b19-e3d587f389b8",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 40
  },
  {
-  "career_skill_id": "2263aad7-7e8a-48ee-803b-ad9f514de7c0",
-  "skill_id": "62f21cec-7973-495d-9b16-27b10cfd267a",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "397075d3-cc3e-49e9-9a2c-260a622f0a00",
+  "skill_id": "4a4b6c9a-8e2a-4e65-98f4-84febd190475",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 60
  },
  {
-  "career_skill_id": "eecfa70f-f3b9-4a9f-97fd-505cdfbe425c",
-  "skill_id": "14c1af1f-c586-4dde-8da1-3a794a2457c8",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "a81fb756-0853-430e-9961-89bb05def431",
+  "skill_id": "09eb9c0f-6a4d-4cb7-8216-053c391d551b",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 10
  },
  {
-  "career_skill_id": "1e277cd1-c7c3-4771-a2d6-7ce9b51afef0",
-  "skill_id": "69ac2470-ee24-4c45-a7d4-9ec0427c3b64",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "e8ad08bc-8a94-4362-947b-931c28c1003c",
+  "skill_id": "1025f7f6-2c0f-4262-b50d-afc8e3876396",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 10
  },
  {
-  "career_skill_id": "eff5151c-ef41-4067-a108-0da8085b61b8",
-  "skill_id": "7e4acf01-8361-4f17-8da2-02d27e615a5b",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "f9139ef8-a7e4-49d2-931b-b898a377b4a0",
+  "skill_id": "e4a110d9-617d-471a-881c-92832a43542b",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 25
  },
  {
-  "career_skill_id": "7523ec9a-5d95-4c10-9ed2-657e6bbd5235",
-  "skill_id": "b18acbfe-e9c9-474e-b78f-9ed7ad84f14f",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "4d1a4b3b-2afc-4c06-b56e-bf8419fe3159",
+  "skill_id": "283b3f6f-bb18-4f9e-acdd-25e9e5433d5b",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 20
  },
  {
-  "career_skill_id": "01a75b0e-08fc-41c4-9917-182c352e8503",
-  "skill_id": "5abdce2d-c05b-47ea-a3e9-d426ca92f01e",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "7a632343-bcc5-46dd-ae5d-aa17b6e83a65",
+  "skill_id": "e505d6cd-2f80-4012-8490-3979f7478117",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 5
  },
  {
-  "career_skill_id": "4ab871e5-cae3-4a9c-a5a2-2bfa6e385523",
-  "skill_id": "3c6d5c26-4ee9-4934-9fe5-570969f87752",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "94567b82-39aa-44c9-9f5d-391773419631",
+  "skill_id": "4beb7a71-a375-4a2c-8c58-ce37d37b33b3",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 30
  },
  {
-  "career_skill_id": "d9e7ebf3-7d49-4604-99d6-305300356abb",
-  "skill_id": "7d559d9b-73ac-4203-904d-c41a9bd709ac",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "754f3d73-a54d-448d-8840-4f42db7598b8",
+  "skill_id": "55ee1417-151d-436b-a37e-073ce3a76e9d",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 20
  },
  {
-  "career_skill_id": "2cea75a4-d929-4f25-8317-3356d98e3b1f",
-  "skill_id": "210ce014-53c0-47bc-98ff-537e5637f07e",
-  "career_id": "c7e864b3-5553-4b12-b249-99439e994970",
+  "career_skill_id": "a2023c1f-ca4c-4668-b7f1-b59f63e189a1",
+  "skill_id": "f4977f18-f9cf-4296-85ee-9a95e2e449fb",
+  "career_id": "3a2267e6-571b-41d6-97eb-93a69cc76880",
   "percent": 40
  }
 ]

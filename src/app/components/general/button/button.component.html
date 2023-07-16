@@ -12,5 +12,6 @@
   loading="lazy"
   (click)="onClick()"
 />
+<app-tooltip *ngIf="type == lt.GITHUB" name="Please don't look at my code, it's horrible" [direction]="d.RIGHT"></app-tooltip>
 <!--p *ngIf="type === lt.OTHER || type === lt.PERSON" (click)="onClick()">{{name}}</p-->
 <ng-content></ng-content>

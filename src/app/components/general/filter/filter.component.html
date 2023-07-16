@@ -3,13 +3,13 @@
     <ng-container *ngIf="category.range">
       <div *ngIf="!isDefaultRangeValue(category)" class="selectedItem" (click)="resetRange(category)">
         <p>{{ category.value[0] }} - {{ category.value[1] }}</p>
-        <span>X</span>
+        <span></span>
       </div>
     </ng-container>
     <ng-container *ngIf="!category.range">
       <div *ngFor="let item of category.value" class="selectedItem" (click)="toggleTag(category.id, category.name, item)">
-        <p>{{ item }}</p>
-        <span>X</span>
+        <p>{{ getName(category.id, item) }}</p>
+        <span><b> X</b></span>
       </div>
     </ng-container>
   </div>
@@ -53,9 +53,8 @@
         </div>
         <div class="tags">
           <div
-            #t
             *ngFor="let tag of category.tags"
-            (click)="toggleTag(category.id, category.name, tag.value); t.classList.toggle('active')"
+            (click)="toggleTag(category.id, category.name, tag.value);"
             class="tag"
             [id]="tag.id"
           >

@@ -2,9 +2,15 @@
 
 :host {
     @include flex-center;
+    & app-tooltip {
+        display:none;
+    }
     & img {
         @include preview-image;
         @include link;
+        &:hover ~ app-tooltip{
+            display:block;
+        }
     }
     & p {
         @include slimpill;
