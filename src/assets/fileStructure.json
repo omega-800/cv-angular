@@ -1,8 +1,8 @@
 {
   "src/assets/content/bewerbung": [
+    "Bewerbung_BlueMouse.pdf",
     "bewerbung.docx",
-    "bewerbung.pdf",
-    "Bewerbung_BlueMouse.pdf"
+    "bewerbung.pdf"
   ],
   "src/assets/content/career": [
     "bzz.webp",
@@ -11,6 +11,7 @@
     "hohepromenade.svg",
     "hottingen.webp",
     "inteco.svg",
+    "kork.webp",
     "probstei.svg"
   ],
   "src/assets/content/certificates/languages": [
@@ -233,6 +234,11 @@
     "IMG_20221225_184348174.webp",
     "thumbnail.webp"
   ],
+  "src/assets/content/projects/art/textile/bags": [
+    "IMG-20180428-WA0004.webp",
+    "IMG_20200604_141408085.webp",
+    "thumbnail.webp"
+  ],
   "src/assets/content/projects/art/textile/pullover": [
     "IMG-20230206-WA0006.webp",
     "IMG-20230206-WA0008.webp",
@@ -271,6 +277,31 @@
     "IMG-20221125-WA0017.webp",
     "IMG-20221125-WA0018.webp",
     "IMG-20221125-WA0019.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/nature/camping": [
+    "IMG_20230505_113539726_HDR.webp",
+    "IMG_20230529_054630104.webp",
+    "IMG_20230719_081931435.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/nature/hiking": [
+    "IMG_20230528_164024693.webp",
+    "IMG_20230529_054337496.webp",
+    "IMG_20230529_054341116_HDR.webp",
+    "IMG_20230624_191523019.webp",
+    "IMG_20230624_191525405_HDR.webp",
+    "IMG_20230720_182521.webp",
+    "IMG_20230720_182712.webp",
+    "IMG_20230720_184157.webp",
+    "IMG_20230720_185125.webp",
+    "IMG_20230721_202051073.webp",
+    "IMG_20230721_203534907.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/sports/bike": [
+    "IMG_20230719_081923150.webp",
+    "IMG_20230721_184028740.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/health/sports/tabletennis": [
@@ -644,8 +675,8 @@
     "user-icon.svg"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/diagramme": [
-    "flussdiagramm.png",
     "Klassendiagramm.png",
+    "flussdiagramm.png",
     "probeIPA_UseCase.png"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/font": [
@@ -664,21 +695,21 @@
     "website.konto.anpassen.content.00.xml"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/screenshots": [
-    "ageCategory.png",
-    "ageCategoryImport.png",
     "AgeRestriction.png",
-    "basketRule.png",
-    "bootstrap.png",
     "ConfigPageIntern.png",
     "ConfigPageInternLink.png",
+    "IDAgeVerificationComp.png",
+    "IDAgeVerificationNode.png",
+    "ageCategory.png",
+    "ageCategoryImport.png",
+    "basketRule.png",
+    "bootstrap.png",
     "formEmail.png",
     "formEmail1.png",
     "formEmail2.png",
     "formEmail3.png",
     "galaxus.png",
     "id.png",
-    "IDAgeVerificationComp.png",
-    "IDAgeVerificationNode.png",
     "kleemans.png",
     "minAgeJCR.png",
     "ordner.png",
@@ -689,33 +720,27 @@
     "zeitplan.png"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Anhang/sourcecode": [
-    "ageCategoryImport.sql",
     "BasketFactory.java",
     "BlockUnderage.java",
     "ConfigPageIntern.html",
     "ConfigPageIntern.java",
-    "formEmail1.ftl",
-    "formEmail2.ftl",
     "IDAgeVerification.css",
     "IDAgeVerification.ftl",
     "IDAgeVerification.js",
     "IDAgeVerificationModel.java",
-    "messages_de.properties",
-    "messages_en.properties",
-    "messages_fr.properties",
-    "messages_it.properties",
     "SessionSettingsFactory.java",
     "ShopModuleVersionHandler.java",
     "ShopUserPage.html",
     "ShopUserPage.java",
     "TemplatingFunctions.java",
-    "UserFactory.java"
-  ],
-  "src/assets/content/projects_old/it/inteco/idageverification/code": [
-    "ipa.docx",
-    "numgen.py",
-    "praesentation.pptx",
-    "probeIPA_altersueberpruefung.pdf"
+    "UserFactory.java",
+    "ageCategoryImport.sql",
+    "formEmail1.ftl",
+    "formEmail2.ftl",
+    "messages_de.properties",
+    "messages_en.properties",
+    "messages_fr.properties",
+    "messages_it.properties"
   ],
   "src/assets/content/projects_old/it/inteco/idageverification/code/Roboto_Mono": [
     "LICENSE.txt",
@@ -739,6 +764,12 @@
     "RobotoMono-Thin.ttf",
     "RobotoMono-ThinItalic.ttf"
   ],
+  "src/assets/content/projects_old/it/inteco/idageverification/code": [
+    "ipa.docx",
+    "numgen.py",
+    "praesentation.pptx",
+    "probeIPA_altersueberpruefung.pdf"
+  ],
   "src/assets/content/projects_old/it/inteco/idageverification": [
     "config.png",
     "id.png",
@@ -753,11 +784,11 @@
     "small.png"
   ],
   "src/assets/content/projects_old/it/inteco/popup/code": [
+    "SettingsShopPage.html",
     "ageConfirmPopup.ftl",
     "link.txt",
     "popup.css",
-    "popup.js",
-    "SettingsShopPage.html"
+    "popup.js"
   ],
   "src/assets/content/projects_old/it/inteco/producer": [
     "a.png",
@@ -770,11 +801,11 @@
     "h.png"
   ],
   "src/assets/content/projects_old/it/inteco/producer/info": [
+    "Zeichnung.png",
+    "Zeichnung1 (1).png",
     "activity_diagram.png",
     "laender.png",
-    "probe_ipa.docx",
-    "Zeichnung.png",
-    "Zeichnung1 (1).png"
+    "probe_ipa.docx"
   ],
   "src/assets/content/projects_old/it/inteco/scss_script/code": [
     "scss_replace.sh"
@@ -790,11 +821,11 @@
   "src/assets/content/projects_old/it/inteco/seo_analysis": [
     "SEO.docx",
     "SEO.pptx",
-    "seo_rio.md",
     "WEB-Accessibility-240323-2215.pdf",
     "WEB-Performance-240323-2215.pdf",
     "WEB-SEO-240323-2213.pdf",
-    "WEB-Tools-240323-2215.pdf"
+    "WEB-Tools-240323-2215.pdf",
+    "seo_rio.md"
   ],
   "src/assets/content/projects_old/it/inteco/sharebtn": [
     "screenshot.png"

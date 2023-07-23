@@ -31,7 +31,7 @@ export class CareerService {
 
   fillCareer(career: CareerOnly): CareerEntity {
     if (career.workplace_id !== '') {
-      let workplace:WorkplaceEntity =this.workplaceService.getWorkplaceById(career.workplace_id); 
+      let workplace: WorkplaceEntity = this.workplaceService.getWorkplaceById(career.workplace_id);
       return {
         ...career,
         id: 'career_' + career.career_id,
@@ -57,7 +57,6 @@ export class CareerService {
         id: 'career_' + career.career_id,
         school: school,
         type: careerTypes.SCHOOL,
-        description: school.type,
         url: school.url,
         skills: this.careerSkillLinks
           .filter((link) => link.career_id == career.career_id)
@@ -73,7 +72,7 @@ export class CareerService {
       ...career,
       id: career.career_id,
       type: careerTypes.OTHER,
-      url:'',
+      url: '',
       skills: this.careerSkillLinks
         .filter((link) => link.career_id == career.career_id)
         .map((link) => {

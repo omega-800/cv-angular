@@ -428,14 +428,14 @@ INSERT INTO school_contactPoint (school_id, contactPoint_id) VALUES
     ((SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee'),(SELECT contactPoint_id FROM contactPoint WHERE phone = 0447274600));
 
 INSERT INTO career (name, description, yearfrom, yearto, workplace_id, school_id) VALUES 
-    ('inteco',NULL,2022,2023,(SELECT workplace_id FROM workplace WHERE name = 'Inteco'),NULL),
-    ('ernestovargas',NULL,2020,2021,(SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),NULL),
-    ('kork',NULL,2020,2022,(SELECT workplace_id FROM workplace WHERE name = 'Kork'),NULL),
-    ('bzz',NULL,2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee')),
-    ('ims',NULL,2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Hottingen')),
-    ('sek',NULL,2016,2017,NULL,(SELECT school_id FROM school WHERE name = 'Herzogenmühle')),
-    ('hopro',NULL,2014,2016,NULL,(SELECT school_id FROM school WHERE name = 'Hohe Promenade')),
-    ('probstei',NULL,2008,2014,NULL,(SELECT school_id FROM school WHERE name = 'Probstei'));
+    ('inteco',(SELECT description FROM workplace WHERE name = 'Inteco'),2022,2023,(SELECT workplace_id FROM workplace WHERE name = 'Inteco'),NULL),
+    ('ernestovargas',(SELECT description FROM workplace WHERE name = 'Ernesto Vargas'),2020,2021,(SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),NULL),
+    ('kork',(SELECT description FROM workplace WHERE name = 'Kork'),2020,2022,(SELECT workplace_id FROM workplace WHERE name = 'Kork'),NULL),
+    ('bzz',(SELECT description FROM school WHERE name = 'Berufsbildungszentrum Zürichsee'),2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee')),
+    ('ims',(SELECT description FROM school WHERE name = 'Hottingen'),2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Hottingen')),
+    ('sek',(SELECT description FROM school WHERE name = 'Herzogenmühle'),2016,2017,NULL,(SELECT school_id FROM school WHERE name = 'Herzogenmühle')),
+    ('hopro',(SELECT description FROM school WHERE name = 'Hohe Promenade'),2014,2016,NULL,(SELECT school_id FROM school WHERE name = 'Hohe Promenade')),
+    ('probstei',(SELECT description FROM school WHERE name = 'Probstei'),2008,2014,NULL,(SELECT school_id FROM school WHERE name = 'Probstei'));
 
 INSERT INTO career_skill (career_id, skill_id, percent) VALUES 
     ((SELECT career_id FROM career WHERE name = 'inteco'), (SELECT skill_id FROM skill WHERE identifier = 'vim'), 65),
@@ -644,13 +644,13 @@ INSERT INTO project (name, description, thumbnail, image, url, github, date, cli
     ('SCSS Skript','Ein weiterer Auftrag war das Refaktorisieren des SCSS Quellcodes, damit dieser mit der neuen Version des SCSS VS Code Plugins Kompiliert werden konnte. Da hauptsächlich die gleichen Fehler behoben werden mussten, schrieb ich ein Shell-Skript welches mithilfe von Regular Expressions die betroffenen Zeilen ersetzte.',NULL,'assets/content/projects/it/inteco/scss_script/',NULL,NULL,'2022-11-15',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Übersetzungsskript','Bei der Integration der Internationalisierung in die von der Inteco edv AG entwickelten Webseiten mussten viele Werte übersetzt werden, welche in .properties Dateien gespeichert waren. Um den Prozess teils zu automatisieren schrieb ich ein Python- und danach ein TypeScript-Skript, welches mithilfe von Regular Expressions durch die Werte aus der gegebenen Datei iteriert und entweder (nach optionaler Bestätigung) ersetzt oder überspringt falls sie schon übersetzt waren.',NULL,'assets/content/projects/it/inteco/translate/',NULL,NULL,'2023-02-02',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Testen mittels Selenium','Bei der implementation der Produzentenseite schrieb ich in Python mithilfe von Selenium ein Skript, welches das Frontend der erstellten Seite auf bestimmte Kriterien testete und die Resultate in eine Tabelle eingetragen hat.',NULL,'assets/content/projects/it/inteco/seleniumtest/',NULL,NULL,'2022-12-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('i18n','',NULL,'assets/content/projects/it/inteco/i18n/',NULL,NULL,'2023-02-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('i18n','Als Teil eines Projekts habe ich die Mehrsprachigkeitsfunktion (i18n) bei den Webanwendungen in meiner Arbeitsumgebung erfolgreich implementiert. Es war eine anspruchsvoll langwierige Aufgabe, die jedoch äußerst lohnenswert war.',NULL,'assets/content/projects/it/inteco/i18n/',NULL,NULL,'2023-02-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Passwort zurücksetzen','Da mir auffiel, dass bei der Anfrage auf ein neues Passwort dieses in einfachem Text per E-Mail versendet wurde, erarbeitete ich eine sicherere Methode das Passwort zurückzusetzen. Diese erfolgt durch das versenden eines Links, welcher auf eine Seite führt, worauf der User sein Passwort selber setzt (nachdem die Gültigkeit des Links überprüft wurde).',NULL,'assets/content/projects/it/inteco/passreset/',NULL,NULL,'2022-10-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Share Buttons','Einer meiner ersten Aufträge bei der Inteco edv AG war es, auf der Produktdetailseite Share-Buttons einzufügen, sowie das Schema Markup, welches die Vorschau des Produktes beim Teilen ermöglichte.',NULL,'assets/content/projects/it/inteco/sharebtn/',NULL,NULL,'2022-07-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('SEO Analyse','Innerhalb des Praktikums bei Inteco erarbeitete ich mir viel Wissen über (das unendliche Thema) SEO, welches ich in einem Dokument zusammenfasste und durch eine Präsentation unserem Webentwicklungs-Team vorstellte. Teilweise begann ich selbst damit einen Teil, welchen wir als Entwickler zu SEO beitragen können, umzusetzen.',NULL,'assets/content/projects/it/inteco/seo_analysis/',NULL,NULL,'2022-09-01',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Geschmacksprofil','Mein erster Auftrag als Praktikant war es, ein Geschmacksprofil auf der Produktdetailseite der Weine zu erstellen, an dem ersichtlich sein soll, wie der Wein schmeckt.',NULL,'assets/content/projects/it/inteco/tasteprofile/',NULL,NULL,'2022-06-20',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Popup','Im Auftrag vom Terroir-ist erstellte ich ein Konfigurierbares Popup, um als User das Alter bestätigen zu können.',NULL,'assets/content/projects/it/inteco/popup/',NULL,NULL,'2023-03-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
-    ('Konfigurationsseiten Magnolia','',NULL,'assets/content/projects/it/inteco/admincenter/',NULL,NULL,'2023-02-24',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
+    ('Konfigurationsseiten Magnolia','Um den Entwicklern und Kunden das Leben zu vereinfachen und einfache Konfigurationsmöglichkeiten der Webseiten bereitzustellen, erstellte ich einige Konfigurations-Seiten im AdminCentral des Magnolia CMS.',NULL,'assets/content/projects/it/inteco/admincenter/',NULL,NULL,'2023-02-24',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Webseiten aufsetzen','In meiner Zeit als Praktikant hatte ich zwei Webseiten auf Tomcat7 Servern sowie Docker neu aufgesetzt und livegeschaltet für Kunden, die vom alten Webshop in den neuen migrierten.',NULL,'assets/content/projects/it/inteco/aufsetzen/',NULL,NULL,'2022-08-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco')),
     ('Webseiten warten','Ich wartete bei der Inteco edv AG bei mehreren Kunden Ihre Webseiten mit und setzte erwünschte Features um. Dabei sammelte ich viele Erfahrungen mit Frontend sowie Backend Technologien.',NULL,'assets/content/projects/it/inteco/warten/',NULL,NULL,'2022-07-05',NULL, (SELECT career_id FROM career WHERE name = 'inteco'));
 
@@ -815,7 +815,7 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webseiten warten'),(SELECT skill_id FROM skill WHERE identifier = 'teamwork'));
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('Webscraping automatisation','',NULL,'assets/content/projects/it/python/ernestovargas/',NULL,'https://github.com/omega-800/AutomationPython','2020-12-18',NULL, (SELECT career_id FROM career WHERE name='ernestovargas'));
+    ('Webscraping automatisation','Das Ziel war es bei diesem Projekt, Kleidungsstücke aus verschiedenen Firmen auf die Homepage hochladen. Mithilfe meines Scripts konnte ich automatisch die Informationen aus den Onlineshops der Unternehmen auslesen und schlussendlich das Produkt auf der Wordpress Webapp erstellen.',NULL,'assets/content/projects/it/python/ernestovargas/',NULL,'https://github.com/omega-800/AutomationPython','2020-12-18',NULL, (SELECT career_id FROM career WHERE name='ernestovargas'));
 
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT person_id FROM person WHERE firstName = 'Georgiy'));
@@ -827,7 +827,8 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'patience')),
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'communication')),
-    ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'independence'));
+    ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
+    ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'photoshop'));
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
     ('Portfolio','Für die Bewerbungsphase nach der Informatikmittelschule entwickelte ich eine Portfolio-Webseite. Dies war die alte Version der jetzigen Seite.',NULL,'assets/content/projects/it/web/cv_old/','https://portfolio-chirokikh-georgiy.web.app/','https://github.com/omega-800/curriculum-vitae-typescript','2019-06-20',NULL,NULL),
@@ -835,10 +836,10 @@ INSERT INTO project (name, description, thumbnail, image, url, github, date, cli
     ('Textbasiertes Spiel Python','Ich wurde durch das Entdecken einer Python-Library für das Entwickeln textbasierter Spiele dazu inspiriert, ein eigenes Spiel zu schreiben. In dieser Geschichte strandet der Spieler auf einer Insel und muss ressourcen sammeln sowie Feinde bekämpfen, um schlussendlich das Ziel des Bauen eines Bootes um der Insel zu entfliehen zu erreichen.',NULL,'assets/content/projects/it/python/stranded/',NULL,'https://github.com/omega-800/stranded-python','2023-01-19',NULL,NULL),
     ('Textbasiertes Spiel C#','Dieses Spiel ist die weiterführung, bzw die Neu-Implementation des Python Stranded Spiels. Da mir die Dynamische Typisierung sowie die Laufzeit von Python nicht gefiel, fing ich an dieses Spiel in C# zu entwickeln.',NULL,'assets/content/projects/it/csharp/stranded/',NULL,'https://github.com/omega-800/stranded','2023-01-29',NULL,NULL),
     ('Roguelike Dungeon Spiel 1','Da mir die Spielentwicklung mittelsunity sehr gefallen hat, fing ich an ein eigener Roguelike Dungeon Spiel zu entwickeln. Die Sprites habe ich mittels Gimp designed.',NULL,'assets/content/projects/it/unity/dungeon/',NULL,'https://github.com/omega-800/dungeon_game','2019-03-29',NULL,NULL),
-    ('Roguelike Dungeon Spiel 2','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+    /*('Roguelike Dungeon Spiel 2','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),*/
     ('Roguelike Dungeon Spiel 3','Da mir die 2D-Roguelike Spiele sehr gefielen und ich Python lernen wollte, entwickelte ich so ein Spiel mittels Ursina. Die Sprites erstellte ich mittels Gimp.',NULL,NULL,NULL,'https://github.com/omega-800/roguelike-game','2022-09-10',NULL,NULL),
     ('Raketen Spiel','In der Informatikmittelschule zeigte mir ein Kollege, wie man ein Spiel in Unity entwickelt. Dies ist das Ergebnis meines ersten Unity-Projektes. Die Rakete modellierte ich in Blender.',NULL,'assets/content/projects/it/unity/rocket/',NULL,NULL,'2018-11-01',NULL,NULL),
-    ('Minecraft Kopie','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+    /*('Minecraft Kopie','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),*/
     ('Textbasiertes Spiel Java','Dieses Spiel entwickelte ich, als ich Informatikunterricht gab. Mein Ziel war es, ein vom Code-Aufbau simples Spiel zu gestalten, um das den Lernenden beizubringen und zusammen zu schreiben.',NULL,'assets/content/projects/it/java/textgame/',NULL,NULL,'2019-05-01',NULL,NULL),
     ('Java UNO Spiel','Während der Schulzeit entwickelte ich mit ein paar meiner Klassenkameraden ein UNO-Spiel mittels Java sowie Swing für die GUI-Implementation.',NULL,'assets/content/projects/it/java/uno/',NULL,NULL,'2019-02-20',NULL,(SELECT career_id FROM career WHERE name='bzz')),
     ('Immobilien Webseite','Im Auftrag meines Vaters schrieb ich eine simple Webseite, damit er seine zu verkaufenden, renovierten Immobilien ausstellen konnte.',NULL,'assets/content/projects/it/web/immob/',NULL,NULL,'2017-11-20',(SELECT person_id FROM person WHERE firstName = 'Alexey'),NULL),
@@ -852,10 +853,10 @@ INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Textbasiertes Spiel Java'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Java UNO Spiel'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 1'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
-    ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
+    /*((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),*/
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 3'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Raketen Spiel'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
-    ((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
+    /*((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),*/
     ((SELECT project_id FROM project WHERE name = 'Immobilien Webseite'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'RusFrauenTreff Webseite'),(SELECT person_id FROM person WHERE firstName = 'Georgiy'));
     
@@ -901,12 +902,12 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 1'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 1'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 1'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
-    ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'unity')),
+    /*((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'unity')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'csharp')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'gimp')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'logic')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
-    ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
+    ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 2'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),*/
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 3'),(SELECT skill_id FROM skill WHERE identifier = 'python')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 3'),(SELECT skill_id FROM skill WHERE identifier = 'ursina')),
     ((SELECT project_id FROM project WHERE name = 'Roguelike Dungeon Spiel 3'),(SELECT skill_id FROM skill WHERE identifier = 'gimp')),
@@ -921,10 +922,10 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Raketen Spiel'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
     ((SELECT project_id FROM project WHERE name = 'Raketen Spiel'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
     ((SELECT project_id FROM project WHERE name = 'Raketen Spiel'),(SELECT skill_id FROM skill WHERE identifier = 'communication')),
-    ((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT skill_id FROM skill WHERE identifier = 'python')),
+    /*((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT skill_id FROM skill WHERE identifier = 'python')),
     ((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT skill_id FROM skill WHERE identifier = 'python')),
     ((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
-    ((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
+    ((SELECT project_id FROM project WHERE name = 'Minecraft Kopie'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),*/
     ((SELECT project_id FROM project WHERE name = 'Immobilien Webseite'),(SELECT skill_id FROM skill WHERE identifier = 'php')),
     ((SELECT project_id FROM project WHERE name = 'Immobilien Webseite'),(SELECT skill_id FROM skill WHERE identifier = 'html')),
     ((SELECT project_id FROM project WHERE name = 'Immobilien Webseite'),(SELECT skill_id FROM skill WHERE identifier = 'css')),
@@ -947,25 +948,25 @@ INSERT INTO project (name, description, thumbnail, image, url, github, date, cli
     ('Tie Dye','Diese Tie Dye Shirts habe ich aus meiner Faszination für die 60er US-Kultur und deren Auswirkungen auf die Gesellschaft erstellt. Aber auch weil ich die Muster schön finde.',NULL,'assets/content/projects/art/textile/tiedye/',NULL,NULL,'2022-04-01',NULL,NULL),
     ('Portemonnaie','Damit ich einen sicheren Ort für mein geringes Kapital habe und Stoffe aus meinen alten Kleidern wiederverwenden kann, designte und nähte ich ein mehrfach-Portemonnaie mit Ressverschluss.',NULL,'assets/content/projects/art/textile/wallet/',NULL,NULL,'2023-04-11',NULL,NULL),
     ('Pullover','Es macht mir spass, meine Kleider weiter zu verschönern und bemalen. Somit kann ich in einer gelangweilten Stunde aus einem eintönigen Pullover ein Kunstwerk erschaffen.',NULL,'assets/content/projects/art/textile/pullover/',NULL,NULL,'2023-04-10',NULL,NULL),
-    ('Heavy Metal Veste','',NULL,NULL,NULL,NULL,'2017-05-01',NULL,NULL),
-    ('Punk Pullover','',NULL,NULL,NULL,NULL,'2022-04-21',NULL,NULL),
+    ('Heavy Metal Veste','Heavy Metal ist nicht nur meine bevorzugte Musikrichtung, sondern auch ein Lebensgefühl, das ich mit Stolz trage. In Hingabe an diese mitreißende Musik habe ich eine Weste im DIY-Stil gefertigt, die meine tiefe Verbundenheit mit der Heavy-Metal-Kultur ausdrückt.',NULL,NULL,NULL,NULL,'2017-05-01',NULL,NULL),
+    ('Punk Pullover','Punk ist für mich mehr als nur Musik, es ist eine Lebenseinstellung. Diesen Pullover habe ich bemalt und bestickt, um meine Vorliebe für Punkrock und die subversive Kultur zu verdeutlichen.',NULL,NULL,NULL,NULL,'2022-04-21',NULL,NULL),
     ('Holzbesteck','Als ich an einem Tag campen ging und kein Besteck dabei hatte, kam ich auf die Idee, dieses selbst zu schnitzen. Diese Erfahrung weckte mein Interesse an Holz und dessen Bearbeitungsmöglichkeiten.',NULL,NULL,NULL,NULL,'2022-10-01',NULL,NULL),
     ('Holzohrenring','Diesen Plug habe ich als Miniprojekt geschnitzt. Diesen hatte ich immer dabei und konnte während des Wartens auf den Zug oder als Entspannungsübung Schritt nach Schritt vervollständigen.',NULL,'assets/content/projects/art/wood/plug/',NULL,NULL,'2023-05-06',NULL,NULL),
     /*('Bemaltes Eigentum','',NULL,NULL,NULL,NULL,NULL,NULL,NULL),*/
-    ('Turnsack und Seemannssack','Da meistens die industriell hergestellten Turnsäcke für meinen Geschmack zu klein sind, nähte ich aus Reststoff für mich passende Bags und Rucksäcke.',NULL,NULL,NULL,NULL,'2017-07-01',NULL,NULL),
+    ('Turnsack und Seemannssack','Da meistens die industriell hergestellten Turnsäcke für meinen Geschmack zu klein sind, nähte ich aus Reststoff für mich passende Bags und Rucksäcke.',NULL,'assets/content/projects/art/textile/bags/',NULL,NULL,'2017-07-01',NULL,NULL),
     ('Legales Graffiti',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'spraypaint'),NULL,'assets/content/projects/art/art/spray/',NULL,NULL,'2021-09-10',NULL,NULL),
-    ('Kusudama','',NULL,'assets/content/projects/art/paper/kusudama/',NULL,NULL,'2022-10-01',NULL,NULL),
+    ('Kusudama','Das Falten und Kreieren dieser faszinierenden Origami-Kugeln ist für mich nicht nur eine kreative Entdeckungsreise, sondern auch eine meditative Praxis. Es fasziniert mich, wie aus einzelnen kleinen Papierkomponenten ein komplexes Kunstwerk entstehen kann.',NULL,'assets/content/projects/art/paper/kusudama/',NULL,NULL,'2022-10-01',NULL,NULL),
     ('Origami',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'papercraft'),NULL,'assets/content/projects/art/paper/origami/',NULL,NULL,'2023-06-18',NULL,NULL),
     ('Zeichnungen',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'drawing'),NULL,'assets/content/projects/art/art/drawing/',NULL,NULL,'2019-07-01',NULL,NULL),
-    ('Mosaik','',NULL,'assets/content/projects/art/other/mosaic/',NULL,NULL,'2019-02-01',NULL,NULL),
-    ('Katzenbaum','',NULL,'assets/content/projects/art/wood/cat/',NULL,NULL,'2023-05-11',NULL,NULL),
-    ('Malen','',NULL,'assets/content/projects/art/art/paint/',NULL,NULL,'2020-06-01',NULL,NULL),
+    ('Mosaik','Das Gestalten von Mosaiken ist für mich wie das Zusammensetzen eines Puzzles aus Farben und Formen. Die Vielfalt der Materialien und die kreative Freiheit, die das Mosaikhandwerk bietet, fesseln mich immer wieder aufs Neue. Es ist eine Möglichkeit, meine künstlerische Ausdrucksfähigkeit zu entfalten und gleichzeitig ein Gefühl der Erfüllung zu erleben, wenn ich aus kleinen Stücken ein harmonisches Gesamtbild erschaffe. Die Kombination von Ästhetik und Handwerk macht das Mosaik für mich zu einer wunderbaren Art, meine kreative Energie auszuleben.',NULL,'assets/content/projects/art/other/mosaic/',NULL,NULL,'2019-02-01',NULL,NULL),
+    ('Katzenbaum','Es war eine erfüllende Erfahrung, meinem Bruder beim Bau eines maßgeschneiderten Katzenbaums aus Holz und Stoff zu unterstützen. Durch unsere Zusammenarbeit haben wir nicht nur eine gemütliche Spiel- und Ruheoase für seine geliebte Katze geschaffen, sondern auch unsere handwerklichen Fähigkeiten vertieft. Das Wissen, dass wir gemeinsam ein Stück für das Wohlbefinden seines pelzigen Freundes erschaffen haben, verleiht mir ein tiefes Gefühl der Zufriedenheit und Freude.',NULL,'assets/content/projects/art/wood/cat/',NULL,NULL,'2023-05-11',NULL,NULL),
+    ('Malen','Die Welt der Farben und Pinsel ist mein Rückzugsort, in dem ich mich frei ausdrücken kann. Beim Malen kann ich meine Emotionen und Gedanken auf die Leinwand bringen und meine eigene Interpretation der Realität schaffen. Es ist eine Kunstform, die mir erlaubt, meine Fantasie zu entfalten und neue Wege des Ausdrucks zu entdecken. Die Möglichkeit, in verschiedenen Stilen und Techniken zu malen, lässt mich immer wieder neue Inspiration finden und meine Fähigkeiten als Künstler weiterentwickeln.',NULL,'assets/content/projects/art/art/paint/',NULL,NULL,'2020-06-01',NULL,NULL),
     ('Gitarre',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'guitar'),NULL,'assets/content/projects/art/music/guitar/',NULL,NULL,'2015-06-18',NULL,NULL),
     ('Bass',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'bass'),NULL,'assets/content/projects/art/music/bass/',NULL,NULL,'2022-11-11',NULL,NULL),
     ('Schlagzeug',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'drums'),NULL,'assets/content/projects/art/music/drums/',NULL,NULL,'2023-01-22',NULL,NULL),
     ('Ableton',(SELECT description FROM application LEFT JOIN skill ON application.application_id = skill.application_id WHERE identifier = 'ableton-live'),NULL,'assets/content/projects/art/music/ableton/',NULL,NULL,'2019-08-01',NULL,NULL),
     ('FL Studio',(SELECT description FROM application LEFT JOIN skill ON application.application_id = skill.application_id WHERE identifier = 'fl-studio'),NULL,'assets/content/projects/art/music/flstudio/',NULL,NULL,'2019-12-01',NULL,NULL),
-    ('Faden','',NULL,'assets/content/projects/art/other/string/',NULL,NULL,'2021-03-20',NULL,NULL);
+    ('Faden','Ich habe auf genageltem Holz mit Faden Motive erstellt. Dabei habe ich Nägel in das Holz geschlagen, um klare Konturen zu erzeugen, und den Faden geschickt um die Nägel gewickelt, um die Motive zu gestalten. Es war eine kreative Erfahrung, die mir die Möglichkeit gab, meine handwerklichen Fähigkeiten zu üben und mein Verständnis von Formen und Mustern zu erweitern.',NULL,'assets/content/projects/art/other/string/',NULL,NULL,'2021-03-20',NULL,NULL);
 
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Teddy'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
@@ -1078,14 +1079,14 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
 
 INSERT INTO project (name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
     ('CEVI',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'cevi'),NULL,NULL,NULL,NULL,'2016-06-01',NULL,NULL),
-    ('Fahrrad',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'bike'),NULL,NULL,NULL,NULL,'2023-06-19',NULL,NULL),
+    ('Fahrrad',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'bike'),NULL,'assets/content/projects/health/sports/bike/',NULL,NULL,'2023-06-19',NULL,NULL),
     ('Volleyball',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'volleyball'),NULL,NULL,NULL,NULL,'2023-04-11',NULL,NULL),
     ('Skateboard',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'skateboard'),NULL,NULL,NULL,NULL,'2017-05-12',NULL,NULL),
     ('Tischtennis',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'tabletennis'),NULL,'assets/content/projects/health/sports/tabletennis/',NULL,NULL,'2016-08-01',NULL,NULL),
-    ('Campen','',NULL,NULL,NULL,NULL,'2022-08-10',NULL,NULL),
-    ('Wandern',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'hiking'),NULL,NULL,NULL,NULL,'2022-08-18',NULL,NULL),
-    ('Kochen','',NULL,NULL,NULL,NULL,'2023-01-05',NULL,NULL),
-    ('Lebkuchen','',NULL,'assets/content/projects/health/cooking/lebkuchen/',NULL,NULL,'2022-12-21',NULL,NULL);
+    ('Campen','Das Campen ist für mich eine Rückkehr zur Natur und eine Gelegenheit, dem hektischen Alltag zu entfliehen. Die Einfachheit des Campinglebens und das Gefühl der Freiheit, das es vermittelt, sind unschätzbar wertvoll. Beim Campen kann ich mich mit der Natur verbinden, die Schönheit der Umgebung genießen und das Gefühl der Gemeinschaft erleben, wenn ich mit anderen Campern in der Natur zusammenkomme. Es ist eine wunderbare Möglichkeit, mich zu erden und neue Energie zu tanken.',NULL,NULL,'assets/content/projects/health/nature/camping/',NULL,'2022-08-10',NULL,NULL),
+    ('Wandern',(SELECT description FROM activity LEFT JOIN skill ON activity.activity_id = skill.activity_id WHERE identifier = 'hiking'),NULL,'assets/content/projects/health/nature/hiking/',NULL,NULL,'2022-08-18',NULL,NULL),
+    ('Kochen',' Die Küche ist mein kreatives Labor, in dem ich neue Aromen und Geschmacksrichtungen entdecke. Kochen ist für mich mehr als nur eine Alltagspflicht – es ist eine Möglichkeit, meine kulinarische Fantasie zum Leben zu erwecken. Die Kombination von Zutaten, das Experimentieren mit Gewürzen und die Freude am Servieren von köstlichen Gerichten sind für mich eine Quelle der Inspiration. Kochen ist ein Akt der Fürsorge, sowohl für mich selbst als auch für andere, und es erlaubt mir, meine Liebe zur Gastronomie und die Freude am Teilen von Essen zu vereinen.',NULL,NULL,NULL,NULL,'2023-01-05',NULL,NULL),
+    ('Lebkuchen','Diesen Lebkuchen habe ich im Winter mit meinen beiden Brüdern gebacken. Zusammen die Kreativität im Kochen zum Ausdruck zu bringen war ein wundervolles Erlebnis.',NULL,'assets/content/projects/health/cooking/lebkuchen/',NULL,NULL,'2022-12-21',NULL,NULL);
 
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Skateboard'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),

@@ -1,6 +1,6 @@
 [
  {
-  "workplace_id": "cdb36da5-f1d9-44ad-ae51-eb684b067c09",
+  "workplace_id": "8b0c4b0b-8fb9-4399-8f5d-8fe4f4f364f9",
   "legalname": "inteco edv ag",
   "foundingdate": "1977-12-31T23:00:00.000Z",
   "founder": "Walter Tuchschmid",
@@ -13,10 +13,10 @@
   "url": "https://www.inteco.ch/",
   "logo": "assets/content/career/inteco.svg",
   "image": "",
-  "address_id": "970ef055-2786-4d39-9426-0addf4695328"
+  "address_id": "10e16be3-2d00-476f-8652-e7fbe6f0c084"
  },
  {
-  "workplace_id": "4284a36b-e541-482f-a482-a8d43269a647",
+  "workplace_id": "fdf85d4c-96ba-4641-99ba-fec46e1ff166",
   "legalname": "Ernesto Vargas®",
   "foundingdate": "1977-12-31T23:00:00.000Z",
   "founder": "Bernd Schoop",
@@ -29,10 +29,10 @@
   "url": "https://www.ernesto-vargas.com",
   "logo": "assets/content/career/ernesto_vargas.svg",
   "image": "",
-  "address_id": "80c15939-c55e-44e2-b353-b8f724a4a921"
+  "address_id": "45710d89-e121-4926-9d3e-5a56b754e9f4"
  },
  {
-  "workplace_id": "8e03196a-823a-49e8-b4fc-94cdb9a25021",
+  "workplace_id": "d2fd812b-8504-405b-bc78-3dbd773ab329",
   "legalname": "Kork AG",
   "foundingdate": "2021-07-01T22:00:00.000Z",
   "founder": "",
@@ -45,6 +45,6 @@
   "url": "https://kork.ch",
   "logo": "assets/content/career/kork.webp",
   "image": "",
-  "address_id": "265479db-1552-4c9a-a7bd-e9953d03cdec"
+  "address_id": "2ac9f6d4-ee0c-49e0-a8fc-ef0286274259"
  }
 ]
