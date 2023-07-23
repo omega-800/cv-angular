@@ -11,6 +11,7 @@ import {
   FiltersEntity,
   SelectedFilterEntity,
   FilterType,
+  RangeType,
 } from 'src/app/services/filter/filter.model';
 import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
@@ -35,15 +36,6 @@ export class FilterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.filters.ranges?.forEach((range) =>
-      this.selectedFilter.push({
-        id: range.id,
-        name: range.name,
-        range: true,
-        category: range.id,
-        value: [range.values[0], range.values[range.values.length - 1]],
-      })
-    );
   }
 
   getName(categoryID:string, value:FilterType):string {
@@ -51,30 +43,23 @@ export class FilterComponent implements OnInit {
   }
 
   toggleTag(categoryID: string, categoryName:string, tagValue: FilterType) {
-    let changed = false;
     let htmlElem = document.getElementById(this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == tagValue)[0].id);
-    this.selectedFilter.every((elem) => {
-      if (elem.category == categoryID) {
-        if (elem.value.includes(tagValue)) {
-          elem.value.splice(elem.value.indexOf(tagValue), 1);
-          if (elem.value.length == 0) {
-            this.selectedFilter.splice(
-              this.selectedFilter.findIndex((el) => el.category == categoryID),
-              1
-            );
-          }
-          htmlElem?.classList.remove('active');
+    let catIndex:number = this.selectedFilter.findIndex(elem => (elem.category == categoryID));
+    if(catIndex >= 0) {
+      let elem = this.selectedFilter[catIndex];
+      let valIndex = elem.value.indexOf(tagValue);
+      if (valIndex >= 0) {
+        if (elem.value.length == 1) {
+          this.selectedFilter.splice(catIndex, 1);
         } else {
-          htmlElem?.classList.add('active');
-          elem.value.push(tagValue);
+          elem.value.splice(valIndex, 1);
         }
-        changed = true;
-        return false;
+        htmlElem?.classList.remove('active');
       } else {
-        return true;
+        elem.value.push(tagValue);
+        htmlElem?.classList.add('active');
       }
-    });
-    if (!changed) {
+    } else {
       this.selectedFilter.push({
         id: categoryID,
         name: categoryName,
@@ -84,6 +69,10 @@ export class FilterComponent implements OnInit {
       });
       htmlElem?.classList.add('active');
     }
+    this.emitFilter();
+  }
+
+  emitFilter() {
     this.filterEmitter.emit(
       this.selectedFilter.sort((a, b) =>
         a.range == b.range ? 0 : a.range ? -1 : 1
@@ -101,12 +90,25 @@ export class FilterComponent implements OnInit {
     let [smaller, larger] = parseInt(sliderOne.value) < parseInt(sliderTwo.value)
       ? [sliderOne.value, sliderTwo.value]
       : [sliderTwo.value, sliderOne.value];
-    this.selectedFilter.filter((elem) => elem.category == range.id)[0].value = [
-      smaller,
-      larger,
-    ];
+    let rangeIndex:number = this.selectedFilter.findIndex(elem => (elem.range && elem.category == range.id)); 
+    let newRangeFilter:SelectedFilterEntity = {
+      id: range.id,
+      name: range.name,
+      range: true,
+      category: range.id,
+      value: [smaller,larger],
+    };
+    if (rangeIndex >= 0) {
+      if(this.isDefaultRangeValue(newRangeFilter)){
+        this.selectedFilter.splice(rangeIndex, 1);
+      } else {
+        this.selectedFilter[rangeIndex].value = [smaller,larger];
+      }
+    } else {
+      this.selectedFilter.push(newRangeFilter);
+    }
     [outputOne.innerHTML, outputTwo.innerHTML] = [smaller, larger];
-    this.filterEmitter.emit(this.selectedFilter);
+    this.emitFilter();
   }
 
   resetRange(selectedRange:SelectedFilterEntity){
@@ -115,21 +117,16 @@ export class FilterComponent implements OnInit {
       this.selectedFilter.filter((elem) => elem.category == selectedRange.id)[0].value = [
         rangeValues[0], rangeValues[rangeValues.length - 1]
       ];
+      this.resetRangeDOM(selectedRange.id, rangeValues[0], rangeValues[rangeValues.length - 1]);
     }
   }
 
   reset() {
     this.selectedFilter = [];
-    this.filters.ranges?.forEach((range) =>
-      this.selectedFilter.push({
-        id: range.id,
-        name: range.name,
-        category: range.id,
-        range: true,
-        value: [range.values[0], range.values[range.values.length - 1]],
-      })
-    );
     this.filterEmitter.emit(this.selectedFilter);
+    this.filters.ranges?.forEach((range) => {
+      this.resetRangeDOM(range.id, range.values[0], range.values[range.values.length - 1]);
+    });
     document
       .querySelectorAll('.tag')
       .forEach((elem) => elem.classList.remove('active'));
@@ -143,6 +140,13 @@ export class FilterComponent implements OnInit {
       selected?.values[0] == range.value[0] &&
       selected?.values[selected?.values.length - 1] == range.value[1]
     );
+  }
+
+  resetRangeDOM(rangeID:string, minVal:RangeType, maxVal:RangeType){
+    (document.getElementById(rangeID+"_1") as HTMLInputElement).value = minVal.toString();
+    (document.getElementById(rangeID+"_1_out") as HTMLOutputElement).innerHTML = minVal.toString();
+    (document.getElementById(rangeID+"_2") as HTMLInputElement).value = maxVal.toString();
+    (document.getElementById(rangeID+"_2_out") as HTMLOutputElement).innerHTML = maxVal.toString();
   }
 
   /*@Input() filterValues!:{[key:string]:string};

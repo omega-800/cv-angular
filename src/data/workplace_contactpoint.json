@@ -1,12 +1,17 @@
 [
  {
-  "workplace_contactpoint_id": "fe44e71a-2231-47ee-8e52-418cca5a23cc",
-  "contactpoint_id": "248eed41-f102-4431-9341-47ad045cecc9",
-  "workplace_id": "b69c7e4b-a956-4428-b307-3774eb74a59b"
+  "workplace_contactpoint_id": "e95dd372-c994-43e0-803e-f7ce287e6d55",
+  "contactpoint_id": "99825feb-36fe-4067-8bd1-089655d6f688",
+  "workplace_id": "cdb36da5-f1d9-44ad-ae51-eb684b067c09"
  },
  {
-  "workplace_contactpoint_id": "041ecbad-9fd5-4f8e-9881-e4a9bc76db68",
-  "contactpoint_id": "549edfcc-658b-4bd0-a131-58439963d618",
-  "workplace_id": "3a3344e8-36b7-4f71-bce0-61b9169389ed"
+  "workplace_contactpoint_id": "d8d4aba0-5b5b-4dba-8a50-e96090eb782f",
+  "contactpoint_id": "e4d7f780-436f-40c1-a6b0-c4f2accbf080",
+  "workplace_id": "4284a36b-e541-482f-a482-a8d43269a647"
+ },
+ {
+  "workplace_contactpoint_id": "d63bfc5f-07bb-497a-8e98-cba1807944db",
+  "contactpoint_id": "333c7397-6e33-4d09-b721-5a984886a850",
+  "workplace_id": "8e03196a-823a-49e8-b4fc-94cdb9a25021"
  }
 ]

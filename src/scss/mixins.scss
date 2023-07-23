@@ -73,7 +73,7 @@
 @mixin small-image {
     height: $elem-size;
     width: $elem-size;
-    margin-right: $elem-padding;
+    margin: auto $elem-padding auto 0;
 }
 
 @mixin prefix($property, $value, $prefixes) {

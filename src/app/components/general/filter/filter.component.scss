@@ -24,15 +24,28 @@ $range-useful-width: calc(100% - $range-height);
 }
 
 :host {
-    & .filterSelected {
-        @include flex-row;
-        & .selectedItem {
-            @include slimpill;
-            & > * {
-                display: inline-block;
-            }
-            &:hover{
-                cursor: pointer;
+    & .filterSelectedContainer {
+        overflow-x: auto;
+        transform: rotateX(180deg);
+        &::-webkit-scrollbar {
+            height: $elem-padding;
+        }
+        & .filterSelected {
+            width: 100%;
+            transform: rotateX(180deg);
+            display:flex;
+            column-gap: $elem-padding;
+            & .selectedItem {
+                display: grid;
+                grid-template-columns: max-content;
+                grid-template-rows: max-content;
+                @include slimpill;
+                & > * {
+                    display: inline-block;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -105,13 +118,32 @@ $range-useful-width: calc(100% - $range-height);
                     }
                 }
                 & .filterRange {
-                    width: 100%;
-                    display: block;
+                    display: grid;
+                    grid-template-areas: "img title"
+                                        "img range";
+                    grid-template-rows: auto auto;
+                    grid-template-columns: $elem-size auto;
+                    margin: $elem-padding;
+                    border-top: $defborderthin;
+                    & .arrowImg {
+                        grid-area:img;
+                        @include small-image;
+                        transform: rotate(90deg);
+                    }
+                    & h5 {
+                        grid-area:title;
+                    }
                     & .range {
+                        grid-area:range;
                         @include flex-e2e;
                         & output {
                             width: calc((100% - $range-width) / 2);
-                            text-align: center;
+                            &:first-child{
+                                text-align: left;
+                            }
+                            &:last-child{
+                                text-align: right;
+                            }
                         }
                         & .wrap {
                             display: grid;

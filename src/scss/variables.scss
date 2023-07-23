@@ -9,7 +9,7 @@ $green1: rgb(140, 207, 126); // 8CCF7E
 $green2: rgb(150, 217, 136); // 96D988
 $yellow1: rgb(229, 199, 107); // E5C76B
 $yellow2: rgb(244, 214, 122); // F4D67A
-$blue1: rgba(103, 176, 232, 0.9); // 67B0E8
+$blue1: rgb(103, 176, 232); // 67B0E8
 $blue2: rgb(113, 186, 242); // 71BAF2
 $purple1: rgb(196, 127, 213); // C47FD5
 $purple2: rgb(206, 137, 223); // CE89DF
@@ -57,7 +57,9 @@ $contentbox-right-b: 50%;
 $dark: rgb(43, 43, 38);*/
 $white: rgb(237, 242, 244);
 //$cool: rgb(142, 141, 190);
-$cool: $blue1;
+$cool: rgba(103, 176, 232, 0.9);
+$dark1trans: rgba(35, 42, 45, 0.9);
+
 $fontcolor1: $dark1;
 $fontcolor2: $light2;
 /*

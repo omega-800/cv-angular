@@ -60,18 +60,18 @@
         }
     }
     & .skills{
-        //@include slimpill;
         &:not(.active) > *:not(.showSkills) {
             display: none;
         }
-    }
-    & .showSkills {
-        @include flex-row-nojust;
-        cursor: pointer;
-        & .arrowImg {
-            @include small-image;
-            &:not(.active) {
-                transform: rotate(180deg);
+        & .showSkills {
+            @include slimpill;
+            @include flex-row-nojust;
+            cursor: pointer;
+            & .arrowImg {
+                @include small-image;
+                &:not(.active) {
+                    transform: rotate(180deg);
+                }
             }
         }
     }

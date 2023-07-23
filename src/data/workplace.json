@@ -1,6 +1,6 @@
 [
  {
-  "workplace_id": "b69c7e4b-a956-4428-b307-3774eb74a59b",
+  "workplace_id": "cdb36da5-f1d9-44ad-ae51-eb684b067c09",
   "legalname": "inteco edv ag",
   "foundingdate": "1977-12-31T23:00:00.000Z",
   "founder": "Walter Tuchschmid",
@@ -13,10 +13,10 @@
   "url": "https://www.inteco.ch/",
   "logo": "assets/content/career/inteco.svg",
   "image": "",
-  "address_id": "e34cb847-dae3-4b1c-a203-4589d87324a1"
+  "address_id": "970ef055-2786-4d39-9426-0addf4695328"
  },
  {
-  "workplace_id": "3a3344e8-36b7-4f71-bce0-61b9169389ed",
+  "workplace_id": "4284a36b-e541-482f-a482-a8d43269a647",
   "legalname": "Ernesto Vargas®",
   "foundingdate": "1977-12-31T23:00:00.000Z",
   "founder": "Bernd Schoop",
@@ -29,6 +29,22 @@
   "url": "https://www.ernesto-vargas.com",
   "logo": "assets/content/career/ernesto_vargas.svg",
   "image": "",
-  "address_id": "50f36188-e63e-49f0-b2ec-fb6eb4cf597f"
+  "address_id": "80c15939-c55e-44e2-b353-b8f724a4a921"
+ },
+ {
+  "workplace_id": "8e03196a-823a-49e8-b4fc-94cdb9a25021",
+  "legalname": "Kork AG",
+  "foundingdate": "2021-07-01T22:00:00.000Z",
+  "founder": "",
+  "description": "Kork wurde 2020 gegründet, als drei Freunde ihre Fähigkeiten in Dienstleistungen umwandelten und diese Kunden im Tausch gegen Geld anboten.",
+  "description_e": "",
+  "description_r": "",
+  "name": "Kork",
+  "name_e": "",
+  "name_r": "",
+  "url": "https://kork.ch",
+  "logo": "assets/content/career/kork.webp",
+  "image": "",
+  "address_id": "265479db-1552-4c9a-a7bd-e9953d03cdec"
  }
 ]

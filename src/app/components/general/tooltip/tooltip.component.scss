@@ -15,6 +15,15 @@
         & .tooltip-icon {
             @include small-image;
         }
+        & .name-title {
+            font: {
+                weight: bold;
+                family:$mono;
+            }
+        }
+        & .link-title {
+            font-weight: bold;
+        }
         & .name-container,
         .link-container {
             width: 100%;

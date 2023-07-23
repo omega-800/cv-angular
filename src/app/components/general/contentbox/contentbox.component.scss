@@ -97,6 +97,8 @@
         }
         & .belowbottom {
             grid-area: belowbottom;
+            background-color:transparent;
+            border-top:none;
         }
     }
 }

@@ -17,22 +17,26 @@ export class SkillsFilterPipe implements PipeTransform {
   }
 
   filtersApplyTo(skill: SkillEntity, filters: SelectedFilterEntity[]): boolean {
-    let applies: boolean = false;
-
-    filters.forEach(filter => {
-      if (filter.range && filter.category === skillFilterProps.knowledge) {
-        let min: number = Number(filter.value[0]);
-        let max: number = Number(filter.value[1]);
-        if (min > max) {
-          [min, max] = [max, min];
+    let appliesRange: boolean = false;
+    if(filters.some(filter => filter.range)){
+      filters.forEach(filter => {
+        if (filter.range && filter.category === skillFilterProps.knowledge) {
+          let min: number = Number(filter.value[0]);
+          let max: number = Number(filter.value[1]);
+          if (min > max) {
+            [min, max] = [max, min];
+          }
+          appliesRange = skill.knowledgepercent >= min && skill.knowledgepercent <= max;
         }
-        applies = skill.knowledgepercent >= min && skill.knowledgepercent <= max;
-      }
-    })
+      });
+    } else {
+      appliesRange = true;
+    }
 
+    let appliesSkills: boolean = true;
     filters.forEach(filter => {
-      if (applies && !filter.range) {
-        applies = filter.category === skillFilterProps.category ? skill.skillcategories.some(cat => filter.value.includes(cat.skillcategory_id)) :
+      if (appliesSkills && !filter.range) {
+        appliesSkills = filter.category === skillFilterProps.category ? skill.skillcategories.some(cat => filter.value.includes(cat.skillcategory_id)) :
           filter.category === skillFilterProps.subcategory ? skill.skillsubcategories.some(subCat => filter.value.includes(subCat.skillsubcategory_id)) :
             filter.category === skillFilterProps.type ? filter.value.includes(skill.type) :
               filter.category === skillFilterProps.hobby ? filter.value.includes(skill.hobby) :
@@ -41,7 +45,7 @@ export class SkillsFilterPipe implements PipeTransform {
       }
     })
 
-    return applies;
+    return appliesRange && appliesSkills;
   }
 
 }

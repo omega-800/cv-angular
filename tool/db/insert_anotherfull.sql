@@ -378,7 +378,8 @@ INSERT INTO address(street, city, zip, country_id) VALUES
     ('Promenadengasse 11','Zürich',8001,(SELECT country_id FROM country WHERE shortName = 'CH')),
     ('Herzogenmühlestrasse 60','Zürich',8051,(SELECT country_id FROM country WHERE shortName = 'CH')),
     ('Minervastrasse 14','Zürich',8090,(SELECT country_id FROM country WHERE shortName = 'CH')),
-    ('Seestrasse 110','Horgen',8810,(SELECT country_id FROM country WHERE shortName = 'CH'));
+    ('Seestrasse 110','Horgen',8810,(SELECT country_id FROM country WHERE shortName = 'CH')),
+    ('Forchstrasse 192','Herrliberg',8704,(SELECT country_id FROM country WHERE shortName = 'CH'));
 
 INSERT INTO contactPoint(name, phone, email) VALUES 
     ('Info point', 0552565758, 'info@inteco.ch'),
@@ -396,18 +397,21 @@ INSERT INTO contactPoint(name, phone, email) VALUES
     ('dad', 0786081068, 'alexshev@yahoo.com'),
     ('niki', 0787280585, NULL),
     ('michi', 0786237232, NULL),
-    ('betina', 0, 'betina.hiestand@inteco.ch');
+    ('betina', 0, 'betina.hiestand@inteco.ch'),
+    ('Kork', 0791941239, 'contact@kork.work');
 
 INSERT INTO workplace (description, name, legalName, url, logo, foundingDate, founder, address_id) VALUES 
     ('Führender Schweizer IT-Gesamtanbieter für alle Branchen, spezialisiert auf Getränke- und Weinhandel.', 'Inteco', 'inteco edv ag', 'https://www.inteco.ch/', 'assets/content/career/inteco.svg', '1978-01-01','Walter Tuchschmid', (SELECT address_id from address WHERE street = 'Barzloostrasse 20')),
-    ('Ernesto Vargas® ist eine Schweizer Firma, die sich seit 2014 auf die Ausrüstung professioneller Handwerker spezialisiert hat.', 'Ernesto Vargas', 'Ernesto Vargas®', 'https://www.ernesto-vargas.com', 'assets/content/career/ernesto_vargas.svg', '1978-01-01','Bernd Schoop', (SELECT address_id from address WHERE street = 'Lochackerstrasse 4'));
+    ('Ernesto Vargas® ist eine Schweizer Firma, die sich seit 2014 auf die Ausrüstung professioneller Handwerker spezialisiert hat.', 'Ernesto Vargas', 'Ernesto Vargas®', 'https://www.ernesto-vargas.com', 'assets/content/career/ernesto_vargas.svg', '1978-01-01','Bernd Schoop', (SELECT address_id from address WHERE street = 'Lochackerstrasse 4')),
+    ('Kork wurde 2020 gegründet, als drei Freunde ihre Fähigkeiten in Dienstleistungen umwandelten und diese Kunden im Tausch gegen Geld anboten.', 'Kork', 'Kork AG', 'https://kork.ch', 'assets/content/career/kork.webp', '2021-07-02','', (SELECT address_id from address WHERE street = 'Forchstrasse 192'));
 
 INSERT INTO workplace_contactPoint (workplace_id, contactPoint_id) VALUES
     ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'info@inteco.ch')),
     /*((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'webmaster@inteco.ch')),
     ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'support@inteco.ch')),
     ((SELECT workplace_id FROM workplace WHERE name = 'Inteco'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'wegas@inteco.ch')),*/
-    ((SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'swissoffice@ernesto-vargas.com'));
+    ((SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'swissoffice@ernesto-vargas.com')),
+    ((SELECT workplace_id FROM workplace WHERE name = 'Kork'),(SELECT contactPoint_id FROM contactPoint WHERE email = 'contact@kork.work'));
 
 INSERT INTO school (description, name, url, logo, image, type, address_id) VALUES 
     ('Die Primarschule Probstei liegt in Zürich-Schwamendingen, nahe des Zentrums und gerade unterhalb des Zürichberg-Waldes.', 'Probstei', 'https://www.stadt-zuerich.ch/schulen/de/probstei.html', 'assets/content/career/probstei.svg', NULL, 'primarschule', (SELECT address_id from address WHERE street = 'Stettbachstrasse 88')),
@@ -426,6 +430,7 @@ INSERT INTO school_contactPoint (school_id, contactPoint_id) VALUES
 INSERT INTO career (name, description, yearfrom, yearto, workplace_id, school_id) VALUES 
     ('inteco',NULL,2022,2023,(SELECT workplace_id FROM workplace WHERE name = 'Inteco'),NULL),
     ('ernestovargas',NULL,2020,2021,(SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),NULL),
+    ('kork',NULL,2020,2022,(SELECT workplace_id FROM workplace WHERE name = 'Kork'),NULL),
     ('bzz',NULL,2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee')),
     ('ims',NULL,2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Hottingen')),
     ('sek',NULL,2016,2017,NULL,(SELECT school_id FROM school WHERE name = 'Herzogenmühle')),
@@ -476,6 +481,18 @@ INSERT INTO career_skill (career_id, skill_id, percent) VALUES
     ((SELECT career_id FROM career WHERE name = 'ernestovargas'), (SELECT skill_id FROM skill WHERE identifier = 'python'), 75),
     ((SELECT career_id FROM career WHERE name = 'ernestovargas'), (SELECT skill_id FROM skill WHERE identifier = 'communication'), 50),
     ((SELECT career_id FROM career WHERE name = 'ernestovargas'), (SELECT skill_id FROM skill WHERE identifier = 'photoshop'), 60);
+    
+INSERT INTO career_skill (career_id, skill_id, percent) VALUES 
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'communication'), 85),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'independence'), 95),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'learning'), 60),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'english'), 45),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'python'), 20),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'java'), 10),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'nursery'), 40),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'english-lessons'), 50),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'math-lessons'), 65),
+    ((SELECT career_id FROM career WHERE name = 'kork'), (SELECT skill_id FROM skill WHERE identifier = 'coding-lessons'), 70);
 
 INSERT INTO career_skill (career_id, skill_id, percent) VALUES 
     ((SELECT career_id FROM career WHERE name = 'bzz'), (SELECT skill_id FROM skill WHERE identifier = 'unity'), 5),

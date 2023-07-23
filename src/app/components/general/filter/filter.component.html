@@ -1,70 +1,44 @@
-<div class="filterSelected">
-  <div *ngFor="let category of selectedFilter" class="selectedCategory">
-    <ng-container *ngIf="category.range">
-      <div *ngIf="!isDefaultRangeValue(category)" class="selectedItem" (click)="resetRange(category)">
-        <p>{{ category.value[0] }} - {{ category.value[1] }}</p>
-        <span></span>
-      </div>
-    </ng-container>
-    <ng-container *ngIf="!category.range">
-      <div *ngFor="let item of category.value" class="selectedItem" (click)="toggleTag(category.id, category.name, item)">
-        <p>{{ getName(category.id, item) }}</p>
-        <span><b> X</b></span>
-      </div>
+<div class="filterSelectedContainer">
+  <div class="filterSelected">
+    <ng-container *ngFor="let category of selectedFilter">
+      <ng-container *ngIf="category.range">
+        <div *ngIf="!isDefaultRangeValue(category)" class="selectedItem" (click)="resetRange(category)">
+          <p>{{ category.name }}: {{ category.value[0] }} - {{ category.value[1] }}<b> X</b></p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="!category.range">
+        <div *ngFor="let item of category.value" class="selectedItem"
+          (click)="toggleTag(category.id, category.name, item)">
+          <p>{{ getName(category.id, item) }}<b> X</b></p>
+        </div>
+      </ng-container>
     </ng-container>
   </div>
 </div>
 <div class="filterComp">
   <div class="filterTitle">
-    <div
-      class="showFilter"
-      (click)="
+    <div class="showFilter" (click)="
         content.classList.toggle('active'); img.classList.toggle('active')
-      "
-    >
-      <img
-        #img
-        class="arrowImg"
-        src="{{ arrowIcon.path }}"
-        alt="{{ arrowIcon.alt }}"
-        loading="lazy"
-      />
+      ">
+      <img #img class="arrowImg" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
       <h3>{{ filterName }}</h3>
     </div>
-    <h4 (click)="reset()" class="filterReset">Zurücksetzen</h4>
+    <h5 (click)="reset()" class="filterReset">Zurücksetzen</h5>
   </div>
   <div #content class="filterItems">
     <div class="filterCategories">
       <div #cat *ngFor="let category of filters.categories">
-        <div
-          class="showFilter"
-          (click)="
+        <div class="showFilter" (click)="
             cat.classList.toggle('active'); imgF.classList.toggle('active')
-          "
-        >
-          <img
-            #imgF
-            class="arrowImg"
-            src="{{ arrowIcon.path }}"
-            alt="{{ arrowIcon.alt }}"
-            loading="lazy"
-          />
+          ">
+          <img #imgF class="arrowImg" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
           <h5 class="categoryTitle">{{ category.name }}</h5>
         </div>
         <div class="tags">
-          <div
-            *ngFor="let tag of category.tags"
-            (click)="toggleTag(category.id, category.name, tag.value);"
-            class="tag"
-            [id]="tag.id"
-          >
-            <img
-              *ngIf="tag.image"
-              src="{{ tag.image.path }}"
-              alt="{{ tag.image.alt }}"
-              class="tagIcon"
-              loading="lazy"
-            />
+          <div *ngFor="let tag of category.tags" (click)="toggleTag(category.id, category.name, tag.value);" class="tag"
+            [id]="tag.id">
+            <img *ngIf="tag.image" src="{{ tag.image.path }}" alt="{{ tag.image.alt }}" class="tagIcon"
+              loading="lazy" />
             <p>{{ tag.name }}</p>
           </div>
         </div>
@@ -72,45 +46,27 @@
     </div>
 
     <div #ran *ngFor="let range of filters.ranges" class="filterRange">
+      <img class="arrowImg" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
       <h5 class="categoryTitle">{{ range.name }}</h5>
-      <div
-        class="range"
-        style="--a: {{ r1.value }}; --b: {{ r2.value }}; --min: {{
+      <div class="range" style="--a: {{ r1.value }}; --b: {{ r2.value }}; --min: {{
           range.values[0]
-        }}; --max: {{ range.values[range.values.length - 1] }}"
-      >
-        <output #o1 class="rangeFrom" for="{{ range.id }}_1">{{
+        }}; --max: {{ range.values[range.values.length - 1] }}">
+        <output #o1 class="rangeFrom" for="{{ range.id }}_1" id="{{ range.id }}_1_out">{{
           r1.value > r2.value ? r1.value : r2.value
-        }}</output>
+          }}</output>
         <div class="wrap">
           <label class="sr-only" for="{{ range.id }}_1">Value A:</label>
-          <input
-            type="range"
-            [min]="range.values[0]"
-            [max]="range.values[range.values.length - 1]"
-            [step]="range.step"
-            [value]="range.values[0]"
-            (input)="changeRange(range, r1, r2, o1, o2)"
-            class="slider slider1"
-            id="{{ range.id }}_1"
-            #r1
-          />
+          <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length - 1]" [step]="range.step"
+            [value]="range.values[0]" (input)="changeRange(range, r1, r2, o1, o2)" class="slider slider1"
+            id="{{ range.id }}_1" #r1 />
           <label class="sr-only" for="{{ range.id }}_2">Value B:</label>
-          <input
-            type="range"
-            [min]="range.values[0]"
-            [max]="range.values[range.values.length - 1]"
-            [step]="range.step"
-            [value]="range.values[range.values.length - 1]"
-            (input)="changeRange(range, r1, r2, o1, o2)"
-            class="slider slider2"
-            id="{{ range.id }}_2"
-            #r2
-          />
+          <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length - 1]" [step]="range.step"
+            [value]="range.values[range.values.length - 1]" (input)="changeRange(range, r1, r2, o1, o2)"
+            class="slider slider2" id="{{ range.id }}_2" #r2 />
         </div>
-        <output #o2 class="rangeTo" for="{{ range.id }}_2">{{
+        <output #o2 class="rangeTo" for="{{ range.id }}_2" id="{{ range.id }}_2_out">{{
           r2.value
-        }}</output>
+          }}</output>
       </div>
     </div>
   </div>

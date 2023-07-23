@@ -1,6 +1,6 @@
 [
  {
-  "operatingsystem_id": "0fdc435a-6112-48be-9124-c128e6ddda69",
+  "operatingsystem_id": "624a956a-a7d5-4c45-b88f-a3bceb93c24a",
   "url": "https://www.microsoft.com/windows",
   "name": "Windows",
   "name_e": "",
@@ -10,7 +10,7 @@
   "description_r": ""
  },
  {
-  "operatingsystem_id": "223ac6af-ad51-4830-9671-7a3ae6c082df",
+  "operatingsystem_id": "81ec2776-43e7-4589-8cf8-de54ece8ec63",
   "url": "https://www.apple.com/macos",
   "name": "macOS",
   "name_e": "",
@@ -20,7 +20,7 @@
   "description_r": ""
  },
  {
-  "operatingsystem_id": "b2fbe38e-af84-488e-8847-65ada85994a4",
+  "operatingsystem_id": "0d759d10-4f90-4d6c-9fd9-255dd8ddacba",
   "url": "https://www.linux.org",
   "name": "Linux",
   "name_e": "",

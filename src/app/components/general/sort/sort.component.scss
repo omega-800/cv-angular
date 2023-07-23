@@ -3,6 +3,7 @@
 :host {
     & .sortComp {
         @include slimpill;
+        padding: $elem-padding;
         @include flex-e2e;
         & .sortTitle {
             @include flex-row-nojust;
