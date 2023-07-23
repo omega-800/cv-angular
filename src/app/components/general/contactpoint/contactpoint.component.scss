@@ -1,10 +1,11 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
 
 :host {
-    @include flex-e2e;
-    border-top: $defborderthin;
+    @include mixins.flex-e2e;
+    border-top: variables.$defborderthin;
     width: 100%;
     & .contactButtons {
-        @include flex-e2e;
+        @include mixins.flex-e2e;
     }
 }

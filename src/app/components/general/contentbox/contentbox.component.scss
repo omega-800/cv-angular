@@ -1,39 +1,39 @@
-@import "src/scss/variables.scss";
-@import "src/scss/mixins.scss";
-@import "src/scss/screens.scss";
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/mixins.scss" as mixins;
+@use"src/scss/screens.scss" as screens;
 
 :host {
     & > div {
         width: 100%;
-        //border-radius:$elem-border-radius;
-        margin: $elem-padding 0;
-        @include default-grid;
+        //border-radius:variables.$elem-border-radius;
+        margin: variables.$elem-padding 0;
+        @include mixins.default-grid;
         & .preview {
-            @include link;
-            @include default-grid;
+            @include mixins.link;
+            @include mixins.default-grid;
             & .arrowImg {
                 grid-area: arrow;
-                @include preview-image;
-                padding: $elem-padding;
+                @include mixins.preview-image;
+                padding: variables.$elem-padding;
             }
             & .title {
                 grid-area: title;
-                @include flex-list;
-                padding: 0 $elem-padding;
-                color: $fontcolor1;
+                @include mixins.flex-list;
+                padding: 0 variables.$elem-padding;
+                color: variables.$fontcolor1;
             }
         }
         & > div:not(.bottom) {
-            @include slimpill;
+            @include mixins.slimpill;
         }
     }
     & > :not(.active) {
         & .preview {
-            grid-template-columns: $elem-height 1fr $elem-height;
+            grid-template-columns: variables.$elem-height 1fr variables.$elem-height;
             grid-template-areas: "image title arrow";
             & .previewImg {
                 grid-area: image;
-                @include preview-image;
+                @include mixins.preview-image;
             }
             & .arrowImg {
                 justify-self: end;
@@ -45,7 +45,7 @@
         }
     }
     & > .active {
-        @include mobile-screen {
+        @include screens.mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto auto;
             grid-template-areas:
@@ -55,7 +55,7 @@
                 "bottom"
                 "belowbottom";
         }
-        @include tablet-screen {
+        @include screens.tablet-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto auto;
             grid-template-areas:
@@ -64,7 +64,7 @@
                 "bottom bottom"
                 "belowbottom belowbottom";
         }
-        @include desktop-screen {
+        @include screens.desktop-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto auto;
             grid-template-areas:
@@ -75,7 +75,7 @@
         }
         & .preview {
             grid-area: preview;
-            grid-template-columns: 1fr $elem-height;
+            grid-template-columns: 1fr variables.$elem-height;
             grid-template-areas: "title arrow";
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
@@ -90,11 +90,11 @@
         }
         & .desc {
             grid-area: desc;
-            padding: $box-padding;
+            padding: variables.$box-padding;
         }
         & .bottom {
             grid-area: bottom;
-            @include flex-row-just;
+            @include mixins.flex-row-just;
         }
         & .belowbottom {
             grid-area: belowbottom;

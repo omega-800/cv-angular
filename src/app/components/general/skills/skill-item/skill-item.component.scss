@@ -1,38 +1,38 @@
-@import "src/scss/mixins.scss";
-@import "src/scss/variables.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
 
 :host {
   width: 100%;
   position: relative;
   & .skill-cat-img,
   .skill-icon {
-    @include small-image;
+    @include mixins.small-image;
   }
   & .skill-item {
-    @include flex-row-nojust;
-    @include pill;
+    @include mixins.flex-row-nojust;
+    @include mixins.pill;
     position: relative;
     & .skill-cat-img-container {
       position: absolute;
       height: 100%;
-      width: $elem-size * 3;
-      background-color: $light2;
+      width: variables.$elem-size * 3;
+      background-color: variables.$light2;
       top: 0;
       left: 0;
-      border-top-left-radius: $elem-size * 2;
-      border-bottom-left-radius: $elem-size * 2;
+      border-top-left-radius: variables.$elem-size * 2;
+      border-bottom-left-radius: variables.$elem-size * 2;
       & .skill-cat-img {
         position: absolute;
-        top: calc(50% - $elem-padding);
-        left: $elem-padding;
+        top: calc(50% - variables.$elem-padding);
+        left: variables.$elem-padding;
         &:nth-child(2) {
-          left: $elem-padding + $elem-size;
+          left: variables.$elem-padding + variables.$elem-size;
         }
       }
     }
     & .skill-title-container {
       &.margin-left {
-        margin-left: $elem-size * 3;
+        margin-left: variables.$elem-size * 3;
       }
       & > * {
         display: inline-block;
@@ -45,12 +45,12 @@
     }
   }
   & app-tooltip {
-    @include transitions((opacity: 0, visibility: hidden));
+    @include mixins.transitions((opacity: 0, visibility: hidden));
     & .cat-container > * {
       display: inline-block;
     }
   }
   &:hover app-tooltip {
-    @include transitions((opacity: 1, visibility: visible));
+    @include mixins.transitions((opacity: 1, visibility: visible));
   }
 }

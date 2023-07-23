@@ -1,13 +1,15 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 :host {
-    @include wrapper;
+    @include mixins.wrapper;
     & .bot {
         width: 100%;
     }
     & .bottomLinks {
-        @include default-grid;
-        @include mobile-screen {
+        @include mixins.default-grid;
+        @include screens.mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
             grid-template-areas:
@@ -15,14 +17,14 @@
                 "address"
                 "web";
         }
-        @include tablet-screen {
+        @include screens.tablet-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto;
             grid-template-areas:
                 "contact  address"
                 "web address";
         }
-        @include desktop-screen {
+        @include screens.desktop-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto;
             grid-template-areas:
@@ -30,16 +32,16 @@
                 "web address";
         }
         & > div {
-            @include slimpill;
-            @include flex-list;
+            @include mixins.slimpill;
+            @include mixins.flex-list;
             flex:1;
             & .contactButtons {
-                @include flex-e2e;
+                @include mixins.flex-e2e;
             }
             align-self: flex-start;
             & > div {
                 & > img {
-                    @include small-image;
+                    @include mixins.small-image;
                 }
                 & > * {
                     display: inline-block;
@@ -48,18 +50,18 @@
         }
         & .contactPoints{
             grid-area: contact;
-            padding: $box-padding;
+            padding: variables.$box-padding;
         }
         & .address{
             grid-area: address;
-            padding: $box-padding;
+            padding: variables.$box-padding;
             & app-address{
                 width:100%;
             }
         }
         & .web{
             grid-area: web;
-            padding: $box-padding;
+            padding: variables.$box-padding;
         }
     }
     & .skills{
@@ -67,11 +69,11 @@
             display: none;
         }
         & .showSkills {
-            @include slimpill;
-            @include flex-row-nojust;
+            @include mixins.slimpill;
+            @include mixins.flex-row-nojust;
             cursor: pointer;
             & .arrowImg {
-                @include small-image;
+                @include mixins.small-image;
                 &:not(.active) {
                     transform: rotate(180deg);
                 }

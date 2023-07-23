@@ -1,5 +1,5 @@
-@import "src/scss/variables.scss";
-@import "src/scss/mixins.scss";
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/mixins.scss" as mixins;
 @import "carousel.mixin.scss";
 
 :host {
@@ -15,7 +15,7 @@
         & .slide {
             display: none;
             &.active {
-                @include flex-center;
+                @include mixins.flex-center;
                 height:100%;
             }
         }
@@ -24,24 +24,24 @@
             bottom: 0;
             height: 100%;
             width: 50%;
-            z-index: $middle;
+            z-index: variables.$middle;
             overflow: hidden;
             &:hover {
                 cursor: pointer;
                 & i {
-                    @include transition(opacity, $opacity-mid);
+                    @include mixins.transition(opacity, variables.$opacity-mid);
                 }
             }
             & i {
-                border: $elem-size solid $cool;
-                border-width: 0 $elem-size $elem-size 0;
-                @include transition(opacity, $opacity-min);
+                border: variables.$elem-size solid variables.$cool;
+                border-width: 0 variables.$elem-size variables.$elem-size 0;
+                @include mixins.transition(opacity, variables.$opacity-min);
                 position: absolute;
                 top: 50%;
-                padding: $elem-size;
+                padding: variables.$elem-size;
                 display: inline-block;
                 &:hover {
-                    @include transition(opacity, $opacity-max);
+                    @include mixins.transition(opacity, variables.$opacity-max);
                 }
             }
             &.left {
@@ -53,15 +53,15 @@
         }
     }
     & .dots {
-        @include flex-row;
+        @include mixins.flex-row;
         width: 100%;
-        padding-top: $elem-padding;
+        padding-top: variables.$elem-padding;
         & > div {
-            height: $elem-size;
-            width: $elem-border-radius;
-            border: $thin solid $cool;
-            border-radius: $elem-size;
-            @include darken-little(border-color, $cool);
+            height: variables.$elem-size;
+            width: variables.$elem-border-radius;
+            border: variables.$thin solid variables.$cool;
+            border-radius: variables.$elem-size;
+            @include mixins.darken-little(border-color, variables.$cool);
             position: relative;
             &::after {
                 content: "";
@@ -69,19 +69,19 @@
                 height: 80%;
                 top: 10%;
                 left: 10%;
-                border-radius: $elem-size;
+                border-radius: variables.$elem-size;
                 position: absolute;
             }
             &:hover {
                 cursor: pointer;
                 &::after {
-                    @include darken-little(background-color, $cool);
+                    @include mixins.darken-little(background-color, variables.$cool);
                     display: block;
                 }
             }
             &.active {
                 &::after {
-                    @include darken-little(background-color, $cool);
+                    @include mixins.darken-little(background-color, variables.$cool);
                     display: block;
                 }
             }

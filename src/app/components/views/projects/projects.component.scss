@@ -1,18 +1,19 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
 
 :host {
-    @include wrapper;
+    @include mixins.wrapper;
     & .bot {
-        padding: $box-padding;
-        @include slimpill;
+        padding: variables.$box-padding;
+        @include mixins.slimpill;
         & .content {
-            @include flex-e2e;
+            @include mixins.flex-e2e;
             & > * {
                 width:auto;
             }
         }
         & app-button p {
-            @include slimpill;
+            @include mixins.slimpill;
         }
         &:not(.skills) {
             flex: 1;

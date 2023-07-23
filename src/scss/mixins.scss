@@ -1,80 +1,80 @@
-@import "variables.scss";
-@import "screens.scss";
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 @mixin wrapper {
-    padding: $wrapper-padding;
-    @include mobile-screen {
-        width: $wrapper-width;
+    padding: variables.$wrapper-padding;
+    @include screens.mobile-screen {
+        width: variables.$wrapper-width;
     }
-    @include tablet-screen {
-        width: calc($wrapper-width / 1.2);
+    @include screens.tablet-screen {
+        width: calc(variables.$wrapper-width / 1.2);
     }
-    @include desktop-screen {
-        width: calc($wrapper-width / 1.7);
+    @include screens.desktop-screen {
+        width: calc(variables.$wrapper-width / 1.7);
     }
 }
 
 @mixin slimpill {
-    margin: $thin 0;
-    color: $fontcolor1;
-    background-color: $cool;
+    margin: variables.$thin 0;
+    color: variables.$fontcolor1;
+    background-color: variables.$cool;
     border: none;
-    border-top: $defborderthin;
-    //border-bottom: $defborderthin;
-    font-family: $mono;
+    border-top: variables.$defborderthin;
+    //border-bottom: variables.$defborderthin;
+    font-family: variables.$mono;
 }
 
 @mixin pill {
     @include slimpill;
     display: inline-block;
-    padding: calc($elem-padding / 2) $elem-padding;
-    border-radius: $elem-size * 2;
+    padding: calc(variables.$elem-padding / 2) variables.$elem-padding;
+    border-radius: variables.$elem-size * 2;
 }
 
 @mixin link {
     &:hover {
-        @include darken-little(background-color, $cool);
+        @include darken-little(background-color, variables.$cool);
         cursor: pointer;
     }
 }
 /*
 @mixin slimpill {
     margin: 0;
-    border-radius: $elem-border-radius;
+    border-radius: variables.$elem-border-radius;
     color: $black;
-    background-color: $cool;
+    background-color: variables.$cool;
     font: {
-        family: $mono;
-        size: $elem-size;
+        family: variables.$mono;
+        size: variables.$elem-size;
     }
 }
 
 @mixin pill {
     @include slimpill;
     display: inline-block;
-    padding: $elem-padding;
+    padding: variables.$elem-padding;
 }
 
 @mixin link {
     text-decoration: none;
     border: none;
     &:hover {
-        @include darken-little(background-color, $cool);
+        @include darken-little(background-color, variables.$cool);
         cursor: pointer;
     }
 }
 */
 @mixin preview-image {
-    border-radius: $border-radius-circle;
-    height: $elem-height;
-    width: $elem-height;
-    padding: $elem-padding;
+    border-radius: variables.$border-radius-circle;
+    height: variables.$elem-height;
+    width: variables.$elem-height;
+    padding: variables.$elem-padding;
 }
 
 @mixin small-image {
-    height: $elem-size;
-    width: $elem-size;
-    margin: auto $elem-padding auto 0;
+    height: variables.$elem-size;
+    width: variables.$elem-size;
+    margin: auto variables.$elem-padding auto 0;
 }
 
 @mixin prefix($property, $value, $prefixes) {
@@ -85,28 +85,28 @@
 }
 
 @mixin darken-little($property, $color) {
-    #{$property}: darken($color, $little);
-    transition: #{$property} $trans-cb;
+    #{$property}: darken($color, variables.$little);
+    transition: #{$property} variables.$trans-cb;
 }
 
 @mixin transition($property, $value) {
     #{$property}: $value;
-    transition: #{$property} $trans-cb;
+    transition: #{$property} variables.$trans-cb;
 }
 
 @mixin transitions($args){
     $transition: ();
     @each $property, $value in $args {
         #{$property}:$value;
-        $transition: append($transition, ($property $trans-cb), $separator: comma);
+        $transition: append($transition, ($property variables.$trans-cb), $separator: comma);
     } 
     transition: $transition;
 }
 
 @mixin default-grid {
     display: grid;
-    //column-gap: $elem-padding;
-    column-gap: $thin * 2;
+    //column-gap: variables.$elem-padding;
+    column-gap: variables.$thin * 2;
 }
 
 @mixin flex-row {

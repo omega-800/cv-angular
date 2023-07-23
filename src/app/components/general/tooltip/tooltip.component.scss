@@ -1,5 +1,5 @@
-@import "src/scss/mixins.scss";
-@import "src/scss/variables.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
 
 :host {
     width: 100%;
@@ -7,19 +7,19 @@
     position: relative;
     display:block;
     & .tooltip {
-        background-color: $light2;
-        z-index: $above-top;
-        border-radius: $elem-size * 2;
-        padding: $elem-size;
+        background-color: variables.$light2;
+        z-index: variables.$above-top;
+        border-radius: variables.$elem-size * 2;
+        padding: variables.$elem-size;
         position: absolute;
         width:100%;
         & .tooltip-icon {
-            @include small-image;
+            @include mixins.small-image;
         }
         & .name-title {
             font: {
                 weight: bold;
-                family:$mono;
+                family:variables.$mono;
             }
         }
         & .link-title {
@@ -33,7 +33,7 @@
             }
         }
         & .tooltip-content {
-            margin: $elem-padding 0;
+            margin: variables.$elem-padding 0;
         }
         & .link-container:hover {
             cursor: pointer;
@@ -45,28 +45,28 @@
             height: 0;
         }
         &.direction-top {
-            bottom: calc(100% + $elem-size);
+            bottom: calc(100% + variables.$elem-size);
             left: calc(50% - 12.5vw);
             width: 25vw;
             &::after {
-                left: calc(50% - $elem-size);
+                left: calc(50% - variables.$elem-size);
                 top: 100%;
-                border-left: $elem-size solid transparent;
-                border-right: $elem-size solid transparent;
-                border-top: $elem-size solid $light2;
+                border-left: variables.$elem-size solid transparent;
+                border-right: variables.$elem-size solid transparent;
+                border-top: variables.$elem-size solid variables.$light2;
             }
         }
         &.direction-right {
             bottom: calc(50% - 5vw);
-            left: calc(100% + $elem-size);
+            left: calc(100% + variables.$elem-size);
             height: 10vw;
             width:25vw;
             &::after {
                 right: 100%;
-                top: calc(50% - $elem-size);
-                border-top: $elem-size solid transparent;
-                border-bottom: $elem-size solid transparent;
-                border-right: $elem-size solid $light2;
+                top: calc(50% - variables.$elem-size);
+                border-top: variables.$elem-size solid transparent;
+                border-bottom: variables.$elem-size solid transparent;
+                border-right: variables.$elem-size solid variables.$light2;
             }
         }
     }

@@ -1,10 +1,13 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 :host {
-    @include wrapper;
+    @include mixins.wrapper;
     & .welcome {
-        @include default-grid;
-        @include mobile-screen {
+        margin-bottom: variables.$elem-size;
+        @include mixins.default-grid;
+        @include screens.mobile-screen {
             grid-template-areas: 
             "img"
             "desc"
@@ -12,36 +15,36 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto;
         }
-        @include tablet-screen {
+        @include screens.tablet-screen {
             grid-template-areas: "img desc"
                                 "socials socials";
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr auto;
         }
-        @include desktop-screen {
+        @include screens.desktop-screen {
             grid-template-areas: "img desc"
                                 "socials socials";
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr auto;
         }
         & .photo{
-            @include slimpill;
+            @include mixins.slimpill;
             grid-area: img;
         }
         & .desc {
-            padding: $box-padding;
-            @include slimpill;
+            padding: variables.$box-padding;
+            @include mixins.slimpill;
             grid-area: desc;
             & .age {
-                font-family:$mono;
+                font-family:variables.$mono;
             }
         }
         & .socials {
+            @include mixins.slimpill;
+            padding: variables.$elem-padding;
             grid-area: socials;
-            @include flex-row-just;
-
+            @include mixins.flex-row-just;
             & app-button, .socialstext {
-                @include slimpill;
                 flex:1;
             }
         }

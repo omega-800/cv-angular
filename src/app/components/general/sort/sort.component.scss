@@ -1,21 +1,22 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
 
 :host {
     & .sortComp {
-        @include slimpill;
-        padding: $elem-padding;
-        @include flex-e2e;
+        @include mixins.slimpill;
+        padding: variables.$elem-padding;
+        @include mixins.flex-e2e;
         & .sortTitle {
-            @include flex-row-nojust;
+            @include mixins.flex-row-nojust;
             & .arrowImg {
-                @include small-image;
+                @include mixins.small-image;
                 transform: rotate(90deg);
             }
         }
         & select {
-            @include pill;
+            @include mixins.pill;
             & option {
-                @include link;
+                @include mixins.link;
             }
         }
     }

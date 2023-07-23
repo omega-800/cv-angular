@@ -1,8 +1,8 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
 
 :host {
-    @include wrapper;
+    @include mixins.wrapper;
     p {
-        @include slimpill;
+        @include mixins.slimpill;
     }
 }

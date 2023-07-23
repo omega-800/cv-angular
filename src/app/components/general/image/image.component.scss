@@ -1,10 +1,11 @@
-@import "src/scss/variables.scss";
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/mixins.scss" as mixins;
 @import "image.mixin.scss";
 
 :host {
     @include main-image-container;
-    @include flex-center;
-    //border-radius: $elem-border-radius;
+    @include mixins.flex-center;
+    //border-radius: variables.$elem-border-radius;
     overflow: hidden;
     position: relative;
     height:100%;
@@ -15,20 +16,20 @@
         left: 0;
         width: 100%;
         height: 100%;
-        //border-radius: $elem-border-radius;
-        z-index: $below-bottom;
+        //border-radius: variables.$elem-border-radius;
+        z-index: variables.$below-bottom;
         & > div {
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: center;
-            filter: blur($elem-size);
-            -webkit-filter: blur($elem-size);
-            z-index: $below-bottom;
+            filter: blur(variables.$elem-size);
+            -webkit-filter: blur(variables.$elem-size);
+            z-index: variables.$below-bottom;
         }
     }
     & img {
         @include main-image;
-        z-index: $bottom;
+        z-index: variables.$bottom;
     }
 }

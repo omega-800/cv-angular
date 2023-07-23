@@ -1,45 +1,26 @@
-@import "src/scss/mixins.scss";
-@import "src/scss/variables.scss";
-@import "src/scss/screens.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
+@use"src/scss/screens.scss" as screens;
+@import "./range.component.scss";
 
-$range-width: 80%;
-$range-height: $elem-size;
-$thumb-radius: calc(0.5 * $range-height);
-$range-useful-width: calc(100% - $range-height);
-
-@mixin track() {
-    background: none;
-    height: 100%;
-    width: 100%;
-}
-
-@mixin thumb() {
-    background: currentcolor;
-    border: none;
-    border-radius: 0;
-    pointer-events: auto;
-    width: $range-height;
-    height: $range-height;
-    border-radius: 50%;
-}
 
 :host {
     & .filterSelectedContainer {
         overflow-x: auto;
         transform: rotateX(180deg);
         &::-webkit-scrollbar {
-            height: $elem-padding;
+            height: variables.$elem-padding;
         }
         & .filterSelected {
             width: 100%;
             transform: rotateX(180deg);
             display:flex;
-            column-gap: $elem-padding;
+            column-gap: variables.$elem-padding;
             & .selectedItem {
                 display: grid;
                 grid-template-columns: max-content;
                 grid-template-rows: max-content;
-                @include slimpill;
+                @include mixins.slimpill;
                 & > * {
                     display: inline-block;
                 }
@@ -50,14 +31,14 @@ $range-useful-width: calc(100% - $range-height);
         }
     }
     & .filterComp {
-        @include slimpill;
-        padding: $elem-padding;
+        @include mixins.slimpill;
+        padding: variables.$elem-padding;
         &.hover {
-            @include darken-little(background-color, $cool);
+            @include mixins.darken-little(background-color, variables.$cool);
         }
         & .filterTitle {
             width: 100%;
-            @include flex-e2e;
+            @include mixins.flex-e2e;
         }
         & .filterItems {
             & .filterCategories,
@@ -66,49 +47,49 @@ $range-useful-width: calc(100% - $range-height);
             }
             &.active {
                 & > .filterCategories {
-                    @include flex-row-nojust;
+                    @include mixins.flex-row-nojust;
                     & > div {
-                        @include mobile-screen {
-                            width: calc(50% - ($elem-padding * 2));
+                        @include screens.mobile-screen {
+                            width: calc(50% - (variables.$elem-padding * 2));
                         }
-                        @include tablet-screen {
-                            width: calc((100% / 3) - ($elem-padding * 2));
+                        @include screens.tablet-screen {
+                            width: calc((100% / 3) - (variables.$elem-padding * 2));
                         }
-                        @include desktop-screen {
-                            width: calc(25% - ($elem-padding * 2));
+                        @include screens.desktop-screen {
+                            width: calc(25% - (variables.$elem-padding * 2));
                         }
-                        margin: $elem-padding;
+                        margin: variables.$elem-padding;
                         cursor: pointer;
                         position: relative;
-                        border-top: $defborderthin;
+                        border-top: variables.$defborderthin;
                         &.active {
                             & .tags {
                                 position: absolute;
-                                @include flex-list;
-                                background-color: $cool;
+                                @include mixins.flex-list;
+                                background-color: variables.$cool;
                                 width: 100%;
-                                z-index: $above-top;
-                                border-left: $defborderthin;
-                                //border-right: $defborderthin;
+                                z-index: variables.$above-top;
+                                border-left: variables.$defborderthin;
+                                //border-right: variables.$defborderthin;
                                 & > .tag {
                                     & .tagIcon {
-                                        @include small-image;
+                                        @include mixins.small-image;
                                     }
                                     & > * {
                                         display: inline-block;
                                     }
-                                    border-left: $defborderthin;
-                                    margin-top: $elem-padding;
-                                    margin-left: $thin;
+                                    border-left: variables.$defborderthin;
+                                    margin-top: variables.$elem-padding;
+                                    margin-left: variables.$thin;
                                     cursor: pointer;
                                     &.active {
-                                        border-left: $defborder;
+                                        border-left: variables.$defborder;
                                         &:hover {
-                                            @include darken-little(border-color, $light2);
+                                            @include mixins.darken-little(border-color, variables.$light2);
                                         }
                                     }
                                     &:hover {
-                                        @include transition(border-left, $defborder);
+                                        @include mixins.transition(border-left, variables.$defborder);
                                     }
                                 }
                             }
@@ -120,118 +101,22 @@ $range-useful-width: calc(100% - $range-height);
                         }
                     }
                 }
-                & .filterRange {
-                    display: grid;
-                    grid-template-areas: "img title"
-                                        "img range";
-                    grid-template-rows: auto auto;
-                    grid-template-columns: $elem-size auto;
-                    margin: $elem-padding;
-                    border-top: $defborderthin;
-                    & .arrowImg {
-                        grid-area:img;
-                        @include small-image;
-                        transform: rotate(90deg);
-                    }
-                    & h5 {
-                        grid-area:title;
-                    }
-                    & .range {
-                        grid-area:range;
-                        @include flex-e2e;
-                        & output {
-                            width: calc((100% - $range-width) / 2);
-                            &:first-child{
-                                text-align: left;
-                            }
-                            &:last-child{
-                                text-align: right;
-                            }
-                        }
-                        & .wrap {
-                            display: grid;
-                            grid-template-rows: max-content $range-height;
-                            width: $range-width;
-                            grid-template-columns: 1fr;
-                            overflow: hidden;
-                            position: relative;
-                            background: linear-gradient(0deg, $light2 $range-height, transparent 0);
-                            border-radius: $range-height;
-                            & .sr-only {
-                                position: absolute;
-                                clip-path: inset(50%);
-                            }
-
-                            & input[type="range"] {
-                                grid-column: 1;
-                                grid-row: 2;
-                                z-index: $top;
-                                &::-webkit-slider-runnable-track,
-                                &::-webkit-slider-thumb,
-                                & {
-                                    -webkit-appearance: none;
-                                }
-                                background: none;
-                                color: $dark1;
-                                font: inherit;
-                                margin: 0;
-                                pointer-events: none;
-
-                                &::-webkit-slider-runnable-track {
-                                    @include track;
-                                }
-                                &::-moz-range-track {
-                                    @include track;
-                                }
-                                &::-webkit-slider-thumb {
-                                    @include thumb;
-                                }
-                                &::-moz-range-thumb {
-                                    @include thumb;
-                                }
-                            }
-                            --dif: calc(var(--max) - var(--min));
-
-                            &::before,
-                            &::after {
-                                grid-column: 1 / span 2;
-                                grid-row: 2;
-                                height: 1em;
-                                background: $cool;
-                                content: "";
-                            }
-
-                            &::before {
-                                margin-left: calc(
-                                    #{$thumb-radius} + (var(--a) - var(--min)) / var(--dif) *#{$range-useful-width}
-                                );
-                                width: calc((var(--b) - var(--a)) / var(--dif) *#{$range-useful-width});
-                            }
-
-                            &::after {
-                                margin-left: calc(
-                                    #{$thumb-radius} + (var(--b) - var(--min)) / var(--dif) *#{$range-useful-width}
-                                );
-                                width: calc((var(--a) - var(--b)) / var(--dif) *#{$range-useful-width});
-                            }
-                        }
-                    }
-                }
+                @include range;
             }
         }
         & .showFilter {
-            @include flex-row-nojust;
+            @include mixins.flex-row-nojust;
             cursor: pointer;
             & .arrowImg {
-                @include small-image;
+                @include mixins.small-image;
                 &:not(.active) {
                     transform: rotate(180deg);
                 }
             }
         }
         & .filterReset {
-            @include link;
-            @include pill;
+            @include mixins.link;
+            @include mixins.pill;
         }
     }
 }

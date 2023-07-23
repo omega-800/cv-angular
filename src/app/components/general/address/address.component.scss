@@ -1,7 +1,7 @@
-@import "src/scss/mixins.scss";
-@import "src/scss/variables.scss";
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
 
 :host {
-    border-top: $defborderthin;
-    @include flex-e2e;
+    border-top: variables.$defborderthin;
+    @include mixins.flex-e2e;
 }

@@ -1,23 +1,23 @@
-@import "src/scss/variables.scss";
-@import "src/scss/mixins.scss";
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/mixins.scss" as mixins;
 
 :host {
     width: 100%;
     & .navbar {
-        background-color: $cool;
-        padding: $elem-padding;
+        background-color: variables.$cool;
+        padding: variables.$elem-padding;
         & ul {
-            @include flex-row;
+            @include mixins.flex-row;
             margin: 0;
             padding: 0;
             & li {
                 list-style: none;
                 & a {
-                    @include link;
-                    @include pill;
+                    @include mixins.link;
+                    @include mixins.pill;
                 }
                 & .active {
-                    @include darken-little(background-color, $cool);
+                    @include mixins.darken-little(background-color, variables.$cool);
                 }
             }
         }

@@ -1,25 +1,25 @@
-@import 'variables.scss';
+@use "variables.scss" as variables;
 
 @mixin mobile-screen {
-    @media (max-width: #{$mobile-max}) {
+    @media (max-width: #{variables.$mobile-max}) {
       @content;
     }
 }
 
 @mixin tablet-screen {
-    @media (min-width: #{$mobile-max + 1px}) and (max-width: #{$tablet-max}) {
+    @media (min-width: #{variables.$mobile-max + 1px}) and (max-width: #{variables.$tablet-max}) {
       @content;
     }
 }
 
 @mixin desktop-screen {
-    @media (min-width: #{$tablet-max + 1px})/* and (max-width: #{$laptop-max}) */{
+    @media (min-width: #{variables.$tablet-max + 1px})/* and (max-width: #{variables.$laptop-max}) */{
       @content;
     }
 }
 /*
 @mixin large-screen {
-    @media (min-width: #{$laptop-max + 1px}) {
+    @media (min-width: #{variables.$laptop-max + 1px}) {
       @content;
     }
 }*/

@@ -1,12 +1,12 @@
-@import "src/scss/mixins.scss";
+@use "src/scss/mixins.scss" as mixins;
 
 :host {
     width: 100%;
     & .skill-container {
-        @include flex-list;
+        @include mixins.flex-list;
         & > div {
-            @include flex-row-nojust;
-            @include pill;
+            @include mixins.flex-row-nojust;
+            @include mixins.pill;
         }
     }
 }
