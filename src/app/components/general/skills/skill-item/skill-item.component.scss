@@ -12,7 +12,6 @@
     @include flex-row-nojust;
     @include pill;
     position: relative;
-    border-radius: $elem-size * 2;
     & .skill-cat-img-container {
       position: absolute;
       height: 100%;
@@ -46,12 +45,12 @@
     }
   }
   & app-tooltip {
-    display: none;
+    @include transitions((opacity: 0, visibility: hidden));
     & .cat-container > * {
       display: inline-block;
     }
   }
   &:hover app-tooltip {
-    display: block;
+    @include transitions((opacity: 1, visibility: visible));
   }
 }

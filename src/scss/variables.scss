@@ -75,6 +75,8 @@ $mono: RedHatMono, Courier, monospace;
 $sans: WorkSans, Helvetica, sans-serif;
 
 $trans-cb: cubic-bezier(0.46, 0, 0.37, 0.82) 0.3s;
+$cubic-bezier: cubic-bezier(0.46, 0, 0.37, 0.82);
+$trans-duration: 0.3s;
 
 $below-bottom: 0;
 $bottom: 1;

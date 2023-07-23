@@ -52,6 +52,9 @@ $range-useful-width: calc(100% - $range-height);
     & .filterComp {
         @include slimpill;
         padding: $elem-padding;
+        &.hover {
+            @include darken-little(background-color, $cool);
+        }
         & .filterTitle {
             width: 100%;
             @include flex-e2e;
@@ -228,7 +231,7 @@ $range-useful-width: calc(100% - $range-height);
         }
         & .filterReset {
             @include link;
-            @include slimpill;
+            @include pill;
         }
     }
 }

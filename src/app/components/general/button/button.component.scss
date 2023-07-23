@@ -3,16 +3,13 @@
 :host {
     @include flex-center;
     & app-tooltip {
-        display:none;
+      @include transitions((opacity: 0, visibility: hidden));
     }
     & img {
         @include preview-image;
         @include link;
         &:hover ~ app-tooltip{
-            display:block;
+            @include transitions((opacity: 1, visibility: visible));
         }
-    }
-    & p {
-        @include slimpill;
     }
 }

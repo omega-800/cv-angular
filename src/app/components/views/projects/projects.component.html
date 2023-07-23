@@ -1,71 +1,38 @@
 <h1>Projekte</h1>
 <div class="filters">
-  <app-filter
-    [filters]="skillsFilter"
-    filterName="Filtern nach Skill"
-    (filterEmitter)="filterProjectsBySkill($event)"
-  ></app-filter>
-  <app-filter
-    [filters]="projectsFilter"
-    filterName="Filtern nach Projekteigenschaft"
-    (filterEmitter)="filterProjects($event)"
-  ></app-filter>
-  <app-sort
-    [fields]="sortFields"
-    (selectedEmitter)="sortProjectsBy($event)"
-  ></app-sort>
+  <app-filter [filters]="skillsFilter" filterName="Filtern nach Skill"
+    (filterEmitter)="filterProjectsBySkill($event)"></app-filter>
+  <app-filter [filters]="projectsFilter" filterName="Filtern nach Projekteigenschaft"
+    (filterEmitter)="filterProjects($event)"></app-filter>
+  <app-sort [fields]="sortFields" (selectedEmitter)="sortProjectsBy($event)"></app-sort>
 </div>
-<app-contentbox
-  *ngFor="
+<app-contentbox *ngFor="
     let project of projects
       | projectsSort : sortValue : sortAsc
       | projectsFilter : selectedSkillFilter : selectedProjectFilter
-  "
-  [image]="project.image"
-  [title]="project.name"
-  [subTitle]="project.date | pipeDate"
-  [description]="project.description"
-  [link]="project.url"
->
+  " [image]="project.image" [title]="project.name" [subTitle]="project.date | pipeDate"
+  [description]="project.description" [link]="project.url">
   <div *ngIf="project.github || project.url" class="bot links">
     <h4>Link{{ project.github && project.url ? "s" : "" }}</h4>
     <div class="content">
-      <app-button
-        *ngIf="project.github"
-        [onClick]="ol(project.github)"
-        [type]="lt.GITHUB"
-        [name]="lt.GITHUB.name"
-      ></app-button>
-      <app-button
-        *ngIf="project.url"
-        [onClick]="ol(project.url)"
-        [type]="lt.URL"
-        [name]="lt.URL.name"
-      ></app-button>
+      <app-button *ngIf="project.github" [onClick]="ol(project.github)" [type]="lt.GITHUB"
+        [name]="lt.GITHUB.name"></app-button>
+      <app-button *ngIf="project.url" [onClick]="ol(project.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
     </div>
   </div>
   <div *ngIf="project.authors" class="bot authors">
     <h4>Author{{ project.authors.length > 1 ? "en" : "" }}</h4>
     <div class="content">
-      <app-button
-        *ngFor="let author of project.authors"
-        [onClick]="openClient(author.id)"
-        [type]="lt.PERSON"
-        [name]="author.name"
-        [image]="author.image.path !== '' ? author.image : undefined"
-        ><p>{{ author.name }}</p></app-button
-      >
+      <app-button *ngFor="let author of project.authors" [onClick]="openClient(author.id)" [type]="lt.PERSON"
+        [name]="author.name" [image]="author.image.path !== '' ? author.image : undefined"
+        [showName]="true"></app-button>
     </div>
   </div>
   <div *ngIf="project.client" class="bot client">
     <h4>Entwickelt für</h4>
     <div class="content">
-      <app-button
-        [onClick]="openClient(project.client.id)"
-        [type]="lt.PERSON"
-        [name]="project.client.name"
-        ><p>{{ project.client.name }}</p></app-button
-      >
+      <app-button [onClick]="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"
+        [showName]="true"></app-button>
     </div>
   </div>
   <!--div *ngIf="project.clients.length > 0" class="bot client">
@@ -77,22 +44,15 @@
   <div *ngIf="project.career" class="bot career">
     <h4>Entwickelt bei</h4>
     <div class="content">
-      <app-button
-        [onClick]="ol(project.career.url)"
-        [type]="lt.OTHER"
-        [name]="project.career.name"
-        ><p>{{ project.career.name }}</p></app-button
-      >
+      <app-button [onClick]="ol(project.career.url)" [type]="lt.OTHER"
+        [name]="project.career.type === ct.SCHOOL ? project.career.school?.name! : project.career.workplace?.name!"
+        [showName]="true"></app-button>
     </div>
   </div>
   <div class="bot skills">
     <h4>Skill{{ project.skills.length > 1 ? "s" : "" }}</h4>
     <div class="content">
-      <app-skill-item
-        *ngFor="let skill of project.skills"
-        [showPercent]="false"
-        [skill]="skill"
-      ></app-skill-item>
+      <app-skill-item *ngFor="let skill of project.skills" [showPercent]="false" [skill]="skill"></app-skill-item>
     </div>
   </div>
 </app-contentbox>

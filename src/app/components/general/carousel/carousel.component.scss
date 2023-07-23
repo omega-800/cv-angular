@@ -4,13 +4,19 @@
 
 :host {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    height: 100%;
     //background-color: $apple;
     & .carousel {
         position: relative;
+        height:100%;
         & .slide {
             display: none;
             &.active {
                 @include flex-center;
+                height:100%;
             }
         }
         & .arrow {

@@ -13,7 +13,7 @@
             }
         }
         & select {
-            @include slimpill;
+            @include pill;
             & option {
                 @include link;
             }

@@ -27,7 +27,8 @@
 @mixin pill {
     @include slimpill;
     display: inline-block;
-    padding: $elem-padding;
+    padding: calc($elem-padding / 2) $elem-padding;
+    border-radius: $elem-size * 2;
 }
 
 @mixin link {
@@ -91,6 +92,15 @@
 @mixin transition($property, $value) {
     #{$property}: $value;
     transition: #{$property} $trans-cb;
+}
+
+@mixin transitions($args){
+    $transition: ();
+    @each $property, $value in $args {
+        #{$property}:$value;
+        $transition: append($transition, ($property $trans-cb), $separator: comma);
+    } 
+    transition: $transition;
 }
 
 @mixin default-grid {

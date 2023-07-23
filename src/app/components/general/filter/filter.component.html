@@ -15,20 +15,21 @@
     </ng-container>
   </div>
 </div>
-<div class="filterComp">
+<div #comp class="filterComp">
   <div class="filterTitle">
-    <div class="showFilter" (click)="
+    <div class="showFilter" (mouseenter)="comp.classList.add('hover')" (mouseleave)="comp.classList.remove('hover')"
+      (click)="
         content.classList.toggle('active'); img.classList.toggle('active')
       ">
       <img #img class="arrowImg" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
       <h3>{{ filterName }}</h3>
     </div>
-    <h5 (click)="reset()" class="filterReset">Zurücksetzen</h5>
+    <p (click)="reset()" class="filterReset">Zurücksetzen</p>
   </div>
   <div #content class="filterItems">
     <div class="filterCategories">
       <div #cat *ngFor="let category of filters.categories">
-        <div class="showFilter" (click)="
+        <div class="showFilter filterCategory" (click)="
             cat.classList.toggle('active'); imgF.classList.toggle('active')
           ">
           <img #imgF class="arrowImg" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />

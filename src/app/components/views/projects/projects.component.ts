@@ -4,7 +4,7 @@ import { ProjectService } from 'src/app/services/project/project/project.service
 import { openLink } from '../../general/links.util';
 import { linkTypes } from '../../components.constants';
 import { LinkTypes } from '../../components.model';
-import { CareerEntity } from 'src/app/services/career/career/career.model';
+import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { PersonEntity } from 'src/app/services/person/person/person.model';
@@ -31,6 +31,7 @@ export class ProjectsComponent {
   lt: LinkTypes = linkTypes;
   skillsFilter: FiltersEntity;
   projectsFilter: FiltersEntity;
+  ct: CareerTypes = careerTypes;
 
   sortFields: SortEntity[] = projectSortProps;
   sortValue: SortEntity = {

@@ -1,17 +1,7 @@
-<img
-  *ngIf="!image"
-  src="{{ type.image.path }}"
-  alt="icon for {{ name }} link"
-  loading="lazy"
-  (click)="onClick()"
-/>
-<img
-  *ngIf="image"
-  src="{{ image.path }}"
-  alt="{{ image.alt }}"
-  loading="lazy"
-  (click)="onClick()"
-/>
-<app-tooltip *ngIf="type == lt.GITHUB" name="Please don't look at my code, it's horrible" [direction]="d.RIGHT"></app-tooltip>
+<img *ngIf="!image" src="{{ type.image.path }}" alt="icon for {{ name }} link" loading="lazy" (click)="onClick()" />
+<img *ngIf="image" src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy" (click)="onClick()" />
+<p *ngIf="showName">{{name}}</p>
+<app-tooltip *ngIf="type == lt.GITHUB" name="Please don't look at my code, it's horrible"
+  [direction]="d.RIGHT"></app-tooltip>
 <!--p *ngIf="type === lt.OTHER || type === lt.PERSON" (click)="onClick()">{{name}}</p-->
 <ng-content></ng-content>

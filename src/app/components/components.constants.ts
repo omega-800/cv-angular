@@ -141,7 +141,7 @@ export const linkTypes: Readonly<LinkTypes> = {
   URL: {
     id: 'linkType_url',
     name: 'url',
-    image: globeIcon,
+    image: urlIcon,
     prefix: '',
   },
   PERSON: {

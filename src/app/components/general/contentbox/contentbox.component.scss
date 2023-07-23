@@ -45,7 +45,6 @@
         }
     }
     & > .active {
-        padding-bottom: $elem-border-radius;
         @include mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto auto;
@@ -87,6 +86,7 @@
         }
         & .mainImg {
             grid-area: image;
+            display:flex;
         }
         & .desc {
             grid-area: desc;

@@ -16,7 +16,7 @@
 @mixin main-image-container {
     width: 100%;
     //border-radius: $elem-border-radius;
-    @include img-height(height, 0vh);
+    @include img-height(max-height, 0vh);
 }
 
 @mixin main-image {

@@ -13,7 +13,9 @@
   }
   p,
   form,
-  a {
+  a,
+  select,
+  output {
     font-size: 0.6em;
   }
 }
@@ -25,7 +27,9 @@
   }
   p,
   form,
-  a {
+  a,
+  select,
+  output {
     font-size: 0.8em;
   }
 }
@@ -37,7 +41,9 @@
   }
   p,
   form,
-  a {
+  a,
+  select,
+  output {
     font-size: 1em;
   }
 }
@@ -59,10 +65,16 @@ h6 {
 }
 
 p,
-form {
+form,
+select,
+output {
   margin: 0;
   font-family: $sans;
   color: $fontcolor1;
+}
+
+select, option{ 
+  @include link;
 }
 
 a {

@@ -14,7 +14,8 @@ export class ButtonComponent {
   @Input() type!: LinkType;
   @Input() name!: string;
   @Input() image?: ImageComp;
-  
+  @Input() showName?: boolean;
+
   lt: LinkTypes = linkTypes;
   d = Direction;
 }
