@@ -18,6 +18,7 @@ export class HomeComponent {
   skills: SkillEntity[];
 
   mailText: string = '';
+  age: Date = new Date();
 
   constructor(
     private personService: PersonService,
@@ -26,8 +27,9 @@ export class HomeComponent {
     this.skills = this.skillService.getSkills();
     this.me = this.personService.getPersonByName('Georgiy');
     this.lt = linkTypes;
+    this.getCurrentDate();
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   mailMe = () => {
     return contactMail(this.me.contact.email, this.me.gender, this.me.lastname);
   };
@@ -40,4 +42,9 @@ export class HomeComponent {
   myGithub = () => {
     return openLink(this.me.github);
   };
+  getCurrentDate() {
+    setInterval(() => {
+      this.age = new Date();
+    }, 1000);
+  }
 }

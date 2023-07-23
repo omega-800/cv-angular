@@ -29,11 +29,6 @@ $mobile-max: 480px;
 $tablet-max: 768px;
 $laptop-max: 1024px;
 
-$wrapper-width: 90%;
-$wrapper-width-large: 80%;
-$wrapper-padding: 2rem 0;
-$wrapper-margin: 1rem 0;
-
 $border-radius-circle: 50%;
 
 $elem-size: 1rem;
@@ -41,6 +36,13 @@ $elem-padding: $elem-size / 2;
 $elem-border-radius: $elem-size * 2;
 $elem-height: $elem-size * 4;
 $thin: 0.15rem;
+
+$wrapper-width: 90%;
+$wrapper-width-large: 80%;
+$wrapper-padding: $elem-size 0;
+$wrapper-margin: $elem-size 0;
+
+$box-padding: 0 $elem-padding $elem-padding $elem-padding;
 
 $img-width: 15rem;
 $img-height-m: 60vh;

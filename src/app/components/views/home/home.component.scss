@@ -2,8 +2,48 @@
 
 :host {
     @include wrapper;
-    app-button {
-        @include slimpill;
-        flex:1;
+    & .welcome {
+        @include default-grid;
+        @include mobile-screen {
+            grid-template-areas: 
+            "img"
+            "desc"
+            "socials";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+        @include tablet-screen {
+            grid-template-areas: "img desc"
+                                "socials socials";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto;
+        }
+        @include desktop-screen {
+            grid-template-areas: "img desc"
+                                "socials socials";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto;
+        }
+        & .photo{
+            @include slimpill;
+            grid-area: img;
+        }
+        & .desc {
+            padding: $box-padding;
+            @include slimpill;
+            grid-area: desc;
+            & .age {
+                font-family:$mono;
+            }
+        }
+        & .socials {
+            grid-area: socials;
+            @include flex-row-just;
+
+            & app-button, .socialstext {
+                @include slimpill;
+                flex:1;
+            }
+        }
     }
 }

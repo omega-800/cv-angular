@@ -5,9 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AgePipe implements PipeTransform {
 
-  transform(value: string, ...args: string[]): string {
+  transform(value: string, now: Date, ...args: string[]): string {
     let date = new Date(value);
-    let now = new Date();
 
     const startYear = date.getFullYear();
     const february = (startYear % 4 === 0 && startYear % 100 !== 0) || startYear % 400 === 0 ? 29 : 28;
@@ -44,6 +43,6 @@ export class AgePipe implements PipeTransform {
     if (secDiff < 0) {
       secDiff += 60;
     }
-    return yearDiff + 'Y ' + monthDiff + 'M ' + dayDiff + 'D '/* + hourDiff + 'h ' + minuteDiff + 'm ' + secDiff + 's '*/;
+    return yearDiff + 'Y ' + monthDiff + 'M ' + dayDiff + 'D ' + hourDiff + 'h ' + minuteDiff + 'm ' + secDiff + 's ';
   }
 }

@@ -3,6 +3,7 @@
 :host {
     @include wrapper;
     & .bot {
+        padding: $box-padding;
         @include slimpill;
         & .content {
             @include flex-e2e;
@@ -15,6 +16,9 @@
         }
         &:not(.skills) {
             flex: 1;
+        }
+        &.skills {
+            width:100%;
         }
     }
 }

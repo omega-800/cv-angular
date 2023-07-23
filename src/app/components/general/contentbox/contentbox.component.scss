@@ -90,6 +90,7 @@
         }
         & .desc {
             grid-area: desc;
+            padding: $box-padding;
         }
         & .bottom {
             grid-area: bottom;

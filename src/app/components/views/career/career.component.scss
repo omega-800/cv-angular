@@ -48,15 +48,18 @@
         }
         & .contactPoints{
             grid-area: contact;
+            padding: $box-padding;
         }
         & .address{
             grid-area: address;
+            padding: $box-padding;
             & app-address{
                 width:100%;
             }
         }
         & .web{
             grid-area: web;
+            padding: $box-padding;
         }
     }
     & .skills{
