@@ -1,27 +1,42 @@
-@use "src/scss/variables.scss" as variables;
 @use "src/scss/screens.scss" as screens;
+
+$img-width: 15rem;
+$img-height-m: 60vh;
+$img-height-t: 40vh;
+$img-height-l: 50vh;
+$img-height-d: 50vh;
+$img-height-x: 50vh;
 
 @mixin img-height($prop, $mod) {
     @include screens.mobile-screen {
-        #{$prop}: calc(variables.$img-height-m + $mod);
+        #{$prop}: calc($img-height-m + $mod);
     }
+
     @include screens.tablet-screen {
-        #{$prop}: calc(variables.$img-height-t + $mod);
+        #{$prop}: calc($img-height-t + $mod);
     }
+
+    @include screens.laptop-screen {
+        #{$prop}: calc($img-height-l + $mod);
+    }
+
     @include screens.desktop-screen {
-        #{$prop}: calc(variables.$img-height-d + $mod);
+        #{$prop}: calc($img-height-d + $mod);
+    }
+
+    @include screens.large-screen {
+        #{$prop}: calc($img-height-x + $mod);
     }
 }
 
 @mixin main-image-container {
     width: 100%;
-    //border-radius: variables.$elem-border-radius;
     @include img-height(max-height, 0vh);
 }
 
 @mixin main-image {
-    min-width: variables.$img-width;
-    min-height: variables.$img-width;
+    min-width: $img-width;
+    min-height: $img-width;
     max-width: 100%;
     @include img-height(max-height, 0vh);
 }

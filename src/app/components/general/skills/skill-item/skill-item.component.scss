@@ -1,17 +1,21 @@
 @use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 :host {
   width: 100%;
   position: relative;
+
   & .skill-cat-img,
   .skill-icon {
     @include mixins.small-image;
   }
+
   & .skill-item {
     @include mixins.flex-row-nojust;
     @include mixins.pill;
     position: relative;
+
     & .skill-cat-img-container {
       position: absolute;
       height: 100%;
@@ -21,35 +25,51 @@
       left: 0;
       border-top-left-radius: variables.$elem-size * 2;
       border-bottom-left-radius: variables.$elem-size * 2;
+
       & .skill-cat-img {
         position: absolute;
         top: calc(50% - variables.$elem-padding);
         left: variables.$elem-padding;
+
         &:nth-child(2) {
           left: variables.$elem-padding + variables.$elem-size;
         }
       }
     }
+
     & .skill-title-container {
       &.margin-left {
         margin-left: variables.$elem-size * 3;
       }
-      & > * {
+
+      &>* {
         display: inline-block;
       }
     }
+
     @for $i from 1 through 20 {
       &.percent-#{$i * 5} {
         width: 20% + ($i * 4%);
+
+        @include screens.mobile-screen {
+          width: 30% + ($i * 3.5%);
+        }
+
+        @include screens.tablet-screen {
+          width: 25% + ($i * 3.75%);
+        }
       }
     }
   }
+
   & app-tooltip {
     @include mixins.transitions((opacity: 0, visibility: hidden));
-    & .cat-container > * {
+
+    & .cat-container>* {
       display: inline-block;
     }
   }
+
   &:hover app-tooltip {
     @include mixins.transitions((opacity: 1, visibility: visible));
   }

@@ -120,7 +120,7 @@ INSERT INTO skill (yearsOfExperience, identifier, knowledgePercent, proficiencyL
     (0, 'english', 90, 'C1', FALSE, (SELECT language_id FROM language WHERE name = 'Englisch')),
     (0, 'russian', 75, 'B2', FALSE, (SELECT language_id FROM language WHERE name = 'Russisch')),
     (0, 'french', 50, 'B1', FALSE, (SELECT language_id FROM language WHERE name = 'Französisch')),
-    (0, 'latin', 5, '', FALSE, (SELECT language_id FROM language WHERE name = 'Latein'));
+    (0, 'latin', 10, '', FALSE, (SELECT language_id FROM language WHERE name = 'Latein'));
 
 INSERT INTO skill_skillSubCategory (skill_id, skillSubCategory_id) VALUES
     ((SELECT skill_id FROM skill WHERE identifier = 'german'), (SELECT skillSubCategory_id FROM skillSubCategory WHERE name = 'Sprachen')),
@@ -211,7 +211,7 @@ INSERT INTO skill (identifier, yearsOfExperience, hobby, knowledgePercent, appli
     ('selenium', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Selenium')),
     ('swing', 0, FALSE, 40, (SELECT application_id FROM application WHERE name = 'Swing')),
     ('ursina', 0, TRUE, 40, (SELECT application_id FROM application WHERE name = 'Ursina')),
-    ('glassfish', 0, FALSE, 25, (SELECT application_id FROM application WHERE name = 'GlassFish')),
+    ('glassfish', 0, FALSE, 15, (SELECT application_id FROM application WHERE name = 'GlassFish')),
     ('tomcat', 0, FALSE, 35, (SELECT application_id FROM application WHERE name = 'Tomcat7')),
     ('word', 0, TRUE, 95, (SELECT application_id FROM application WHERE name = 'Word')),
     ('excel', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'Excel')),

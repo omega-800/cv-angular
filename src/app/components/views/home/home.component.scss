@@ -4,48 +4,93 @@
 
 :host {
     @include mixins.wrapper;
+
     & .welcome {
         margin-bottom: variables.$elem-size;
         @include mixins.default-grid;
+
         @include screens.mobile-screen {
-            grid-template-areas: 
-            "img"
-            "desc"
-            "socials";
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "img socials"
+                "desc desc";
+            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-rows: auto auto;
         }
+
         @include screens.tablet-screen {
             grid-template-areas: "img desc"
-                                "socials socials";
-            grid-template-columns: 1fr 1fr;
+                "socials desc";
+            grid-template-columns: 50% 50%;
             grid-template-rows: 1fr auto;
         }
+
+        @include screens.laptop-screen {
+            grid-template-areas: "img desc"
+                "socials socials";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr auto;
+        }
+
         @include screens.desktop-screen {
             grid-template-areas: "img desc"
-                                "socials socials";
-            grid-template-columns: 1fr 1fr;
+                "socials socials";
+            grid-template-columns: 50% 50%;
             grid-template-rows: 1fr auto;
         }
-        & .photo{
-            @include mixins.slimpill;
-            grid-area: img;
+
+        @include screens.large-screen {
+            grid-template-areas: "img desc"
+                "socials socials";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr auto;
         }
+
+        & .photo {
+            @include mixins.slimpill;
+            @include mixins.flex-center;
+            grid-area: img;
+
+            & img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 50%;
+                border: variables.$defborderthin;
+            }
+        }
+
         & .desc {
             padding: variables.$box-padding;
             @include mixins.slimpill;
             grid-area: desc;
+
             & .age {
-                font-family:variables.$mono;
+                font-family: variables.$mono;
             }
         }
+
         & .socials {
             @include mixins.slimpill;
             padding: variables.$elem-padding;
             grid-area: socials;
             @include mixins.flex-row-just;
-            & app-button, .socialstext {
-                flex:1;
+
+            & app-button,
+            .socialstext {
+                flex: 1;
+            }
+
+            & .socialstext {
+                @include screens.mobile-screen {
+                    flex: 100%;
+                }
+
+                @include screens.tablet-screen {
+                    flex: 100%;
+                }
+
+                @include screens.laptop-screen {
+                    flex: 3;
+                }
             }
         }
     }

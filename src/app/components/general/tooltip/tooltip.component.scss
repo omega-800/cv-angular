@@ -1,53 +1,75 @@
 @use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 :host {
     width: 100%;
     height: 100%;
     position: relative;
-    display:block;
+    display: block;
+
     & .tooltip {
         background-color: variables.$light2;
         z-index: variables.$above-top;
         border-radius: variables.$elem-size * 2;
         padding: variables.$elem-size;
         position: absolute;
-        width:100%;
+        width: 100%;
+
         & .tooltip-icon {
             @include mixins.small-image;
         }
+
         & .name-title {
             font: {
                 weight: bold;
-                family:variables.$mono;
+                family: variables.$mono;
             }
         }
+
         & .link-title {
             font-weight: bold;
         }
+
         & .name-container,
         .link-container {
             width: 100%;
+
             & * {
                 display: inline-block;
             }
         }
+
         & .tooltip-content {
             margin: variables.$elem-padding 0;
         }
+
         & .link-container:hover {
             cursor: pointer;
         }
+
         &::after {
             content: "";
             position: absolute;
             width: 0;
             height: 0;
         }
+
         &.direction-top {
             bottom: calc(100% + variables.$elem-size);
             left: calc(50% - 12.5vw);
             width: 25vw;
+
+            @include screens.mobile-screen {
+                left: calc(50% - 40vw);
+                width: 80vw;
+            }
+
+            @include screens.tablet-screen {
+                left: calc(50% - 25vw);
+                width: 50vw;
+            }
+
             &::after {
                 left: calc(50% - variables.$elem-size);
                 top: 100%;
@@ -56,17 +78,58 @@
                 border-top: variables.$elem-size solid variables.$light2;
             }
         }
+
         &.direction-right {
             bottom: calc(50% - 5vw);
             left: calc(100% + variables.$elem-size);
             height: 10vw;
-            width:25vw;
+            width: 25vw;
+
+            @include screens.mobile-screen {
+                bottom: calc(50% - 10vw);
+                height: 20vw;
+                width: 40vw;
+            }
+
+            @include screens.tablet-screen {
+                bottom: calc(50% - 7.5vw);
+                height: 15vw;
+                width: 30vw;
+            }
+
             &::after {
                 right: 100%;
                 top: calc(50% - variables.$elem-size);
                 border-top: variables.$elem-size solid transparent;
                 border-bottom: variables.$elem-size solid transparent;
                 border-right: variables.$elem-size solid variables.$light2;
+            }
+        }
+
+        &.direction-left {
+            bottom: calc(50% - 5vw);
+            right: calc(100% + variables.$elem-size);
+            height: 10vw;
+            width: 25vw;
+
+            @include screens.mobile-screen {
+                bottom: calc(50% - 10vw);
+                height: 20vw;
+                width: 40vw;
+            }
+
+            @include screens.tablet-screen {
+                bottom: calc(50% - 7.5vw);
+                height: 15vw;
+                width: 30vw;
+            }
+
+            &::after {
+                left: 100%;
+                top: calc(50% - variables.$elem-size);
+                border-top: variables.$elem-size solid transparent;
+                border-bottom: variables.$elem-size solid transparent;
+                border-left: variables.$elem-size solid variables.$light2;
             }
         }
     }

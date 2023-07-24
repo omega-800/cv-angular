@@ -1,20 +1,29 @@
 @use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 :host {
     & .sortComp {
         @include mixins.slimpill;
         padding: variables.$elem-padding;
         @include mixins.flex-e2e;
+
         & .sortTitle {
             @include mixins.flex-row-nojust;
+
             & .arrowImg {
                 @include mixins.small-image;
                 transform: rotate(90deg);
             }
+
+            @include screens.mobile-screen {
+                width: 100%;
+            }
         }
+
         & select {
             @include mixins.pill;
+
             & option {
                 @include mixins.link;
             }

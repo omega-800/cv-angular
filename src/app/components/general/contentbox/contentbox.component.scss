@@ -3,19 +3,22 @@
 @use"src/scss/screens.scss" as screens;
 
 :host {
-    & > div {
+    &>div {
         width: 100%;
         //border-radius:variables.$elem-border-radius;
         margin: variables.$elem-padding 0;
         @include mixins.default-grid;
+
         & .preview {
             @include mixins.link;
             @include mixins.default-grid;
+
             & .arrowImg {
                 grid-area: arrow;
                 @include mixins.preview-image;
                 padding: variables.$elem-padding;
             }
+
             & .title {
                 grid-area: title;
                 @include mixins.flex-list;
@@ -23,28 +26,34 @@
                 color: variables.$fontcolor1;
             }
         }
-        & > div:not(.bottom) {
+
+        &>div:not(.bottom) {
             @include mixins.slimpill;
         }
     }
-    & > :not(.active) {
+
+    &> :not(.active) {
         & .preview {
             grid-template-columns: variables.$elem-height 1fr variables.$elem-height;
             grid-template-areas: "image title arrow";
+
             & .previewImg {
                 grid-area: image;
                 @include mixins.preview-image;
             }
+
             & .arrowImg {
                 justify-self: end;
                 transform: rotate(180deg);
             }
         }
-        & > :not(.preview) {
+
+        &> :not(.preview) {
             display: none;
         }
     }
-    & > .active {
+
+    &>.active {
         @include screens.mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto auto;
@@ -55,6 +64,7 @@
                 "bottom"
                 "belowbottom";
         }
+
         @include screens.tablet-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto auto;
@@ -64,6 +74,17 @@
                 "bottom bottom"
                 "belowbottom belowbottom";
         }
+
+        @include screens.laptop-screen {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "preview  preview"
+                "image  desc"
+                "image bottom"
+                "belowbottom belowbottom";
+        }
+
         @include screens.desktop-screen {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto auto auto;
@@ -73,6 +94,17 @@
                 "image bottom"
                 "belowbottom belowbottom";
         }
+
+        @include screens.large-screen {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "preview  preview"
+                "image  desc"
+                "image bottom"
+                "belowbottom belowbottom";
+        }
+
         & .preview {
             grid-area: preview;
             grid-template-columns: 1fr variables.$elem-height;
@@ -80,26 +112,31 @@
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             padding: 0;
+
             & .previewImg {
                 display: none;
             }
         }
+
         & .mainImg {
             grid-area: image;
-            display:flex;
+            display: flex;
         }
+
         & .desc {
             grid-area: desc;
             padding: variables.$box-padding;
         }
+
         & .bottom {
             grid-area: bottom;
             @include mixins.flex-row-just;
         }
+
         & .belowbottom {
             grid-area: belowbottom;
-            background-color:transparent;
-            border-top:none;
+            background-color: transparent;
+            border-top: none;
         }
     }
 }

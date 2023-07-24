@@ -8,60 +8,82 @@
     & .filterSelectedContainer {
         overflow-x: auto;
         transform: rotateX(180deg);
+
         &::-webkit-scrollbar {
             height: variables.$elem-padding;
         }
+
         & .filterSelected {
             width: 100%;
             transform: rotateX(180deg);
-            display:flex;
+            display: flex;
             column-gap: variables.$elem-padding;
+
             & .selectedItem {
-                display: grid;
-                grid-template-columns: max-content;
-                grid-template-rows: max-content;
-                @include mixins.slimpill;
-                & > * {
+                @include mixins.pill;
+                white-space: nowrap;
+
+                &>* {
                     display: inline-block;
                 }
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
         }
     }
+
     & .filterComp {
         @include mixins.slimpill;
         padding: variables.$elem-padding;
+
         &.hover {
             @include mixins.darken-little(background-color, variables.$cool);
         }
+
         & .filterTitle {
             width: 100%;
             @include mixins.flex-e2e;
         }
+
         & .filterItems {
+
             & .filterCategories,
             .filterRange {
                 display: none;
             }
+
             &.active {
-                & > .filterCategories {
+                &>.filterCategories {
                     @include mixins.flex-row-nojust;
-                    & > div {
+
+                    &>div {
                         @include screens.mobile-screen {
                             width: calc(50% - (variables.$elem-padding * 2));
                         }
+
                         @include screens.tablet-screen {
                             width: calc((100% / 3) - (variables.$elem-padding * 2));
                         }
+
+                        @include screens.laptop-screen {
+                            width: calc((100% / 3) - (variables.$elem-padding * 2));
+                        }
+
                         @include screens.desktop-screen {
                             width: calc(25% - (variables.$elem-padding * 2));
                         }
+
+                        @include screens.large-screen {
+                            width: calc(20% - (variables.$elem-padding * 2));
+                        }
+
                         margin: variables.$elem-padding;
                         cursor: pointer;
                         position: relative;
                         border-top: variables.$defborderthin;
+
                         &.active {
                             & .tags {
                                 position: absolute;
@@ -70,30 +92,37 @@
                                 width: 100%;
                                 z-index: variables.$above-top;
                                 border-left: variables.$defborderthin;
+
                                 //border-right: variables.$defborderthin;
-                                & > .tag {
+                                &>.tag {
                                     & .tagIcon {
                                         @include mixins.small-image;
                                     }
-                                    & > * {
+
+                                    &>* {
                                         display: inline-block;
                                     }
+
                                     border-left: variables.$defborderthin;
                                     margin-top: variables.$elem-padding;
                                     margin-left: variables.$thin;
                                     cursor: pointer;
+
                                     &.active {
                                         border-left: variables.$defborder;
+
                                         &:hover {
                                             @include mixins.darken-little(border-color, variables.$light2);
                                         }
                                     }
+
                                     &:hover {
                                         @include mixins.transition(border-left, variables.$defborder);
                                     }
                                 }
                             }
                         }
+
                         &:not(.active) {
                             & .tags {
                                 display: none;
@@ -101,19 +130,24 @@
                         }
                     }
                 }
+
                 @include range;
             }
         }
+
         & .showFilter {
             @include mixins.flex-row-nojust;
             cursor: pointer;
+
             & .arrowImg {
                 @include mixins.small-image;
+
                 &:not(.active) {
                     transform: rotate(180deg);
                 }
             }
         }
+
         & .filterReset {
             @include mixins.link;
             @include mixins.pill;

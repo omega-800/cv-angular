@@ -4,11 +4,14 @@
 
 :host {
     @include mixins.wrapper;
+
     & .bot {
         width: 100%;
     }
+
     & .bottomLinks {
         @include mixins.default-grid;
+
         @include screens.mobile-screen {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
@@ -17,63 +20,99 @@
                 "address"
                 "web";
         }
+
         @include screens.tablet-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: auto auto;
             grid-template-areas:
                 "contact  address"
                 "web address";
         }
+
+        @include screens.laptop-screen {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "contact  address"
+                "web address";
+        }
+
         @include screens.desktop-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: auto auto;
             grid-template-areas:
                 "contact  address"
                 "web address";
         }
-        & > div {
+
+        @include screens.large-screen {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "contact  address web";
+        }
+
+        &>div {
             @include mixins.slimpill;
             @include mixins.flex-list;
-            flex:1;
+            flex: 1;
+
             & .contactButtons {
                 @include mixins.flex-e2e;
             }
+
             align-self: flex-start;
-            & > div {
-                & > img {
+
+            &>div {
+                &>img {
                     @include mixins.small-image;
                 }
-                & > * {
+
+                &>* {
                     display: inline-block;
                 }
             }
         }
-        & .contactPoints{
+
+        & .contactPoints {
             grid-area: contact;
             padding: variables.$box-padding;
         }
-        & .address{
+
+        & .address {
             grid-area: address;
             padding: variables.$box-padding;
-            & app-address{
-                width:100%;
+
+            & app-address {
+                width: 100%;
             }
         }
-        & .web{
+
+        & .web {
             grid-area: web;
             padding: variables.$box-padding;
+
+            & .content {
+                border-top: variables.$defborderthin;
+                width: 100%;
+                @include mixins.flex-e2e;
+            }
         }
     }
-    & .skills{
-        &:not(.active) > *:not(.showSkills) {
+
+    & .skills {
+        &:not(.active)>*:not(.showSkills) {
             display: none;
         }
+
         & .showSkills {
             @include mixins.slimpill;
             @include mixins.flex-row-nojust;
             cursor: pointer;
+
             & .arrowImg {
                 @include mixins.small-image;
+
                 &:not(.active) {
                     transform: rotate(180deg);
                 }

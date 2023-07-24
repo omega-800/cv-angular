@@ -3,14 +3,25 @@
 
 @mixin wrapper {
     padding: variables.$wrapper-padding;
+
     @include screens.mobile-screen {
         width: variables.$wrapper-width;
     }
+
     @include screens.tablet-screen {
         width: calc(variables.$wrapper-width / 1.2);
     }
+
+    @include screens.laptop-screen {
+        width: calc(variables.$wrapper-width / 1.5);
+    }
+
     @include screens.desktop-screen {
         width: calc(variables.$wrapper-width / 1.7);
+    }
+
+    @include screens.large-screen {
+        width: calc(variables.$wrapper-width / 1.9);
     }
 }
 
@@ -37,6 +48,7 @@
         cursor: pointer;
     }
 }
+
 /*
 @mixin slimpill {
     margin: 0;
@@ -81,6 +93,7 @@
     @each $prefix in $prefixes {
         -#{$prefix}-#{$property}: $value;
     }
+
     #{$property}: $value;
 }
 
@@ -94,12 +107,15 @@
     transition: #{$property} variables.$trans-cb;
 }
 
-@mixin transitions($args){
+@mixin transitions($args) {
     $transition: ();
-    @each $property, $value in $args {
-        #{$property}:$value;
+
+    @each $property,
+    $value in $args {
+        #{$property}: $value;
         $transition: append($transition, ($property variables.$trans-cb), $separator: comma);
-    } 
+    }
+
     transition: $transition;
 }
 
@@ -111,28 +127,34 @@
 
 @mixin flex-row {
     display: flex;
+
     flex: {
         direction: row;
         wrap: wrap;
     }
+
     align: {
         items: center;
         content: space-around;
     }
+
     justify-content: space-around;
 }
 
 @mixin flex-row-just {
     display: flex;
+
     flex: {
         direction: row;
         wrap: wrap;
     }
+
     justify-content: space-evenly;
 }
 
 @mixin flex-row-nojust {
     display: flex;
+
     flex: {
         direction: row;
         wrap: wrap;
@@ -141,14 +163,17 @@
 
 @mixin flex-e2e {
     display: flex;
+
     flex: {
         direction: row;
         wrap: wrap;
     }
+
     align: {
         items: center;
         content: space-between;
     }
+
     justify-content: space-between;
 }
 

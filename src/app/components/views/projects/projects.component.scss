@@ -3,23 +3,30 @@
 
 :host {
     @include mixins.wrapper;
+
     & .bot {
         padding: variables.$box-padding;
         @include mixins.slimpill;
+        @include mixins.flex-column;
+
         & .content {
             @include mixins.flex-e2e;
-            & > * {
-                width:auto;
+
+            &>* {
+                width: auto;
             }
         }
+
         & app-button p {
             @include mixins.slimpill;
         }
+
         &:not(.skills) {
             flex: 1;
         }
+
         &.skills {
-            width:100%;
+            width: 100%;
         }
     }
 }

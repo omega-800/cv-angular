@@ -1,7 +1,7 @@
 <h1>Home</h1>
 <div class="welcome">
   <div class="photo">
-    <app-image [image]="me.image"></app-image>
+    <img src="{{ me.image.path }}" alt="{{ me.image.alt }}" loading="lazy" />
   </div>
   <div class="desc">
     <h3>Hallihallo!</h3>

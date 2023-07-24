@@ -25,10 +25,6 @@ $opacity-min: 30%;
 $opacity-mid: 65%;
 $opacity-max: 85%;
 
-$mobile-max: 480px;
-$tablet-max: 768px;
-$laptop-max: 1024px;
-
 $border-radius-circle: 50%;
 
 $elem-size: 1rem;
@@ -43,11 +39,6 @@ $wrapper-padding: $elem-size 0;
 $wrapper-margin: $elem-size 0;
 
 $box-padding: 0 $elem-padding $elem-padding $elem-padding;
-
-$img-width: 15rem;
-$img-height-m: 60vh;
-$img-height-t: 40vh;
-$img-height-d: 50vh;
 
 $contentbox-left-s: 30%;
 $contentbox-right-s: 70%;
@@ -91,6 +82,7 @@ $above-top: 4;
         family: RedHatMono;
         display: swap;
     }
+
     src: url(../assets/fonts/Red_Hat_Mono/static/RedHatMono-Medium.ttf);
 }
 
@@ -99,5 +91,6 @@ $above-top: 4;
         family: WorkSans;
         display: swap;
     }
+
     src: url(../assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
 }
