@@ -1,7 +1,6 @@
 @use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
 @use"src/scss/screens.scss" as screens;
-@import "./range.component.scss";
 
 
 :host {
@@ -20,7 +19,6 @@
             column-gap: variables.$elem-padding;
 
             & .selectedItem {
-                @include mixins.pill;
                 white-space: nowrap;
 
                 &>* {
@@ -35,7 +33,6 @@
     }
 
     & .filterComp {
-        @include mixins.slimpill;
         padding: variables.$elem-padding;
 
         &.hover {
@@ -44,19 +41,20 @@
 
         & .filterTitle {
             width: 100%;
-            @include mixins.flex-e2e;
         }
 
         & .filterItems {
 
-            & .filterCategories,
-            .filterRange {
-                display: none;
+            &:not(.active) {
+
+                & .filterCategories,
+                .filterRange {
+                    display: none;
+                }
             }
 
             &.active {
                 &>.filterCategories {
-                    @include mixins.flex-row-nojust;
 
                     &>div {
                         @include screens.mobile-screen {
@@ -87,7 +85,6 @@
                         &.active {
                             & .tags {
                                 position: absolute;
-                                @include mixins.flex-list;
                                 background-color: variables.$cool;
                                 width: 100%;
                                 z-index: variables.$above-top;
@@ -95,9 +92,6 @@
 
                                 //border-right: variables.$defborderthin;
                                 &>.tag {
-                                    & .tagIcon {
-                                        @include mixins.small-image;
-                                    }
 
                                     &>* {
                                         display: inline-block;
@@ -131,26 +125,17 @@
                     }
                 }
 
-                @include range;
             }
         }
 
         & .showFilter {
-            @include mixins.flex-row-nojust;
             cursor: pointer;
 
             & .arrowImg {
-                @include mixins.small-image;
-
                 &:not(.active) {
                     transform: rotate(180deg);
                 }
             }
-        }
-
-        & .filterReset {
-            @include mixins.link;
-            @include mixins.pill;
         }
     }
 }

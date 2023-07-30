@@ -6,19 +6,24 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:stretch;
+    justify-content: stretch;
     height: 100%;
+
     //background-color: $apple;
     & .carousel {
         position: relative;
-        height:100%;
+        height: 100%;
+
         & .slide {
-            display: none;
+            &:not(.active) {
+                display: none;
+            }
+
             &.active {
-                @include mixins.flex-center;
-                height:100%;
+                height: 100%;
             }
         }
+
         & .arrow {
             position: absolute;
             bottom: 0;
@@ -26,12 +31,15 @@
             width: 50%;
             z-index: variables.$middle;
             overflow: hidden;
+
             &:hover {
                 cursor: pointer;
+
                 & i {
                     @include mixins.transition(opacity, variables.$opacity-mid);
                 }
             }
+
             & i {
                 border: variables.$elem-size solid variables.$cool;
                 border-width: 0 variables.$elem-size variables.$elem-size 0;
@@ -40,29 +48,34 @@
                 top: 50%;
                 padding: variables.$elem-size;
                 display: inline-block;
+
                 &:hover {
                     @include mixins.transition(opacity, variables.$opacity-max);
                 }
             }
+
             &.left {
                 @include arrow(left, 135deg);
             }
+
             &.right {
                 @include arrow(right, -45deg);
             }
         }
     }
+
     & .dots {
-        @include mixins.flex-row;
         width: 100%;
         padding-top: variables.$elem-padding;
-        & > div {
+
+        &>div {
             height: variables.$elem-size;
             width: variables.$elem-border-radius;
             border: variables.$thin solid variables.$cool;
             border-radius: variables.$elem-size;
             @include mixins.darken-little(border-color, variables.$cool);
             position: relative;
+
             &::after {
                 content: "";
                 width: 80%;
@@ -72,13 +85,16 @@
                 border-radius: variables.$elem-size;
                 position: absolute;
             }
+
             &:hover {
                 cursor: pointer;
+
                 &::after {
                     @include mixins.darken-little(background-color, variables.$cool);
                     display: block;
                 }
             }
+
             &.active {
                 &::after {
                     @include mixins.darken-little(background-color, variables.$cool);

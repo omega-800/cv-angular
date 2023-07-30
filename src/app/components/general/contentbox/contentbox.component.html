@@ -1,27 +1,28 @@
-<div #cbToggle>
-  <div class="preview" (click)="cbToggle.classList.toggle('active')">
-    <img *ngIf="preview" class="previewImg" src="{{ preview.path }}" alt="{{ preview.alt }}" loading="lazy" />
+<div #cbToggle class="default-grid">
+  <div class="preview default-grid link slimpill" (click)="cbToggle.classList.toggle('active')">
+    <img *ngIf="preview" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
+      loading="lazy" />
 
-    <h3 class="title" *ngIf="!link">{{ title }}</h3>
-    <h3 class="title" *ngIf="link">
+    <h3 class="title flex-list" *ngIf="!link">{{ title }}</h3>
+    <h3 class="title flex-list" *ngIf="link">
       <a href="{{ link }}" target="_blank">{{ title }}</a>
     </h3>
 
-    <img class="arrowImg" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
+    <img class="arrowImg preview-image" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
   </div>
-  <div *ngIf="hasImage" class="mainImg">
+  <div *ngIf="hasImage" class="mainImg slimpill">
     <app-carousel *ngIf="isCarousel" [images]="images"></app-carousel>
     <app-image *ngIf="!isCarousel" [image]="image"></app-image>
   </div>
 
-  <div *ngIf="subTitle || description" class="desc">
+  <div *ngIf="subTitle || description" class="desc slimpill">
     <h3 *ngIf="subTitle">{{ subTitle }}</h3>
     <p *ngIf="description">{{ description }}</p>
   </div>
-  <div class="bottom">
+  <div class="bottom flex-row-just">
     <ng-content></ng-content>
   </div>
-  <div class="belowbottom">
+  <div class="belowbottom slimpill">
     <ng-content select="[bottom]"></ng-content>
   </div>
 </div>

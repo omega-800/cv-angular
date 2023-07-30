@@ -6,14 +6,7 @@
   width: 100%;
   position: relative;
 
-  & .skill-cat-img,
-  .skill-icon {
-    @include mixins.small-image;
-  }
-
   & .skill-item {
-    @include mixins.flex-row-nojust;
-    @include mixins.pill;
     position: relative;
 
     & .skill-cat-img-container {

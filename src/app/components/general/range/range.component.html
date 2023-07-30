@@ -1,0 +1,22 @@
+<img class="arrowImg small-image" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
+<h5 class="categoryTitle">{{ range.name }}</h5>
+<div class="range flex-e2e" style="--a: {{ r1.value }}; --b: {{ r2.value }}; --min: {{
+    range.values[0]
+  }}; --max: {{ range.values[range.values.length - 1] }}">
+    <output #o1 class="rangeFrom" for="{{ range.id }}_1" id="{{ range.id }}_1_out">{{
+        r1.value > r2.value ? r1.value : r2.value
+        }}</output>
+    <div class="wrap">
+        <label class="sr-only" for="{{ range.id }}_1">Value A:</label>
+        <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length - 1]" [step]="range.step"
+            [value]="range.values[0]" (input)="changeRange(range, r1, r2, o1, o2)" class="slider slider1"
+            id="{{ range.id }}_1" #r1 />
+        <label class="sr-only" for="{{ range.id }}_2">Value B:</label>
+        <input type="range" [min]="range.values[0]" [max]="range.values[range.values.length - 1]" [step]="range.step"
+            [value]="range.values[range.values.length - 1]" (input)="changeRange(range, r1, r2, o1, o2)"
+            class="slider slider2" id="{{ range.id }}_2" #r2 />
+    </div>
+    <output #o2 class="rangeTo" for="{{ range.id }}_2" id="{{ range.id }}_2_out">{{
+        r2.value
+        }}</output>
+</div>

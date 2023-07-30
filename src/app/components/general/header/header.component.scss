@@ -3,19 +3,18 @@
 
 :host {
     width: 100%;
+
     & .navbar {
         background-color: variables.$cool;
         padding: variables.$elem-padding;
+
         & ul {
-            @include mixins.flex-row;
             margin: 0;
             padding: 0;
+
             & li {
                 list-style: none;
-                & a {
-                    @include mixins.link;
-                    @include mixins.pill;
-                }
+
                 & .active {
                     @include mixins.darken-little(background-color, variables.$cool);
                 }

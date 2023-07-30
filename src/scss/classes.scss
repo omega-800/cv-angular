@@ -1,0 +1,173 @@
+@use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
+@use "src/scss/mixins.scss" as mixins;
+
+.default-grid {
+    display: grid;
+    //column-gap: variables.$elem-padding;
+    column-gap: variables.$thin * 2;
+}
+
+.flex-row {
+    display: flex;
+
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+
+    align: {
+        items: center;
+        content: space-around;
+    }
+
+    justify-content: space-around;
+}
+
+.flex-row-just {
+    display: flex;
+
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+
+    justify-content: space-evenly;
+}
+
+.flex-row-nojust {
+    display: flex;
+
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+}
+
+.flex-e2e {
+    display: flex;
+
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+
+    align: {
+        items: center;
+        content: space-between;
+    }
+
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.wrapper {
+    padding: variables.$wrapper-padding;
+
+    @include screens.mobile-screen {
+        width: variables.$wrapper-width;
+    }
+
+    @include screens.tablet-screen {
+        width: calc(variables.$wrapper-width / 1.2);
+    }
+
+    @include screens.laptop-screen {
+        width: calc(variables.$wrapper-width / 1.5);
+    }
+
+    @include screens.desktop-screen {
+        width: calc(variables.$wrapper-width / 1.7);
+    }
+
+    @include screens.large-screen {
+        width: calc(variables.$wrapper-width / 1.9);
+    }
+}
+
+@mixin slimpill {
+    margin: variables.$thin 0;
+    color: variables.$fontcolor1;
+    background-color: variables.$cool;
+    border: none;
+    border-top: variables.$defborderthin;
+    //border-bottom: variables.$defborderthin;
+    font-family: variables.$mono;
+}
+
+.slimpill {
+    @include slimpill;
+}
+
+.pill {
+    @include slimpill;
+    display: inline-block;
+    padding: calc(variables.$elem-padding / 2) variables.$elem-padding;
+    border-radius: variables.$elem-size * 2;
+}
+
+.link {
+    &:hover {
+        @include mixins.darken-little(background-color, variables.$cool);
+        cursor: pointer;
+    }
+}
+
+/*
+.slimpill {
+    margin: 0;
+    border-radius: variables.$elem-border-radius;
+    color: $black;
+    background-color: variables.$cool;
+    font: {
+        family: variables.$mono;
+        size: variables.$elem-size;
+    }
+}
+
+.pill {
+    @include slimpill;
+    display: inline-block;
+    padding: variables.$elem-padding;
+}
+
+.link {
+    text-decoration: none;
+    border: none;
+    &:hover {
+        @include mixins.darken-little(background-color, variables.$cool);
+        cursor: pointer;
+    }
+}
+*/
+.preview-image {
+    border-radius: variables.$border-radius-circle;
+    height: variables.$elem-height;
+    width: variables.$elem-height;
+    padding: variables.$elem-padding;
+}
+
+.small-image {
+    height: variables.$elem-size;
+    width: variables.$elem-size;
+    margin: auto variables.$elem-padding auto 0;
+}

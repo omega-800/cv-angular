@@ -1,9 +1,9 @@
 <h1>Home</h1>
-<div class="welcome">
-  <div class="photo">
+<div class="welcome default-grid">
+  <div class="photo flex-center slimpill">
     <img src="{{ me.image.path }}" alt="{{ me.image.alt }}" loading="lazy" />
   </div>
-  <div class="desc">
+  <div class="desc slimpill">
     <h3>Hallihallo!</h3>
     <p>Herzlich willkommen auf meiner Portfolio-Webseite! Fragst du dich gerade:</p>
     <h4>Wer ich bin?</h4>
@@ -15,7 +15,7 @@
       Applikationen mit Mehrwert, Wissensvermittlung an die kommenden Generationen oder das Kreieren von Kunstwerken,
       die die Menschen erreichen und erfreuen sollen.</p>
   </div>
-  <div class="socials">
+  <div class="socials slimpill flex-row-just">
     <h4 class="socialstext">Erreichen kannst du mich hier:</h4>
     <app-button [onClick]="callMe" [type]="lt.PHONE" name="Meine Telefonnummer"></app-button>
     <app-button [onClick]="mailMe" [type]="lt.MAIL" name="Meine E-Mail"></app-button>

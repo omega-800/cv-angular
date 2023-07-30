@@ -1,9 +1,5 @@
 <div class="carousel">
-  <div
-    *ngFor="let slide of images; index as i"
-    class="slide"
-    [ngClass]="{ active: current === i }"
-  >
+  <div *ngFor="let slide of images; index as i" class="slide" [ngClass]="{ 'active flex-center': current === i }">
     <app-image [image]="slide"></app-image>
   </div>
   <div class="arrow left" (click)="showSlide(current - 1)">
@@ -13,10 +9,6 @@
     <div><i></i></div>
   </div>
 </div>
-<div class="dots">
-  <div
-    *ngFor="let slide of images; index as i"
-    (click)="showSlide(i)"
-    [ngClass]="{ active: current === i }"
-  ></div>
+<div class="dots flex-row">
+  <div *ngFor="let slide of images; index as i" (click)="showSlide(i)" [ngClass]="{ active: current === i }"></div>
 </div>

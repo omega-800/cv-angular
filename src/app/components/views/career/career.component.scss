@@ -1,16 +1,12 @@
-@use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/screens.scss" as screens;
 
 :host {
-    @include mixins.wrapper;
-
     & .bot {
         width: 100%;
     }
 
     & .bottomLinks {
-        @include mixins.default-grid;
 
         @include screens.mobile-screen {
             grid-template-columns: 1fr;
@@ -53,20 +49,10 @@
         }
 
         &>div {
-            @include mixins.slimpill;
-            @include mixins.flex-list;
             flex: 1;
-
-            & .contactButtons {
-                @include mixins.flex-e2e;
-            }
-
             align-self: flex-start;
 
             &>div {
-                &>img {
-                    @include mixins.small-image;
-                }
 
                 &>* {
                     display: inline-block;
@@ -95,7 +81,6 @@
             & .content {
                 border-top: variables.$defborderthin;
                 width: 100%;
-                @include mixins.flex-e2e;
             }
         }
     }
@@ -106,13 +91,9 @@
         }
 
         & .showSkills {
-            @include mixins.slimpill;
-            @include mixins.flex-row-nojust;
             cursor: pointer;
 
             & .arrowImg {
-                @include mixins.small-image;
-
                 &:not(.active) {
                     transform: rotate(180deg);
                 }

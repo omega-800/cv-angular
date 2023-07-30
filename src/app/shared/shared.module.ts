@@ -15,6 +15,7 @@ import { SortComponent } from '../components/general/sort/sort.component';
 import { TooltipComponent } from '../components/general/tooltip/tooltip.component';
 import { SkillsFilterPipe } from '../pipes/skills-filter/skills-filter.pipe';
 import { SkillsSortPipe } from '../pipes/skills-sort/skills-sort.pipe';
+import { RangeComponent } from '../components/general/range/range.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -34,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     SkillsPercentComponent,
     TooltipComponent,
+    RangeComponent
   ],
   imports: [CommonModule, FormsModule],
   exports: [
@@ -54,7 +56,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     TooltipComponent,
+    RangeComponent
   ],
   providers: [SkillsFilterPipe, SkillsSortPipe],
 })
-export class SharedModule {}
+export class SharedModule { }

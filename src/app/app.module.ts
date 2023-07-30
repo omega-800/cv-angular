@@ -19,4 +19,4 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   bootstrap: [AppComponent],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })
-export class AppModule {}
+export class AppModule { }

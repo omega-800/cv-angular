@@ -1,5 +1,0 @@
-@use 'src/scss/mixins.scss' as mixins;
-
-:host { 
-    @include mixins.flex-column;
-}

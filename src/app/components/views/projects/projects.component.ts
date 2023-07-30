@@ -25,6 +25,7 @@ import { ProjectFilterService } from 'src/app/services/filter/project-filter/pro
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
+  host: { 'class': 'wrapper' }
 })
 export class ProjectsComponent {
   projects: ProjectEntity[];

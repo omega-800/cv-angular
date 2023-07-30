@@ -1,14 +1,12 @@
 @use "src/scss/mixins.scss" as mixins;
 
 :host {
-    @include mixins.flex-center;
     & app-tooltip {
-      @include mixins.transitions((opacity: 0, visibility: hidden));
+        @include mixins.transitions((opacity: 0, visibility: hidden));
     }
+
     & img {
-        @include mixins.preview-image;
-        @include mixins.link;
-        &:hover ~ app-tooltip{
+        &:hover~app-tooltip {
             @include mixins.transitions((opacity: 1, visibility: visible));
         }
     }

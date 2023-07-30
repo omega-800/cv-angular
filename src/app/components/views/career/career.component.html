@@ -9,37 +9,37 @@
       }" [image]="item.thumbnail" title="{{ item.name }}"
       [subTitle]="(career.type === ct.SCHOOL ? 'Besucht von ': 'Angestellt von ')+career.yearfrom+' bis '+career.yearto"
       description="{{ career.description }}">
-      <div class="bot bottomLinks">
-        <div class="contactPoints">
+      <div class="bot bottomLinks default-grid">
+        <div class="contactPoints flex-list slimpill">
           <div class="title">
-            <img src="{{ contactIcon.path }}" alt="{{ contactIcon.alt }}" loading="lazy" />
+            <img src="{{ contactIcon.path }}" alt="{{ contactIcon.alt }}" loading="lazy" class="small-image" />
             <h4>Kontakt{{ item.contactpoints.length > 1 ? "e" : "" }}</h4>
           </div>
           <app-contactpoint *ngFor="let contact of item.contactpoints" [contact]="contact"></app-contactpoint>
         </div>
-        <div class="web">
+        <div class="web flex-list slimpill">
           <div class="title">
-            <img src="{{ urlIcon.path }}" alt="{{ urlIcon.alt }}" loading="lazy" />
+            <img src="{{ urlIcon.path }}" alt="{{ urlIcon.alt }}" loading="lazy" class="small-image" />
             <h4>Webseite</h4>
           </div>
-          <div class="content">
+          <div class="content flex-e2e">
             <h5>Homepage</h5>
             <app-button [onClick]="ol(item.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
           </div>
         </div>
-        <div class="address">
+        <div class="address flex-list slimpill">
           <div class="title">
-            <img src="{{ addressIcon.path }}" alt="{{ addressIcon.alt }}" loading="lazy" />
+            <img src="{{ addressIcon.path }}" alt="{{ addressIcon.alt }}" loading="lazy" class="small-image" />
             <h4>Adresse</h4>
           </div>
           <app-address [address]="item.address"></app-address>
         </div>
       </div>
       <div #skills bottom class="bot skills">
-        <div class="showSkills" (click)="
+        <div class="showSkills flex-row-nojust slimpill" (click)="
             skills.classList.toggle('active'); img.classList.toggle('active')
           ">
-          <img #img class="arrowImg" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
+          <img #img class="arrowImg small-image" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
           <h4>Angewandte Skills</h4>
         </div>
         <app-skills-percent [skills]="career.skills" name="(Häufigkeit in %)"></app-skills-percent>

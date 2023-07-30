@@ -11,6 +11,7 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  host: { 'class': 'wrapper' }
 })
 export class HomeComponent {
   me: PersonEntity = this.personService.getPersonByName('Georgiy');

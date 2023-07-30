@@ -7,6 +7,7 @@ import { Direction, linkTypes } from '../../components.constants';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { 'class': 'flex-center' }
 })
 export class ButtonComponent {
   @Input() onClick!: () => void;

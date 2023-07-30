@@ -3,7 +3,6 @@ import {
   Component,
   EventEmitter,
   Input,
-  OnInit,
   Output,
 } from '@angular/core';
 import {
@@ -21,7 +20,7 @@ import { arrowIcon } from '../../components.constants';
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.scss'],
 })
-export class FilterComponent implements OnInit {
+export class FilterComponent {
   @Input() filters!: FiltersEntity;
   @Input() filterName!: string;
   @Output() filterEmitter = new EventEmitter<SelectedFilterEntity[]>();
@@ -29,23 +28,20 @@ export class FilterComponent implements OnInit {
   //selectedFilter: FiltersEntity = {id:'selected-filter',name:'Selected Filter',categories:[], ranges:[]};
   arrowIcon: ImageComp = arrowIcon;
 
-  constructor(private cdref: ChangeDetectorRef) {}
+  constructor(private cdref: ChangeDetectorRef) { }
 
   ngAfterContentChecked() {
     this.cdref.detectChanges();
   }
 
-  ngOnInit() {
-  }
-
-  getName(categoryID:string, value:FilterType):string {
+  getName(categoryID: string, value: FilterType): string {
     return this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == value)[0].name;
   }
 
-  toggleTag(categoryID: string, categoryName:string, tagValue: FilterType) {
+  toggleTag(categoryID: string, categoryName: string, tagValue: FilterType) {
     let htmlElem = document.getElementById(this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == tagValue)[0].id);
-    let catIndex:number = this.selectedFilter.findIndex(elem => (elem.category == categoryID));
-    if(catIndex >= 0) {
+    let catIndex: number = this.selectedFilter.findIndex(elem => (elem.category == categoryID));
+    if (catIndex >= 0) {
       let elem = this.selectedFilter[catIndex];
       let valIndex = elem.value.indexOf(tagValue);
       if (valIndex >= 0) {
@@ -80,40 +76,23 @@ export class FilterComponent implements OnInit {
     );
   }
 
-  changeRange(
-    range: FilterRangeEntity,
-    sliderOne: HTMLInputElement,
-    sliderTwo: HTMLInputElement,
-    outputOne: HTMLOutputElement,
-    outputTwo: HTMLOutputElement
-  ) {
-    let [smaller, larger] = parseInt(sliderOne.value) < parseInt(sliderTwo.value)
-      ? [sliderOne.value, sliderTwo.value]
-      : [sliderTwo.value, sliderOne.value];
-    let rangeIndex:number = this.selectedFilter.findIndex(elem => (elem.range && elem.category == range.id)); 
-    let newRangeFilter:SelectedFilterEntity = {
-      id: range.id,
-      name: range.name,
-      range: true,
-      category: range.id,
-      value: [smaller,larger],
-    };
+  updateRange(newRangeFilter: SelectedFilterEntity) {
+    let rangeIndex: number = this.selectedFilter.findIndex(elem => (elem.range && elem.category == newRangeFilter.id));
     if (rangeIndex >= 0) {
-      if(this.isDefaultRangeValue(newRangeFilter)){
+      if (this.isDefaultRangeValue(newRangeFilter)) {
         this.selectedFilter.splice(rangeIndex, 1);
       } else {
-        this.selectedFilter[rangeIndex].value = [smaller,larger];
+        this.selectedFilter[rangeIndex] = newRangeFilter;
       }
     } else {
       this.selectedFilter.push(newRangeFilter);
     }
-    [outputOne.innerHTML, outputTwo.innerHTML] = [smaller, larger];
     this.emitFilter();
   }
 
-  resetRange(selectedRange:SelectedFilterEntity){
+  resetRange(selectedRange: SelectedFilterEntity) {
     let rangeValues = this.filters.ranges?.filter((range) => range.id == selectedRange.id)[0].values;
-    if(rangeValues!==undefined){
+    if (rangeValues !== undefined) {
       this.selectedFilter.filter((elem) => elem.category == selectedRange.id)[0].value = [
         rangeValues[0], rangeValues[rangeValues.length - 1]
       ];
@@ -142,11 +121,11 @@ export class FilterComponent implements OnInit {
     );
   }
 
-  resetRangeDOM(rangeID:string, minVal:RangeType, maxVal:RangeType){
-    (document.getElementById(rangeID+"_1") as HTMLInputElement).value = minVal.toString();
-    (document.getElementById(rangeID+"_1_out") as HTMLOutputElement).innerHTML = minVal.toString();
-    (document.getElementById(rangeID+"_2") as HTMLInputElement).value = maxVal.toString();
-    (document.getElementById(rangeID+"_2_out") as HTMLOutputElement).innerHTML = maxVal.toString();
+  resetRangeDOM(rangeID: string, minVal: RangeType, maxVal: RangeType) {
+    (document.getElementById(rangeID + "_1") as HTMLInputElement).value = minVal.toString();
+    (document.getElementById(rangeID + "_1_out") as HTMLOutputElement).innerHTML = minVal.toString();
+    (document.getElementById(rangeID + "_2") as HTMLInputElement).value = maxVal.toString();
+    (document.getElementById(rangeID + "_2_out") as HTMLOutputElement).innerHTML = maxVal.toString();
   }
 
   /*@Input() filterValues!:{[key:string]:string};

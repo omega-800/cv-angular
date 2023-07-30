@@ -1,10 +1,8 @@
 @use "src/scss/variables.scss" as variables;
-@use "src/scss/mixins.scss" as mixins;
 @import "image.mixin.scss";
 
 :host {
     @include main-image-container;
-    @include mixins.flex-center;
     //border-radius: variables.$elem-border-radius;
     overflow: hidden;
     position: relative;

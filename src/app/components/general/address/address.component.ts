@@ -8,7 +8,8 @@ import { openLink } from '../links.util';
   selector: 'app-address',
   templateUrl: './address.component.html',
   styleUrls: ['./address.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { 'class': 'flex-e2e' }
 })
 export class AddressComponent {
   @Input() address!: AddressEntity;
@@ -16,7 +17,7 @@ export class AddressComponent {
   lt: LinkTypes = linkTypes;
 
   map = (address: AddressEntity) => {
-    return () => openLink(encodeURI(this.lt.MAP.prefix+address.street+", "+address.zip+" "+address.city+", "+address.country.name));
+    return () => openLink(encodeURI(this.lt.MAP.prefix + address.street + ", " + address.zip + " " + address.city + ", " + address.country.name));
   }
 }
 

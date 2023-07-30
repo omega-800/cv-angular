@@ -1,6 +1,6 @@
 @use "scss/variables.scss" as variables;
-@use "scss/mixins.scss" as mixins;
 @use "scss/screens.scss" as screens;
+@import "scss/classes.scss";
 
 * {
   box-sizing: border-box;
@@ -75,11 +75,6 @@ output {
   font-family: variables.$sans;
   color: variables.$fontcolor1;
   font-size: 1em;
-}
-
-select,
-option {
-  @include mixins.link;
 }
 
 a {

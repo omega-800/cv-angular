@@ -1,13 +1,9 @@
-@use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/screens.scss" as screens;
 
 :host {
-    @include mixins.wrapper;
-
     & .welcome {
         margin-bottom: variables.$elem-size;
-        @include mixins.default-grid;
 
         @include screens.mobile-screen {
             grid-template-areas:
@@ -46,8 +42,6 @@
         }
 
         & .photo {
-            @include mixins.slimpill;
-            @include mixins.flex-center;
             grid-area: img;
 
             & img {
@@ -60,7 +54,6 @@
 
         & .desc {
             padding: variables.$box-padding;
-            @include mixins.slimpill;
             grid-area: desc;
 
             & .age {
@@ -69,10 +62,8 @@
         }
 
         & .socials {
-            @include mixins.slimpill;
             padding: variables.$elem-padding;
             grid-area: socials;
-            @include mixins.flex-row-just;
 
             & app-button,
             .socialstext {

@@ -2,23 +2,11 @@
 @use "src/scss/variables.scss" as variables;
 
 :host {
-    @include mixins.wrapper;
-
     & .bot {
         padding: variables.$box-padding;
-        @include mixins.slimpill;
-        @include mixins.flex-column;
 
-        & .content {
-            @include mixins.flex-e2e;
-
-            &>* {
-                width: auto;
-            }
-        }
-
-        & app-button p {
-            @include mixins.slimpill;
+        & .content>* {
+            width: auto;
         }
 
         &:not(.skills) {

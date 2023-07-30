@@ -8,7 +8,8 @@ import { linkTypes } from '../../components.constants';
   selector: 'app-contactpoint',
   templateUrl: './contactpoint.component.html',
   styleUrls: ['./contactpoint.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { 'class': 'flex-e2e' }
 })
 export class ContactpointComponent {
   @Input() contact!: ContactEntity;

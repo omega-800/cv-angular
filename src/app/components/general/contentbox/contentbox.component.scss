@@ -7,28 +7,18 @@
         width: 100%;
         //border-radius:variables.$elem-border-radius;
         margin: variables.$elem-padding 0;
-        @include mixins.default-grid;
 
         & .preview {
-            @include mixins.link;
-            @include mixins.default-grid;
-
             & .arrowImg {
                 grid-area: arrow;
-                @include mixins.preview-image;
                 padding: variables.$elem-padding;
             }
 
             & .title {
                 grid-area: title;
-                @include mixins.flex-list;
                 padding: 0 variables.$elem-padding;
                 color: variables.$fontcolor1;
             }
-        }
-
-        &>div:not(.bottom) {
-            @include mixins.slimpill;
         }
     }
 
@@ -39,7 +29,6 @@
 
             & .previewImg {
                 grid-area: image;
-                @include mixins.preview-image;
             }
 
             & .arrowImg {
@@ -130,7 +119,6 @@
 
         & .bottom {
             grid-area: bottom;
-            @include mixins.flex-row-just;
         }
 
         & .belowbottom {

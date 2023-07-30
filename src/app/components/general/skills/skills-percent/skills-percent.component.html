@@ -3,7 +3,7 @@
     <app-filter [filters]="filter" filterName="Filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
     <app-sort [fields]="sortFields" (selectedEmitter)="sortSkillsBy($event)"></app-sort>
 </div>
-<div class="skill-container" *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter">
-    <app-skill-item [skill]="skill" [showPercent]="true"></app-skill-item>
+<div class="skill-container flex-list"
+    *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter">
+    <app-skill-item [skill]="skill" [showPercent]="true" class="flex-row-nojust"></app-skill-item>
 </div>
-

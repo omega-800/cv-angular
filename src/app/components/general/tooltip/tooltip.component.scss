@@ -1,4 +1,3 @@
-@use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/screens.scss" as screens;
 
@@ -15,10 +14,6 @@
         padding: variables.$elem-size;
         position: absolute;
         width: 100%;
-
-        & .tooltip-icon {
-            @include mixins.small-image;
-        }
 
         & .name-title {
             font: {
