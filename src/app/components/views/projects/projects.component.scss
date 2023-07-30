@@ -1,4 +1,3 @@
-@use "src/scss/mixins.scss" as mixins;
 @use "src/scss/variables.scss" as variables;
 
 :host {
@@ -9,7 +8,7 @@
             width: auto;
         }
 
-        &:not(.skills) {
+        &.notskills {
             flex: 1;
         }
 

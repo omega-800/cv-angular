@@ -52,12 +52,10 @@
             flex: 1;
             align-self: flex-start;
 
-            &>div {
-
-                &>* {
-                    display: inline-block;
-                }
+            &>div>* {
+                display: inline-block;
             }
+
         }
 
         & .contactPoints {
@@ -86,17 +84,15 @@
     }
 
     & .skills {
-        &:not(.active)>*:not(.showSkills) {
+        &.notactive app-skills-percent {
             display: none;
         }
 
         & .showSkills {
             cursor: pointer;
 
-            & .arrowImg {
-                &:not(.active) {
-                    transform: rotate(180deg);
-                }
+            & .arrowImg.notactive {
+                transform: rotate(180deg);
             }
         }
     }

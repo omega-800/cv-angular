@@ -12,7 +12,7 @@
       | projectsFilter : selectedSkillFilter : selectedProjectFilter
   " [image]="project.image" [title]="project.name" [subTitle]="project.date | pipeDate"
   [description]="project.description" [link]="project.url">
-  <div *ngIf="project.authors" class="bot authors flex-column slimpill">
+  <div *ngIf="project.authors" class="bot authors flex-column slimpill notskills">
     <h4>Author{{ project.authors.length > 1 ? "en" : "" }}</h4>
     <div class="content flex-e2e">
       <app-button *ngFor="let author of project.authors" [onClick]="openClient(author.id)" [type]="lt.PERSON"
@@ -20,14 +20,14 @@
         [showName]="true"></app-button>
     </div>
   </div>
-  <div *ngIf="project.client" class="bot client flex-column slimpill">
+  <div *ngIf="project.client" class="bot client flex-column slimpill notskills">
     <h4>Entwickelt für</h4>
     <div class="content flex-e2e">
       <app-button [onClick]="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"
         [showName]="true"></app-button>
     </div>
   </div>
-  <div *ngIf="project.github || project.url" class="bot links flex-column slimpill">
+  <div *ngIf="project.github || project.url" class="bot links flex-column slimpill notskills">
     <h4>Link{{ project.github && project.url ? "s" : "" }}</h4>
     <div class="content flex-e2e">
       <app-button *ngIf="project.github" [onClick]="ol(project.github)" [type]="lt.GITHUB"
@@ -35,13 +35,13 @@
       <app-button *ngIf="project.url" [onClick]="ol(project.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
     </div>
   </div>
-  <!--div *ngIf="project.clients.length > 0" class="bot client">
+  <!--div *ngIf="project.clients.length > 0" class="bot client notskills">
         <h4>Entwickelt für</h4>
         <div class="content">
             <app-button *ngFor="let client of project.clients" [onClick]="ol(client.url)" [type]="lt.URL" [name]="client.name"><p>{{client.name}}</p></app-button>
         </div>
   </div-->
-  <div *ngIf="project.career" class="bot career flex-column slimpill">
+  <div *ngIf="project.career" class="bot career flex-column slimpill notskills">
     <h4>Entwickelt bei</h4>
     <div class="content flex-e2e">
       <app-button [onClick]="ol(project.career.url)" [type]="lt.OTHER"

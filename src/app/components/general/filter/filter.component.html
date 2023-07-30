@@ -18,24 +18,25 @@
 <div #comp class="filterComp slimpill">
   <div class="filterTitle flex-e2e">
     <div class="showFilter flex-row-nojust" (mouseenter)="comp.classList.add('hover')"
-      (mouseleave)="comp.classList.remove('hover')" (click)="
-        content.classList.toggle('flex-row-nojust'); img.classList.toggle('active'); items.classList.toggle('active')
+      (mouseleave)="comp.classList.remove('hover')" (click)="img.classList.toggle('notactive'); items.classList.toggle('active'); items.classList.toggle('notactive')
       ">
-      <img #img class="arrowImg small-image" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
+      <img #img class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
+        loading="lazy" />
       <h3>{{ filterName }}</h3>
     </div>
     <p (click)="reset()" class="filterReset link pill">Zurücksetzen</p>
   </div>
-  <div #items class="filterItems">
-    <div #content class="filterCategories">
-      <div #cat *ngFor="let category of filters.categories">
+  <div #items class="filterItems notactive">
+    <div class="filterCategories flex-row-nojust">
+      <div #cat *ngFor="let category of filters.categories" class="notactive">
         <div class="showFilter filterCategory flex-row-nojust" (click)="
-            cat.classList.toggle('active'); imgF.classList.toggle('active'); tags.classList.toggle('flex-list')
+            cat.classList.toggle('active'); cat.classList.toggle('notactive'); imgF.classList.toggle('notactive')
           ">
-          <img #imgF class="arrowImg small-image" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
+          <img #imgF class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
+            loading="lazy" />
           <h5 class="categoryTitle">{{ category.name }}</h5>
         </div>
-        <div #tags class="tags">
+        <div class="tags flex-list">
           <div *ngFor="let tag of category.tags" (click)="toggleTag(category.id, category.name, tag.value);" class="tag"
             [id]="tag.id">
             <img *ngIf="tag.image" src="{{ tag.image.path }}" alt="{{ tag.image.alt }}" class="tagIcon small-image"

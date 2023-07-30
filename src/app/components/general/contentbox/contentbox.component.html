@@ -1,5 +1,6 @@
-<div #cbToggle class="default-grid">
-  <div class="preview default-grid link slimpill" (click)="cbToggle.classList.toggle('active')">
+<div #cbToggle class="default-grid notactive">
+  <div class="preview default-grid link slimpill"
+    (click)="cbToggle.classList.toggle('active');cbToggle.classList.toggle('notactive')">
     <img *ngIf="preview" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
       loading="lazy" />
 
@@ -19,9 +20,11 @@
     <h3 *ngIf="subTitle">{{ subTitle }}</h3>
     <p *ngIf="description">{{ description }}</p>
   </div>
+
   <div class="bottom flex-row-just">
     <ng-content></ng-content>
   </div>
+
   <div class="belowbottom slimpill">
     <ng-content select="[bottom]"></ng-content>
   </div>

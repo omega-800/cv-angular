@@ -35,11 +35,12 @@
           <app-address [address]="item.address"></app-address>
         </div>
       </div>
-      <div #skills bottom class="bot skills">
+      <div #skills bottom class="bot skills notactive">
         <div class="showSkills flex-row-nojust slimpill" (click)="
-            skills.classList.toggle('active'); img.classList.toggle('active')
+            skills.classList.toggle('notactive'); img.classList.toggle('notactive')
           ">
-          <img #img class="arrowImg small-image" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
+          <img #img class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
+            loading="lazy" />
           <h4>Angewandte Skills</h4>
         </div>
         <app-skills-percent [skills]="career.skills" name="(Häufigkeit in %)"></app-skills-percent>
