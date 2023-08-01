@@ -6,6 +6,9 @@ import { interestTypes } from 'src/app/store/app/app.model';
 import { TooltipComponent } from '../tooltip/tooltip.component';
 import { NgFor } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SetInterest } from 'src/app/store/app/app.actions';
+import { Direction } from '../../components.constants';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -15,12 +18,15 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [TooltipComponent, NgFor, RouterLink, RouterLinkActive]
 })
 export class HeaderComponent {
-  interest$: Observable<Interest>;
   interest = '';
   types = interestTypes;
+  d = Direction;
 
   constructor(private store: Store) {
-    this.interest$ = this.store.select(state => state.app.interest);
-    this.interest$.subscribe(res => this.interest = res)
+    this.store.select(state => state.app.interest).subscribe(res => this.interest = res);
+  }
+
+  setInterest(interest: Interest) {
+    this.store.dispatch(new SetInterest(interest));
   }
 }

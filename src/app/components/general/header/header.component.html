@@ -3,8 +3,8 @@
     <li class="flex-row">
       <p class="type-title">Interessiert an</p>
       <div *ngFor="let type of types" class="type-container">
-        <img [src]="type.icon.path" [alt]="type.icon.alt" class="small-image" />
-        <app-tooltip [name]="type.name"></app-tooltip>
+        <img [src]="type.icon.path" [alt]="type.icon.alt" class="small-image" (click)="setInterest(type.type)" />
+        <app-tooltip [name]="type.name" [direction]="d.RIGHT"></app-tooltip>
       </div>
     </li>
     <li>
@@ -20,5 +20,4 @@
 
     </li>
   </ul>
-  <p>{{interest}}</p>
 </nav>

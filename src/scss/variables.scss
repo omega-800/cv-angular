@@ -50,11 +50,14 @@ $contentbox-right-b: 50%;
 $dark: rgb(43, 43, 38);*/
 $white: rgb(237, 242, 244);
 //$cool: rgb(142, 141, 190);
-$cool: rgba(103, 176, 232, 0.9);
+//$cool: rgba(103, 176, 232, 0.9);
+$cool: var(--customcolor);
+$cooldarken: var(--customcolordarken);
 $dark1trans: rgba(35, 42, 45, 0.9);
 
 $fontcolor1: $dark1;
 $fontcolor2: $light2;
+
 /*
 $defborderthin: solid $cool $thin;
 $defborder: solid $cool $elem-padding;

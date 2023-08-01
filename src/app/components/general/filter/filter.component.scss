@@ -36,7 +36,7 @@
         padding: variables.$elem-padding;
 
         &.hover {
-            @include mixins.darken-little(background-color, variables.$cool);
+            @include mixins.darken-little(background-color);
         }
 
         & .filterTitle {
@@ -106,7 +106,7 @@
                                         border-left: variables.$defborder;
 
                                         &:hover {
-                                            @include mixins.darken-little(border-color, variables.$light2);
+                                            @include mixins.darken-little-custom(border-color, variables.$light2);
                                         }
                                     }
 

@@ -10,8 +10,13 @@
     #{$property}: $value;
 }
 
-@mixin darken-little($property, $color) {
-    #{$property}: darken($color, variables.$little);
+@mixin darken-little-custom($property, $customcolor) {
+    #{$property}: darken($customcolor, variables.$little);
+    transition: #{$property} variables.$trans-cb;
+}
+
+@mixin darken-little($property) {
+    #{$property}: variables.$cooldarken;
     transition: #{$property} variables.$trans-cb;
 }
 

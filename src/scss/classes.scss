@@ -127,38 +127,11 @@
 
 .link {
     &:hover {
-        @include mixins.darken-little(background-color, variables.$cool);
+        @include mixins.darken-little(background-color);
         cursor: pointer;
     }
 }
 
-/*
-.slimpill {
-    margin: 0;
-    border-radius: variables.$elem-border-radius;
-    color: $black;
-    background-color: variables.$cool;
-    font: {
-        family: variables.$mono;
-        size: variables.$elem-size;
-    }
-}
-
-.pill {
-    @include slimpill;
-    display: inline-block;
-    padding: variables.$elem-padding;
-}
-
-.link {
-    text-decoration: none;
-    border: none;
-    &:hover {
-        @include mixins.darken-little(background-color, variables.$cool);
-        cursor: pointer;
-    }
-}
-*/
 .preview-image {
     border-radius: variables.$border-radius-circle;
     height: variables.$elem-height;

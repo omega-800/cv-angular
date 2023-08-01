@@ -16,7 +16,7 @@
                 list-style: none;
 
                 & .active {
-                    @include mixins.darken-little(background-color, variables.$cool);
+                    @include mixins.darken-little(background-color);
                 }
             }
 

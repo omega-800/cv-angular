@@ -73,7 +73,7 @@
             width: variables.$elem-border-radius;
             border: variables.$thin solid variables.$cool;
             border-radius: variables.$elem-size;
-            @include mixins.darken-little(border-color, variables.$cool);
+            @include mixins.darken-little(border-color);
             position: relative;
 
             &::after {
@@ -90,14 +90,14 @@
                 cursor: pointer;
 
                 &::after {
-                    @include mixins.darken-little(background-color, variables.$cool);
+                    @include mixins.darken-little(background-color);
                     display: block;
                 }
             }
 
             &.active {
                 &::after {
-                    @include mixins.darken-little(background-color, variables.$cool);
+                    @include mixins.darken-little(background-color);
                     display: block;
                 }
             }
