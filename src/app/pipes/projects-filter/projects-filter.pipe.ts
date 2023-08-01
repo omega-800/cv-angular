@@ -7,7 +7,8 @@ import { projectFilterProps } from 'src/app/services/filter/project-filter/proje
 
 @Pipe({
   name: 'projectsFilter',
-  pure: false
+  pure: false,
+  standalone: true
 })
 export class ProjectsFilterPipe implements PipeTransform {
 
@@ -19,7 +20,7 @@ export class ProjectsFilterPipe implements PipeTransform {
     if (projects && ((skillFilters && skillFilters.length > 0) || (projectFilters && projectFilters.length > 0))) {
       return projects.filter(project => {
         let appliesRange: boolean = false;
-        if(projectFilters.some(filter => filter.range)){
+        if (projectFilters.some(filter => filter.range)) {
           projectFilters.forEach(filter => {
             if (filter.range && filter.category === projectFilterProps.date && !isNaN(Number(project.date))) {
               let min: number = Number(filter.value[0]);

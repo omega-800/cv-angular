@@ -4,7 +4,8 @@ import { SortEntity } from 'src/app/services/filter/filter.model';
 import { skillSortValues } from './skills-sort.model';
 
 @Pipe({
-  name: 'skillsSort'
+  name: 'skillsSort',
+  standalone: true
 })
 export class SkillsSortPipe implements PipeTransform {
 

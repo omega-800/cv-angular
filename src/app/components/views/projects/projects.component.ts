@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProjectEntity } from 'src/app/services/project/project/project.model';
 import { ProjectService } from 'src/app/services/project/project/project.service';
 import { openLink } from '../../general/links.util';
@@ -20,12 +20,25 @@ import {
 } from 'src/app/services/filter/filter.model';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { ProjectFilterService } from 'src/app/services/filter/project-filter/project-filter.service';
+import { DatePipe } from 'src/app/pipes/date/date.pipe';
+import { ProjectsFilterPipe } from 'src/app/pipes/projects-filter/projects-filter.pipe';
+import { ProjectsSortPipe } from 'src/app/pipes/projects-sort/projects-sort.pipe';
+import { FilterComponent } from '../../general/filter/filter.component';
+import { ContentboxComponent } from '../../general/contentbox/contentbox.component';
+import { SortComponent } from '../../general/sort/sort.component';
+import { ButtonComponent } from '../../general/button/button.component';
+import { SkillItemComponent } from '../../general/skills/skill-item/skill-item.component';
+import { NgFor, NgIf } from '@angular/common';
+import { SkillsFilterPipe } from 'src/app/pipes/skills-filter/skills-filter.pipe';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  host: { 'class': 'wrapper' }
+  host: { 'class': 'wrapper' },
+  standalone: true,
+  imports: [DatePipe, ProjectsSortPipe, ProjectsFilterPipe, FilterComponent, SortComponent, ContentboxComponent, ButtonComponent, SkillItemComponent, NgFor, NgIf],
+  providers: [SkillsFilterPipe]
 })
 export class ProjectsComponent {
   projects: ProjectEntity[];

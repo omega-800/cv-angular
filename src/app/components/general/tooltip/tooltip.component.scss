@@ -7,6 +7,20 @@
     position: relative;
     display: block;
 
+    @include screens.mobile-screen {
+        position: absolute;
+        width: 100vw;
+        height: 0;
+        left: 0;
+    }
+
+    @include screens.tablet-screen {
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        height: 0;
+    }
+
     & .tooltip {
         background-color: variables.$light2;
         z-index: variables.$above-top;
@@ -56,13 +70,23 @@
             width: 25vw;
 
             @include screens.mobile-screen {
+                //style="--left: {{ getLeftMargin() }}px"
+                //left: 0px - var(--left);
                 left: calc(50% - 40vw);
                 width: 80vw;
+
+                &::after {
+                    border-top: variables.$elem-size solid transparent !important;
+                }
             }
 
             @include screens.tablet-screen {
                 left: calc(50% - 25vw);
                 width: 50vw;
+
+                &::after {
+                    border-top: variables.$elem-size solid transparent !important;
+                }
             }
 
             &::after {

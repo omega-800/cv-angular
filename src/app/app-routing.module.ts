@@ -1,29 +1,13 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, Route, RouterModule } from '@angular/router';
 
-const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () => import('./components/views/home/home.module').then(m => m.HomeModule)
-  },
-  {
-    path: 'home',
-    loadChildren: () => import('./components/views/home/home.module').then(m => m.HomeModule)
-  },
-  {
-    path: 'career',
-    loadChildren: () => import('./components/views/career/career.module').then(m => m.CareerModule)
-  },
-  {
-    path: 'projects',
-    loadChildren: () => import('./components/views/projects/projects.module').then(m => m.ProjectsModule)
-  },
-  {
-    path: '**',
-    loadChildren: () => import('./components/views/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)
-  },
-];
-
+export const routes: Route[] = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', loadComponent: () => import('./components/views/home/home.component').then(m => m.HomeComponent) },
+  { path: 'career', loadComponent: () => import('./components/views/career/career.component').then(m => m.CareerComponent) },
+  { path: 'projects', loadComponent: () => import('./components/views/projects/projects.component').then(m => m.ProjectsComponent) },
+  { path: '**', loadComponent: () => import('./components/views/page-not-found/page-not-found.component').then(m => m.PageNotFoundComponent) },
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]

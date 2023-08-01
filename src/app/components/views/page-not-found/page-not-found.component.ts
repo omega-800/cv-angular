@@ -4,7 +4,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',
   //styleUrls: ['./page-not-found.component.scss'],
-  host: { 'class': 'wrapper' }
+  host: { 'class': 'wrapper' },
+  standalone: true
 })
 export class PageNotFoundComponent {
 

@@ -1,7 +1,7 @@
 [
  {
-  "skillsubcategory_id": "4487361a-dc11-47b2-a1bb-fa178629a872",
-  "skillcategory_id": "123d5d86-61c8-4666-a08d-064e2769e056",
+  "skillsubcategory_id": "98759870-93f7-40f3-b16f-96e63efcbf7f",
+  "skillcategory_id": "e979d28e-51f4-4cc4-aa3a-85bca81d7a99",
   "name": "Musik",
   "name_e": "",
   "name_r": "",
@@ -10,8 +10,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "fd32f6ea-0cf0-4bdd-a5fb-a15445378f79",
-  "skillcategory_id": "123d5d86-61c8-4666-a08d-064e2769e056",
+  "skillsubcategory_id": "d0999d11-1f3b-405f-8a53-478163925b7c",
+  "skillcategory_id": "e979d28e-51f4-4cc4-aa3a-85bca81d7a99",
   "name": "Gestalten",
   "name_e": "",
   "name_r": "",
@@ -20,8 +20,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "2649f89a-de00-4c54-94ec-70d55c1733b9",
-  "skillcategory_id": "123d5d86-61c8-4666-a08d-064e2769e056",
+  "skillsubcategory_id": "e0ed41e5-c131-4613-9acb-97393371e4b1",
+  "skillcategory_id": "e979d28e-51f4-4cc4-aa3a-85bca81d7a99",
   "name": "Werken",
   "name_e": "",
   "name_r": "",
@@ -30,8 +30,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "afaf2d3e-364c-4fd8-8db5-12767e871d45",
-  "skillcategory_id": "123d5d86-61c8-4666-a08d-064e2769e056",
+  "skillsubcategory_id": "cdb46255-d650-4a77-9a2c-1d1dcab9c6d9",
+  "skillcategory_id": "e979d28e-51f4-4cc4-aa3a-85bca81d7a99",
   "name": "Textilarbeit",
   "name_e": "",
   "name_r": "",
@@ -40,8 +40,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "5d06b003-ce72-4385-9fb1-bd5d057b425c",
-  "skillcategory_id": "123d5d86-61c8-4666-a08d-064e2769e056",
+  "skillsubcategory_id": "33181db9-8382-43ce-9d6d-b4a160e83bcf",
+  "skillcategory_id": "e979d28e-51f4-4cc4-aa3a-85bca81d7a99",
   "name": "Modellieren",
   "name_e": "",
   "name_r": "",
@@ -50,8 +50,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "edf318b3-fbca-400a-8f2a-48e47e869468",
-  "skillcategory_id": "907dee54-a8e7-420d-a570-7f5b765622e5",
+  "skillsubcategory_id": "ef709bac-a6fc-412d-8943-b2c1c47f3644",
+  "skillcategory_id": "955a0ca3-3e54-4cf9-afc9-ab613a35ec53",
   "name": "Schule",
   "name_e": "",
   "name_r": "",
@@ -60,8 +60,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "24d152a4-0276-45d9-ad7e-f8829ea25fc3",
-  "skillcategory_id": "907dee54-a8e7-420d-a570-7f5b765622e5",
+  "skillsubcategory_id": "c95e5dd3-557d-4e52-8e9b-aed90ab21318",
+  "skillcategory_id": "955a0ca3-3e54-4cf9-afc9-ab613a35ec53",
   "name": "Verein",
   "name_e": "",
   "name_r": "",
@@ -70,8 +70,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "09cb0f0e-123f-4cbb-a6f1-b04ef5c62a04",
-  "skillcategory_id": "907dee54-a8e7-420d-a570-7f5b765622e5",
+  "skillsubcategory_id": "5a088789-c7c3-410c-87aa-0bf4e87e63d5",
+  "skillcategory_id": "955a0ca3-3e54-4cf9-afc9-ab613a35ec53",
   "name": "Einzelunterricht",
   "name_e": "",
   "name_r": "",
@@ -80,8 +80,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "bd96d2d2-8ad9-4007-b2ef-60c292b413a4",
-  "skillcategory_id": "67acb791-6369-4873-8602-882380746291",
+  "skillsubcategory_id": "12a9a6b0-cae2-4cde-9f5d-b585b7c69cf1",
+  "skillcategory_id": "c2884448-951b-4c2d-aeda-9932b6d05b35",
   "name": "Natur",
   "name_e": "",
   "name_r": "",
@@ -90,8 +90,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "b7e4bf6a-4cca-4d6f-832e-0b6e39cd0835",
-  "skillcategory_id": "67acb791-6369-4873-8602-882380746291",
+  "skillsubcategory_id": "7f36a877-bff5-4d67-bfda-dbc383c72da1",
+  "skillcategory_id": "c2884448-951b-4c2d-aeda-9932b6d05b35",
   "name": "Sport",
   "name_e": "",
   "name_r": "",
@@ -100,8 +100,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "50674ef2-3764-4906-a7bb-4ee08260dfab",
-  "skillcategory_id": "67acb791-6369-4873-8602-882380746291",
+  "skillsubcategory_id": "0f662f31-1d44-4bb7-b205-6837cb641d3c",
+  "skillcategory_id": "c2884448-951b-4c2d-aeda-9932b6d05b35",
   "name": "Ernährung",
   "name_e": "",
   "name_r": "",
@@ -110,8 +110,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "6817bfff-b575-4f3f-8de2-ec3d82e5ce3f",
-  "skillcategory_id": "67acb791-6369-4873-8602-882380746291",
+  "skillsubcategory_id": "c4980a12-b6ab-447e-b0fd-9d927562bc7f",
+  "skillcategory_id": "c2884448-951b-4c2d-aeda-9932b6d05b35",
   "name": "Geist",
   "name_e": "",
   "name_r": "",
@@ -120,8 +120,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "76d7d4a8-ae6c-40a4-a93e-51699bf964b9",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "d7f0d331-94da-4931-b94a-53a8de5e4c08",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Frontend",
   "name_e": "",
   "name_r": "",
@@ -130,8 +130,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "32d10702-1a00-4f34-b8f2-1cd865847056",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "97c8b665-bbbf-480c-827d-79c3bb2b192d",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Backend",
   "name_e": "",
   "name_r": "",
@@ -140,8 +140,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "6286134f-2862-4838-acfe-2a4cb41e769f",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "22d736b4-eaa6-4061-b5e4-03b1ac2244e9",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Mobile App Entwicklung",
   "name_e": "",
   "name_r": "",
@@ -150,8 +150,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "64d734a2-2266-4680-bf1d-578226ee628f",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "2eb4cc6c-7d31-4e2e-b06a-64016d6a9c1e",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Spielentwicklung",
   "name_e": "",
   "name_r": "",
@@ -160,8 +160,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "18612d92-a144-4bde-8f33-160bd27ff7dd",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "8ec37514-762a-4452-bd36-850e86cc357a",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Datenbankentwicklung",
   "name_e": "",
   "name_r": "",
@@ -170,8 +170,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "ec62e097-1239-42d6-a5ab-2a23add6cd53",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "7d78305f-0e3b-4377-8feb-4b383974c812",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Datenmanagement",
   "name_e": "",
   "name_r": "",
@@ -180,8 +180,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "91738619-0886-41d3-bd66-a923cc0d2f9f",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "ea10b3d1-173d-401d-ac51-6d58baa01d04",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Bildbearbeitung",
   "name_e": "",
   "name_r": "",
@@ -190,8 +190,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "e57cd97e-1c1d-42a2-84c3-1cd0fb52d0e4",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "8fdc814f-2f01-4681-9383-80f3124d21c8",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Office",
   "name_e": "",
   "name_r": "",
@@ -200,8 +200,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "acbb632f-9efd-4d3b-b250-35747cf5c263",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "92880ac8-4933-47b2-862f-96ddb250955a",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "SEO",
   "name_e": "",
   "name_r": "",
@@ -210,8 +210,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "39d9572c-d6fb-4f74-8681-3f1e6de12799",
-  "skillcategory_id": "6acda7d4-70e8-4485-9059-ac2e83f90071",
+  "skillsubcategory_id": "4d4411eb-7aa1-4f62-adc8-13d776aa2d31",
+  "skillcategory_id": "e31cf890-7e0f-423c-98d6-cc1f61e9586f",
   "name": "Datenbearbeitung",
   "name_e": "",
   "name_r": "",
@@ -220,8 +220,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "f5e76607-0b49-415d-94e3-394373aa36ba",
-  "skillcategory_id": "6d663fd3-adcf-4678-b0a7-c5638e2ef26f",
+  "skillsubcategory_id": "07178d1e-ed65-484e-a25d-41fb3c25c600",
+  "skillcategory_id": "dc73683e-3241-4873-83b4-460977ce17fb",
   "name": "Softskills",
   "name_e": "",
   "name_r": "",
@@ -230,8 +230,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "7d5da2ce-4aeb-41f8-8fd1-7ebe02a3dd3e",
-  "skillcategory_id": "6d663fd3-adcf-4678-b0a7-c5638e2ef26f",
+  "skillsubcategory_id": "406e8708-8df2-4798-97ad-7e6acf19b6c4",
+  "skillcategory_id": "dc73683e-3241-4873-83b4-460977ce17fb",
   "name": "Sprachen",
   "name_e": "",
   "name_r": "",
@@ -240,8 +240,8 @@
   "description_r": ""
  },
  {
-  "skillsubcategory_id": "18543a3d-2a29-41eb-86e0-7fcabd64e20a",
-  "skillcategory_id": "6d663fd3-adcf-4678-b0a7-c5638e2ef26f",
+  "skillsubcategory_id": "949c4cf0-8f12-4fab-a5d5-b11773bb4992",
+  "skillcategory_id": "dc73683e-3241-4873-83b4-460977ce17fb",
   "name": "Wissen",
   "name_e": "",
   "name_r": "",

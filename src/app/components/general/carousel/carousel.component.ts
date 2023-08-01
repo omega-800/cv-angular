@@ -1,11 +1,15 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ImageComp } from '../../components.model';
+import { ImageComponent } from '../image/image.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [ImageComponent, NgFor]
 })
 export class CarouselComponent {
   @Input() images!: ImageComp[];

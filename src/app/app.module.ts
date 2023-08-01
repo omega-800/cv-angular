@@ -6,15 +6,18 @@ import { environment } from 'src/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HeaderComponent } from './components/general/header/header.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AppState } from './store/app/app.state';
+import { NgxsModule } from '@ngxs/store';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent],
   imports: [
     AppRoutingModule,
-    /*NgxsModule.forRoot([FilterState]),*/
+    NgxsModule.forRoot([AppState]),
     AngularFireModule.initializeApp(environment.firebase),
     /*AngularFireStorageModule,*/
     BrowserModule,
+    HeaderComponent
   ],
   bootstrap: [AppComponent],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

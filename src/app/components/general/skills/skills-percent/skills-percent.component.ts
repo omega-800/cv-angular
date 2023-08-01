@@ -3,12 +3,20 @@ import { skillSortProps } from 'src/app/pipes/skills-sort/skills-sort.model';
 import { FiltersEntity, FullSortEntity, SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
+import { FilterComponent } from '../../filter/filter.component';
+import { SortComponent } from '../../sort/sort.component';
+import { SkillItemComponent } from '../skill-item/skill-item.component';
+import { NgFor } from '@angular/common';
+import { SkillsFilterPipe } from 'src/app/pipes/skills-filter/skills-filter.pipe';
+import { SkillsSortPipe } from 'src/app/pipes/skills-sort/skills-sort.pipe';
 
 @Component({
   selector: 'app-skills-percent',
   templateUrl: './skills-percent.component.html',
   styleUrls: ['./skills-percent.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [FilterComponent, SortComponent, SkillItemComponent, NgFor, SkillsFilterPipe, SkillsSortPipe]
 })
 export class SkillsPercentComponent implements OnInit {
   @Input() skills!: SkillEntity[];
@@ -20,7 +28,7 @@ export class SkillsPercentComponent implements OnInit {
   selectedFilter: SelectedFilterEntity[] = [];
 
   constructor(private skillsFilterService: SkillsFilterService) {
-    this.filter = {id:'',name:'',categories:[]};
+    this.filter = { id: '', name: '', categories: [] };
   }
 
   ngOnInit(): void {

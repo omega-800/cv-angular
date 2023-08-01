@@ -14,11 +14,15 @@ import {
 } from 'src/app/services/filter/filter.model';
 import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
+import { RangeComponent } from '../range/range.component';
+import { NgIf, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.scss'],
+  standalone: true,
+  imports: [RangeComponent, NgIf, NgFor]
 })
 export class FilterComponent {
   @Input() filters!: FiltersEntity;

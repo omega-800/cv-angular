@@ -238,7 +238,7 @@ CREATE TABLE IF NOT EXISTS public.person
     person_id uuid NOT NULL DEFAULT gen_random_uuid(),
     firstname character varying COLLATE pg_catalog."default" NOT NULL,
     lastname character varying COLLATE pg_catalog."default" NOT NULL,
-    birthdate date,
+    birthdate timestamp,
     birthplace character varying COLLATE pg_catalog."default",
     jobtitle character varying COLLATE pg_catalog."default",
     jobtitle_e character varying COLLATE pg_catalog."default",

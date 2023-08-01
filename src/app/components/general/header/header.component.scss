@@ -19,6 +19,27 @@
                     @include mixins.darken-little(background-color, variables.$cool);
                 }
             }
+
+            & .type-title {
+                flex: 100%;
+            }
+
+            & div {
+
+                & app-tooltip {
+                    @include mixins.transitions((opacity: 0, visibility: hidden));
+                }
+
+                & img {
+                    &:hover {
+                        cursor: pointer;
+
+                        &~app-tooltip {
+                            @include mixins.transitions((opacity: 1, visibility: visible));
+                        }
+                    }
+                }
+            }
         }
     }
 }

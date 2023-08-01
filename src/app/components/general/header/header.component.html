@@ -1,5 +1,12 @@
 <nav class="navbar">
   <ul class="flex-row">
+    <li class="flex-row">
+      <p class="type-title">Interessiert an</p>
+      <div *ngFor="let type of types" class="type-container">
+        <img [src]="type.icon.path" [alt]="type.icon.alt" class="small-image" />
+        <app-tooltip [name]="type.name"></app-tooltip>
+      </div>
+    </li>
     <li>
       <a routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page" class="link pill">Home</a>
     </li>
@@ -9,5 +16,9 @@
     <li>
       <a routerLink="projects" routerLinkActive="active" ariaCurrentWhenActive="page" class="link pill">Projekte</a>
     </li>
+    <li>
+
+    </li>
   </ul>
+  <p>{{interest}}</p>
 </nav>

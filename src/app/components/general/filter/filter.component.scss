@@ -58,23 +58,23 @@
 
                     &>div {
                         @include screens.mobile-screen {
-                            width: calc(50% - (variables.$elem-padding * 2));
+                            width: calc(100% - (variables.$elem-padding * 2));
                         }
 
                         @include screens.tablet-screen {
-                            width: calc((100% / 3) - (variables.$elem-padding * 2));
+                            width: calc(50% - (variables.$elem-padding * 2));
                         }
 
                         @include screens.laptop-screen {
-                            width: calc((100% / 3) - (variables.$elem-padding * 2));
+                            width: calc(50% - (variables.$elem-padding * 2));
                         }
 
                         @include screens.desktop-screen {
-                            width: calc(25% - (variables.$elem-padding * 2));
+                            width: calc((100% / 3) - (variables.$elem-padding * 2));
                         }
 
                         @include screens.large-screen {
-                            width: calc(20% - (variables.$elem-padding * 2));
+                            width: calc((100% / 3) - (variables.$elem-padding * 2));
                         }
 
                         margin: variables.$elem-padding;

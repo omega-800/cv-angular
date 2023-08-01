@@ -1,17 +1,22 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PersonEntity } from 'src/app/services/person/person/person.model';
-import { ImageComp, LinkTypes } from 'src/app/components/components.model';
+import { LinkTypes } from 'src/app/components/components.model';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { contactMail, contactPhone, openLink } from '../../general/links.util';
 import { linkTypes } from '../../components.constants';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { SkillService } from 'src/app/services/skills/skill/skill.service';
+import { AgePipe } from 'src/app/pipes/age/age.pipe';
+import { ButtonComponent } from '../../general/button/button.component';
+import { SkillsPercentComponent } from '../../general/skills/skills-percent/skills-percent.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  host: { 'class': 'wrapper' }
+  host: { 'class': 'wrapper' },
+  standalone: true,
+  imports: [ButtonComponent, SkillsPercentComponent, AgePipe]
 })
 export class HomeComponent {
   me: PersonEntity = this.personService.getPersonByName('Georgiy');

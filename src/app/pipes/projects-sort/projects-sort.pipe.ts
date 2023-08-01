@@ -4,7 +4,8 @@ import { SortEntity } from 'src/app/services/filter/filter.model';
 import { projectSortValues } from './projects-sort.model';
 
 @Pipe({
-  name: 'projectsSort'
+  name: 'projectsSort',
+  standalone: true
 })
 export class ProjectsSortPipe implements PipeTransform {
 

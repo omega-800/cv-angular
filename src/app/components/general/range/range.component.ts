@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { FilterRangeEntity, SelectedFilterEntity } from 'src/app/services/filter/filter.model';
 import { arrowIcon } from '../../components.constants';
 import { ImageComp } from '../../components.model';
@@ -6,7 +6,8 @@ import { ImageComp } from '../../components.model';
 @Component({
   selector: 'app-range',
   templateUrl: './range.component.html',
-  styleUrls: ['./range.component.scss']
+  styleUrls: ['./range.component.scss'],
+  standalone: true
 })
 export class RangeComponent {
   @Input() range!: FilterRangeEntity;

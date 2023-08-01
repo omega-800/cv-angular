@@ -5,7 +5,8 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 
 @Pipe({
   name: 'skillsFilter',
-  pure: false
+  pure: false,
+  standalone: true
 })
 export class SkillsFilterPipe implements PipeTransform {
 
@@ -18,7 +19,7 @@ export class SkillsFilterPipe implements PipeTransform {
 
   filtersApplyTo(skill: SkillEntity, filters: SelectedFilterEntity[]): boolean {
     let appliesRange: boolean = false;
-    if(filters.some(filter => filter.range)){
+    if (filters.some(filter => filter.range)) {
       filters.forEach(filter => {
         if (filter.range && filter.category === skillFilterProps.knowledge) {
           let min: number = Number(filter.value[0]);

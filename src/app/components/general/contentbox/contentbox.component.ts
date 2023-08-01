@@ -2,12 +2,17 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 import { ImageComp } from '../../components.model';
 import { arrowIcon } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { ImageComponent } from '../image/image.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contentbox',
   templateUrl: './contentbox.component.html',
   styleUrls: ['./contentbox.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [CarouselComponent, ImageComponent, NgIf]
 })
 export class ContentboxComponent implements OnInit {
   @Input() title!: string;

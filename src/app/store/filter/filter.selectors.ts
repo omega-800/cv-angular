@@ -1,10 +1,10 @@
 import { Selector } from "@ngxs/store";
 import { FilterState, FilterStateModel } from "./filter.state";
-import { Filters } from "./filter.model";
+import { FiltersEntity } from "src/app/services/filter/filter.model";
 
 export class FilterSelectors {
     @Selector([FilterState])
-    static filters(state: FilterStateModel):Filters[] {
+    static filters(state: FilterStateModel): FiltersEntity[] {
         return state.filters;
     }
 }

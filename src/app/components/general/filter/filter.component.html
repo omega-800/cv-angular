@@ -34,7 +34,7 @@
           ">
           <img #imgF class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
             loading="lazy" />
-          <h5 class="categoryTitle">{{ category.name }}</h5>
+          <p class="categoryTitle">{{ category.name }}</p>
         </div>
         <div class="tags flex-list">
           <div *ngFor="let tag of category.tags" (click)="toggleTag(category.id, category.name, tag.value);" class="tag"

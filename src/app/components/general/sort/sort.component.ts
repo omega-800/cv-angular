@@ -2,11 +2,15 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { arrowIcon } from '../../components.constants';
 import { FullSortEntity, SortEntity } from 'src/app/services/filter/filter.model';
 import { ImageComp } from '../../components.model';
+import { NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-sort',
   templateUrl: './sort.component.html',
-  styleUrls: ['./sort.component.scss']
+  styleUrls: ['./sort.component.scss'],
+  standalone: true,
+  imports: [NgFor, FormsModule]
 })
 export class SortComponent implements OnInit {
   @Input() fields!: SortEntity[];

@@ -1,6 +1,6 @@
 [
  {
-  "activity_id": "3f7f5343-ff0c-42d4-a138-04b641eaf333",
+  "activity_id": "26d9fb45-4b0b-4311-95cc-12414e223ed0",
   "name": "Papierarbeit",
   "name_e": "",
   "name_r": "",
@@ -12,7 +12,7 @@
   "url": ""
  },
  {
-  "activity_id": "e5200d9c-7ca2-4c22-878e-369f02d3e52c",
+  "activity_id": "47d323aa-52a1-4a19-a1cb-749705153a46",
   "name": "Zeichnen",
   "name_e": "",
   "name_r": "",
@@ -24,7 +24,7 @@
   "url": ""
  },
  {
-  "activity_id": "ad0f7ccb-3ca9-49d3-b763-e968e78189ae",
+  "activity_id": "284720b0-f5cb-4b72-ac67-666eac327cf8",
   "name": "Graffiti",
   "name_e": "",
   "name_r": "",
@@ -36,7 +36,7 @@
   "url": ""
  },
  {
-  "activity_id": "710d9d4f-c714-4ad0-94d4-ab59dcc3813b",
+  "activity_id": "390ef273-84bb-402a-aaf6-8f229309c4c8",
   "name": "Holzarbeit",
   "name_e": "",
   "name_r": "",
@@ -48,7 +48,7 @@
   "url": ""
  },
  {
-  "activity_id": "0f156e24-56d7-4c0b-b7a5-92d4a1f86169",
+  "activity_id": "75dc8952-acf2-492e-ad41-2fadb622a35f",
   "name": "Nähen",
   "name_e": "",
   "name_r": "",
@@ -60,7 +60,7 @@
   "url": ""
  },
  {
-  "activity_id": "b40c3b15-92b1-4a3b-9581-56ab6093eb3a",
+  "activity_id": "17a1583a-2a0a-452b-8202-ba221ec2e342",
   "name": "Gitarre",
   "name_e": "",
   "name_r": "",
@@ -72,7 +72,7 @@
   "url": ""
  },
  {
-  "activity_id": "7afab245-74ec-4713-a855-61cd8a100871",
+  "activity_id": "4256a121-65f9-4847-b08b-b27d380bc98b",
   "name": "Bass",
   "name_e": "",
   "name_r": "",
@@ -84,7 +84,7 @@
   "url": ""
  },
  {
-  "activity_id": "96aa48c4-7932-4be2-aed1-3fd041920cc9",
+  "activity_id": "f2ce63cb-e034-4293-a8aa-96348c406119",
   "name": "Schlagzeug",
   "name_e": "",
   "name_r": "",
@@ -96,7 +96,7 @@
   "url": ""
  },
  {
-  "activity_id": "7a791750-54cb-4f60-ba0c-9f8557e7535b",
+  "activity_id": "266172db-7d15-40f2-b947-18f0e8327fcf",
   "name": "Produzieren",
   "name_e": "",
   "name_r": "",
@@ -108,7 +108,7 @@
   "url": ""
  },
  {
-  "activity_id": "43ce10fc-0218-4ee7-bfe9-655b7cf0a24b",
+  "activity_id": "60f97cd7-8237-4268-bc30-1f3d1f8f24a6",
   "name": "Hort",
   "name_e": "",
   "name_r": "",
@@ -120,7 +120,7 @@
   "url": ""
  },
  {
-  "activity_id": "9d23630e-3357-4255-bd1b-6d541cccb642",
+  "activity_id": "e3d27203-d2a3-41e1-947b-26cbeec7b285",
   "name": "Fahrrad",
   "name_e": "",
   "name_r": "",
@@ -132,7 +132,7 @@
   "url": ""
  },
  {
-  "activity_id": "8559546b-931d-4b0e-94a4-4c29e949ff19",
+  "activity_id": "5efa717f-5612-415d-a77a-1c48a3c9345e",
   "name": "Volleyball",
   "name_e": "",
   "name_r": "",
@@ -144,7 +144,7 @@
   "url": ""
  },
  {
-  "activity_id": "1830f9f5-59b7-4d76-ad91-2f63eae06dde",
+  "activity_id": "6445d892-2616-4079-bdae-c40ea25c3b93",
   "name": "Skateboard",
   "name_e": "",
   "name_r": "",
@@ -156,7 +156,7 @@
   "url": ""
  },
  {
-  "activity_id": "eeceee04-a0bc-472e-86e5-139afaedddbf",
+  "activity_id": "ad5f4081-fe43-49ec-94bd-29965a15d9b4",
   "name": "Tischtennis",
   "name_e": "",
   "name_r": "",
@@ -168,7 +168,7 @@
   "url": ""
  },
  {
-  "activity_id": "cbbd7143-4a92-44ec-b544-7e7f36ea3c84",
+  "activity_id": "d6a9a3f3-2510-4bad-af61-d731ecb4a655",
   "name": "Wandern",
   "name_e": "",
   "name_r": "",
@@ -180,7 +180,7 @@
   "url": ""
  },
  {
-  "activity_id": "afc2e4ab-a357-4034-9e11-4a278c3dc865",
+  "activity_id": "039019f8-720f-4a4a-bc26-082b81cb250e",
   "name": "CEVI",
   "name_e": "",
   "name_r": "",
@@ -192,7 +192,7 @@
   "url": ""
  },
  {
-  "activity_id": "845138d7-a439-4c9e-85d7-f27c9e4ddc0c",
+  "activity_id": "0b6946ca-a119-4420-986d-03f2a3127707",
   "name": "Englischunterricht",
   "name_e": "",
   "name_r": "",
@@ -204,7 +204,7 @@
   "url": ""
  },
  {
-  "activity_id": "ed79ca63-9be3-4198-bf86-24f8233e7ff2",
+  "activity_id": "9d2fe22c-d4ac-41ee-8182-a83d7a6551f6",
   "name": "Mathematikunterricht",
   "name_e": "",
   "name_r": "",
@@ -216,7 +216,7 @@
   "url": ""
  },
  {
-  "activity_id": "061031a6-38df-4477-8270-db8e8547f6f4",
+  "activity_id": "eba1f0f3-eada-4d3a-9429-08c96c33023f",
   "name": "Informatikunterricht",
   "name_e": "",
   "name_r": "",
