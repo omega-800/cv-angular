@@ -1,24 +1,20 @@
 import { ImageComp } from "src/app/components/components.model";
 import { Entity } from "../entities.model"
 
-export interface SelectedFilterEntity extends Entity {
-  category: string;
-  range: boolean;
-  value: FilterType[];
+export enum FilterTypes {
+  PROJECT = 'filter_project',
+  SKILL = 'filter_skill'
 }
 
 export interface FiltersEntity extends Entity {
+  type: FilterTypes;
   categories: FilterCategoryEntity[];
-  ranges?: FilterRangeEntity[];
-}
-
-export interface FilterRangeEntity extends Entity {
-  values: RangeType[];
-  step: RangeType;
 }
 
 export interface FilterCategoryEntity extends Entity {
   selected?: boolean;
+  isRange: boolean;
+  step?: FilterType;
   tags: TagEntity[];
 }
 
@@ -38,4 +34,3 @@ export interface FullSortEntity extends Entity {
 }
 
 export type FilterType = string | boolean | number | Date;
-export type RangeType = Date | number;

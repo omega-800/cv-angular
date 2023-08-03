@@ -21,12 +21,9 @@ import { ClientService } from '../client/client.service';
 })
 export class ProjectService {
   private onlyProjects: ProjectOnly[] = (projectData as any).default;
-  private projectAuthorLinks: Project_Author[] = (projectAuthorData as any)
-    .default;
-  private projectSkillLinks: Project_Skill[] = (projectSkillData as any)
-    .default;
-  private projectClientLinks: Project_Client[] = (projectClientData as any)
-    .default;
+  private projectAuthorLinks: Project_Author[] = (projectAuthorData as any).default;
+  private projectSkillLinks: Project_Skill[] = (projectSkillData as any).default;
+  private projectClientLinks: Project_Client[] = (projectClientData as any).default;
 
   private projects: ProjectEntity[];
 
@@ -49,6 +46,10 @@ export class ProjectService {
     return Object.values(this.projects).filter(
       (project) => project.project_id === id
     )[0];
+  }
+
+  getProjectsByCareer(careerID: string): ProjectEntity[] {
+    return Object.values(this.projects).filter(project => project.career?.career_id === careerID);
   }
 
   fillProject(project: ProjectOnly, images: ImageComp[]): ProjectEntity {

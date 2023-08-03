@@ -1,17 +1,16 @@
 <h1>Projekte</h1>
 <div class="filters">
-  <app-filter [filters]="skillsFilter" filterName="Filtern nach Skill"
-    (filterEmitter)="filterProjectsBySkill($event)"></app-filter>
-  <app-filter [filters]="projectsFilter" filterName="Filtern nach Projekteigenschaft"
-    (filterEmitter)="filterProjects($event)"></app-filter>
+  <!--app-filter [filters]="[skillsFilter]" filterName="Filtern nach Skill"
+    (filterEmitter)="filterProjectsBySkill($event)"></app-filter-->
+  <app-filter [filters]="filters" (filterEmitter)="filterProjects($event)"></app-filter>
   <app-sort [fields]="sortFields" (selectedEmitter)="sortProjectsBy($event)"></app-sort>
 </div>
 <app-contentbox *ngFor="
     let project of projects
       | projectsSort : sortValue : sortAsc
-      | projectsFilter : selectedSkillFilter : selectedProjectFilter
+      | projectsFilter : selectedFilters
   " [image]="project.image" [title]="project.name" [subTitle]="project.date | pipeDate"
-  [description]="project.description" [link]="project.url">
+  [description]="project.description" [link]="project.url" [id]="project.id">
   <div *ngIf="project.authors" class="bot authors flex-column slimpill notskills">
     <h4>Author{{ project.authors.length > 1 ? "en" : "" }}</h4>
     <div class="content flex-e2e">

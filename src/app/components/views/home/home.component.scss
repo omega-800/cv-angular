@@ -59,6 +59,13 @@
             & .age {
                 font-family: variables.$mono;
             }
+
+            & a {
+                border-bottom: variables.$defborderthin;
+                //text-decoration: underline;
+                border-radius: variables.$elem-padding;
+                white-space: nowrap;
+            }
         }
 
         & .socials {

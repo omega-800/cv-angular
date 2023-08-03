@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { skillSortProps } from 'src/app/pipes/skills-sort/skills-sort.model';
-import { FiltersEntity, FullSortEntity, SelectedFilterEntity, SortEntity } from 'src/app/services/filter/filter.model';
+import { FiltersEntity, FullSortEntity, SortEntity } from 'src/app/services/filter/filter.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { FilterComponent } from '../../filter/filter.component';
@@ -24,15 +24,14 @@ export class SkillsPercentComponent implements OnInit {
   sortFields: SortEntity[] = skillSortProps;
   sortValue: SortEntity = { id: "knowledgepercent", value: "knowledgepercent", name: 'knowledgepercent' };
   sortAsc: boolean = true;
-  filter: FiltersEntity;
-  selectedFilter: SelectedFilterEntity[] = [];
+  filter: FiltersEntity[] = [];
+  selectedFilter: FiltersEntity[] = [];
 
   constructor(private skillsFilterService: SkillsFilterService) {
-    this.filter = { id: '', name: '', categories: [] };
   }
 
   ngOnInit(): void {
-    this.filter = this.skillsFilterService.getSkillFiltersOfSkills(this.skills);
+    this.filter = [this.skillsFilterService.getSkillFiltersOfSkills(this.skills)];
   }
 
   sortSkillsBy(selected: FullSortEntity) {
@@ -40,7 +39,7 @@ export class SkillsPercentComponent implements OnInit {
     this.sortAsc = selected.ascending;
   }
 
-  filterSkillsBy(selected: SelectedFilterEntity[]) {
+  filterSkillsBy(selected: FiltersEntity[]) {
     this.selectedFilter = selected;
   }
 

@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { FilterRangeEntity, SelectedFilterEntity } from 'src/app/services/filter/filter.model';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { FilterCategoryEntity } from 'src/app/services/filter/filter.model';
 import { arrowIcon } from '../../components.constants';
 import { ImageComp } from '../../components.model';
 
@@ -7,15 +7,15 @@ import { ImageComp } from '../../components.model';
   selector: 'app-range',
   templateUrl: './range.component.html',
   styleUrls: ['./range.component.scss'],
+  host: { 'class': 'default-grid' },
   standalone: true
 })
 export class RangeComponent {
-  @Input() range!: FilterRangeEntity;
-  @Output() rangeEmitter = new EventEmitter<SelectedFilterEntity>();
+  @Input() range!: FilterCategoryEntity;
+  @Output() rangeEmitter = new EventEmitter<FilterCategoryEntity>();
   arrowIcon: ImageComp = arrowIcon;
 
   changeRange(
-    range: FilterRangeEntity,
     sliderOne: HTMLInputElement,
     sliderTwo: HTMLInputElement,
     outputOne: HTMLOutputElement,
@@ -24,13 +24,8 @@ export class RangeComponent {
     let [smaller, larger] = parseInt(sliderOne.value) < parseInt(sliderTwo.value)
       ? [sliderOne.value, sliderTwo.value]
       : [sliderTwo.value, sliderOne.value];
-    let rangeFilter: SelectedFilterEntity = {
-      id: range.id,
-      name: range.name,
-      range: true,
-      category: range.id,
-      value: [smaller, larger],
-    };
+    let rangeFilter = JSON.parse(JSON.stringify(this.range));
+    rangeFilter.tags = [JSON.parse(JSON.stringify(this.range.tags.find(elem => elem.value == smaller)!)), JSON.parse(JSON.stringify(this.range.tags.find(elem => elem.value == larger)!))];
     [outputOne.innerHTML, outputTwo.innerHTML] = [smaller, larger];
     this.rangeEmitter.emit(rangeFilter);
   }

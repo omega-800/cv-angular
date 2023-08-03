@@ -1,20 +1,33 @@
 <nav class="navbar">
   <ul class="flex-row">
-    <li class="flex-row">
-      <p class="type-title">Interessiert an</p>
-      <div *ngFor="let type of types" class="type-container">
-        <img [src]="type.icon.path" [alt]="type.icon.alt" class="small-image" (click)="setInterest(type.type)" />
-        <app-tooltip [name]="type.name" [direction]="d.RIGHT"></app-tooltip>
+    <li class="flex-row interests">
+      <img [src]="interestIcon.path" [alt]="interestIcon.alt" class="icon pill link"
+        (click)="dropdown.classList.toggle('notactive')" />
+      <div #dropdown class="dropdown notactive flex-list pill">
+        <div class="title flex-e2e">
+          <h3 class="type-title">Interessiert an</h3>
+          <h4 class="link pill" (click)="dropdown.classList.toggle('notactive')"><b>X</b></h4>
+        </div>
+        <div class="types flex-list-full">
+          <div *ngFor="let type of types" [class]="(type.type == interest ? 'active ' : '')+ 'type-container link pill'"
+            (click)="setInterest(type.type);dropdown.classList.toggle('notactive')">
+            <img [src]="type.icon.path" [alt]="type.icon.alt" class="icon" />
+            <h5>{{type.name}}</h5>
+          </div>
+        </div>
       </div>
     </li>
     <li>
-      <a routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page" class="link pill">Home</a>
+      <a routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page" queryParamsHandling="merge"
+        class="link pill">Home</a>
     </li>
     <li>
-      <a routerLink="career" routerLinkActive="active" ariaCurrentWhenActive="page" class="link pill">Karriere</a>
+      <a routerLink="career" routerLinkActive="active" ariaCurrentWhenActive="page" queryParamsHandling="merge"
+        class="link pill">Karriere</a>
     </li>
     <li>
-      <a routerLink="projects" routerLinkActive="active" ariaCurrentWhenActive="page" class="link pill">Projekte</a>
+      <a routerLink="projects" routerLinkActive="active" ariaCurrentWhenActive="page" queryParamsHandling="merge"
+        class="link pill">Projekte</a>
     </li>
     <li>
 

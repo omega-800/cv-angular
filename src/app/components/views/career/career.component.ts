@@ -12,6 +12,9 @@ import { ButtonComponent } from '../../general/button/button.component';
 import { ContactpointComponent } from '../../general/contactpoint/contactpoint.component';
 import { AddressComponent } from '../../general/address/address.component';
 import { NgFor, NgIf } from '@angular/common';
+import { ProjectService } from 'src/app/services/project/project/project.service';
+import { ProjectEntity } from 'src/app/services/project/project/project.model';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-career',
@@ -30,8 +33,21 @@ export class CareerComponent {
   urlIcon: ImageComp = urlIcon;
   lt: LinkTypes = linkTypes;
 
-  constructor(careerService: CareerService) {
+  constructor(careerService: CareerService, private projectService: ProjectService, private router: Router, private activatedRoute: ActivatedRoute) {
     this.careers = careerService.getCareers();
+  }
+
+  getProjects(careerID: string): ProjectEntity[] {
+    return this.projectService.getProjectsByCareer(careerID);
+  }
+
+  getThumbnail(image: ImageComp): ImageComp {
+    return image.path.endsWith("/") ? { ...image, path: image.path + 'thumbnail.webp' } : image
+  }
+
+  goToProject(projectID: string) {
+    return () => this.router.navigate(['../projects'],
+      { queryParams: { project: projectID }, relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
   }
 
   ol = (href: string) => {

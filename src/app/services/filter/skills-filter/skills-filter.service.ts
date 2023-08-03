@@ -3,7 +3,7 @@ import {
   SkillCategoryEntity,
   SkillSubCategoryEntity,
 } from '../../skills/skill-category/skill-category.model';
-import { FilterCategoryEntity, FilterRangeEntity } from '../filter.model';
+import { FilterCategoryEntity, FilterTypes, FiltersEntity } from '../filter.model';
 import { SkillEntity } from '../../skills/skill/skill.model';
 import { ApplicationTypeEntity } from '../../skills/application/application.model';
 import { skillFilterProps } from './skills-filter.model';
@@ -12,9 +12,8 @@ import { skillFilterProps } from './skills-filter.model';
   providedIn: 'root',
 })
 export class SkillsFilterService {
-  constructor() {}
 
-  getSkillFiltersOfSkills(skills: SkillEntity[]): any {
+  getSkillFiltersOfSkills(skills: SkillEntity[]): FiltersEntity {
     let subCategories: SkillSubCategoryEntity[] = [];
     let categories: SkillCategoryEntity[] = [];
     let appTypes: ApplicationTypeEntity[] = [];
@@ -22,7 +21,6 @@ export class SkillsFilterService {
     let percent: number[] = [];
     let hobbies: boolean[] = [];
     let filters: FilterCategoryEntity[] = [];
-    let ranges: FilterRangeEntity[] = [];
 
     skills.forEach((skill) => {
       skill.skillsubcategories.forEach((subCat) => {
@@ -62,30 +60,30 @@ export class SkillsFilterService {
         percent.push(skill.knowledgepercent);
       }
     });
-    if (categories.length > 1) {
+    if (categories.length > 0) {
       filters.push(this.getCategoryFilters(categories));
     }
-    if (subCategories.length > 1) {
+    if (subCategories.length > 0) {
       filters.push(this.getSubCategoryFilters(subCategories));
     }
-    if (types.length > 1) {
+    if (types.length > 0) {
       filters.push(this.getTypeFilters(types));
     }
-    if (appTypes.length > 1) {
+    if (appTypes.length > 0) {
       filters.push(this.getApplicationTypeFilters(appTypes));
-    }
-    if (percent.length > 2) {
-      ranges.push(this.getKnowledgeRange(percent, 5));
     }
     if (hobbies.includes(false) && hobbies.includes(true)) {
       filters.push(this.getHobbyFilters());
+    }
+    if (percent.length > 2) {
+      filters.push(this.getKnowledgeRange(percent, 5));
     }
 
     return {
       id: 'filter_skill',
       name: 'Skills',
+      type: FilterTypes.SKILL,
       categories: filters,
-      ranges: ranges,
     };
   }
 
@@ -94,6 +92,7 @@ export class SkillsFilterService {
       id: skillFilterProps.category,
       name: 'Kategorie',
       selected: true,
+      isRange: false,
       tags: categories.map((skillCat) => {
         return {
           id: skillFilterProps.category + '_' + skillCat.skillcategory_id,
@@ -113,6 +112,7 @@ export class SkillsFilterService {
       id: skillFilterProps.subcategory,
       name: 'Unterkategorie',
       selected: true,
+      isRange: false,
       tags: subCategories.map((skillSubCat) => {
         return {
           id:
@@ -134,6 +134,7 @@ export class SkillsFilterService {
       id: skillFilterProps.apptype,
       name: 'Applikationstyp',
       selected: true,
+      isRange: false,
       tags: appTypes.map((appType) => {
         return {
           id: skillFilterProps.apptype + '_' + appType.applicationtype_id,
@@ -150,6 +151,7 @@ export class SkillsFilterService {
       id: skillFilterProps.type,
       name: 'Typ',
       selected: true,
+      isRange: false,
       tags: types.map((type) => {
         return {
           id: skillFilterProps.type + '_' + type,
@@ -166,16 +168,17 @@ export class SkillsFilterService {
       id: skillFilterProps.hobby,
       name: 'Hobby',
       selected: true,
+      isRange: false,
       tags: [
         {
           id: skillFilterProps.hobby + '_true',
-          name: 'Freizeitbeschäftigung',
+          name: 'Ja',
           selected: false,
           value: true,
         },
         {
           id: skillFilterProps.hobby + '_false',
-          name: 'Keine Freizeitbeschäftigung',
+          name: 'Nein',
           selected: false,
           value: false,
         },
@@ -183,11 +186,25 @@ export class SkillsFilterService {
     };
   }
 
-  getKnowledgeRange(items: number[], step: number): FilterRangeEntity {
+  getKnowledgeRange(items: number[], step: number): FilterCategoryEntity {
+    let sorted = items.sort((a, b) => a - b);
+    let itemsFull = Array.from(
+      { length: (sorted[sorted.length - 1] - sorted[0]) / step + 1 },
+      (value, index) => sorted[0] + index * step
+    );
     return {
       id: skillFilterProps.knowledge,
       name: 'Prozent',
-      values: items.sort((a, b) => a - b),
+      isRange: true,
+      tags: itemsFull.map((item) => {
+        return {
+          id: skillFilterProps.knowledge + '_' + item.toString(),
+          name: item.toString(),
+          selected: false,
+          value: item,
+        }
+      })
+        .sort((a, b) => a.value - b.value),
       step: step,
     };
   }

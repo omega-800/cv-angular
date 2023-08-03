@@ -1,4 +1,5 @@
 @use "src/scss/variables.scss" as variables;
+@use "src/scss/screens.scss" as screens;
 
 $range-width: 80%;
 $range-height: variables.$elem-size;
@@ -22,28 +23,58 @@ $range-useful-width: calc(100% - $range-height);
 }
 
 :host {
-    display: grid;
-    grid-template-areas: "img title"
-        "img range";
-    grid-template-rows: auto auto;
-    grid-template-columns: variables.$elem-size auto;
     margin: variables.$elem-padding;
     border-top: variables.$defborderthin;
 
-    & .arrowImg {
-        grid-area: img;
-        transform: rotate(90deg);
+    grid-template-areas: "title" "range";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+
+    & .categoryTitle {
+        grid-area: title;
+        text-align: center;
     }
 
-    & h5 {
-        grid-area: title;
+    @include screens.laptop-screen {
+        grid-template-areas: "title range";
+        grid-template-rows: auto;
+        grid-template-columns: 25% auto;
+        border-top: none;
+
+        & .categoryTitle {
+            text-align: left;
+        }
+    }
+
+    @include screens.desktop-screen {
+        grid-template-areas: "title range";
+        grid-template-rows: auto;
+        grid-template-columns: 20% auto;
+        border-top: none;
+
+        & .categoryTitle {
+            text-align: left;
+        }
+    }
+
+    @include screens.large-screen {
+        grid-template-areas: "title range";
+        grid-template-rows: auto;
+        grid-template-columns: 15% auto;
+        border-top: none;
+
+        & .categoryTitle {
+            text-align: left;
+        }
     }
 
     & .range {
         grid-area: range;
+        margin: auto 0;
 
         & output {
             width: calc((100% - $range-width) / 2);
+            font-family: variables.$mono;
 
             &:first-child {
                 text-align: left;

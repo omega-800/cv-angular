@@ -1,4 +1,5 @@
 export const projectFilterProps = {
+  relevance: "filter_project_relevance",
   link: "filter_project_link",
   author: "filter_project_author",
   career: "filter_project_career",

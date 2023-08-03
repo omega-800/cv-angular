@@ -1,50 +1,63 @@
 <h1>Karriere</h1>
-<div *ngFor="let career of careers">
-  <ng-container *ngIf="career.type === ct.SCHOOL ? career.school : career.workplace as item">
-    <app-contentbox [imagePreview]="{
+<ng-container *ngFor="let career of careers">
+  <app-contentbox *ngIf="career.type === ct.SCHOOL ? career.school : career.workplace as item" [imagePreview]="{
         id: item.name,
         name: item.name,
         path: career.type.logo.path,
         alt: career.type.name
       }" [image]="item.thumbnail" title="{{ item.name }}"
-      [subTitle]="(career.type === ct.SCHOOL ? 'Besucht von ': 'Angestellt von ')+career.yearfrom+' bis '+career.yearto"
-      description="{{ career.description }}">
-      <div class="bot bottomLinks default-grid">
-        <div class="contactPoints flex-list slimpill">
-          <div class="title">
-            <img src="{{ contactIcon.path }}" alt="{{ contactIcon.alt }}" loading="lazy" class="small-image" />
-            <h4>Kontakt{{ item.contactpoints.length > 1 ? "e" : "" }}</h4>
-          </div>
-          <app-contactpoint *ngFor="let contact of item.contactpoints" [contact]="contact"></app-contactpoint>
+    [subTitle]="(career.type === ct.SCHOOL ? 'Besucht von ': 'Angestellt von ')+career.yearfrom+' bis '+career.yearto"
+    description="{{ career.description }}" [id]="career.id">
+    <div class="bot bottomLinks default-grid">
+      <div class="contactPoints flex-list slimpill">
+        <div class="title">
+          <img src="{{ contactIcon.path }}" alt="{{ contactIcon.alt }}" loading="lazy" class="small-image" />
+          <h4>Kontakt{{ item.contactpoints.length > 1 ? "e" : "" }}</h4>
         </div>
-        <div class="web flex-list slimpill">
-          <div class="title">
-            <img src="{{ urlIcon.path }}" alt="{{ urlIcon.alt }}" loading="lazy" class="small-image" />
-            <h4>Webseite</h4>
-          </div>
-          <div class="content flex-e2e">
-            <h5>Homepage</h5>
-            <app-button [onClick]="ol(item.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
-          </div>
+        <app-contactpoint *ngFor="let contact of item.contactpoints" [contact]="contact"></app-contactpoint>
+      </div>
+      <div class="web flex-list slimpill">
+        <div class="title">
+          <img src="{{ urlIcon.path }}" alt="{{ urlIcon.alt }}" loading="lazy" class="small-image" />
+          <h4>Webseite</h4>
         </div>
-        <div class="address flex-list slimpill">
-          <div class="title">
-            <img src="{{ addressIcon.path }}" alt="{{ addressIcon.alt }}" loading="lazy" class="small-image" />
-            <h4>Adresse</h4>
-          </div>
-          <app-address [address]="item.address"></app-address>
+        <div class="content flex-e2e">
+          <h5>Homepage</h5>
+          <app-button [onClick]="ol(item.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
         </div>
       </div>
-      <div #skills bottom class="bot skills notactive">
+      <div class="address flex-list slimpill">
+        <div class="title">
+          <img src="{{ addressIcon.path }}" alt="{{ addressIcon.alt }}" loading="lazy" class="small-image" />
+          <h4>Adresse</h4>
+        </div>
+        <app-address [address]="item.address"></app-address>
+      </div>
+    </div>
+    <ng-container bottom>
+      <div *ngIf="getProjects(career.career_id) as projectsList" #projects class="bot projects notactive">
+        <div class="showProjects flex-row-nojust slimpill" (click)="
+            projects.classList.toggle('notactive'); imgProjects.classList.toggle('notactive')
+          ">
+          <img #imgProjects class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
+            loading="lazy" />
+          <h4>Projekte entwickelt</h4>
+        </div>
+        <div class="projectsList slimpill flex-e2e">
+          <app-button *ngFor="let project of projectsList" [name]="project.name" [image]="getThumbnail(project.image)"
+            [type]="lt.OTHER" [showName]="true" [onClick]="goToProject(project.id)"></app-button>
+        </div>
+      </div>
+      <div #skills class="bot skills notactive">
         <div class="showSkills flex-row-nojust slimpill" (click)="
             skills.classList.toggle('notactive'); img.classList.toggle('notactive')
           ">
           <img #img class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
             loading="lazy" />
-          <h4>Angewandte Skills</h4>
+          <h4>Angewandte Skills (Häufigkeit in %)</h4>
         </div>
-        <app-skills-percent [skills]="career.skills" name="(Häufigkeit in %)"></app-skills-percent>
+        <app-skills-percent [skills]="career.skills" name=""></app-skills-percent>
       </div>
-    </app-contentbox>
-  </ng-container>
-</div>
+    </ng-container>
+  </app-contentbox>
+</ng-container>

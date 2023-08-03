@@ -1,22 +1,21 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { ToggleFilter } from './filter.actions';
 import { Injectable } from '@angular/core';
-import { FiltersEntity } from 'src/app/services/filter/filter.model';
+import { FilterTypes, FiltersEntity } from 'src/app/services/filter/filter.model';
 
 
 export interface FilterStateModel {
-  name: string;
   filters: FiltersEntity[];
 }
 
 @State<FilterStateModel>({
   name: 'filter',
   defaults: {
-    name: 'Filters',
     filters: [
       {
         id: 'asdf',
         name: 'skills',
+        type:FilterTypes.SKILL,
         categories: [
           {
             id: 'asdf',

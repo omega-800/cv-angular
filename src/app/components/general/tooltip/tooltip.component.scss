@@ -7,18 +7,20 @@
     position: relative;
     display: block;
 
-    @include screens.mobile-screen {
-        position: absolute;
-        width: 100vw;
-        height: 0;
-        left: 0;
-    }
+    & :has(.direction-top) {
+        @include screens.mobile-screen {
+            position: absolute;
+            width: 100vw;
+            height: 0;
+            left: 0;
+        }
 
-    @include screens.tablet-screen {
-        position: absolute;
-        width: 100vw;
-        left: 0;
-        height: 0;
+        @include screens.tablet-screen {
+            position: absolute;
+            width: 100vw;
+            left: 0;
+            height: 0;
+        }
     }
 
     & .tooltip {

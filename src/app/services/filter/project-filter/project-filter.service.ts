@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {
   FilterCategoryEntity,
-  FilterRangeEntity,
+  FilterTypes,
   FiltersEntity,
 } from '../filter.model';
 import { PersonEntity } from '../../person/person/person.model';
@@ -11,24 +11,32 @@ import { ClientEntity } from '../../project/client/client.model';
 import { linkTypes } from 'src/app/components/components.constants';
 import { LinkType } from 'src/app/components/components.model';
 import { projectFilterProps } from './project-filter.model';
+import { Interest } from 'src/app/store/app/app.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectFilterService {
-  constructor() {}
 
   getProjectFiltersOfProjects(projects: ProjectEntity[]): FiltersEntity {
+    let relevanceIt: number[] = [];
+    let relevanceHealth: number[] = [];
+    let relevanceArt: number[] = [];
+    let relevanceEducation: number[] = [];
     let links: LinkType[] = [];
     let authors: PersonEntity[] = [];
     let careers: CareerEntity[] = [];
     let clients: ClientEntity[] = [];
     let clientPerson: PersonEntity[] = [];
     let dates: Date[] = [];
-    let ranges: FilterRangeEntity[] = [];
     let filters: FilterCategoryEntity[] = [];
 
     projects.forEach((project) => {
+      if (project.relevance_it !== undefined && !relevanceIt.includes(project.relevance_it)) relevanceIt.push(project.relevance_it)
+      if (project.relevance_health !== undefined && !relevanceHealth.includes(project.relevance_health)) relevanceHealth.push(project.relevance_health)
+      if (project.relevance_education !== undefined && !relevanceEducation.includes(project.relevance_education)) relevanceEducation.push(project.relevance_education)
+      if (project.relevance_art !== undefined && !relevanceArt.includes(project.relevance_art)) relevanceArt.push(project.relevance_art)
+
       if (
         !links.some((link) => link.id == linkTypes.GITHUB.id) &&
         project.github !== undefined
@@ -77,27 +85,67 @@ export class ProjectFilterService {
       }
     });
 
+    let amountIt = 8;
+    let amountArt = 6;
+    let amountHealth = 4;
+    let amountEducation = 1;
+
+    let relevanceTags = [];
+    if (relevanceIt.length > amountIt) relevanceTags.push({
+      id: Interest.IT,
+      name: 'Relevant',
+      selected: true,
+      value: relevanceIt.sort((a, b) => b - a).slice(amountIt - 1, amountIt)[0],
+    })
+    if (relevanceArt.length > amountArt) relevanceTags.push({
+      id: Interest.ART,
+      name: 'Relevant',
+      selected: true,
+      value: relevanceArt.sort((a, b) => b - a).slice(amountArt - 1, amountArt)[0],
+    })
+    if (relevanceHealth.length > amountHealth) relevanceTags.push({
+      id: Interest.HEALTH,
+      name: 'Relevant',
+      selected: true,
+      value: relevanceHealth.sort((a, b) => b - a).slice(amountHealth - 1, amountHealth)[0],
+    })
+    if (relevanceEducation.length > amountEducation) relevanceTags.push({
+      id: Interest.EDUCATION,
+      name: 'Relevant',
+      selected: true,
+      value: relevanceEducation.sort((a, b) => b - a).slice(amountEducation - 1, amountEducation)[0],
+    })
+
+    if (relevanceTags.length > 0) {
+      filters.push({
+        id: projectFilterProps.relevance,
+        name: 'Relevance',
+        selected: true,
+        isRange: false,
+        tags: relevanceTags
+      });
+    }
+    if (careers.length > 0) {
+      filters.push(this.getCareerFilters(careers));
+    }
+    if (authors.length > 0) {
+      filters.push(this.getAuthorFilters(authors));
+    }
     if (links.length > 0) {
       filters.push(this.getLinksFilters(links));
     }
-    if (authors.length > 1) {
-      filters.push(this.getAuthorFilters(authors));
-    }
-    if (careers.length > 1) {
-      filters.push(this.getCareerFilters(careers));
-    }
-    if (clients.length > 1) {
+    if (clients.length > 0) {
       filters.push(this.getClientFilters(clients));
     }
-    if (dates.length > 1) {
-      ranges.push(this.getDateRange(dates));
+    if (dates.length > 2) {
+      filters.push(this.getDateRange(dates));
     }
 
     return {
-      id: 'filter_project',
-      name: 'Projects',
+      id: FilterTypes.PROJECT,
+      type: FilterTypes.PROJECT,
+      name: 'Projekt',
       categories: filters,
-      ranges: ranges,
     };
   }
 
@@ -105,11 +153,12 @@ export class ProjectFilterService {
     return {
       id: projectFilterProps.link,
       name: 'Links',
+      isRange: false,
       selected: true,
       tags: links.map((link) => {
         return {
           id: projectFilterProps.link + '_' + link.name,
-          name: 'Hat ' + link.name,
+          name: link.name,
           selected: false,
           value: link.id,
         };
@@ -122,6 +171,7 @@ export class ProjectFilterService {
       id: projectFilterProps.author,
       name: 'Authoren',
       selected: true,
+      isRange: false,
       tags: authors.map((author) => {
         return {
           id: projectFilterProps.author + '_' + author.name,
@@ -137,11 +187,12 @@ export class ProjectFilterService {
     return {
       id: projectFilterProps.career,
       name: 'Karriere',
+      isRange: false,
       selected: true,
       tags: careers.map((career) => {
         return {
           id: projectFilterProps.career + '_' + career.name,
-          name: career.name,
+          name: career.school ? career.school.name : career.workplace ? career.workplace.name : career.name,
           selected: false,
           value: career.career_id,
         };
@@ -154,6 +205,7 @@ export class ProjectFilterService {
       id: projectFilterProps.client,
       name: 'Klient',
       selected: true,
+      isRange: false,
       tags: clients.map((client) => {
         return {
           id: projectFilterProps.client + '_' + client.name,
@@ -165,15 +217,23 @@ export class ProjectFilterService {
     };
   }
 
-  getDateRange(dates: Date[]): FilterRangeEntity {
+  getDateRange(dates: Date[]): FilterCategoryEntity {
     return {
       id: projectFilterProps.date,
       name: 'Jahr',
+      isRange: true,
       step: 1,
-      values: dates
+      tags: dates
         .filter((date) => !isNaN(Number(date)))
-        .map((date) => date.getFullYear())
-        .sort((a, b) => a - b),
+        .map((date) => {
+          return {
+            id: projectFilterProps.date + '_' + date.getFullYear().toString(),
+            name: date.getFullYear().toString(),
+            selected: false,
+            value: date.getFullYear(),
+          }
+        })
+        .sort((a, b) => a.value - b.value),
     };
   }
 }

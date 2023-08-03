@@ -9,6 +9,7 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { ButtonComponent } from '../../general/button/button.component';
 import { SkillsPercentComponent } from '../../general/skills/skills-percent/skills-percent.component';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -28,7 +29,9 @@ export class HomeComponent {
 
   constructor(
     private personService: PersonService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
     this.skills = this.skillService.getSkills();
     this.me = this.personService.getPersonByName('Georgiy');
@@ -52,5 +55,8 @@ export class HomeComponent {
     setInterval(() => {
       this.age = new Date();
     }, 1000);
+  }
+  navigateProjects() {
+    this.router.navigate(['../projects'], { relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
   }
 }

@@ -9,7 +9,7 @@ export const routes: Route[] = [
   { path: '**', loadComponent: () => import('./components/views/page-not-found/page-not-found.component').then(m => m.PageNotFoundComponent) },
 ]
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules, paramsInheritanceStrategy: 'always' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

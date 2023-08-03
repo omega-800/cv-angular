@@ -296,6 +296,10 @@ CREATE TABLE IF NOT EXISTS public.project
     image character varying COLLATE pg_catalog."default",
     github character varying COLLATE pg_catalog."default",
     date date,
+    relevance_it smallint,
+    relevance_education smallint,
+    relevance_art smallint,
+    relevance_health smallint,
     client_id uuid,
     career_id uuid,
     CONSTRAINT project_pkey PRIMARY KEY (project_id)

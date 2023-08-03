@@ -1,6 +1,6 @@
 <h2>{{name}}</h2>
 <div class="filters">
-    <app-filter [filters]="filter" filterName="Filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
+    <app-filter [filters]="filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
     <app-sort [fields]="sortFields" (selectedEmitter)="sortSkillsBy($event)"></app-sort>
 </div>
 <div class="skill-container flex-list"

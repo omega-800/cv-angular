@@ -24,108 +24,25 @@
                 &>* {
                     display: inline-block;
                 }
-
-                &:hover {
-                    cursor: pointer;
-                }
             }
         }
     }
 
-    & .filterComp {
+    & .fullFilterComp {
         padding: variables.$elem-padding;
-
-        &.hover {
-            @include mixins.darken-little(background-color);
-        }
 
         & .filterTitle {
             width: 100%;
+
+            &.subTitle {
+                margin-top: variables.$elem-padding;
+                //border-top: variables.$defborderthin;
+                text-align: center;
+            }
         }
 
-        & .filterItems {
-
-            &.notactive {
-
-                & .filterCategories,
-                .filterRange {
-                    display: none;
-                }
-            }
-
-            &.active {
-                &>.filterCategories {
-
-                    &>div {
-                        @include screens.mobile-screen {
-                            width: calc(100% - (variables.$elem-padding * 2));
-                        }
-
-                        @include screens.tablet-screen {
-                            width: calc(50% - (variables.$elem-padding * 2));
-                        }
-
-                        @include screens.laptop-screen {
-                            width: calc(50% - (variables.$elem-padding * 2));
-                        }
-
-                        @include screens.desktop-screen {
-                            width: calc((100% / 3) - (variables.$elem-padding * 2));
-                        }
-
-                        @include screens.large-screen {
-                            width: calc((100% / 3) - (variables.$elem-padding * 2));
-                        }
-
-                        margin: variables.$elem-padding;
-                        cursor: pointer;
-                        position: relative;
-                        border-top: variables.$defborderthin;
-
-                        &.active {
-                            & .tags {
-                                position: absolute;
-                                background-color: variables.$cool;
-                                width: 100%;
-                                z-index: variables.$above-top;
-                                border-left: variables.$defborderthin;
-
-                                //border-right: variables.$defborderthin;
-                                &>.tag {
-
-                                    &>* {
-                                        display: inline-block;
-                                    }
-
-                                    border-left: variables.$defborderthin;
-                                    margin-top: variables.$elem-padding;
-                                    margin-left: variables.$thin;
-                                    cursor: pointer;
-
-                                    &.active {
-                                        border-left: variables.$defborder;
-
-                                        &:hover {
-                                            @include mixins.darken-little-custom(border-color, variables.$light2);
-                                        }
-                                    }
-
-                                    &:hover {
-                                        @include mixins.transition(border-left, variables.$defborder);
-                                    }
-                                }
-                            }
-                        }
-
-                        &.notactive {
-                            & .tags {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-
-            }
+        &.hover {
+            @include mixins.darken-little(background-color);
         }
 
         & .showFilter {
@@ -137,5 +54,98 @@
                 }
             }
         }
+
+        &.notactive {
+            & .filterComp {
+                display: none;
+            }
+        }
+
+        & .filterComp .filterCategories {
+            &>div {
+                @include screens.mobile-screen {
+                    width: calc(100% - (variables.$elem-padding * 2));
+                }
+
+                @include screens.tablet-screen {
+                    width: calc(50% - (variables.$elem-padding * 2));
+                }
+
+                @include screens.laptop-screen {
+                    width: calc(50% - (variables.$elem-padding * 2));
+                }
+
+                @include screens.desktop-screen {
+                    width: calc((100% / 3) - (variables.$elem-padding * 2));
+                }
+
+                @include screens.large-screen {
+                    width: calc((100% / 3) - (variables.$elem-padding * 2));
+                }
+
+                margin: variables.$elem-padding;
+                cursor: pointer;
+                position: relative;
+                border-top: variables.$defborderthin;
+
+                &.active {
+                    & .tags {
+                        position: absolute;
+                        background-color: variables.$cool;
+                        width: 100%;
+                        z-index: variables.$above-top;
+                        border-left: variables.$defborderthin;
+
+                        //border-right: variables.$defborderthin;
+                        & .tag {
+
+                            &>* {
+                                display: inline-block;
+                            }
+
+                            border-left: variables.$defborderthin;
+                            margin-top: variables.$elem-padding;
+                            margin-left: variables.$thin;
+                            cursor: pointer;
+
+                            &.active {
+                                border-left: variables.$defborder;
+
+                                &:hover {
+                                    @include mixins.darken-little-custom(border-color, variables.$light2);
+                                }
+                            }
+
+                            &:hover {
+                                @include mixins.transition(border-left, variables.$defborder);
+                            }
+                        }
+                    }
+                }
+
+                &.notactive {
+                    & .tags {
+                        display: none;
+                    }
+                }
+            }
+
+            &>.tag {
+                cursor: pointer;
+
+                &.active {
+                    @include mixins.darken-little(background-color);
+
+                    &:hover {
+                        @include mixins.transition(background-color, variables.$cool);
+                    }
+                }
+            }
+
+            & app-range {
+                flex-basis: 100%;
+            }
+        }
+
     }
 }

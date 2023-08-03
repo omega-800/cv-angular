@@ -15,7 +15,6 @@ import {
 } from 'src/app/pipes/projects-sort/projects-sort.model';
 import {
   FiltersEntity,
-  SelectedFilterEntity,
   SortEntity,
 } from 'src/app/services/filter/filter.model';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
@@ -43,8 +42,7 @@ import { SkillsFilterPipe } from 'src/app/pipes/skills-filter/skills-filter.pipe
 export class ProjectsComponent {
   projects: ProjectEntity[];
   lt: LinkTypes = linkTypes;
-  skillsFilter: FiltersEntity;
-  projectsFilter: FiltersEntity;
+  filters: FiltersEntity[];
   ct: CareerTypes = careerTypes;
 
   sortFields: SortEntity[] = projectSortProps;
@@ -56,8 +54,9 @@ export class ProjectsComponent {
   sortAsc: boolean = true;
 
   projectSkills: SkillEntity[] = [];
-  selectedSkillFilter: SelectedFilterEntity[] = [];
-  selectedProjectFilter: SelectedFilterEntity[] = [];
+  selectedSkillFilter: FiltersEntity[] = [];
+  selectedProjectFilter: FiltersEntity[] = [];
+  selectedFilters: FiltersEntity[] = [];
 
   constructor(
     projectService: ProjectService,
@@ -76,20 +75,11 @@ export class ProjectsComponent {
         }
       });
     });
-    this.skillsFilter = skillsFilterService.getSkillFiltersOfSkills(
-      this.projectSkills
-    );
-    this.projectsFilter = projectFilterService.getProjectFiltersOfProjects(
-      this.projects
-    );
+    this.filters = [projectFilterService.getProjectFiltersOfProjects(this.projects), skillsFilterService.getSkillFiltersOfSkills(this.projectSkills)]
   }
 
-  filterProjectsBySkill(selected: SelectedFilterEntity[]) {
-    this.selectedSkillFilter = selected;
-  }
-
-  filterProjects(selected: SelectedFilterEntity[]) {
-    this.selectedProjectFilter = selected;
+  filterProjects(selected: FiltersEntity[]) {
+    this.selectedFilters = selected;
   }
 
   sortProjectsBy(selected: { value: SortEntity; ascending: boolean }) {

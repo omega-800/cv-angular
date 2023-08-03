@@ -15,6 +15,10 @@ export interface ProjectEntity extends ContentEntity {
   skills: SkillEntity[];
   images: ImageComp[];
   clients: ClientEntity[];
+  relevance_it: number;
+  relevance_art: number;
+  relevance_health: number;
+  relevance_education: number;
 }
 
 export interface ProjectOnly {
@@ -32,6 +36,10 @@ export interface ProjectOnly {
   date: string;
   client_id: string;
   career_id: string;
+  relevance_it: number;
+  relevance_art: number;
+  relevance_health: number;
+  relevance_education: number;
 }
 
 export interface Project_Author {

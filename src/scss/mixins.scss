@@ -1,7 +1,6 @@
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/screens.scss" as screens;
 
-
 @mixin prefix($property, $value, $prefixes) {
     @each $prefix in $prefixes {
         -#{$prefix}-#{$property}: $value;
@@ -24,6 +23,20 @@
     #{$property}: $value;
     transition: #{$property} variables.$trans-cb;
 }
+
+@mixin fadein() {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity variables.$trans-cb, visibility variables.$trans-cb;
+}
+
+
+@mixin fadeout() {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity variables.$trans-cb, visibility variables.$trans-cb;
+}
+
 
 @mixin transitions($args) {
     $transition: ();

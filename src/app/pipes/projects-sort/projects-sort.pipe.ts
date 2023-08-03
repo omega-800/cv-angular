@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { ProjectEntity } from 'src/app/services/project/project/project.model';
 import { SortEntity } from 'src/app/services/filter/filter.model';
 import { projectSortValues } from './projects-sort.model';
+import { Interest } from 'src/app/store/app/app.model';
 
 @Pipe({
   name: 'projectsSort',
@@ -14,7 +15,11 @@ export class ProjectsSortPipe implements PipeTransform {
       return projects;
     }
     if (sortBy) {
-      if (sortBy.value === projectSortValues.date) {
+      if (Object.values(Interest).includes(sortBy.value as Interest)) {
+        projects = projects.sort((a, b) => a[`relevance_${sortBy.value}` as keyof typeof a] === undefined ? 1 : b[`relevance_${sortBy.value}` as keyof typeof a] === undefined ? -1 :
+          a[`relevance_${sortBy.value}` as keyof typeof a] > b[`relevance_${sortBy.value}` as keyof typeof a] ?
+            (ascending ? 1 : -1) : (ascending ? -1 : 1));
+      } else if (sortBy.value === projectSortValues.date) {
         projects = projects.sort((a, b) => isNaN(Number(a.date)) ? 1 : isNaN(Number(b.date)) ? -1 :
           a.date > b.date ?
             (ascending ? 1 : -1) : (ascending ? -1 : 1));

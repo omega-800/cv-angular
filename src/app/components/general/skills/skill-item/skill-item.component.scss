@@ -55,7 +55,7 @@
   }
 
   & app-tooltip {
-    @include mixins.transitions((opacity: 0, visibility: hidden));
+    @include mixins.fadeout();
 
     & .cat-container>* {
       display: inline-block;
@@ -63,6 +63,6 @@
   }
 
   &:hover app-tooltip {
-    @include mixins.transitions((opacity: 1, visibility: visible));
+    @include mixins.fadein();
   }
 }

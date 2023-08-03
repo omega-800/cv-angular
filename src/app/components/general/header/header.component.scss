@@ -18,24 +18,42 @@
                 & .active {
                     @include mixins.darken-little(background-color);
                 }
-            }
 
-            & .type-title {
-                flex: 100%;
-            }
+                &.interests {
 
-            & div {
+                    & .icon {
+                        height: variables.$elem-border-radius;
+                        width: variables.$elem-border-radius;
+                    }
 
-                & app-tooltip {
-                    @include mixins.transitions((opacity: 0, visibility: hidden));
-                }
+                    & .dropdown {
+                        position: absolute;
+                        height: 50vh;
+                        width: 50vw;
+                        top: calc(50% - 25vh);
+                        left: calc(50% - 25vw);
+                        padding: variables.$elem-size;
+                        background-color: variables.$light2;
+                        border-top-color: variables.$cool;
+                        z-index: variables.$top;
+                        @include mixins.fadein();
 
-                & img {
-                    &:hover {
-                        cursor: pointer;
+                        &.notactive {
+                            @include mixins.fadeout();
+                        }
 
-                        &~app-tooltip {
-                            @include mixins.transitions((opacity: 1, visibility: visible));
+                        & .types {
+                            height: 80%;
+                            margin: 10% 0;
+
+                            & .type-container>* {
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+
+                            & h5 {
+                                margin-left: variables.$elem-padding;
+                            }
                         }
                     }
                 }

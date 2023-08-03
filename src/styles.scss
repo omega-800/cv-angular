@@ -114,19 +114,23 @@ body {
   background-color: variables.$dark1;
 
   &.loaded {
-    &#it{
+    &#selected-it {
       background-image: url('assets/bg/circuit-board.svg');
     }
-    &#art{
+
+    &#selected-art {
       background-image: url('assets/bg/random-shapes.svg');
     }
-    &#general{
+
+    &#selected-general {
       background-image: url('assets/bg/hexagons.svg');
     }
-    &#health{
+
+    &#selected-health {
       background-image: url('assets/bg/topography.svg');
     }
-    &#education{
+
+    &#selected-education {
       background-image: url('assets/bg/jigsaw.svg');
     }
   }
