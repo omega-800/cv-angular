@@ -1,6 +1,6 @@
 [
  {
-  "contactpoint_id": "70a927f0-5609-4429-8814-5f0779a4ea60",
+  "contactpoint_id": "7e1acc1f-0cbe-4389-8ef5-21355433cc3f",
   "name": "Info point",
   "name_e": "",
   "name_r": "",
@@ -8,7 +8,7 @@
   "email": "info@inteco.ch"
  },
  {
-  "contactpoint_id": "3af5da14-7dbb-4f93-8b8a-248857b8fd75",
+  "contactpoint_id": "b08da88a-baad-4023-ad8c-7bba5466cf3e",
   "name": "Info point",
   "name_e": "",
   "name_r": "",
@@ -16,7 +16,7 @@
   "email": "swissoffice@ernesto-vargas.com"
  },
  {
-  "contactpoint_id": "34ce6e6f-d54b-47f7-82a2-6d9a5feadc69",
+  "contactpoint_id": "5563d313-e741-447c-9a9d-fae97aa4c4b6",
   "name": "Sekretariat",
   "name_e": "",
   "name_r": "",
@@ -24,7 +24,7 @@
   "email": ""
  },
  {
-  "contactpoint_id": "2690b2ad-bb30-4590-bd0b-8e1df5d9f33a",
+  "contactpoint_id": "c2c08bae-d5bf-4e40-a9e1-415218312e46",
   "name": "Sekretariat",
   "name_e": "",
   "name_r": "",
@@ -32,7 +32,7 @@
   "email": "sekretariat@kshp.ch"
  },
  {
-  "contactpoint_id": "d2504484-b399-4880-9d94-626f6479d3f5",
+  "contactpoint_id": "e397fcee-dbe4-468c-a4d3-d82158a064f9",
   "name": "Schulleitung",
   "name_e": "",
   "name_r": "",
@@ -40,7 +40,7 @@
   "email": "kurt.bauer@schulen.zuerich.ch"
  },
  {
-  "contactpoint_id": "059bf972-7b86-4d3b-a875-33feb0054b49",
+  "contactpoint_id": "ab3f009d-c393-4326-ac38-120138f7b90a",
   "name": "Sekretariat",
   "name_e": "",
   "name_r": "",
@@ -48,7 +48,7 @@
   "email": "hottingen@ksh.ch"
  },
  {
-  "contactpoint_id": "35d8b59d-aade-425a-9e56-730d49b2e52e",
+  "contactpoint_id": "3d9820ce-d12b-40c9-9001-97e5e37f0fb9",
   "name": "Sekretariat",
   "name_e": "",
   "name_r": "",
@@ -56,7 +56,7 @@
   "email": ""
  },
  {
-  "contactpoint_id": "a4e40e4d-c3da-4769-9a10-eecb33302686",
+  "contactpoint_id": "69220d10-187d-4e65-b9b4-002aa0345552",
   "name": "me",
   "name_e": "",
   "name_r": "",
@@ -64,7 +64,7 @@
   "email": "gshevoroshkin@gmail.com"
  },
  {
-  "contactpoint_id": "ca363b8f-b1f5-4057-a28f-46d10cf0e961",
+  "contactpoint_id": "a6a0581c-15be-4e67-ab47-ddfb22f7fb05",
   "name": "mom",
   "name_e": "",
   "name_r": "",
@@ -72,7 +72,7 @@
   "email": ""
  },
  {
-  "contactpoint_id": "90d9cc36-365b-47d2-81f7-9cf404031360",
+  "contactpoint_id": "f67dc0ad-99c0-4068-adca-bd2830806f8f",
   "name": "dad",
   "name_e": "",
   "name_r": "",
@@ -80,7 +80,7 @@
   "email": "alexshev@yahoo.com"
  },
  {
-  "contactpoint_id": "5538ae37-5e92-4b3c-9bcb-03d09315454c",
+  "contactpoint_id": "1a938507-df3b-4e3c-92f5-d143537bf19b",
   "name": "niki",
   "name_e": "",
   "name_r": "",
@@ -88,7 +88,7 @@
   "email": ""
  },
  {
-  "contactpoint_id": "4dd46238-8753-4c1b-a9cc-99e19803396f",
+  "contactpoint_id": "9be30a0b-d470-455a-a684-0e824639a3f6",
   "name": "michi",
   "name_e": "",
   "name_r": "",
@@ -96,7 +96,7 @@
   "email": ""
  },
  {
-  "contactpoint_id": "05c7fab0-961f-425d-87a6-887ab250bd77",
+  "contactpoint_id": "42ae91ad-e352-494a-848f-d8b000ce0325",
   "name": "betina",
   "name_e": "",
   "name_r": "",
@@ -104,7 +104,7 @@
   "email": "betina.hiestand@inteco.ch"
  },
  {
-  "contactpoint_id": "ec6e221f-72ba-441d-b1ff-3db11fcf2f7b",
+  "contactpoint_id": "06c0f175-9b04-4618-a10d-38ade71b15eb",
   "name": "Kork",
   "name_e": "",
   "name_r": "",

@@ -14,8 +14,6 @@ import { NgIf } from '@angular/common';
   imports: [TooltipComponent, NgIf]
 })
 export class ButtonComponent {
-  @Input() onClick!: () => void;
-
   @Input() type!: LinkType;
   @Input() name!: string;
   @Input() image?: ImageComp;
@@ -23,8 +21,4 @@ export class ButtonComponent {
 
   lt: LinkTypes = linkTypes;
   d = Direction;
-
-  @HostListener("click", ["$event"]) onClickEvent(event: Event) {
-    this.onClick();
-  }
 }

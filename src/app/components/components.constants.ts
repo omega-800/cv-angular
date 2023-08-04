@@ -7,6 +7,13 @@ export enum Direction {
   LEFT = 'left',
 }
 
+export const infoIcon: Readonly<ImageComp> = {
+  id: 'icon_info',
+  name: 'Info',
+  path: 'assets/img/info.svg',
+  alt: 'Info icon',
+};
+
 export const contactIcon: Readonly<ImageComp> = {
   id: 'icon_contact',
   name: 'Contact',

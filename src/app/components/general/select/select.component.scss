@@ -1,0 +1,42 @@
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
+@use"src/scss/screens.scss" as screens;
+
+:host {
+    cursor: pointer;
+    position: relative;
+    border-top: variables.$defborderthin;
+
+    & .tags {
+        position: absolute;
+        background-color: variables.$cool;
+        width: 100%;
+        z-index: variables.$above-top;
+        border-left: variables.$defborderthin;
+
+        //border-right: variables.$defborderthin;
+        & .tag {
+            &>* {
+                display: inline-block;
+            }
+
+            border-left: variables.$defborderthin;
+            margin-top: variables.$elem-padding;
+            margin-left: variables.$thin;
+            cursor: pointer;
+
+            &.active {
+                border-left: variables.$defborder;
+
+                &:hover {
+                    @include mixins.darken-little-custom(border-color, variables.$light2);
+                }
+            }
+
+            &:hover {
+                @include mixins.transition(border-left, variables.$defborder);
+            }
+        }
+    }
+
+}

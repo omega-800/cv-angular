@@ -1,6 +1,6 @@
-import { AfterContentInit, AfterViewInit, ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { AfterContentInit, ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ImageComp } from '../../components.model';
-import { NgStyle } from '@angular/common';
+import { NgIf, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-image',
@@ -9,11 +9,15 @@ import { NgStyle } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { 'class': 'flex-center' },
   standalone: true,
-  imports: [NgStyle]
+  imports: [NgStyle, NgIf]
 })
 export class ImageComponent implements AfterContentInit {
   @Input() image!: ImageComp;
   loaded: boolean = false;
+  isNotSVG: boolean = false;
+  ngOnInit() {
+    this.isNotSVG = !this.image.path.endsWith('svg');
+  }
   ngAfterContentInit() {
     this.loaded = true;
   }

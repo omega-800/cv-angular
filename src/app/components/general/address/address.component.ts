@@ -20,7 +20,7 @@ export class AddressComponent {
   lt: LinkTypes = linkTypes;
 
   map = (address: AddressEntity) => {
-    return () => openLink(encodeURI(this.lt.MAP.prefix + address.street + ", " + address.zip + " " + address.city + ", " + address.country.name));
+    openLink(encodeURI(this.lt.MAP.prefix + address.street + ", " + address.zip + " " + address.city + ", " + address.country.name));
   }
 }
 

@@ -1,14 +1,8 @@
-<div class="sortComp flex-e2e slimpill">
-    <div class="sortTitle flex-row-nojust">
-        <img class="arrowImg small-image" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
-        <h3>Sortieren</h3>
-    </div>
-    <select #sortFields name="sortFields" class="pill" id="sortFields" [(ngModel)]="selectedValue"
-        (change)="selectItem()">
-        <option *ngFor="let field of editedFields" [ngValue]="field" class="link">{{field.name}}</option>
-    </select>
-    <select #sortAsc name="sortAsc" class="pill" id="sortAsc" [(ngModel)]="ascending" (change)="selectItem()">
-        <option [ngValue]="false" class="link">Absteigend</option>
-        <option [ngValue]="true" class="link">Aufsteigend</option>
-    </select>
+<div class="sortTitle flex-row-nojust">
+    <img class="arrowImg small-image" src="{{arrowIcon.path}}" alt="{{arrowIcon.alt}}" loading="lazy">
+    <h3>Sortieren</h3>
 </div>
+<app-select [name]="'Eigenschaft'" [fields]="editedFields" [alwaysShowName]="false" [allowMultiple]="false"
+    (selectEmitter)="selectField($event)"></app-select>
+<app-select [name]="'Reihenfolge'" [fields]="ascdescFields" [alwaysShowName]="false" [allowMultiple]="false"
+    (selectEmitter)="selectAsc($event)"></app-select>

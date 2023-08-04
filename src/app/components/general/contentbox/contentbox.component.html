@@ -1,31 +1,34 @@
-<div #cbToggle class="default-grid notactive">
-  <div class="preview default-grid link slimpill"
-    (click)="cbToggle.classList.toggle('active');cbToggle.classList.toggle('notactive')">
-    <img *ngIf="preview" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
-      loading="lazy" />
+<div [class]="'default-grid preview link slimpill ' + (isActive ? 'active': 'notactive')"
+  (click)="isActive = !isActive;">
+  <img *ngIf="preview && !isActive" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
+    loading="lazy" />
 
-    <h3 class="title flex-list" *ngIf="!link">{{ title }}</h3>
-    <h3 class="title flex-list" *ngIf="link">
-      <a href="{{ link }}" target="_blank">{{ title }}</a>
-    </h3>
+  <h3 class="title flex-list" *ngIf="!link">{{ title }}</h3>
+  <h3 class="title flex-list" *ngIf="link">
+    <a href="{{ link }}" target="_blank">{{ title }}</a>
+  </h3>
 
-    <img class="arrowImg preview-image" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}" loading="lazy" />
-  </div>
-  <div *ngIf="hasImage" class="mainImg slimpill">
+  <img #arrowimg [class]="(isActive ? '': 'notactive ') + 'arrowImg preview-image'" src="{{ arrowIcon.path }}"
+    alt="{{ arrowIcon.alt }}" loading="lazy" />
+</div>
+
+<div class="default-grid items" *ngIf="isActive" [@dropDownMenu]>
+  <div *ngIf="hasImage" class="mainImg slimpill menu-item">
     <app-carousel *ngIf="isCarousel" [images]="images"></app-carousel>
     <app-image *ngIf="!isCarousel" [image]="image"></app-image>
   </div>
 
-  <div *ngIf="subTitle || description" class="desc slimpill">
+  <div *ngIf="subTitle || subSubTitle || description" class="desc slimpill menu-item">
     <h4 *ngIf="subTitle">{{ subTitle }}</h4>
+    <h5 *ngIf="subSubTitle">{{ subSubTitle }}</h5>
     <p *ngIf="description">{{ description }}</p>
   </div>
 
-  <div class="bottom flex-row-just">
+  <div class="bottom flex-row-just menu-item">
     <ng-content></ng-content>
   </div>
 
-  <div class="belowbottom slimpill">
+  <div class="belowbottom slimpill menu-item">
     <ng-content select="[bottom]"></ng-content>
   </div>
 </div>

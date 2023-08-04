@@ -38,6 +38,8 @@ export class CareerService {
         workplace: workplace,
         type: careerTypes.WORK,
         url: workplace.url,
+        datefrom: new Date(career.datefrom),
+        dateto: new Date(career.dateto),
         skills: this.careerSkillLinks
           .filter((link) => link.career_id == career.career_id)
           .map((link) => {
@@ -58,6 +60,8 @@ export class CareerService {
         school: school,
         type: careerTypes.SCHOOL,
         url: school.url,
+        datefrom: new Date(career.datefrom),
+        dateto: new Date(career.dateto),
         skills: this.careerSkillLinks
           .filter((link) => link.career_id == career.career_id)
           .map((link) => {
@@ -72,6 +76,8 @@ export class CareerService {
       ...career,
       id: career.career_id,
       type: careerTypes.OTHER,
+      datefrom: new Date(career.datefrom),
+      dateto: new Date(career.dateto),
       url: '',
       skills: this.careerSkillLinks
         .filter((link) => link.career_id == career.career_id)

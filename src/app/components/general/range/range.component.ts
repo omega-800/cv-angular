@@ -24,8 +24,9 @@ export class RangeComponent {
     let [smaller, larger] = parseInt(sliderOne.value) < parseInt(sliderTwo.value)
       ? [sliderOne.value, sliderTwo.value]
       : [sliderTwo.value, sliderOne.value];
-    let rangeFilter = JSON.parse(JSON.stringify(this.range));
-    rangeFilter.tags = [JSON.parse(JSON.stringify(this.range.tags.find(elem => elem.value == smaller)!)), JSON.parse(JSON.stringify(this.range.tags.find(elem => elem.value == larger)!))];
+    console.log(smaller, larger, parseInt(smaller))
+    let rangeFilter: FilterCategoryEntity = JSON.parse(JSON.stringify(this.range));
+    rangeFilter.tags = [{ ...rangeFilter.tags.find(elem => elem.value == smaller)!, value: parseInt(smaller) }, { ...rangeFilter.tags.find(elem => elem.value == larger)!, value: parseInt(larger) }];
     [outputOne.innerHTML, outputTwo.innerHTML] = [smaller, larger];
     this.rangeEmitter.emit(rangeFilter);
   }

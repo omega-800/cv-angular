@@ -1,6 +1,18 @@
 @use "src/scss/variables.scss" as variables;
 
 :host {
+    & h1 {
+        order: -3;
+    }
+
+    & .filters {
+        order: -2;
+    }
+
+    & .ontop {
+        order: -1;
+    }
+
     & .bot {
         padding: variables.$box-padding;
 

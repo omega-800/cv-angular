@@ -2,17 +2,19 @@
 @use "src/scss/screens.scss" as screens;
 
 :host {
-    & .sortComp {
-        padding: variables.$elem-padding;
+    padding: variables.$elem-padding;
 
-        & .sortTitle {
-            & .arrowImg {
-                transform: rotate(90deg);
-            }
-
-            @include screens.mobile-screen {
-                width: 100%;
-            }
+    & .sortTitle {
+        & .arrowImg {
+            transform: rotate(90deg);
         }
+
+        @include screens.mobile-screen {
+            width: 100%;
+        }
+    }
+
+    & app-select {
+        width: calc(100% / 3);
     }
 }

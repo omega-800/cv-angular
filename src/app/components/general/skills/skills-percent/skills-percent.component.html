@@ -1,9 +1,9 @@
-<h2>{{name}}</h2>
-<div class="filters">
+<h2 *ngIf="name" class="menu-item">{{name}}</h2>
+<div class="filters menu-item">
     <app-filter [filters]="filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
     <app-sort [fields]="sortFields" (selectedEmitter)="sortSkillsBy($event)"></app-sort>
 </div>
-<div class="skill-container flex-list"
-    *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter">
-    <app-skill-item [skill]="skill" [showPercent]="true" class="flex-row-nojust"></app-skill-item>
+<div class="skill-container flex-list">
+    <app-skill-item *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter"
+        [skill]="skill" [showPercent]="true" class="flex-row-nojust menu-item"></app-skill-item>
 </div>

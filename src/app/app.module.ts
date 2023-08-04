@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/general/header/header.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppState } from './store/app/app.state';
 import { NgxsModule } from '@ngxs/store';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SelectComponent } from './components/general/select/select.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +19,8 @@ import { NgxsModule } from '@ngxs/store';
     AngularFireModule.initializeApp(environment.firebase),
     /*AngularFireStorageModule,*/
     BrowserModule,
-    HeaderComponent
+    HeaderComponent,
+    BrowserAnimationsModule
   ],
   bootstrap: [AppComponent],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

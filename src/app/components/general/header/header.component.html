@@ -1,16 +1,17 @@
 <nav class="navbar">
-  <ul class="flex-row">
+  <ul class="flex-row-just">
     <li class="flex-row interests">
       <img [src]="interestIcon.path" [alt]="interestIcon.alt" class="icon pill link"
-        (click)="dropdown.classList.toggle('notactive')" />
-      <div #dropdown class="dropdown notactive flex-list pill">
-        <div class="title flex-e2e">
-          <h3 class="type-title">Interessiert an</h3>
-          <h4 class="link pill" (click)="dropdown.classList.toggle('notactive')"><b>X</b></h4>
+        (click)="dropdownActive = !dropdownActive" />
+      <div *ngIf="dropdownActive" class="dropdown flex-list pill" [@dropDownMenu]>
+        <div class="title flex-column menu-item">
+          <h4 class="link pill close" (click)="dropdownActive = !dropdownActive"><b>X</b></h4>
+          <h3 class="type-title">Interessiert an </h3>
         </div>
         <div class="types flex-list-full">
-          <div *ngFor="let type of types" [class]="(type.type == interest ? 'active ' : '')+ 'type-container link pill'"
-            (click)="setInterest(type.type);dropdown.classList.toggle('notactive')">
+          <div *ngFor="let type of types"
+            [class]="(type.type == interest ? 'active ' : '')+ 'type-container link pill menu-item'"
+            (click)="setInterest(type.type);dropdownActive = !dropdownActive">
             <img [src]="type.icon.path" [alt]="type.icon.alt" class="icon" />
             <h5>{{type.name}}</h5>
           </div>
@@ -29,8 +30,8 @@
       <a routerLink="projects" routerLinkActive="active" ariaCurrentWhenActive="page" queryParamsHandling="merge"
         class="link pill">Projekte</a>
     </li>
-    <li>
-
+    <li class="languages">
+      <a class="link pill">DE</a>
     </li>
   </ul>
 </nav>

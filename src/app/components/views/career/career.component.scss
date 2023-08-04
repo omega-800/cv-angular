@@ -1,17 +1,51 @@
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/screens.scss" as screens;
+@use "src/scss/mixins.scss" as mixins;
 
 :host {
+    & h1 {
+        order: -2;
+    }
+
+    & .ontop {
+        order: -1;
+    }
+
     & .bot {
         width: 100%;
+    }
+
+    & .time {
+        width: 100%;
+        padding: variables.$elem-padding;
+
+        & table {
+            margin: 0;
+            width: 100%;
+        }
+
+        & .right {
+            text-align: right;
+        }
+
+        & .hov:hover {
+            & app-tooltip {
+                @include mixins.fadein();
+            }
+        }
+
+        & app-tooltip {
+            @include mixins.fadeout();
+        }
     }
 
     & .bottomLinks {
 
         @include screens.mobile-screen {
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
+            grid-template-rows: auto auto auto auto;
             grid-template-areas:
+                "info"
                 "contact"
                 "address"
                 "web";
@@ -19,38 +53,42 @@
 
         @include screens.tablet-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
+            grid-auto-rows: 1fr;
             grid-template-areas:
-                "contact  address"
-                "web address";
+                "info web"
+                "contact address";
         }
 
         @include screens.laptop-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
+            grid-auto-rows: 1fr;
             grid-template-areas:
-                "contact  address"
-                "web address";
+                "info web"
+                "contact address";
         }
 
         @include screens.desktop-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
+            grid-auto-rows: 1fr;
             grid-template-areas:
-                "contact  address"
-                "web address";
+                "info web"
+                "contact address";
         }
 
         @include screens.large-screen {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas:
-                "contact  address web";
+                "info contact address web";
         }
 
         &>div {
             flex: 1;
             align-self: flex-start;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: variables.$box-padding;
+            height: calc(100% - variables.$thin);
 
             &>div>* {
                 display: inline-block;
@@ -58,14 +96,21 @@
 
         }
 
+        & .info {
+            grid-area: info;
+
+            & .content {
+                border-top: variables.$defborderthin;
+                width: 100%;
+            }
+        }
+
         & .contactPoints {
             grid-area: contact;
-            padding: variables.$box-padding;
         }
 
         & .address {
             grid-area: address;
-            padding: variables.$box-padding;
 
             & app-address {
                 width: 100%;
@@ -74,7 +119,6 @@
 
         & .web {
             grid-area: web;
-            padding: variables.$box-padding;
 
             & .content {
                 border-top: variables.$defborderthin;
@@ -84,10 +128,6 @@
     }
 
     & .projects {
-
-        &.notactive .projectsList {
-            display: none;
-        }
 
         & .projectsList {
             padding: variables.$elem-padding;
@@ -118,27 +158,14 @@
 
         & .showProjects {
             padding: variables.$elem-padding;
-            cursor: pointer;
-
-            & .arrowImg.notactive {
-                transform: rotate(180deg);
-            }
+            margin-top: variables.$thin * 2;
         }
     }
 
     & .skills {
-
-        &.notactive app-skills-percent {
-            display: none;
-        }
-
         & .showSkills {
             padding: variables.$elem-padding;
-            cursor: pointer;
-
-            & .arrowImg.notactive {
-                transform: rotate(180deg);
-            }
+            margin-top: variables.$thin * 2;
         }
     }
 }

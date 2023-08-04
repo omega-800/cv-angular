@@ -6,7 +6,7 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { FilterComponent } from '../../filter/filter.component';
 import { SortComponent } from '../../sort/sort.component';
 import { SkillItemComponent } from '../skill-item/skill-item.component';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { SkillsFilterPipe } from 'src/app/pipes/skills-filter/skills-filter.pipe';
 import { SkillsSortPipe } from 'src/app/pipes/skills-sort/skills-sort.pipe';
 
@@ -16,7 +16,7 @@ import { SkillsSortPipe } from 'src/app/pipes/skills-sort/skills-sort.pipe';
   styleUrls: ['./skills-percent.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [FilterComponent, SortComponent, SkillItemComponent, NgFor, SkillsFilterPipe, SkillsSortPipe]
+  imports: [FilterComponent, SortComponent, SkillItemComponent, NgFor, SkillsFilterPipe, SkillsSortPipe, NgIf]
 })
 export class SkillsPercentComponent implements OnInit {
   @Input() skills!: SkillEntity[];

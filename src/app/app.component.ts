@@ -1,31 +1,35 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewInit, Component, HostBinding, Inject, inject } from '@angular/core';
+import { AfterViewInit, Component, HostBinding, Inject, OnInit, inject } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Interest } from './store/app/app.model';
 import { Observable, map } from 'rxjs';
 import { AppStateModel } from './store/app/app.state';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, ChildrenOutletContexts } from '@angular/router';
 import { SetInterest } from './store/app/app.actions';
+import { slideInAnimation } from './animations';
 
 export interface URLParams {
-  interest: Interest,
+  interest?: Interest,
   language?: string,
+  projectID?: string
 }
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   //styleUrls: ['./app.component.scss'],
-  host: { 'class': 'flex-column' }
+  animations: [
+    slideInAnimation
+  ]
 })
-export class AppComponent implements AfterViewInit {
-  @HostBinding('style')
+export class AppComponent implements OnInit {
+  /*@HostBinding('style')
   get style_binding() {
     return {
       '--customcolor': this.customcolor,
       '--customcolordarken': this.customcolordarken,
     };
-  }
+  }*/
 
   customcolor = '';
   customcolordarken = '';
@@ -40,7 +44,7 @@ export class AppComponent implements AfterViewInit {
     }))
   );
 
-  constructor(@Inject(DOCUMENT) private document: Document, private store: Store) {
+  constructor(@Inject(DOCUMENT) private document: Document, private store: Store, private contexts: ChildrenOutletContexts) {
     //this.interest$ = this.store.select(state => state.app.interest);
     this.store.select(state => state.app.interest).subscribe(res => {
       this.customcolor = res == Interest.IT ? 'rgba(103, 176, 232, 0.9)'
@@ -58,11 +62,17 @@ export class AppComponent implements AfterViewInit {
                 : 'hsla(45, 70%, 51%, 0.9)'
 
       this.document.body.id = "selected-" + res;
+      this.document.body.style.setProperty('--customcolor', this.customcolor)
+      this.document.body.style.setProperty('--customcolordarken', this.customcolordarken)
     })
   }
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this.document.body.classList.add('loaded');
     this.queryParams$.subscribe(res => this.store.dispatch(new SetInterest(res.interest != undefined ? res.interest : Interest.IT)))
   }
+
+  /*getRouteAnimationData() {
+    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
+  }*/
 }

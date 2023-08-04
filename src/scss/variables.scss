@@ -31,10 +31,10 @@ $elem-size: 1rem;
 $elem-padding: $elem-size / 2;
 $elem-border-radius: $elem-size * 2;
 $elem-height: $elem-size * 4;
-$thin: 0.15rem;
+$thin: 0.15em;
 
-$wrapper-width: 90%;
-$wrapper-width-large: 80%;
+$wrapper-width: 90vw;
+$wrapper-width-large: 80vw;
 $wrapper-padding: $elem-size 0;
 $wrapper-margin: $elem-size 0;
 

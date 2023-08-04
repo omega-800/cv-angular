@@ -18,33 +18,35 @@
     </ng-container>
   </div>
 </div>
-<div #fullcomp class="fullFilterComp slimpill notactive">
+<div #fullcomp class="fullFilterComp slimpill">
   <div class="filterTitle flex-e2e">
     <div class="showFilter flex-row-nojust" (mouseenter)="fullcomp.classList.add('hover')"
-      (mouseleave)="fullcomp.classList.remove('hover')" (click)="fullimg.classList.toggle('notactive'); fullcomp.classList.toggle('active'); fullcomp.classList.toggle('notactive')
-    ">
+      (mouseleave)="fullcomp.classList.remove('hover')"
+      (click)="fullimg.classList.toggle('notactive');isActive = !isActive">
       <img #fullimg class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
         loading="lazy" />
       <h3>Filtern</h3>
     </div>
     <p *ngIf="selectedFilter.length > 0" (click)="reset()" class="filterReset link pill">Zurücksetzen</p>
   </div>
-  <div *ngFor="let filter of filters" #comp class="filterComp">
-    <h4 *ngIf="filters.length > 1" class="filterTitle subTitle">{{ filter.name }}</h4>
-    <div #items class="filterCategories flex-row-nojust">
-      <ng-container *ngFor="let category of filter.categories">
-        <div *ngIf="!category.isRange && category.tags.length == 1 && category.id != projectFilterProps.relevance"
-          (click)="toggleTag(filter, category, category.tags[0]);" class="pill tag link" [id]="category.tags[0].id">
-          <img *ngIf=" category.tags[0].image" src="{{ category.tags[0].image.path }}"
-            alt="{{ category.tags[0].image.alt }}" class="tagIcon small-image" loading="lazy" />
-          <p>{{ category.tags[0].name }}</p>
-        </div>
-        <div *ngIf="category.id == projectFilterProps.relevance && getRelevanceTag(category) as tag"
-          (click)="toggleTag(filter, category, tag);" class="pill tag link" [id]="tag.id">
-          <p>{{ tag.name}}</p>
-        </div>
+  <div *ngIf="isActive" [@dropDownMenu]>
+    <div *ngFor="let filter of filters" #comp class="filterComp menu-item">
+      <h4 *ngIf="filters.length > 1" class="filterTitle subTitle">{{ filter.name }}</h4>
+      <div #items class="filterCategories flex-row-nojust">
+        <ng-container *ngFor="let category of filter.categories">
+          <div *ngIf="!category.isRange && category.tags.length == 1 && category.id != projectFilterProps.relevance"
+            (click)="toggleTag(filter, category, category.tags[0]);" class="pill tag link" [id]="category.tags[0].id">
+            <img *ngIf=" category.tags[0].image" src="{{ category.tags[0].image.path }}"
+              alt="{{ category.tags[0].image.alt }}" class="tagIcon small-image" loading="lazy" />
+            <p>{{ category.tags[0].name }}</p>
+          </div>
 
-        <!--ng-container *ngIf="!category.isRange && category.tags.length == 2">
+          <div *ngIf="category.id == projectFilterProps.relevance && getRelevanceTag(category) as tag"
+            (click)="toggleTag(filter, category, tag);" class="pill tag link" [id]="tag.id">
+            <p>{{ tag.name}}</p>
+          </div>
+
+          <!--ng-container *ngIf="!category.isRange && category.tags.length == 2">
           <div *ngFor="let tag of category.tags" (click)="toggleTag(filter, category, tag);" class="pill tag"
             [id]="tag.id">
             <img *ngIf=" tag.image" src="{{ tag.image.path }}" alt="{{ tag.image.alt }}" class="tagIcon small-image"
@@ -53,26 +55,33 @@
           </div>
         </ng-container -->
 
-        <div #cat *ngIf="!category.isRange && category.id != projectFilterProps.relevance && category.tags.length > 1"
-          class="notactive">
-          <div class="showFilter filterCategory flex-row-nojust" (click)="
-              cat.classList.toggle('active'); cat.classList.toggle('notactive'); imgF.classList.toggle('notactive')
-            ">
-            <img #imgF class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
-              loading="lazy" />
-            <p class="categoryTitle">{{ category.name}}</p>
+          <div *ngIf="!category.isRange && category.id != projectFilterProps.relevance && category.tags.length > 1">
+            <ng-container *ngVar="{value:false} as isActive">
+              <div class="showFilter filterCategory flex-row-nojust" (click)="isActive.value = !isActive.value">
+                <img [class]="(isActive.value ? '' : 'notactive ')+'arrowImg small-image'" src="{{ arrowIcon.path }}"
+                  alt="{{ arrowIcon.alt }}" loading="lazy" />
+                <p class="categoryTitle">{{ category.name}}</p>
+              </div>
+              <div *ngIf="isActive.value" class="tags flex-list" [@dropDownMenu]>
+                <div *ngFor="let tag of category.tags" (click)="toggleTag(filter, category, tag);" class="tag menu-item"
+                  [id]="tag.id">
+                  <img *ngIf="tag.image" src="{{ tag.image.path }}" alt="{{ tag.image.alt }}"
+                    class="tagIcon small-image" loading="lazy" />
+                  <p>{{ tag.name }}</p>
+                </div>
+              </div>
+            </ng-container>
           </div>
-          <div class="tags flex-list">
-            <div *ngFor="let tag of category.tags" (click)="toggleTag(filter, category, tag);" class="tag"
-              [id]="tag.id">
-              <img *ngIf="tag.image" src="{{ tag.image.path }}" alt="{{ tag.image.alt }}" class="tagIcon small-image"
-                loading="lazy" />
-              <p>{{ tag.name }}</p>
-            </div>
-          </div>
-        </div>
-        <app-range *ngIf="category.isRange" [range]="category" (rangeEmitter)="updateRange(filter, $event)"></app-range>
-      </ng-container>
+
+          <!--app-select
+            *ngIf="!category.isRange && category.id != projectFilterProps.relevance && category.tags.length > 1"
+            [name]="category.name" [alwaysShowName]="true" [allowMultiple]="true" [fields]="category.tags"
+            (selectEmitter)="setCategory(filter, category, $event)"></app-select-->
+
+          <app-range *ngIf="category.isRange" [range]="category"
+            (rangeEmitter)="updateRange(filter, $event)"></app-range>
+        </ng-container>
+      </div>
     </div>
   </div>
 </div>

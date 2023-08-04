@@ -427,15 +427,15 @@ INSERT INTO school_contactPoint (school_id, contactPoint_id) VALUES
     ((SELECT school_id FROM school WHERE name = 'Hottingen'),(SELECT contactPoint_id FROM contactPoint WHERE phone = 0442665757)),
     ((SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee'),(SELECT contactPoint_id FROM contactPoint WHERE phone = 0447274600));
 
-INSERT INTO career (name, description, yearfrom, yearto, workplace_id, school_id) VALUES 
-    ('inteco',(SELECT description FROM workplace WHERE name = 'Inteco'),2022,2023,(SELECT workplace_id FROM workplace WHERE name = 'Inteco'),NULL),
-    ('ernestovargas',(SELECT description FROM workplace WHERE name = 'Ernesto Vargas'),2020,2021,(SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),NULL),
-    ('kork',(SELECT description FROM workplace WHERE name = 'Kork'),2020,2022,(SELECT workplace_id FROM workplace WHERE name = 'Kork'),NULL),
-    ('bzz',(SELECT description FROM school WHERE name = 'Berufsbildungszentrum Zürichsee'),2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee')),
-    ('ims',(SELECT description FROM school WHERE name = 'Hottingen'),2017,2020,NULL,(SELECT school_id FROM school WHERE name = 'Hottingen')),
-    ('sek',(SELECT description FROM school WHERE name = 'Herzogenmühle'),2016,2017,NULL,(SELECT school_id FROM school WHERE name = 'Herzogenmühle')),
-    ('hopro',(SELECT description FROM school WHERE name = 'Hohe Promenade'),2014,2016,NULL,(SELECT school_id FROM school WHERE name = 'Hohe Promenade')),
-    ('probstei',(SELECT description FROM school WHERE name = 'Probstei'),2008,2014,NULL,(SELECT school_id FROM school WHERE name = 'Probstei'));
+INSERT INTO career (pensum, name, description, datefrom, dateto, workplace_id, school_id) VALUES 
+    (90,'inteco','Während des Praktikumsjahres als Webentwickler bei der Inteco EDV AG, einem IT-Gesamtanbieter mit Spezialisation auf Getränkehandel, durfte ich Erfahrungen in vielen verschiedenen Bereichen der Webentwicklung sammeln, sei das Frontend, Backend, Suchmaschinenoptimierung oder Datenbankmanagement.','2022-07-01','2023-08-31',(SELECT workplace_id FROM workplace WHERE name = 'Inteco'),NULL),
+    (60,'ernestovargas','Bei Ernesto Vargas war ich für einen Auftrag angestellt, welcher unten verlinkt ist. Dabei konnte ich neue Erfahrungen mit Python und Selenium sammeln.','2020-10-01','2021-01-20',(SELECT workplace_id FROM workplace WHERE name = 'Ernesto Vargas'),NULL),
+    (20,'kork','Kork ermöglichte es mir, auf ihrer Plattform Nachhilfeunterricht in Englisch, Mathematik, Deutsch und Informatik für Kinder im Primarschulalter anzubieten. Dabei durfte ich nicht nur mein Wissen vermitteln, sondern auch selbst vieles dazulernen.','2020-09-20','2022-04-01',(SELECT workplace_id FROM workplace WHERE name = 'Kork'),NULL),
+    (20,'bzz','Im Berufsbildungszentrum Zürichsee besuchte ich die obligatorischen Informatikmodule für das Eidgenössische Fähigkeitszeugnis als Applikationsentwickler.','2017-08-01','2020-07-31',NULL,(SELECT school_id FROM school WHERE name = 'Berufsbildungszentrum Zürichsee')),
+    (80,'ims','In der Informatikmittelschule Hottingen besuchte ich die obligatorischen Kurse für die Berufsmaturität mit Schwerpunkt Wirtschaft.','2017-08-01','2020-07-31',NULL,(SELECT school_id FROM school WHERE name = 'Hottingen')),
+    (100,'sek','Als Übergang vom Gymnasium in die IMS besuchte ich ein halbes Jahr lang die Sekundarschule Herzogenmühle (Stufe A), habe jedoch die meiste Zeit im Hort ausgeholfen, da der Schulstoff mich stark unterforderte. Für diesen Vorschlag meiner Lehrerin bin ich sehr dankbar. Im Hort durfte ich lernen, mit Verantwortung umzugehen und die Kindern spielerisch zu behüten.','2016-12-01','2017-07-31',NULL,(SELECT school_id FROM school WHERE name = 'Herzogenmühle')),
+    (100,'hopro','Nach der Primarschule ging ich ins Langzeitgymnasium Hohe Promenade. Nach drei Jahren brach ich jedoch ab, da mein Wohlbefinden durch die Monotonie des dortigen Alltags sowie Schulstoffes zu leiden begann.','2014-08-01','2016-11-30',NULL,(SELECT school_id FROM school WHERE name = 'Hohe Promenade')),
+    (100,'probstei','Die Grundschule absolvierte ich in der Primarschule Probstei in Schwamendingen.','2008-08-01','2014-07-31',NULL,(SELECT school_id FROM school WHERE name = 'Probstei'));
 
 INSERT INTO career_skill (career_id, skill_id, percent) VALUES 
     ((SELECT career_id FROM career WHERE name = 'inteco'), (SELECT skill_id FROM skill WHERE identifier = 'vim'), 65),

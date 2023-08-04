@@ -6,28 +6,31 @@ import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Store } from '@ngxs/store';
 import { Interest } from 'src/app/store/app/app.model';
+import { SelectComponent } from '../select/select.component';
+import { Entity } from 'src/app/services/entities.model';
 
 @Component({
   selector: 'app-sort',
   templateUrl: './sort.component.html',
   styleUrls: ['./sort.component.scss'],
   standalone: true,
-  imports: [NgFor, FormsModule]
+  imports: [NgFor, FormsModule, SelectComponent],
+  host: { 'class': 'sortComp flex-e2e slimpill' }
 })
 export class SortComponent implements OnInit {
   @Input() fields!: SortEntity[];
   @Output() selectedEmitter = new EventEmitter<FullSortEntity>();
 
   editedFields: SortEntity[] = [];
-  ascending: boolean = false;
+  ascdescFields: SortEntity[] = [{ id: "DESC", name: "Absteigend", value: "false" }, { id: "ASC", name: "Aufsteigend", value: "true" }];
   selectedValue: SortEntity = { id: "", name: "", value: "" };
+  selectedAsc: SortEntity = { id: "DESC", name: "Absteigend", value: "false" };
   arrowIcon: ImageComp = arrowIcon;
 
   constructor(private store: Store) {
   }
 
   ngOnInit(): void {
-    this.ascending = false;
     this.selectedValue = this.fields[0];
     this.selectItem();
     this.store.select(state => state.app.interest).subscribe(res => this.setRelevanceSort(res));
@@ -45,7 +48,17 @@ export class SortComponent implements OnInit {
     this.selectItem();
   }
 
+  selectField(field: Entity[]) {
+    this.selectedValue = field[0] as SortEntity;
+    this.selectItem();
+  }
+
+  selectAsc(field: Entity[]) {
+    this.selectedAsc = field[0] as SortEntity;
+    this.selectItem();
+  }
+
   selectItem() {
-    this.selectedEmitter.emit({ id: "sort_" + this.selectedValue.value + "_" + this.ascending ? "ASC" : "DESC", name: "Sort Entity", value: this.selectedValue, ascending: this.ascending });
+    this.selectedEmitter.emit({ id: `sort_${this.selectedValue.value}_${this.selectedAsc.id}`, name: `Sort by ${this.selectedValue.name}`, value: this.selectedValue, ascending: this.selectedAsc.value == "true" });
   }
 }

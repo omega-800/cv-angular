@@ -22,9 +22,9 @@ export class ContactpointComponent {
   constructor() { }
 
   cp = (phone: string) => {
-    return () => contactPhone(phone);
+    contactPhone(phone);
   }
   cm = (mail: string) => {
-    return () => contactMail(mail, '', '');
+    contactMail(mail, '', '');
   }
 }

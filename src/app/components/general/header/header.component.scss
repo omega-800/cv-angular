@@ -1,5 +1,6 @@
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/mixins.scss" as mixins;
+@use "src/scss/screens.scss" as screens;
 
 :host {
     width: 100%;
@@ -11,6 +12,7 @@
         & ul {
             margin: 0;
             padding: 0;
+            position: relative;
 
             & li {
                 list-style: none;
@@ -19,7 +21,14 @@
                     @include mixins.darken-little(background-color);
                 }
 
+                &.languages {
+                    position: absolute;
+                    right: variables.$elem-size;
+                }
+
                 &.interests {
+                    position: absolute;
+                    left: variables.$elem-size;
 
                     & .icon {
                         height: variables.$elem-border-radius;
@@ -27,25 +36,22 @@
                     }
 
                     & .dropdown {
-                        position: absolute;
-                        height: 50vh;
-                        width: 50vw;
-                        top: calc(50% - 25vh);
-                        left: calc(50% - 25vw);
+                        position: fixed;
                         padding: variables.$elem-size;
                         background-color: variables.$light2;
                         border-top-color: variables.$cool;
                         z-index: variables.$top;
-                        @include mixins.fadein();
+                        left: variables.$elem-size;
+                        top: variables.$elem-height;
 
-                        &.notactive {
-                            @include mixins.fadeout();
+                        & .close {
+                            height: variables.$elem-size * 2;
+                            width: variables.$elem-size * 2;
+                            text-align: center;
+                            margin-top: - variables.$elem-padding;
                         }
 
                         & .types {
-                            height: 80%;
-                            margin: 10% 0;
-
                             & .type-container>* {
                                 display: inline-block;
                                 vertical-align: middle;

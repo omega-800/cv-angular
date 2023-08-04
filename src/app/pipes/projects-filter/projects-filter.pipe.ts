@@ -15,13 +15,14 @@ export class ProjectsFilterPipe implements PipeTransform {
   constructor(private skillsFilterPipe: SkillsFilterPipe) {
   }
 
-  transform(projects: ProjectEntity[], filters: FiltersEntity[], ...args: string[]): ProjectEntity[] {
+  transform(projects: ProjectEntity[], filters: FiltersEntity[], excludeProjectID: string, ...args: string[]): ProjectEntity[] {
 
     let skillFilters = filters.find(elem => elem.type == FilterTypes.SKILL)?.categories;
     let projectFilters = filters.find(elem => elem.type == FilterTypes.PROJECT)?.categories;
 
     if (projects && ((skillFilters && skillFilters.length > 0) || (projectFilters && projectFilters.length > 0))) {
       return projects.filter(project => {
+        if (project.id == excludeProjectID) return true;
         let appliesRange: boolean = false;
         if (projectFilters != undefined && projectFilters.some(filter => filter.isRange)) {
           projectFilters.forEach(filter => {

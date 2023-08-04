@@ -5,6 +5,7 @@ import * as assets from 'src/assets/fileStructure.json';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ImageComponent } from '../image/image.component';
 import { NgIf } from '@angular/common';
+import { DropDownAnimation } from 'src/app/animations';
 
 @Component({
   selector: 'app-contentbox',
@@ -12,18 +13,22 @@ import { NgIf } from '@angular/common';
   styleUrls: ['./contentbox.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [CarouselComponent, ImageComponent, NgIf]
+  imports: [CarouselComponent, ImageComponent, NgIf],
+  animations: [DropDownAnimation]
 })
 export class ContentboxComponent implements OnInit {
   @Input() title!: string;
   @Input() subTitle?: string;
+  @Input() subSubTitle?: string;
   @Input() description!: string;
   @Input() link?: string;
   @Input() image!: ImageComp;
   @Input() imagePreview?: ImageComp;
+  @Input() selected?: boolean;
 
   arrowIcon: ImageComp = arrowIcon;
   isCarousel: boolean = false;
+  isActive: boolean = false;
   hasImage: boolean = false;
   images: ImageComp[] = [];
   preview: ImageComp = { id: "", name: "", alt: "", path: "" };
@@ -33,6 +38,7 @@ export class ContentboxComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.isActive = this.selected || false;
     const thumbnail: string = "thumbnail.webp";
     this.preview = this.imagePreview === undefined ? this.image : this.imagePreview;
     if (this.image.path != "") {

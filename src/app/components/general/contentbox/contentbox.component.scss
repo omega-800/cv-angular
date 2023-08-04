@@ -3,54 +3,42 @@
 @use"src/scss/screens.scss" as screens;
 
 :host {
-    &>div {
+    & .preview {
         width: 100%;
         //border-radius:variables.$elem-border-radius;
-        margin: variables.$elem-padding 0;
+        margin-top: variables.$elem-padding;
 
-        & .preview {
-            & .arrowImg {
-                grid-area: arrow;
-                padding: variables.$elem-padding;
-            }
-
-            & .title {
-                grid-area: title;
-                padding: 0 variables.$elem-padding;
-                color: variables.$fontcolor1;
-            }
+        & .arrowImg {
+            grid-area: arrow;
+            padding: variables.$elem-padding;
         }
-    }
 
-    &>.notactive {
-        & .preview {
+        & .title {
+            grid-area: title;
+            padding: 0 variables.$elem-padding;
+            color: variables.$fontcolor1;
+        }
+
+        &.notactive {
             grid-template-columns: variables.$elem-height 1fr variables.$elem-height;
             grid-template-areas: "image title arrow";
 
             & .previewImg {
                 grid-area: image;
             }
-
-            & .arrowImg {
-                justify-self: end;
-                transform: rotate(180deg);
-            }
         }
 
-        & .mainImg,
-        .desc,
-        .bottom,
-        .belowbottom {
-            display: none;
+        &.active {
+            grid-template-columns: 1fr variables.$elem-height;
+            grid-template-areas: "title arrow";
         }
     }
 
-    &>.active {
+    & .items {
         @include screens.mobile-screen {
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
             grid-template-areas:
-                "preview"
                 "desc"
                 "image"
                 "bottom"
@@ -59,9 +47,8 @@
 
         @include screens.tablet-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
+            grid-template-rows: auto auto auto;
             grid-template-areas:
-                "preview  preview"
                 "image  desc"
                 "bottom bottom"
                 "belowbottom belowbottom";
@@ -69,9 +56,8 @@
 
         @include screens.laptop-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
+            grid-template-rows: auto auto auto;
             grid-template-areas:
-                "preview  preview"
                 "image  desc"
                 "image bottom"
                 "belowbottom belowbottom";
@@ -79,9 +65,8 @@
 
         @include screens.desktop-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
+            grid-template-rows: auto auto auto;
             grid-template-areas:
-                "preview  preview"
                 "image  desc"
                 "image bottom"
                 "belowbottom belowbottom";
@@ -89,35 +74,25 @@
 
         @include screens.large-screen {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
+            grid-template-rows: auto auto auto;
             grid-template-areas:
-                "preview  preview"
                 "image  desc"
                 "image bottom"
                 "belowbottom belowbottom";
         }
 
-        & .preview {
-            grid-area: preview;
-            grid-template-columns: 1fr variables.$elem-height;
-            grid-template-areas: "title arrow";
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            padding: 0;
-
-            & .previewImg {
-                display: none;
-            }
-        }
-
         & .mainImg {
             grid-area: image;
             display: flex;
+            margin-bottom: 0;
+            height: calc(100% - variables.$thin)
         }
 
         & .desc {
             grid-area: desc;
             padding: variables.$box-padding;
+            margin-bottom: 0;
+            height: calc(100% - variables.$thin)
         }
 
         & .bottom {

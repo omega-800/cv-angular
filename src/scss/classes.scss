@@ -86,27 +86,49 @@
     justify-content: space-between;
 }
 
+.outlet {
+    width: 100%;
+}
+
 .wrapper {
+    display: flex;
+    flex-direction: column;
     padding: variables.$wrapper-padding;
+    scroll-behavior: smooth !important;
 
     @include screens.mobile-screen {
-        width: variables.$wrapper-width;
+        $width: variables.$wrapper-width;
+        //width: $width;
+        width: 100%;
+        padding: 0 calc((100vw - $width) / 2);
     }
 
     @include screens.tablet-screen {
-        width: calc(variables.$wrapper-width / 1.2);
+        $width: calc(variables.$wrapper-width / 1.2);
+        //width: $width;
+        width: 100%;
+        padding: 0 calc((100vw - $width) / 2);
     }
 
     @include screens.laptop-screen {
-        width: calc(variables.$wrapper-width / 1.3);
+        $width: calc(variables.$wrapper-width / 1.3);
+        //width: $width;
+        width: 100%;
+        padding: 0 calc((100vw - $width) / 2);
     }
 
     @include screens.desktop-screen {
-        width: calc(variables.$wrapper-width / 1.5);
+        $width: calc(variables.$wrapper-width / 1.5);
+        //width: $width;
+        width: 100%;
+        padding: 0 calc((100vw - $width) / 2);
     }
 
     @include screens.large-screen {
-        width: calc(variables.$wrapper-width / 1.7);
+        $width: calc(variables.$wrapper-width / 1.7);
+        //width: $width;
+        width: 100%;
+        padding: 0 calc((100vw - $width) / 2);
     }
 }
 
@@ -117,7 +139,6 @@
     border: none;
     border-top: variables.$defborderthin;
     //border-bottom: variables.$defborderthin;
-    font-family: variables.$mono;
 }
 
 @mixin pill {
@@ -125,6 +146,11 @@
     display: inline-block;
     padding: calc(variables.$elem-padding / 2) variables.$elem-padding;
     border-radius: variables.$elem-size * 2;
+
+    &,
+    >* {
+        font-family: variables.$mono;
+    }
 }
 
 .slimpill {
@@ -157,6 +183,12 @@
     & :nth-child(2) {
         margin-left: variables.$elem-padding;
         width: calc(100% - (variables.$elem-padding * 2) - $size);
+    }
+}
+
+.arrowImg {
+    &.notactive {
+        transform: rotate(180deg);
     }
 }
 

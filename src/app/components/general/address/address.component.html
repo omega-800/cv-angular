@@ -3,8 +3,4 @@
   <p>{{ address.zip }} {{ address.city }}</p>
   <p>{{ address.country.name }}</p>
 </div>
-<app-button
-  [onClick]="map(address)"
-  [type]="lt.MAP"
-  name="Google Maps"
-></app-button>
+<app-button (click)="map(address)" [type]="lt.MAP" name="Google Maps"></app-button>

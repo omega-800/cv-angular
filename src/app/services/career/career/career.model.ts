@@ -7,14 +7,15 @@ import { SkillEntity } from "../../skills/skill/skill.model";
 
 export interface CareerEntity extends NamedEntity {
   career_id: string;
-  yearfrom: number;
-  yearto: number;
+  datefrom: Date;
+  dateto: Date;
   type: CareerTypeEntity;
   document: string;
   workplace?: WorkplaceEntity;
   school?: SchoolEntity;
   skills: SkillEntity[];
-  url:string;
+  url: string;
+  pensum: number;
 }
 
 export interface CareerOnly {
@@ -25,11 +26,12 @@ export interface CareerOnly {
   description: string;
   description_e: string;
   description_r: string;
-  yearfrom: number;
-  yearto: number;
+  datefrom: string;
+  dateto: string;
   document: string;
   workplace_id: string;
   school_id: string;
+  pensum: number;
 }
 
 export interface CareerTypeEntity extends Entity {

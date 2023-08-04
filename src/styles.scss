@@ -102,16 +102,21 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: variables.$blue2;
+  background-color: variables.$cool;
 }
 
 ::selection {
-  background-color: variables.$blue1;
+  background-color: variables.$cooldarken
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 body {
   margin: 0;
   background-color: variables.$dark1;
+  scroll-behavior: smooth !important;
 
   &.loaded {
     &#selected-it {
@@ -120,6 +125,7 @@ body {
 
     &#selected-art {
       background-image: url('assets/bg/random-shapes.svg');
+      background-size: 50%;
     }
 
     &#selected-general {

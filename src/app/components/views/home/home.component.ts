@@ -40,16 +40,16 @@ export class HomeComponent {
   }
   ngOnInit(): void { }
   mailMe = () => {
-    return contactMail(this.me.contact.email, this.me.gender, this.me.lastname);
+    contactMail(this.me.contact.email, this.me.gender, this.me.lastname);
   };
   callMe = () => {
-    return contactPhone(this.me.contact.phone);
+    contactPhone(this.me.contact.phone);
   };
   myLink = () => {
-    return openLink(this.me.url);
+    openLink(this.me.url);
   };
   myGithub = () => {
-    return openLink(this.me.github);
+    openLink(this.me.github);
   };
   getCurrentDate() {
     setInterval(() => {

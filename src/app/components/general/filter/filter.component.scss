@@ -47,18 +47,6 @@
 
         & .showFilter {
             cursor: pointer;
-
-            & .arrowImg {
-                &.notactive {
-                    transform: rotate(180deg);
-                }
-            }
-        }
-
-        &.notactive {
-            & .filterComp {
-                display: none;
-            }
         }
 
         & .filterComp .filterCategories {
@@ -88,44 +76,36 @@
                 position: relative;
                 border-top: variables.$defborderthin;
 
-                &.active {
-                    & .tags {
-                        position: absolute;
-                        background-color: variables.$cool;
-                        width: 100%;
-                        z-index: variables.$above-top;
+                & .tags {
+                    position: absolute;
+                    background-color: variables.$cool;
+                    width: 100%;
+                    z-index: variables.$above-top;
+                    border-left: variables.$defborderthin;
+
+                    //border-right: variables.$defborderthin;
+                    & .tag {
+
+                        &>* {
+                            display: inline-block;
+                        }
+
                         border-left: variables.$defborderthin;
+                        margin-top: variables.$elem-padding;
+                        margin-left: variables.$thin;
+                        cursor: pointer;
 
-                        //border-right: variables.$defborderthin;
-                        & .tag {
-
-                            &>* {
-                                display: inline-block;
-                            }
-
-                            border-left: variables.$defborderthin;
-                            margin-top: variables.$elem-padding;
-                            margin-left: variables.$thin;
-                            cursor: pointer;
-
-                            &.active {
-                                border-left: variables.$defborder;
-
-                                &:hover {
-                                    @include mixins.darken-little-custom(border-color, variables.$light2);
-                                }
-                            }
+                        &.active {
+                            border-left: variables.$defborder;
 
                             &:hover {
-                                @include mixins.transition(border-left, variables.$defborder);
+                                @include mixins.darken-little-custom(border-color, variables.$light2);
                             }
                         }
-                    }
-                }
 
-                &.notactive {
-                    & .tags {
-                        display: none;
+                        &:hover {
+                            @include mixins.transition(border-left, variables.$defborder);
+                        }
                     }
                 }
             }
