@@ -74,7 +74,8 @@
             @include screens.mobile-screen {
                 //style="--left: {{ getLeftMargin() }}px"
                 //left: 0px - var(--left);
-                left: calc(50% - 40vw);
+                //left: calc(50% - 40vw);
+                left: 0;
                 width: 80vw;
 
                 &::after {
@@ -83,12 +84,28 @@
             }
 
             @include screens.tablet-screen {
-                left: calc(50% - 25vw);
-                width: 50vw;
+                //left: calc(50% - 25vw);
+                left: 0;
+                width: 70vw;
 
                 &::after {
                     border-top: variables.$elem-size solid transparent !important;
                 }
+            }
+
+            @include screens.laptop-screen {
+                left: calc(50% - 35vw);
+                width: 70vw;
+            }
+
+            @include screens.desktop-screen {
+                left: calc(50% - 25vw);
+                width: 50vw;
+            }
+
+            @include screens.large-screen {
+                left: calc(50% - 15vw);
+                width: 30vw;
             }
 
             &::after {

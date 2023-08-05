@@ -23,7 +23,7 @@ import { Interest } from 'src/app/store/app/app.model';
 import { DropDownAnimation } from 'src/app/animations';
 import { SelectComponent } from '../select/select.component';
 import { Entity } from 'src/app/services/entities.model';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { NgVar } from 'src/app/directives/ng-var.directive';
 
 @Component({
@@ -36,45 +36,24 @@ import { NgVar } from 'src/app/directives/ng-var.directive';
 })
 export class FilterComponent implements OnInit {
   @Input() filters!: FiltersEntity[];
+  @Input() additionalFilters$?: BehaviorSubject<FiltersEntity[]>;
   @Output() filterEmitter = new EventEmitter<FiltersEntity[]>();
   selectedFilter: FiltersEntity[] = [];
   arrowIcon: ImageComp = arrowIcon;
   projectFilterProps = projectFilterProps;
   selectedInterest: Interest = Interest.IT;
   isActive = false;
+  additionalFilters: FiltersEntity[] = []
 
-  selectedFilter$: Observable<FiltersEntity[]> = of(this.selectedFilter);
+  //selectedFilter$: Observable<FiltersEntity[]> = of(this.selectedFilter);
 
   constructor(private cdref: ChangeDetectorRef, private store: Store) {
   }
 
-  setInterestFilter(interest: Interest) {
-    let filterIndex = this.filters.findIndex((filter) => filter.type == FilterTypes.PROJECT);
-    if (filterIndex >= 0) {
-      let filterApplies = this.filters[filterIndex];
-      let categoryIndex = filterApplies.categories.findIndex(cat => cat.id == projectFilterProps.relevance);
-      if (categoryIndex >= 0) {
-        let categoryApplies = filterApplies.categories[categoryIndex];
-        let tagIndex = categoryApplies.tags.findIndex(tag => tag.id == interest);
-        if (tagIndex >= 0) {
-          this.toggleTag(filterApplies, categoryApplies, categoryApplies.tags[tagIndex], true);
-        } else {
-          this.selectedFilter = this.selectedFilter.reduce((result: FiltersEntity[], filter) => {
-            let newCategories = filter.categories.filter(cat => cat.id != categoryApplies.id);
-            if (newCategories.length > 0) {
-              result.push({ ...filter, categories: newCategories });
-            }
-            return result;
-          }, []);
-          this.filterEmitter.emit(this.selectedFilter)
-        }
-      }
-    }
-  }
-  getSelectedCategoryTags(passedFilter: FiltersEntity, passedCategory: FilterCategoryEntity): Observable<TagEntity[]> {
-    return of(this.selectedFilter.find((filter) => filter.type == passedFilter.type)?.categories.find(cat => cat.id == passedCategory.id)?.tags || []);
-  }
   ngOnInit(): void {
+    if (this.additionalFilters$ != undefined) {
+      this.additionalFilters$.subscribe(res => { this.setAdditionalFilters(res) })
+    }
     this.store.select(state => state.app.interest).subscribe(res => this.setInterestFilter(res));
   }
 
@@ -82,16 +61,55 @@ export class FilterComponent implements OnInit {
     this.cdref.detectChanges();
   }
 
-  /*getName(categoryID: string, value: FilterType): string {
+  setAdditionalFilters(addFilters: FiltersEntity[]) {
+    this.additionalFilters = addFilters;
+    addFilters.forEach(filter => {
+      filter.categories.forEach(category => {
+        category.tags.forEach(tag => {
+          this.toggleTag(filter, category, tag, true)
+        })
+      })
+    })
+  }
+
+  setInterestFilter(interest: Interest) {
+    this.selectedInterest = interest;
+    if (this.additionalFilters.length == null || this.additionalFilters.length == 0) {
+      let filter = this.filters.find(filter => filter.type as FilterTypes == FilterTypes.PROJECT);
+      if (filter != undefined) {
+        let category = filter.categories.find(cat => cat.id == projectFilterProps.relevance);
+        if (category != undefined) {
+          let tag = category.tags.find(tag => tag.id == interest);
+          if (tag != undefined) {
+            this.toggleTag(filter, category, tag, true);
+          } else {
+            this.selectedFilter = this.selectedFilter.reduce((result: FiltersEntity[], filter) => {
+              let newCategories = filter.categories.filter(cat => cat.id != category!.id);
+              if (newCategories.length > 0) {
+                result.push({ ...filter, categories: newCategories });
+              }
+              return result;
+            }, []);
+            this.filterEmitter.emit(this.selectedFilter)
+          }
+        }
+      }
+    }
+  }
+  /*getSelectedCategoryTags(passedFilter: FiltersEntity, passedCategory: FilterCategoryEntity): Observable<TagEntity[]> {
+    return of(this.selectedFilter.find((filter) => filter.id == passedFilter.id)?.categories.find(cat => cat.id == passedCategory.id)?.tags || []);
+  }
+
+  getName(categoryID: string, value: FilterType): string {
     return this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == value)[0].name;
-  }*/
+  }
 
   setCategory(passedFilter: FiltersEntity, passedCategory: FilterCategoryEntity, passedTags: Entity[]) {
     let categoryCopy = JSON.parse(JSON.stringify(passedCategory));
     let filterCopy = JSON.parse(JSON.stringify(passedFilter));
     let tagsCopy = JSON.parse(JSON.stringify(passedTags));
     categoryCopy.tags = tagsCopy;
-    let filterIndex: number = this.selectedFilter.findIndex(elem => (elem.type == passedFilter.type));
+    let filterIndex: number = this.selectedFilter.findIndex(elem => (elem.id == passedFilter.id));
     if (filterIndex >= 0) {
       let filter = this.selectedFilter[filterIndex];
       let catIndex: number = filter.categories.findIndex(elem => (elem.id == passedCategory.id));
@@ -105,7 +123,7 @@ export class FilterComponent implements OnInit {
       this.selectedFilter.push(filterCopy)
     }
     this.filterEmitter.emit(this.selectedFilter)
-  }
+  }*/
 
   toggleTag(passedFilter: FiltersEntity, passedCategory: FilterCategoryEntity, passedTag: TagEntity, forceTag: boolean = false) {
     let categoryCopy = JSON.parse(JSON.stringify(passedCategory));
@@ -113,7 +131,7 @@ export class FilterComponent implements OnInit {
     let tagCopy = JSON.parse(JSON.stringify(passedTag));
     let htmlElem = document.getElementById(passedTag.id);
 
-    let filterIndex: number = this.selectedFilter.findIndex(elem => (elem.type == passedFilter.type));
+    let filterIndex: number = this.selectedFilter.findIndex(elem => (elem.id == passedFilter.id));
     if (filterIndex >= 0) {
       let filter = this.selectedFilter[filterIndex];
       let catIndex: number = filter.categories.findIndex(elem => (elem.id == passedCategory.id));
@@ -151,13 +169,17 @@ export class FilterComponent implements OnInit {
   }
 
   updateRange(passedFilter: FiltersEntity, newRangeFilter: FilterCategoryEntity) {
-    let filter = this.selectedFilter.find(elem => (elem.type == passedFilter.type));
+    let filterIndex = this.selectedFilter.findIndex(elem => (elem.id == passedFilter.id));
     let defaultValues = this.isDefaultRangeValue(passedFilter, newRangeFilter);
-    if (filter != undefined) {
+    if (filterIndex >= 0) {
+      let filter = this.selectedFilter[filterIndex];
       let rangeIndex: number = filter.categories.findIndex(elem => (elem.isRange && elem.id == newRangeFilter.id));
       if (rangeIndex >= 0) {
         if (defaultValues) {
-          this.selectedFilter.splice(rangeIndex, 1);
+          filter.categories.splice(rangeIndex, 1);
+          if (filter.categories.length < 1) {
+            this.selectedFilter.splice(filterIndex, 1)
+          }
         } else {
           filter.categories[rangeIndex] = newRangeFilter;
         }
@@ -173,9 +195,9 @@ export class FilterComponent implements OnInit {
   }
 
   resetRange(filter: FiltersEntity, selectedRange: FilterCategoryEntity) {
-    let rangeValues = this.filters.find(elem => (elem.type == filter.type))?.categories.find((range) => range.id == selectedRange.id)?.tags;
+    let rangeValues = this.filters.find(elem => (elem.id == filter.id))?.categories.find((range) => range.id == selectedRange.id)?.tags;
     if (rangeValues != undefined) {
-      this.selectedFilter.find(elem => (elem.type == filter.type))!.categories.find((elem) => elem.id == selectedRange.id)!.tags = [
+      this.selectedFilter.find(elem => (elem.id == filter.id))!.categories.find((elem) => elem.id == selectedRange.id)!.tags = [
         rangeValues[0], rangeValues[rangeValues.length - 1]
       ];
       this.resetRangeDOM(selectedRange.id, rangeValues[0].value, rangeValues[rangeValues.length - 1].value);
@@ -194,8 +216,7 @@ export class FilterComponent implements OnInit {
   }
 
   isDefaultRangeValue(filter: FiltersEntity, range: FilterCategoryEntity): boolean {
-    let selected = this.filters.find(elem => (elem.type == filter.type))!.categories.find((cat) => cat.id == range.id)
-    console.log(selected?.tags, range.tags)
+    let selected = this.filters.find(elem => (elem.id == filter.id))!.categories.find((cat) => cat.id == range.id)
     return (
       selected?.tags[0].value == range.tags[0].value &&
       selected?.tags[selected?.tags.length - 1].value == range.tags[1].value

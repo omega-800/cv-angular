@@ -61,13 +61,15 @@ h2 {
 h3,
 h4,
 h5,
-h6 {
+h6,
+th {
   margin: 0;
   font-family: variables.$mono;
   color: variables.$fontcolor1;
 }
 
 p,
+td,
 form,
 select,
 output {

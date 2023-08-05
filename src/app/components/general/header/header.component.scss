@@ -14,6 +14,16 @@
             padding: 0;
             position: relative;
 
+            @include screens.mobile-screen {
+                & .home {
+                    padding-left: variables.$elem-size;
+                }
+
+                & .projects {
+                    padding-right: variables.$elem-size;
+                }
+            }
+
             & li {
                 list-style: none;
 
@@ -24,11 +34,19 @@
                 &.languages {
                     position: absolute;
                     right: variables.$elem-size;
+
+                    @include screens.mobile-screen {
+                        right: 0;
+                    }
                 }
 
                 &.interests {
                     position: absolute;
                     left: variables.$elem-size;
+
+                    @include screens.mobile-screen {
+                        left: 0;
+                    }
 
                     & .icon {
                         height: variables.$elem-border-radius;

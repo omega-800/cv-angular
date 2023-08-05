@@ -1,4 +1,4 @@
-<div [class]="'tooltip direction-' + direction">
+<div *ngIf="visible" [class]="'tooltip direction-' + direction" [@tooltipAnimation]="direction">
   <div class="name-container">
     <img *ngIf="icon" class="tooltip-icon small-image" src="{{ icon.path }}" alt="{{ icon.alt }}" loading="lazy" />
     <p class="name-title">{{ name }}</p>
@@ -7,7 +7,7 @@
   <div class="tooltip-content">
     <ng-content></ng-content>
   </div>
-  <div *ngIf="link" class="link-container" onclick="ol(link.url)">
+  <div *ngIf="link" class="link-container" (click)="ol(link.url)">
     <img class="tooltip-icon small-image" src="{{ link.type.image.path }}" alt="icon for {{ link.name }} link"
       loading="lazy" />
     <p class="link-title">{{ link.name }}</p>

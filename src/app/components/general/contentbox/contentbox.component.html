@@ -3,12 +3,11 @@
   <img *ngIf="preview && !isActive" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
     loading="lazy" />
 
-  <h3 class="title flex-list" *ngIf="!link">{{ title }}</h3>
-  <h3 class="title flex-list" *ngIf="link">
-    <a href="{{ link }}" target="_blank">{{ title }}</a>
-  </h3>
+  <h3 class="title flex-list">{{ title }}</h3>
+  <app-button *ngIf="!isActive && link" class="preview-image" (click)="ol(link)" [name]="title" [type]="lt.URL">
+  </app-button>
 
-  <img #arrowimg [class]="(isActive ? '': 'notactive ') + 'arrowImg preview-image'" src="{{ arrowIcon.path }}"
+  <img [class]="(isActive ? '': 'notactive ') + 'arrowImg preview-image'" src="{{ arrowIcon.path }}"
     alt="{{ arrowIcon.alt }}" loading="lazy" />
 </div>
 

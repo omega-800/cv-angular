@@ -3,6 +3,8 @@
 @use"src/scss/screens.scss" as screens;
 
 :host {
+    display: block;
+
     & .preview {
         width: 100%;
         //border-radius:variables.$elem-border-radius;
@@ -20,11 +22,15 @@
         }
 
         &.notactive {
-            grid-template-columns: variables.$elem-height 1fr variables.$elem-height;
-            grid-template-areas: "image title arrow";
+            grid-template-columns: variables.$elem-height 1fr variables.$elem-height variables.$elem-height;
+            grid-template-areas: "image title link arrow";
 
             & .previewImg {
                 grid-area: image;
+            }
+
+            & app-button {
+                grid-area: link;
             }
         }
 
@@ -46,12 +52,13 @@
         }
 
         @include screens.tablet-screen {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
             grid-template-areas:
-                "image  desc"
-                "bottom bottom"
-                "belowbottom belowbottom";
+                "desc"
+                "image"
+                "bottom"
+                "belowbottom";
         }
 
         @include screens.laptop-screen {

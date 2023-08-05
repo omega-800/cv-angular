@@ -3,6 +3,7 @@ import { Entity } from "../entities.model"
 
 export enum FilterTypes {
   PROJECT = 'filter_project',
+  PROJECTADD = 'filter_project_additional',
   SKILL = 'filter_skill'
 }
 

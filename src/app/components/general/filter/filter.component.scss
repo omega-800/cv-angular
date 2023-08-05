@@ -56,7 +56,7 @@
                 }
 
                 @include screens.tablet-screen {
-                    width: calc(50% - (variables.$elem-padding * 2));
+                    width: calc(100% - (variables.$elem-padding * 2));
                 }
 
                 @include screens.laptop-screen {
@@ -64,7 +64,7 @@
                 }
 
                 @include screens.desktop-screen {
-                    width: calc((100% / 3) - (variables.$elem-padding * 2));
+                    width: calc(50% - (variables.$elem-padding * 2));
                 }
 
                 @include screens.large-screen {

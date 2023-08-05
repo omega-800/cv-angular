@@ -54,15 +54,7 @@
     }
   }
 
-  & app-tooltip {
-    @include mixins.fadeout();
-
-    & .cat-container>* {
-      display: inline-block;
-    }
-  }
-
-  &:hover app-tooltip {
-    @include mixins.fadein();
+  & app-tooltip .cat-container>* {
+    display: inline-block;
   }
 }

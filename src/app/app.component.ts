@@ -37,14 +37,7 @@ export class AppComponent implements OnInit {
   //interest$: Observable<Interest>;
   title = 'cv-angular';
 
-  activatedRoute = inject(ActivatedRoute);
-  queryParams$: Observable<URLParams> = this.activatedRoute.queryParams.pipe(
-    map((params) => ({
-      interest: params['interest'],
-    }))
-  );
-
-  constructor(@Inject(DOCUMENT) private document: Document, private store: Store, private contexts: ChildrenOutletContexts) {
+  constructor(@Inject(DOCUMENT) private document: Document, private store: Store, private activatedRoute: ActivatedRoute) {
     //this.interest$ = this.store.select(state => state.app.interest);
     this.store.select(state => state.app.interest).subscribe(res => {
       this.customcolor = res == Interest.IT ? 'rgba(103, 176, 232, 0.9)'
@@ -69,7 +62,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.document.body.classList.add('loaded');
-    this.queryParams$.subscribe(res => this.store.dispatch(new SetInterest(res.interest != undefined ? res.interest : Interest.IT)))
   }
 
   /*getRouteAnimationData() {

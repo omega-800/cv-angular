@@ -5,4 +5,6 @@ export const projectFilterProps = {
   career: "filter_project_career",
   client: "filter_project_client",
   date: "filter_project_date",
+  selected: "filter_project_selected",
+  skill: "filter_project_skill",
 } as const;

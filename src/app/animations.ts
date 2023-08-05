@@ -102,6 +102,84 @@ export const LeftToRightAnimation = trigger("leftToRight", [
     ])
 ]);
 
+export const LeftToRightAnimationIncrement = trigger("leftToRightIncrement", [
+    transition(":increment", [
+        //style({ height: "*" }),
+        query(":enter", [
+            style({ opacity: 0, transform: 'translateX(-100%)' }),
+        ]),
+        sequence([
+            //animate("200ms", style({ height: "*" })),
+            query(":enter", [
+                stagger(10, [
+                    animate('300ms ease-in-out', style({ opacity: 1, transform: 'translateX(0%)' }))
+                ])
+            ])
+        ])
+    ]),
+
+    transition(":decrement", [
+        //style({ height: "*" }),
+        query(":leave", [style({ opacity: 1, transform: "none" })]),
+        sequence([
+            query(":leave", [
+                stagger(10, [
+                    animate(
+                        "300ms ease-in-out",
+                        style({ opacity: 0, transform: "translateX(100%)" })
+                    )
+                ])
+            ]),
+            //animate("200ms", style({ height: "*" }))
+        ])
+    ])
+]);
+
+export const SlideLeftAnimation = trigger('slideLeftAnimation', [
+    transition(":enter", [
+        style({ opacity: 0, transform: 'translateX(-100%)' }),
+        animate('500ms ease-in-out', style({ opacity: 1, transform: 'translateX(0%)' }))
+    ]),
+    transition(":leave", [
+        style({ opacity: 1, transform: "none" }),
+        animate("500ms ease-in-out", style({ opacity: 0, transform: "translateX(100%)" }))
+    ])
+])
+
+export const TooltipAnimation = trigger('tooltipAnimation', [
+    transition("void => top", [
+        style({ opacity: 0, height: 0, overflow: 'hidden', transform: 'translateY(-100%)' }),
+        animate('300ms ease-in-out', style({ opacity: 1, height: '*', transform: 'translateY(0%)' }))
+    ]),
+    transition("void => bottom", [
+        style({ opacity: 0, height: 0, overflow: 'hidden', transform: 'translateY(100%)' }),
+        animate('300ms ease-in-out', style({ opacity: 1, height: '*', transform: 'translateY(0%)' }))
+    ]),
+    transition("void => left", [
+        style({ opacity: 0, width: 0, overflow: 'hidden', transform: "translateX(-100%)" }),
+        animate("300ms ease-in-out", style({ opacity: 1, width: '*', transform: "translateX(0%)" }))
+    ]),
+    transition("void => right", [
+        style({ opacity: 0, width: 0, overflow: 'hidden', transform: "translateX(100%)" }),
+        animate("300ms ease-in-out", style({ opacity: 1, width: '*', transform: "translateX(0%)" }))
+    ]),
+    transition("top => void", [
+        style({ opacity: 1, overflow: 'hidden', height: "*", transform: 'translateY(0%)' }),
+        animate('200ms ease-in-out', style({ opacity: 0, height: 0, transform: 'translateY(-100%)' }))
+    ]),
+    transition("bottom => void", [
+        style({ opacity: 1, overflow: 'hidden', height: "*", transform: 'translateY(0%)' }),
+        animate('200ms ease-in-out', style({ opacity: 0, height: 0, transform: 'translateY(100%)' }))
+    ]),
+    transition("left => void", [
+        style({ opacity: 1, overflow: 'hidden', width: "*", transform: 'translateX(0%)' }),
+        animate('200ms ease-in-out', style({ opacity: 0, width: 0, transform: 'translateX(-100%)' }))
+    ]),
+    transition("right => void", [
+        style({ opacity: 1, overflow: 'hidden', width: "*", transform: 'translateX(0%)' }),
+        animate('200ms ease-in-out', style({ opacity: 0, width: 0, transform: 'translateX(100%)' }))
+    ]),
+])
 
 export const slideInAnimation =
     trigger('routeAnimations', [

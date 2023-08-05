@@ -12,9 +12,21 @@
         @include screens.mobile-screen {
             width: 100%;
         }
+
+        @include screens.tablet-screen {
+            width: 100%;
+        }
     }
 
     & app-select {
         width: calc(100% / 3);
+
+        @include screens.mobile-screen {
+            width: calc(50% - variables.$elem-padding);
+        }
+
+        @include screens.tablet-screen {
+            width: calc(50% - variables.$elem-padding);
+        }
     }
 }

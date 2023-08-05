@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { ImageComp } from '../../components.model';
-import { arrowIcon } from '../../components.constants';
+import { ImageComp, LinkTypes } from '../../components.model';
+import { arrowIcon, linkTypes } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ImageComponent } from '../image/image.component';
 import { NgIf } from '@angular/common';
 import { DropDownAnimation } from 'src/app/animations';
+import { openLink } from '../links.util';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-contentbox',
@@ -13,7 +15,7 @@ import { DropDownAnimation } from 'src/app/animations';
   styleUrls: ['./contentbox.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [CarouselComponent, ImageComponent, NgIf],
+  imports: [CarouselComponent, ImageComponent, NgIf, ButtonComponent],
   animations: [DropDownAnimation]
 })
 export class ContentboxComponent implements OnInit {
@@ -25,6 +27,7 @@ export class ContentboxComponent implements OnInit {
   @Input() image!: ImageComp;
   @Input() imagePreview?: ImageComp;
   @Input() selected?: boolean;
+  lt: LinkTypes = linkTypes;
 
   arrowIcon: ImageComp = arrowIcon;
   isCarousel: boolean = false;
@@ -70,5 +73,9 @@ export class ContentboxComponent implements OnInit {
         }
       }
     }
+  }
+
+  ol(href: string) {
+    openLink(href)
   }
 }

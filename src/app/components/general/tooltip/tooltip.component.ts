@@ -3,6 +3,7 @@ import { ImageComp, URLComp } from '../../components.model';
 import { openLink } from '../links.util';
 import { Direction } from '../../components.constants';
 import { NgIf } from '@angular/common';
+import { TooltipAnimation } from 'src/app/animations';
 
 @Component({
   selector: 'app-tooltip',
@@ -10,24 +11,26 @@ import { NgIf } from '@angular/common';
   styleUrls: ['./tooltip.component.scss'],
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgIf]
+  imports: [NgIf],
+  animations: [TooltipAnimation]
 })
 export class TooltipComponent {
   @Input() name!: string;
   @Input() direction!: Direction;
+  @Input() visible!: boolean;
   @Input() description?: string;
   @Input() icon?: ImageComp;
   @Input() link?: URLComp;
-
+  a
   constructor(private elRef: ElementRef) { }
 
-  ol = (href: string) => {
-    return () => openLink(href);
+  ol(href: string) {
+    openLink(href);
   };
 
-  /*getLeftMargin(): number {
+  getLeftMargin(): number {
     console.log(this.elRef.nativeElement.parentElement);
     console.log(window.innerWidth - this.elRef.nativeElement.parentElement.getBoundingClientRect().left)
     return window.innerWidth - this.elRef.nativeElement.parentElement.getBoundingClientRect().left;
-  }*/
+  }
 }

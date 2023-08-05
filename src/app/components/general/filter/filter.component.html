@@ -42,7 +42,7 @@
           </div>
 
           <div *ngIf="category.id == projectFilterProps.relevance && getRelevanceTag(category) as tag"
-            (click)="toggleTag(filter, category, tag);" class="pill tag link" [id]="tag.id">
+            (click)="toggleTag(filter, category, tag);" class="pill tag link active" [id]="tag.id">
             <p>{{ tag.name}}</p>
           </div>
 

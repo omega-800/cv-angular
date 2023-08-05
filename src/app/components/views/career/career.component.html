@@ -7,7 +7,7 @@
         alt: career.type.name
       }" [image]="item.thumbnail" title="{{ item.name }}" [subTitle]="career.pensum+'% Pensum'"
     [subSubTitle]="(career.type === ct.SCHOOL ? 'Besucht von ': 'Angestellt von ')+(career.datefrom | pipeDate) +' bis '+(career.dateto | pipeDate)"
-    description="{{ career.description }}" [id]="career.id" [selected]="career.id == selectedCareerID">
+    description="{{ career.description }}" [id]="career.career_id" [selected]="career.career_id == selectedCareerID">
     <div class="slimpill time flex-e2e">
       <table>
         <tr>
@@ -22,12 +22,16 @@
           <td class="right">{{career.dateto | pipeDate}}</td>
         </tr>
       </table>
-      <div class="hov">
-        <app-tooltip [name]="'Basis 42-Stunden-Woche minus Wochenende, 10T Feiertage und 36T Ferien pro Jahr'"
-          [direction]="d.TOP"></app-tooltip>
-        <p>Insgesamte Zeit geleistet</p>
-        <p>{{getDuration(career.datefrom, career.dateto, career.pensum)}}</p>
-      </div>
+      <ng-container *ngVar="{value:false} as showTooltip">
+        <div class="hov" (mouseover)="showTooltip.value = true" (mouseout)="showTooltip.value = false">
+          <app-tooltip [visible]="showTooltip.value"
+            [name]="'Basis 42-Stunden-Woche minus Wochenende, 10T Feiertage und 36T Ferien pro Jahr'"
+            [description]="'(Gesamtzeit Beginn bis Ende) / (7 * 5) / (24 * (8.5 * pensum / 100)) / (36 * 35) / (10 * 9)'"
+            [direction]="d.TOP"></app-tooltip>
+          <p><b>Insgesamte Stunden geleistet</b></p>
+          <p>{{getDuration(career.datefrom, career.dateto, career.pensum)}}</p>
+        </div>
+      </ng-container>
     </div>
     <ng-container bottom>
       <div class="bot bottomLinks default-grid">
@@ -76,7 +80,7 @@
             <div *ngIf="isActive.value" class="projectsList slimpill flex-e2e" [@dropDownMenu]>
               <app-button *ngFor="let project of projectsList" [name]="project.name"
                 [image]="getThumbnail(project.image)" [type]="lt.OTHER" [showName]="true"
-                (click)="goToProject(project.id)" class="menu-item"></app-button>
+                (click)="goToProject(project.project_id)" class="menu-item"></app-button>
             </div>
           </ng-container>
         </ng-container>

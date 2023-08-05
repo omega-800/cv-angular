@@ -7,7 +7,7 @@ import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
+  //styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { 'class': 'flex-center link buttonpill' },
   standalone: true,
@@ -18,7 +18,16 @@ export class ButtonComponent {
   @Input() name!: string;
   @Input() image?: ImageComp;
   @Input() showName?: boolean;
+  showTooltip = false;
 
   lt: LinkTypes = linkTypes;
   d = Direction;
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.showTooltip = true;
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.showTooltip = false;
+  }
 }

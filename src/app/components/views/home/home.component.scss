@@ -72,11 +72,6 @@
             padding: variables.$elem-padding;
             grid-area: socials;
 
-            & app-button,
-            .socialstext {
-                flex: 1;
-            }
-
             & .socialstext {
                 @include screens.mobile-screen {
                     flex: 100%;
