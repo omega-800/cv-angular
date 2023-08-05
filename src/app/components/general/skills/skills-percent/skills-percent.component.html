@@ -3,7 +3,11 @@
     <app-filter [filters]="filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
     <app-sort [fields]="sortFields" (selectedEmitter)="sortSkillsBy($event)"></app-sort>
 </div>
-<div class="skill-container flex-list">
+<div class="skill-container flex-list"
+    [@leftToRightIncrement]="(skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter).length">
+    <h2 class="error" *ngIf="(skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter).length == 0">
+        Leider konnten keine Skills zu diesem Filter gefunden werden :(
+    </h2>
     <app-skill-item *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter"
         [skill]="skill" [showPercent]="true" class="flex-row-nojust menu-item"></app-skill-item>
 </div>

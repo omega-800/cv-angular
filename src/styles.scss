@@ -6,46 +6,6 @@
   box-sizing: border-box;
 }
 
-@include screens.mobile-screen {
-  @for $i from 1 through 6 {
-    h#{$i} {
-      font-size: #{calc((((7 - $i) * 1.8) + 3) / 10)}em;
-    }
-  }
-}
-
-@include screens.tablet-screen {
-  @for $i from 1 through 6 {
-    h#{$i} {
-      font-size: #{calc((((7 - $i) * 1.7) + 6) / 10)}em;
-    }
-  }
-}
-
-@include screens.laptop-screen {
-  @for $i from 1 through 6 {
-    h#{$i} {
-      font-size: #{calc((((7 - $i) * 1.6) + 7) / 10)}em;
-    }
-  }
-}
-
-@include screens.desktop-screen {
-  @for $i from 1 through 6 {
-    h#{$i} {
-      font-size: #{calc((((7 - $i) * 1.8) + 8) / 10)}em;
-    }
-  }
-}
-
-@include screens.large-screen {
-  @for $i from 1 through 6 {
-    h#{$i} {
-      font-size: #{calc((((7 - $i) * 2) + 9) / 10)}em;
-    }
-  }
-}
-
 h1 {
   margin-top: variables.$elem-size;
 }

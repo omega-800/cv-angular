@@ -1,0 +1,23 @@
+@for $i from 1 through 6 {
+    h#{$i} {
+        @include screens.large-screen {
+            font-size: #{calc((((7 - $i) * 2) + 9) / 10)}em;
+        }
+
+        @include screens.desktop-screen {
+            font-size: #{calc((((7 - $i) * 1.8) + 8) / 10)}em;
+        }
+
+        @include screens.laptop-screen {
+            font-size: #{calc((((7 - $i) * 1.6) + 7) / 10)}em;
+        }
+
+        @include screens.tablet-screen {
+            font-size: #{calc((((7 - $i) * 1.7) + 6) / 10)}em;
+        }
+
+        @include screens.mobile-screen {
+            font-size: #{calc((((7 - $i) * 1.8) + 3) / 10)}em;
+        }
+    }
+}

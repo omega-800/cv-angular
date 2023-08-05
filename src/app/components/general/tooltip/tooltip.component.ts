@@ -76,6 +76,7 @@ export class TooltipComponent {
     let screenWidth = window.innerWidth;
     let parentElemMiddleFromLeft = parentElemBounds.left + ((parentElemBounds.right - parentElemBounds.left) / 2)
 
+    this.elRef.nativeElement.style.setProperty('--parentheight', `${parentElemBounds.bottom - parentElemBounds.top}px`);
     this.elRef.nativeElement.style.setProperty('--marginright', '0px');
     this.elRef.nativeElement.style.setProperty('--marginleft', '0px');
 

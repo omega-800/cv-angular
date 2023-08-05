@@ -81,8 +81,7 @@ export class ProjectsComponent implements OnInit {
     projectFilterService: ProjectFilterService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private scroller: ViewportScroller,
-    private store: Store
+    private scroller: ViewportScroller
   ) {
     this.projects = projectService.getProjects();
     this.projects.forEach((project) => {

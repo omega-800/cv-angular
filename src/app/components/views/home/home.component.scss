@@ -45,10 +45,13 @@
             grid-area: img;
 
             & img {
-                max-width: 100%;
+                //max-width: 100%;
+                max-width: 90%;
                 max-height: 100%;
                 border-radius: 50%;
                 border: variables.$defborderthin;
+                filter: url(#svg-img-filter);
+                -webkit-filter: url(#svg-img-filter);
             }
         }
 

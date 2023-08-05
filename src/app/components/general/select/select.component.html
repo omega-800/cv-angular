@@ -5,7 +5,7 @@
 </div>
 <div *ngIf="isActive" class="tags" [@dropDownMenu]>
     <div *ngFor="let field of fields" [class]="(isSelected(field) ? 'active ' : '')+'menu-item tag link'"
-        (click)="emitSelected(field)">
+        (click)="emitSelected(field);isActive = !isActive">
         <!--img *ngIf="field.image" src="{{ field.image.path }}" alt="{{ field.image.alt }}" class="tagIcon small-image"
             loading="lazy" /-->
         <p>{{ field.name }}</p>

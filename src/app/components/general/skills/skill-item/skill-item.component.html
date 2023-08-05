@@ -2,7 +2,7 @@
     (showPercent ? 'percent-' + skill.knowledgepercent: '')+' flex-row-nojust pill skill-item'
   " (mouseenter)="showTooltip = true" (mouseleave)="showTooltip = false">
   <app-tooltip [visible]="showTooltip" [name]=" skillText" [icon]="skill.icon" [description]="skill.description"
-    [direction]="direction.TOP" [link]="
+    [direction]="direction.BOTTOM" [link]="
     skill.url
       ? {
           id: 'link_for_' + skill.identifier,
@@ -20,7 +20,7 @@
         loading="lazy" />
       <p>{{ category.name }}</p>
     </div>
-    <div (click)="goToProjects()" class="pill link">Dazugehörige Projekte ansehen</div>
+    <div *ngIf="hasProjects()" (click)="goToProjects()" class="pill link">Dazugehörige Projekte ansehen</div>
   </app-tooltip>
   <div *ngIf="showPercent" class="skill-cat-img-container">
     <img class="skill-cat-img small-image" *ngFor="let category of skill.skillcategories"

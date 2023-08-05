@@ -52,6 +52,10 @@ export class ProjectService {
     return Object.values(this.projects).filter(project => project.career?.career_id === careerID);
   }
 
+  getProjectsBySkill(skillID: string): ProjectEntity[] {
+    return Object.values(this.projects).filter(project => project.skills.some(skill => skill.skill_id == skillID));
+  }
+
   fillProject(project: ProjectOnly, images: ImageComp[]): ProjectEntity {
     return {
       ...project,

@@ -2,9 +2,9 @@ import { DOCUMENT } from '@angular/common';
 import { AfterViewInit, Component, HostBinding, Inject, OnInit, inject } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Interest } from './store/app/app.model';
-import { Observable, map } from 'rxjs';
+import { Observable, filter, map, take } from 'rxjs';
 import { AppStateModel } from './store/app/app.state';
-import { ActivatedRoute, ChildrenOutletContexts } from '@angular/router';
+import { ActivatedRoute, ActivationEnd, ChildrenOutletContexts, Router } from '@angular/router';
 import { SetInterest } from './store/app/app.actions';
 import { slideInAnimation } from './animations';
 
@@ -37,8 +37,18 @@ export class AppComponent implements OnInit {
   //interest$: Observable<Interest>;
   title = 'cv-angular';
 
-  constructor(@Inject(DOCUMENT) private document: Document, private store: Store, private activatedRoute: ActivatedRoute) {
+  constructor(@Inject(DOCUMENT) private document: Document, private store: Store, private router: Router) {
     //this.interest$ = this.store.select(state => state.app.interest);
+    this.router.events
+      .pipe(
+        filter(e => (e instanceof ActivationEnd) && (Object.keys(e.snapshot.params).length > 0)),
+        map(e => e instanceof ActivationEnd ? e.snapshot.params : {}),
+        take(1)
+      )
+      .subscribe(params => {
+        let checkedInterest = params['interest'] != undefined && Object.values(Interest).includes(params['interest']) ? params['interest'] : Interest.IT;
+        this.store.dispatch(new SetInterest(checkedInterest))
+      });
     this.store.select(state => state.app.interest).subscribe(res => {
       this.customcolor = res == Interest.IT ? 'rgba(103, 176, 232, 0.9)'
         : res == Interest.ART ? 'rgba(196, 127, 213, 0.9)'
@@ -63,8 +73,4 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.document.body.classList.add('loaded');
   }
-
-  /*getRouteAnimationData() {
-    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
-  }*/
 }

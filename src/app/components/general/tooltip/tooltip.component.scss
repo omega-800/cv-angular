@@ -7,22 +7,26 @@
 
     &.is-top {
         width: 100%;
-        bottom: calc(100% + variables.$elem-padding);
+        height: variables.$elem-padding;
+        bottom: calc(100%);
     }
 
     &.is-bottom {
         width: 100%;
-        top: calc(100% + variables.$elem-padding);
+        height: variables.$elem-padding;
+        top: calc(100%);
     }
 
     &.is-right {
         height: 100%;
-        left: calc(100% + variables.$elem-padding);
+        width: variables.$elem-padding;
+        left: calc(100%);
     }
 
     &.is-left {
         height: 100%;
-        right: calc(100% + variables.$elem-padding);
+        width: variables.$elem-padding;
+        right: calc(100%);
     }
 
     & .tooltip {

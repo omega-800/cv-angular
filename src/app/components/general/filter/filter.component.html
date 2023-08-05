@@ -63,7 +63,8 @@
                 <p class="categoryTitle">{{ category.name}}</p>
               </div>
               <div *ngIf="isActive.value" class="tags flex-list" [@dropDownMenu]>
-                <div *ngFor="let tag of category.tags" (click)="toggleTag(filter, category, tag);" class="tag menu-item"
+                <div *ngFor="let tag of category.tags"
+                  (click)="toggleTag(filter, category, tag);isActive.value = !isActive.value" class="tag menu-item"
                   [id]="tag.id">
                   <img *ngIf="tag.image" src="{{ tag.image.path }}" alt="{{ tag.image.alt }}"
                     class="tagIcon small-image" loading="lazy" />
