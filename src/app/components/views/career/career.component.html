@@ -23,7 +23,7 @@
         </tr>
       </table>
       <ng-container *ngVar="{value:false} as showTooltip">
-        <div class="hov" (mouseover)="showTooltip.value = true" (mouseout)="showTooltip.value = false">
+        <div class="hov" (mouseenter)="showTooltip.value = true" (mouseleave)="showTooltip.value = false">
           <app-tooltip [visible]="showTooltip.value"
             [name]="'Basis 42-Stunden-Woche minus Wochenende, 10T Feiertage und 36T Ferien pro Jahr'"
             [description]="'(Gesamtzeit Beginn bis Ende) / (7 * 5) / (24 * (8.5 * pensum / 100)) / (36 * 35) / (10 * 9)'"

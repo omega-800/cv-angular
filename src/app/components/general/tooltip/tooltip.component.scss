@@ -2,34 +2,34 @@
 @use "src/scss/screens.scss" as screens;
 
 :host {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
+    position: absolute;
+    z-index: variables.$above-top;
 
-    & :has(.direction-top) {
-        @include screens.mobile-screen {
-            position: absolute;
-            width: 100vw;
-            height: 0;
-            left: 0;
-        }
+    &.is-top {
+        width: 100%;
+        bottom: calc(100% + variables.$elem-padding);
+    }
 
-        @include screens.tablet-screen {
-            position: absolute;
-            width: 100vw;
-            left: 0;
-            height: 0;
-        }
+    &.is-bottom {
+        width: 100%;
+        top: calc(100% + variables.$elem-padding);
+    }
+
+    &.is-right {
+        height: 100%;
+        left: calc(100% + variables.$elem-padding);
+    }
+
+    &.is-left {
+        height: 100%;
+        right: calc(100% + variables.$elem-padding);
     }
 
     & .tooltip {
         background-color: variables.$light2;
-        z-index: variables.$above-top;
-        border-radius: variables.$elem-size * 2;
+        border-radius: variables.$elem-border-radius;
         padding: variables.$elem-size;
         position: absolute;
-        width: 100%;
 
         & .name-title {
             font: {
@@ -68,52 +68,29 @@
 
         &.direction-top {
             bottom: calc(100% + variables.$elem-size);
-            left: calc(50% - 12.5vw);
-            width: 25vw;
-
-            @include screens.mobile-screen {
-                //style="--left: {{ getLeftMargin() }}px"
-                //left: 0px - var(--left);
-                //left: calc(50% - 40vw);
-                left: 0;
-                width: 80vw;
-
-                &::after {
-                    border-top: variables.$elem-size solid transparent !important;
-                }
-            }
-
-            @include screens.tablet-screen {
-                //left: calc(50% - 25vw);
-                left: 0;
-                width: 70vw;
-
-                &::after {
-                    border-top: variables.$elem-size solid transparent !important;
-                }
-            }
-
-            @include screens.laptop-screen {
-                left: calc(50% - 35vw);
-                width: 70vw;
-            }
-
-            @include screens.desktop-screen {
-                left: calc(50% - 25vw);
-                width: 50vw;
-            }
-
-            @include screens.large-screen {
-                left: calc(50% - 15vw);
-                width: 30vw;
-            }
+            left: calc(((100% - var(--tooltipwidth)) / 2) - var(--marginright) + var(--marginleft));
+            width: var(--tooltipwidth);
 
             &::after {
-                left: calc(50% - variables.$elem-size);
+                left: calc(50% - variables.$elem-size + var(--marginright) - var(--marginleft));
                 top: 100%;
                 border-left: variables.$elem-size solid transparent;
                 border-right: variables.$elem-size solid transparent;
                 border-top: variables.$elem-size solid variables.$light2;
+            }
+        }
+
+        &.direction-bottom {
+            top: calc(100% + variables.$elem-size);
+            left: calc(((100% - var(--tooltipwidth)) / 2) - var(--marginright) + var(--marginleft));
+            width: var(--tooltipwidth);
+
+            &::after {
+                left: calc(50% - variables.$elem-size + var(--marginright) - var(--marginleft));
+                bottom: 100%;
+                border-left: variables.$elem-size solid transparent;
+                border-right: variables.$elem-size solid transparent;
+                border-bottom: variables.$elem-size solid variables.$light2;
             }
         }
 
@@ -153,7 +130,7 @@
             @include screens.mobile-screen {
                 bottom: calc(50% - 10vw);
                 height: 20vw;
-                width: 40vw;
+                width: 50vw;
             }
 
             @include screens.tablet-screen {

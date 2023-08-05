@@ -1,4 +1,4 @@
-<div *ngIf="visible" [class]="'tooltip direction-' + direction" [@tooltipAnimation]="direction">
+<div *ngIf="visible" [class]="getLeftMargin() + ' tooltip direction-' + direction" [@tooltipAnimation]="direction">
   <div class="name-container">
     <img *ngIf="icon" class="tooltip-icon small-image" src="{{ icon.path }}" alt="{{ icon.alt }}" loading="lazy" />
     <p class="name-title">{{ name }}</p>

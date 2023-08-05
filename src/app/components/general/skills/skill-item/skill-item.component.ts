@@ -39,12 +39,4 @@ export class SkillItemComponent implements OnInit {
   goToProjects() {
     this.router.navigate(['/projects'], { queryParams: { skillID: this.skill.skill_id }, queryParamsHandling: "merge" });
   }
-
-  @HostListener('mouseenter') onMouseEnter() {
-    this.showTooltip = true;
-  }
-
-  @HostListener('mouseleave') onMouseLeave() {
-    this.showTooltip = false;
-  }
 }

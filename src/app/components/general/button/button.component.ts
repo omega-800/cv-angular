@@ -7,7 +7,7 @@ import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  //styleUrls: ['./button.component.scss'],
+  styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { 'class': 'flex-center link buttonpill' },
   standalone: true,
