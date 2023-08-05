@@ -31,12 +31,21 @@
                     @include mixins.darken-little(background-color);
                 }
 
-                &.languages {
+                & .icon {
+                    height: variables.$elem-border-radius;
+                    width: variables.$elem-border-radius;
+                }
+
+                &.login {
                     position: absolute;
                     right: variables.$elem-size;
 
                     @include screens.mobile-screen {
                         right: 0;
+                    }
+
+                    & .dropdown {
+                        right: variables.$elem-size;
                     }
                 }
 
@@ -48,35 +57,71 @@
                         left: 0;
                     }
 
-                    & .icon {
-                        height: variables.$elem-border-radius;
-                        width: variables.$elem-border-radius;
+                    & .dropdown {
+                        left: variables.$elem-size;
+                    }
+                }
+
+                & .dropdown {
+                    position: fixed;
+                    padding: variables.$elem-size;
+                    background-color: variables.$light2;
+                    border-top-color: variables.$cool;
+                    z-index: variables.$top;
+                    top: variables.$elem-height;
+
+                    & .close {
+                        height: variables.$elem-size * 2;
+                        width: variables.$elem-size * 2;
+                        text-align: center;
+                        margin-top: - variables.$elem-padding;
                     }
 
-                    & .dropdown {
-                        position: fixed;
-                        padding: variables.$elem-size;
-                        background-color: variables.$light2;
-                        border-top-color: variables.$cool;
-                        z-index: variables.$top;
-                        left: variables.$elem-size;
-                        top: variables.$elem-height;
-
-                        & .close {
-                            height: variables.$elem-size * 2;
-                            width: variables.$elem-size * 2;
-                            text-align: center;
-                            margin-top: - variables.$elem-padding;
+                    & .types {
+                        & .type-container>* {
+                            display: inline-block;
+                            vertical-align: middle;
                         }
 
-                        & .types {
-                            & .type-container>* {
-                                display: inline-block;
-                                vertical-align: middle;
+                        & h5 {
+                            margin-left: variables.$elem-padding;
+                        }
+                    }
+
+                    &.login-dd {
+                        width: 30em;
+
+                        & .loginfields {
+                            & input {
+                                padding: variables.$elem-padding;
+                                border: none;
+                                background-color: variables.$cool;
+                                border-radius: variables.$elem-padding;
+                                margin-bottom: variables.$elem-padding;
+
+                                &:focus {
+                                    background-color: variables.$cooldarken;
+                                    outline: none;
+                                }
                             }
 
-                            & h5 {
-                                margin-left: variables.$elem-padding;
+                            & button[type="submit"] {
+                                margin-top: variables.$elem-padding;
+                                margin-bottom: 0;
+                                cursor: pointer;
+
+                                &:disabled {
+                                    background-color: variables.$light2 !important;
+                                    cursor: default;
+                                }
+                            }
+
+                            & .error {
+                                padding: variables.$elem-padding;
+                                @include mixins.darken-little-custom(color, variables.$red1);
+                                border: variables.$thin solid variables.$light1;
+                                border-radius: variables.$elem-padding;
+                                margin-bottom: variables.$elem-padding;
                             }
                         }
                     }

@@ -6,13 +6,15 @@ import { SetInterest } from "./app.actions";
 export interface AppStateModel {
     interest: Interest
     language: Language
+    loggedIn: boolean
 }
 
 @State<AppStateModel>({
     name: 'app',
     defaults: {
         interest: Interest.IT,
-        language: Language.DE
+        language: Language.DE,
+        loggedIn: false
     }
 })
 @Injectable()

@@ -10,6 +10,7 @@ import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { ButtonComponent } from '../../general/button/button.component';
 import { SkillsPercentComponent } from '../../general/skills/skills-percent/skills-percent.component';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
   host: { 'class': 'wrapper' },
   standalone: true,
-  imports: [ButtonComponent, SkillsPercentComponent, AgePipe]
+  imports: [ButtonComponent, SkillsPercentComponent, AgePipe, NgIf]
 })
 export class HomeComponent {
   me: PersonEntity = this.personService.getPersonByName('Georgiy');
@@ -26,6 +27,15 @@ export class HomeComponent {
 
   mailText: string = '';
   age: Date = new Date();
+
+  showFirst = true;
+
+  text1 = 'Als leidenschaftlicher Problemlöser und kreativer Geist habe ich mir zum Ziel gesetzt, innovative Lösungen zu realisieren und durch ';
+  text2 = 'jk just give me money plz. here are some ';
+  btnText1 = 'meine Arbeit';
+  btnText2 = 'cool reference projects';
+  endText1 = ' einen positiven Einfluss zu hinterlassen. Sei es durch das Entwickeln von Applikationen mit Mehrwert, Wissensvermittlung an die kommenden Generationen oder das Kreieren von Kunstwerken, die die Menschen erreichen und erfreuen sollen.';
+  endText2 = ' ok thx for ur attention';
 
   constructor(
     private personService: PersonService,

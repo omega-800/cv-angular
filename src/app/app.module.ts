@@ -4,12 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { HeaderComponent } from './components/general/header/header.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppState } from './store/app/app.state';
 import { NgxsModule } from '@ngxs/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SelectComponent } from './components/general/select/select.component';
 import { PersonComponent } from './components/general/person/person.component';
 
 @NgModule({
@@ -18,6 +18,7 @@ import { PersonComponent } from './components/general/person/person.component';
     AppRoutingModule,
     NgxsModule.forRoot([AppState]),
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
     /*AngularFireStorageModule,*/
     BrowserModule,
     HeaderComponent,
