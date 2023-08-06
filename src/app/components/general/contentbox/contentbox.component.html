@@ -1,7 +1,5 @@
-<div *ngIf="locked" class="default-grid preview slimpill notactive locked" (mouseenter)="isActive = true"
-  (mouseleave)="isActive = false">
-  <app-tooltip class="default-grid items" [name]="'Huch'" [description]="description" [visible]="isActive"
-    [direction]="d.TOP"></app-tooltip>
+<div *ngIf="locked" class="default-grid preview slimpill notactive locked">
+  <app-tooltip class="default-grid items" [name]="'Huch'" [description]="description" [direction]="d.TOP"></app-tooltip>
   <img class="previewImg preview-image" src="{{ lockIcon.path }}" alt="{{ lockIcon.alt }}" loading="lazy" />
   <h3 class="title flex-list">{{ title }}</h3>
 </div>

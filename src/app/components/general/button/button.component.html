@@ -1,7 +1,7 @@
 <ng-container *ngIf="locked">
   <img class="previewImg preview-image" src="{{ lockIcon.path }}" alt="{{ lockIcon.alt }}" loading="lazy" />
   <p *ngIf="showName" class="title flex-list">{{ name }}</p>
-  <app-tooltip class="default-grid items" [name]="'Huch'" [description]="lockedMessage" [visible]="showTooltip"
+  <app-tooltip class="default-grid items" [name]="'Huch'" [description]="lockedMessage"
     [direction]="d.TOP"></app-tooltip>
 </ng-container>
 
@@ -9,7 +9,7 @@
   <img *ngIf="!image" src="{{ type.image.path }}" alt="icon for {{ name }} link" loading="lazy" />
   <img *ngIf="image" src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy" />
   <p *ngIf="showName">{{name}}</p>
-  <app-tooltip [visible]="type == lt.GITHUB && showTooltip" name="Please don't look at my code, it's horrible"
+  <app-tooltip *ngIf="type == lt.GITHUB" name="Please don't look at my code, it's horrible"
     [direction]="d.LEFT"></app-tooltip>
   <!--p *ngIf="type === lt.OTHER || type === lt.PERSON" (click)="onClick()">{{name}}</p-->
   <ng-content></ng-content>

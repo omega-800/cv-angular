@@ -18,7 +18,6 @@ import { ProjectService } from 'src/app/services/project/project/project.service
   selector: 'app-skill-item',
   templateUrl: './skill-item.component.html',
   styleUrls: ['./skill-item.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [TooltipComponent, NgIf, NgFor]
 })
@@ -28,7 +27,6 @@ export class SkillItemComponent implements OnInit {
   skillText: string = '';
   lt: LinkTypes = linkTypes;
   direction = Direction;
-  showTooltip = false;
 
   constructor(private router: Router, private projectService: ProjectService) { }
 

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, HostListener, Input } from '@angular/core';
 import { ImageComp, URLComp } from '../../components.model';
 import { openLink } from '../links.util';
 import { Direction } from '../../components.constants';
@@ -26,10 +26,10 @@ export interface ScreenVars {
 export class TooltipComponent {
   @Input() name!: string;
   @Input() direction!: Direction;
-  @Input() visible!: boolean;
   @Input() description?: string;
   @Input() icon?: ImageComp;
   @Input() link?: URLComp;
+  visible: boolean = false;
 
   screenVariables: ScreenVars = {
     mobile: {
@@ -99,4 +99,17 @@ export class TooltipComponent {
       prevElem = key;
     }
   }
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.visible = true;
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.visible = false;
+  }
+
+  @HostListener('click') onClick() {
+    this.visible = !this.visible;
+  }
+
 }
