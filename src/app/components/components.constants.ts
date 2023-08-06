@@ -135,6 +135,33 @@ export const lockIcon: Readonly<ImageComp> = {
   path: 'assets/img/lock.svg',
   alt: 'Lock icon',
 };
+export const germanIcon: Readonly<ImageComp> = {
+  id: 'icon_german',
+  name: 'German',
+  path: 'assets/icons/german.svg',
+  alt: 'Germany icon',
+};
+
+export const englishIcon: Readonly<ImageComp> = {
+  id: 'icon_english',
+  name: 'English',
+  path: 'assets/icons/english.svg',
+  alt: 'Britain icon',
+};
+
+export const frenchIcon: Readonly<ImageComp> = {
+  id: 'icon_french',
+  name: 'French',
+  path: 'assets/icons/french.svg',
+  alt: 'France icon',
+};
+
+export const russianIcon: Readonly<ImageComp> = {
+  id: 'icon_russian',
+  name: 'Russian',
+  path: 'assets/icons/russian.svg',
+  alt: 'Russia icon',
+};
 
 export const linkTypes: Readonly<LinkTypes> = {
   GITHUB: {

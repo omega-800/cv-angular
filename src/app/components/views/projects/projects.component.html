@@ -23,7 +23,8 @@
     | projectsFilter : selectedFilters
 ">
     <app-contentbox [locked]="project.anon_locked && (!loggedIn || !isAuth)" [image]="project.image"
-      [title]="project.name" [subTitle]="project.date | pipeDate" [description]="!loggedIn ? loginMessage : authMessage"
+      [title]="project.name" [subTitle]="project.date | pipeDate"
+      [description]="project.anon_locked && !loggedIn ? loginMessage : project.anon_locked && !isAuth ? authMessage : project.description"
       [link]="project.url" [id]="project.project_id" [selected]="selectedProject?.project_id == project.project_id"
       class="menu-item">
       <div *ngIf="project.authors" class="bot authors flex-column slimpill notskills">

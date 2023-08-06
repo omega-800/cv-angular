@@ -45,18 +45,18 @@ INSERT INTO knowledge (name, description, name_e, name_r, description_e, descrip
     ('Physik', 'Physik ist die Wissenschaft der Materie und Energie und deren Wechselwirkungen in der Welt um uns herum.','','','','','assets/icons/physics.svg','',''),
     ('Hauswirtschaft', 'Hauswirtschaft bezieht sich auf die Fähigkeiten und Kenntnisse, die zur Bewältigung alltäglicher Aufgaben im Haushalt erforderlich sind, wie Kochen, Reinigen und Organisieren.','','','','','assets/icons/housekeeping.svg','','');
 
-INSERT INTO skill (identifier, yearsOfExperience, knowledgePercent, hobby, knowledge_id) VALUES
-    ('web-accessibility', 0, 50, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'Web Accessibility')),
-    ('seo', 0, 50, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'SEO')),
-    ('math', 0, 75, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Mathematik')),
-    ('history', 0, 45, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Geschichte')),
-    ('philosophy', 0, 80, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Philosophie')),
-    ('politics', 0, 65, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Politik')),
-    ('geography', 0, 50, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'Geographie')),
-    ('biology', 0, 65, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Biologie')),
-    ('chemistry', 0, 60, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Chemie')),
-    ('physics', 0, 55, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'Physik')),
-    ('housekeeping', 0, 95, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Hauswirtschaft'));
+INSERT INTO skill (relevance_it, identifier, yearsOfExperience, knowledgePercent, hobby, knowledge_id) VALUES
+    (22, 'web-accessibility', 0, 50, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'Web Accessibility')),
+    (28, 'seo', 0, 50, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'SEO')),
+    (32, 'math', 0, 75, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Mathematik')),
+    (NULL, 'history', 0, 45, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Geschichte')),
+    (NULL, 'philosophy', 0, 80, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Philosophie')),
+    (NULL, 'politics', 0, 65, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Politik')),
+    (NULL, 'geography', 0, 50, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'Geographie')),
+    (NULL, 'biology', 0, 65, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Biologie')),
+    (NULL, 'chemistry', 0, 60, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Chemie')),
+    (NULL, 'physics', 0, 55, FALSE, (SELECT knowledge_id FROM knowledge WHERE name = 'Physik')),
+    (NULL, 'housekeeping', 0, 95, TRUE, (SELECT knowledge_id FROM knowledge WHERE name = 'Hauswirtschaft'));
 
 INSERT INTO skill_skillSubCategory (skill_id, skillSubCategory_id) VALUES
     ((SELECT skill_id FROM skill WHERE identifier = 'seo'), (SELECT skillSubCategory_id FROM skillSubCategory WHERE name = 'Frontend')),
@@ -84,17 +84,17 @@ INSERT INTO ability (name, description, name_e, name_r, description_e, descripti
     ('Empathie', 'Die Fähigkeit, sich in andere Menschen hineinzuversetzen und deren Gefühle zu verstehen und nachzuvollziehen.','','','','','assets/icons/empathy.svg','',''),
     ('Geduld', 'Die Fähigkeit, in schwierigen oder herausfordernden Situationen ruhig zu bleiben und darauf zu vertrauen, dass sich die Dinge zum Guten wenden werden. Geduld hilft dabei, auch langfristige Ziele zu verfolgen und Hindernisse zu überwinden.','','','','','assets/icons/patience.svg','','');
 
-INSERT INTO skill (identifier, yearsOfExperience, knowledgePercent, hobby, ability_id) VALUES
-    ('independence', 0, 100, FALSE, (SELECT ability_id FROM ability WHERE name = 'Selbstständigkeit')),
-    ('teamwork', 0, 80, FALSE, (SELECT ability_id FROM ability WHERE name = 'Teamwork')),
-    ('logic', 0, 90, FALSE, (SELECT ability_id FROM ability WHERE name = 'Logisches Denken')),
-    ('criticism', 0, 95, FALSE, (SELECT ability_id FROM ability WHERE name = 'Kritikfähigkeit')),
-    ('creativity', 0, 100, FALSE, (SELECT ability_id FROM ability WHERE name = 'Kreativität')),
-    ('communication', 0, 75, FALSE, (SELECT ability_id FROM ability WHERE name = 'Kommunikation')),
-    ('learning', 0, 90, FALSE, (SELECT ability_id FROM ability WHERE name = 'Lernfähigkeit')),
-    ('organization', 0, 65, FALSE, (SELECT ability_id FROM ability WHERE name = 'Organisation')),
-    ('empathy', 0, 95, FALSE, (SELECT ability_id FROM ability WHERE name = 'Empathie')),
-    ('patience', 0, 75, FALSE, (SELECT ability_id FROM ability WHERE name = 'Geduld'));
+INSERT INTO skill (relevance_it, identifier, yearsOfExperience, knowledgePercent, hobby, ability_id) VALUES
+    (34, 'independence', 0, 100, FALSE, (SELECT ability_id FROM ability WHERE name = 'Selbstständigkeit')),
+    (30, 'teamwork', 0, 80, FALSE, (SELECT ability_id FROM ability WHERE name = 'Teamwork')),
+    (40, 'logic', 0, 90, FALSE, (SELECT ability_id FROM ability WHERE name = 'Logisches Denken')),
+    (NULL, 'criticism', 0, 95, FALSE, (SELECT ability_id FROM ability WHERE name = 'Kritikfähigkeit')),
+    (15, 'creativity', 0, 100, FALSE, (SELECT ability_id FROM ability WHERE name = 'Kreativität')),
+    (10, 'communication', 0, 75, FALSE, (SELECT ability_id FROM ability WHERE name = 'Kommunikation')),
+    (35, 'learning', 0, 90, FALSE, (SELECT ability_id FROM ability WHERE name = 'Lernfähigkeit')),
+    (32, 'organization', 0, 65, FALSE, (SELECT ability_id FROM ability WHERE name = 'Organisation')),
+    (NULL, 'empathy', 0, 95, FALSE, (SELECT ability_id FROM ability WHERE name = 'Empathie')),
+    (30, 'patience', 0, 75, FALSE, (SELECT ability_id FROM ability WHERE name = 'Geduld'));
 
 INSERT INTO skill_skillSubCategory (skill_id, skillSubCategory_id) VALUES
     ((SELECT skill_id FROM skill WHERE identifier = 'independence'), (SELECT skillSubCategory_id FROM skillSubCategory WHERE name = 'Softskills')),
@@ -115,12 +115,12 @@ INSERT INTO language (name, description, shortName, name_e, name_r, description_
     ('Französisch', 'Schulwissen', 'FR','','','','','assets/icons/french.svg','',''),
     ('Latein', 'Grundkenntnisse', 'LAT','','','','','assets/icons/latin.webp','','');
     
-INSERT INTO skill (yearsOfExperience, identifier, knowledgePercent, proficiencyLevel, hobby, language_id) VALUES
-    (0, 'german', 100, 'C2', FALSE, (SELECT language_id FROM language WHERE name = 'Deutsch')),
-    (0, 'english', 90, 'C1', FALSE, (SELECT language_id FROM language WHERE name = 'Englisch')),
-    (0, 'russian', 75, 'B2', FALSE, (SELECT language_id FROM language WHERE name = 'Russisch')),
-    (0, 'french', 50, 'B1', FALSE, (SELECT language_id FROM language WHERE name = 'Französisch')),
-    (0, 'latin', 10, '', FALSE, (SELECT language_id FROM language WHERE name = 'Latein'));
+INSERT INTO skill (relevance_it, yearsOfExperience, identifier, knowledgePercent, proficiencyLevel, hobby, language_id) VALUES
+    (20, 0, 'german', 100, 'C2', FALSE, (SELECT language_id FROM language WHERE name = 'Deutsch')),
+    (30, 0, 'english', 90, 'C1', FALSE, (SELECT language_id FROM language WHERE name = 'Englisch')),
+    (NULL, 0, 'russian', 75, 'B2', FALSE, (SELECT language_id FROM language WHERE name = 'Russisch')),
+    (NULL, 0, 'french', 50, 'B1', FALSE, (SELECT language_id FROM language WHERE name = 'Französisch')),
+    (NULL, 0, 'latin', 10, '', FALSE, (SELECT language_id FROM language WHERE name = 'Latein'));
 
 INSERT INTO skill_skillSubCategory (skill_id, skillSubCategory_id) VALUES
     ((SELECT skill_id FROM skill WHERE identifier = 'german'), (SELECT skillSubCategory_id FROM skillSubCategory WHERE name = 'Sprachen')),
@@ -198,50 +198,50 @@ INSERT INTO application (name, thumbnail, description, alternateName, keywords, 
     ('Regex', 'assets/icons/regex.svg', 'Regex ist eine Abkürzung für regulärer Ausdruck und bezieht sich auf Muster oder Vorlagen, die zur Suche und Manipulation von Zeichenketten in Texten verwendet werden.', 'Regular Expression', 'Regex, regulärer Ausdruck, Muster, Vorlagen, Zeichenketten, Text', 'https://regex101.com/', '', (SELECT applicationType_id FROM applicationType WHERE name = 'Applikation')),
     ('GraphQL', 'assets/icons/graphql.svg', 'GraphQL ist eine Abfragesprache für APIs und eine Laufzeitumgebung zum Erfüllen dieser Abfragen mit Ihren vorhandenen Daten.', 'Graph Query Language', 'API, Query', 'https://graphql.org/', '', (SELECT applicationType_id FROM applicationType WHERE name = 'Programmiersprache'));
  
-INSERT INTO skill (identifier, yearsOfExperience, hobby, knowledgePercent, application_id) VALUES
-    ('vim', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Vim')),
-    ('gimp', 0, TRUE, 80, (SELECT application_id FROM application WHERE name = 'GIMP')),
-    ('photoshop', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Adobe Photoshop')),
-    ('inkscape', 0, TRUE, 70, (SELECT application_id FROM application WHERE name = 'Inkscape')),
-    ('unity', 0, TRUE, 65, (SELECT application_id FROM application WHERE name = 'Unity')),
-    ('pygame', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Pygame')),
-    ('panda3d', 0, TRUE, 40, (SELECT application_id FROM application WHERE name = 'Panda3D')),
-    ('react', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'React')),
-    ('vue', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Vue.js')),
-    ('selenium', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Selenium')),
-    ('swing', 0, FALSE, 40, (SELECT application_id FROM application WHERE name = 'Swing')),
-    ('ursina', 0, TRUE, 40, (SELECT application_id FROM application WHERE name = 'Ursina')),
-    ('glassfish', 0, FALSE, 15, (SELECT application_id FROM application WHERE name = 'GlassFish')),
-    ('tomcat', 0, FALSE, 35, (SELECT application_id FROM application WHERE name = 'Tomcat7')),
-    ('word', 0, TRUE, 95, (SELECT application_id FROM application WHERE name = 'Word')),
-    ('excel', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'Excel')),
-    ('powerpoint', 0, TRUE, 95, (SELECT application_id FROM application WHERE name = 'PowerPoint')),
-    ('access', 0, FALSE, 20, (SELECT application_id FROM application WHERE name = 'Access')),
-    ('outlook', 0, FALSE, 80, (SELECT application_id FROM application WHERE name = 'Outlook')),
-    ('html', 0, TRUE, 100, (SELECT application_id FROM application WHERE name = 'HTML')),
-    ('css', 0, TRUE, 100, (SELECT application_id FROM application WHERE name = 'CSS')),
-    ('scss', 0, TRUE, 90, (SELECT application_id FROM application WHERE name = 'SCSS')),
-    ('js', 0, TRUE, 65, (SELECT application_id FROM application WHERE name = 'JavaScript')),
-    ('ts', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'TypeScript')),
-    ('php', 0, FALSE, 45, (SELECT application_id FROM application WHERE name = 'PHP')),
-    ('java', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'Java')),
-    ('python', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'Python')),
-    ('mysql', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'MySQL')),
-    ('csharp', 0, TRUE, 65, (SELECT application_id FROM application WHERE name = 'C#')),
-    ('bash', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Bash')),
-    ('freemarker', 0, FALSE, 85, (SELECT application_id FROM application WHERE name = 'FreeMarker')),
-    ('postgres', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'PostgreSQL')),
-    ('ableton-live', 0, TRUE, 80, (SELECT application_id FROM application WHERE name = 'Ableton Live 10')),
-    ('fl-studio', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'FL Studio')),
-    ('magnolia', 0, FALSE, 85, (SELECT application_id FROM application WHERE name = 'Magnolia')),
-    ('jcr', 0, FALSE, 80, (SELECT application_id FROM application WHERE name = 'JCR')),
-    ('docker', 0, FALSE, 25, (SELECT application_id FROM application WHERE name = 'Docker')),
-    ('schema', 0, FALSE, 85, (SELECT application_id FROM application WHERE name = 'Schema Markup')),
-    ('firebase', 0, TRUE, 50, (SELECT application_id FROM application WHERE name = 'Firebase')),
-    ('blender', 0, TRUE, 30, (SELECT application_id FROM application WHERE name = 'Blender')),
-    ('angular', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Angular')),
-    ('regex', 0, TRUE, 70, (SELECT application_id FROM application WHERE name = 'Regex')),
-    ('graphql', 0, FALSE, 30, (SELECT application_id FROM application WHERE name = 'GraphQL'));
+INSERT INTO skill (relevance_it, identifier, yearsOfExperience, hobby, knowledgePercent, application_id) VALUES
+    (18,'vim', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Vim')),
+    (15,'gimp', 0, TRUE, 80, (SELECT application_id FROM application WHERE name = 'GIMP')),
+    (15,'photoshop', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Adobe Photoshop')),
+    (15,'inkscape', 0, TRUE, 70, (SELECT application_id FROM application WHERE name = 'Inkscape')),
+    (13,'unity', 0, TRUE, 65, (SELECT application_id FROM application WHERE name = 'Unity')),
+    (9,'pygame', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Pygame')),
+    (9,'panda3d', 0, TRUE, 40, (SELECT application_id FROM application WHERE name = 'Panda3D')),
+    (30,'react', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'React')),
+    (29,'vue', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Vue.js')),
+    (14,'selenium', 0, TRUE, 75, (SELECT application_id FROM application WHERE name = 'Selenium')),
+    (8,'swing', 0, FALSE, 40, (SELECT application_id FROM application WHERE name = 'Swing')),
+    (9,'ursina', 0, TRUE, 40, (SELECT application_id FROM application WHERE name = 'Ursina')),
+    (12,'glassfish', 0, FALSE, 15, (SELECT application_id FROM application WHERE name = 'GlassFish')),
+    (28,'tomcat', 0, FALSE, 35, (SELECT application_id FROM application WHERE name = 'Tomcat7')),
+    (20,'word', 0, TRUE, 95, (SELECT application_id FROM application WHERE name = 'Word')),
+    (19,'excel', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'Excel')),
+    (18,'powerpoint', 0, TRUE, 95, (SELECT application_id FROM application WHERE name = 'PowerPoint')),
+    (17,'access', 0, FALSE, 20, (SELECT application_id FROM application WHERE name = 'Access')),
+    (16,'outlook', 0, FALSE, 80, (SELECT application_id FROM application WHERE name = 'Outlook')),
+    (35,'html', 0, TRUE, 100, (SELECT application_id FROM application WHERE name = 'HTML')),
+    (34,'css', 0, TRUE, 100, (SELECT application_id FROM application WHERE name = 'CSS')),
+    (33,'scss', 0, TRUE, 90, (SELECT application_id FROM application WHERE name = 'SCSS')),
+    (42,'js', 0, TRUE, 65, (SELECT application_id FROM application WHERE name = 'JavaScript')),
+    (32,'ts', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'TypeScript')),
+    (23,'php', 0, FALSE, 45, (SELECT application_id FROM application WHERE name = 'PHP')),
+    (41,'java', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'Java')),
+    (36,'python', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'Python')),
+    (37,'mysql', 0, TRUE, 85, (SELECT application_id FROM application WHERE name = 'MySQL')),
+    (27,'csharp', 0, TRUE, 65, (SELECT application_id FROM application WHERE name = 'C#')),
+    (26,'bash', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Bash')),
+    (11,'freemarker', 0, FALSE, 85, (SELECT application_id FROM application WHERE name = 'FreeMarker')),
+    (25,'postgres', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'PostgreSQL')),
+    (0,'ableton-live', 0, TRUE, 80, (SELECT application_id FROM application WHERE name = 'Ableton Live 10')),
+    (0,'fl-studio', 0, TRUE, 60, (SELECT application_id FROM application WHERE name = 'FL Studio')),
+    (10,'magnolia', 0, FALSE, 85, (SELECT application_id FROM application WHERE name = 'Magnolia')),
+    (21,'jcr', 0, FALSE, 80, (SELECT application_id FROM application WHERE name = 'JCR')),
+    (39,'docker', 0, FALSE, 25, (SELECT application_id FROM application WHERE name = 'Docker')),
+    (22,'schema', 0, FALSE, 85, (SELECT application_id FROM application WHERE name = 'Schema Markup')),
+    (24,'firebase', 0, TRUE, 50, (SELECT application_id FROM application WHERE name = 'Firebase')),
+    (7,'blender', 0, TRUE, 30, (SELECT application_id FROM application WHERE name = 'Blender')),
+    (40,'angular', 0, TRUE, 45, (SELECT application_id FROM application WHERE name = 'Angular')),
+    (31,'regex', 0, TRUE, 70, (SELECT application_id FROM application WHERE name = 'Regex')),
+    (38,'graphql', 0, FALSE, 30, (SELECT application_id FROM application WHERE name = 'GraphQL'));
 
 /*INSERT INTO application_operatingSystem (application_id, operatingSystem_id) VALUES
     ((SELECT application_id FROM application WHERE name = 'Vim'), (SELECT operatingSystem_id FROM operatingSystem WHERE name = 'Windows'));*/
@@ -322,26 +322,26 @@ INSERT INTO activity (name, description, thumbnail) VALUES
     ('Mathematikunterricht', 'Als Mathematik-Nachhilfelehrer ist es mein Ziel, Schülern dabei zu helfen, mathematische Konzepte zu verstehen und ihr logisches Denken zu entwickeln. Ich nutze verschiedene Lernstrategien und visuelle Hilfsmittel, um den Zugang zur Mathematik zu erleichtern. Meine Aufgabe ist es, die Schüler in ihrem mathematischen Denken zu fördern und ihnen die Bedeutung der Mathematik im Alltag und in anderen Fachbereichen nahezubringen.', 'assets/icons/teaching.svg'),
     ('Informatikunterricht', 'Als Informatik-Nachhilfelehrer begeistere ich Schüler für Technologie und Programmierung. Ich lege Wert auf praktische Erfahrungen und kreatives Denken. Durch das Erlernen von Programmiersprachen und das Lösen von Problemen lernen die Schüler grundlegende Konzepte. Der Unterricht fördert Teamarbeit und die Entwicklung eigener Projekte, um die Bedeutung von Kommunikation und Zusammenarbeit in der Informatik zu vermitteln. Mein Ziel ist es, die Schüler auf die Herausforderungen und Möglichkeiten der digitalen Welt vorzubereiten.', 'assets/icons/teaching.svg');
 
-INSERT INTO skill (identifier, yearsOfExperience, knowledgePercent, hobby, activity_id) VALUES
-    ('papercraft', 0, 90, TRUE, (SELECT activity_id FROM activity WHERE name = 'Papierarbeit')),
-    ('drawing', 0, 85, TRUE, (SELECT activity_id FROM activity WHERE name = 'Zeichnen')),
-    ('spraypaint', 0, 70, TRUE, (SELECT activity_id FROM activity WHERE name = 'Graffiti')),
-    ('woodwork', 0, 65, TRUE, (SELECT activity_id FROM activity WHERE name = 'Holzarbeit')),
-    ('sewing', 0, 85, TRUE, (SELECT activity_id FROM activity WHERE name = 'Nähen')),
-    ('guitar', 0, 45, TRUE, (SELECT activity_id FROM activity WHERE name = 'Gitarre')),
-    ('bass', 0, 40, TRUE, (SELECT activity_id FROM activity WHERE name = 'Bass')),
-    ('drums', 0, 30, TRUE, (SELECT activity_id FROM activity WHERE name = 'Schlagzeug')),
-    ('beats', 0, 65, TRUE, (SELECT activity_id FROM activity WHERE name = 'Produzieren')),
-    ('nursery', 0, 50, TRUE, (SELECT activity_id FROM activity WHERE name = 'Hort')),
-    ('bike', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Fahrrad')),
-    ('volleyball', 0, 65, TRUE, (SELECT activity_id FROM activity WHERE name = 'Volleyball')),
-    ('skateboard', 0, 45, TRUE, (SELECT activity_id FROM activity WHERE name = 'Skateboard')),
-    ('tabletennis', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Tischtennis')),
-    ('hiking', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Wandern')),
-    ('cevi', 0, 70, TRUE, (SELECT activity_id FROM activity WHERE name = 'CEVI')),
-    ('english-lessons', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Englischunterricht')),
-    ('math-lessons', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Mathematikunterricht')),
-    ('coding-lessons', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Informatikunterricht'));
+INSERT INTO skill (relevance_it, identifier, yearsOfExperience, knowledgePercent, hobby, activity_id) VALUES
+    (NULL,'papercraft', 0, 90, TRUE, (SELECT activity_id FROM activity WHERE name = 'Papierarbeit')),
+    (NULL,'drawing', 0, 85, TRUE, (SELECT activity_id FROM activity WHERE name = 'Zeichnen')),
+    (NULL,'spraypaint', 0, 70, TRUE, (SELECT activity_id FROM activity WHERE name = 'Graffiti')),
+    (NULL,'woodwork', 0, 65, TRUE, (SELECT activity_id FROM activity WHERE name = 'Holzarbeit')),
+    (NULL,'sewing', 0, 85, TRUE, (SELECT activity_id FROM activity WHERE name = 'Nähen')),
+    (NULL,'guitar', 0, 45, TRUE, (SELECT activity_id FROM activity WHERE name = 'Gitarre')),
+    (NULL,'bass', 0, 40, TRUE, (SELECT activity_id FROM activity WHERE name = 'Bass')),
+    (NULL,'drums', 0, 30, TRUE, (SELECT activity_id FROM activity WHERE name = 'Schlagzeug')),
+    (NULL,'beats', 0, 65, TRUE, (SELECT activity_id FROM activity WHERE name = 'Produzieren')),
+    (NULL,'nursery', 0, 50, TRUE, (SELECT activity_id FROM activity WHERE name = 'Hort')),
+    (NULL,'bike', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Fahrrad')),
+    (NULL,'volleyball', 0, 65, TRUE, (SELECT activity_id FROM activity WHERE name = 'Volleyball')),
+    (NULL,'skateboard', 0, 45, TRUE, (SELECT activity_id FROM activity WHERE name = 'Skateboard')),
+    (NULL,'tabletennis', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Tischtennis')),
+    (NULL,'hiking', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Wandern')),
+    (NULL,'cevi', 0, 70, TRUE, (SELECT activity_id FROM activity WHERE name = 'CEVI')),
+    (NULL,'english-lessons', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Englischunterricht')),
+    (4,'math-lessons', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Mathematikunterricht')),
+    (5,'coding-lessons', 0, 80, TRUE, (SELECT activity_id FROM activity WHERE name = 'Informatikunterricht'));
 
 INSERT INTO skill_skillSubCategory (skill_id, skillSubCategory_id) VALUES
     ((SELECT skill_id FROM skill WHERE identifier = 'papercraft'), (SELECT skillSubCategory_id FROM skillSubCategory WHERE name = 'Gestalten')),
@@ -831,7 +831,8 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Webscraping automatisation'),(SELECT skill_id FROM skill WHERE identifier = 'photoshop'));
 
 INSERT INTO project (anon_locked, relevance_it, name, description, thumbnail, image, url, github, date, client_id, career_id) VALUES
-    ('false',27, 'Portfolio','Für die Bewerbungsphase nach der Informatikmittelschule entwickelte ich eine Portfolio-Webseite. Dies war die alte Version der jetzigen Seite.',NULL,'assets/content/projects/it/web/cv_old/','https://portfolio-chirokikh-georgiy.web.app/','https://github.com/omega-800/curriculum-vitae-typescript','2019-06-20',NULL,NULL),
+    ('false',27, 'Portfolio','Das ist diese Seite, auf welcher du dich gerade befindest.',NULL,'assets/content/projects/it/web/cv/','https://portfolio-shevoroshkin-georgiy.web.app/','https://github.com/omega-800/cv-angular','2023-06-18',NULL,NULL),
+    ('false',20, 'Portfolio (alt)','Für die Bewerbungsphase nach der Informatikmittelschule entwickelte ich eine Portfolio-Webseite. Dies war die alte Version der jetzigen Seite.',NULL,'assets/content/projects/it/web/cv_old/','https://portfolio-chirokikh-georgiy.web.app/','https://github.com/omega-800/curriculum-vitae-typescript','2019-06-20',NULL,NULL),
     ('false',24, 'Finanzplaner','Um meine Einnahmen und Ausgaben im überblick zu halten und analysieren hatte ich eine Excel-Tabelle mit meinen Transaktionen erstellt. Um diese einfacher verwalten zu können und Prognosen zu erstellen, schrieb ich ein Python-script, welches die Daten aus der Tabelle in eine MySQL Datenbank speichern und als Excel-Tabelle wieder exportieren kann. Dazu programmierte ich verschiedene Funktionen wzB eine Prognose des ersparten in x Jahren, basierend auf den bisherigen Ausgaben.',NULL,'assets/content/projects/it/python/finance/',NULL,'https://github.com/omega-800/budgetplanner-python','2023-03-17',NULL,NULL),
     ('true',22, 'Textbasiertes Spiel Python','Ich wurde durch das Entdecken einer Python-Library für das Entwickeln textbasierter Spiele dazu inspiriert, ein eigenes Spiel zu schreiben. In dieser Geschichte strandet der Spieler auf einer Insel und muss ressourcen sammeln sowie Feinde bekämpfen, um schlussendlich das Ziel des Bauen eines Bootes um der Insel zu entfliehen zu erreichen.',NULL,'assets/content/projects/it/python/stranded/',NULL,'https://github.com/omega-800/stranded-python','2023-01-19',NULL,NULL),
     ('false',23, 'Textbasiertes Spiel C#','Dieses Spiel ist die weiterführung, bzw die Neu-Implementation des Python Stranded Spiels. Da mir die Dynamische Typisierung sowie die Laufzeit von Python nicht gefiel, fing ich an dieses Spiel in C# zu entwickeln.',NULL,'assets/content/projects/it/csharp/stranded/',NULL,'https://github.com/omega-800/stranded','2023-01-29',NULL,NULL),
@@ -847,6 +848,7 @@ INSERT INTO project (anon_locked, relevance_it, name, description, thumbnail, im
     
 INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Finanzplaner'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Textbasiertes Spiel Python'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
     ((SELECT project_id FROM project WHERE name = 'Textbasiertes Spiel C#'),(SELECT person_id FROM person WHERE firstName = 'Georgiy')),
@@ -861,8 +863,9 @@ INSERT INTO project_author (project_id, author_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'RusFrauenTreff Webseite'),(SELECT person_id FROM person WHERE firstName = 'Georgiy'));
     
 INSERT INTO project_skill (project_id, skill_id) VALUES
-    ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'react')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'angular')),
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'ts')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'js')),
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'html')),
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'scss')),
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'schema')),
@@ -873,6 +876,19 @@ INSERT INTO project_skill (project_id, skill_id) VALUES
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
     ((SELECT project_id FROM project WHERE name = 'Portfolio'),(SELECT skill_id FROM skill WHERE identifier = 'criticism')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'react')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'ts')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'js')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'html')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'scss')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'schema')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'mysql')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'firebase')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'creativity')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'logic')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'independence')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'learning')),
+    ((SELECT project_id FROM project WHERE name = 'Portfolio (alt)'),(SELECT skill_id FROM skill WHERE identifier = 'criticism')),
     ((SELECT project_id FROM project WHERE name = 'Finanzplaner'),(SELECT skill_id FROM skill WHERE identifier = 'python')),
     ((SELECT project_id FROM project WHERE name = 'Finanzplaner'),(SELECT skill_id FROM skill WHERE identifier = 'excel')),
     ((SELECT project_id FROM project WHERE name = 'Finanzplaner'),(SELECT skill_id FROM skill WHERE identifier = 'mysql')),

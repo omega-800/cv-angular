@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Store } from '@ngxs/store';
-import { Interest } from 'src/app/store/app/app.model';
+import { Interest, Language, languageTypes } from 'src/app/store/app/app.model';
 import { interestTypes } from 'src/app/store/app/app.model';
 import { TooltipComponent } from '../tooltip/tooltip.component';
-import { NgFor, NgIf } from '@angular/common';
+import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
-import { SetInterest } from 'src/app/store/app/app.actions';
+import { SetInterest, SetLanguage } from 'src/app/store/app/app.actions';
 import { Direction, personIcon } from '../../components.constants';
 import { ImageComp } from '../../components.model';
 import { DropDownAnimation, TooltipAnimation } from 'src/app/animations';
@@ -18,30 +18,39 @@ import { AuthService } from 'src/app/services/auth/auth.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [TooltipComponent, NgFor, RouterLink, RouterLinkActive, NgIf, FormsModule, ReactiveFormsModule],
+  imports: [TooltipComponent, NgFor, RouterLink, RouterLinkActive, NgIf, FormsModule, ReactiveFormsModule, KeyValuePipe],
   animations: [DropDownAnimation, TooltipAnimation]
 })
 export class HeaderComponent {
   types = interestTypes;
   interest = '';
   interestIcon: ImageComp = this.types[0].icon;
-  personIcon: ImageComp = personIcon;
+
   d = Direction;
   dropdownActive: boolean = true;
   dropdownLoginActive: boolean = false;
   selectedRegister: boolean = false;
+
+  personIcon: ImageComp = personIcon;
   loggedIn: boolean = false;
   authenticated: boolean = false;
   loginForm: FormGroup;
   errorMsg: string = '';
   userEmail: string = '';
 
+  languageTypes = languageTypes;
+  language: Language = Language.DE;
+  langActive = false;
+
   constructor(private store: Store, private router: Router, private authService: AuthService) {
     this.authService.isAuthenticated.subscribe(isAuth => { this.authenticated = isAuth });
     this.authService.isLoggedIn.subscribe(isAuth => { this.loggedIn = isAuth });
     this.authService.errorMessage.subscribe(msg => { this.errorMsg = msg });
     this.authService.userEmail.subscribe(userEmail => { this.userEmail = userEmail });
+
     this.store.select(state => state.app.interest).subscribe(res => { this.interest = res; this.interestIcon = this.types.find(t => t.type == res)!.icon });
+    this.store.select(state => state.app.language).subscribe(res => this.language = res);
+
     this.loginForm = new FormGroup({
       email: new FormControl('this.email', [
         Validators.required,
@@ -73,6 +82,10 @@ export class HeaderComponent {
     let checkedInterest = interest != undefined && Object.values(Interest).includes(interest) ? interest : Interest.IT;
     this.router.navigate(['.', { interest: checkedInterest }]);
     this.store.dispatch(new SetInterest(checkedInterest))
+  }
+
+  setLanguage(lang: Language) {
+    this.store.dispatch(new SetLanguage(lang))
   }
 
   login() {

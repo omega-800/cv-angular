@@ -1,7 +1,7 @@
 <nav class="navbar">
   <ul class="flex-row-just">
     <li class="flex-row interests">
-      <img [src]="interestIcon.path" [alt]="interestIcon.alt" class="icon pill link"
+      <img [src]="interestIcon.path" [alt]="interestIcon.alt" [class]="(dropdownActive ? 'active ':'')+'icon pill link'"
         (click)="dropdownActive = !dropdownActive" />
       <div *ngIf="dropdownActive" class="dropdown flex-list pill" [@dropDownMenu]>
         <div class="title flex-column menu-item">
@@ -31,7 +31,8 @@
         class="link pill">Projekte</a>
     </li>
     <li class="flex-row login">
-      <img [src]="personIcon.path" [alt]="personIcon.alt" class="icon pill link"
+      <img [src]="personIcon.path" [alt]="personIcon.alt"
+        [class]="(dropdownLoginActive ? 'active ':'')+'icon pill link'"
         (click)="dropdownLoginActive = !dropdownLoginActive" />
       <div *ngIf="dropdownLoginActive" class="dropdown login-dd flex-list pill" [@dropDownMenu]>
         <div *ngIf="loggedIn" class="title flex-column">
@@ -113,5 +114,23 @@
         </ng-container>
       </div>
     </li>
+    <!--li class="flex-row language">
+      <div [class]="(langActive ? 'active ':'')+'icon pill link'" (click)="langActive = !langActive">{{language}}</div>
+      <div *ngIf="langActive" class="dropdown flex-list pill" [@dropDownMenu]>
+        <div class="title flex-column menu-item">
+          <h4 class="link pill close" (click)="langActive = !langActive"><b>X</b></h4>
+          <h3 class="type-title">Sprache wählen</h3>
+          <p class="warn error">(ACHTUNG: EXPERIMENTELLES FEATURE)</p>
+        </div>
+        <div class="types flex-list-full">
+          <div *ngFor="let lang of languageTypes"
+            [class]="(lang.lang == language ? 'active ' : '')+ 'type-container link pill menu-item'"
+            (click)="setLanguage(lang.lang);langActive = !langActive">
+            <img [src]="lang.icon.path" [alt]="lang.icon.alt" class="icon" />
+            <h5>{{lang.name}}</h5>
+          </div>
+        </div>
+      </div>
+    </li-->
   </ul>
 </nav>

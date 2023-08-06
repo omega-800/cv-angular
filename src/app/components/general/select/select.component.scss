@@ -8,10 +8,10 @@
     border-top: variables.$defborderthin;
 
     & .tags {
+        z-index: variables.$highest;
         position: absolute;
         background-color: variables.$cool;
         width: 100%;
-        z-index: variables.$above-top;
         border-left: variables.$defborderthin;
 
         //border-right: variables.$defborderthin;

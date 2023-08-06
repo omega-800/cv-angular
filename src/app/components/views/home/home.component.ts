@@ -10,7 +10,8 @@ import { AgePipe } from 'src/app/pipes/age/age.pipe';
 import { ButtonComponent } from '../../general/button/button.component';
 import { SkillsPercentComponent } from '../../general/skills/skills-percent/skills-percent.component';
 import { ActivatedRoute, Router } from '@angular/router';
-import { NgIf } from '@angular/common';
+import { AsyncPipe, NgIf } from '@angular/common';
+import { TranslatePipe } from 'src/app/pipes/translate/translate.pipe';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,7 @@ import { NgIf } from '@angular/common';
   styleUrls: ['./home.component.scss'],
   host: { 'class': 'wrapper' },
   standalone: true,
-  imports: [ButtonComponent, SkillsPercentComponent, AgePipe, NgIf]
+  imports: [ButtonComponent, SkillsPercentComponent, AgePipe, NgIf, TranslatePipe, AsyncPipe]
 })
 export class HomeComponent {
   me: PersonEntity = this.personService.getPersonByName('Georgiy');
@@ -35,13 +36,13 @@ export class HomeComponent {
   btnText1 = 'meine Arbeit';
   btnText2 = 'cool reference projects';
   endText1 = ' einen positiven Einfluss zu hinterlassen. Sei es durch das Entwickeln von Applikationen mit Mehrwert, Wissensvermittlung an die kommenden Generationen oder das Kreieren von Kunstwerken, die die Menschen erreichen und erfreuen sollen.';
-  endText2 = ' ok thx for ur attention';
+  endText2 = '\nok thx for ur attention.\n\nmy superpowers: adhd + autism\ndebuffs: bdp + existential dread';
 
   constructor(
     private personService: PersonService,
     private skillService: SkillService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) {
     this.skills = this.skillService.getSkills();
     this.me = this.personService.getPersonByName('Georgiy');

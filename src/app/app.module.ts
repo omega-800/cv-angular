@@ -10,6 +10,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppState } from './store/app/app.state';
 import { NgxsModule } from '@ngxs/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     /*AngularFireStorageModule,*/
     BrowserModule,
     HeaderComponent,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

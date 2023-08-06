@@ -28,6 +28,10 @@ export interface SkillEntity extends ContentEntity {
   version?: string;
   applicationtype?: ApplicationTypeEntity;
   icon: ImageComp;
+  relevance_it: number;
+  relevance_art: number;
+  relevance_health: number;
+  relevance_education: number;
 }
 
 export interface SkillOnly {
@@ -44,6 +48,10 @@ export interface SkillOnly {
   knowledge_id: string;
   activity_id: string;
   ability_id: string;
+  relevance_it: number;
+  relevance_art: number;
+  relevance_health: number;
+  relevance_education: number;
 }
 
 export const SkillTypes = {

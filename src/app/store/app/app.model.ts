@@ -1,4 +1,4 @@
-import { codeIcon, globeIcon, heartIcon, paintIcon, smileIcon } from "src/app/components/components.constants"
+import { codeIcon, englishIcon, frenchIcon, germanIcon, globeIcon, heartIcon, paintIcon, russianIcon, smileIcon } from "src/app/components/components.constants"
 import { ImageComp } from "src/app/components/components.model"
 
 export enum Interest {
@@ -49,3 +49,32 @@ export enum Language {
     EN = 'en',
     FR = 'fr',
 }
+
+export interface LanguageType {
+    lang: Language,
+    name: string,
+    icon: ImageComp
+}
+
+export const languageTypes: Readonly<LanguageType[]> = [
+    {
+        lang: Language.DE,
+        name: 'Deutsch',
+        icon: germanIcon
+    },
+    {
+        lang: Language.EN,
+        name: 'Englisch',
+        icon: englishIcon
+    },
+    {
+        lang: Language.RU,
+        name: 'Russisch',
+        icon: russianIcon
+    },
+    {
+        lang: Language.FR,
+        name: 'Französisch',
+        icon: frenchIcon
+    },
+]

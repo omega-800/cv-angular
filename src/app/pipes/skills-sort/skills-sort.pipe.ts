@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { SortEntity } from 'src/app/services/filter/filter.model';
 import { skillSortValues } from './skills-sort.model';
+import { Interest } from 'src/app/store/app/app.model';
 
 @Pipe({
   name: 'skillsSort',
@@ -14,7 +15,11 @@ export class SkillsSortPipe implements PipeTransform {
       return skills;
     }
     if (sortBy) {
-      if (sortBy.value === skillSortValues.knowledge) {
+      if (Object.values(Interest).includes(sortBy.value as Interest)) {
+        skills = skills.sort((a, b) => a[`relevance_${sortBy.value}` as keyof typeof a] == undefined ? 1 : b[`relevance_${sortBy.value}` as keyof typeof a] == undefined ? -1 :
+          a[`relevance_${sortBy.value}` as keyof typeof a]! > b[`relevance_${sortBy.value}` as keyof typeof a]! ?
+            (ascending ? 1 : -1) : (ascending ? -1 : 1));
+      } else if (sortBy.value === skillSortValues.knowledge) {
         skills = skills.sort((a, b) => ascending ? a.knowledgepercent - b.knowledgepercent : b.knowledgepercent - a.knowledgepercent);
       } else if (sortBy.value === skillSortValues.type) {
         skills = skills.sort((a, b) => a.type.toLowerCase() > b.type.toLowerCase() ?

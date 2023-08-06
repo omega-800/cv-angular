@@ -1,6 +1,6 @@
 [
  {
-  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9",
+  "applicationtype_id": "37602b2c-08c4-4293-98ea-0a7a74a3f08e",
   "name": "Programmiersprache",
   "name_e": "Programming language",
   "name_r": "",
@@ -9,7 +9,7 @@
   "description_r": ""
  },
  {
-  "applicationtype_id": "b1ee22bd-4910-4f05-8c2f-54568c36f79b",
+  "applicationtype_id": "a718e807-bdb3-4075-a480-d41303b6e380",
   "name": "Umgebung",
   "name_e": "Environment",
   "name_r": "",
@@ -18,7 +18,7 @@
   "description_r": ""
  },
  {
-  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39",
+  "applicationtype_id": "e0319c67-4bb8-477f-8d16-19404f318676",
   "name": "Applikation",
   "name_e": "Application",
   "name_r": "",
@@ -27,7 +27,7 @@
   "description_r": ""
  },
  {
-  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953",
+  "applicationtype_id": "3fbbf01d-d7af-4ec3-881d-6a0244a9c38f",
   "name": "Rahmenwerk",
   "name_e": "Framework",
   "name_r": "",
@@ -36,7 +36,7 @@
   "description_r": ""
  },
  {
-  "applicationtype_id": "035a4dac-d70f-40c5-b75e-58d323a24220",
+  "applicationtype_id": "c6860adf-8c1a-4c79-a235-c282e5c9e704",
   "name": "Inhaltsverwaltungssystem",
   "name_e": "Content Management System",
   "name_r": "",

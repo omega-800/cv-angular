@@ -13,6 +13,8 @@
           width="500%" height="300%" in="displacementMap2" result="convolveMatrix3" />
       </filter>
     </svg>
+    <a *ngIf="!showFirst" style="font-size:1.5em;text-decoration:underline;margin-right:3em;"
+      href="https://open.spotify.com/track/5m1e0m3nIQ1lgxjZNm4I5z?si=ff92080664a44afc">Mysteriöser link</a>
     <a *ngIf="!showFirst" style="font-size:1.5em;text-decoration:underline;margin-right:1.5em;"
       href="https://open.spotify.com/track/0DPXhtJlA7qKrq2CjAPuiP?si=b6b889f215394ff0">Mysteriöser link</a>
     <a *ngIf="!showFirst" style="font-size:1.5em;text-decoration:underline;"
@@ -21,17 +23,20 @@
       href="https://open.spotify.com/track/3B6bxYkDG7SH3T93rETpc1?si=e2136f3574fe4096">Mysteriöser link</a>
   </div>
   <div class="desc slimpill">
-    <h3>Hallihallo!</h3>
-    <p>Herzlich willkommen auf meiner Portfolio-Webseite! Fragst du dich gerade:</p>
-    <h4>Wer ich bin?</h4>
-    <p>Ich heisse {{ me.firstname }} {{ me.lastname}} und bin <span class="age">{{ me.birthdate | age:age }}</span> alt.
+    <h3>{{'Hallihallo!' | translate | async}}</h3>
+    <p>{{'Herzlich willkommen auf meiner Portfolio-Webseite! Fragst du dich gerade:' | translate | async}}
+    </p>
+    <h4>{{'Wer ich bin?' | translate | async}}</h4>
+    <p>{{'Ich heisse ' +me.firstname + ' ' +me.lastname + ' und bin ' | translate | async}} <span class="age">{{
+        me.birthdate | age:age}}</span> {{'alt.' | translate | async}}
     </p>
     <h4>Was ich tue?</h4>
-    <p (mouseenter)="showFirst = !showFirst">{{showFirst ? text1 : text2}}<a (click)="navigateProjects()"
-        class="link">&nbsp;{{showFirst ? btnText1 : btnText2}}&nbsp;</a>{{showFirst ? endText1 : endText2}}</p>
+    <p style="white-space: pre-line" (mouseenter)="showFirst = !showFirst">{{showFirst ? text1 : text2}}<a
+        (click)="navigateProjects()" class="link">&nbsp;{{showFirst ? btnText1 : btnText2}}&nbsp;</a>{{showFirst ?
+      endText1 : endText2}}</p>
   </div>
   <div class="socials slimpill flex-row-just">
-    <h4 class="socialstext">Erreichen kannst du mich hier:</h4>
+    <h4 class="socialstext">{{'Erreichen kannst du mich hier:' | translate | async}}</h4>
     <app-button (click)="callMe()" [type]="lt.PHONE" name="Meine Telefonnummer"></app-button>
     <app-button (click)="mailMe()" [type]="lt.MAIL" name="Meine E-Mail"></app-button>
     <app-button (click)="myGithub()" [type]="lt.GITHUB" name="Mein Github Profil"></app-button>

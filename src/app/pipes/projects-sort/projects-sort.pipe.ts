@@ -16,7 +16,7 @@ export class ProjectsSortPipe implements PipeTransform {
     }
     if (sortBy) {
       if (Object.values(Interest).includes(sortBy.value as Interest)) {
-        projects = projects.sort((a, b) => a[`relevance_${sortBy.value}` as keyof typeof a] === undefined ? 1 : b[`relevance_${sortBy.value}` as keyof typeof a] === undefined ? -1 :
+        projects = projects.sort((a, b) => a[`relevance_${sortBy.value}` as keyof typeof a] == undefined ? 1 : b[`relevance_${sortBy.value}` as keyof typeof a] == undefined ? -1 :
           a[`relevance_${sortBy.value}` as keyof typeof a] > b[`relevance_${sortBy.value}` as keyof typeof a] ?
             (ascending ? 1 : -1) : (ascending ? -1 : 1));
       } else if (sortBy.value === projectSortValues.date) {
