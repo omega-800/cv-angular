@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ProjectEntity } from 'src/app/services/project/project/project.model';
 import { ProjectService } from 'src/app/services/project/project/project.service';
 import { openLink } from '../../general/links.util';
-import { linkTypes } from '../../components.constants';
+import { authMessage, linkTypes, lockIcon, loginMessage } from '../../components.constants';
 import { LinkTypes } from '../../components.model';
 import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
@@ -36,8 +36,7 @@ import { projectFilterProps } from 'src/app/services/filter/project-filter/proje
 import { SkillService } from 'src/app/services/skills/skill/skill.service';
 import { BehaviorSubject } from 'rxjs';
 import { LeftToRightAnimationIncrement } from 'src/app/animations';
-import { Interest } from 'src/app/store/app/app.model';
-import { Store } from '@ngxs/store';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-projects',
@@ -74,6 +73,12 @@ export class ProjectsComponent implements OnInit {
   additionalFilterCategories: FiltersEntity[] = [];
   additionalFilter$: BehaviorSubject<FiltersEntity[]> = new BehaviorSubject<FiltersEntity[]>(this.additionalFilterCategories);
 
+  loggedIn: boolean = false;
+  isAuth: boolean = false;
+
+  authMessage = authMessage;
+  loginMessage = loginMessage
+
   constructor(
     private projectService: ProjectService,
     private skillService: SkillService,
@@ -81,8 +86,11 @@ export class ProjectsComponent implements OnInit {
     projectFilterService: ProjectFilterService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private scroller: ViewportScroller
+    private scroller: ViewportScroller,
+    authService: AuthService
   ) {
+    authService.isLoggedIn.subscribe(loggedIn => this.loggedIn = loggedIn);
+    authService.isAuthenticated.subscribe(isAuth => this.isAuth = isAuth);
     this.projects = projectService.getProjects();
     this.projects.forEach((project) => {
       project.skills.forEach((skill) => {
@@ -165,5 +173,9 @@ export class ProjectsComponent implements OnInit {
 
   goToCareer(careerID: string) {
     this.router.navigate(['../career'], { fragment: careerID, relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
+  }
+
+  getLockedProjectsCount(): number {
+    return this.projectService.getNrOfLockedProjects();
   }
 }

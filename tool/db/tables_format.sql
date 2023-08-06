@@ -301,6 +301,7 @@ CREATE TABLE IF NOT EXISTS public.project
     relevance_education smallint,
     relevance_art smallint,
     relevance_health smallint,
+    anon_locked boolean,
     client_id uuid,
     career_id uuid,
     CONSTRAINT project_pkey PRIMARY KEY (project_id)

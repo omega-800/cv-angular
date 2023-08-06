@@ -91,6 +91,49 @@
                     &.login-dd {
                         width: 30em;
 
+                        & .group {
+                            margin-top: variables.$elem-size;
+                            width: 100%;
+
+                            & button,
+                            p {
+                                margin: 0 auto;
+                            }
+                        }
+
+                        & .login-title {
+                            margin: auto
+                        }
+
+                        & .arrow {
+                            height: variables.$elem-size;
+                            width: variables.$elem-size;
+                            border-top: variables.$elem-size solid transparent;
+                            border-bottom: variables.$elem-size solid transparent;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            &.arrow-right {
+                                margin-left: variables.$elem-padding;
+                                @include mixins.transition(border-left, variables.$elem-size solid variables.$cool);
+
+                                &:hover {
+                                    @include mixins.transition(border-left, variables.$elem-size solid variables.$cooldarken);
+                                }
+                            }
+
+                            &.arrow-left {
+                                margin-right: variables.$elem-padding;
+                                @include mixins.transition(border-right, variables.$elem-size solid variables.$cool);
+
+                                &:hover {
+                                    @include mixins.transition(border-right, variables.$elem-size solid variables.$cooldarken);
+                                }
+                            }
+                        }
+
                         & .loginfields {
                             & input {
                                 padding: variables.$elem-padding;

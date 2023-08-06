@@ -1,6 +1,6 @@
 [
  {
-  "career_id": "7ca8fe4b-450e-47b9-b7b8-b8a70392ea85",
+  "career_id": "74bfecb6-191d-42e4-a4cc-6b43d303ef63",
   "name": "inteco",
   "name_e": "",
   "name_r": "",
@@ -11,11 +11,11 @@
   "dateto": "2023-08-30T22:00:00.000Z",
   "pensum": 90,
   "document": "",
-  "workplace_id": "0f71bd6f-61c5-47d4-a66e-3e21d910baba",
+  "workplace_id": "37d21a54-04c9-409e-8519-c4504e8b265a",
   "school_id": ""
  },
  {
-  "career_id": "7933bd28-2041-431b-8092-696392e24dd0",
+  "career_id": "3c40be9d-c0ee-49d4-a771-07e350fb69e8",
   "name": "ernestovargas",
   "name_e": "",
   "name_r": "",
@@ -26,11 +26,11 @@
   "dateto": "2021-01-19T23:00:00.000Z",
   "pensum": 60,
   "document": "",
-  "workplace_id": "fe864a3e-71fd-462b-9088-543df88146d9",
+  "workplace_id": "a82034b0-1f2d-44dc-a0e5-2b7eaad83722",
   "school_id": ""
  },
  {
-  "career_id": "02ba9654-8c9e-451c-8bb7-ef7b6a83f2c4",
+  "career_id": "9769176a-1c88-4af7-8ab6-5770447dd195",
   "name": "kork",
   "name_e": "",
   "name_r": "",
@@ -41,11 +41,11 @@
   "dateto": "2022-03-31T22:00:00.000Z",
   "pensum": 20,
   "document": "",
-  "workplace_id": "a981702a-a831-4f95-a11e-1a3b5e04a872",
+  "workplace_id": "01a5c61c-92b7-4e60-9a9d-4ec6e9b82568",
   "school_id": ""
  },
  {
-  "career_id": "70f173b9-b6e3-4e33-8332-7f9eec8fce53",
+  "career_id": "baa3c7e6-aa28-4e87-866b-6cf2ac3f7989",
   "name": "bzz",
   "name_e": "",
   "name_r": "",
@@ -57,10 +57,10 @@
   "pensum": 20,
   "document": "",
   "workplace_id": "",
-  "school_id": "1f7632cf-8473-48d4-9271-05d0ff39c7f6"
+  "school_id": "45eea91f-d502-40bf-9cba-4cd1a3fa855f"
  },
  {
-  "career_id": "81e522b7-2a00-435f-9f24-876cb5478bdc",
+  "career_id": "11f0f24f-8cf3-4f4b-a8da-e3329c6b38e9",
   "name": "ims",
   "name_e": "",
   "name_r": "",
@@ -72,10 +72,10 @@
   "pensum": 80,
   "document": "",
   "workplace_id": "",
-  "school_id": "4ed0528c-5b71-4e48-853f-444caa518cc1"
+  "school_id": "992da8c5-321a-4e37-a8b2-7ee19c363209"
  },
  {
-  "career_id": "0b13ae2f-b7af-49b5-9168-551ea61dc6ee",
+  "career_id": "fbb289ee-08db-40df-bd6f-e3505247eedb",
   "name": "sek",
   "name_e": "",
   "name_r": "",
@@ -87,10 +87,10 @@
   "pensum": 100,
   "document": "",
   "workplace_id": "",
-  "school_id": "b8f40caa-5836-4594-b5ab-deb709d4b82f"
+  "school_id": "8af88697-d1fb-4ef4-92b1-8be7ace19099"
  },
  {
-  "career_id": "5bda249e-7a78-44bd-ae6a-8b9464c213c4",
+  "career_id": "63b54cd3-c067-4685-88f4-3bd8fe5c251e",
   "name": "hopro",
   "name_e": "",
   "name_r": "",
@@ -102,10 +102,10 @@
   "pensum": 100,
   "document": "",
   "workplace_id": "",
-  "school_id": "37eae42c-1ab7-48a8-976a-fe09fc7cc984"
+  "school_id": "2930b52e-9499-4a33-a33e-47ead367257e"
  },
  {
-  "career_id": "622f0d41-0d9b-4e92-af87-6af6019843f2",
+  "career_id": "5af277fa-af90-41d3-b82d-6861cbe910c5",
   "name": "probstei",
   "name_e": "",
   "name_r": "",
@@ -117,6 +117,6 @@
   "pensum": 100,
   "document": "",
   "workplace_id": "",
-  "school_id": "fdc40e5d-8eda-48a5-a2c2-74d6e764b6b7"
+  "school_id": "0eeec217-18dc-421a-8fa5-4a16f5fbeed5"
  }
 ]

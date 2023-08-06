@@ -11,13 +11,12 @@ import { ImageComp } from '../../components.model';
 import { DropDownAnimation, TooltipAnimation } from 'src/app/animations';
 
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [TooltipComponent, NgFor, RouterLink, RouterLinkActive, NgIf, FormsModule, ReactiveFormsModule],
   animations: [DropDownAnimation, TooltipAnimation]
@@ -30,10 +29,18 @@ export class HeaderComponent {
   d = Direction;
   dropdownActive: boolean = false;
   dropdownLoginActive: boolean = false;
-
+  selectedRegister: boolean = false;
+  loggedIn: boolean = false;
+  authenticated: boolean = false;
   loginForm: FormGroup;
+  errorMsg: string = '';
+  userEmail: string = '';
 
-  constructor(private store: Store, private router: Router, private afAuth: AngularFireAuth) {
+  constructor(private store: Store, private router: Router, private authService: AuthService) {
+    this.authService.isAuthenticated.subscribe(isAuth => { this.authenticated = isAuth });
+    this.authService.isLoggedIn.subscribe(isAuth => { this.loggedIn = isAuth });
+    this.authService.errorMessage.subscribe(msg => { this.errorMsg = msg });
+    this.authService.userEmail.subscribe(userEmail => { this.userEmail = userEmail });
     this.store.select(state => state.app.interest).subscribe(res => { this.interest = res; this.interestIcon = this.types.find(t => t.type == res)!.icon });
     this.loginForm = new FormGroup({
       email: new FormControl('this.email', [
@@ -45,15 +52,13 @@ export class HeaderComponent {
       password: new FormControl('this.password', [
         Validators.required,
         Validators.minLength(8),
-        Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/)
+        Validators.pattern(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/)
       ])
     });
   }
 
   ngOnInit() {
     this.loginForm.reset({ email: this.email, password: this.password });
-    this.afAuth.authState.subscribe(state => console.log('state: ', state?.isAnonymous))
-    console.log(this.afAuth.currentUser)
   }
 
   get email() {
@@ -72,32 +77,20 @@ export class HeaderComponent {
 
   login() {
     const { email, password } = this.loginForm.value;
-    return this.afAuth.signInWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log('user: ', user)
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log('errorCode: ', errorCode)
-        console.log('errorMessage: ', errorMessage)
-      });
+    this.authService.login(email, password)
   }
 
   register() {
     const { email, password } = this.loginForm.value;
-    return this.afAuth.createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log('user: ', user)
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log('errorCode: ', errorCode)
-        console.log('errorMessage: ', errorMessage)
-      });
+    this.authService.register(email, password)
+  }
+
+  logout() {
+    this.authService.logout()
+  }
+
+  getVerEmail() {
+    this.authService.getVerEmail()
   }
 }
 

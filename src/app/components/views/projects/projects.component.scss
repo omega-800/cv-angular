@@ -1,8 +1,14 @@
 @use "src/scss/variables.scss" as variables;
 
 :host {
-    & h1 {
+    & .title {
         order: -3;
+
+        & p {
+            font-family: variables.$mono;
+            color: variables.$fontcolor2;
+            text-align: center;
+        }
     }
 
     & .filters {

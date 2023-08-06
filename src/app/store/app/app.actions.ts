@@ -9,3 +9,7 @@ export class SetLanguage {
     static readonly type = '[App] Set Language';
     constructor(public language: Language) { }
 }
+export class SetLoggedIn {
+    static readonly type = '[App] Set LoggedIn';
+    constructor(public loggedIn: boolean) { }
+}

@@ -1,33 +1,43 @@
-<div [class]="'default-grid preview link slimpill ' + (isActive ? 'active': 'notactive')"
-  (click)="isActive = !isActive;">
-  <img *ngIf="preview && !isActive" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
-    loading="lazy" />
-
+<div *ngIf="locked" class="default-grid preview slimpill notactive locked" (mouseenter)="isActive = true"
+  (mouseleave)="isActive = false">
+  <app-tooltip class="default-grid items" [name]="'Huch'" [description]="description" [visible]="isActive"
+    [direction]="d.TOP"></app-tooltip>
+  <img class="previewImg preview-image" src="{{ lockIcon.path }}" alt="{{ lockIcon.alt }}" loading="lazy" />
   <h3 class="title flex-list">{{ title }}</h3>
-  <app-button *ngIf="!isActive && link" class="preview-image" (click)="ol(link)" [name]="title" [type]="lt.URL">
-  </app-button>
-
-  <img [class]="(isActive ? '': 'notactive ') + 'arrowImg preview-image'" src="{{ arrowIcon.path }}"
-    alt="{{ arrowIcon.alt }}" loading="lazy" />
 </div>
 
-<div class="default-grid items" *ngIf="isActive" [@dropDownMenu]>
-  <div *ngIf="hasImage" class="mainImg slimpill menu-item">
-    <app-carousel *ngIf="isCarousel" [images]="images"></app-carousel>
-    <app-image *ngIf="!isCarousel" [image]="image"></app-image>
+<ng-container *ngIf="!locked">
+  <div [class]="'default-grid preview link slimpill ' + (isActive ? 'active': 'notactive')"
+    (click)="isActive = !isActive;">
+    <img *ngIf="preview && !isActive" class="previewImg preview-image" src="{{ preview.path }}" alt="{{ preview.alt }}"
+      loading="lazy" />
+
+    <h3 class="title flex-list">{{ title }}</h3>
+    <app-button *ngIf="!isActive && link" class="preview-image" (click)="ol(link)" [name]="title" [type]="lt.URL">
+    </app-button>
+
+    <img [class]="(isActive ? '': 'notactive ') + 'arrowImg preview-image'" src="{{ arrowIcon.path }}"
+      alt="{{ arrowIcon.alt }}" loading="lazy" />
   </div>
 
-  <div *ngIf="subTitle || subSubTitle || description" class="desc slimpill menu-item">
-    <h4 *ngIf="subTitle">{{ subTitle }}</h4>
-    <h5 *ngIf="subSubTitle">{{ subSubTitle }}</h5>
-    <p *ngIf="description">{{ description }}</p>
-  </div>
+  <div class="default-grid items" *ngIf="isActive" [@dropDownMenu]>
+    <div *ngIf="hasImage" class="mainImg slimpill menu-item">
+      <app-carousel *ngIf="isCarousel" [images]="images"></app-carousel>
+      <app-image *ngIf="!isCarousel" [image]="image"></app-image>
+    </div>
 
-  <div class="bottom flex-row-just menu-item">
-    <ng-content></ng-content>
-  </div>
+    <div *ngIf="subTitle || subSubTitle || description" class="desc slimpill menu-item">
+      <h4 *ngIf="subTitle">{{ subTitle }}</h4>
+      <h5 *ngIf="subSubTitle">{{ subSubTitle }}</h5>
+      <p *ngIf="description">{{ description }}</p>
+    </div>
 
-  <div class="belowbottom slimpill menu-item">
-    <ng-content select="[bottom]"></ng-content>
+    <div class="bottom flex-row-just menu-item">
+      <ng-content></ng-content>
+    </div>
+
+    <div class="belowbottom slimpill menu-item">
+      <ng-content select="[bottom]"></ng-content>
+    </div>
   </div>
-</div>
+</ng-container>

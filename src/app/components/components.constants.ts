@@ -1,5 +1,8 @@
 import { LinkTypes, ImageComp } from './components.model';
 
+export const loginMessage = 'Dieser Inhalt ist nur für eingeloggte User sichtbar';
+export const authMessage = 'Verifiziere deine Email um diesen Inhalt zu sehen';
+
 export enum Direction {
   TOP = 'top',
   RIGHT = 'right',
@@ -124,6 +127,13 @@ export const codeIcon: Readonly<ImageComp> = {
   name: 'Code',
   path: 'assets/img/code.svg',
   alt: 'Code icon',
+};
+
+export const lockIcon: Readonly<ImageComp> = {
+  id: 'icon_lock',
+  name: 'Lock',
+  path: 'assets/img/lock.svg',
+  alt: 'Lock icon',
 };
 
 export const linkTypes: Readonly<LinkTypes> = {

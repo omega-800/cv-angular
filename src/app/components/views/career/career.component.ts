@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
-import { contactIcon, addressIcon, arrowIcon, urlIcon, infoIcon, Direction } from '../../components.constants';
+import { contactIcon, addressIcon, arrowIcon, urlIcon, infoIcon, Direction, loginMessage, authMessage } from '../../components.constants';
 import { ImageComp } from '../../components.model';
 import { openLink } from '../../general/links.util';
 import { linkTypes } from '../../components.constants';
@@ -19,6 +19,7 @@ import { NgVar } from 'src/app/directives/ng-var.directive';
 import { DropDownAnimation, LeftToRightAnimation } from 'src/app/animations';
 import { DatePipe } from 'src/app/pipes/date/date.pipe';
 import { TooltipComponent } from '../../general/tooltip/tooltip.component';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-career',
@@ -40,8 +41,21 @@ export class CareerComponent {
   lt: LinkTypes = linkTypes;
   d = Direction;
   selectedCareerID: string = '';
+  loggedIn = false;
+  isAuth = false;
+  loginMessage = loginMessage;
+  authMessage = authMessage;
 
-  constructor(careerService: CareerService, private projectService: ProjectService, private router: Router, private activatedRoute: ActivatedRoute, private scroller: ViewportScroller) {
+  constructor(
+    careerService: CareerService,
+    private projectService: ProjectService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private scroller: ViewportScroller,
+    authService: AuthService
+  ) {
+    authService.isLoggedIn.subscribe(loggedIn => this.loggedIn = loggedIn);
+    authService.isAuthenticated.subscribe(isAuth => this.isAuth = isAuth);
     this.careers = careerService.getCareers();
   }
 
@@ -63,8 +77,10 @@ export class CareerComponent {
     return image.path.endsWith("/") ? { ...image, path: image.path + 'thumbnail.webp' } : image
   }
 
-  goToProject(projectID: string) {
-    this.router.navigate(['../projects'], { fragment: projectID, relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
+  goToProject(project: ProjectEntity) {
+    if (!project.anon_locked || this.loggedIn) {
+      this.router.navigate(['../projects'], { fragment: project.project_id, relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
+    }
   }
 
   getDuration(from: Date, to: Date, pensum: number): string {

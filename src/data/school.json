@@ -1,6 +1,6 @@
 [
  {
-  "school_id": "fdc40e5d-8eda-48a5-a2c2-74d6e764b6b7",
+  "school_id": "0eeec217-18dc-421a-8fa5-4a16f5fbeed5",
   "type": "primarschule",
   "type_e": "",
   "type_d": "",
@@ -13,10 +13,10 @@
   "url": "https://www.stadt-zuerich.ch/schulen/de/probstei.html",
   "logo": "assets/content/career/probstei.svg",
   "image": "",
-  "address_id": "084b94d6-7236-4881-8ce8-bae4daff64e6"
+  "address_id": "fecc626e-8542-4a27-8e0d-e811b3724e81"
  },
  {
-  "school_id": "37eae42c-1ab7-48a8-976a-fe09fc7cc984",
+  "school_id": "2930b52e-9499-4a33-a33e-47ead367257e",
   "type": "gymnasium",
   "type_e": "",
   "type_d": "",
@@ -29,10 +29,10 @@
   "url": "https://www.kshp.ch/",
   "logo": "assets/content/career/hohepromenade.svg",
   "image": "",
-  "address_id": "5b739f76-7d0c-4c15-816f-6e805fabb4a1"
+  "address_id": "4d77ed97-9183-4468-bc12-9b3b219cde3c"
  },
  {
-  "school_id": "b8f40caa-5836-4594-b5ab-deb709d4b82f",
+  "school_id": "8af88697-d1fb-4ef4-92b1-8be7ace19099",
   "type": "sekundarschule",
   "type_e": "",
   "type_d": "",
@@ -45,10 +45,10 @@
   "url": "https://www.schule-herzli.ch/",
   "logo": "assets/content/career/herzli.svg",
   "image": "",
-  "address_id": "f973b632-1ed9-49da-885a-dc0f88b285a5"
+  "address_id": "ad1a29de-829e-4a4b-9b72-b23b64821ffb"
  },
  {
-  "school_id": "4ed0528c-5b71-4e48-853f-444caa518cc1",
+  "school_id": "992da8c5-321a-4e37-a8b2-7ee19c363209",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -61,10 +61,10 @@
   "url": "https://www.ksh.ch/angebot/informatikmittelschule",
   "logo": "assets/content/career/hottingen.webp",
   "image": "",
-  "address_id": "3748bae7-c8df-420a-afd6-c11fc732bb15"
+  "address_id": "445496ee-94d2-4af0-9919-4a95a1ed5ca0"
  },
  {
-  "school_id": "1f7632cf-8473-48d4-9271-05d0ff39c7f6",
+  "school_id": "45eea91f-d502-40bf-9cba-4cd1a3fa855f",
   "type": "Informatikmittelschule",
   "type_e": "",
   "type_d": "",
@@ -77,6 +77,6 @@
   "url": "https://www.bzz.ch/berufslehre/informatik-mediamatik/informatikerin-efz-informatiker-in-efz-ims/",
   "logo": "assets/content/career/bzz.webp",
   "image": "",
-  "address_id": "40ff72a1-9719-4dc9-8834-9e0444e45c39"
+  "address_id": "3c75cee5-403a-44a9-92c1-250449bd74e3"
  }
 ]

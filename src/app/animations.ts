@@ -1,5 +1,11 @@
 import { trigger, transition, style, query, group, animate, animateChild, sequence, stagger } from "@angular/animations";
 
+const pxSize = '50px'
+const slow = '0.5s';
+const normal = '0.3s'
+const faster = '0.25s'
+const fast = '0.2s'
+
 export const slideLeft = [
     query(':enter, :leave',
         style({ position: 'fixed' }),
@@ -7,12 +13,12 @@ export const slideLeft = [
     group([
         query(':enter', [
             style({ transform: 'translateX(100%)' }),
-            animate('0.5s ease-in-out',
+            animate(`${slow} ease-in-out`,
                 style({ transform: 'translateX(0%)' }))
         ], { optional: true }),
         query(':leave', [
             style({ transform: 'translateX(0%)' }),
-            animate('0.5s ease-in-out',
+            animate(`${slow} ease-in-out`,
                 style({ transform: 'translateX(-100%)' }))
         ], { optional: true }),
     ])
@@ -25,12 +31,12 @@ export const slideRight = [
     group([
         query(':enter', [
             style({ transform: 'translateX(-100%)' }),
-            animate('0.5s ease-in-out',
+            animate(`${slow} ease-in-out`,
                 style({ transform: 'translateX(0%)' }))
         ], { optional: true }),
         query(':leave', [
             style({ transform: 'translateX(0%)' }),
-            animate('0.5s ease-in-out',
+            animate(`${slow} ease-in-out`,
                 style({ transform: 'translateX(100%)' }))
         ], { optional: true }),
     ])
@@ -40,13 +46,13 @@ export const DropDownAnimation = trigger("dropDownMenu", [
     transition(":enter", [
         style({ height: 0, overflow: "hidden" }),
         query(".menu-item", [
-            style({ opacity: 0, transform: "translateY(-50px)" })
+            style({ opacity: 0, transform: `translateY(-${pxSize})` })
         ]),
         sequence([
-            animate("250ms", style({ height: "*" })),
+            animate(faster, style({ height: "*" })),
             query(".menu-item", [
                 stagger(-20, [
-                    animate("300ms ease-in-out", style({ opacity: 1, transform: "none" }))
+                    animate(`${normal} ease-in-out`, style({ opacity: 1, transform: "none" }))
                 ])
             ])
         ])
@@ -59,12 +65,12 @@ export const DropDownAnimation = trigger("dropDownMenu", [
             query(".menu-item", [
                 stagger(10, [
                     animate(
-                        "200ms ease-in-out",
-                        style({ opacity: 0, transform: "translateY(-50px)" })
+                        `${fast} ease-in-out`,
+                        style({ opacity: 0, transform: `translateY(-${pxSize})` })
                     )
                 ])
             ]),
-            animate("200ms", style({ height: 0 }))
+            animate(fast, style({ height: 0 }))
         ])
     ])
 ]);
@@ -76,10 +82,10 @@ export const LeftToRightAnimation = trigger("leftToRight", [
             style({ opacity: 0, transform: 'translateX(-100%)' }),
         ]),
         sequence([
-            animate("300ms", style({ height: "*" })),
+            animate(normal, style({ height: "*" })),
             query(".menu-item", [
                 stagger(30, [
-                    animate('300ms ease-in-out', style({ opacity: 1, transform: 'translateX(0%)' }))
+                    animate(`${normal} ease-in-out`, style({ opacity: 1, transform: 'translateX(0%)' }))
                 ])
             ])
         ])
@@ -92,12 +98,12 @@ export const LeftToRightAnimation = trigger("leftToRight", [
             query(".menu-item", [
                 stagger(-20, [
                     animate(
-                        "200ms ease-in-out",
+                        `${fast} ease-in-out`,
                         style({ opacity: 0, transform: "translateX(100%)" })
                     )
                 ])
             ]),
-            animate("200ms", style({ height: 0 }))
+            animate(fast, style({ height: 0 }))
         ])
     ])
 ]);
@@ -109,10 +115,10 @@ export const LeftToRightAnimationIncrement = trigger("leftToRightIncrement", [
             style({ opacity: 0, transform: 'translateX(-100%)' }),
         ]),
         sequence([
-            //animate("200ms", style({ height: "*" })),
+            //animate(fast, style({ height: "*" })),
             query(":enter", [
                 stagger(10, [
-                    animate('300ms ease-in-out', style({ opacity: 1, transform: 'translateX(0%)' }))
+                    animate(`${normal} ease-in-out`, style({ opacity: 1, transform: 'translateX(0%)' }))
                 ])
             ])
         ])
@@ -125,12 +131,12 @@ export const LeftToRightAnimationIncrement = trigger("leftToRightIncrement", [
             query(":leave", [
                 stagger(10, [
                     animate(
-                        "300ms ease-in-out",
+                        `${normal} ease-in-out`,
                         style({ opacity: 0, transform: "translateX(100%)" })
                     )
                 ])
             ]),
-            //animate("200ms", style({ height: "*" }))
+            //animate(fast, style({ height: "*" }))
         ])
     ])
 ]);
@@ -138,46 +144,46 @@ export const LeftToRightAnimationIncrement = trigger("leftToRightIncrement", [
 export const SlideLeftAnimation = trigger('slideLeftAnimation', [
     transition(":enter", [
         style({ opacity: 0, transform: 'translateX(-100%)' }),
-        animate('500ms ease-in-out', style({ opacity: 1, transform: 'translateX(0%)' }))
+        animate(`${slow} ease-in-out`, style({ opacity: 1, transform: 'translateX(0%)' }))
     ]),
     transition(":leave", [
         style({ opacity: 1, transform: "none" }),
-        animate("500ms ease-in-out", style({ opacity: 0, transform: "translateX(100%)" }))
+        animate(`${slow} ease-in-out`, style({ opacity: 0, transform: "translateX(100%)" }))
     ])
 ])
 
 export const TooltipAnimation = trigger('tooltipAnimation', [
     transition("void => top", [
-        style({ opacity: 0, height: 0, overflow: 'hidden', transform: 'translateY(-100%)' }),
-        animate('300ms ease-in-out', style({ opacity: 1, height: '*', transform: 'translateY(0%)' }))
+        style({ opacity: 0, height: 0, overflow: 'hidden', transform: `translateY(-${pxSize})` }),
+        animate(`${normal} ease-in-out`, style({ opacity: 1, height: '*', transform: 'translateY(0%)' }))
     ]),
     transition("void => bottom", [
-        style({ opacity: 0, height: 0, overflow: 'hidden', transform: 'translateY(100%)' }),
-        animate('300ms ease-in-out', style({ opacity: 1, height: '*', transform: 'translateY(0%)' }))
+        style({ opacity: 0, height: 0, overflow: 'hidden', transform: `translateY(${pxSize})` }),
+        animate(`${normal} ease-in-out`, style({ opacity: 1, height: '*', transform: 'translateY(0%)' }))
     ]),
     transition("void => left", [
-        style({ opacity: 0, width: 0, overflow: 'hidden', transform: "translateX(-100%)" }),
-        animate("300ms ease-in-out", style({ opacity: 1, width: '*', transform: "translateX(0%)" }))
+        style({ opacity: 0, width: 0, overflow: 'hidden', transform: `translateX(-${pxSize})` }),
+        animate(`${normal} ease-in-out`, style({ opacity: 1, width: '*', transform: "translateX(0%)" }))
     ]),
     transition("void => right", [
-        style({ opacity: 0, width: 0, overflow: 'hidden', transform: "translateX(100%)" }),
-        animate("300ms ease-in-out", style({ opacity: 1, width: '*', transform: "translateX(0%)" }))
+        style({ opacity: 0, width: 0, overflow: 'hidden', transform: `translateX(${pxSize})` }),
+        animate(`${normal} ease-in-out`, style({ opacity: 1, width: '*', transform: "translateX(0%)" }))
     ]),
     transition("top => void", [
         style({ opacity: 1, overflow: 'hidden', height: "*", transform: 'translateY(0%)' }),
-        animate('200ms ease-in-out', style({ opacity: 0, height: 0, transform: 'translateY(-100%)' }))
+        animate(`${fast} ease-in-out`, style({ opacity: 0, height: 0, transform: `translateY(-${pxSize})` }))
     ]),
     transition("bottom => void", [
         style({ opacity: 1, overflow: 'hidden', height: "*", transform: 'translateY(0%)' }),
-        animate('200ms ease-in-out', style({ opacity: 0, height: 0, transform: 'translateY(100%)' }))
+        animate(`${fast} ease-in-out`, style({ opacity: 0, height: 0, transform: `translateY(${pxSize})` }))
     ]),
     transition("left => void", [
         style({ opacity: 1, overflow: 'hidden', width: "*", transform: 'translateX(0%)' }),
-        animate('200ms ease-in-out', style({ opacity: 0, width: 0, transform: 'translateX(-100%)' }))
+        animate(`${fast} ease-in-out`, style({ opacity: 0, width: 0, transform: `translateX(-${pxSize})` }))
     ]),
     transition("right => void", [
         style({ opacity: 1, overflow: 'hidden', width: "*", transform: 'translateX(0%)' }),
-        animate('200ms ease-in-out', style({ opacity: 0, width: 0, transform: 'translateX(100%)' }))
+        animate(`${fast} ease-in-out`, style({ opacity: 0, width: 0, transform: `translateX(${pxSize})` }))
     ]),
 ])
 

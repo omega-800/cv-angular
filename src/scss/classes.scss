@@ -163,12 +163,19 @@
     @include pill;
 }
 
+
+.locked {
+    cursor: default;
+    position: relative;
+}
+
 .buttonpill {
     @include pill;
     height: variables.$elem-height;
     padding: variables.$elem-padding;
 
-    &>* {
+    &>img,
+    >p {
         display: inline-block;
         vertical-align: middle;
         font-family: variables.$mono;

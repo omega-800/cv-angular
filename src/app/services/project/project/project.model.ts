@@ -19,6 +19,7 @@ export interface ProjectEntity extends ContentEntity {
   relevance_art: number;
   relevance_health: number;
   relevance_education: number;
+  anon_locked: boolean;
 }
 
 export interface ProjectOnly {
@@ -40,6 +41,7 @@ export interface ProjectOnly {
   relevance_art: number;
   relevance_health: number;
   relevance_education: number;
+  anon_locked: boolean;
 }
 
 export interface Project_Author {

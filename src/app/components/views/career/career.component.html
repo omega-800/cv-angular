@@ -78,9 +78,12 @@
               <h4>Projekte entwickelt</h4>
             </div>
             <div *ngIf="isActive.value" class="projectsList slimpill flex-e2e" [@dropDownMenu]>
-              <app-button *ngFor="let project of projectsList" [name]="project.name"
-                [image]="getThumbnail(project.image)" [type]="lt.OTHER" [showName]="true"
-                (click)="goToProject(project.project_id)" class="menu-item"></app-button>
+              <ng-container *ngFor="let project of projectsList">
+                <app-button [name]="project.name" [image]="getThumbnail(project.image)" [type]="lt.OTHER"
+                  [showName]="true" (click)="goToProject(project)" class="menu-item"
+                  [locked]="project.anon_locked && (!loggedIn || !isAuth)"
+                  [lockedMessage]="!loggedIn ? loginMessage : authMessage"></app-button>
+              </ng-container>
             </div>
           </ng-container>
         </ng-container>

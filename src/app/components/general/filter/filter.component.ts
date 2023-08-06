@@ -130,7 +130,6 @@ export class FilterComponent implements OnInit {
     let filterCopy = JSON.parse(JSON.stringify(passedFilter));
     let tagCopy = JSON.parse(JSON.stringify(passedTag));
     let htmlElem = document.getElementById(passedTag.id);
-    console.log(htmlElem)
 
     let filterIndex: number = this.selectedFilter.findIndex(elem => (elem.id == passedFilter.id));
     if (filterIndex >= 0) {

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ImageComp, LinkTypes } from '../../components.model';
-import { arrowIcon, linkTypes } from '../../components.constants';
+import { Direction, arrowIcon, linkTypes, lockIcon } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ImageComponent } from '../image/image.component';
@@ -8,6 +8,7 @@ import { NgIf } from '@angular/common';
 import { DropDownAnimation } from 'src/app/animations';
 import { openLink } from '../links.util';
 import { ButtonComponent } from '../button/button.component';
+import { TooltipComponent } from '../tooltip/tooltip.component';
 
 @Component({
   selector: 'app-contentbox',
@@ -15,7 +16,7 @@ import { ButtonComponent } from '../button/button.component';
   styleUrls: ['./contentbox.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [CarouselComponent, ImageComponent, NgIf, ButtonComponent],
+  imports: [CarouselComponent, ImageComponent, NgIf, ButtonComponent, TooltipComponent],
   animations: [DropDownAnimation]
 })
 export class ContentboxComponent implements OnInit {
@@ -27,9 +28,12 @@ export class ContentboxComponent implements OnInit {
   @Input() image!: ImageComp;
   @Input() imagePreview?: ImageComp;
   @Input() selected?: boolean;
+  @Input() locked?: boolean;
   lt: LinkTypes = linkTypes;
+  d = Direction;
 
   arrowIcon: ImageComp = arrowIcon;
+  lockIcon = lockIcon;
   isCarousel: boolean = false;
   isActive: boolean = false;
   hasImage: boolean = false;

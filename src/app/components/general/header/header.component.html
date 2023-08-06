@@ -34,50 +34,83 @@
       <img [src]="personIcon.path" [alt]="personIcon.alt" class="icon pill link"
         (click)="dropdownLoginActive = !dropdownLoginActive" />
       <div *ngIf="dropdownLoginActive" class="dropdown login-dd flex-list pill" [@dropDownMenu]>
-        <div class="title flex-column menu-item">
-          <h4 class="link pill close" (click)="dropdownLoginActive = !dropdownLoginActive"><b>X</b></h4>
-          <h3 class="login-title">Einloggen</h3>
+        <div *ngIf="loggedIn" class="title flex-column">
+          <h3 class="login-title menu-item">Salut {{userEmail}} :)</h3>
+          <div *ngIf="!authenticated" class="group flex-list">
+            <p class="menu-item">Dir wurde eine Verifizierungsemail zugesendet. Falls du keine
+              erhalten
+              hast, kannst du eine neue anfordern.
+            <p>
+              <button class="pill menu-item link" (click)="getVerEmail();">Verifizierungsemail anfordern</button>
+          </div>
+          <div class="group flex-list">
+            <p class="menu-item">Willst du dich ausloggen?</p>
+            <button class="pill menu-item link" (click)="logout()">Logout</button>
+          </div>
         </div>
-        <form [formGroup]="loginForm" (ngSubmit)="login()" class="loginfields flex-list-full">
-          <label for="email" class="menu-item">Email</label>
-          <input type="email" name="email" id="email" class="form-control menu-item" formControlName="email"
-            placeholder="Email" required />
-          <div
-            *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)"
-            class="alert alert-danger">
-
-            <p *ngIf="loginForm.get('email')?.errors?.['required']" class="error menu-item" [@tooltipAnimation]="'top'">
-              Email ist erforderlich
-            </p>
-            <p *ngIf="loginForm.get('email')?.errors?.['minlength']" class="error menu-item"
-              [@tooltipAnimation]="'top'">
-              Email muss mindestens 4 Zeichen lang sein
-            </p>
-            <p *ngIf="loginForm.get('email')?.errors?.['pattern']" class="error menu-item" [@tooltipAnimation]="'top'">
-              Email muss diesem Muster folgen: [name]@[domain].[TLD]
-            </p>
+        <ng-container *ngIf="!loggedIn">
+          <div class="title flex-column">
+            <h4 class="link pill close menu-item" (click)="dropdownLoginActive = !dropdownLoginActive"><b>X</b></h4>
+            <div class="title flex-row-just menu-item">
+              <div class="arrow arrow-left" (click)="selectedRegister = !selectedRegister"></div>
+              <h3 *ngIf="!selectedRegister" class="login-title">Einloggen</h3>
+              <h3 *ngIf="selectedRegister" class="login-title">Registrieren</h3>
+              <div class="arrow arrow-right" (click)="selectedRegister = !selectedRegister"></div>
+            </div>
           </div>
-          <label for="password" class="menu-item">Passwort</label>
-          <input type="password" name="password" id="password" class="form-control menu-item" formControlName="password"
-            placeholder="Passwort" required />
-          <div
-            *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)"
-            class="alert alert-danger">
+          <form [formGroup]="loginForm" (ngSubmit)="selectedRegister ? register() : login()"
+            class="loginfields flex-list-full">
+            <div *ngIf="errorMsg" class="alert alert-danger">
 
-            <p *ngIf="loginForm.get('password')?.errors?.['required']" class="error menu-item"
-              [@tooltipAnimation]="'top'">
-              Passwort ist erforderlich
-            </p>
-            <p *ngIf="loginForm.get('password')?.errors?.['minlength']" class="error menu-item"
-              [@tooltipAnimation]="'top'">Passwort muss mindestens 8 Zeichen lang sein
-            </p>
-            <p *ngIf="loginForm.get('password')?.errors?.['pattern']" class="error menu-item"
-              [@tooltipAnimation]="'top'">
-              Passwort muss je einen Klein-, Grossbuchstaben, Spezialcharakter (@$!%*?&) und eine Zahl enthalten
-            </p>
-          </div>
-          <button type="submit" [disabled]="loginForm.invalid" class="pill menu-item">Login</button>
-        </form>
+              <p class="error menu-item" [@tooltipAnimation]="'top'">
+                {{errorMsg}}
+              </p>
+            </div>
+            <label for="email" class="menu-item">Email</label>
+            <input type="email" name="email" id="email" class="form-control menu-item" formControlName="email"
+              placeholder="Email" required />
+            <div
+              *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)"
+              class="alert alert-danger">
+
+              <p *ngIf="loginForm.get('email')?.errors?.['required']" class="error menu-item"
+                [@tooltipAnimation]="'top'">
+                Email ist erforderlich
+              </p>
+              <p *ngIf="loginForm.get('email')?.errors?.['minlength']" class="error menu-item"
+                [@tooltipAnimation]="'top'">
+                Email muss mindestens 4 Zeichen lang sein
+              </p>
+              <p *ngIf="loginForm.get('email')?.errors?.['pattern']" class="error menu-item"
+                [@tooltipAnimation]="'top'">
+                Email muss diesem Muster folgen: [name]@[domain].[TLD]
+              </p>
+            </div>
+            <label for="password" class="menu-item">Passwort</label>
+            <input type="password" name="password" id="password" class="form-control menu-item"
+              formControlName="password" placeholder="Passwort" required />
+            <div
+              *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)"
+              class="alert alert-danger">
+
+              <p *ngIf="loginForm.get('password')?.errors?.['required']" class="error menu-item"
+                [@tooltipAnimation]="'top'">
+                Passwort ist erforderlich
+              </p>
+              <p *ngIf="loginForm.get('password')?.errors?.['minlength']" class="error menu-item"
+                [@tooltipAnimation]="'top'">Passwort muss mindestens 8 Zeichen lang sein
+              </p>
+              <p *ngIf="loginForm.get('password')?.errors?.['pattern']" class="error menu-item"
+                [@tooltipAnimation]="'top'">
+                Passwort muss je einen Klein-, Grossbuchstaben, Spezialcharakter #?!@$%^&*- und eine Zahl enthalten
+              </p>
+            </div>
+            <button *ngIf="selectedRegister" type="submit" [disabled]="loginForm.invalid"
+              class="pill menu-item">Registrieren</button>
+            <button *ngIf="!selectedRegister" type="submit" [disabled]="loginForm.invalid"
+              class="pill menu-item">Login</button>
+          </form>
+        </ng-container>
       </div>
     </li>
   </ul>

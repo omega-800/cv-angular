@@ -1,6 +1,6 @@
 [
  {
-  "application_id": "7940af5f-b48d-4699-8eda-53581353337a",
+  "application_id": "7724c03d-5aee-47fa-b94a-da1335451efd",
   "name": "Vim",
   "name_e": "",
   "name_r": "",
@@ -17,10 +17,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "8.2.3401",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "880d67a8-4bf5-4d3d-ab31-32395434ac5d",
+  "application_id": "9796a4b9-7a50-4a1d-bab1-ba0a7aaa5a47",
   "name": "GIMP",
   "name_e": "",
   "name_r": "",
@@ -37,10 +37,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "2.10.28",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "d1629497-1837-4863-a601-eded6854692c",
+  "application_id": "8d8be955-268c-44c6-83f8-a354e185b952",
   "name": "Adobe Photoshop",
   "name_e": "",
   "name_r": "",
@@ -57,10 +57,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "2022",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "f10453d2-ef0a-425a-b257-a84571ba7b30",
+  "application_id": "6e611290-f26b-40a5-abce-1d1c008522ff",
   "name": "Inkscape",
   "name_e": "",
   "name_r": "",
@@ -77,10 +77,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "1.1",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "3d7518af-cf5b-49e6-b340-b3e5f6f31f7f",
+  "application_id": "eabb60e6-394b-4b00-b8e2-2e888afb19fc",
   "name": "Unity",
   "name_e": "",
   "name_r": "",
@@ -97,10 +97,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "2020.3.19f1",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "1de2b65c-55b4-45f4-9cbf-fcc1fe964db0",
+  "application_id": "076b2839-b026-418f-9781-6ebdf0dd75e0",
   "name": "Pygame",
   "name_e": "",
   "name_r": "",
@@ -117,10 +117,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "2.0.1",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "09496519-b236-48ae-85e1-45bcf7cff3ad",
+  "application_id": "d85649f6-d50e-4c4c-8ab1-7b642f8959c7",
   "name": "Panda3D",
   "name_e": "",
   "name_r": "",
@@ -137,10 +137,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "1.10.11",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "5f14e036-ea46-4f78-987c-185fd72c97cd",
+  "application_id": "8c186431-dd47-4f43-9356-125a496b0400",
   "name": "React",
   "name_e": "",
   "name_r": "",
@@ -157,10 +157,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "17.0.2",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "4eb8b779-c1aa-409e-868e-e7a399c42264",
+  "application_id": "762937a6-29a2-495e-8441-789bb9ad3816",
   "name": "Vue.js",
   "name_e": "",
   "name_r": "",
@@ -177,10 +177,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "3.2.29",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "67a3d671-8791-4325-b998-630468c8a954",
+  "application_id": "290641ec-c1c1-4f1d-9a19-94861f4dee82",
   "name": "Selenium",
   "name_e": "",
   "name_r": "",
@@ -197,10 +197,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "4.1.0",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "0c461083-57b1-4d45-a1ed-f3cfd7f213a1",
+  "application_id": "7790d2cf-9dd3-4446-b992-ebf1eeff03ff",
   "name": "Swing",
   "name_e": "",
   "name_r": "",
@@ -217,10 +217,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Java 16",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "4d742952-8c96-4137-ab96-c00c10db116d",
+  "application_id": "f0d5aeb5-2169-40b3-8a30-ab08f4981095",
   "name": "Ursina",
   "name_e": "",
   "name_r": "",
@@ -237,10 +237,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "5.2.0",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "f7011df4-e8f8-415f-b1a7-61789ab9f43c",
+  "application_id": "7c288cca-1617-4d81-83e3-6f1556fb396d",
   "name": "GlassFish",
   "name_e": "",
   "name_r": "",
@@ -257,10 +257,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "5.1.0",
-  "applicationtype_id": "73e15c57-3722-4fa2-b538-9bea0eaed034"
+  "applicationtype_id": "b1ee22bd-4910-4f05-8c2f-54568c36f79b"
  },
  {
-  "application_id": "33b0331a-cbff-4757-8fa9-8b22ba3acd20",
+  "application_id": "95048eee-f2db-4164-bcb4-caa1762b24b8",
   "name": "Tomcat7",
   "name_e": "",
   "name_r": "",
@@ -277,10 +277,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "7.0.107",
-  "applicationtype_id": "73e15c57-3722-4fa2-b538-9bea0eaed034"
+  "applicationtype_id": "b1ee22bd-4910-4f05-8c2f-54568c36f79b"
  },
  {
-  "application_id": "fe98fa33-5480-44e4-b7e9-b26872b31957",
+  "application_id": "e281454a-ba3b-4131-be40-bbae1f1e1dfe",
   "name": "Word",
   "name_e": "",
   "name_r": "",
@@ -297,10 +297,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Microsoft Word 2021",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "47ce464a-368e-4953-9b9d-e92043d9a45a",
+  "application_id": "a2c8c2cf-0ce3-4e50-9467-2e1a6a042a87",
   "name": "Excel",
   "name_e": "",
   "name_r": "",
@@ -317,10 +317,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Microsoft Excel 2021",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "081bf7a0-0810-4680-9d94-a5ab0b774e5e",
+  "application_id": "215d0edd-cb93-4ddb-b288-e63f53e80896",
   "name": "PowerPoint",
   "name_e": "",
   "name_r": "",
@@ -337,10 +337,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Microsoft PowerPoint 2021",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "d78a5eff-530c-4ce4-9b2a-0b60f403c905",
+  "application_id": "bcdd5f25-ee0a-4925-a58d-d2ebb1cac88f",
   "name": "Access",
   "name_e": "",
   "name_r": "",
@@ -357,10 +357,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Microsoft Access 2021",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "ca9faa06-8fa5-4c68-bacd-eee585720e97",
+  "application_id": "1342c1b5-4629-46dc-966f-65f280711b98",
   "name": "Outlook",
   "name_e": "",
   "name_r": "",
@@ -377,10 +377,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Microsoft Outlook 2021",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "48c6b02f-aa92-405f-bf4e-98317067fc5d",
+  "application_id": "775ab0ec-071c-4cc9-a1bb-87845e2c094e",
   "name": "HTML",
   "name_e": "",
   "name_r": "",
@@ -397,10 +397,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "HTML5",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "59e143d3-ce9a-431b-a7f3-2aae7851a328",
+  "application_id": "d77d7f85-6a86-4f75-b65d-7acaacc30531",
   "name": "CSS",
   "name_e": "",
   "name_r": "",
@@ -417,10 +417,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "CSS3",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "fd3b8522-5193-477c-a200-6689d3544868",
+  "application_id": "4f10bf23-0ba5-452a-a6c3-2d205f7f5533",
   "name": "SCSS",
   "name_e": "",
   "name_r": "",
@@ -437,10 +437,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "SCSS",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "43bbbc56-cf25-4cbc-9bc2-97878095a5fe",
+  "application_id": "4b97e95d-cdc0-447c-8872-ef08f1529450",
   "name": "JavaScript",
   "name_e": "",
   "name_r": "",
@@ -457,10 +457,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "ES12",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "45877630-d5db-4e40-bdfc-d55c849e1cef",
+  "application_id": "c6629b75-cae6-4a2a-adf9-55010f37db31",
   "name": "TypeScript",
   "name_e": "",
   "name_r": "",
@@ -477,10 +477,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "4.4",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "4d8cd5ba-cda0-47c4-a147-fa1a401c4065",
+  "application_id": "feea6464-db0a-4910-8c65-456b5fd68e61",
   "name": "PHP",
   "name_e": "",
   "name_r": "",
@@ -497,10 +497,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "8.1",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "6672572c-94b7-4bd4-84bb-31cf0b31943f",
+  "application_id": "17b250cd-6b32-42d2-a64a-268e18a1face",
   "name": "Java",
   "name_e": "",
   "name_r": "",
@@ -517,10 +517,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "17",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "c46145a1-a6c0-42ff-9f01-1c686f482f12",
+  "application_id": "e23064f9-e25c-4478-80ec-a2b6163fb559",
   "name": "Python",
   "name_e": "",
   "name_r": "",
@@ -537,10 +537,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "3.10",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "926d8111-eec3-4896-b83e-2532d75758d2",
+  "application_id": "70d847df-b2dd-4f6c-ac6a-7ba42982de1c",
   "name": "MySQL",
   "name_e": "",
   "name_r": "",
@@ -557,10 +557,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "8.0",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "cd1e3eb7-63c8-4180-8fb7-bcffe9dd1bde",
+  "application_id": "60212e1c-d60b-43a1-9324-954b7d78b3c2",
   "name": "C#",
   "name_e": "",
   "name_r": "",
@@ -577,10 +577,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "10.0",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "a179463a-b752-43be-bd60-bd004a649162",
+  "application_id": "7fb9f473-eb4a-47a5-99e2-a769322e836c",
   "name": "Bash",
   "name_e": "",
   "name_r": "",
@@ -597,10 +597,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "Bash 5.1.8",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "ea8cbeb2-ea17-4343-81f4-0fe94ab48655",
+  "application_id": "44d12d4c-f71d-4a35-87e6-b66c9939e524",
   "name": "FreeMarker",
   "name_e": "",
   "name_r": "",
@@ -617,10 +617,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "2.3.31",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "e89d179f-931b-4d5f-889c-d5f8d24976c7",
+  "application_id": "77316b65-d2b5-4273-84b5-18955cf40350",
   "name": "PostgreSQL",
   "name_e": "",
   "name_r": "",
@@ -637,10 +637,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "14.0",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "a1ee5ce6-9b10-48b7-8bb8-837fcbd67a7a",
+  "application_id": "bfc53e9d-6a6d-431a-bcdb-72a9c5a1eba3",
   "name": "Ableton Live 10",
   "name_e": "",
   "name_r": "",
@@ -657,10 +657,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "10.1.30",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "50902a00-2514-4587-93f4-ca89296ffd89",
+  "application_id": "c4c918d1-e41b-4079-9b6f-3d0fddb2dc54",
   "name": "FL Studio",
   "name_e": "",
   "name_r": "",
@@ -677,10 +677,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "20.8.4",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "c0310410-98f2-49bd-a671-5dd7747fc3aa",
+  "application_id": "8cc28416-e082-46ab-9502-27eda313b260",
   "name": "Magnolia",
   "name_e": "",
   "name_r": "",
@@ -697,10 +697,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "6.2.4",
-  "applicationtype_id": "23dfb2c7-daf8-4405-bf04-fba37b522284"
+  "applicationtype_id": "035a4dac-d70f-40c5-b75e-58d323a24220"
  },
  {
-  "application_id": "affa005a-0735-4228-a63a-6584a9a89f64",
+  "application_id": "20911a97-db37-43ed-a741-366168e7cf36",
   "name": "JCR",
   "name_e": "",
   "name_r": "",
@@ -717,10 +717,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "2.0",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  },
  {
-  "application_id": "36bac29d-8cf9-416c-a23e-8f067c586d16",
+  "application_id": "b3f34d4c-5f19-417d-a2e6-2fd825e79fd1",
   "name": "Docker",
   "name_e": "",
   "name_r": "",
@@ -737,10 +737,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "20.10.7",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "da864a23-c8a2-4627-96c2-daa3bd914fc2",
+  "application_id": "2caf8aed-351d-4009-8363-3ce8d3708231",
   "name": "Schema Markup",
   "name_e": "",
   "name_r": "",
@@ -757,10 +757,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "4.2",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "35d99458-396a-40ca-8c0f-41d323469806",
+  "application_id": "24b4650b-50e2-4693-bbdc-c3da4c529424",
   "name": "Firebase",
   "name_e": "",
   "name_r": "",
@@ -777,10 +777,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "9.3.0",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "b22850d3-25bb-48bb-902c-fc7a0ed17044",
+  "application_id": "135d19c9-0186-4ea7-a210-ec666cc436a3",
   "name": "Blender",
   "name_e": "",
   "name_r": "",
@@ -797,10 +797,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "3.0",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "84e7be0b-ad09-427c-abeb-ae79cb9092b1",
+  "application_id": "befc7be8-f9f1-456f-975f-9038d0c2f95a",
   "name": "Angular",
   "name_e": "",
   "name_r": "",
@@ -817,10 +817,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "12.2.5",
-  "applicationtype_id": "b6cf0768-a2ca-4ccc-ad55-f96946a2f870"
+  "applicationtype_id": "f06e00f0-2d49-46f4-b354-93fffac00953"
  },
  {
-  "application_id": "0f571e41-ac22-4d47-bdb2-c7c7514fd970",
+  "application_id": "284a0643-8f33-4e3f-92c8-4096392ce60b",
   "name": "Regex",
   "name_e": "",
   "name_r": "",
@@ -837,10 +837,10 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "",
-  "applicationtype_id": "a2876ad5-470c-469e-88da-a86f5f3eee54"
+  "applicationtype_id": "e30d8cff-84e4-4fcd-954a-1584e609fb39"
  },
  {
-  "application_id": "1bd47256-6dab-4361-aab2-7401570e02be",
+  "application_id": "7d9cd1c1-8a21-4f3f-a495-e576c2f63f5e",
   "name": "GraphQL",
   "name_e": "",
   "name_r": "",
@@ -857,6 +857,6 @@
   "keywords_e": "",
   "keywords_r": "",
   "version": "",
-  "applicationtype_id": "8d0e0db4-f363-43e1-85f9-63f812fa802a"
+  "applicationtype_id": "19e5d423-2346-48d3-bbcf-41bb472687a9"
  }
 ]

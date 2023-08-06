@@ -10,10 +10,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppState } from './store/app/app.state';
 import { NgxsModule } from '@ngxs/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PersonComponent } from './components/general/person/person.component';
 
 @NgModule({
-  declarations: [AppComponent, PersonComponent],
+  declarations: [AppComponent],
   imports: [
     AppRoutingModule,
     NgxsModule.forRoot([AppState]),
