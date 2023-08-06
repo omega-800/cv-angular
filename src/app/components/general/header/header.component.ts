@@ -27,7 +27,7 @@ export class HeaderComponent {
   interestIcon: ImageComp = this.types[0].icon;
   personIcon: ImageComp = personIcon;
   d = Direction;
-  dropdownActive: boolean = false;
+  dropdownActive: boolean = true;
   dropdownLoginActive: boolean = false;
   selectedRegister: boolean = false;
   loggedIn: boolean = false;

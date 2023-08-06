@@ -8,25 +8,25 @@
     &.is-top {
         width: 100%;
         height: calc(100% + variables.$elem-padding);
-        bottom: calc(100% - variables.$elem-padding);
+        bottom: variables.$elem-padding;
     }
 
     &.is-bottom {
         width: 100%;
         height: calc(100% + variables.$elem-padding);
-        top: calc(100% - variables.$elem-padding);
+        top: variables.$elem-padding;
     }
 
     &.is-right {
         height: 100%;
         width: calc(100% + variables.$elem-padding);
-        left: calc(100% - variables.$elem-padding);
+        left: variables.$elem-padding;
     }
 
     &.is-left {
         height: 100%;
         width: calc(100% + variables.$elem-padding);
-        right: calc(100% - variables.$elem-padding);
+        right: variables.$elem-padding;
     }
 
     & .tooltip {
@@ -71,7 +71,7 @@
         }
 
         &.direction-top {
-            bottom: calc(100% - variables.$elem-size);
+            bottom: calc(100%);
             left: calc(((100% - var(--tooltipwidth)) / 2) - var(--marginright) + var(--marginleft));
             width: var(--tooltipwidth);
 
@@ -85,7 +85,7 @@
         }
 
         &.direction-bottom {
-            top: calc(100% - variables.$elem-size);
+            top: calc(100%);
             left: calc(((100% - var(--tooltipwidth)) / 2) - var(--marginright) + var(--marginleft));
             width: var(--tooltipwidth);
 
@@ -100,7 +100,7 @@
 
         &.direction-right {
             bottom: calc(50% - 5vw);
-            left: calc(100% - variables.$elem-size);
+            left: calc(100%);
             height: 10vw;
             width: 25vw;
 
@@ -127,7 +127,7 @@
 
         &.direction-left {
             bottom: calc(50% - 5vw);
-            right: calc(100% - variables.$elem-size);
+            right: calc(100%);
             height: 10vw;
             width: 25vw;
 
