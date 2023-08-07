@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
+import { CareerEntity, CareerTypeEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import { contactIcon, addressIcon, arrowIcon, urlIcon, infoIcon, Direction, loginMessage, authMessage } from '../../components.constants';
 import { ImageComp } from '../../components.model';
@@ -83,9 +83,9 @@ export class CareerComponent {
     }
   }
 
-  getDuration(from: Date, to: Date, pensum: number): string {
+  getDuration(from: Date, to: Date, pensum: number, ct: CareerTypeEntity): string {
     let allMls = to.getTime() - from.getTime();
-    let totalMls = allMls / 7 * 5 / 24 * (8.5 * pensum / 100) / 36 * 35 / 10 * 9;
+    let totalMls = allMls / 7 * 5 / 24 * (8.5 * pensum / 100) / (ct == careerTypes.SCHOOL ? (360 * (360 - 91)) : (36 * 35)) / 10 * 9;
     let h = Math.round(totalMls / (3600 * 1000));
     return `~ ${h}h`;
   }
