@@ -1,65 +1,65 @@
 [
  {
-  "address_id": "94a8350f-510a-4e9f-9fb1-32d230f4e1fb",
+  "address_id": "91a0cf49-cb08-4b70-bb04-ebc0b22cf31d",
   "street": "Stettbachstrasse 129G",
   "city": "Zürich",
   "zip": 8051,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "20db1a3c-a0c6-400e-85e6-0bf652c1be68",
+  "address_id": "1eca35ac-2d97-4071-8dcc-1819874537ae",
   "street": "Barzloostrasse 20",
   "city": "Pfäffikon ZH",
   "zip": 8033,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "65bb9294-6a02-4e1f-8a10-fe91810ce86b",
+  "address_id": "fe999c54-1da1-40cc-b142-8b132181e6cb",
   "street": "Lochackerstrasse 4",
   "city": "Embrach",
   "zip": 8424,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "c291fd0a-e525-4a6e-b617-ff3270ed62b9",
+  "address_id": "0cd91bec-2e52-49b3-abd4-8c34c9d5f6d9",
   "street": "Stettbachstrasse 88",
   "city": "Zürich",
   "zip": 8051,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "d4bf192a-943c-4072-a31b-373cf04bfba9",
+  "address_id": "4bdb6d5f-c192-47ac-8a97-24985dd7eb1a",
   "street": "Promenadengasse 11",
   "city": "Zürich",
   "zip": 8001,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "f1991b87-3000-4e3c-92ff-1d7cca315a8a",
+  "address_id": "caf921d2-51ac-46c6-b81d-a220c9005a32",
   "street": "Herzogenmühlestrasse 60",
   "city": "Zürich",
   "zip": 8051,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "9096bc79-3fd3-4fd5-b834-caba3a54da83",
+  "address_id": "a57c8822-c51f-4c92-a159-65ae759adae0",
   "street": "Minervastrasse 14",
   "city": "Zürich",
   "zip": 8090,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "dd58db59-780a-4969-99ac-38ed6bd11370",
+  "address_id": "641d49cb-1ef0-4ee8-8128-a94e15cf3396",
   "street": "Seestrasse 110",
   "city": "Horgen",
   "zip": 8810,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  },
  {
-  "address_id": "17b2417b-c4ad-4498-a298-4aba849d67dd",
+  "address_id": "efd8ee6e-e8ea-42dd-b47d-a6ea92720795",
   "street": "Forchstrasse 192",
   "city": "Herrliberg",
   "zip": 8704,
-  "country_id": "6466f6ed-05b4-47ef-915c-3ebd91dd914f"
+  "country_id": "e4ad158e-3723-4dc2-80ec-e1bd9d5a62c1"
  }
 ]

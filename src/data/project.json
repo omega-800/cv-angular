@@ -1,6 +1,6 @@
 [
  {
-  "project_id": "7e8814dc-c723-4177-928d-aafb0ec15137",
+  "project_id": "7e1fc417-7180-46bf-830a-a1253c5cf5c5",
   "name": "Produktvergleich",
   "name_e": "",
   "name_r": "",
@@ -18,10 +18,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "3296a410-434a-4ebf-9931-19d9a5ecf22f",
+  "project_id": "1dfb69e0-7388-440c-a9b7-e89afe802b2b",
   "name": "ID Altersverifikation",
   "name_e": "",
   "name_r": "",
@@ -39,10 +39,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "f76ce856-0344-4452-8fff-ff739a8233bb",
+  "project_id": "f653b4b8-4ce4-4c4b-8064-52ebcdba9145",
   "name": "Produzentenseite",
   "name_e": "",
   "name_r": "",
@@ -60,10 +60,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "b86eb3f7-353c-4f99-9843-fa4623dbd177",
+  "project_id": "5181853d-e635-4ae9-949b-818b516d34d0",
   "name": "SCSS Skript",
   "name_e": "",
   "name_r": "",
@@ -79,12 +79,12 @@
   "relevance_education": "",
   "relevance_art": "",
   "relevance_health": "",
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "2f1a86ba-913e-4905-8dbc-68f2e43e2e03",
+  "project_id": "ee5af9e0-37dd-4ad8-bdae-71fa977263fe",
   "name": "Übersetzungsskript",
   "name_e": "",
   "name_r": "",
@@ -102,10 +102,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "44502209-ce33-44e2-8f12-06fc9245b0a0",
+  "project_id": "63a7f4c9-84f4-443f-b606-46764551f288",
   "name": "Testen mittels Selenium",
   "name_e": "",
   "name_r": "",
@@ -123,10 +123,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "90264bca-8e6d-4790-a4da-30adb0edec7e",
+  "project_id": "6d7b07c1-3ab9-49d9-a1d4-ec1cacf1a61c",
   "name": "i18n",
   "name_e": "",
   "name_r": "",
@@ -144,10 +144,10 @@
   "relevance_health": "",
   "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "ec5bf053-552a-4acb-87a2-795f1d8ef208",
+  "project_id": "4e7be814-f6aa-4a6a-850e-8cec9c4f6174",
   "name": "Passwort zurücksetzen",
   "name_e": "",
   "name_r": "",
@@ -163,12 +163,12 @@
   "relevance_education": "",
   "relevance_art": "",
   "relevance_health": "",
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "8994d6cd-cb3e-4597-8478-d1f7662f57b7",
+  "project_id": "36c29d6c-1874-4a3c-b32b-0c046543778a",
   "name": "Share Buttons",
   "name_e": "",
   "name_r": "",
@@ -186,10 +186,10 @@
   "relevance_health": "",
   "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "f9f97804-f170-40bc-ab09-56adfbfc3e7a",
+  "project_id": "a255a5f1-1756-4404-8537-318deeb99058",
   "name": "SEO Analyse",
   "name_e": "",
   "name_r": "",
@@ -198,7 +198,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "assets/content/projects/it/inteco/seo_analysis/",
+  "image": "assets/content/projects/it/inteco/seo/",
   "github": "",
   "date": "2022-08-31T22:00:00.000Z",
   "relevance_it": 21,
@@ -207,10 +207,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "3b075de6-9666-4588-a5e6-ccd61de65ec1",
+  "project_id": "30859caa-03e6-4c62-8fa0-d9f137c9630b",
   "name": "Geschmacksprofil",
   "name_e": "",
   "name_r": "",
@@ -228,10 +228,10 @@
   "relevance_health": "",
   "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "e5bccd9f-4eba-4bce-8f7b-e1039215a880",
+  "project_id": "12e2466a-ad96-4fa4-9e95-ba9d0d542702",
   "name": "Popup",
   "name_e": "",
   "name_r": "",
@@ -249,10 +249,10 @@
   "relevance_health": "",
   "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "5a39e9a6-b60b-4bc1-887f-da3a78c2405b",
+  "project_id": "855218fa-de13-4978-8fc1-e90e9a27da13",
   "name": "Konfigurationsseiten Magnolia",
   "name_e": "",
   "name_r": "",
@@ -270,10 +270,10 @@
   "relevance_health": "",
   "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "84a955b8-96fc-404f-aece-9eb42299b011",
+  "project_id": "06e10526-0a0b-4cdb-aec6-606d832fe09f",
   "name": "Webseiten aufsetzen",
   "name_e": "",
   "name_r": "",
@@ -291,10 +291,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "d89a24b8-b811-4b83-8ae9-d08ce799c977",
+  "project_id": "50a41fbd-60e1-4697-a3bd-90dfa418c9be",
   "name": "Webseiten warten",
   "name_e": "",
   "name_r": "",
@@ -312,10 +312,10 @@
   "relevance_health": "",
   "anon_locked": true,
   "client_id": "",
-  "career_id": "49da009d-ac2d-470a-bead-aea29be94c65"
+  "career_id": "d2740a9e-402f-4afa-bade-3cbd699cf210"
  },
  {
-  "project_id": "defa70a1-6a94-4b11-9020-a3e278590811",
+  "project_id": "6b293cc4-96bc-462f-b5ad-2e4fcd0bc3a6",
   "name": "Webscraping automatisation",
   "name_e": "",
   "name_r": "",
@@ -333,10 +333,10 @@
   "relevance_health": "",
   "anon_locked": "",
   "client_id": "",
-  "career_id": "62acdc52-6c62-4d49-8ecf-8c172b5b6852"
+  "career_id": "0d741572-aeb3-4c00-8713-9e986f1e704f"
  },
  {
-  "project_id": "4ac0eb85-c2f6-403a-bd7f-1a140afc14ac",
+  "project_id": "490167c4-c808-4b33-83ea-fccf0ec4c057",
   "name": "Portfolio",
   "name_e": "",
   "name_r": "",
@@ -357,7 +357,7 @@
   "career_id": ""
  },
  {
-  "project_id": "494ffded-6f4c-47a9-95a8-86f6fb926f2b",
+  "project_id": "e037edc3-051f-4b7c-966b-1491abed15df",
   "name": "Portfolio (alt)",
   "name_e": "",
   "name_r": "",
@@ -378,7 +378,7 @@
   "career_id": ""
  },
  {
-  "project_id": "961fa682-31a9-48a4-af53-b0d15193cb59",
+  "project_id": "11bf7375-f7f6-4ab7-885c-502a4909531e",
   "name": "Finanzplaner",
   "name_e": "",
   "name_r": "",
@@ -399,7 +399,7 @@
   "career_id": ""
  },
  {
-  "project_id": "4f02cb83-4f1f-4b08-82eb-d0cf4b295b6f",
+  "project_id": "57780c96-c52b-46da-af27-1c1150580f9b",
   "name": "Textbasiertes Spiel Python",
   "name_e": "",
   "name_r": "",
@@ -420,7 +420,7 @@
   "career_id": ""
  },
  {
-  "project_id": "b5af64bb-26de-401a-86ad-f43152645bb5",
+  "project_id": "fd637059-e107-475e-a606-1bf7847c555d",
   "name": "Textbasiertes Spiel C#",
   "name_e": "",
   "name_r": "",
@@ -441,7 +441,7 @@
   "career_id": ""
  },
  {
-  "project_id": "90bf3589-6c75-4205-8de9-3b881ae43dc2",
+  "project_id": "bce04d52-bec1-455c-bd3c-33f41e1b7575",
   "name": "Roguelike Dungeon Spiel",
   "name_e": "",
   "name_r": "",
@@ -462,7 +462,7 @@
   "career_id": ""
  },
  {
-  "project_id": "cd7275d1-6b4c-4c18-bf0d-c5e4a40c9279",
+  "project_id": "e869769c-eac8-4c98-a235-05093fbda162",
   "name": "Roguelike Dungeon Spiel 2",
   "name_e": "",
   "name_r": "",
@@ -483,7 +483,7 @@
   "career_id": ""
  },
  {
-  "project_id": "65061c84-ef7a-4c93-a7a5-a73799fdc957",
+  "project_id": "4c133729-41e8-487d-88a6-d9b6898e2198",
   "name": "Raketen Spiel",
   "name_e": "",
   "name_r": "",
@@ -504,7 +504,7 @@
   "career_id": ""
  },
  {
-  "project_id": "1f78b8c5-6620-43e0-bb1f-7ad41af94faa",
+  "project_id": "b633a7bd-8485-44ad-8e37-5b62b1c7b7fa",
   "name": "Textbasiertes Spiel Java",
   "name_e": "",
   "name_r": "",
@@ -525,7 +525,7 @@
   "career_id": ""
  },
  {
-  "project_id": "38c08b87-1a8c-48db-9bb7-b1fdb37b8eb8",
+  "project_id": "44ebb57f-bb8f-432a-9f11-d01b71640e58",
   "name": "Java UNO Spiel",
   "name_e": "",
   "name_r": "",
@@ -543,10 +543,10 @@
   "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
-  "career_id": "21b71f20-c790-416b-8610-fce243d9cb07"
+  "career_id": "b4b66fc1-28c1-44d4-abd2-eb9a43f5c1d3"
  },
  {
-  "project_id": "38b0fb62-05db-4af9-b31c-457836afe523",
+  "project_id": "fb6bf2ed-3b4e-47d4-b9ec-34907774fe12",
   "name": "Immobilien Webseite",
   "name_e": "",
   "name_r": "",
@@ -563,11 +563,11 @@
   "relevance_art": "",
   "relevance_health": "",
   "anon_locked": true,
-  "client_id": "775db51e-a9a9-46a7-a242-2b31d7c964eb",
+  "client_id": "913a0a31-a1bc-4999-9c43-e299591ad3a9",
   "career_id": ""
  },
  {
-  "project_id": "43270423-3073-48aa-b0bb-470f6a92115a",
+  "project_id": "32c9eed3-3016-4b39-a834-72782d58f13e",
   "name": "RusFrauenTreff Webseite",
   "name_e": "",
   "name_r": "",
@@ -584,11 +584,11 @@
   "relevance_art": "",
   "relevance_health": "",
   "anon_locked": true,
-  "client_id": "6b0c0389-05c6-47c4-8c39-e0f4bc2521a5",
+  "client_id": "63d6a74d-4c2d-4194-b4c2-1cc4a21192db",
   "career_id": ""
  },
  {
-  "project_id": "c5e038e6-be8d-4358-9575-8d8fb23496a9",
+  "project_id": "1b356b24-f588-46c3-8617-836d6005cee1",
   "name": "Teddy",
   "name_e": "",
   "name_r": "",
@@ -609,7 +609,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c856c838-8f7d-4efd-990d-b4b082ff8cb1",
+  "project_id": "7a524f55-a8ad-4cd0-aaff-24936ff0cbc3",
   "name": "Tie Dye",
   "name_e": "",
   "name_r": "",
@@ -625,12 +625,12 @@
   "relevance_education": "",
   "relevance_art": 11,
   "relevance_health": "",
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "1879ab32-8f0f-4704-918b-d4d76330ad20",
+  "project_id": "d234d924-0496-420f-a5ff-6eae76d70118",
   "name": "Portemonnaie",
   "name_e": "",
   "name_r": "",
@@ -651,7 +651,7 @@
   "career_id": ""
  },
  {
-  "project_id": "3ce4999b-ee59-4e38-916c-08230824f8df",
+  "project_id": "fdf8c963-5648-4eff-abd9-55c272ea4554",
   "name": "Pullover",
   "name_e": "",
   "name_r": "",
@@ -672,7 +672,7 @@
   "career_id": ""
  },
  {
-  "project_id": "195a4a30-0eec-4ac0-bef0-688738e2498b",
+  "project_id": "789be5a9-96d3-4659-ab08-9f7fba6034fb",
   "name": "Heavy Metal Veste",
   "name_e": "",
   "name_r": "",
@@ -681,7 +681,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "",
+  "image": "assets/content/projects/art/textile/metal/",
   "github": "",
   "date": "2017-04-30T22:00:00.000Z",
   "relevance_it": "",
@@ -693,7 +693,7 @@
   "career_id": ""
  },
  {
-  "project_id": "6710bf3f-33c1-41ee-9ff9-ed9cf5d6f069",
+  "project_id": "1bf3735f-2e08-47dc-ae7c-21e1739a678b",
   "name": "Punk Pullover",
   "name_e": "",
   "name_r": "",
@@ -702,7 +702,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "",
+  "image": "assets/content/projects/art/textile/punk/",
   "github": "",
   "date": "2022-04-20T22:00:00.000Z",
   "relevance_it": "",
@@ -714,7 +714,7 @@
   "career_id": ""
  },
  {
-  "project_id": "92b88e7f-c347-4e3b-beea-f7d7888de4db",
+  "project_id": "d9daf91a-9dc9-4ab6-9c95-49018926a4f5",
   "name": "Holzbesteck",
   "name_e": "",
   "name_r": "",
@@ -723,7 +723,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "",
+  "image": "assets/content/projects/art/wood/cutlery/",
   "github": "",
   "date": "2022-09-30T22:00:00.000Z",
   "relevance_it": "",
@@ -735,7 +735,7 @@
   "career_id": ""
  },
  {
-  "project_id": "7ddb2450-0ce5-4a56-8b9f-f51343b815c3",
+  "project_id": "e9d56cb7-1ffb-49f4-951c-fcc9786896d9",
   "name": "Holzohrenring",
   "name_e": "",
   "name_r": "",
@@ -751,12 +751,33 @@
   "relevance_education": "",
   "relevance_art": 16,
   "relevance_health": "",
+  "anon_locked": true,
+  "client_id": "",
+  "career_id": ""
+ },
+ {
+  "project_id": "ee84c22e-3fba-4ddb-bb3a-a935ef54355a",
+  "name": "Schmuck",
+  "name_e": "",
+  "name_r": "",
+  "description": "Ich habe aus Paracord, Holzkugeln und Garn eine vielfältige Auswahl an einzigartigem Schmuck handgefertigt. Die Kombination dieser Materialien erlaubte es mir, eine breite Palette von Stilen und Designs zu kreieren, die sowohl meinen persönlichen Geschmack als auch die Vorlieben anderer Menschen ansprechen. Jedes Schmuckstück erzählt seine eigene Geschichte, von den kunstvoll geknoteten Paracord-Armbändern bis hin zu den verzierten Holzkugel-Halsketten. Mein Ansatz besteht darin, Schönheit und Individualität zu vereinen, indem ich jedes Stück mit Liebe zum Detail gestalte. Die Freude, die ich beim Basteln dieser Schmuckstücke empfunden habe, spiegelt sich in jedem Werk wider und ich hoffe, dass sie die Menschen genauso erfreuen werden, wie sie mich während des Herstellungsprozesses erfüllt haben.",
+  "description_e": "",
+  "description_r": "",
+  "url": "",
+  "thumbnail": "",
+  "image": "assets/content/projects/art/other/jewelery/",
+  "github": "",
+  "date": "2020-07-31T22:00:00.000Z",
+  "relevance_it": "",
+  "relevance_education": "",
+  "relevance_art": 20,
+  "relevance_health": "",
   "anon_locked": false,
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "ba98abd2-71ec-4915-abd3-2576897ccefb",
+  "project_id": "8e51679e-33d3-42e6-9b45-ea484304ce91",
   "name": "Turnsack und Seemannssack",
   "name_e": "",
   "name_r": "",
@@ -772,12 +793,12 @@
   "relevance_education": "",
   "relevance_art": 15,
   "relevance_health": "",
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "6a1222d0-be66-4481-a60e-c5221c38ba8b",
+  "project_id": "b5fc2c0b-4cd2-4d29-9bc3-9f810e24d044",
   "name": "Legales Graffiti",
   "name_e": "",
   "name_r": "",
@@ -798,7 +819,7 @@
   "career_id": ""
  },
  {
-  "project_id": "61392827-58b6-4f7c-8dc3-ddaebb404a2c",
+  "project_id": "7b03cf28-c098-4aa5-b489-8851b4977fe1",
   "name": "Kusudama",
   "name_e": "",
   "name_r": "",
@@ -819,7 +840,7 @@
   "career_id": ""
  },
  {
-  "project_id": "64da1b53-0743-4b4b-ac4e-82a463ee7fe4",
+  "project_id": "75d50f94-0df3-4254-8c56-f865f81b13db",
   "name": "Origami",
   "name_e": "",
   "name_r": "",
@@ -840,7 +861,7 @@
   "career_id": ""
  },
  {
-  "project_id": "b682c11c-6f32-424a-afe0-e6e07c62ce7e",
+  "project_id": "5a1a4fa7-aade-43c0-a6c2-558ffe71511d",
   "name": "Zeichnungen",
   "name_e": "",
   "name_r": "",
@@ -861,7 +882,7 @@
   "career_id": ""
  },
  {
-  "project_id": "9c7a7c8f-a2dd-47ce-902c-244c0bef5b89",
+  "project_id": "fac8d8fb-b5a7-459c-9cf1-9baecdbeddbd",
   "name": "Mosaik",
   "name_e": "",
   "name_r": "",
@@ -882,7 +903,7 @@
   "career_id": ""
  },
  {
-  "project_id": "d6d64638-6daa-4278-9044-67e51b307531",
+  "project_id": "fc0a63bf-4241-47d1-b63a-78b0117b6091",
   "name": "Katzenbaum",
   "name_e": "",
   "name_r": "",
@@ -898,12 +919,12 @@
   "relevance_education": "",
   "relevance_art": 21,
   "relevance_health": "",
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "a7efac30-c66a-4688-a56a-2f859a567ee0",
+  "project_id": "63f31d24-ebd9-45d6-8ba0-0986a334696d",
   "name": "Malen",
   "name_e": "",
   "name_r": "",
@@ -924,7 +945,7 @@
   "career_id": ""
  },
  {
-  "project_id": "05917f45-a0c6-47a5-aa67-fee06d852dea",
+  "project_id": "58a2d433-ac18-4356-a4eb-9ea10baf858e",
   "name": "Gitarre",
   "name_e": "",
   "name_r": "",
@@ -945,7 +966,7 @@
   "career_id": ""
  },
  {
-  "project_id": "9b1f16e6-2940-427d-ae0b-7ed2deaf9644",
+  "project_id": "fbf6e4d4-5e17-436d-8b56-61f3b166f5b0",
   "name": "Bass",
   "name_e": "",
   "name_r": "",
@@ -961,12 +982,12 @@
   "relevance_education": "",
   "relevance_art": 20,
   "relevance_health": "",
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "28f99371-a7e2-49c2-9f72-15f3bbc9a524",
+  "project_id": "26cb9f61-6943-498d-8f07-0931f3af9f72",
   "name": "Schlagzeug",
   "name_e": "",
   "name_r": "",
@@ -987,7 +1008,7 @@
   "career_id": ""
  },
  {
-  "project_id": "a7ed3a19-ede7-4b72-b200-b703dda83e30",
+  "project_id": "ce767fc0-9268-4eb0-bdad-041e66ffce65",
   "name": "Ableton",
   "name_e": "",
   "name_r": "",
@@ -1008,7 +1029,7 @@
   "career_id": ""
  },
  {
-  "project_id": "d6b70468-5b1a-4bf5-a3bf-b62fead095c6",
+  "project_id": "24949ebf-1a09-4314-975c-44e43b43d7c2",
   "name": "FL Studio",
   "name_e": "",
   "name_r": "",
@@ -1029,7 +1050,7 @@
   "career_id": ""
  },
  {
-  "project_id": "848fb6bf-b461-462d-a94b-4fc3f3586b20",
+  "project_id": "086e15ed-b8a5-49f5-a2fa-9417f97fab28",
   "name": "Faden",
   "name_e": "",
   "name_r": "",
@@ -1050,7 +1071,7 @@
   "career_id": ""
  },
  {
-  "project_id": "19d5cd90-b26f-40d3-91d9-e74eec1ea6e9",
+  "project_id": "293159c7-2001-4faf-9649-62b75efecd67",
   "name": "CEVI",
   "name_e": "",
   "name_r": "",
@@ -1071,7 +1092,7 @@
   "career_id": ""
  },
  {
-  "project_id": "9ec69adf-bfb7-4575-80d9-70e188069f57",
+  "project_id": "39dc7a69-25d8-494e-b8c2-bdbae8ba9c86",
   "name": "Fahrrad",
   "name_e": "",
   "name_r": "",
@@ -1092,7 +1113,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c4ec0ec5-fba4-4935-a00d-66db72ac1991",
+  "project_id": "26859138-3d14-458c-9677-343c2679ee6e",
   "name": "Volleyball",
   "name_e": "",
   "name_r": "",
@@ -1108,12 +1129,12 @@
   "relevance_education": "",
   "relevance_art": "",
   "relevance_health": 28,
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
   "career_id": ""
  },
  {
-  "project_id": "877c0174-a711-4c46-a6fb-9cf1eea95054",
+  "project_id": "7f7d163f-3d47-4c96-8593-c21ddd590d48",
   "name": "Skateboard",
   "name_e": "",
   "name_r": "",
@@ -1122,7 +1143,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "",
+  "image": "assets/content/projects/health/sports/skate/",
   "github": "",
   "date": "2017-05-11T22:00:00.000Z",
   "relevance_it": "",
@@ -1134,7 +1155,7 @@
   "career_id": ""
  },
  {
-  "project_id": "c1aa2228-d152-46cf-a3eb-7fe9eb047b12",
+  "project_id": "3a0a7870-5404-4b06-bf5c-3ecbcb71d902",
   "name": "Tischtennis",
   "name_e": "",
   "name_r": "",
@@ -1155,16 +1176,16 @@
   "career_id": ""
  },
  {
-  "project_id": "02f7b37e-6bd4-40e5-917d-d72aac71620f",
+  "project_id": "90402e96-00ad-47c7-8882-21206567dccf",
   "name": "Campen",
   "name_e": "",
   "name_r": "",
   "description": "Das Campen ist für mich eine Rückkehr zur Natur und eine Gelegenheit, dem hektischen Alltag zu entfliehen. Die Einfachheit des Campinglebens und das Gefühl der Freiheit, das es vermittelt, sind unschätzbar wertvoll. Beim Campen kann ich mich mit der Natur verbinden, die Schönheit der Umgebung genießen und das Gefühl der Gemeinschaft erleben, wenn ich mit anderen Campern in der Natur zusammenkomme. Es ist eine wunderbare Möglichkeit, mich zu erden und neue Energie zu tanken.",
   "description_e": "",
   "description_r": "",
-  "url": "assets/content/projects/health/nature/camping/",
+  "url": "",
   "thumbnail": "",
-  "image": "",
+  "image": "assets/content/projects/health/nature/camping/",
   "github": "",
   "date": "2022-08-09T22:00:00.000Z",
   "relevance_it": "",
@@ -1176,7 +1197,7 @@
   "career_id": ""
  },
  {
-  "project_id": "acfb4f7a-f1fe-40d6-84ac-7ac824575de2",
+  "project_id": "2e5c7db6-f675-4915-9930-4ba77777668a",
   "name": "Wandern",
   "name_e": "",
   "name_r": "",
@@ -1197,7 +1218,7 @@
   "career_id": ""
  },
  {
-  "project_id": "57fd8353-22c3-460e-aadd-cf36c8496f4b",
+  "project_id": "d09ae464-d08b-47b0-b75c-c1b6b99710af",
   "name": "Kochen",
   "name_e": "",
   "name_r": "",
@@ -1206,7 +1227,7 @@
   "description_r": "",
   "url": "",
   "thumbnail": "",
-  "image": "",
+  "image": "assets/content/projects/health/cooking/food/",
   "github": "",
   "date": "2023-01-04T23:00:00.000Z",
   "relevance_it": "",
@@ -1218,7 +1239,7 @@
   "career_id": ""
  },
  {
-  "project_id": "9e3506ae-7b1d-4263-ab41-722e98bbbf09",
+  "project_id": "ed83701f-7acd-4322-8c9d-f033f1e31dde",
   "name": "Lebkuchen",
   "name_e": "",
   "name_r": "",
@@ -1234,7 +1255,7 @@
   "relevance_education": "",
   "relevance_art": "",
   "relevance_health": 10,
-  "anon_locked": false,
+  "anon_locked": true,
   "client_id": "",
   "career_id": ""
  }
