@@ -1,6 +1,6 @@
 [
  {
-  "language_id": "9ff4e422-2f50-4895-a222-335bc9e50289",
+  "language_id": "a9285ab8-2ab8-46fc-b204-585e2d446f51",
   "name": "Deutsch",
   "name_e": "",
   "name_r": "",
@@ -13,7 +13,7 @@
   "shortname": "DE"
  },
  {
-  "language_id": "be36227f-efcb-45e9-bf25-3a63633333fe",
+  "language_id": "3a1f8034-a18b-4548-9cb7-40e5fc3cac69",
   "name": "Englisch",
   "name_e": "",
   "name_r": "",
@@ -26,7 +26,7 @@
   "shortname": "EN"
  },
  {
-  "language_id": "5cf18e31-ee36-45f0-95af-9ab917e87045",
+  "language_id": "6d6c9994-50f3-4336-805a-dbd78a5d8f92",
   "name": "Russisch",
   "name_e": "",
   "name_r": "",
@@ -39,7 +39,7 @@
   "shortname": "RU"
  },
  {
-  "language_id": "48b5e9b0-ae04-42dc-bb2b-2dcaa334ba73",
+  "language_id": "bcab8811-127f-41ce-aff2-f2f4e348cf14",
   "name": "Französisch",
   "name_e": "",
   "name_r": "",
@@ -52,7 +52,7 @@
   "shortname": "FR"
  },
  {
-  "language_id": "dac3a3b9-b363-424f-aab3-a2d73193472d",
+  "language_id": "79ec565a-7d37-417a-9131-6800b936a70f",
   "name": "Latein",
   "name_e": "",
   "name_r": "",
