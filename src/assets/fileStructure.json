@@ -60,7 +60,8 @@
     "profilepic.jpg",
     "profilepic_square.jpg",
     "profilepic_square.webp",
-    "profilepic_square_old.jpg"
+    "profilepic_square_old.jpg",
+    "profilepic_square_old.webp"
   ],
   "src/assets/content/projects/art/art/drawing": [
     "IMG-20180115-WA0008.webp",
@@ -189,6 +190,12 @@
     "IMG_20230709_115554779.webp",
     "thumbnail.webp"
   ],
+  "src/assets/content/projects/art/other/jewelery": [
+    "IMG_20230807_210354762.webp",
+    "IMG_20230807_210406919.webp",
+    "IMG_20230807_210417025.webp",
+    "thumbnail.webp"
+  ],
   "src/assets/content/projects/art/other/mosaic": [
     "IMG_20190914_163927123.webp",
     "thumbnail.webp"
@@ -239,10 +246,20 @@
     "IMG_20200604_141408085.webp",
     "thumbnail.webp"
   ],
+  "src/assets/content/projects/art/textile/metal": [
+    "IMG_20230807_204750470.webp",
+    "IMG_20230807_204813413.webp",
+    "thumbnail.webp"
+  ],
   "src/assets/content/projects/art/textile/pullover": [
     "IMG-20230206-WA0006.webp",
     "IMG-20230206-WA0008.webp",
     "IMG-20230401-WA0003.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/art/textile/punk": [
+    "IMG_20230807_204658379.webp",
+    "IMG_20230807_204718158.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/art/textile/teddy": [
@@ -266,9 +283,18 @@
     "IMG-20230407-WA0010.webp",
     "thumbnail.webp"
   ],
+  "src/assets/content/projects/art/wood/cutlery": [
+    "IMG_20230807_210218763.webp",
+    "thumbnail.webp"
+  ],
   "src/assets/content/projects/art/wood/plug": [
     "A.webp",
     "IMG-20230113-WA0001.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/cooking/food": [
+    "IMG_20230807_200941470.webp",
+    "IMG_20230807_201001491.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/health/cooking/lebkuchen": [
@@ -283,6 +309,10 @@
     "IMG_20230505_113539726_HDR.webp",
     "IMG_20230529_054630104.webp",
     "IMG_20230719_081931435.webp",
+    "IMG_20230719_234606.webp",
+    "IMG_20230722_105445360.webp",
+    "IMG_20230722_105448701.webp",
+    "IMG_20230722_105451876.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/health/nature/hiking": [
@@ -302,6 +332,17 @@
   "src/assets/content/projects/health/sports/bike": [
     "IMG_20230719_081923150.webp",
     "IMG_20230721_184028740.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/health/sports/skate": [
+    "1.webp",
+    "IMG-20180629-WA0000.webp",
+    "IMG-20180912-WA0000.webp",
+    "IMG-20180912-WA0002.webp",
+    "IMG-20181008-WA0015.webp",
+    "IMG-20181113-WA0028.webp",
+    "IMG-20191028-WA0020.webp",
+    "IMG-20191028-WA0021.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/health/sports/tabletennis": [
@@ -357,6 +398,21 @@
   ],
   "src/assets/content/projects/it/inteco/scss_script": [
     "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/seleniumtest": [
+    "Screenshot 2023-08-07 215952.webp",
+    "Screenshot 2023-08-07 220018.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects/it/inteco/seo": [
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/sharebtn": [

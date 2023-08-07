@@ -1,6 +1,6 @@
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/mixins.scss" as mixins;
-@use"src/scss/screens.scss" as screens;
+@use "src/scss/screens.scss" as screens;
 
 :host {
     display: block;
@@ -19,18 +19,31 @@
             grid-area: title;
             padding: 0 variables.$elem-padding;
             color: variables.$fontcolor1;
+            @include screens.mobile-screen {
+                overflow-wrap: anywhere;
+            }
+            @include screens.tablet-screen {
+                overflow-wrap: anywhere;
+            }
         }
 
         &.notactive {
-            grid-template-columns: variables.$elem-height 1fr variables.$elem-height variables.$elem-height;
+            grid-template-columns: variables.$elem-height 1fr min-content variables.$elem-height;
             grid-template-areas: "image title link arrow";
-
             & .previewImg {
                 grid-area: image;
             }
 
             & app-button {
                 grid-area: link;
+            }
+
+            @include screens.mobile-screen {
+                grid-template-columns: variables.$elem-height 1fr variables.$elem-height;
+                grid-template-areas: "image title arrow";
+                & app-button {
+                    display: none;
+                }
             }
         }
 
@@ -92,14 +105,14 @@
             grid-area: image;
             display: flex;
             margin-bottom: 0;
-            height: calc(100% - variables.$thin)
+            height: calc(100% - variables.$thin);
         }
 
         & .desc {
             grid-area: desc;
             padding: variables.$box-padding;
             margin-bottom: 0;
-            height: calc(100% - variables.$thin)
+            height: calc(100% - variables.$thin);
         }
 
         & .bottom {

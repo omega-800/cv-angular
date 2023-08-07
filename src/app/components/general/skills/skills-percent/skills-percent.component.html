@@ -1,13 +1,33 @@
-<h2 *ngIf="name" class="menu-item">{{name}}</h2>
+<h2 *ngIf="name" class="menu-item">{{ name }}</h2>
 <div class="filters menu-item">
-    <app-filter [filters]="filter" (filterEmitter)="filterSkillsBy($event)"></app-filter>
-    <app-sort [fields]="sortFields" (selectedEmitter)="sortSkillsBy($event)"></app-sort>
+  <app-filter
+    [filters]="filter"
+    (filterEmitter)="filterSkillsBy($event)"
+    [count]="(skills | skillsFilter : selectedFilter).length"
+  ></app-filter>
+  <app-sort
+    [fields]="sortFields"
+    (selectedEmitter)="sortSkillsBy($event)"
+  ></app-sort>
 </div>
-<div class="skill-container flex-list"
-    [@leftToRightIncrement]="(skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter).length">
-    <h2 class="error" *ngIf="(skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter).length == 0">
-        Leider konnten keine Skills zu diesem Filter gefunden werden :(
-    </h2>
-    <app-skill-item *ngFor="let skill of skills | skillsSort:sortValue:sortAsc | skillsFilter:selectedFilter"
-        [skill]="skill" [showPercent]="true" class="flex-row-nojust menu-item"></app-skill-item>
+<div
+  class="skill-container flex-list"
+  [@leftToRightIncrement]="(skills | skillsFilter : selectedFilter).length"
+>
+  <h2
+    class="error"
+    *ngIf="(skills | skillsFilter : selectedFilter).length == 0"
+  >
+    Leider konnten keine Skills zu diesem Filter gefunden werden :(
+  </h2>
+  <app-skill-item
+    *ngFor="
+      let skill of skills
+        | skillsSort : sortValue : sortAsc
+        | skillsFilter : selectedFilter
+    "
+    [skill]="skill"
+    [showPercent]="true"
+    class="flex-row-nojust menu-item"
+  ></app-skill-item>
 </div>

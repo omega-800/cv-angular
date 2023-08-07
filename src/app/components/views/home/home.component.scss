@@ -2,14 +2,18 @@
 @use "src/scss/screens.scss" as screens;
 
 :host {
+    & #svg-filter {
+        height: 0;
+        width: 0;
+    }
     & .welcome {
         margin-bottom: variables.$elem-size;
 
         @include screens.mobile-screen {
             grid-template-areas:
                 "img"
-                "socials"
-                "desc";
+                "desc"
+                "socials";
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
         }
@@ -17,36 +21,46 @@
         @include screens.tablet-screen {
             grid-template-areas:
                 "img"
-                "socials"
-                "desc";
+                "desc"
+                "socials";
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto;
         }
 
         @include screens.laptop-screen {
-            grid-template-areas: "img desc"
+            grid-template-areas:
+                "img desc"
                 "socials socials";
             grid-template-columns: 50% 50%;
             grid-template-rows: 1fr auto;
         }
 
         @include screens.desktop-screen {
-            grid-template-areas: "img desc"
+            grid-template-areas:
+                "img desc"
                 "socials socials";
             grid-template-columns: 50% 50%;
             grid-template-rows: 1fr auto;
         }
 
         @include screens.large-screen {
-            grid-template-areas: "img desc"
+            grid-template-areas:
+                "img desc"
                 "socials socials";
             grid-template-columns: 50% 50%;
             grid-template-rows: 1fr auto;
         }
 
+        & .mysterious {
+            text-decoration: underline;
+            height: variables.$elem-size;
+        }
         & .photo {
             grid-area: img;
 
+            &.haslinks {
+                padding: calc(3 * variables.$elem-size) 0;
+            }
             & img {
                 //max-width: 100%;
                 max-width: 90%;
@@ -91,7 +105,7 @@
                     flex: 3;
                 }
 
-                margin:auto 0;
+                margin: auto 0;
             }
         }
     }

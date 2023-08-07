@@ -2,9 +2,18 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ProjectEntity } from 'src/app/services/project/project/project.model';
 import { ProjectService } from 'src/app/services/project/project/project.service';
 import { openLink } from '../../general/links.util';
-import { authMessage, linkTypes, lockIcon, loginMessage } from '../../components.constants';
+import {
+  authMessage,
+  linkTypes,
+  lockIcon,
+  loginMessage,
+} from '../../components.constants';
 import { LinkTypes } from '../../components.model';
-import { CareerEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
+import {
+  CareerEntity,
+  CareerTypes,
+  careerTypes,
+} from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import { PersonService } from 'src/app/services/person/person/person.service';
 import { PersonEntity } from 'src/app/services/person/person/person.model';
@@ -42,11 +51,22 @@ import { AuthService } from 'src/app/services/auth/auth.service';
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  host: { 'class': 'wrapper' },
+  host: { class: 'wrapper' },
   standalone: true,
-  imports: [DatePipe, ProjectsSortPipe, ProjectsFilterPipe, FilterComponent, SortComponent, ContentboxComponent, ButtonComponent, SkillItemComponent, NgFor, NgIf],
+  imports: [
+    DatePipe,
+    ProjectsSortPipe,
+    ProjectsFilterPipe,
+    FilterComponent,
+    SortComponent,
+    ContentboxComponent,
+    ButtonComponent,
+    SkillItemComponent,
+    NgFor,
+    NgIf,
+  ],
   providers: [SkillsFilterPipe],
-  animations: [LeftToRightAnimationIncrement]
+  animations: [LeftToRightAnimationIncrement],
 })
 export class ProjectsComponent implements OnInit {
   projects: ProjectEntity[];
@@ -71,13 +91,15 @@ export class ProjectsComponent implements OnInit {
   selectedSkill?: SkillEntity;
 
   additionalFilterCategories: FiltersEntity[] = [];
-  additionalFilter$: BehaviorSubject<FiltersEntity[]> = new BehaviorSubject<FiltersEntity[]>(this.additionalFilterCategories);
+  additionalFilter$: BehaviorSubject<FiltersEntity[]> = new BehaviorSubject<
+    FiltersEntity[]
+  >(this.additionalFilterCategories);
 
   loggedIn: boolean = false;
   isAuth: boolean = false;
 
   authMessage = authMessage;
-  loginMessage = loginMessage
+  loginMessage = loginMessage;
 
   constructor(
     private projectService: ProjectService,
@@ -89,8 +111,8 @@ export class ProjectsComponent implements OnInit {
     private scroller: ViewportScroller,
     authService: AuthService
   ) {
-    authService.isLoggedIn.subscribe(loggedIn => this.loggedIn = loggedIn);
-    authService.isAuthenticated.subscribe(isAuth => this.isAuth = isAuth);
+    authService.isLoggedIn.subscribe((loggedIn) => (this.loggedIn = loggedIn));
+    authService.isAuthenticated.subscribe((isAuth) => (this.isAuth = isAuth));
     this.projects = projectService.getProjects();
     this.projects.forEach((project) => {
       project.skills.forEach((skill) => {
@@ -101,42 +123,85 @@ export class ProjectsComponent implements OnInit {
         }
       });
     });
-    this.filters = [projectFilterService.getProjectFiltersOfProjects(this.projects), skillsFilterService.getSkillFiltersOfSkills(this.projectSkills)]
-    this.additionalFilterCategories = [JSON.parse(JSON.stringify({ ...this.filters[0], categories: [] }))]
+    this.filters = [
+      projectFilterService.getProjectFiltersOfProjects(this.projects),
+      skillsFilterService.getSkillFiltersOfSkills(this.projectSkills),
+    ];
+    this.additionalFilterCategories = [
+      JSON.parse(JSON.stringify({ ...this.filters[0], categories: [] })),
+    ];
   }
 
   ngOnInit(): void {
-    this.activatedRoute.fragment.subscribe(fragment => this.setSelectedProject(fragment));
-    this.activatedRoute.queryParamMap.subscribe(param => this.setSelectedSkill(param.get('skillID')));
+    this.activatedRoute.fragment.subscribe((fragment) =>
+      this.setSelectedProject(fragment)
+    );
+    this.activatedRoute.queryParamMap.subscribe((param) =>
+      this.setSelectedSkill(param.get('skillID'))
+    );
     //this.store.select(state => state.app.interest).subscribe(res => this.setInterestFilter(res));
   }
 
   setSelectedProject(projectID: string | null) {
     if (projectID != null) {
       this.selectedProject = this.projectService.getProjectById(projectID);
-      this.additionalFilterCategories[0].categories = [{ id: projectFilterProps.selected, name: "Ausgewähltes Projekt", isRange: false, tags: [{ id: '', name: this.selectedProject.name, value: this.selectedProject.project_id, selected: true }] }]
-      this.additionalFilter$.next(this.additionalFilterCategories)
-      setTimeout(() => this.additionalFilter$.next([]), 500)
-      this.router.navigate([], { fragment: undefined })
+      this.additionalFilterCategories[0].categories = [
+        {
+          id: projectFilterProps.selected,
+          name: 'Ausgewähltes Projekt',
+          isRange: false,
+          tags: [
+            {
+              id: '',
+              name: this.selectedProject.name,
+              value: this.selectedProject.project_id,
+              selected: true,
+            },
+          ],
+        },
+      ];
+      this.additionalFilter$.next(this.additionalFilterCategories);
+      setTimeout(() => this.additionalFilter$.next([]), 500);
+      this.router.navigate([], { fragment: undefined });
     }
   }
 
   setSelectedSkill(skillID: string | null) {
     if (skillID != null) {
       this.selectedSkill = this.skillService.getSkillById(skillID);
-      this.additionalFilterCategories[0].categories = [{ id: projectFilterProps.skill, name: "Ausgewählter Skill", isRange: false, tags: [{ id: '', name: this.selectedSkill.name, value: this.selectedSkill.skill_id, selected: true }] }]
-      this.additionalFilter$.next(this.additionalFilterCategories)
-      setTimeout(() => this.additionalFilter$.next([]), 500)
-      this.router.navigate([], { queryParams: { skillID: undefined }, queryParamsHandling: "merge" })
+      this.additionalFilterCategories[0].categories = [
+        {
+          id: projectFilterProps.skill,
+          name: 'Ausgewählter Skill',
+          isRange: false,
+          tags: [
+            {
+              id: '',
+              name: this.selectedSkill.name,
+              value: this.selectedSkill.skill_id,
+              selected: true,
+            },
+          ],
+        },
+      ];
+      this.additionalFilter$.next(this.additionalFilterCategories);
+      setTimeout(() => this.additionalFilter$.next([]), 500);
+      this.router.navigate([], {
+        queryParams: { skillID: undefined },
+        queryParamsHandling: 'merge',
+      });
     }
   }
 
   ngAfterViewInit(): void {
     try {
       if (this.selectedProject != undefined) {
-        setTimeout(() => this.scroller.scrollToAnchor(this.selectedProject!.id), 800)
+        setTimeout(
+          () => this.scroller.scrollToAnchor(this.selectedProject!.id),
+          800
+        );
       }
-    } catch (e) { }
+    } catch (e) {}
   }
 
   filterProjects(selected: FiltersEntity[]) {
@@ -172,7 +237,11 @@ export class ProjectsComponent implements OnInit {
   };
 
   goToCareer(careerID: string) {
-    this.router.navigate(['../career'], { fragment: careerID, relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
+    this.router.navigate(['../career'], {
+      fragment: careerID,
+      relativeTo: this.activatedRoute,
+      queryParamsHandling: 'merge',
+    });
   }
 
   getLockedProjectsCount(): number {

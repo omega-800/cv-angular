@@ -13,14 +13,21 @@
             margin: 0;
             padding: 0;
             position: relative;
+            & .home {
+                margin-left: variables.$elem-border-radius + calc(variables.$elem-size * 2);
+            }
+
+            & .projects {
+                margin-right: variables.$elem-border-radius + calc(variables.$elem-size * 2);
+            }
 
             @include screens.mobile-screen {
                 & .home {
-                    padding-left: variables.$elem-size;
+                    margin-left: variables.$elem-border-radius;
                 }
 
                 & .projects {
-                    padding-right: variables.$elem-size;
+                    margin-right: variables.$elem-border-radius;
                 }
             }
 
@@ -66,12 +73,12 @@
                     position: absolute;
                     right: variables.$elem-height + variables.$elem-size;
 
-                    @include screens.mobile-screen {
-                        right: variables.$elem-height;
-                    }
-
                     & .dropdown {
                         right: variables.$elem-size;
+                    }
+
+                    @include screens.mobile-screen {
+                        right: variables.$elem-height;
                     }
                 }
 
@@ -87,11 +94,11 @@
                         height: variables.$elem-size * 2;
                         width: variables.$elem-size * 2;
                         text-align: center;
-                        margin-top: - variables.$elem-padding;
+                        margin-top: -#{variables.$elem-padding};
                     }
 
                     & .types {
-                        & .type-container>* {
+                        & .type-container > * {
                             display: inline-block;
                             vertical-align: middle;
                         }
@@ -111,6 +118,12 @@
 
                     &.login-dd {
                         width: 30em;
+                        @include screens.mobile-screen {
+                            width: calc(100% - (2 * variables.$elem-size));
+                        }
+                        @include screens.tablet-screen {
+                            width: calc(100% - (2 * variables.$elem-size));
+                        }
 
                         & .group {
                             margin-top: variables.$elem-size;
@@ -123,7 +136,7 @@
                         }
 
                         & .login-title {
-                            margin: auto
+                            margin: auto;
                         }
 
                         & .arrow {
@@ -141,7 +154,10 @@
                                 @include mixins.transition(border-left, variables.$elem-size solid variables.$cool);
 
                                 &:hover {
-                                    @include mixins.transition(border-left, variables.$elem-size solid variables.$cooldarken);
+                                    @include mixins.transition(
+                                        border-left,
+                                        variables.$elem-size solid variables.$cooldarken
+                                    );
                                 }
                             }
 
@@ -150,7 +166,10 @@
                                 @include mixins.transition(border-right, variables.$elem-size solid variables.$cool);
 
                                 &:hover {
-                                    @include mixins.transition(border-right, variables.$elem-size solid variables.$cooldarken);
+                                    @include mixins.transition(
+                                        border-right,
+                                        variables.$elem-size solid variables.$cooldarken
+                                    );
                                 }
                             }
                         }

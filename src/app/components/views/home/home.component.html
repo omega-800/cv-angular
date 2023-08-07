@@ -1,53 +1,105 @@
 <h1>Home</h1>
 <div class="welcome default-grid">
-  <div class="photo flex-center slimpill">
+  <div [class]="(!showLinks ? 'haslinks ' : '') + 'photo flex-center slimpill'">
+    <ng-container *ngIf="showLinks">
+      <a
+        *ngFor="let link of mysteriousLinks; let i = index"
+        [href]="link"
+        class="mysterious"
+        [style]="'margin-left:' + i + 'em;'"
+        >mysteriöser link</a
+      >
+    </ng-container>
     <img src="{{ me.image.path }}" alt="{{ me.image.alt }}" loading="lazy" />
-    <svg *ngIf="!showFirst" id="svg-filter">
-      <svg id="svg-filter">
-        <filter id="svg-img-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
-          primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
-          <feDisplacementMap in="SourceGraphic" in2="convolveMatrix2" scale="30" xChannelSelector="R"
-            yChannelSelector="B" x="0%" y="0%" width="500%" height="300%" result="displacementMap2" />
-          <feConvolveMatrix order="3 3" kernelMatrix="-3 0 0 
+    <svg *ngIf="showLinks" id="svg-filter">
+      <filter
+        id="svg-img-filter"
+        x="-20%"
+        y="-20%"
+        width="140%"
+        height="140%"
+        filterUnits="objectBoundingBox"
+        primitiveUnits="userSpaceOnUse"
+        color-interpolation-filters="linearRGB"
+      >
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="convolveMatrix2"
+          scale="30"
+          xChannelSelector="R"
+          yChannelSelector="B"
+          x="0%"
+          y="0%"
+          width="500%"
+          height="300%"
+          result="displacementMap2"
+        />
+        <feConvolveMatrix
+          order="3 3"
+          kernelMatrix="-3 0 0 
       0 -3 0 
-      0 0 4" divisor="1" bias="1" targetX="0" targetY="0" edgeMode="duplicate" preserveAlpha="true" x="0%" y="0%"
-            width="500%" height="300%" in="displacementMap2" result="convolveMatrix3" />
-        </filter>
-      </svg>
-    </svg>
-    <svg *ngIf="showFirst" id="svg-filter">
-      <svg id="svg-filter">
-        <filter id="svg-img-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
-          primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
-          <feConvolveMatrix order="3 3" kernelMatrix="-3 0 0 
-      0 -3 0 
-      0 0 4" divisor="1" bias="1" targetX="0" targetY="0" edgeMode="duplicate" preserveAlpha="true" x="0%" y="0%"
-            width="500%" height="300%" in="displacementMap2" result="convolveMatrix3" />
-        </filter>
-      </svg>
+      0 0 4"
+          divisor="1"
+          bias="1"
+          targetX="0"
+          targetY="0"
+          edgeMode="duplicate"
+          preserveAlpha="true"
+          x="0%"
+          y="0%"
+          width="500%"
+          height="300%"
+          in="displacementMap2"
+          result="convolveMatrix3"
+        />
+      </filter>
     </svg>
 
-    <ng-container *ngIf="!showFirst">
-      <a *ngFor="let link of mysteriousLinks; let i = index" [href]="link" class="mysterious"
-        [style]="'font-size:1.5em;text-decoration:underline;margin-right:calc(3em - '+i+'em);'">mysteriöser link</a>
+    <ng-container *ngIf="showLinks">
+      <a
+        *ngFor="let link of mysteriousLinks2; let i = index"
+        [href]="link"
+        class="mysterious"
+        [style]="'margin-right:' + i + 'em;'"
+        >mysteriöser link</a
+      >
     </ng-container>
   </div>
   <div class="desc slimpill">
     <h3>Hallihallo!</h3>
-    <p>Herzlich willkommen auf meiner Portfolio-Webseite! Fragst du dich gerade: </p>
+    <p>
+      Herzlich willkommen auf meiner Portfolio-Webseite! Fragst du dich gerade:
+    </p>
     <h4>Wer ich bin?</h4>
-    <p>Ich heisse {{ me.firstname }} {{ me.lastname}} und bin <span class="age">{{ me.birthdate | age:age }}</span> alt.
+    <p>
+      Ich heisse {{ me.firstname }} {{ me.lastname }} und bin
+      <span class="age">{{ me.birthdate | age : age }}</span> alt.
     </p>
     <h4>Was ich tue?</h4>
-    <p style="white-space: pre-line" (mouseenter)="showFirst = !showFirst">{{showFirst ? text1 : text2}}<a
-        (click)="navigateProjects()" class="link">&nbsp;{{showFirst ? btnText1 : btnText2}}&nbsp;</a>{{showFirst ?
-      endText1 : endText2}}</p>
+    <p style="white-space: pre-line">
+      {{ showFirst ? text1 : text2
+      }}<a (click)="navigateProjects()" class="link"
+        >&nbsp;{{ showFirst ? btnText1 : btnText2 }}&nbsp;</a
+      >{{ showFirst ? endText1 : endText2 }}
+    </p>
   </div>
   <div class="socials slimpill flex-row-just">
     <h4 class="socialstext">Erreichen kannst du mich hier:</h4>
-    <app-button (click)="callMe()" [type]="lt.PHONE" name="Meine Telefonnummer"></app-button>
-    <app-button (click)="mailMe()" [type]="lt.MAIL" name="Meine E-Mail"></app-button>
-    <app-button (click)="myGithub()" [type]="lt.GITHUB" name="Mein Github Profil"></app-button>
+    <app-button
+      (click)="callMe()"
+      [type]="lt.PHONE"
+      name="Meine Telefonnummer"
+    ></app-button>
+    <app-button
+      (click)="mailMe()"
+      [type]="lt.MAIL"
+      name="Meine E-Mail"
+    ></app-button>
+    <app-button
+      (click)="myGithub()"
+      [type]="lt.GITHUB"
+      name="Mein Github Profil"
+    ></app-button>
   </div>
 </div>
 <!-- app-skills-percent-list -->
