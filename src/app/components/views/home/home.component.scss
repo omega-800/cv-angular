@@ -7,17 +7,20 @@
 
         @include screens.mobile-screen {
             grid-template-areas:
-                "img socials"
-                "desc desc";
-            grid-template-columns: 1.2fr 0.8fr;
-            grid-template-rows: auto auto;
+                "img"
+                "socials"
+                "desc";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
         }
 
         @include screens.tablet-screen {
-            grid-template-areas: "img desc"
-                "socials desc";
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr auto;
+            grid-template-areas:
+                "img"
+                "socials"
+                "desc";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
         }
 
         @include screens.laptop-screen {

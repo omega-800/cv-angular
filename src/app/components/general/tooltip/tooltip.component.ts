@@ -108,8 +108,8 @@ export class TooltipComponent {
     this.visible = false;
   }
 
-  @HostListener('click') onClick() {
+  /*@HostListener('click') onClick() {
     this.visible = !this.visible;
-  }
+  }*/
 
 }
