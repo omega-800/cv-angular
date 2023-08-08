@@ -204,4 +204,85 @@
             }
         }
     }
+
+    & #burger-to-cross {
+        display: none;
+        @include screens.mobile {
+            display: block;
+        }
+        &,
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        width: 60px;
+        height: 45px;
+        position: relative;
+        margin: 50px auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        & span {
+            display: block;
+            position: absolute;
+            height: 9px;
+            width: 100%;
+            background: #d3531a;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+            &.child1 {
+                top: 0px;
+            }
+            &.child2 {
+                top: 18px;
+            }
+            &.child3 {
+                top: 18px;
+            }
+
+            &.child4 {
+                top: 36px;
+            }
+        }
+        &.active span {
+            &.child1 {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+            &.child2 {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &.child3 {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+
+            &.child4 {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
 }

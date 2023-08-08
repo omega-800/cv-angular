@@ -1,4 +1,15 @@
-<nav class="navbar">
+<div
+  #btc
+  id="burger-to-cross"
+  [class]="btcActive ? 'active' : ''"
+  (click)="btcActive = !btcActive"
+>
+  <span class="child1"></span>
+  <span class="child2"></span>
+  <span class="child3"></span>
+  <span class="child4"></span>
+</div>
+<nav [class]="(btcActive ? 'active ' : 'desktop ') + 'navbar'">
   <ul class="flex-row">
     <li class="flex-row interests">
       <img
