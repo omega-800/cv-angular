@@ -5,284 +5,313 @@
 :host {
     width: 100%;
 
-    & .navbar {
-        background-color: variables.$cool;
-        padding: variables.$elem-padding;
-
-        & ul {
-            margin: 0;
-            padding: 0;
-            position: relative;
-            & .home {
-                margin-left: variables.$elem-border-radius + calc(variables.$elem-size * 2);
+    @include screens.tablet-up {
+        & .navbar {
+            & .mobile {
+                display: none;
             }
 
-            & .projects {
-                margin-right: variables.$elem-border-radius + calc(variables.$elem-size * 2);
-            }
+            background-color: variables.$cool;
+            padding: variables.$elem-padding;
 
-            @include screens.mobile-screen {
+            & ul {
+                margin: 0;
+                padding: 0;
+                position: relative;
+
                 & .home {
-                    margin-left: variables.$elem-border-radius;
+                    margin-left: variables.$elem-border-radius + calc(variables.$elem-size * 2);
                 }
 
                 & .projects {
-                    margin-right: variables.$elem-border-radius;
+                    margin-right: variables.$elem-border-radius + calc(variables.$elem-size * 2);
+                }
+
+                & li {
+                    list-style: none;
                 }
             }
 
-            & li {
-                list-style: none;
-
-                & .active {
-                    @include mixins.darken-little(background-color);
-                }
-
-                & .icon {
-                    height: variables.$elem-border-radius;
-                    width: variables.$elem-border-radius;
-                }
-
-                &.login {
-                    position: absolute;
-                    right: variables.$elem-size;
-
-                    @include screens.mobile-screen {
-                        right: 0;
-                    }
-
-                    & .dropdown {
-                        right: variables.$elem-size;
-                    }
-                }
-
-                &.interests {
-                    position: absolute;
-                    left: variables.$elem-size;
-
-                    @include screens.mobile-screen {
-                        left: 0;
-                    }
-
-                    & .dropdown {
-                        left: variables.$elem-size;
-                    }
-                }
-
-                &.language {
-                    position: absolute;
-                    right: variables.$elem-height + variables.$elem-size;
-
-                    & .dropdown {
-                        right: variables.$elem-size;
-                    }
-
-                    @include screens.mobile-screen {
-                        right: variables.$elem-height;
-                    }
-                }
+            & .login {
+                position: absolute;
+                right: variables.$elem-size;
+                top: variables.$elem-padding;
 
                 & .dropdown {
-                    position: fixed;
-                    padding: variables.$elem-size;
+                    right: variables.$elem-size;
+                }
+            }
+
+            & .interests {
+                position: absolute;
+                left: variables.$elem-size;
+                top: variables.$elem-padding;
+
+                & .dropdown {
+                    left: variables.$elem-size;
+                }
+            }
+
+            & .language {
+                position: absolute;
+                right: variables.$elem-height + variables.$elem-size;
+                top: variables.$elem-padding;
+
+                & .dropdown {
+                    right: variables.$elem-size;
+                }
+            }
+        }
+    }
+
+    @include screens.mobile-screen {
+        $unit: 0.2rem;
+
+        & .navbar {
+            height: 0;
+        }
+
+        & img,
+        div {
+            transition: 0.3s ease left, 0.3s ease bottom, 0.3s ease opacity, 0.3s ease visibility,
+                0.3s ease position;
+
+            &.mobileicon {
+                height: variables.$elem-height;
+                width: variables.$elem-height;
+                position: fixed;
+                left: calc(50% - ($unit * 10));
+                bottom: $unit * 10;
+
+                & .mobileiconcon {
+                    height: variables.$elem-height - variables.$elem-size;
+                    width: variables.$elem-height - variables.$elem-size;
+                    margin: variables.$elem-padding;
+                }
+            }
+        }
+
+        & .desktop,
+        .closed {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        & .open {
+            visibility: visible;
+            opacity: 1;
+            position: absolute;
+            z-index: variables.$evenhigher + 1;
+
+            &.career {
+                bottom: $unit * 50;
+                left: calc(50vw - (variables.$elem-height / 2));
+            }
+
+            &.home {
+                bottom: $unit * 35;
+                left: calc(25vw - (variables.$elem-height / 2));
+            }
+
+            &.projects {
+                bottom: $unit * 35;
+                left: calc(75vw - (variables.$elem-height / 2));
+            }
+
+            &.interests {
+                bottom: $unit * 10;
+                left: calc(15vw - (variables.$elem-height / 2));
+            }
+
+            &.login {
+                bottom: $unit * 10;
+                left: calc(85vw - (variables.$elem-height / 2));
+            }
+        }
+
+        & #burger-to-cross {
+            z-index: variables.$evenhigher;
+            display: block;
+            position: fixed;
+            bottom: 0;
+            left: calc(50% - ($unit * 10));
+            width: $unit * 20;
+            height: $unit * 20;
+            transform: translateY(-50%);
+            transition: 0.3s ease transform, 0.3s ease box-shadow;
+            cursor: pointer;
+            border: none;
+            outline: variables.$defborderthin;
+
+            & div {
+                width: $unit * 10;
+                height: $unit * 2;
+                background-color: variables.$dark1;
+                margin-left: $unit * 2.5;
+                margin-bottom: $unit * 2;
+                border-radius: $unit;
+                transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+                    0.3s ease background-color;
+
+                &.child1 {
+                    margin-top: $unit * 2.5;
+                    width: $unit * 9;
+                }
+
+                &.child2 {
+                    width: $unit * 7;
+                }
+
+                &.child3 {
+                    margin-bottom: 0
+                }
+            }
+
+            &.active {
+                transform: translateY(-50%) rotateZ(-90deg);
+                box-shadow: 0px 0px (variables.$elem-height * 4) (variables.$elem-height * 2) variables.$dark1;
+
+                & div {
+                    width: $unit * 2;
+                    margin-left: $unit * 6;
+                    margin-bottom: $unit * 2;
                     background-color: variables.$light2;
-                    border-top-color: variables.$cool;
-                    z-index: variables.$top;
-                    top: variables.$elem-height;
+                }
+            }
+        }
 
-                    & .close {
-                        height: variables.$elem-size * 2;
-                        width: variables.$elem-size * 2;
-                        text-align: center;
-                        margin-top: -#{variables.$elem-padding};
+        & .dropdown {
+            position: fixed;
+            top: variables.$elem-height;
+            left: variables.$elem-padding;
+            width: calc(100% - (2 * variables.$elem-padding));
+        }
+    }
+
+
+    & .active {
+        background-color: variables.$cooldarken;
+    }
+
+    & .icon {
+        height: variables.$elem-border-radius;
+        width: variables.$elem-border-radius;
+    }
+
+    & .dropdown {
+        position: fixed;
+        padding: variables.$elem-size;
+        background-color: variables.$light2;
+        border-top-color: variables.$cool;
+        z-index: variables.$top;
+        top: variables.$elem-height;
+
+        & .close {
+            height: variables.$elem-size * 2;
+            width: variables.$elem-size * 2;
+            text-align: center;
+            margin-top: -#{variables.$elem-padding};
+        }
+
+        & .types {
+            & .type-container>* {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            & h5 {
+                margin-left: variables.$elem-padding;
+            }
+        }
+
+        & .error {
+            padding: variables.$elem-padding;
+            @include mixins.darken-little-custom(color, variables.$red1);
+            border: variables.$thin solid variables.$light1;
+            border-radius: variables.$elem-padding;
+            margin-bottom: variables.$elem-padding;
+        }
+
+        &.login-dd {
+            @include screens.laptop-up {
+                width: 30em;
+            }
+
+            @include screens.tablet-screen {
+                width: calc(100% - (2 * variables.$elem-size));
+            }
+
+            & .group {
+                margin-top: variables.$elem-size;
+                width: 100%;
+
+                & button,
+                p {
+                    margin: 0 auto;
+                }
+            }
+
+            & .login-title {
+                margin: auto;
+            }
+
+            & .arrow {
+                height: variables.$elem-size;
+                width: variables.$elem-size;
+                border-top: variables.$elem-size solid transparent;
+                border-bottom: variables.$elem-size solid transparent;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.arrow-right {
+                    margin-left: variables.$elem-padding;
+                    @include mixins.transition(border-left, variables.$elem-size solid variables.$cool);
+
+                    &:hover {
+                        @include mixins.transition(border-left,
+                            variables.$elem-size solid variables.$cooldarken );
                     }
+                }
 
-                    & .types {
-                        & .type-container > * {
-                            display: inline-block;
-                            vertical-align: middle;
-                        }
+                &.arrow-left {
+                    margin-right: variables.$elem-padding;
+                    @include mixins.transition(border-right, variables.$elem-size solid variables.$cool);
 
-                        & h5 {
-                            margin-left: variables.$elem-padding;
-                        }
+                    &:hover {
+                        @include mixins.transition(border-right,
+                            variables.$elem-size solid variables.$cooldarken );
                     }
+                }
+            }
 
-                    & .error {
-                        padding: variables.$elem-padding;
-                        @include mixins.darken-little-custom(color, variables.$red1);
-                        border: variables.$thin solid variables.$light1;
-                        border-radius: variables.$elem-padding;
-                        margin-bottom: variables.$elem-padding;
+            & .loginfields {
+                & input {
+                    padding: variables.$elem-padding;
+                    border: none;
+                    background-color: variables.$cool;
+                    border-radius: variables.$elem-padding;
+                    margin-bottom: variables.$elem-padding;
+
+                    &:focus {
+                        background-color: variables.$cooldarken;
+                        outline: none;
                     }
+                }
 
-                    &.login-dd {
-                        width: 30em;
-                        @include screens.mobile-screen {
-                            width: calc(100% - (2 * variables.$elem-size));
-                        }
-                        @include screens.tablet-screen {
-                            width: calc(100% - (2 * variables.$elem-size));
-                        }
+                & button[type="submit"] {
+                    margin-top: variables.$elem-padding;
+                    margin-bottom: 0;
+                    cursor: pointer;
 
-                        & .group {
-                            margin-top: variables.$elem-size;
-                            width: 100%;
-
-                            & button,
-                            p {
-                                margin: 0 auto;
-                            }
-                        }
-
-                        & .login-title {
-                            margin: auto;
-                        }
-
-                        & .arrow {
-                            height: variables.$elem-size;
-                            width: variables.$elem-size;
-                            border-top: variables.$elem-size solid transparent;
-                            border-bottom: variables.$elem-size solid transparent;
-
-                            &:hover {
-                                cursor: pointer;
-                            }
-
-                            &.arrow-right {
-                                margin-left: variables.$elem-padding;
-                                @include mixins.transition(border-left, variables.$elem-size solid variables.$cool);
-
-                                &:hover {
-                                    @include mixins.transition(
-                                        border-left,
-                                        variables.$elem-size solid variables.$cooldarken
-                                    );
-                                }
-                            }
-
-                            &.arrow-left {
-                                margin-right: variables.$elem-padding;
-                                @include mixins.transition(border-right, variables.$elem-size solid variables.$cool);
-
-                                &:hover {
-                                    @include mixins.transition(
-                                        border-right,
-                                        variables.$elem-size solid variables.$cooldarken
-                                    );
-                                }
-                            }
-                        }
-
-                        & .loginfields {
-                            & input {
-                                padding: variables.$elem-padding;
-                                border: none;
-                                background-color: variables.$cool;
-                                border-radius: variables.$elem-padding;
-                                margin-bottom: variables.$elem-padding;
-
-                                &:focus {
-                                    background-color: variables.$cooldarken;
-                                    outline: none;
-                                }
-                            }
-
-                            & button[type="submit"] {
-                                margin-top: variables.$elem-padding;
-                                margin-bottom: 0;
-                                cursor: pointer;
-
-                                &:disabled {
-                                    background-color: variables.$light2 !important;
-                                    cursor: default;
-                                }
-                            }
-                        }
+                    &:disabled {
+                        background-color: variables.$light2 !important;
+                        cursor: default;
                     }
                 }
             }
         }
     }
 
-    & #burger-to-cross {
-        display: none;
-        @include screens.mobile {
-            display: block;
-        }
-        &,
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        width: 60px;
-        height: 45px;
-        position: relative;
-        margin: 50px auto;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-        & span {
-            display: block;
-            position: absolute;
-            height: 9px;
-            width: 100%;
-            background: #d3531a;
-            border-radius: 9px;
-            opacity: 1;
-            left: 0;
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-            -webkit-transition: 0.25s ease-in-out;
-            -moz-transition: 0.25s ease-in-out;
-            -o-transition: 0.25s ease-in-out;
-            transition: 0.25s ease-in-out;
-            &.child1 {
-                top: 0px;
-            }
-            &.child2 {
-                top: 18px;
-            }
-            &.child3 {
-                top: 18px;
-            }
-
-            &.child4 {
-                top: 36px;
-            }
-        }
-        &.active span {
-            &.child1 {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-            &.child2 {
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-            &.child3 {
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
-
-            &.child4 {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-        }
-    }
 }

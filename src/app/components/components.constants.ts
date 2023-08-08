@@ -163,6 +163,13 @@ export const russianIcon: Readonly<ImageComp> = {
   alt: 'Russia icon',
 };
 
+export const homeIcon: Readonly<ImageComp> = {
+  id: 'icon_home',
+  name: 'home',
+  path: 'assets/img/home.svg',
+  alt: 'Home icon',
+};
+
 export const linkTypes: Readonly<LinkTypes> = {
   GITHUB: {
     id: 'linkType_github',

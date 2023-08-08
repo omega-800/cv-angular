@@ -48,17 +48,19 @@ export class FilterComponent implements OnInit {
 
   //selectedFilter$: Observable<FiltersEntity[]> = of(this.selectedFilter);
 
-  constructor(private cdref: ChangeDetectorRef, private store: Store) {}
+  constructor(private cdref: ChangeDetectorRef, private store: Store) { }
 
   ngOnInit(): void {
-    if (this.additionalFilters$ != undefined) {
-      this.additionalFilters$.subscribe((res) => {
-        this.setAdditionalFilters(res);
-      });
-    }
-    this.store
-      .select((state) => state.app.interest)
-      .subscribe((res) => this.setInterestFilter(res));
+    setTimeout(() => {
+      if (this.additionalFilters$ != undefined) {
+        this.additionalFilters$.subscribe((res) => {
+          this.setAdditionalFilters(res);
+        });
+      }
+      this.store
+        .select((state) => state.app.interest)
+        .subscribe((res) => this.setInterestFilter(res));
+    }, 0)
   }
 
   ngAfterContentChecked() {
@@ -236,9 +238,9 @@ export class FilterComponent implements OnInit {
       this.selectedFilter
         .find((elem) => elem.id == filter.id)!
         .categories.find((elem) => elem.id == selectedRange.id)!.tags = [
-        rangeValues[0],
-        rangeValues[rangeValues.length - 1],
-      ];
+          rangeValues[0],
+          rangeValues[rangeValues.length - 1],
+        ];
       this.resetRangeDOM(
         selectedRange.id,
         rangeValues[0].value,

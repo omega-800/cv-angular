@@ -1,10 +1,9 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewInit, Component, HostBinding, Inject, OnInit, inject } from '@angular/core';
+import { Component, Inject, OnInit, } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Interest } from './store/app/app.model';
-import { Observable, filter, map, take } from 'rxjs';
-import { AppStateModel } from './store/app/app.state';
-import { ActivatedRoute, ActivationEnd, ChildrenOutletContexts, Router } from '@angular/router';
+import { filter, map, take } from 'rxjs';
+import { ActivationEnd, Router } from '@angular/router';
 import { SetInterest } from './store/app/app.actions';
 import { slideInAnimation } from './animations';
 
@@ -39,16 +38,22 @@ export class AppComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document, private store: Store, private router: Router) {
     //this.interest$ = this.store.select(state => state.app.interest);
-    this.router.events
-      .pipe(
-        filter(e => (e instanceof ActivationEnd) && (Object.keys(e.snapshot.params).length > 0)),
-        map(e => e instanceof ActivationEnd ? e.snapshot.params : {}),
-        take(1)
-      )
-      .subscribe(params => {
-        let checkedInterest = params['interest'] != undefined && Object.values(Interest).includes(params['interest']) ? params['interest'] : Interest.IT;
-        this.store.dispatch(new SetInterest(checkedInterest))
-      });
+    let savedInterest = localStorage.getItem('interest')
+    if (!!savedInterest) {
+      let checkedInterest = savedInterest != undefined && Object.values(Interest).includes(savedInterest as Interest) ? savedInterest : Interest.IT;
+      this.store.dispatch(new SetInterest(checkedInterest as Interest))
+    } else {
+      this.router.events
+        .pipe(
+          filter(e => (e instanceof ActivationEnd) && (Object.keys(e.snapshot.params).length > 0)),
+          map(e => e instanceof ActivationEnd ? e.snapshot.params : {}),
+          take(1)
+        )
+        .subscribe(params => {
+          let checkedInterest = params['interest'] != undefined && Object.values(Interest).includes(params['interest']) ? params['interest'] : Interest.IT;
+          this.store.dispatch(new SetInterest(checkedInterest))
+        });
+    }
     this.store.select(state => state.app.interest).subscribe(res => {
       this.customcolor = res == Interest.IT ? 'rgba(103, 176, 232, 0.9)'
         : res == Interest.ART ? 'rgba(196, 127, 213, 0.9)'

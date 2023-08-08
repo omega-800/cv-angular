@@ -6,7 +6,7 @@ import { TooltipComponent } from '../tooltip/tooltip.component';
 import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { SetInterest, SetLanguage } from 'src/app/store/app/app.actions';
-import { Direction, personIcon } from '../../components.constants';
+import { Direction, homeIcon, imageIcon, personIcon, schoolIcon } from '../../components.constants';
 import { ImageComp } from '../../components.model';
 import { DropDownAnimation, TooltipAnimation } from 'src/app/animations';
 
@@ -42,12 +42,15 @@ export class HeaderComponent {
   interestIcon: ImageComp = this.types[0].icon;
 
   d = Direction;
-  dropdownActive: boolean = true;
+  dropdownActive: boolean = !!!localStorage.getItem('interest');
   dropdownLoginActive: boolean = false;
   selectedRegister: boolean = false;
   btcActive = false;
 
   personIcon: ImageComp = personIcon;
+  homeIcon = homeIcon;
+  schoolIcon = schoolIcon;
+  imageIcon = imageIcon;
   loggedIn: boolean = false;
   authenticated: boolean = false;
   loginForm: FormGroup;
@@ -122,6 +125,7 @@ export class HeaderComponent {
         : Interest.IT;
     this.router.navigate(['.', { interest: checkedInterest }]);
     this.store.dispatch(new SetInterest(checkedInterest));
+    localStorage.setItem('interest', checkedInterest)
   }
 
   setLanguage(lang: Language) {

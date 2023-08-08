@@ -3,6 +3,18 @@ $tablet-max: 768px;
 $laptop-max: 1024px;
 $desktop-max: 1200px;
 
+@mixin tablet-up {
+  @media (min-width: #{$mobile-max + 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop-up {
+  @media (min-width: #{$tablet-max + 1px}) {
+    @content;
+  }
+}
+
 @mixin mobile-screen {
   @media (max-width: #{$mobile-max}) {
     @content;
