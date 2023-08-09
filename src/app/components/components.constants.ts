@@ -1,6 +1,7 @@
 import { LinkTypes, ImageComp } from './components.model';
 
-export const loginMessage = 'Dieser Inhalt ist nur für eingeloggte User sichtbar';
+export const loginMessage =
+  'Dieser Inhalt ist nur für eingeloggte User sichtbar';
 export const authMessage = 'Verifiziere deine Email um diesen Inhalt zu sehen';
 
 export enum Direction {
@@ -168,6 +169,20 @@ export const homeIcon: Readonly<ImageComp> = {
   name: 'home',
   path: 'assets/img/home.svg',
   alt: 'Home icon',
+};
+
+export const zoomInIcon: Readonly<ImageComp> = {
+  id: 'icon_zoom_in',
+  name: 'Zoom in',
+  path: 'assets/img/zoom_in.svg',
+  alt: 'Zoom in icon',
+};
+
+export const zoomOutIcon: Readonly<ImageComp> = {
+  id: 'icon_zoom_out',
+  name: 'Zoom out',
+  path: 'assets/img/zoom_out.svg',
+  alt: 'Zoom out icon',
 };
 
 export const linkTypes: Readonly<LinkTypes> = {

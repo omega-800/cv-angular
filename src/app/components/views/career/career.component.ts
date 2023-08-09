@@ -1,7 +1,21 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CareerEntity, CareerTypeEntity, CareerTypes, careerTypes } from 'src/app/services/career/career/career.model';
+import {
+  CareerEntity,
+  CareerTypeEntity,
+  CareerTypes,
+  careerTypes,
+} from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
-import { contactIcon, addressIcon, arrowIcon, urlIcon, infoIcon, Direction, loginMessage, authMessage } from '../../components.constants';
+import {
+  contactIcon,
+  addressIcon,
+  arrowIcon,
+  urlIcon,
+  infoIcon,
+  Direction,
+  loginMessage,
+  authMessage,
+} from '../../components.constants';
 import { ImageComp } from '../../components.model';
 import { openLink } from '../../general/links.util';
 import { linkTypes } from '../../components.constants';
@@ -25,10 +39,21 @@ import { AuthService } from 'src/app/services/auth/auth.service';
   selector: 'app-career',
   templateUrl: './career.component.html',
   styleUrls: ['./career.component.scss'],
-  host: { 'class': 'wrapper' },
+  host: { class: 'wrapper' },
   standalone: true,
-  imports: [ContentboxComponent, SkillsPercentComponent, ButtonComponent, ContactpointComponent, AddressComponent, NgFor, NgIf, NgVar, DatePipe, TooltipComponent],
-  animations: [DropDownAnimation, LeftToRightAnimation]
+  imports: [
+    ContentboxComponent,
+    SkillsPercentComponent,
+    ButtonComponent,
+    ContactpointComponent,
+    AddressComponent,
+    NgFor,
+    NgIf,
+    NgVar,
+    DatePipe,
+    TooltipComponent,
+  ],
+  animations: [DropDownAnimation, LeftToRightAnimation],
 })
 export class CareerComponent {
   careers: CareerEntity[];
@@ -54,19 +79,24 @@ export class CareerComponent {
     private scroller: ViewportScroller,
     authService: AuthService
   ) {
-    authService.isLoggedIn.subscribe(loggedIn => this.loggedIn = loggedIn);
-    authService.isAuthenticated.subscribe(isAuth => this.isAuth = isAuth);
+    authService.isLoggedIn.subscribe((loggedIn) => (this.loggedIn = loggedIn));
+    authService.isAuthenticated.subscribe((isAuth) => (this.isAuth = isAuth));
     this.careers = careerService.getCareers();
   }
 
   ngOnInit(): void {
-    this.activatedRoute.fragment.subscribe(fragment => this.selectedCareerID = fragment || '');
+    this.activatedRoute.fragment.subscribe(
+      (fragment) => (this.selectedCareerID = fragment || '')
+    );
   }
 
   ngAfterViewInit(): void {
     try {
-      setTimeout(() => this.scroller.scrollToAnchor(this.selectedCareerID), 800)
-    } catch (e) { }
+      setTimeout(
+        () => this.scroller.scrollToAnchor(this.selectedCareerID),
+        800
+      );
+    } catch (e) {}
   }
 
   getProjects(careerID: string): ProjectEntity[] {
@@ -74,24 +104,37 @@ export class CareerComponent {
   }
 
   getThumbnail(image: ImageComp): ImageComp {
-    return image.path.endsWith("/") ? { ...image, path: image.path + 'thumbnail.webp' } : image
+    return image.path.endsWith('/')
+      ? { ...image, path: image.path + 'thumbnail.webp' }
+      : image;
   }
 
   goToProject(project: ProjectEntity) {
     if (!project.anon_locked || this.loggedIn) {
-      this.router.navigate(['../projects'], { fragment: project.project_id, relativeTo: this.activatedRoute, queryParamsHandling: "merge" });
+      this.router.navigate(['../projects'], {
+        fragment: project.project_id,
+        relativeTo: this.activatedRoute,
+        queryParamsHandling: 'merge',
+      });
     }
   }
 
-  getDuration(from: Date, to: Date, pensum: number, ct: CareerTypeEntity): string {
+  getDuration(
+    from: Date,
+    to: Date,
+    pensum: number,
+    ct: CareerTypeEntity
+  ): string {
     let allMls = to.getTime() - from.getTime();
-    let totalMls = allMls / 7 * 5 / 24 * (8.5 * pensum / 100) / (ct == careerTypes.SCHOOL ? (360 * (360 - 91)) : (36 * 35)) / 10 * 9;
+    let totalMls =
+      (((((allMls / 7) * 5) / 24) * ((8.5 * pensum) / 100)) / 10) * 9;
     let h = Math.round(totalMls / (3600 * 1000));
-    return `~ ${h}h`;
+    let hFin =
+      ct == careerTypes.SCHOOL ? h / (360 * (360 - 91)) : h / (36 * 35);
+    return `~ ${hFin}h`;
   }
 
   ol = (href: string) => {
     openLink(href);
-  }
+  };
 }
-

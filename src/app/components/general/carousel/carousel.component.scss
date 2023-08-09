@@ -24,7 +24,7 @@
             }
         }
 
-        & .arrow {
+        &.arrow {
             position: absolute;
             bottom: 0;
             height: 100%;
@@ -68,7 +68,7 @@
         width: 100%;
         padding-top: variables.$elem-padding;
 
-        &>div {
+        & > div {
             height: variables.$elem-size;
             width: variables.$elem-border-radius;
             border: variables.$thin solid variables.$cool;

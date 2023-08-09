@@ -1,20 +1,30 @@
-import { AfterContentInit, ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import {
+  AfterContentInit,
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+} from '@angular/core';
 import { ImageComp } from '../../components.model';
 import { NgIf, NgStyle } from '@angular/common';
+import { zoomInIcon, zoomOutIcon } from '../../components.constants';
 
 @Component({
   selector: 'app-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { 'class': 'flex-center' },
+  host: { class: 'flex-center' },
   standalone: true,
-  imports: [NgStyle, NgIf]
+  imports: [NgStyle, NgIf],
 })
 export class ImageComponent implements AfterContentInit {
   @Input() image!: ImageComp;
   loaded: boolean = false;
   isNotSVG: boolean = false;
+  zoomInIcon = zoomInIcon;
+  zoomOutIcon = zoomOutIcon;
+  isZoomedIn = false;
+  hovering = false;
   ngOnInit() {
     this.isNotSVG = !this.image.path.endsWith('svg');
   }
