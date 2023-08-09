@@ -69,6 +69,13 @@
 
         & .navbar {
             height: 0;
+
+            & .dropdown {
+                position: fixed;
+                top: variables.$elem-padding;
+                left: variables.$elem-padding;
+                width: calc(100% - (2 * variables.$elem-padding));
+            }
         }
 
         & img,
@@ -91,8 +98,11 @@
             }
         }
 
-        & .desktop,
-        .closed {
+        & .desktop {
+            display: none;
+        }
+
+        & .closed {
             visibility: hidden;
             opacity: 0;
         }
@@ -104,28 +114,28 @@
             z-index: variables.$evenhigher + 1;
 
             &.career {
-                bottom: $unit * 50;
+                bottom: $unit * 40;
                 left: calc(50vw - (variables.$elem-height / 2));
             }
 
             &.home {
-                bottom: $unit * 35;
+                bottom: $unit * 30;
                 left: calc(25vw - (variables.$elem-height / 2));
             }
 
             &.projects {
-                bottom: $unit * 35;
+                bottom: $unit * 30;
                 left: calc(75vw - (variables.$elem-height / 2));
             }
 
             &.interests {
                 bottom: $unit * 10;
-                left: calc(15vw - (variables.$elem-height / 2));
+                left: calc(10vw - (variables.$elem-height / 2));
             }
 
             &.login {
                 bottom: $unit * 10;
-                left: calc(85vw - (variables.$elem-height / 2));
+                left: calc(90vw - (variables.$elem-height / 2));
             }
         }
 
@@ -178,13 +188,6 @@
                     background-color: variables.$light2;
                 }
             }
-        }
-
-        & .dropdown {
-            position: fixed;
-            top: variables.$elem-height;
-            left: variables.$elem-padding;
-            width: calc(100% - (2 * variables.$elem-padding));
         }
     }
 

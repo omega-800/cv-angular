@@ -122,7 +122,7 @@
       <div class="types flex-list-full">
         <div *ngFor="let lang of languageTypes"
           [class]="(lang.lang == language ? 'active ' : '')+ 'type-container link pill menu-item'"
-          (click)="setLanguage(lang.lang);langActive = !langActive">
+          (click)="setLanguage(lang.lang);langActive = !langActive;btcActive = !btcActive;">
           <img [src]="lang.icon.path" [alt]="lang.icon.alt" class="icon" />
           <h5>{{lang.name}}</h5>
         </div>
@@ -145,7 +145,7 @@
         <div *ngFor="let type of types" [class]="
             (type.type == interest ? 'active ' : '') +
             'type-container link pill menu-item'
-          " (click)="setInterest(type.type); dropdownActive = !dropdownActive">
+          " (click)="setInterest(type.type); dropdownActive = !dropdownActive;btcActive = !btcActive;">
           <img [src]="type.icon.path" [alt]="type.icon.alt" class="icon" />
           <h5>{{ type.name }}</h5>
         </div>

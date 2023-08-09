@@ -190,6 +190,10 @@ export class ProjectsComponent implements OnInit {
         queryParams: { skillID: undefined },
         queryParamsHandling: 'merge',
       });
+      setTimeout(
+        () => { this.scroller.scrollToPosition([0, 0]); console.log("scrolled") },
+        800
+      );
     }
   }
 
@@ -201,7 +205,7 @@ export class ProjectsComponent implements OnInit {
           800
         );
       }
-    } catch (e) {}
+    } catch (e) { }
   }
 
   filterProjects(selected: FiltersEntity[]) {

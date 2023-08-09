@@ -21,20 +21,14 @@ import { ProjectService } from 'src/app/services/project/project/project.service
   standalone: true,
   imports: [TooltipComponent, NgIf, NgFor]
 })
-export class SkillItemComponent implements OnInit {
+export class SkillItemComponent {
   @Input() skill!: SkillEntity;
   @Input() showPercent!: boolean;
-  skillText: string = '';
   lt: LinkTypes = linkTypes;
   direction = Direction;
 
   constructor(private router: Router, private projectService: ProjectService) { }
 
-  ngOnInit() {
-    this.skillText = this.showPercent
-      ? this.skill.knowledgepercent + '% ' + this.skill.name
-      : this.skill.name;
-  }
   hasProjects(): boolean {
     return this.projectService.getProjectsBySkill(this.skill.skill_id).length > 0;
   }
