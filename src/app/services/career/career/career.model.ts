@@ -2,7 +2,7 @@ import { ImageComp } from "src/app/components/components.model";
 import { Entity, NamedEntity } from "../../entities.model";
 import { SchoolEntity } from "../school/school.model";
 import { WorkplaceEntity } from "../workplace/workplace.model";
-import { personIcon, schoolIcon, workIcon } from "src/app/components/components.constants";
+import { personIcon, schoolIcon, workIcon } from "src/app/components/icons.constants";
 import { SkillEntity } from "../../skills/skill/skill.model";
 
 export interface CareerEntity extends NamedEntity {

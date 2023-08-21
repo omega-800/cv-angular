@@ -16,7 +16,7 @@ import {
   smileIcon,
   codeIcon,
   paintIcon,
-} from 'src/app/components/components.constants';
+} from 'src/app/components/icons.constants';
 import { ImageComp } from 'src/app/components/components.model';
 
 @Injectable({
@@ -104,11 +104,11 @@ export class SkillCategoriesService {
     return subCat.name === 'Informatik'
       ? codeIcon
       : subCat.name === 'Pädagogik'
-      ? heartIcon
-      : subCat.name === 'Kunst'
-      ? paintIcon
-      : subCat.name === 'Gesundheit'
-      ? smileIcon
-      : globeIcon;
+        ? heartIcon
+        : subCat.name === 'Kunst'
+          ? paintIcon
+          : subCat.name === 'Gesundheit'
+            ? smileIcon
+            : globeIcon;
   }
 }

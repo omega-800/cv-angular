@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { AddressEntity } from 'src/app/services/address/address/address.model';
-import { addressIcon, linkTypes } from '../../components.constants';
+import { linkTypes } from '../../components.constants';
 import { ImageComp, LinkTypes } from '../../components.model';
 import { openLink } from '../links.util';
 import { ButtonComponent } from '../button/button.component';
+import { addressIcon } from '../../icons.constants';
 
 @Component({
   selector: 'app-address',

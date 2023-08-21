@@ -7,11 +7,6 @@ import {
 } from 'src/app/services/career/career/career.model';
 import { CareerService } from 'src/app/services/career/career/career.service';
 import {
-  contactIcon,
-  addressIcon,
-  arrowIcon,
-  urlIcon,
-  infoIcon,
   Direction,
   loginMessage,
   authMessage,
@@ -34,6 +29,7 @@ import { DropDownAnimation, LeftToRightAnimation } from 'src/app/animations';
 import { DatePipe } from 'src/app/pipes/date/date.pipe';
 import { TooltipComponent } from '../../general/tooltip/tooltip.component';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { contactIcon, addressIcon, arrowIcon, urlIcon, infoIcon } from '../../icons.constants';
 
 @Component({
   selector: 'app-career',
@@ -96,7 +92,7 @@ export class CareerComponent {
         () => this.scroller.scrollToAnchor(this.selectedCareerID),
         800
       );
-    } catch (e) {}
+    } catch (e) { }
   }
 
   getProjects(careerID: string): ProjectEntity[] {

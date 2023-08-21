@@ -1,18 +1,9 @@
 import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, HostListener, Input } from '@angular/core';
 import { ImageComp, URLComp } from '../../components.model';
 import { openLink } from '../links.util';
-import { Direction } from '../../components.constants';
+import { Direction, ScreenVars, screenVariables } from '../../components.constants';
 import { NgStyle, NgIf } from '@angular/common';
 import { TooltipAnimation } from 'src/app/animations';
-
-
-export interface ScreenVars {
-  [name: string]: {
-    breakpoint: number;
-    wrapper: number;
-    tooltipWidth: number;
-  }
-}
 
 @Component({
   selector: 'app-tooltip',
@@ -30,34 +21,7 @@ export class TooltipComponent {
   @Input() icon?: ImageComp;
   @Input() link?: URLComp;
   visible: boolean = false;
-
-  screenVariables: ScreenVars = {
-    mobile: {
-      breakpoint: 480,
-      wrapper: 90,
-      tooltipWidth: 80
-    },
-    tablet: {
-      breakpoint: 768,
-      wrapper: 90 / 1.2,
-      tooltipWidth: 70
-    },
-    laptop: {
-      breakpoint: 1024,
-      wrapper: 90 / 1.3,
-      tooltipWidth: 60
-    },
-    desktop: {
-      breakpoint: 1200,
-      wrapper: 90 / 1.5,
-      tooltipWidth: 50
-    },
-    large: {
-      breakpoint: 99999,
-      wrapper: 90 / 1.7,
-      tooltipWidth: 30
-    },
-  } as const
+  screenVariables = screenVariables;
 
   @HostBinding('class')
   get class_binding() {

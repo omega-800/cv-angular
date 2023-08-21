@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ImageComp, LinkTypes } from '../../components.model';
-import { Direction, arrowIcon, linkTypes, lockIcon } from '../../components.constants';
+import { Direction, linkTypes } from '../../components.constants';
 import * as assets from 'src/assets/fileStructure.json';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ImageComponent } from '../image/image.component';
@@ -9,6 +9,7 @@ import { DropDownAnimation } from 'src/app/animations';
 import { openLink } from '../links.util';
 import { ButtonComponent } from '../button/button.component';
 import { TooltipComponent } from '../tooltip/tooltip.component';
+import { arrowIcon, lockIcon } from '../../icons.constants';
 
 @Component({
   selector: 'app-contentbox',

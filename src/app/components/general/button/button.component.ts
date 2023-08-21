@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, HostBinding, HostListener, Input } from '@angular/core';
 import { ImageComp, LinkType, LinkTypes } from '../../components.model';
-import { Direction, authMessage, linkTypes, lockIcon, loginMessage } from '../../components.constants';
+import { Direction, linkTypes } from '../../components.constants';
 import { TooltipComponent } from '../tooltip/tooltip.component';
 import { NgIf } from '@angular/common';
+import { lockIcon } from '../../icons.constants';
 
 @Component({
   selector: 'app-button',

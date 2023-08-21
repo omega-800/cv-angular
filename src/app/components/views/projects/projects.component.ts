@@ -5,28 +5,21 @@ import { openLink } from '../../general/links.util';
 import {
   authMessage,
   linkTypes,
-  lockIcon,
   loginMessage,
 } from '../../components.constants';
 import { LinkTypes } from '../../components.model';
 import {
-  CareerEntity,
   CareerTypes,
   careerTypes,
 } from 'src/app/services/career/career/career.model';
-import { CareerService } from 'src/app/services/career/career/career.service';
-import { PersonService } from 'src/app/services/person/person/person.service';
-import { PersonEntity } from 'src/app/services/person/person/person.model';
 import { SkillsFilterService } from 'src/app/services/filter/skills-filter/skills-filter.service';
 import {
   projectSortProps,
   projectSortValues,
 } from 'src/app/pipes/projects-sort/projects-sort.model';
 import {
-  FilterCategoryEntity,
   FiltersEntity,
   SortEntity,
-  TagEntity,
 } from 'src/app/services/filter/filter.model';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { ProjectFilterService } from 'src/app/services/filter/project-filter/project-filter.service';

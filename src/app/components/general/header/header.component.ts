@@ -6,7 +6,7 @@ import { TooltipComponent } from '../tooltip/tooltip.component';
 import { KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { SetInterest, SetLanguage } from 'src/app/store/app/app.actions';
-import { Direction, homeIcon, imageIcon, personIcon, schoolIcon } from '../../components.constants';
+import { homeIcon, imageIcon, personIcon, schoolIcon } from '../../icons.constants';
 import { ImageComp } from '../../components.model';
 import { DropDownAnimation, TooltipAnimation } from 'src/app/animations';
 
@@ -18,6 +18,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { Direction } from '../../components.constants';
 
 @Component({
   selector: 'app-header',

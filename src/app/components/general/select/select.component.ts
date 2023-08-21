@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DropDownAnimation } from 'src/app/animations';
 import { Entity } from 'src/app/services/entities.model';
 import { ImageComp } from '../../components.model';
-import { arrowIcon } from '../../components.constants';
+import { arrowIcon } from '../../icons.constants';
 import { Observable } from 'rxjs';
 
 @Component({

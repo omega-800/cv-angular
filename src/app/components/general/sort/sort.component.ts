@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { arrowIcon } from '../../components.constants';
+import { arrowIcon } from '../../icons.constants';
 import { FullSortEntity, SortEntity } from 'src/app/services/filter/filter.model';
 import { ImageComp } from '../../components.model';
 import { NgFor } from '@angular/common';

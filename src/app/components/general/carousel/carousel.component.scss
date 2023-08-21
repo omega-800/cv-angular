@@ -1,6 +1,27 @@
 @use "src/scss/variables.scss" as variables;
 @use "src/scss/mixins.scss" as mixins;
-@import "carousel.mixin.scss";
+
+@mixin arrow($direction, $transform) {
+    #{$direction}: 0;
+
+    & div {
+        position: absolute;
+        top: 50%;
+        @include mixins.transition(#{$direction}, -15%);
+
+        & i {
+            #{$direction}: variables.$elem-padding;
+            transform: rotate(#{$transform});
+            -webkit-transform: rotate(#{$transform});
+        }
+    }
+
+    &:hover {
+        & div {
+            #{$direction}: 0;
+        }
+    }
+}
 
 :host {
     width: 100%;
@@ -24,11 +45,11 @@
             }
         }
 
-        &.arrow {
+        & .arrow {
             position: absolute;
             bottom: 0;
             height: 100%;
-            width: 50%;
+            width: 30%;
             z-index: variables.$middle;
             overflow: hidden;
 
@@ -68,7 +89,7 @@
         width: 100%;
         padding-top: variables.$elem-padding;
 
-        & > div {
+        &>div {
             height: variables.$elem-size;
             width: variables.$elem-border-radius;
             border: variables.$thin solid variables.$cool;

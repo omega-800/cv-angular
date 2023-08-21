@@ -16,7 +16,7 @@ import { SkillService } from '../../skills/skill/skill.service';
 import { ImageComp } from 'src/app/components/components.model';
 import { ClientService } from '../client/client.service';
 import { Store } from '@ngxs/store';
-import { lockIcon } from 'src/app/components/components.constants';
+import { lockIcon } from 'src/app/components/icons.constants';
 import { AuthService } from '../../auth/auth.service';
 
 @Injectable({

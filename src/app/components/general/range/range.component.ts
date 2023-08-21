@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FilterCategoryEntity } from 'src/app/services/filter/filter.model';
-import { arrowIcon } from '../../components.constants';
+import { arrowIcon } from '../../icons.constants';
 import { ImageComp } from '../../components.model';
 
 @Component({

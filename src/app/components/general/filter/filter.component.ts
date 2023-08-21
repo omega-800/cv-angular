@@ -15,14 +15,13 @@ import {
 } from 'src/app/services/filter/filter.model';
 import { projectFilterProps } from 'src/app/services/filter/project-filter/project-filter.model';
 import { ImageComp } from '../../components.model';
-import { arrowIcon } from '../../components.constants';
+import { arrowIcon } from '../../icons.constants';
 import { RangeComponent } from '../range/range.component';
 import { NgIf, NgFor } from '@angular/common';
 import { Store } from '@ngxs/store';
 import { Interest } from 'src/app/store/app/app.model';
 import { DropDownAnimation } from 'src/app/animations';
 import { SelectComponent } from '../select/select.component';
-import { Entity } from 'src/app/services/entities.model';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { NgVar } from 'src/app/directives/ng-var.directive';
 

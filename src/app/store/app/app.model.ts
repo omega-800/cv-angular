@@ -1,4 +1,4 @@
-import { codeIcon, englishIcon, frenchIcon, germanIcon, globeIcon, heartIcon, paintIcon, russianIcon, smileIcon } from "src/app/components/components.constants"
+import { codeIcon, englishIcon, frenchIcon, germanIcon, globeIcon, heartIcon, paintIcon, russianIcon, smileIcon } from "src/app/components/icons.constants"
 import { ImageComp } from "src/app/components/components.model"
 
 export enum Interest {

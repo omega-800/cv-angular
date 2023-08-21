@@ -1,29 +1,11 @@
 <div *ngIf="isNotSVG && !isZoomedIn" class="img-bg">
-  <div
-    [ngStyle]="loaded ? { 'background-image': 'url(' + image.path + ')' } : {}"
-  ></div>
+  <div [ngStyle]="loaded ? { 'background-image': 'url(' + image.path + ')' } : {}"></div>
 </div>
-<img
-  src="{{ image.path }}"
-  alt="{{ image.alt }}"
-  loading="lazy"
-  (mouseenter)="hovering = true"
-  (mouseleave)="hovering = false"
-  [class]="isZoomedIn ? 'zoomedIn' : ''"
-/>
-<img
-  *ngIf="!isZoomedIn && hovering"
-  (click)="isZoomedIn = !isZoomedIn"
-  [class]="'preview-image zoomIcon'"
-  [src]="zoomInIcon.path"
-  [alt]="zoomInIcon.alt"
-  loading="lazy"
-/>
-<img
-  *ngIf="isZoomedIn && hovering"
-  (click)="isZoomedIn = !isZoomedIn"
-  [class]="'preview-image zoomIcon'"
-  [src]="zoomOutIcon.path"
-  [alt]="zoomOutIcon.alt"
-  loading="lazy"
-/>
+<div [class]="(isZoomedIn ? 'zoomedIn ' : '')+'img-container'" (click)="isZoomedIn = !isZoomedIn">
+  <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy" class="img-main" (mouseover)="hovering = true"
+    (mouseout)="hovering = false" />
+  <img *ngIf="!isZoomedIn && hovering" [class]="'preview-image zoomIcon'" [src]="zoomInIcon.path" [alt]="zoomInIcon.alt"
+    loading="lazy" />
+  <img *ngIf="isZoomedIn && hovering" [class]="'preview-image zoomIcon'" [src]="zoomOutIcon.path"
+    [alt]="zoomOutIcon.alt" loading="lazy" />
+</div>
