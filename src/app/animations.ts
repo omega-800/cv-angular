@@ -198,6 +198,25 @@ export const TooltipAnimation = trigger('tooltipAnimation', [
     ]),
 ])
 
+export const CarouselAnimation = trigger('carouselAnimation', [
+    transition("void => left", [
+        style({ opacity: 0, transform: `translateX(-100%)` }),
+        animate(`${slow} ease-in-out`, style({ opacity: 1, transform: "translateX(0%)" }))
+    ]),
+    transition("void => right", [
+        style({ opacity: 0, transform: `translateX(100%)` }),
+        animate(`${slow} ease-in-out`, style({ opacity: 1, transform: "translateX(0%)" }))
+    ]),
+    transition("left => void", [
+        style({ opacity: 1, transform: 'translateX(0%)' }),
+        animate(`${slow} ease-in-out`, style({ opacity: 0, transform: `translateX(100%)` }))
+    ]),
+    transition("right => void", [
+        style({ opacity: 1, transform: 'translateX(0%)' }),
+        animate(`${slow} ease-in-out`, style({ opacity: 0, transform: `translateX(-100%)` }))
+    ]),
+])
+
 export const slideInAnimation =
     trigger('routeAnimations', [
         transition('* => ProjectsPage', slideLeft),

@@ -1,21 +1,22 @@
 import {
   AfterContentInit,
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   ElementRef,
   Input,
 } from '@angular/core';
 import { ImageComp } from '../../components.model';
 import { NgIf, NgStyle } from '@angular/common';
-import { ScreenVars, screenVariables } from '../../components.constants';
+import { screenVariables } from '../../components.constants';
 import { zoomInIcon, zoomOutIcon } from '../../icons.constants';
 import { FadeAnimation } from 'src/app/animations';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex-center' },
   standalone: true,
   imports: [NgStyle, NgIf],
@@ -31,13 +32,14 @@ export class ImageComponent implements AfterContentInit {
   hovering = false;
   screenVariables = screenVariables;
 
-  constructor(private elRef: ElementRef) { }
+  constructor(private cdref: ChangeDetectorRef, private elRef: ElementRef) { }
   ngOnInit() {
     this.isNotSVG = !this.image.path.endsWith('svg');
   }
   ngAfterContentInit() {
-    this.loaded = true;
     this.calculateSize()
+  }
+  ngAfterContentChecked() {
   }
 
   calculateSize() {
@@ -54,6 +56,9 @@ export class ImageComponent implements AfterContentInit {
       this.elRef.nativeElement.style.setProperty('--widthfull', sr > r ? '100%' : `${sr / r * 100}%`);
       this.elRef.nativeElement.style.setProperty('--height', h > w ? '100%' : `${h / w * 100}%`);
       this.elRef.nativeElement.style.setProperty('--width', h > w ? `${w / h * 100}%` : '100%');
+      imageElem.classList.add('loaded');
+      this.loaded = true;
+      this.cdref.detectChanges();
     }
   }
 }

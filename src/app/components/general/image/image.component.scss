@@ -64,8 +64,8 @@ $img-height-x: 50vh;
             height: 100%;
             background-size: cover;
             background-position: center;
-            filter: blur(variables.$elem-size);
-            -webkit-filter: blur(variables.$elem-size);
+            filter: blur(variables.$elem-padding) brightness(75%);
+            -webkit-filter: blur(variables.$elem-padding) brightness(75%);
             z-index: variables.$below-bottom;
         }
     }
@@ -81,13 +81,22 @@ $img-height-x: 50vh;
         }
 
         & .img-main {
-            $img-height: var(--height);
-            $img-width: var(--width);
-            $img-margin-ver: calc((100% - var(--height))/2);
-            $img-margin-hor: calc((100% - var(--width))/2);
-            height: $img-height;
-            width: $img-width;
-            margin: $img-margin-ver $img-margin-hor;
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &.loaded {
+                visibility: visible;
+                opacity: 1;
+                $img-height: var(--height);
+                $img-width: var(--width);
+                $img-margin-ver: calc((100% - var(--height))/2);
+                $img-margin-hor: calc((100% - var(--width))/2);
+                height: $img-height;
+                width: $img-width;
+                margin: $img-margin-ver $img-margin-hor;
+            }
         }
 
         &.zoomedIn {

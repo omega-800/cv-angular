@@ -1,9 +1,6 @@
 import {
-  ChangeDetectionStrategy,
   Component,
-  HostListener,
   Input,
-  OnInit,
 } from '@angular/core';
 import { linkTypes } from 'src/app/components/components.constants';
 import { LinkTypes } from 'src/app/components/components.model';
@@ -11,8 +8,8 @@ import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
 import { Direction } from 'src/app/components/components.constants';
 import { TooltipComponent } from '../../tooltip/tooltip.component';
 import { NgFor, NgIf } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectService } from 'src/app/services/project/project/project.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-skill-item',

@@ -1,8 +1,9 @@
 import glob, shutil, os
 from PIL import Image
+import re
 
-root_path = "../src/assets/content/projects"
-edited_path = "../src/assets/content/projects_edited"
+root_path = "../src/assets/content/projects_bak"
+edited_path = "../src/assets/content/projects"
 
 image_filetypes_to = (".webp", ".avif")
 image_filetypes_from = (".png", ".jpg", ".gif", ".jpeg", ".svg")
@@ -16,7 +17,7 @@ shutil.rmtree(edited_path)
 for path in folders:
     first = True
     for file in (file for file in glob.glob(path+"/*") if file.endswith(all_filetypes)):
-        newfile = file.replace(root_path, edited_path)
+        newfile = re.sub(r'\s',"_",file.replace(root_path, edited_path))
         if not os.path.exists(newfile[:newfile.rindex('/')]):
             os.makedirs(newfile[:newfile.rindex('/')])
         #if file.endswith(filetypes+image_filetypes_to):

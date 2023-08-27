@@ -28,7 +28,15 @@ export class SelectComponent implements OnInit {
   arrowIcon: ImageComp = arrowIcon;
 
   ngOnInit() {
-    this.selectedFields$?.subscribe(res => this.selected = res)
+    this.selectedFields$?.subscribe(res => this.selected = res);
+    document.addEventListener('click', (e) => this.collapse(e))
+    document.addEventListener('touchstart', (e) => this.collapse(e))
+  }
+
+  collapse(e: Event) {
+    if (!!e.target && (!(e.target as HTMLElement).closest('.tag') && !(e.target as HTMLElement).closest('.showTags'))) {
+      this.isActive = false;
+    }
   }
 
   getName(): string {

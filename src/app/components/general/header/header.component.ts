@@ -109,6 +109,17 @@ export class HeaderComponent {
 
   ngOnInit() {
     this.loginForm.reset({ email: this.email, password: this.password });
+    document.addEventListener('click', (e) => this.closeAll(e))
+    document.addEventListener('touchstart', (e) => this.closeAll(e))
+  }
+
+  closeAll(e: Event) {
+    if (!!e.target && (!(e.target as HTMLElement).closest('.mobileicon') && !(e.target as HTMLElement).closest('.mobile')) || (e.target as HTMLElement).closest('.close')) {
+      this.dropdownActive = false;
+      this.dropdownLoginActive = false;
+      this.selectedRegister = false;
+      this.btcActive = false;
+    }
   }
 
   get email() {

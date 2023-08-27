@@ -163,8 +163,8 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/art/music/ableton": [
-    "Screenshot 2023-07-16 131714.webp",
-    "Screenshot 2023-07-16 131822.webp",
+    "Screenshot_2023-07-16_131714.webp",
+    "Screenshot_2023-07-16_131822.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/art/music/bass": [
@@ -351,12 +351,12 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/csharp/stranded": [
-    "Screenshot 2023-07-16 131354.webp",
+    "Screenshot_2023-07-16_131354.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/admincenter": [
-    "Screenshot 2023-07-16 123709.webp",
-    "Screenshot 2023-07-16 123752.webp",
+    "Screenshot_2023-07-16_123709.webp",
+    "Screenshot_2023-07-16_123752.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/aufsetzen": [
@@ -364,10 +364,10 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/comparison": [
-    "Screenshot 2023-07-16 124146.webp",
-    "Screenshot 2023-07-16 124235.webp",
-    "Screenshot 2023-07-16 124310.webp",
-    "Screenshot 2023-07-16 124336.webp",
+    "Screenshot_2023-07-16_124146.webp",
+    "Screenshot_2023-07-16_124235.webp",
+    "Screenshot_2023-07-16_124310.webp",
+    "Screenshot_2023-07-16_124336.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/idageverification": [
@@ -401,8 +401,8 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/seleniumtest": [
-    "Screenshot 2023-08-07 215952.webp",
-    "Screenshot 2023-08-07 220018.webp",
+    "Screenshot_2023-08-07_215952.webp",
+    "Screenshot_2023-08-07_220018.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/inteco/seo": [
@@ -467,14 +467,14 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/python/finance": [
-    "Screenshot 2023-07-16 121846.webp",
-    "Screenshot 2023-07-16 122104.webp",
-    "Screenshot 2023-07-16 122858.webp",
-    "Screenshot 2023-07-16 123044.webp",
+    "Screenshot_2023-07-16_121846.webp",
+    "Screenshot_2023-07-16_122104.webp",
+    "Screenshot_2023-07-16_122858.webp",
+    "Screenshot_2023-07-16_123044.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/python/stranded": [
-    "Screenshot 2023-07-16 130740.webp",
+    "Screenshot_2023-07-16_130740.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/unity/dungeon": [
@@ -491,7 +491,7 @@
   ],
   "src/assets/content/projects/it/web/cv": [
     "1.webp",
-    "Screenshot 2023-08-06 160218.webp",
+    "Screenshot_2023-08-06_160218.webp",
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/web/cv_old": [
@@ -531,6 +531,948 @@
     "thumbnail.webp"
   ],
   "src/assets/content/projects/it/web/rus": [
+    "html_rus.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/art/drawing": [
+    "IMG-20180115-WA0008.webp",
+    "IMG-20180908-WA0000.webp",
+    "IMG-20190824-WA0003.webp",
+    "IMG-20190829-WA0004(1).webp",
+    "IMG-20190920-WA0004.webp",
+    "IMG-20200205-WA0010.webp",
+    "IMG-20200211-WA0005.webp",
+    "IMG-20200305-WA0004.webp",
+    "IMG_20190914_164035303.webp",
+    "IMG_20190914_164104499.webp",
+    "IMG_20191117_004804194.webp",
+    "IMG_20200126_141737087.webp",
+    "IMG_20200126_141756422.webp",
+    "IMG_20200126_141827288.webp",
+    "IMG_20200126_141846293.webp",
+    "IMG_20200126_141917343.webp",
+    "IMG_20200126_141945659.webp",
+    "IMG_20200304_124728.webp",
+    "IMG_20200316_131535.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/art/paint": [
+    "IMG-20201008-WA0004.webp",
+    "IMG-20201008-WA0006.webp",
+    "IMG_20190914_164150078.webp",
+    "IMG_20200411_201316.webp",
+    "IMG_20200525_161222712.webp",
+    "IMG_20200527_123745671.webp",
+    "IMG_20200612_151241127_HDR.webp",
+    "IMG_20200612_151246060.webp",
+    "IMG_20200612_151252478.webp",
+    "IMG_20200811_140831.webp",
+    "IMG_20200811_140856.webp",
+    "IMG_20200811_140916.webp",
+    "IMG_20200811_140930.webp",
+    "Snapchat-1512769248.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/art/spray": [
+    "IMG-20190825-WA0006.webp",
+    "IMG-20190825-WA0007.webp",
+    "IMG-20190831-WA0018.webp",
+    "IMG-20190831-WA0019.webp",
+    "IMG-20200201-WA0027.webp",
+    "IMG-20200305-WA0016.webp",
+    "IMG-20200305-WA0036.webp",
+    "IMG-20200417-WA0019.webp",
+    "IMG-20200621-WA0017.webp",
+    "IMG-20201206-WA0000.webp",
+    "IMG-20201206-WA0001.webp",
+    "IMG-20220422-WA0000.webp",
+    "IMG-20221106-WA0007.webp",
+    "IMG-20221106-WA0027.webp",
+    "IMG-20221106-WA0028.webp",
+    "IMG_20190817_181341786.webp",
+    "IMG_20190824_213106560.webp",
+    "IMG_20190828_193232965.webp",
+    "IMG_20190905_192136975.webp",
+    "IMG_20191011_181053273.webp",
+    "IMG_20191106_190354710.webp",
+    "IMG_20200201_175917924.webp",
+    "IMG_20200223_143112139.webp",
+    "IMG_20200305_180810.webp",
+    "IMG_20200314_205424.webp",
+    "IMG_20200314_210545.webp",
+    "IMG_20200316_171119.webp",
+    "IMG_20200316_171948.webp",
+    "IMG_20200330_191231.webp",
+    "IMG_20200417_142324.webp",
+    "IMG_20200418_191747.webp",
+    "IMG_20200418_202453.webp",
+    "IMG_20200419_133903.webp",
+    "IMG_20200419_134442.webp",
+    "IMG_20200510_150427.webp",
+    "IMG_20200510_164421.webp",
+    "IMG_20200518_195333946_HDR.webp",
+    "IMG_20200518_195857971.webp",
+    "IMG_20200518_205608000.webp",
+    "IMG_20200527_215829358.webp",
+    "IMG_20200527_215849260.webp",
+    "IMG_20200527_223549211.webp",
+    "IMG_20200605_201410361.webp",
+    "IMG_20200626_131702198_HDR.webp",
+    "IMG_20201126_210250.webp",
+    "IMG_20201126_210306.webp",
+    "IMG_20201206_153316.webp",
+    "IMG_20201206_160919.webp",
+    "IMG_20210424_202802_1.webp",
+    "IMG_20210425_163328.webp",
+    "IMG_20210425_163337.webp",
+    "IMG_2022-04-21-20-51-46-071.webp",
+    "Screenshot_20200223-203654.webp",
+    "Snapchat-1204804508.webp",
+    "Snapchat-1593840974.mp4",
+    "Snapchat-1713183982.webp",
+    "Snapchat-637363521.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/music/ableton": [
+    "Screenshot 2023-07-16 131714.webp",
+    "Screenshot 2023-07-16 131822.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/music/bass": [
+    "A.webp",
+    "IMG_20230709_115444707.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/music/drums": [
+    "IMG_20230709_115405593.webp",
+    "IMG_20230709_115419434.webp",
+    "IMG_20230709_115432240_BURST000_COVER_TOP.webp",
+    "IMG_20230709_115615524.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/music/flstudio": [
+    "IMG_20230709_115452952.webp",
+    "IMG_20230709_115457877.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/music/guitar": [
+    "IMG_20230709_115505750.webp",
+    "IMG_20230709_115540192.webp",
+    "IMG_20230709_115554779.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/other/jewelery": [
+    "IMG_20230807_210354762.webp",
+    "IMG_20230807_210406919.webp",
+    "IMG_20230807_210417025.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/other/mosaic": [
+    "IMG_20190914_163927123.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/other/string": [
+    "IMG_20190914_162331666.webp",
+    "IMG_20190914_162341553.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/paper/kusudama": [
+    "1.webp",
+    "10.webp",
+    "11.webp",
+    "12.webp",
+    "13.webp",
+    "14.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "8.webp",
+    "9.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/paper/origami": [
+    "A.webp",
+    "AA.webp",
+    "IMG_20200811_141220.webp",
+    "IMG_20221223_201836553.webp",
+    "IMG_20221223_201851650.webp",
+    "IMG_20221223_201902220.webp",
+    "IMG_20221223_201929042.webp",
+    "IMG_20221223_201940360.webp",
+    "IMG_20221223_201943959.webp",
+    "IMG_20221223_202001647.webp",
+    "IMG_20221225_125029388.webp",
+    "IMG_20221225_125033559.webp",
+    "IMG_20221225_125037941.webp",
+    "IMG_20221225_125039479.webp",
+    "IMG_20221225_125043220.webp",
+    "IMG_20221225_184348174.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/bags": [
+    "IMG-20180428-WA0004.webp",
+    "IMG_20200604_141408085.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/metal": [
+    "IMG_20230807_204750470.webp",
+    "IMG_20230807_204813413.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/pullover": [
+    "IMG-20230206-WA0006.webp",
+    "IMG-20230206-WA0008.webp",
+    "IMG-20230401-WA0003.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/punk": [
+    "IMG_20230807_204658379.webp",
+    "IMG_20230807_204718158.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/teddy": [
+    "IMG-20190910-WA0002.webp",
+    "IMG_20190910_101957000.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/tiedye": [
+    "AA.webp",
+    "IMG_20220606_142233252.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/textile/wallet": [
+    "A.webp",
+    "IMG-20230401-WA0005.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/wood/cat": [
+    "IMG-20230407-WA0008.webp",
+    "IMG-20230407-WA0009.webp",
+    "IMG-20230407-WA0010.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/wood/cutlery": [
+    "IMG_20230807_210218763.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/art/wood/plug": [
+    "A.webp",
+    "IMG-20230113-WA0001.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/cooking/food": [
+    "IMG_20230807_200941470.webp",
+    "IMG_20230807_201001491.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/cooking/lebkuchen": [
+    "IMG-20221125-WA0015.webp",
+    "IMG-20221125-WA0016.webp",
+    "IMG-20221125-WA0017.webp",
+    "IMG-20221125-WA0018.webp",
+    "IMG-20221125-WA0019.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/nature/camping": [
+    "IMG_20230505_113539726_HDR.webp",
+    "IMG_20230529_054630104.webp",
+    "IMG_20230719_081931435.webp",
+    "IMG_20230719_234606.webp",
+    "IMG_20230722_105445360.webp",
+    "IMG_20230722_105448701.webp",
+    "IMG_20230722_105451876.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/nature/hiking": [
+    "IMG_20230528_164024693.webp",
+    "IMG_20230529_054337496.webp",
+    "IMG_20230529_054341116_HDR.webp",
+    "IMG_20230624_191523019.webp",
+    "IMG_20230624_191525405_HDR.webp",
+    "IMG_20230720_182521.webp",
+    "IMG_20230720_182712.webp",
+    "IMG_20230720_184157.webp",
+    "IMG_20230720_185125.webp",
+    "IMG_20230721_202051073.webp",
+    "IMG_20230721_203534907.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/sports/bike": [
+    "IMG_20230719_081923150.webp",
+    "IMG_20230721_184028740.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/sports/skate": [
+    "1.webp",
+    "IMG-20180629-WA0000.webp",
+    "IMG-20180912-WA0000.webp",
+    "IMG-20180912-WA0002.webp",
+    "IMG-20181008-WA0015.webp",
+    "IMG-20181113-WA0028.webp",
+    "IMG-20191028-WA0020.webp",
+    "IMG-20191028-WA0021.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/health/sports/tabletennis": [
+    "IMG-20230407-WA0006.webp",
+    "IMG-20230407-WA0007.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/csharp/stranded": [
+    "Screenshot 2023-07-16 131354.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/admincenter": [
+    "Screenshot 2023-07-16 123709.webp",
+    "Screenshot 2023-07-16 123752.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/aufsetzen": [
+    "buehlerweine.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/comparison": [
+    "Screenshot 2023-07-16 124146.webp",
+    "Screenshot 2023-07-16 124235.webp",
+    "Screenshot 2023-07-16 124310.webp",
+    "Screenshot 2023-07-16 124336.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/idageverification": [
+    "config.webp",
+    "id.webp",
+    "mail.webp",
+    "mail1.webp",
+    "mail2.webp",
+    "pass.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/popup": [
+    "big.webp",
+    "config.webp",
+    "small.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/producer": [
+    "a.webp",
+    "b.webp",
+    "c.webp",
+    "d.webp",
+    "e.webp",
+    "f.webp",
+    "g.webp",
+    "h.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/scss_script": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/seleniumtest": [
+    "Screenshot 2023-08-07 215952.webp",
+    "Screenshot 2023-08-07 220018.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/seo": [
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/sharebtn": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/tasteprofile": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/translate": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/inteco/warten": [
+    "firstwinenew.webp",
+    "terroirist.webp",
+    "thumbnail.webp",
+    "waespi.webp"
+  ],
+  "src/assets/content/projects_bak/it/java/glassfish": [
+    "glassfish_byod.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/java/glassfish_books": [
+    "glassfish_books.webp",
+    "glassfish_books2.webp",
+    "glassfish_books3.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/java/random": [
+    "java_klassen.webp",
+    "java_klassen2.webp",
+    "java_konverter.webp",
+    "java_sort.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/java/swing": [
+    "java_swing.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/java/textgame": [
+    "java_game.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/java/uno": [
+    "java_uno.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/python/ernestovargas": [
+    "python_ernestovargas.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/python/finance": [
+    "Screenshot 2023-07-16 121846.webp",
+    "Screenshot 2023-07-16 122104.webp",
+    "Screenshot 2023-07-16 122858.webp",
+    "Screenshot 2023-07-16 123044.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/python/stranded": [
+    "Screenshot 2023-07-16 130740.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/unity/dungeon": [
+    "cSharp_dungeon.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/unity/rocket": [
+    "cSharp_rocket.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/btc": [
+    "btc.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/cv": [
+    "1.webp",
+    "Screenshot 2023-08-06 160218.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/cv_old": [
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/html": [
+    "html_avocado.webp",
+    "html_drugpedia.webp",
+    "html_vallora.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/immob": [
+    "html_dad.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/jukebox": [
+    "html_jukebox.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/php": [
+    "php_galerie.webp",
+    "php_karten.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/php_forms": [
+    "php_formulare.webp",
+    "php_formulare2.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/react_shirtshop": [
+    "react_shirtshop1.webp",
+    "react_shirtshop2.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_bak/it/web/rus": [
+    "html_rus.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/art/drawing": [
+    "IMG-20180115-WA0008.webp",
+    "IMG-20180908-WA0000.webp",
+    "IMG-20190824-WA0003.webp",
+    "IMG-20190829-WA0004%281%29.webp",
+    "IMG-20190920-WA0004.webp",
+    "IMG-20200205-WA0010.webp",
+    "IMG-20200211-WA0005.webp",
+    "IMG-20200305-WA0004.webp",
+    "IMG_20190914_164035303.webp",
+    "IMG_20190914_164104499.webp",
+    "IMG_20191117_004804194.webp",
+    "IMG_20200126_141737087.webp",
+    "IMG_20200126_141756422.webp",
+    "IMG_20200126_141827288.webp",
+    "IMG_20200126_141846293.webp",
+    "IMG_20200126_141917343.webp",
+    "IMG_20200126_141945659.webp",
+    "IMG_20200304_124728.webp",
+    "IMG_20200316_131535.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/art/paint": [
+    "IMG-20201008-WA0004.webp",
+    "IMG-20201008-WA0006.webp",
+    "IMG_20190914_164150078.webp",
+    "IMG_20200411_201316.webp",
+    "IMG_20200525_161222712.webp",
+    "IMG_20200527_123745671.webp",
+    "IMG_20200612_151241127_HDR.webp",
+    "IMG_20200612_151246060.webp",
+    "IMG_20200612_151252478.webp",
+    "IMG_20200811_140831.webp",
+    "IMG_20200811_140856.webp",
+    "IMG_20200811_140916.webp",
+    "IMG_20200811_140930.webp",
+    "Snapchat-1512769248.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/art/spray": [
+    "IMG-20190825-WA0006.webp",
+    "IMG-20190825-WA0007.webp",
+    "IMG-20190831-WA0018.webp",
+    "IMG-20190831-WA0019.webp",
+    "IMG-20200201-WA0027.webp",
+    "IMG-20200305-WA0016.webp",
+    "IMG-20200305-WA0036.webp",
+    "IMG-20200417-WA0019.webp",
+    "IMG-20200621-WA0017.webp",
+    "IMG-20201206-WA0000.webp",
+    "IMG-20201206-WA0001.webp",
+    "IMG-20220422-WA0000.webp",
+    "IMG-20221106-WA0007.webp",
+    "IMG-20221106-WA0027.webp",
+    "IMG-20221106-WA0028.webp",
+    "IMG_20190817_181341786.webp",
+    "IMG_20190824_213106560.webp",
+    "IMG_20190828_193232965.webp",
+    "IMG_20190905_192136975.webp",
+    "IMG_20191011_181053273.webp",
+    "IMG_20191106_190354710.webp",
+    "IMG_20200201_175917924.webp",
+    "IMG_20200223_143112139.webp",
+    "IMG_20200305_180810.webp",
+    "IMG_20200314_205424.webp",
+    "IMG_20200314_210545.webp",
+    "IMG_20200316_171119.webp",
+    "IMG_20200316_171948.webp",
+    "IMG_20200330_191231.webp",
+    "IMG_20200417_142324.webp",
+    "IMG_20200418_191747.webp",
+    "IMG_20200418_202453.webp",
+    "IMG_20200419_133903.webp",
+    "IMG_20200419_134442.webp",
+    "IMG_20200510_150427.webp",
+    "IMG_20200510_164421.webp",
+    "IMG_20200518_195333946_HDR.webp",
+    "IMG_20200518_195857971.webp",
+    "IMG_20200518_205608000.webp",
+    "IMG_20200527_215829358.webp",
+    "IMG_20200527_215849260.webp",
+    "IMG_20200527_223549211.webp",
+    "IMG_20200605_201410361.webp",
+    "IMG_20200626_131702198_HDR.webp",
+    "IMG_20201126_210250.webp",
+    "IMG_20201126_210306.webp",
+    "IMG_20201206_153316.webp",
+    "IMG_20201206_160919.webp",
+    "IMG_20210424_202802_1.webp",
+    "IMG_20210425_163328.webp",
+    "IMG_20210425_163337.webp",
+    "IMG_2022-04-21-20-51-46-071.webp",
+    "Screenshot_20200223-203654.webp",
+    "Snapchat-1204804508.webp",
+    "Snapchat-1593840974.mp4",
+    "Snapchat-1713183982.webp",
+    "Snapchat-637363521.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/music/ableton": [
+    "Screenshot%202023-07-16%20131714.webp",
+    "Screenshot%202023-07-16%20131822.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/music/bass": [
+    "A.webp",
+    "IMG_20230709_115444707.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/music/drums": [
+    "IMG_20230709_115405593.webp",
+    "IMG_20230709_115419434.webp",
+    "IMG_20230709_115432240_BURST000_COVER_TOP.webp",
+    "IMG_20230709_115615524.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/music/flstudio": [
+    "IMG_20230709_115452952.webp",
+    "IMG_20230709_115457877.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/music/guitar": [
+    "IMG_20230709_115505750.webp",
+    "IMG_20230709_115540192.webp",
+    "IMG_20230709_115554779.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/other/jewelery": [
+    "IMG_20230807_210354762.webp",
+    "IMG_20230807_210406919.webp",
+    "IMG_20230807_210417025.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/other/mosaic": [
+    "IMG_20190914_163927123.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/other/string": [
+    "IMG_20190914_162331666.webp",
+    "IMG_20190914_162341553.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/paper/kusudama": [
+    "1.webp",
+    "10.webp",
+    "11.webp",
+    "12.webp",
+    "13.webp",
+    "14.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "8.webp",
+    "9.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/paper/origami": [
+    "A.webp",
+    "AA.webp",
+    "IMG_20200811_141220.webp",
+    "IMG_20221223_201836553.webp",
+    "IMG_20221223_201851650.webp",
+    "IMG_20221223_201902220.webp",
+    "IMG_20221223_201929042.webp",
+    "IMG_20221223_201940360.webp",
+    "IMG_20221223_201943959.webp",
+    "IMG_20221223_202001647.webp",
+    "IMG_20221225_125029388.webp",
+    "IMG_20221225_125033559.webp",
+    "IMG_20221225_125037941.webp",
+    "IMG_20221225_125039479.webp",
+    "IMG_20221225_125043220.webp",
+    "IMG_20221225_184348174.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/bags": [
+    "IMG-20180428-WA0004.webp",
+    "IMG_20200604_141408085.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/metal": [
+    "IMG_20230807_204750470.webp",
+    "IMG_20230807_204813413.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/pullover": [
+    "IMG-20230206-WA0006.webp",
+    "IMG-20230206-WA0008.webp",
+    "IMG-20230401-WA0003.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/punk": [
+    "IMG_20230807_204658379.webp",
+    "IMG_20230807_204718158.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/teddy": [
+    "IMG-20190910-WA0002.webp",
+    "IMG_20190910_101957000.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/tiedye": [
+    "AA.webp",
+    "IMG_20220606_142233252.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/textile/wallet": [
+    "A.webp",
+    "IMG-20230401-WA0005.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/wood/cat": [
+    "IMG-20230407-WA0008.webp",
+    "IMG-20230407-WA0009.webp",
+    "IMG-20230407-WA0010.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/wood/cutlery": [
+    "IMG_20230807_210218763.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/art/wood/plug": [
+    "A.webp",
+    "IMG-20230113-WA0001.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/cooking/food": [
+    "IMG_20230807_200941470.webp",
+    "IMG_20230807_201001491.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/cooking/lebkuchen": [
+    "IMG-20221125-WA0015.webp",
+    "IMG-20221125-WA0016.webp",
+    "IMG-20221125-WA0017.webp",
+    "IMG-20221125-WA0018.webp",
+    "IMG-20221125-WA0019.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/nature/camping": [
+    "IMG_20230505_113539726_HDR.webp",
+    "IMG_20230529_054630104.webp",
+    "IMG_20230719_081931435.webp",
+    "IMG_20230719_234606.webp",
+    "IMG_20230722_105445360.webp",
+    "IMG_20230722_105448701.webp",
+    "IMG_20230722_105451876.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/nature/hiking": [
+    "IMG_20230528_164024693.webp",
+    "IMG_20230529_054337496.webp",
+    "IMG_20230529_054341116_HDR.webp",
+    "IMG_20230624_191523019.webp",
+    "IMG_20230624_191525405_HDR.webp",
+    "IMG_20230720_182521.webp",
+    "IMG_20230720_182712.webp",
+    "IMG_20230720_184157.webp",
+    "IMG_20230720_185125.webp",
+    "IMG_20230721_202051073.webp",
+    "IMG_20230721_203534907.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/sports/bike": [
+    "IMG_20230719_081923150.webp",
+    "IMG_20230721_184028740.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/sports/skate": [
+    "1.webp",
+    "IMG-20180629-WA0000.webp",
+    "IMG-20180912-WA0000.webp",
+    "IMG-20180912-WA0002.webp",
+    "IMG-20181008-WA0015.webp",
+    "IMG-20181113-WA0028.webp",
+    "IMG-20191028-WA0020.webp",
+    "IMG-20191028-WA0021.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/health/sports/tabletennis": [
+    "IMG-20230407-WA0006.webp",
+    "IMG-20230407-WA0007.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/csharp/stranded": [
+    "Screenshot%202023-07-16%20131354.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/admincenter": [
+    "Screenshot%202023-07-16%20123709.webp",
+    "Screenshot%202023-07-16%20123752.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/aufsetzen": [
+    "buehlerweine.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/comparison": [
+    "Screenshot%202023-07-16%20124146.webp",
+    "Screenshot%202023-07-16%20124235.webp",
+    "Screenshot%202023-07-16%20124310.webp",
+    "Screenshot%202023-07-16%20124336.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/idageverification": [
+    "config.webp",
+    "id.webp",
+    "mail.webp",
+    "mail1.webp",
+    "mail2.webp",
+    "pass.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/popup": [
+    "big.webp",
+    "config.webp",
+    "small.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/producer": [
+    "a.webp",
+    "b.webp",
+    "c.webp",
+    "d.webp",
+    "e.webp",
+    "f.webp",
+    "g.webp",
+    "h.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/scss_script": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/seleniumtest": [
+    "Screenshot%202023-08-07%20215952.webp",
+    "Screenshot%202023-08-07%20220018.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/seo": [
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/sharebtn": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/tasteprofile": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/translate": [
+    "screenshot.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/inteco/warten": [
+    "firstwinenew.webp",
+    "terroirist.webp",
+    "thumbnail.webp",
+    "waespi.webp"
+  ],
+  "src/assets/content/projects_edited/it/java/glassfish": [
+    "glassfish_byod.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/java/glassfish_books": [
+    "glassfish_books.webp",
+    "glassfish_books2.webp",
+    "glassfish_books3.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/java/random": [
+    "java_klassen.webp",
+    "java_klassen2.webp",
+    "java_konverter.webp",
+    "java_sort.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/java/swing": [
+    "java_swing.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/java/textgame": [
+    "java_game.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/java/uno": [
+    "java_uno.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/python/ernestovargas": [
+    "python_ernestovargas.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/python/finance": [
+    "Screenshot%202023-07-16%20121846.webp",
+    "Screenshot%202023-07-16%20122104.webp",
+    "Screenshot%202023-07-16%20122858.webp",
+    "Screenshot%202023-07-16%20123044.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/python/stranded": [
+    "Screenshot%202023-07-16%20130740.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/unity/dungeon": [
+    "cSharp_dungeon.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/unity/rocket": [
+    "cSharp_rocket.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/btc": [
+    "btc.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/cv": [
+    "1.webp",
+    "Screenshot%202023-08-06%20160218.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/cv_old": [
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/html": [
+    "html_avocado.webp",
+    "html_drugpedia.webp",
+    "html_vallora.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/immob": [
+    "html_dad.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/jukebox": [
+    "html_jukebox.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/php": [
+    "php_galerie.webp",
+    "php_karten.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/php_forms": [
+    "php_formulare.webp",
+    "php_formulare2.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/react_shirtshop": [
+    "react_shirtshop1.webp",
+    "react_shirtshop2.webp",
+    "thumbnail.webp"
+  ],
+  "src/assets/content/projects_edited/it/web/rus": [
     "html_rus.webp",
     "thumbnail.webp"
   ],

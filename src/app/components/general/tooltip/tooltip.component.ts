@@ -39,8 +39,9 @@ export class TooltipComponent {
     let parentElemBounds = this.elRef.nativeElement.parentElement.getBoundingClientRect();
     let screenWidth = window.innerWidth;
     let parentElemMiddleFromLeft = parentElemBounds.left + ((parentElemBounds.right - parentElemBounds.left) / 2)
+    let parentStyle = window.getComputedStyle(this.elRef.nativeElement.parentElement)
 
-    this.elRef.nativeElement.style.setProperty('--parentheight', `${parentElemBounds.bottom - parentElemBounds.top}px`);
+    this.elRef.nativeElement.style.setProperty('--parentheight', `${parentElemBounds.bottom - parentElemBounds.top /*+ parseInt(parentStyle.marginTop) + parseInt(parentStyle.marginBottom)*/}px`);
     this.elRef.nativeElement.style.setProperty('--marginright', '0px');
     this.elRef.nativeElement.style.setProperty('--marginleft', '0px');
 
@@ -72,8 +73,8 @@ export class TooltipComponent {
     this.visible = false;
   }
 
-  /*@HostListener('click') onClick() {
+  @HostListener('click') onClick() {
     this.visible = !this.visible;
-  }*/
+  }
 
 }

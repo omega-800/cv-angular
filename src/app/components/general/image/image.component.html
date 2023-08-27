@@ -1,5 +1,6 @@
 <div *ngIf="isNotSVG && !isZoomedIn" class="img-bg">
-  <div [ngStyle]="loaded ? { 'background-image': 'url(' + image.path + ')' } : {}"></div>
+  <div [style.background-image]="loaded ? 'url(' + this.image.path + ')' : ''">
+  </div>
 </div>
 <div [class]="(isZoomedIn ? 'zoomedIn ' : '')+'img-container'" (click)="isZoomedIn = !isZoomedIn">
   <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy" class="img-main" (mouseover)="hovering = true"

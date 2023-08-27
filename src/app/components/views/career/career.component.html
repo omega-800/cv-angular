@@ -27,8 +27,8 @@
           [name]="'Basis 42-Stunden-Woche minus Wochenende, 10T Feiertage und '+(career.type === ct.SCHOOL ? '13W' : '36T')+' Ferien pro Jahr'"
           [description]="'(Gesamtzeit Beginn bis Ende) / (7 * 5) / (24 * (8.5 * pensum / 100)) / '+(career.type === ct.SCHOOL ? '(360 * (360 - 91))' : '(36 * 35)')+' / (10 * 9)'"
           [direction]="d.TOP"></app-tooltip>
-        <p><b>Insgesamte Stunden geleistet</b></p>
-        <p>{{getDuration(career.datefrom, career.dateto, career.pensum, career.type)}}</p>
+        <p><b>Gesamtzeit meiner Wissensaneignung bei dieser Stelle</b></p>
+        <p>{{getDuration(career.datefrom, career.dateto, career.pensum, career.type)}} (gerundet)</p>
       </div>
     </div>
     <ng-container bottom>

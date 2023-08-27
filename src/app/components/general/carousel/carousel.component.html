@@ -1,7 +1,9 @@
-<div class="carousel">
-  <div *ngFor="let slide of images; index as i" class="slide"
-    [class]="current === i ? 'active flex-center' : 'notactive'">
-    <app-image [image]="slide"></app-image>
+<div class="carousel" (touchstart)="touchStart($event)" (touchend)="touchEnd()" (touchcancel)="touchCancel()"
+  (touchmove)="touchMove($event)">
+  <div class="slide flex-center">
+    <ng-container *ngFor="let slide of images; index as i">
+      <app-image [image]="slide" *ngIf="current === i" [@carouselAnimation]="slidingTo"></app-image>
+    </ng-container>
   </div>
   <div class="arrow left" (click)="showSlide(current - 1)">
     <div><i></i></div>

@@ -124,10 +124,10 @@ export class CareerComponent {
     let allMls = to.getTime() - from.getTime();
     let totalMls =
       (((((allMls / 7) * 5) / 24) * ((8.5 * pensum) / 100)) / 10) * 9;
-    let h = Math.round(totalMls / (3600 * 1000));
+    let h = totalMls / (3600 * 1000);
     let hFin =
-      ct == careerTypes.SCHOOL ? h / (360 * (360 - 91)) : h / (36 * 35);
-    return `~ ${hFin}h`;
+      ct == careerTypes.SCHOOL ? ((h / 360) * (360 - 91)) : ((h / 36) * 35);
+    return `~ ${Math.round(hFin)}h`;
   }
 
   ol = (href: string) => {
