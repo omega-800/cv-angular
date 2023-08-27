@@ -2,7 +2,6 @@
 @use "src/scss/mixins.scss" as mixins;
 @use "src/scss/screens.scss" as screens;
 
-$img-width: 15rem;
 $img-height-m: 60vh;
 $img-height-t: 40vh;
 $img-height-l: 50vh;
@@ -37,8 +36,8 @@ $img-height-x: 50vh;
 }
 
 @mixin main-image {
-    min-width: $img-width;
-    min-height: $img-width;
+    min-width: 15rem;
+    min-height: 15rem;
     max-width: 100%;
     @include img-height(max-height, 0vh);
 }
@@ -74,18 +73,18 @@ $img-height-x: 50vh;
     & .img-container {
         z-index: variables.$bottom;
         position: relative;
-        @include main-image;
+        width: 100%;
+        height: 100%;
 
         &:hover {
             cursor: pointer;
         }
 
-        $img-height: var(--heightfull);
-        $img-width: var(--widthfull);
-        $img-margin-ver: calc((100% - var(--heightfull))/2);
-        $img-margin-hor: calc((100% - var(--widthfull))/2);
-
         & .img-main {
+            $img-height: var(--height);
+            $img-width: var(--width);
+            $img-margin-ver: calc((100% - var(--height))/2);
+            $img-margin-hor: calc((100% - var(--width))/2);
             height: $img-height;
             width: $img-width;
             margin: $img-margin-ver $img-margin-hor;
@@ -101,16 +100,19 @@ $img-height-x: 50vh;
             max-width: 100vw;
             top: 0;
             left: 0;
-            z-index: variables.$top;
+            z-index: variables.$evenhigher;
 
             & .img-main {
-                height: calc($img-height * 0.8);
-                width: calc($img-width * 0.8);
-                margin: calc($img-margin-ver + ($img-height * 0.1)) calc($img-margin-hor + ($img-width * 0.1));
+                $img-height: var(--heightfull);
+                $img-width: var(--widthfull);
+                $img-margin-ver: calc((100% - var(--heightfull))/2);
+                $img-margin-hor: calc((100% - var(--widthfull))/2);
+                height: calc($img-height * 0.9);
+                width: calc($img-width * 0.9);
+                margin: calc($img-margin-ver + ($img-height * 0.05)) calc($img-margin-hor + ($img-width * 0.05));
                 position: fixed;
                 top: 0;
                 left: 0;
-                z-index: variables.$highest;
             }
 
             & .zoomIcon {
@@ -121,7 +123,6 @@ $img-height-x: 50vh;
                 opacity: 0.8;
                 position: fixed;
                 margin: auto;
-                z-index: variables.$evenhigher;
             }
         }
     }

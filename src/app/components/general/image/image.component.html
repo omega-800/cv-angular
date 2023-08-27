@@ -3,9 +3,9 @@
 </div>
 <div [class]="(isZoomedIn ? 'zoomedIn ' : '')+'img-container'" (click)="isZoomedIn = !isZoomedIn">
   <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy" class="img-main" (mouseover)="hovering = true"
-    (mouseout)="hovering = false" />
+    (mouseout)="hovering = false" (click)="$event.stopPropagation();isZoomedIn = !isZoomedIn" />
   <img *ngIf="!isZoomedIn && hovering" [class]="'preview-image zoomIcon'" [src]="zoomInIcon.path" [alt]="zoomInIcon.alt"
-    loading="lazy" />
+    loading="lazy" @fadeAnimation />
   <img *ngIf="isZoomedIn && hovering" [class]="'preview-image zoomIcon'" [src]="zoomOutIcon.path"
-    [alt]="zoomOutIcon.alt" loading="lazy" />
+    [alt]="zoomOutIcon.alt" loading="lazy" @fadeAnimation />
 </div>

@@ -152,6 +152,17 @@ export const SlideLeftAnimation = trigger('slideLeftAnimation', [
     ])
 ])
 
+export const FadeAnimation = trigger('fadeAnimation', [
+    transition(":enter", [
+        style({ opacity: 0 }),
+        animate(`${fast} ease-in-out`, style({ opacity: 1 }))
+    ]),
+    transition(":leave", [
+        style({ opacity: 1, transform: "none" }),
+        animate(`${fast} ease-in-out`, style({ opacity: 0 }))
+    ])
+])
+
 export const TooltipAnimation = trigger('tooltipAnimation', [
     transition("void => top", [
         style({ opacity: 0, height: 0, overflow: 'hidden', transform: `translateY(-${pxSize})` }),
