@@ -50,7 +50,9 @@
         }
 
         & .filterComp .filterCategories {
-            &>div {
+
+            &>div,
+            >app-select {
                 @include screens.mobile-screen {
                     width: calc(100% - (variables.$elem-padding * 2));
                 }
@@ -72,54 +74,7 @@
                 }
 
                 margin: variables.$elem-padding;
-                cursor: pointer;
                 position: relative;
-                border-top: variables.$defborderthin;
-
-                & .tags {
-                    position: absolute;
-                    background-color: variables.$cool;
-                    width: 100%;
-                    z-index: variables.$highest;
-                    border-left: variables.$defborderthin;
-
-                    //border-right: variables.$defborderthin;
-                    & .tag {
-
-                        &>* {
-                            display: inline-block;
-                        }
-
-                        border-left: variables.$defborderthin;
-                        margin-top: variables.$elem-padding;
-                        margin-left: variables.$thin;
-                        cursor: pointer;
-
-                        &.active {
-                            border-left: variables.$defborder;
-
-                            &:hover {
-                                @include mixins.darken-little-custom(border-color, variables.$light2);
-                            }
-                        }
-
-                        &:hover {
-                            @include mixins.transition(border-left, variables.$defborder);
-                        }
-                    }
-                }
-            }
-
-            &>.tag {
-                cursor: pointer;
-
-                &.active {
-                    @include mixins.darken-little(background-color);
-
-                    &:hover {
-                        @include mixins.transition(background-color, variables.$cool);
-                    }
-                }
             }
 
             & app-range {

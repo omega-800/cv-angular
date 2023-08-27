@@ -24,8 +24,7 @@ $range-useful-width: calc(100% - $range-height);
 
 :host {
     margin: variables.$elem-padding;
-    border-top: variables.$defborderthin;
-
+    padding: calc(variables.$elem-padding / 2) variables.$elem-padding;
     grid-template-areas: "title" "range";
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -39,7 +38,6 @@ $range-useful-width: calc(100% - $range-height);
         grid-template-areas: "title range";
         grid-template-rows: auto;
         grid-template-columns: 25% auto;
-        border-top: none;
 
         & .categoryTitle {
             text-align: left;
@@ -50,7 +48,6 @@ $range-useful-width: calc(100% - $range-height);
         grid-template-areas: "title range";
         grid-template-rows: auto;
         grid-template-columns: 20% auto;
-        border-top: none;
 
         & .categoryTitle {
             text-align: left;
@@ -61,7 +58,6 @@ $range-useful-width: calc(100% - $range-height);
         grid-template-areas: "title range";
         grid-template-rows: auto;
         grid-template-columns: 15% auto;
-        border-top: none;
 
         & .categoryTitle {
             text-align: left;
@@ -92,7 +88,7 @@ $range-useful-width: calc(100% - $range-height);
             grid-template-columns: 1fr;
             overflow: hidden;
             position: relative;
-            background: linear-gradient(0deg, variables.$light2 $range-height, transparent 0);
+            background: linear-gradient(0deg, variables.$cool $range-height, transparent 0);
             border-radius: $range-height;
 
             & .sr-only {
@@ -141,7 +137,8 @@ $range-useful-width: calc(100% - $range-height);
                 grid-column: 1 / span 2;
                 grid-row: 2;
                 height: 1em;
-                background: variables.$cool;
+                //background: variables.$light2;
+                background: variables.$transparent-lighten;
                 content: "";
             }
 

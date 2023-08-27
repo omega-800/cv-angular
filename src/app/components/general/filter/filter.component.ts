@@ -22,8 +22,9 @@ import { Store } from '@ngxs/store';
 import { Interest } from 'src/app/store/app/app.model';
 import { DropDownAnimation } from 'src/app/animations';
 import { SelectComponent } from '../select/select.component';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, of } from 'rxjs';
 import { NgVar } from 'src/app/directives/ng-var.directive';
+import { Entity } from 'src/app/services/entities.model';
 
 @Component({
   selector: 'app-filter',
@@ -44,6 +45,8 @@ export class FilterComponent implements OnInit {
   selectedInterest: Interest = Interest.IT;
   isActive = false;
   additionalFilters: FiltersEntity[] = [];
+
+  toClear: Subject<string> = new Subject<string>();
 
   //selectedFilter$: Observable<FiltersEntity[]> = of(this.selectedFilter);
 
@@ -120,7 +123,7 @@ export class FilterComponent implements OnInit {
   getName(categoryID: string, value: FilterType): string {
     return this.filters.categories.filter(cat => cat.id == categoryID)[0].tags.filter(tag => tag.value == value)[0].name;
   }
-
+*/
   setCategory(passedFilter: FiltersEntity, passedCategory: FilterCategoryEntity, passedTags: Entity[]) {
     let categoryCopy = JSON.parse(JSON.stringify(passedCategory));
     let filterCopy = JSON.parse(JSON.stringify(passedFilter));
@@ -131,16 +134,22 @@ export class FilterComponent implements OnInit {
       let filter = this.selectedFilter[filterIndex];
       let catIndex: number = filter.categories.findIndex(elem => (elem.id == passedCategory.id));
       if (catIndex >= 0) {
-        filter.categories[catIndex] = categoryCopy;
-      } else {
+        if (passedTags.length == 0) {
+          filter.categories.splice(catIndex, 1);
+          if (filter.categories.length == 0) this.selectedFilter.splice(filterIndex, 1)
+        } else {
+          filter.categories[catIndex] = categoryCopy;
+        }
+      } else if (passedTags.length > 0) {
         filter.categories.push(categoryCopy);
       }
-    } else {
+    } else if (passedTags.length > 0) {
       filterCopy.categories = [categoryCopy];
       this.selectedFilter.push(filterCopy)
     }
+
     this.filterEmitter.emit(this.selectedFilter)
-  }*/
+  }
 
   toggleTag(
     passedFilter: FiltersEntity,
@@ -177,21 +186,22 @@ export class FilterComponent implements OnInit {
           } else {
             category.tags.splice(tagIndex, 1);
           }
-          htmlElem?.classList.remove('active');
+          //htmlElem?.classList.remove('active');
+          this.toClear.next(passedTag.id);
         } else {
           category.tags.push(tagCopy);
-          htmlElem?.classList.add('active');
+          //htmlElem?.classList.add('active');
         }
       } else {
         categoryCopy.tags = [tagCopy];
         filter.categories.push(categoryCopy);
-        htmlElem?.classList.add('active');
+        //htmlElem?.classList.add('active');
       }
     } else {
       categoryCopy.tags = [tagCopy];
       filterCopy.categories = [categoryCopy];
       this.selectedFilter.push(filterCopy);
-      htmlElem?.classList.add('active');
+      //htmlElem?.classList.add('active');
     }
     this.filterEmitter.emit(this.selectedFilter);
   }
@@ -251,6 +261,7 @@ export class FilterComponent implements OnInit {
   reset() {
     this.selectedFilter = [];
     this.filterEmitter.emit(this.selectedFilter);
+    this.toClear.next('all');
     this.filters.forEach((filter) =>
       filter.categories
         .filter((cat) => cat.isRange)

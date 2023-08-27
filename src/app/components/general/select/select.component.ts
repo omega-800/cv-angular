@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
   selector: 'app-select',
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.scss'],
+  host: { class: 'slimpill' },
   standalone: true,
   imports: [NgIf, NgFor],
   animations: [DropDownAnimation]
@@ -17,6 +18,7 @@ import { Observable } from 'rxjs';
 export class SelectComponent implements OnInit {
   @Input() fields!: Entity[];
   @Input() name!: string;
+  @Input() toClear?: Observable<string>;
   @Input() selectedFields$?: Observable<Entity[]>;
   @Input() alwaysShowName?: boolean;
   @Input() allowMultiple?: boolean;
@@ -31,6 +33,7 @@ export class SelectComponent implements OnInit {
     this.selectedFields$?.subscribe(res => this.selected = res);
     document.addEventListener('click', (e) => this.collapse(e))
     document.addEventListener('touchstart', (e) => this.collapse(e))
+    this.toClear?.subscribe(res => res == 'all' ? this.selected = [] : this.selected.splice(this.selected.findIndex(elem => elem.id == res), 1))
   }
 
   collapse(e: Event) {

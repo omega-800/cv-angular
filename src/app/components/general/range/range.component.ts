@@ -7,7 +7,7 @@ import { ImageComp } from '../../components.model';
   selector: 'app-range',
   templateUrl: './range.component.html',
   styleUrls: ['./range.component.scss'],
-  host: { 'class': 'default-grid' },
+  host: { 'class': 'default-grid slimpill' },
   standalone: true
 })
 export class RangeComponent {
