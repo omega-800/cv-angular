@@ -19,6 +19,7 @@ import {
 } from 'src/app/pipes/projects-sort/projects-sort.model';
 import {
   FiltersEntity,
+  FullSortEntity,
   SortEntity,
 } from 'src/app/services/filter/filter.model';
 import { SkillEntity } from 'src/app/services/skills/skill/skill.model';
@@ -39,6 +40,7 @@ import { SkillService } from 'src/app/services/skills/skill/skill.service';
 import { BehaviorSubject } from 'rxjs';
 import { LeftToRightAnimationIncrement } from 'src/app/animations';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { FullFilterComponent } from '../../general/full-filter/full-filter.component';
 
 @Component({
   selector: 'app-projects',
@@ -50,8 +52,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
     DatePipe,
     ProjectsSortPipe,
     ProjectsFilterPipe,
-    FilterComponent,
-    SortComponent,
+    FullFilterComponent,
     ContentboxComponent,
     ButtonComponent,
     SkillItemComponent,
@@ -219,7 +220,7 @@ export class ProjectsComponent implements OnInit {
     }*/
   }
 
-  sortProjectsBy(selected: { value: SortEntity; ascending: boolean }) {
+  sortProjectsBy(selected: FullSortEntity) {
     this.sortValue = selected.value;
     this.sortAsc = selected.ascending;
   }

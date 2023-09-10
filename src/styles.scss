@@ -2,6 +2,13 @@
 @use "scss/screens.scss" as screens;
 @import "scss/classes.scss";
 
+// buymeacoffee
+@include screens.mobile-screen {
+  #bmc-wbtn {
+    top: 18px !important;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

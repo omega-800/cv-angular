@@ -1,0 +1,11 @@
+@use "src/scss/mixins.scss" as mixins;
+@use "src/scss/variables.scss" as variables;
+@use"src/scss/screens.scss" as screens;
+
+:host {
+    position: relative;
+
+    & .selected {
+        padding-top: calc(variables.$elem-border-radius + variables.$thin);
+    }
+}

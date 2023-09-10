@@ -154,7 +154,7 @@ export class ProjectFilterService {
       id: projectFilterProps.link,
       name: 'Links',
       isRange: false,
-      selected: true,
+      selected: false,
       tags: links.map((link) => {
         return {
           id: projectFilterProps.link + '_' + link.name,
@@ -170,7 +170,7 @@ export class ProjectFilterService {
     return {
       id: projectFilterProps.author,
       name: 'Authoren',
-      selected: true,
+      selected: false,
       isRange: false,
       tags: authors.map((author) => {
         return {
@@ -204,7 +204,7 @@ export class ProjectFilterService {
     return {
       id: projectFilterProps.client,
       name: 'Klient',
-      selected: true,
+      selected: false,
       isRange: false,
       tags: clients.map((client) => {
         return {
@@ -222,6 +222,7 @@ export class ProjectFilterService {
       id: projectFilterProps.date,
       name: 'Jahr',
       isRange: true,
+      selected: false,
       step: 1,
       tags: dates
         .filter((date) => !isNaN(Number(date)))

@@ -111,7 +111,7 @@ export class SkillsFilterService {
     return {
       id: skillFilterProps.subcategory,
       name: 'Unterkategorie',
-      selected: true,
+      selected: false,
       isRange: false,
       tags: subCategories.map((skillSubCat) => {
         return {
@@ -133,7 +133,7 @@ export class SkillsFilterService {
     return {
       id: skillFilterProps.apptype,
       name: 'Applikationstyp',
-      selected: true,
+      selected: false,
       isRange: false,
       tags: appTypes.map((appType) => {
         return {
@@ -167,7 +167,7 @@ export class SkillsFilterService {
     return {
       id: skillFilterProps.hobby,
       name: 'Hobby',
-      selected: true,
+      selected: false,
       isRange: false,
       tags: [
         {
@@ -196,6 +196,7 @@ export class SkillsFilterService {
       id: skillFilterProps.knowledge,
       name: 'Prozent',
       isRange: true,
+      selected: false,
       tags: itemsFull.map((item) => {
         return {
           id: skillFilterProps.knowledge + '_' + item.toString(),

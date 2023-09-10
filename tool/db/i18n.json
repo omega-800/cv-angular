@@ -1,0 +1,2366 @@
+{
+	"applicationtype": {
+		"37602b2c-08c4-4293-98ea-0a7a74a3f08e": {
+			"description": "Eine Programmiersprache ist eine formale Sprache, die entwickelt wurde, um Computerprogramme zu erstellen.",
+			"name": "Programmiersprache",
+			"name_e": "programming language",
+			"name_r": "язык программирования",
+			"description_e": "A programming language is a formal language designed to create computer programs.",
+			"description_r": "Язык программирования — это формальный язык, предназначенный для создания компьютерных программ."
+		},
+		"a718e807-bdb3-4075-a480-d41303b6e380": {
+			"description": "Eine Umgebung bezieht sich auf den Satz von Ressourcen, in dem Software ausgeführt wird.",
+			"name": "Umgebung",
+			"name_e": "Vicinity",
+			"name_r": "Окрестности",
+			"description_e": "An environment refers to the set of resources on which software runs.",
+			"description_r": "Среда — это набор ресурсов, на которых работает программное обеспечение."
+		},
+		"e0319c67-4bb8-477f-8d16-19404f318676": {
+			"description": "Eine Applikation ist ein Computerprogramm oder eine Softwareanwendung, die bestimmte Aufgaben oder Funktionen ausführt.",
+			"name": "Applikation",
+			"name_e": "application",
+			"name_r": "приложение",
+			"description_e": "An application is a computer program or software application that performs specific tasks or functions.",
+			"description_r": "Приложение — это компьютерная программа или программное приложение, выполняющее определенные задачи или функции."
+		},
+		"3fbbf01d-d7af-4ec3-881d-6a0244a9c38f": {
+			"description": "Ein Rahmenwerk ist ein unterstützendes Strukturkonzept, das bei der Entwicklung von Softwareanwendungen verwendet wird.",
+			"name": "Rahmenwerk",
+			"name_e": "framework",
+			"name_r": "рамки",
+			"description_e": "A framework is a supporting structural concept used in the development of software applications.",
+			"description_r": "Фреймворк — это поддерживающая структурная концепция, используемая при разработке программных приложений."
+		},
+		"c6860adf-8c1a-4c79-a235-c282e5c9e704": {
+			"description": "Ein Inhaltsverwaltungssystem (CMS) ist eine Software, die verwendet wird, um digitale Inhalte zu erstellen, zu bearbeiten, zu organisieren und zu veröffentlichen, insbesondere in Bezug auf Websites und Blogs.",
+			"name": "Inhaltsverwaltungssystem",
+			"name_e": "content management system",
+			"name_r": "система управления контентом",
+			"description_e": "A content management system (CMS) is software used to create, edit, organize and publish digital content, particularly related to websites and blogs.",
+			"description_r": "Система управления контентом (CMS) — это программное обеспечение, используемое для создания, редактирования, организации и публикации цифрового контента, особенно связанного с веб-сайтами и блогами."
+		}
+	},
+	"operatingsystem": {
+		"1f104b60-0c8c-4948-bb4e-fd4cc0a66f62": {
+			"name": "Windows",
+			"description": "Ein beliebtes Betriebssystem für Personalcomputer.",
+			"description_e": "A popular operating system for personal computers.",
+			"description_r": "Популярная операционная система для персональных компьютеров.",
+			"name_e": "Windows",
+			"name_r": "Окна"
+		},
+		"a1e54a3b-8d77-4440-a15d-77872c922202": {
+			"name": "macOS",
+			"description": "Das Betriebssystem für Apples Macintosh-Reihe von Personalcomputern.",
+			"description_e": "The operating system for Apple's Macintosh line of personal computers.",
+			"description_r": "Операционная система для линейки персональных компьютеров Apple Macintosh.",
+			"name_e": "macOS",
+			"name_r": "macOS"
+		},
+		"6b0ef8cd-aa80-41f5-ba07-171c63f63d80": {
+			"name": "Linux",
+			"description": "Ein kostenloses und quelloffenes Betriebssystem, das viele Server und andere Geräte antreibt.",
+			"description_e": "A free and open-source operating system that powers many servers and other devices.",
+			"description_r": "Бесплатная операционная система с открытым исходным кодом, на которой работают многие серверы и другие устройства.",
+			"name_e": "Linux",
+			"name_r": "Линукс"
+		}
+	},
+	"career": {
+		"49da009d-ac2d-470a-bead-aea29be94c65": {
+			"description": "Während des Praktikumsjahres als Webentwickler bei der Inteco EDV AG, einem IT-Gesamtanbieter mit Spezialisation auf Getränkehandel, durfte ich Erfahrungen in vielen verschiedenen Bereichen der Webentwicklung sammeln, sei das Frontend, Backend, Suchmaschinenoptimierung oder Datenbankmanagement.",
+			"name": "inteco",
+			"name_e": "i don't understand",
+			"name_r": "я не понимаю",
+			"description_e": "During the internship year as a web developer at Inteco EDV AG, a full-service IT provider specializing in the beverage trade, I was able to gain experience in many different areas of web development, be it the frontend, backend, search engine optimization or database management.",
+			"description_r": "За год стажировки в качестве веб-разработчика в Inteco EDV AG, поставщике ИТ-услуг с полным спектром услуг, специализирующемся на торговле напитками, я смог получить опыт во многих различных областях веб-разработки, будь то интерфейсная часть, серверная часть, поисковая оптимизация или Управление базой данных."
+		},
+		"62acdc52-6c62-4d49-8ecf-8c172b5b6852": {
+			"description": "Bei Ernesto Vargas war ich für einen Auftrag angestellt, welcher unten verlinkt ist. Dabei konnte ich neue Erfahrungen mit Python und Selenium sammeln.",
+			"name": "ernestovargas",
+			"name_e": "ernestovargas",
+			"name_r": "Эрнестоваргас",
+			"description_e": "I was employed by Ernesto Vargas for an assignment linked below. I was able to gain new experiences with Python and Selenium.",
+			"description_r": "Меня нанял Эрнесто Варгас для выполнения задания, ссылка на которое приведена ниже. Мне удалось получить новый опыт работы с Python и Selenium."
+		},
+		"2f6142a9-feab-4679-b22a-6befec0d8dd6": {
+			"description": "Kork ermöglichte es mir, auf ihrer Plattform Nachhilfeunterricht in Englisch, Mathematik, Deutsch und Informatik für Kinder im Primarschulalter anzubieten. Dabei durfte ich nicht nur mein Wissen vermitteln, sondern auch selbst vieles dazulernen.",
+			"name": "kork",
+			"name_e": "cap",
+			"name_r": "кепка",
+			"description_e": "Kork enabled me to offer tutoring in English, Maths, German and Computer Science for primary school aged children on their platform. Not only was I able to pass on my knowledge, but I also learned a lot myself.",
+			"description_r": "Kork позволил мне предложить репетиторство по английскому языку, математике, немецкому языку и информатике для детей младшего школьного возраста на их платформе. Я не только смог передать свои знания, но и многому научился сам."
+		},
+		"21b71f20-c790-416b-8610-fce243d9cb07": {
+			"description": "Im Berufsbildungszentrum Zürichsee besuchte ich die obligatorischen Informatikmodule für das Eidgenössische Fähigkeitszeugnis als Applikationsentwickler.",
+			"name": "bzz",
+			"name_e": "beat",
+			"name_r": "бить",
+			"description_e": "I attended the obligatory IT modules for the Federal Certificate of Competence as an application developer at the Zurich Lake Vocational Training Center.",
+			"description_r": "Я посещал обязательные ИТ-модули для получения Федерального сертификата компетентности в качестве разработчика приложений в Центре профессионального обучения Цюрих-Лейк."
+		},
+		"69e362b9-b3e6-47af-b474-0e13a72b7d02": {
+			"description": "In der Informatikmittelschule Hottingen besuchte ich die obligatorischen Kurse für die Berufsmaturität mit Schwerpunkt Wirtschaft.",
+			"name": "ims",
+			"name_e": "ims",
+			"name_r": "имс",
+			"description_e": "At the IT middle school in Hottingen, I attended the obligatory courses for the vocational baccalaureate with a focus on economics.",
+			"description_r": "В средней школе информационных технологий в Хоттингене я посещал обязательные курсы профессионального бакалавриата с уклоном на экономику."
+		},
+		"5d07c76a-a0a4-4e6c-a365-dc8314195b3a": {
+			"description": "Als Übergang vom Gymnasium in die IMS besuchte ich ein halbes Jahr lang die Sekundarschule Herzogenmühle (Stufe A), habe jedoch die meiste Zeit im Hort ausgeholfen, da der Schulstoff mich stark unterforderte. Für diesen Vorschlag meiner Lehrerin bin ich sehr dankbar. Im Hort durfte ich lernen, mit Verantwortung umzugehen und die Kindern spielerisch zu behüten.",
+			"name": "sek",
+			"name_e": "sek",
+			"name_r": "сек",
+			"description_e": "As a transition from high school to IMS, I attended the secondary school in Herzogenmühle (level A) for six months, but I helped out in the after-school care center most of the time because the school material was not challenging enough for me. I am very grateful for this suggestion from my teacher. In the after-school care center I was able to learn how to deal with responsibility and look after the children in a playful way.",
+			"description_r": "При переходе из средней школы в IMS я в течение шести месяцев посещал среднюю школу в Херцогенмюле (уровень А), но большую часть времени помогал в продленном классе, потому что школьный материал не был для меня достаточно сложным. Я очень благодарен за это предложение моему учителю. В детском саду я смогла научиться брать на себя ответственность и в игровой форме присматривать за детьми."
+		},
+		"c02e76b9-fa51-4d8e-8de9-608c2adad86f": {
+			"description": "Nach der Primarschule ging ich ins Langzeitgymnasium Hohe Promenade. Nach drei Jahren brach ich jedoch ab, da mein Wohlbefinden durch die Monotonie des dortigen Alltags sowie Schulstoffes zu leiden begann.",
+			"name": "hopro",
+			"name_e": "hopro",
+			"name_r": "хопро",
+			"description_e": "After primary school I went to the long-term Gymnasium Hohe Promenade. After three years, however, I broke off because my well-being began to suffer from the monotony of everyday life there and school material.",
+			"description_r": "После начальной школы я пошел на долгосрочную гимназию Хоэ Променад. Однако через три года я сорвался, потому что мое самочувствие начало страдать от однообразия тамошней жизни и школьного материала."
+		},
+		"afdfcf36-be90-43a5-a676-bd48dfde44c2": {
+			"description": "Die Grundschule absolvierte ich in der Primarschule Probstei in Schwamendingen.",
+			"name": "probstei",
+			"name_e": "probstei",
+			"name_r": "пробстеи",
+			"description_e": "I completed elementary school in the Probstei primary school in Schwamendingen.",
+			"description_r": "Я закончил начальную школу в начальной школе Пробштай в Швамендингене."
+		}
+	},
+	"application": {
+		"0cc89e56-a9f1-4e25-a6cb-4a321db5f32e": {
+			"description": "Vim ist ein freier Texteditor für die Arbeit mit einer Vi-kompatiblen Befehlszeilenschnittstelle.",
+			"alternatename": "Vi IMproved",
+			"keywords": "Vim, Texteditor, Vi, Befehlszeile",
+			"name": "Vim",
+			"description_r": "Vim — бесплатный текстовый редактор, предназначенный для работы с Vi-совместимым интерфейсом командной строки.",
+			"description_e": "Vim is a free text editor designed to work with a Vi-compatible command line interface.",
+			"alternatename_e": "We IMproved",
+			"alternatename_r": "Мы улучшили",
+			"keywords_e": "Vim, text editor, vi, command line",
+			"keywords_r": "Vim, текстовый редактор, vi, командная строка",
+			"name_e": "Vim",
+			"name_r": "Вим"
+		},
+		"b90766df-041a-4f7e-b59e-062d067985ef": {
+			"description": "GIMP ist ein kostenloses, plattformübergreifendes Bildbearbeitungsprogramm für die Erstellung und Bearbeitung von digitalen Bildern.",
+			"alternatename": "GNU Image Manipulation Program",
+			"keywords": "GIMP, Bildbearbeitung, Photoshop-Alternative",
+			"name": "GIMP",
+			"description_e": "GIMP is a free, cross-platform image editor for creating and editing digital images.",
+			"description_r": "GIMP — бесплатный кроссплатформенный редактор изображений для создания и редактирования цифровых изображений.",
+			"alternatename_e": "GNU Image Manipulation Program",
+			"alternatename_r": "Программа управления изображениями GNU",
+			"keywords_e": "GIMP, photo editor, Photoshop alternative",
+			"keywords_r": "GIMP, фоторедактор, альтернатива Photoshop",
+			"name_e": "GIMP",
+			"name_r": "GIMP"
+		},
+		"93d6fad7-dd63-4d46-a041-6954aeac64fb": {
+			"description": "Adobe Photoshop ist ein professionelles Bildbearbeitungsprogramm für Kreative.",
+			"alternatename": "Photoshop, Adobe Creative Suite",
+			"keywords": "Bildbearbeitung, Grafikdesign, Kreativität, Adobe Creative Cloud",
+			"name": "Adobe Photoshop",
+			"description_e": "Adobe Photoshop is a professional image editing program for creative people.",
+			"description_r": "Adobe Photoshop — профессиональная программа для редактирования изображений для творческих людей.",
+			"alternatename_e": "Photoshop, Adobe Creative Suite",
+			"alternatename_r": "Фотошоп, Adobe Creative Suite",
+			"keywords_e": "Image editing, graphic design, creativity, Adobe Creative Cloud",
+			"keywords_r": "Редактирование изображений, графический дизайн, творчество, Adobe Creative Cloud",
+			"name_e": "Adobe Photoshop",
+			"name_r": "Adobe Photoshop"
+		},
+		"4798e4cc-d883-486a-8abf-04f89511350b": {
+			"description": "Inkscape ist ein professionelles Vektorgrafikprogramm, das eine kostenlose und Open-Source-Alternative zu Adobe Illustrator bietet.",
+			"alternatename": "Inkscape",
+			"keywords": "Inkscape, Vektorgrafik, Open-Source, Adobe Illustrator",
+			"name": "Inkscape",
+			"description_r": "Inkscape — профессиональная программа векторной графики, предлагающая бесплатную альтернативу Adobe Illustrator с открытым исходным кодом.",
+			"description_e": "Inkscape is a professional vector graphics program that offers a free and open source alternative to Adobe Illustrator.",
+			"alternatename_e": "Inkscape",
+			"alternatename_r": "Инкскейп",
+			"keywords_e": "Inkscape, Vektorgrafik, Open-Source, Adobe Illustrator",
+			"keywords_r": "Inkscape, векторная графика, открытый исходный код, Adobe Illustrator",
+			"name_e": "Inkscape",
+			"name_r": "Инкскейп"
+		},
+		"4977ca55-2147-4c80-9748-b1690744b620": {
+			"description": "Unity ist eine plattformübergreifende Game Engine, die zur Entwicklung von Videospielen für PC, Konsolen, Mobilgeräte und Websites verwendet wird.",
+			"alternatename": "Unity3D",
+			"keywords": "Unity, Unity3D, Game Engine, 3D Game Development",
+			"name": "Unity",
+			"description_r": "Unity — это кроссплатформенный игровой движок, используемый для разработки видеоигр для ПК, консолей, мобильных устройств и веб-сайтов.",
+			"description_e": "Unity is a cross-platform game engine used to develop video games for PC, consoles, mobile and websites.",
+			"alternatename_e": "Unity3D",
+			"alternatename_r": "Юнити3D",
+			"keywords_e": "Unity, Unity3D, Game Engine, 3D Game Development",
+			"keywords_r": "Unity, Unity3D, игровой движок, разработка 3D-игр",
+			"name_e": "Unity",
+			"name_r": "Единство"
+		},
+		"88fb8c4b-27dc-4519-b0ec-1866d9a2370c": {
+			"description": "Pygame ist eine Sammlung von Python-Modulen, die für die Entwicklung von Videospielen entwickelt wurden.",
+			"alternatename": "Pygame-Bibliothek",
+			"keywords": "Python, Pygame, Game Development, Game Programming, 2D-Spiele",
+			"name": "Pygame",
+			"description_r": "Pygame — это набор модулей Python, предназначенных для разработки видеоигр.",
+			"description_e": "Pygame is a collection of Python modules designed for video game development.",
+			"alternatename_e": "Pygame-Bibliothek",
+			"alternatename_r": "Пигаме-Библиотека",
+			"keywords_e": "Python, Pygame, Game Development, Game Programming, 2D Games",
+			"keywords_r": "Python, Pygame, Разработка игр, Программирование игр, 2D-игры",
+			"name_e": "Pygame",
+			"name_r": "Пигаме"
+		},
+		"acddd25e-a22a-4211-ab94-c0337c336516": {
+			"description": "Panda3D ist eine Game Engine, ein Framework für 3D-Rendering und Game Development für Python- und C++-Programme.",
+			"alternatename": "Panda3D-Engine",
+			"keywords": "Python, Panda3D, Game Engine, Game Development, 3D-Spiele",
+			"name": "Panda3D",
+			"description_r": "Panda3D — игровой движок, среда 3D-рендеринга и разработки игр для программ Python и C++.",
+			"description_e": "Panda3D is a game engine, 3D rendering and game development framework for Python and C++ programs.",
+			"alternatename_e": "Panda3D-Engine",
+			"alternatename_r": "Panda3D-движок",
+			"keywords_e": "Python, Panda3D, Game Engine, Game Development, 3D Games",
+			"keywords_r": "Python, Panda3D, Игровой движок, Разработка игр, 3D-игры",
+			"name_e": "We are counting",
+			"name_r": "Мы рассчитываем"
+		},
+		"3d4f6eff-1478-4e35-ac55-176ca6ee8691": {
+			"description": "React ist eine JavaScript-Bibliothek zum Erstellen von Benutzeroberflächen.",
+			"alternatename": "ReactJS",
+			"keywords": "React, ReactJS, JavaScript-Bibliothek, Front-End-Entwicklung",
+			"name": "React",
+			"description_r": "React — это библиотека JavaScript для создания пользовательских интерфейсов.",
+			"description_e": "React is a JavaScript library for building user interfaces.",
+			"alternatename_e": "ReactJS",
+			"alternatename_r": "РеактJS",
+			"keywords_e": "React, ReactJS, JavaScript library, front-end development",
+			"keywords_r": "React, ReactJS, библиотека JavaScript, фронтенд-разработка",
+			"name_e": "React",
+			"name_r": "Реагировать"
+		},
+		"93836c18-8de5-47c9-a738-53d42e0fd983": {
+			"description": "Vue.js ist ein Open-Source-JavaScript-Framework zum Erstellen von Benutzeroberflächen und Single-Page-Anwendungen.",
+			"alternatename": "VueJS",
+			"keywords": "Vue.js, VueJS, JavaScript-Framework, Front-End-Entwicklung",
+			"name": "Vue.js",
+			"description_r": "Vue.js — это JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов и одностраничных приложений.",
+			"description_e": "Vue.js is an open source JavaScript framework for building user interfaces and single page applications.",
+			"alternatename_e": "VueJS",
+			"alternatename_r": "VueJS",
+			"keywords_e": "Vue.js, VueJS, JavaScript Framework, Front-End Development",
+			"keywords_r": "Vue.js, VueJS, JavaScript Framework, интерфейсная разработка",
+			"name_e": "Yeah. js",
+			"name_r": "Да. js"
+		},
+		"daa47aa8-9576-48c0-bca7-efe20aa3ae8b": {
+			"description": "Selenium ist eine Suite von Tools zum Automatisieren von Webbrowsern auf vielen Plattformen.",
+			"alternatename": "Selenium WebDriver",
+			"keywords": "Selenium, Selenium WebDriver, Automatisierte Tests, Webtests",
+			"name": "Selenium",
+			"description_e": "Selenium is a suite of tools for automating web browsing on many platforms.",
+			"description_r": "Selenium — это набор инструментов для автоматизации просмотра веб-страниц на многих платформах.",
+			"alternatename_e": "Selenium WebDriver",
+			"alternatename_r": "Селен ВебДрайвер",
+			"keywords_e": "Selenium, Selenium WebDriver, Automated Tests, Web Tests",
+			"keywords_r": "Selenium, Selenium WebDriver, автоматизированные тесты, веб-тесты",
+			"name_e": "Selenium",
+			"name_r": "Селен"
+		},
+		"949d2b6c-4da5-4f7b-b930-64203603a1ed": {
+			"description": "Swing ist ein GUI-Widget-Toolkit für Java, das die Erstellung von Desktop-Anwendungen mit grafischer Benutzeroberfläche ermöglicht.",
+			"alternatename": "Java Swing",
+			"keywords": "Swing, Java, GUI, Bibliothek",
+			"name": "Swing",
+			"description_e": "Swing is a GUI widget toolkit for Java that allows the creation of desktop applications with a graphical user interface.",
+			"description_r": "Swing — это набор инструментов виджетов с графическим пользовательским интерфейсом для Java, который позволяет создавать настольные приложения с графическим пользовательским интерфейсом.",
+			"alternatename_e": "Java Swing",
+			"alternatename_r": "Ява Свинг",
+			"keywords_e": "Swing, Java, GUI, library",
+			"keywords_r": "Swing, Java, графический интерфейс, библиотека",
+			"name_e": "Swing",
+			"name_r": "Качать"
+		},
+		"156cd059-ea75-41b6-ab37-6e81fc1eee3a": {
+			"description": "Ursina ist eine Python-Bibliothek zur Entwicklung von 2D- und einfachen 3D-Spielen.",
+			"alternatename": "Ursina-Engine",
+			"keywords": "Python, Ursina, Game Engine, Game Development,",
+			"name": "Ursina",
+			"description_r": "Ursina — это библиотека Python для разработки 2D и простых 3D-игр.",
+			"description_e": "Ursina is a Python library for developing 2D and simple 3D games.",
+			"alternatename_e": "Ursina-Engine",
+			"alternatename_r": "Урсина-Двигатель",
+			"keywords_e": "Python, Ursina, Game Engine, Game Development,",
+			"keywords_r": "Python, Ursina, игровой движок, разработка игр,",
+			"name_e": "Ursina",
+			"name_r": "Урсина"
+		},
+		"c9f5fac0-fd7b-4df6-bb4b-6f1f6c4c8fb7": {
+			"description": "GlassFish ist ein kostenloses und Open-Source-Application-Server für das Erstellen und Bereitstellen von Webanwendungen auf der Java-EE-Plattform.",
+			"alternatename": "GlassFish Server",
+			"keywords": "GlassFish, Anwendungsserver, Java EE",
+			"name": "GlassFish",
+			"description_e": "GlassFish is a free and open source application server for building and deploying web applications on the Java EE platform.",
+			"description_r": "GlassFish — это бесплатный сервер приложений с открытым исходным кодом для создания и развертывания веб-приложений на платформе Java EE.",
+			"alternatename_e": "GlassFish Server",
+			"alternatename_r": "Сервер GlassFish",
+			"keywords_e": "GlassFish, Application Server, Java EE",
+			"keywords_r": "GlassFish, сервер приложений, Java EE",
+			"name_e": "GlassFish",
+			"name_r": "Стеклянная рыба"
+		},
+		"9a2cf132-f625-472e-a23e-48d940d28026": {
+			"description": "Apache Tomcat 7 ist eine Open-Source-Softwareimplementierung der Java Servlet, JavaServer Pages, Java Expression Language und Java WebSocket-Technologien.",
+			"alternatename": "Apache Tomcat 7",
+			"keywords": "Tomcat, Anwendungsserver, Servlet-Container",
+			"name": "Tomcat7",
+			"description_r": "Apache Tomcat 7 — это программная реализация с открытым исходным кодом технологий Java Servlet, JavaServer Pages, Java Expression Language и Java WebSocket.",
+			"alternatename_e": "Apache Tomcat 7",
+			"alternatename_r": "Апач Томкэт 7",
+			"keywords_e": "Tomcat, application server, servlet container",
+			"keywords_r": "Tomcat, сервер приложений, контейнер сервлетов",
+			"name_e": "blurred",
+			"name_r": "размытый",
+			"description_e": "Apache Tomcat 7 is an open source software implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies."
+		},
+		"9697d19a-2140-458a-9794-db53df229186": {
+			"description": "Microsoft Word ist eine Textverarbeitungssoftware, die von Microsoft entwickelt und veröffentlicht wurde.",
+			"alternatename": "Microsoft Word",
+			"keywords": "Microsoft Word, Textverarbeitung, Texteditor",
+			"name": "Word",
+			"description_e": "Microsoft Word is word processing software developed and published by Microsoft.",
+			"description_r": "Microsoft Word — это программное обеспечение для обработки текста, разработанное и опубликованное Microsoft.",
+			"alternatename_e": "Microsoft Word",
+			"alternatename_r": "Microsoft Word",
+			"keywords_e": "Microsoft Word, word processor, text editor",
+			"keywords_r": "Microsoft Word, текстовый процессор, текстовый редактор",
+			"name_e": "Word",
+			"name_r": "Слово"
+		},
+		"10f49803-027b-4636-8863-b9d1ed9f1c3c": {
+			"description": "Microsoft Excel ist eine Tabellenkalkulationssoftware, die von Microsoft entwickelt und veröffentlicht wurde.",
+			"alternatename": "Microsoft Excel",
+			"keywords": "Microsoft Excel, Tabellenkalkulation, Berechnung, Datenanalyse",
+			"name": "Excel",
+			"description_e": "Microsoft Excel is spreadsheet software developed and published by Microsoft.",
+			"description_r": "Microsoft Excel — это программное обеспечение для работы с электронными таблицами, разработанное и опубликованное Microsoft.",
+			"alternatename_e": "Microsoft Excel",
+			"alternatename_r": "Майкрософт Эксель",
+			"keywords_e": "Microsoft Excel, spreadsheet, calculation, data analysis",
+			"keywords_r": "Microsoft Excel, электронная таблица, расчет, анализ данных",
+			"name_e": "Excel",
+			"name_r": "Эксель"
+		},
+		"1d90b0c0-d037-48b6-8fad-59521bee3539": {
+			"description": "Microsoft PowerPoint ist eine Präsentationssoftware, die von Microsoft entwickelt und veröffentlicht wurde.",
+			"alternatename": "Microsoft PowerPoint",
+			"keywords": "Microsoft PowerPoint, Präsentation, Slideshow",
+			"name": "PowerPoint",
+			"description_e": "Microsoft PowerPoint is presentation software developed and published by Microsoft.",
+			"description_r": "Microsoft PowerPoint — это программное обеспечение для презентаций, разработанное и опубликованное Microsoft.",
+			"alternatename_e": "Microsoft PowerPoint",
+			"alternatename_r": "Microsoft PowerPoint",
+			"keywords_e": "Microsoft PowerPoint, presentation, slideshow",
+			"keywords_r": "Microsoft PowerPoint, презентация, слайд-шоу",
+			"name_e": "PowerPoint",
+			"name_r": "Силовая установка"
+		},
+		"f76c2fc9-4bf0-4278-b498-652e77564595": {
+			"description": "Microsoft Access ist ein Datenbankmanagementsystem, das von Microsoft entwickelt und veröffentlicht wurde.",
+			"alternatename": "Microsoft Access",
+			"keywords": "Microsoft Access, Datenbankmanagementsystem, relationale Datenbank",
+			"name": "Access",
+			"description_e": "Microsoft Access is a database management system developed and published by Microsoft.",
+			"description_r": "Microsoft Access — это система управления базами данных, разработанная и опубликованная Microsoft.",
+			"alternatename_e": "Microsoft Access",
+			"alternatename_r": "Microsoft Доступ",
+			"keywords_e": "Microsoft Access, database management system, relational database",
+			"keywords_r": "Microsoft Access, система управления базами данных, реляционная база данных",
+			"name_e": "Access",
+			"name_r": "Доступ"
+		},
+		"8317618f-1abb-458e-8b34-13e9b4afbe6f": {
+			"description": "Outlook ist ein E-Mail-Client und Personal Information Manager von Microsoft, der Teil der Microsoft Office Suite ist.",
+			"alternatename": "Microsoft Outlook",
+			"keywords": "Microsoft Outlook, E-Mail-Client, Personal Information Manager, Microsoft Office",
+			"name": "Outlook",
+			"description_e": "Outlook is an email client and personal information manager from Microsoft that is part of the Microsoft Office suite.",
+			"description_r": "Outlook — это почтовый клиент и менеджер личной информации от Microsoft, входящий в пакет Microsoft Office.",
+			"alternatename_e": "Microsoft Outlook",
+			"alternatename_r": "Microsoft Outlook",
+			"keywords_e": "Microsoft Outlook, E-Mail-Client, Personal Information Manager, Microsoft Office",
+			"keywords_r": "Microsoft Outlook, клиент электронной почты, менеджер личной информации, Microsoft Office",
+			"name_e": "Outlook",
+			"name_r": "Перспективы"
+		},
+		"64fae4ac-dbd9-456a-8d35-9b8613bccaa4": {
+			"description": "HTML (Hypertext Markup Language) ist eine Auszeichnungssprache, die zur Erstellung der Struktur und des Inhalts von Webseiten verwendet wird.",
+			"alternatename": "Hypertext Markup Language",
+			"keywords": "HTML, Hypertext Markup Language, Webentwicklung",
+			"name": "HTML",
+			"description_e": "HTML (Hypertext Markup Language) is a markup language used to create the structure and content of web pages.",
+			"description_r": "HTML (язык гипертекстовой разметки) — это язык разметки, используемый для создания структуры и содержимого веб-страниц.",
+			"alternatename_e": "Hypertext Markup Language",
+			"alternatename_r": "Язык гипертекстовой разметки",
+			"keywords_e": "HTML, Hypertext Markup Language, web development",
+			"keywords_r": "HTML, язык гипертекстовой разметки, веб-разработка.",
+			"name_e": "HTML",
+			"name_r": "HTML"
+		},
+		"90d8f085-90ae-433e-884c-a53f1082df94": {
+			"description": "CSS (Cascading Style Sheets) ist eine Formatierungssprache, die verwendet wird, um die Darstellung eines in HTML oder XML geschriebenen Dokuments zu beschreiben.",
+			"alternatename": "Cascading Style Sheets",
+			"keywords": "CSS, Cascading Style Sheets, Formatierungssprache, Webentwicklung",
+			"name": "CSS",
+			"description_e": "CSS (Cascading Style Sheets) is a formatting language used to describe the appearance of a document written in HTML or XML.",
+			"description_r": "CSS (каскадные таблицы стилей) — это язык форматирования, используемый для описания внешнего вида документа, написанного на HTML или XML.",
+			"alternatename_e": "Cascading Style Sheets",
+			"alternatename_r": "Каскадные таблицы стилей",
+			"keywords_e": "CSS, Cascading Style Sheets, formatting language, web development",
+			"keywords_r": "CSS, каскадные таблицы стилей, язык форматирования, веб-разработка.",
+			"name_e": "CSS",
+			"name_r": "CSS"
+		},
+		"ebe3fa7d-b9f9-4fdb-8f27-549c09e87cdf": {
+			"description": "SCSS (Sassy CSS) ist eine Vorverarbeitungsskriptsprache, die eine Erweiterung von CSS darstellt und Funktionen wie Variablen, Mixins und Verschachtelung hinzufügt.",
+			"alternatename": "Syntactically Awesome Style Sheets",
+			"keywords": "SCSS, Sassy CSS, Formatierungssprache, Webentwicklung",
+			"name": "SCSS",
+			"description_e": "SCSS (Sassy CSS) is a pre-processing scripting language that is an extension of CSS, adding features such as variables, mixins, and nesting.",
+			"description_r": "SCSS (Sassy CSS) — это язык сценариев предварительной обработки, который является расширением CSS и добавляет такие функции, как переменные, примеси и вложенность.",
+			"alternatename_r": "Синтаксически удивительные таблицы стилей",
+			"alternatename_e": "Syntactically Awesome Style Sheets",
+			"keywords_e": "SCSS, Sassy CSS, formatting language, web development",
+			"keywords_r": "SCSS, Sassy CSS, язык форматирования, веб-разработка",
+			"name_e": "SCSS",
+			"name_r": "СКСС"
+		},
+		"4b28a6a5-1fd2-4f66-b833-ca35aee71809": {
+			"description": "JavaScript ist eine objektorientierte, höhere Programmiersprache, die verwendet wird, um interaktive Effekte in Webbrowsern zu erzeugen.",
+			"alternatename": "JS",
+			"keywords": "JavaScript, JS, Programmiersprache, Webentwicklung",
+			"name": "JavaScript",
+			"description_e": "JavaScript is an object-oriented, high-level programming language used to create interactive effects in web browsers.",
+			"description_r": "JavaScript — это объектно-ориентированный язык программирования высокого уровня, используемый для создания интерактивных эффектов в веб-браузерах.",
+			"alternatename_e": "JS",
+			"alternatename_r": "JS",
+			"keywords_e": "JavaScript, JS, programming language, web development",
+			"keywords_r": "JavaScript, JS, язык программирования, веб-разработка",
+			"name_e": "JavaScript",
+			"name_r": "JavaScript"
+		},
+		"425e5de9-73fc-48d3-98a6-86bb976ab79a": {
+			"description": "TypeScript ist ein typisierter Überbau von JavaScript, der zu normalem JavaScript kompiliert.",
+			"alternatename": "TS",
+			"keywords": "TypeScript, TS, Programmiersprache, Webentwicklung",
+			"name": "TypeScript",
+			"description_e": "TypeScript is a typed superstructure of JavaScript that compiles to regular JavaScript.",
+			"description_r": "TypeScript — это типизированная надстройка JavaScript, которая компилируется в обычный JavaScript.",
+			"alternatename_e": "TS",
+			"alternatename_r": "ТС",
+			"keywords_e": "TypeScript, TS, programming language, web development",
+			"keywords_r": "TypeScript, TS, язык программирования, веб-разработка",
+			"name_e": "TypeScript",
+			"name_r": "Машинопись"
+		},
+		"83b192f0-a30f-47e5-9996-4556ff7ade0d": {
+			"description": "PHP (Hypertext Preprocessor) ist eine serverseitige Skriptsprache, die zur Erstellung dynamischer Webseiten verwendet wird.",
+			"alternatename": "Hypertext Preprocessor",
+			"keywords": "PHP, Hypertext Preprocessor, Programmiersprache, Webentwicklung",
+			"name": "PHP",
+			"description_e": "PHP (Hypertext Preprocessor) is a server-side scripting language used to create dynamic web pages.",
+			"description_r": "PHP (препроцессор гипертекста) — это серверный язык сценариев, используемый для создания динамических веб-страниц.",
+			"alternatename_e": "Hypertext Preprocessor",
+			"alternatename_r": "Препроцессор гипертекста",
+			"keywords_e": "PHP, hypertext preprocessor, programming language, web development",
+			"keywords_r": "PHP, препроцессор гипертекста, язык программирования, веб-разработка",
+			"name_e": "PHP",
+			"name_r": "PHP"
+		},
+		"1e35e5ed-05bd-4541-97d5-f3d1c5fcef0f": {
+			"description": "Java ist eine objektorientierte Programmiersprache, die darauf ausgelegt ist, so wenige Implementierungsabhängigkeiten wie möglich zu haben.",
+			"alternatename": "Java SE",
+			"keywords": "Java, Java SE, Programmiersprache, Softwareentwicklung",
+			"name": "Java",
+			"description_e": "Java is an object-oriented programming language designed to have as few implementation dependencies as possible.",
+			"description_r": "Java — это объектно-ориентированный язык программирования, в котором реализовано как можно меньше зависимостей.",
+			"alternatename_e": "Java SE",
+			"alternatename_r": "Ява SE",
+			"keywords_e": "Java, Java SE, programming language, software development",
+			"keywords_r": "Java, Java SE, язык программирования, разработка программного обеспечения",
+			"name_e": "Java",
+			"name_r": "Джава"
+		},
+		"b833319a-c5db-4f62-a270-b8a12b56f1d2": {
+			"description": "Python ist eine interpretierte Hochsprachen-Programmiersprache, die Code-Lesbarkeit und Benutzerfreundlichkeit betont.",
+			"alternatename": "Python 3",
+			"keywords": "Python, Python 3, Programmiersprache, Softwareentwicklung",
+			"name": "Python",
+			"description_e": "Python is a high-level interpreted programming language that emphasizes code readability and ease of use.",
+			"description_r": "Python — это интерпретируемый язык программирования высокого уровня, в котором особое внимание уделяется читаемости кода и простоте использования.",
+			"alternatename_e": "Python 3",
+			"alternatename_r": "Питон 3",
+			"keywords_e": "Python, Python 3, programming language, software development",
+			"keywords_r": "Python, Python 3, язык программирования, разработка программного обеспечения",
+			"name_e": "Python",
+			"name_r": "Питон"
+		},
+		"e421e8e5-9692-48f6-b779-69ea66543cf8": {
+			"description": "MySQL ist ein beliebtes, Open-Source-Relationales-Datenbankmanagementsystem.",
+			"alternatename": "Structured Query Language",
+			"keywords": "MySQL, Strukturierte Abfragesprache, Datenbankmanagementsystem, Softwareentwicklung",
+			"name": "MySQL",
+			"description_e": "MySQL is a popular, open-source relational database management system.",
+			"description_r": "MySQL — популярная система управления реляционными базами данных с открытым исходным кодом.",
+			"alternatename_e": "Structured Query Language",
+			"alternatename_r": "Язык структурированных запросов",
+			"keywords_e": "MySQL, structured query language, database management system, software development",
+			"keywords_r": "MySQL, язык структурированных запросов, система управления базами данных, разработка программного обеспечения.",
+			"name_e": "MySQL",
+			"name_r": "MySQL"
+		},
+		"af452832-ac01-4196-9fd7-bd2c407ce307": {
+			"description": "C# ist eine moderne, multiparadigmatische Programmiersprache, die von Microsoft entwickelt wurde.",
+			"alternatename": "C Sharp",
+			"keywords": "C#, C Sharp, Programmiersprache, Softwareentwicklung",
+			"name": "C#",
+			"description_e": "C# is a modern, multi-paradigmatic programming language developed by Microsoft.",
+			"description_r": "C# — это современный мультипарадигматический язык программирования, разработанный Microsoft.",
+			"alternatename_e": "C Sharp",
+			"alternatename_r": "До-диез",
+			"keywords_e": "C#, C Sharp, programming language, software development",
+			"keywords_r": "C#, C Sharp, язык программирования, разработка программного обеспечения",
+			"name_e": "C#",
+			"name_r": "С#"
+		},
+		"324ed327-a078-478b-8903-b2120548e80f": {
+			"description": "Bash ist ein Shell-Programm für Unix-ähnliche Betriebssysteme, das Benutzern ermöglicht, Befehle einzugeben, um mit dem Betriebssystem zu interagieren.",
+			"alternatename": "Bourne-Again SHell",
+			"keywords": "Bash, Shell, Befehlszeilenschnittstelle, CLI, Unix-ähnlich",
+			"name": "Bash",
+			"description_e": "Bash is a shell program for Unix-like operating systems that allows users to enter commands to interact with the operating system.",
+			"description_r": "Bash — это программа-оболочка для Unix-подобных операционных систем, которая позволяет пользователям вводить команды для взаимодействия с операционной системой.",
+			"alternatename_e": "Bourne-Again SHell",
+			"alternatename_r": "Борн-Агейн Шелл",
+			"keywords_e": "Bash, Shell, Command Line Interface, CLI, Unix-like",
+			"keywords_r": "Bash, Shell, интерфейс командной строки, CLI, Unix-подобный",
+			"name_e": "Bash",
+			"name_r": "Баш"
+		},
+		"6219f602-5706-4303-bd51-e001413991ce": {
+			"description": "FreeMarker ist ein Template-Engine, die die Erstellung dynamischer Webseiten durch die Generierung von Textausgaben auf der Grundlage von Vorlagen ermöglicht.",
+			"alternatename": "Apache FreeMarker",
+			"keywords": "FreeMarker, Template Engine, Java",
+			"name": "FreeMarker",
+			"description_e": "FreeMarker is a template engine that allows creating dynamic web pages by generating text output based on templates.",
+			"description_r": "FreeMarker — это механизм шаблонов, который позволяет создавать динамические веб-страницы путем генерации текстового вывода на основе шаблонов.",
+			"alternatename_e": "Apache FreeMarker",
+			"alternatename_r": "Apache FreeMarker",
+			"keywords_e": "FreeMarker, Template Engine, Java",
+			"keywords_r": "FreeMarker, Механизм шаблонов, Java",
+			"name_e": "FreeMarker",
+			"name_r": "FreeMarker"
+		},
+		"9b956250-e6ea-4b15-a607-dde9363b231d": {
+			"description": "PostgreSQL ist ein leistungsstarkes Open-Source-Relationales-Datenbankmanagementsystem.",
+			"alternatename": "Postgres",
+			"keywords": "PostgreSQL, Postgres, Strukturierte Abfragesprache, Datenbankmanagementsystem, Softwareentwicklung",
+			"name": "PostgreSQL",
+			"description_e": "PostgreSQL is a powerful open source relational database management system.",
+			"description_r": "PostgreSQL — мощная система управления реляционными базами данных с открытым исходным кодом.",
+			"alternatename_e": "Postgres",
+			"alternatename_r": "Постгрес",
+			"keywords_e": "PostgreSQL, Postgres, Structured Query Language, Database Management System, Software Development",
+			"keywords_r": "PostgreSQL, Postgres, язык структурированных запросов, система управления базами данных, разработка программного обеспечения",
+			"name_e": "PostgreSQL",
+			"name_r": "PostgreSQL"
+		},
+		"881a3be9-0224-4615-b241-90c857872d28": {
+			"description": "Ableton Live 10 ist eine digitale Audio-Workstation für macOS und Windows. Es wird hauptsächlich zum Komponieren, Aufnehmen, Remixen und Arrangieren von Musik verwendet.",
+			"alternatename": "Ableton",
+			"keywords": "Ableton Live 10, DAW, Musikproduktion, Audio-Workstation",
+			"name": "Ableton Live 10",
+			"description_e": "Ableton Live 10 is a digital audio workstation for macOS and Windows. It is mainly used for composing, recording, remixing and arranging music.",
+			"description_r": "Ableton Live 10 — рабочая станция с цифровым звуком для macOS и Windows. В основном он используется для сочинения, записи, ремикширования и аранжировки музыки.",
+			"alternatename_e": "Ableton",
+			"alternatename_r": "Эйблтон",
+			"keywords_e": "Ableton Live 10, DAW, Music Production, Audio Workstation",
+			"keywords_r": "Ableton Live 10, DAW, музыкальное производство, аудио рабочая станция",
+			"name_e": "Ableton Live 10",
+			"name_r": "Аблетон Live 10"
+		},
+		"0404983d-f61c-480f-9c56-df712b9fb4a2": {
+			"description": "FL Studio ist eine digitale Audio-Workstation für Windows. Es wird hauptsächlich zum Erstellen und Produzieren von Musik verwendet.",
+			"alternatename": "FruityLoops",
+			"keywords": "FL Studio, FruityLoops, DAW, Musikproduktion, Audio-Workstation",
+			"name": "FL Studio",
+			"description_e": "FL Studio is a digital audio workstation for Windows. It is mainly used for creating and producing music.",
+			"description_r": "FL Studio — это рабочая станция цифрового аудио для Windows. В основном он используется для создания и производства музыки.",
+			"alternatename_e": "FruityLoops",
+			"alternatename_r": "Фруктовые петли",
+			"keywords_e": "FL Studio, FruityLoops, DAW, Music production, Audio-Workstation",
+			"keywords_r": "FL Studio, FruityLoops, DAW, производство музыки, аудио-рабочая станция",
+			"name_e": "FL Studio",
+			"name_r": "ФЛ Студия"
+		},
+		"de9416c8-057c-4898-800a-ed1f23b62ddc": {
+			"description": "Magnolia ist ein Open-Source-Content-Management-System (CMS) zur Verwaltung von Inhalten auf Websites und anderen digitalen Kanälen. Es ist in Java geschrieben und wurde von Magnolia International Ltd. entwickelt.",
+			"alternatename": "Magnolia CMS",
+			"keywords": "Open-Source, Content-Management-System, Java, Magnolia International Ltd.",
+			"name": "Magnolia",
+			"description_e": "Magnolia is an open source content management system (CMS) for managing content on websites and other digital channels. It is written in Java and developed by Magnolia International Ltd. developed.",
+			"description_r": "Magnolia — это система управления контентом (CMS) с открытым исходным кодом, предназначенная для управления контентом на веб-сайтах и ​​других цифровых каналах. Он написан на Java и разработан Magnolia International Ltd. развитый.",
+			"alternatename_e": "Magnolia CMS",
+			"alternatename_r": "Магнолия CMS",
+			"keywords_e": "Open-Source, Content-Management-System, Java, Magnolia International Ltd.",
+			"keywords_r": "Открытый исходный код, система управления контентом, Java, Magnolia International Ltd.",
+			"name_e": "Magnolia",
+			"name_r": "Магнолия"
+		},
+		"e2fab1b5-cedd-450a-8635-aefdbc2ce7bc": {
+			"description": "Java Content Repositories (JCR) ist ein Standard des Java Community Process (JCP), der eine Schnittstelle für Content-Repositorys definiert. Ein Content-Repository ist eine Art Datenbank, in der nicht nur Daten gespeichert werden, sondern auch alle Arten von digitalen Assets, wie Bilder, Videos oder Dokumente.",
+			"alternatename": "Java Content Repositories",
+			"keywords": "JCR, Java Community Process",
+			"name": "JCR",
+			"description_e": "Java Content Repositories (JCR) is a Java Community Process (JCP) standard that defines an interface for content repositories. A content repository is a kind of database in which not only data is stored, but also all kinds of digital assets, such as images, videos or documents.",
+			"description_r": "Репозитории контента Java (JCR) — это стандарт Java Community Process (JCP), который определяет интерфейс для репозиториев контента. Репозиторий контента — это своего рода база данных, в которой хранятся не только данные, но и всевозможные цифровые активы, такие как изображения, видео или документы.",
+			"alternatename_e": "Java Content Repositories",
+			"alternatename_r": "Репозитории содержимого Java",
+			"keywords_e": "JCR, Java Community Process",
+			"keywords_r": "JCR, Процесс сообщества Java",
+			"name_e": "JCR",
+			"name_r": "JCR"
+		},
+		"2f991391-6b11-4907-b58c-db47bfe37ca3": {
+			"description": "Docker ist eine Software, die es ermöglicht, Anwendungen und ihre Abhängigkeiten in sogenannten Containern zu verpacken und bereitzustellen. Dadurch wird eine einfache und schnelle Bereitstellung von Anwendungen ermöglicht, da Container unabhängig von der zugrunde liegenden Infrastruktur ausgeführt werden können.",
+			"alternatename": "Docker Container",
+			"keywords": "Container, Virtualisierung",
+			"name": "Docker",
+			"description_e": "Docker is software that makes it possible to package and deploy applications and their dependencies in so-called containers. This enables easy and fast deployment of applications, as containers can run independently of the underlying infrastructure.",
+			"description_r": "Docker — это программное обеспечение, которое позволяет упаковывать и развертывать приложения и их зависимости в так называемых контейнерах. Это обеспечивает простое и быстрое развертывание приложений, поскольку контейнеры могут работать независимо от базовой инфраструктуры.",
+			"alternatename_e": "Docker Container",
+			"alternatename_r": "Докер-контейнер",
+			"keywords_e": "containers, virtualization",
+			"keywords_r": "контейнеры, виртуализация",
+			"name_e": "Docker",
+			"name_r": "Докер"
+		},
+		"47dafb03-f9d0-469b-9f91-02792b07b8c8": {
+			"description": "Schema Markup ist eine Form von strukturierten Daten, die verwendet werden, um Informationen auf Webseiten zu kennzeichnen. Diese strukturierten Daten werden von Suchmaschinen genutzt, um Informationen besser zu verstehen und zu interpretieren. Dadurch können Suchergebnisse in den Suchmaschinen verbessert werden und eine bessere Sichtbarkeit in den Suchergebnissen erzielt werden.",
+			"alternatename": "Structured Data",
+			"keywords": "Schema.org, strukturierte Daten",
+			"name": "Schema Markup",
+			"description_e": "Schema markup is a form of structured data used to identify information on web pages. This structured data is used by search engines to better understand and interpret information. This can improve search results in the search engines and achieve better visibility in the search results.",
+			"description_r": "Разметка схемы — это форма структурированных данных, используемая для идентификации информации на веб-страницах. Эти структурированные данные используются поисковыми системами для лучшего понимания и интерпретации информации. Это может улучшить результаты поиска в поисковых системах и добиться большей видимости в результатах поиска.",
+			"alternatename_e": "Structured Data",
+			"alternatename_r": "Структурированные данные",
+			"keywords_e": "Schema.org, structured data",
+			"keywords_r": "Schema.org, структурированные данные",
+			"name_e": "Schema Markup",
+			"name_r": "Разметка схемы"
+		},
+		"29fdaedb-0276-4caa-9e9f-39e46719130e": {
+			"description": "Firebase ist eine Plattform von Google, die es Entwicklern ermöglicht, schnell und einfach mobile und Webanwendungen zu entwickeln. Firebase bietet eine Vielzahl von Diensten wie Datenbanken, Authentifizierung, Hosting und Push-Benachrichtigungen.",
+			"alternatename": "Google Firebase",
+			"keywords": "Mobile App Entwicklung, Web Entwicklung",
+			"name": "Firebase",
+			"description_e": "Firebase is a platform from Google that allows developers to quickly and easily build mobile and web applications. Firebase offers a variety of services such as databases, authentication, hosting, and push notifications.",
+			"description_r": "Firebase — это платформа от Google, которая позволяет разработчикам быстро и легко создавать мобильные и веб-приложения. Firebase предлагает различные услуги, такие как базы данных, аутентификация, хостинг и push-уведомления.",
+			"alternatename_e": "Google Firebase",
+			"alternatename_r": "Google Firebase",
+			"keywords_e": "Mobile app development, web development",
+			"keywords_r": "Разработка мобильных приложений, веб-разработка",
+			"name_e": "Firebase",
+			"name_r": "Огневая база"
+		},
+		"36e1c27a-b446-420d-a485-7f289763e10a": {
+			"description": "Blender ist eine kostenlose, Open-Source-Software zur Erstellung von 3D-Modellen, Animationen, visuellen Effekten, Kunstwerken und Videospielen. Blender wird von einer aktiven Community entwickelt und bietet eine breite Palette von Werkzeugen und Funktionen für die Erstellung von 3D-Inhalten.",
+			"alternatename": "Blender 3D",
+			"keywords": "3D-Modellierung, Animation, visuelle Effekte",
+			"name": "Blender",
+			"description_e": "Blender is free, open-source software for creating 3D models, animations, visual effects, artwork, and video games. Developed by an active community, Blender offers a wide range of tools and features for creating 3D content.",
+			"description_r": "Blender — бесплатное программное обеспечение с открытым исходным кодом для создания 3D-моделей, анимации, визуальных эффектов, иллюстраций и видеоигр. Blender, разработанный активным сообществом, предлагает широкий спектр инструментов и функций для создания 3D-контента.",
+			"alternatename_e": "Blender 3D",
+			"alternatename_r": "Блендер 3D",
+			"keywords_e": "3D modelling, animation, visual effects",
+			"keywords_r": "3D моделирование, анимация, визуальные эффекты",
+			"name_e": "Blender",
+			"name_r": "Блендер"
+		},
+		"cd9b3a20-dcd2-4961-be61-831310deaa66": {
+			"description": "Angular is a TypeScript-based open-source web application framework. It is used to build dynamic web applications that run in the browser. Angular is maintained by Google and is one of the most popular frameworks for building web applications.",
+			"alternatename": "Angular 4",
+			"keywords": "Angular, TypeScript, web application framework, Google",
+			"name": "Angular",
+			"description_e": "Angular is a TypeScript-based open-source web application framework. It is used to build dynamic web applications that run in the browser. Angular is maintained by Google and is one of the most popular frameworks for building web applications.",
+			"description_r": "Angular — это платформа веб-приложений с открытым исходным кодом на основе TypeScript. Он используется для создания динамических веб-приложений, которые запускаются в браузере. Angular поддерживается Google и является одной из самых популярных платформ для создания веб-приложений.",
+			"alternatename_e": "Angular 4",
+			"alternatename_r": "Угловой 4",
+			"keywords_e": "Angular, TypeScript, web application framework, Google",
+			"keywords_r": "Angular, TypeScript, платформа веб-приложений, Google",
+			"name_e": "Angular",
+			"name_r": "Угловой"
+		},
+		"c5bab5d0-2537-4b36-834c-1e734a16b851": {
+			"description": "Regex ist eine Abkürzung für regulärer Ausdruck und bezieht sich auf Muster oder Vorlagen, die zur Suche und Manipulation von Zeichenketten in Texten verwendet werden.",
+			"alternatename": "Regular Expression",
+			"keywords": "Regex, regulärer Ausdruck, Muster, Vorlagen, Zeichenketten, Text",
+			"name": "Regex",
+			"description_e": "Regex is an acronym for regular expression and refers to patterns or templates used to search and manipulate strings in text.",
+			"description_r": "Regex — это аббревиатура от регулярного выражения и относится к шаблонам или шаблонам, используемым для поиска и управления строками в тексте.",
+			"alternatename_e": "Regular Expression",
+			"alternatename_r": "Регулярное выражение",
+			"keywords_e": "regex, regular expression, pattern, template, string, text",
+			"keywords_r": "регулярное выражение, регулярное выражение, шаблон, шаблон, строка, текст",
+			"name_e": "Regex",
+			"name_r": "регулярное выражение"
+		},
+		"7fa08215-0d4b-4822-bcae-16fb0d4786c2": {
+			"description": "GraphQL ist eine Abfragesprache für APIs und eine Laufzeitumgebung zum Erfüllen dieser Abfragen mit Ihren vorhandenen Daten.",
+			"alternatename": "Graph Query Language",
+			"keywords": "API, Query",
+			"name": "GraphQL",
+			"description_e": "GraphQL is a query language for APIs and a runtime environment for filling those queries with your existing data.",
+			"description_r": "GraphQL — это язык запросов для API и среда выполнения для заполнения этих запросов существующими данными.",
+			"alternatename_e": "Graph Query Language",
+			"alternatename_r": "Язык графовых запросов",
+			"keywords_e": "API, Query",
+			"keywords_r": "API, Запрос",
+			"name_e": "GraphQL",
+			"name_r": "ГрафQL"
+		}
+	},
+	"school": {
+		"5fe420db-0cc7-4a56-80d2-18d61aec029c": {
+			"description": "Die Primarschule Probstei liegt in Zürich-Schwamendingen, nahe des Zentrums und gerade unterhalb des Zürichberg-Waldes.",
+			"type": "primarschule",
+			"name": "Probstei",
+			"type_e": "primary school",
+			"type_r": "Начальная школа",
+			"description_e": "The Probstei primary school is located in Zurich-Schwamendingen, near the center and just below the Zurichberg forest.",
+			"name_e": "Probstei",
+			"description_r": "Начальная школа Пробштей расположена в Цюрих-Швамендингене, недалеко от центра, чуть ниже Цюрихбергского леса.",
+			"name_r": "Пробштей"
+		},
+		"dbad255f-1a36-42cc-8509-15d73f356f36": {
+			"description": "Die Kantonsschule Hohe Promenade (KSHP) ist eine öffentliche Mittelschule in Zürich mit den Maturitätsprofilen alt- und neusprachlich.",
+			"type": "gymnasium",
+			"name": "Hohe Promenade",
+			"type_e": "gymnasium",
+			"type_r": "гимназия",
+			"description_e": "The Kantonsschule Hohe Promenade (KSHP) is a public middle school in Zurich with the Matura profiles in old and modern languages.",
+			"name_e": "Hohe Promenade",
+			"description_r": "Kantonsschule Hohe Promenade (KSHP) — государственная средняя школа в Цюрихе с профилями зрелости на старых и современных языках.",
+			"name_r": "Набережная Хохэ"
+		},
+		"32bf0fd4-4624-47ca-a41d-cf9a00b68509": {
+			"description": "Die Schule Herzogenmühle ist eine Sekundarschule mit zwei Abteilungen A und B und jeweils drei Anforderungsstufen in den Fächern Mathematik und Französisch.",
+			"type": "sekundarschule",
+			"name": "Herzogenmühle",
+			"type_e": "secondary school",
+			"type_r": "средняя школа",
+			"name_e": "Herzogenmühle",
+			"name_r": "Херцогенмюле",
+			"description_e": "The Herzogenmühle school is a secondary school with two departments A and B and three requirement levels each in the subjects mathematics and French.",
+			"description_r": "Школа Herzogenmühle – это средняя школа с двумя отделениями A и B и тремя уровнями требований по предметам математика и французский язык."
+		},
+		"e1540cec-c9de-4dbc-bdf4-6880b76b8188": {
+			"description": "Die Informatikmittelschule (IMS) in Hottingen vermittelt während drei Jahren eine berufspraktische Informatikausbildung kombiniert mit einem schulischen Schwerpunkt in Wirtschaft und Recht.",
+			"type": "Informatikmittelschule",
+			"name": "Hottingen",
+			"type_e": "Computer Science Middle School",
+			"type_r": "Средняя школа компьютерных наук",
+			"name_e": "Hottingen",
+			"description_e": "The computer science middle school (IMS) in Hottingen provides three years of practical computer science training combined with a school focus on economics and law.",
+			"description_r": "Средняя школа информатики (IMS) в Хоттингене предлагает трехлетнее практическое обучение информатике в сочетании с упором на экономику и право.",
+			"name_r": "Хоттинген"
+		},
+		"5966694e-d1f0-4d58-9099-0dbf58614b04": {
+			"description": "Das Bildungszentrum Zürichsee (BZZ) ist ein Berufs- und Weiterbildungszentrum im Schweizer Kanton Zürich mit Standorten in Horgen und Stäfa.",
+			"type": "Informatikmittelschule",
+			"name": "Berufsbildungszentrum Zürichsee",
+			"type_e": "Computer Science Middle School",
+			"type_r": "Средняя школа компьютерных наук",
+			"description_e": "The Bildungszentrum Zürichsee (BZZ) is a vocational and further training center in the Swiss canton of Zurich with locations in Horgen and Stäfa.",
+			"description_r": "Bildungszentrum Zürichsee (BZZ) — это центр профессионального обучения и повышения квалификации в швейцарском кантоне Цюрих с офисами в Хоргене и Штефе.",
+			"name_e": "Vocational training center at Lake Zurich",
+			"name_r": "Центр профессионального обучения на Цюрихском озере"
+		}
+	},
+	"country": {
+		"6466f6ed-05b4-47ef-915c-3ebd91dd914f": {
+			"name": "Schweiz",
+			"name_e": "Switzerland",
+			"name_r": "Швейцария"
+		},
+		"02e371bd-d849-4b5a-b66f-5c0c397d527c": {
+			"name": "Amerika",
+			"name_e": "America",
+			"name_r": "Америка"
+		},
+		"a0a2ef59-d6e1-4dd7-be78-67fb3561905a": {
+			"name": "Russland",
+			"name_e": "Russia",
+			"name_r": "Россия"
+		},
+		"a511a25e-af91-4f36-a797-b4cdf1e3612d": {
+			"name": "Frankreich",
+			"name_e": "France",
+			"name_r": "Франция"
+		}
+	},
+	"knowledge": {
+		"d69cbd66-a875-46e1-8d9d-e7483ae8d350": {
+			"name": "Web Accessibility",
+			"description": "Web Accessibility bezieht sich auf die Praktiken und Technologien, die verwendet werden, um Websites für Menschen mit Behinderungen zugänglicher zu machen.",
+			"description_e": "Web Accessibility refers to the practices and technologies used to make websites more accessible to people with disabilities.",
+			"description_r": "Доступность веб-сайтов — это методы и технологии, используемые для того, чтобы сделать веб-сайты более доступными для людей с ограниченными возможностями.",
+			"name_e": "Web Accessibility",
+			"name_r": "Веб-доступность"
+		},
+		"0b409f0d-efad-4e0b-9e04-ddca1c991ae8": {
+			"name": "SEO",
+			"description": "SEO (Search Engine Optimization) umfasst Techniken und Strategien, um die Sichtbarkeit einer Website in Suchmaschinen zu erhöhen.",
+			"description_e": "SEO (Search Engine Optimization) includes techniques and strategies to increase a website's visibility in search engines.",
+			"description_r": "SEO (поисковая оптимизация) включает в себя методы и стратегии повышения видимости веб-сайта в поисковых системах.",
+			"name_e": "SEO",
+			"name_r": "SEO"
+		},
+		"aaa5e85f-6f1e-45b9-a102-911125caad35": {
+			"name": "Mathematik",
+			"description": "Mathematik ist die Wissenschaft der Zahlen, Mengen und Formen und wird in vielen Bereichen wie Wissenschaft, Technologie, Wirtschaft und Finanzen angewendet.",
+			"description_e": "Mathematics is the science of numbers, quantities and shapes and is applied to many fields such as science, technology, business and finance.",
+			"description_r": "Математика — это наука о числах, количествах и формах, которая применяется во многих областях, таких как наука, технология, бизнес и финансы.",
+			"name_e": "mathematics",
+			"name_r": "математика"
+		},
+		"ea9cf2e6-b089-42f6-8b0d-e368be6fbb7c": {
+			"name": "Geschichte",
+			"description": "Geschichte ist die wissenschaftliche Untersuchung von Vergangenheit und Gegenwart, einschließlich der Entwicklungen von Gesellschaften, Kulturen und Ereignissen.",
+			"description_e": "History is the scientific study of the past and present, including the developments of societies, cultures and events.",
+			"description_r": "История – это научное исследование прошлого и настоящего, включая развитие обществ, культур и событий.",
+			"name_e": "Story",
+			"name_r": "История"
+		},
+		"c9886ba3-37d3-43f4-b9e5-05138cebca87": {
+			"name": "Philosophie",
+			"description": "Philosophie ist die Untersuchung grundlegender Konzepte wie Wahrheit, Existenz, Wissen, Werte, Moral und Ethik.",
+			"description_e": "Philosophy is the study of fundamental concepts such as truth, existence, knowledge, values, morals and ethics.",
+			"description_r": "Философия – это изучение фундаментальных концепций, таких как истина, существование, знание, ценности, мораль и этика.",
+			"name_e": "Philosophy",
+			"name_r": "Философия"
+		},
+		"b2a3499e-886a-4e2e-a751-75478fd56199": {
+			"name": "Politik",
+			"description": "Politik befasst sich mit der Organisation und Entscheidungsfindung von Gruppen und Gesellschaften, insbesondere der Regierung und des Staates.",
+			"description_e": "Politics deals with the organization and decision-making of groups and societies, particularly government and the state.",
+			"description_r": "Политика занимается организацией и принятием решений групп и обществ, особенно правительства и государства.",
+			"name_e": "Politics",
+			"name_r": "Политика"
+		},
+		"5ae39549-8e86-4ddc-806a-18717b29930a": {
+			"name": "Geographie",
+			"description": "Geographie befasst sich mit der Erde, einschließlich ihrer Landschaften, ihrer Bewohner und ihrer Phänomene wie Klima und Umwelt.",
+			"description_r": "География изучает Землю, включая ее ландшафты, ее жителей и ее явления, такие как климат и окружающая среда.",
+			"description_e": "Geography deals with the earth, including its landscapes, its inhabitants and its phenomena such as climate and environment.",
+			"name_e": "geography",
+			"name_r": "география"
+		},
+		"d11ca131-035e-4eaa-bc49-2024081ac1b3": {
+			"name": "Biologie",
+			"description": "Biologie ist die Wissenschaft des Lebens und der lebenden Organismen, einschließlich Pflanzen, Tiere und Mikroorganismen.",
+			"description_e": "Biology is the science of life and living organisms, including plants, animals, and microorganisms.",
+			"description_r": "Биология – это наука о жизни и живых организмах, включая растения, животных и микроорганизмы.",
+			"name_e": "Biology",
+			"name_r": "Биология"
+		},
+		"69af5f51-0479-4d65-b833-ee2250b7e74c": {
+			"name": "Chemie",
+			"description": "Chemie ist die Wissenschaft der Materie, ihrer Eigenschaften und ihrer Reaktionen.",
+			"description_e": "Chemistry is the science of matter, its properties and its reactions.",
+			"description_r": "Химия – это наука о веществе, его свойствах и реакциях.",
+			"name_e": "Chemie",
+			"name_r": "Химия"
+		},
+		"7fd96cee-a900-4af0-9361-fe5bfac7aa82": {
+			"name": "Physik",
+			"description": "Physik ist die Wissenschaft der Materie und Energie und deren Wechselwirkungen in der Welt um uns herum.",
+			"description_e": "Physics is the science of matter and energy and their interactions in the world around us.",
+			"description_r": "Физика – это наука о материи и энергии и их взаимодействии в окружающем нас мире.",
+			"name_e": "physics",
+			"name_r": "физика"
+		},
+		"497963c5-c6a6-446d-beca-276f6c3c4f92": {
+			"name": "Hauswirtschaft",
+			"description": "Hauswirtschaft bezieht sich auf die Fähigkeiten und Kenntnisse, die zur Bewältigung alltäglicher Aufgaben im Haushalt erforderlich sind, wie Kochen, Reinigen und Organisieren.",
+			"description_e": "Housekeeping refers to the skills and knowledge needed to perform everyday household tasks, such as cooking, cleaning, and organizing.",
+			"description_r": "Под ведением домашнего хозяйства понимаются навыки и знания, необходимые для выполнения повседневных домашних задач, таких как приготовление пищи, уборка и наведение порядка.",
+			"name_e": "housekeeping",
+			"name_r": "ведение домашнего хозяйства"
+		}
+	},
+	"skill": {
+		"c66af21e-e652-4330-babe-6f413d5ae03b": {
+			"proficiencylevel": null
+		},
+		"49302d6d-5518-4c7d-abfe-a4f67e50dccf": {
+			"proficiencylevel": null
+		},
+		"c9d5fca2-278a-4210-99a1-0671d44e5f67": {
+			"proficiencylevel": null
+		},
+		"60015b59-a4ff-43c7-906d-d10220c3e6df": {
+			"proficiencylevel": null
+		},
+		"750939ac-18cd-474c-98d4-47c345fe2f4b": {
+			"proficiencylevel": null
+		},
+		"dce925a2-4f5b-4b11-9858-ee58ecf9f48d": {
+			"proficiencylevel": null
+		},
+		"3b5db068-3c4e-4cc3-802e-02b3f57bd810": {
+			"proficiencylevel": null
+		},
+		"b5710b5d-2576-4865-bbe5-da187a435226": {
+			"proficiencylevel": null
+		},
+		"5fd1e6fa-fbbf-4803-b602-e7caf5c851bc": {
+			"proficiencylevel": null
+		},
+		"803dbab2-b69a-4d4e-adb0-741886fc8c2c": {
+			"proficiencylevel": null
+		},
+		"f93ca3fb-6b3f-4049-890f-4db86c5e898b": {
+			"proficiencylevel": null
+		},
+		"cefb65ca-271c-444f-8adc-d3cadc5ff94d": {
+			"proficiencylevel": null
+		},
+		"5219322e-6cc2-4063-93fe-dbb3cf7cd017": {
+			"proficiencylevel": null
+		},
+		"0093209c-9683-4704-a031-fe626fc81a2b": {
+			"proficiencylevel": null
+		},
+		"935d5c03-e1ed-43e2-9fe1-b38a103cb32e": {
+			"proficiencylevel": null
+		},
+		"b047319d-2877-4ea9-afc7-ce0fe8d06bc8": {
+			"proficiencylevel": null
+		},
+		"f670fdb3-a419-4703-8448-3ed99f2db6c0": {
+			"proficiencylevel": null
+		},
+		"692eae0a-ee39-42fa-9e39-f51769f646af": {
+			"proficiencylevel": null
+		},
+		"85e16796-a43f-4a8a-8672-a362607a823a": {
+			"proficiencylevel": null
+		},
+		"14cc4bd3-79a6-44c7-959a-e99766e9bb34": {
+			"proficiencylevel": null
+		},
+		"a16d5cd4-dfa8-4643-a595-8e0fc13eaa5c": {
+			"proficiencylevel": null
+		},
+		"ecdbb139-814b-497c-b334-923dc83672c1": {
+			"proficiencylevel": "C2",
+			"proficiencylevel_e": "C2",
+			"proficiencylevel_r": "С2"
+		},
+		"e7cf11d6-aeca-4e35-ac20-0fcd44741622": {
+			"proficiencylevel": "C1",
+			"proficiencylevel_e": "C1",
+			"proficiencylevel_r": "С1"
+		},
+		"569fad72-941c-466b-b874-e53974fb29a3": {
+			"proficiencylevel": "B2",
+			"proficiencylevel_r": "ба",
+			"proficiencylevel_e": "Pa"
+		},
+		"98e3640e-1355-43d8-a664-f64b3b669137": {
+			"proficiencylevel": "B1",
+			"proficiencylevel_r": "Б1",
+			"proficiencylevel_e": "B1"
+		},
+		"16be03ad-27d2-422f-86a1-a11c090a3308": {
+			"proficiencylevel": "",
+			"proficiencylevel_e": ""
+		},
+		"f12b2769-35a0-4106-a674-2fa4d19a887a": {
+			"proficiencylevel": null
+		},
+		"9442a20e-e942-4e69-bd98-fb6c68bef2e8": {
+			"proficiencylevel": null
+		},
+		"c9dce16f-623f-4683-aee1-22176a4362ce": {
+			"proficiencylevel": null
+		},
+		"d4846635-379a-4657-a434-c8bf0afb75c7": {
+			"proficiencylevel": null
+		},
+		"7a04f9f1-f84c-4d4d-b84b-2f544c7be9ce": {
+			"proficiencylevel": null
+		},
+		"4392cbca-8f28-4ba5-9206-a0f2cdcb6034": {
+			"proficiencylevel": null
+		},
+		"87f7ff08-e389-411f-a55f-3ace131fe2c6": {
+			"proficiencylevel": null
+		},
+		"41fa4e3e-2f1e-4ebb-b011-ba29b91ebc55": {
+			"proficiencylevel": null
+		},
+		"195cca2c-55af-4e33-b54e-bd4bc2cf5fb0": {
+			"proficiencylevel": null
+		},
+		"35a13957-b19f-41a2-a9f6-2816e1650275": {
+			"proficiencylevel": null
+		},
+		"f814c061-b253-42a6-9667-fc16f961349c": {
+			"proficiencylevel": null
+		},
+		"b14379c1-c5e6-4eca-b91b-d3558999d4bc": {
+			"proficiencylevel": null
+		},
+		"25865142-da7f-4d3c-97b4-3e39f407d209": {
+			"proficiencylevel": null
+		},
+		"5056d42f-c905-4f07-aa90-9fbb673fc816": {
+			"proficiencylevel": null
+		},
+		"1dd783b1-67e8-4621-a041-7e0272c53b1d": {
+			"proficiencylevel": null
+		},
+		"df308855-6c52-45db-b8f3-e0859a3e5b3e": {
+			"proficiencylevel": null
+		},
+		"62d60f95-2185-4235-ade3-18a69c449d89": {
+			"proficiencylevel": null
+		},
+		"b9156055-7096-45a1-9cdd-147002487d0d": {
+			"proficiencylevel": null
+		},
+		"ff894d10-74a4-4a18-aa07-7b800c647dbc": {
+			"proficiencylevel": null
+		},
+		"6e059013-eda5-4736-bb49-e3cfdb7a022a": {
+			"proficiencylevel": null
+		},
+		"ae27eb97-5e0d-4784-bb98-b8811a9255d1": {
+			"proficiencylevel": null
+		},
+		"1af6b31d-aa53-49b5-b659-3beeae8bf13c": {
+			"proficiencylevel": null
+		},
+		"6d5316fd-8ae0-46eb-9d58-6560eef36dd8": {
+			"proficiencylevel": null
+		},
+		"7bd3ad76-b5b2-405b-8729-ba8e2c64f853": {
+			"proficiencylevel": null
+		},
+		"3d5488db-d316-4518-ae57-c98e3b25a610": {
+			"proficiencylevel": null
+		},
+		"f194eb75-c158-4797-81c5-3c4d9b7d9e80": {
+			"proficiencylevel": null
+		},
+		"a92fc6f8-0dce-4add-b1df-87093278144c": {
+			"proficiencylevel": null
+		},
+		"ceaa6a78-f6d0-4e52-8c77-5efe0df19cb2": {
+			"proficiencylevel": null
+		},
+		"a5d8b673-984c-4701-8af8-3560a79b225c": {
+			"proficiencylevel": null
+		},
+		"88f42154-5920-4746-99bc-ead792281101": {
+			"proficiencylevel": null
+		},
+		"c538a681-58ad-4326-babd-8855c2d50c68": {
+			"proficiencylevel": null
+		},
+		"b2bc9bc7-2695-441c-886a-2763f667df73": {
+			"proficiencylevel": null
+		},
+		"974f3ddd-6d9b-440c-92dd-df9bc239c3d1": {
+			"proficiencylevel": null
+		},
+		"6154eb36-1ffd-45ae-b303-2e29fd8f2723": {
+			"proficiencylevel": null
+		},
+		"2ac9b0f1-5427-4769-b9e6-4c97b26b9327": {
+			"proficiencylevel": null
+		},
+		"a8e903b9-659a-4023-8f53-e182a445aa2d": {
+			"proficiencylevel": null
+		},
+		"2e6e4c2e-298b-47e4-9b4b-ce7c09160227": {
+			"proficiencylevel": null
+		},
+		"0073471c-4859-4b0d-af6c-2178382ea5f6": {
+			"proficiencylevel": null
+		},
+		"8ad80375-2f6f-4e08-9446-769dbc86e618": {
+			"proficiencylevel": null
+		},
+		"1f9c8127-1739-41f3-84ad-971d04b7e864": {
+			"proficiencylevel": null
+		},
+		"c84e2eb1-dc3d-493c-adf5-87608a2b7a06": {
+			"proficiencylevel": null
+		},
+		"5e501edf-7656-488e-b726-df0fd4022147": {
+			"proficiencylevel": null
+		},
+		"86f7ad06-827e-4f95-8247-97d9343e8304": {
+			"proficiencylevel": null
+		},
+		"f0121d15-0f34-4c81-9fac-15bc0e9dceb2": {
+			"proficiencylevel": null
+		},
+		"50179441-8ccf-4588-95b1-315a955f8d4c": {
+			"proficiencylevel": null
+		},
+		"3e31f44b-4b63-4473-98d7-d5ab4dcca270": {
+			"proficiencylevel": null
+		},
+		"afbee84a-82aa-48be-939d-081cd147f4fd": {
+			"proficiencylevel": null
+		},
+		"70a0a856-95da-4693-a973-3df460fee2ff": {
+			"proficiencylevel": null
+		},
+		"717c8a51-3a5b-4b4f-a1f2-3797d83a9d7e": {
+			"proficiencylevel": null
+		},
+		"214a659a-bf6c-460f-8646-ec6cc0d744de": {
+			"proficiencylevel": null
+		},
+		"dc0e81e9-0b75-4644-b398-0bc80829c113": {
+			"proficiencylevel": null
+		},
+		"b48b5a89-5aae-4589-b004-1b1cff8fdbae": {
+			"proficiencylevel": null
+		},
+		"f8c4cf42-f434-45a0-8c44-9507fe0550a8": {
+			"proficiencylevel": null
+		},
+		"35172086-af2f-423a-8af8-3ab25dc5096b": {
+			"proficiencylevel": null
+		},
+		"0e41b4ec-476a-4629-a40a-e24c1a20dd1e": {
+			"proficiencylevel": null
+		},
+		"7d2c812e-a35f-41d0-8e5b-1ba3e6e9868d": {
+			"proficiencylevel": null
+		},
+		"376d18ee-7461-4d1b-9863-17115867fde4": {
+			"proficiencylevel": null
+		},
+		"2bb6244f-9b99-41e5-abe6-fee203846069": {
+			"proficiencylevel": null
+		},
+		"2189834c-bdb7-401b-b8f4-0ac190e62e3b": {
+			"proficiencylevel": null
+		},
+		"8a75a735-7668-4806-866f-6771ba43dccf": {
+			"proficiencylevel": null
+		},
+		"daffc3fe-4422-44f2-aae2-1581a5e106c8": {
+			"proficiencylevel": null
+		},
+		"efcd0b21-e938-4c79-a8d1-bd06325e9b02": {
+			"proficiencylevel": null
+		}
+	},
+	"skillsubcategory": {
+		"8f249982-d2a1-4bcb-86f2-224c9e47219f": {
+			"name": "Musik",
+			"description": "Musik ist für mich nicht nur ein Hobby, sondern eine Leidenschaft. Ich liebe die Freiheit, die Musik mir bietet, um meine Gefühle und Gedanken auszudrücken, und geniesse es, in meiner eigenen Welt zu sein, während ich sie spiele oder höre. Die Magie der Musik hat eine unvergleichliche Kraft, mich zu bewegen und zu inspirieren, und ich bin dankbar, dass ich diese Gabe und Möglichkeit habe, sie zu erschaffen und mit anderen zu teilen.",
+			"name_e": "Music",
+			"name_r": "Музыка",
+			"description_e": "Music isn't just a hobby for me, it's a passion. I love the freedom music gives me to express my feelings and thoughts and enjoy being in my own world while playing or listening to it. The magic of music has an unparalleled power to move and inspire me, and I am grateful to have this gift and opportunity to create and share it with others.",
+			"description_r": "Музыка для меня не просто хобби, это страсть. Мне нравится свобода, которую музыка дает мне, чтобы выражать свои чувства и мысли, и мне нравится находиться в своем собственном мире, играя или слушая ее. Магия музыки обладает беспрецедентной силой трогать и вдохновлять меня, и я благодарен за этот дар и возможность создавать его и делиться им с другими."
+		},
+		"f9e7338f-dafd-42ac-a605-e3d8e14489a9": {
+			"name": "Gestalten",
+			"description": "Durch das Gestalten von verschiedenen Materialien kann ich meiner Fantasie freien Lauf lassen und meine Umgebung verschönern. Es ist ein wunderbares Gefühl, etwas Eigenes zu schaffen und anderen damit Freude zu bereiten.",
+			"name_e": "Design",
+			"name_r": "Дизайн",
+			"description_e": "By designing different materials, I can let my imagination run wild and beautify my surroundings. It is a wonderful feeling to create something of your own and to make others happy with it.",
+			"description_r": "Создавая различные материалы, я могу дать волю своему воображению и украсить свое окружение. Это прекрасное чувство – создавать что-то свое и радовать этим других."
+		},
+		"b461cb0a-68c9-418f-b166-a80e27df2287": {
+			"name": "Werken",
+			"description": "Werken ist für mich eine Leidenschaft, bei der ich mich voll und ganz auf meine Arbeit konzentrieren kann. Es erfordert Geduld, Kreativität und Geschicklichkeit, um ein Werkstück herzustellen, aber das Ergebnis ist umso lohnender. Ich geniesse es, Dinge mit meinen eigenen Händen zu erschaffen und mein handwerkliches Geschick zu verbessern.",
+			"name_e": "To work",
+			"name_r": "Работать",
+			"description_e": "For me, making things is a passion that allows me to fully concentrate on my work. It takes patience, creativity and skill to make a piece, but the result is all the more rewarding. I enjoy creating things with my own hands and improving my craft skills.",
+			"description_r": "Для меня изготовление вещей — это страсть, которая позволяет мне полностью сконцентрироваться на работе. Создание изделия требует терпения, творчества и умения, но результат тем более полезен. Мне нравится создавать вещи своими руками и совершенствовать свои ремесленные навыки."
+		},
+		"223e9d8b-b2e7-4311-a6b7-8e652624825c": {
+			"name": "Textilarbeit",
+			"description": "Wenn ich mit Textilien arbeite, fühle ich mich wie ein Künstler, der mit Stoffen als Farben und Texturen als Pinselstriche arbeitet. Jedes Stück, das ich entwerfe und nähe, ist einzigartig und erzählt eine eigene Geschichte. Es ist eine wunderbare Art, meine Kreativität auszudrücken und meine persönlichen Stilvorlieben zu zeigen.",
+			"name_e": "textile work",
+			"name_r": "текстильная работа",
+			"description_e": "Working with textiles makes me feel like an artist, working with fabrics as colors and textures as brushstrokes. Every piece I design and sew is unique and tells its own story. It's a wonderful way to express my creativity and show my personal style preferences.",
+			"description_r": "Работа с текстилем позволяет мне почувствовать себя художником, работающим с тканями как с цветами и текстурами, как с мазками кисти. Каждое изделие, которое я создаю и шью, уникально и рассказывает свою историю. Это прекрасный способ выразить свое творчество и показать свои личные предпочтения в стиле."
+		},
+		"2020f25f-a5dc-4ec5-a79e-1ad964e87a52": {
+			"name": "Modellieren",
+			"description": "Durch das Formen von Ton, Gips, virtuellen Objekten oder anderen Materialien kann ich meine Ideen in dreidimensionale Objekte verwandeln. Es ist ein erfüllendes Gefühl, ein Werkstück zu erschaffen, das ich anschließend betrachten und bewundern kann.",
+			"name_e": "Model",
+			"name_r": "Модель",
+			"description_e": "By shaping clay, plaster, virtual objects or other materials, I can turn my ideas into three-dimensional objects. It is a fulfilling feeling to create a work that I can then look at and admire.",
+			"description_r": "Придавая форму глине, гипсу, виртуальным объектам или другим материалам, я могу превратить свои идеи в трехмерные объекты. Это чувство удовлетворения – создавать работу, на которую потом можно смотреть и восхищаться."
+		},
+		"dd5120ef-7d58-4a80-94df-ee4f8ad9ba3d": {
+			"name": "Schule",
+			"description": "Es gibt nichts Schöneres, als das Wissen und die Fähigkeiten an die nächste Generation weiterzugeben und zu sehen, wie sich die Schülerinnen und Schüler zu independencebewussten und gebildeten Menschen entwickeln.",
+			"name_e": "School",
+			"name_r": "Школа",
+			"description_e": "There is nothing like passing on the knowledge and skills to the next generation and seeing the students grow into self-sufficient and educated people.",
+			"description_r": "Нет ничего лучше, чем передать знания и навыки следующему поколению и увидеть, как студенты превращаются в самостоятельных и образованных людей."
+		},
+		"4d957535-2bb2-40d6-a018-6705c2175c0c": {
+			"name": "Verein",
+			"description": "Ein Verein bietet die perfekte Möglichkeit, sich mit Gleichgesinnten zu treffen und gemeinsam an einem Ziel zu arbeiten. Es ist inspirierend zu sehen, wie die Mitglieder des Vereins zusammenarbeiten und sich gegenseitig unterstützen.",
+			"name_e": "Association",
+			"name_r": "Ассоциация",
+			"description_e": "A club offers the perfect opportunity to meet like-minded people and work together towards a common goal. It is inspiring to see how the members of the association work together and support each other.",
+			"description_r": "Клуб предлагает прекрасную возможность встретить единомышленников и работать вместе для достижения общей цели. Приятно видеть, как члены ассоциации работают вместе и поддерживают друг друга."
+		},
+		"c749951c-4ab6-4e59-b24d-2d984d3cb0ff": {
+			"name": "Einzelunterricht",
+			"description": "Als Lehrer oder Tutor hat man die Möglichkeit, die individuellen Bedürfnisse und Fähigkeiten jedes Schülers zu berücksichtigen und ihnen dabei zu helfen, ihr volles Potenzial auszuschöpfen. Es ist unglaublich befriedigend, den Fortschritt der Schülerinnen und Schüler zu beobachten und zu sehen, wie sie ihr Wissen und ihre Fähigkeiten erweitern.",
+			"name_r": "частные уроки",
+			"name_e": "private lessons",
+			"description_e": "As a teacher or tutor, one has the opportunity to consider the individual needs and abilities of each student and to help them reach their full potential. It is incredibly gratifying to watch students progress and see them expand their knowledge and skills.",
+			"description_r": "Будучи учителем или репетитором, вы имеете возможность учитывать индивидуальные потребности и способности каждого ученика и помочь ему полностью раскрыть свой потенциал. Невероятно приятно наблюдать за прогрессом учеников и видеть, как они расширяют свои знания и навыки."
+		},
+		"660cd46b-7dda-4dee-bf39-fb00faff36e7": {
+			"name": "Natur",
+			"description": "Es gibt nichts Besseres als eine Verbindung mit der Natur. Egal ob es Spaziergänge im Wald sind oder das Bewundern der Landschaft, die Natur bietet eine Quelle der Entspannung und Inspiration. Jedes mal lasse ich mich aufs Neue von ihrer Schönheit begeistern.",
+			"name_e": "Nature",
+			"name_r": "Природа",
+			"description_e": "There is nothing better than connecting with nature. Whether it's walking in the woods or admiring the countryside, nature offers a source of relaxation and inspiration. Each time I am amazed by her beauty.",
+			"description_r": "Нет ничего лучше, чем общение с природой. Будь то прогулка по лесу или любование сельской местностью, природа предлагает источник релаксации и вдохновения. Каждый раз я поражаюсь ее красоте."
+		},
+		"3ed454be-c851-4561-ac12-5d4fa101e701": {
+			"name": "Sport",
+			"description": "Sich körperlich zu betätigen ist für mich eine Möglichkeit, meinen Geist zu entspannen und den Körper fit und gesund zu halten. Durch Sport kann ich meine Grenzen testen und mich ständig verbessern. Ich genieße es, mich in der Natur zu bewegen und dabei neue Orte und Landschaften zu entdecken. Außerdem macht es mir Spaß in Mannschaften zu spielen.",
+			"name_e": "Sport",
+			"name_r": "Спорт",
+			"description_e": "For me, physical activity is a way to relax my mind and keep my body fit and healthy. Sport allows me to test my limits and constantly improve. I enjoy being in nature and discovering new places and landscapes. I also enjoy playing in teams.",
+			"description_r": "Для меня физическая активность — это способ расслабить разум и сохранить тело в форме и здоровье. Спорт позволяет мне проверить свои возможности и постоянно совершенствоваться. Мне нравится находиться на природе и открывать для себя новые места и пейзажи. Еще мне нравится играть в командах."
+		},
+		"1747bedc-23e2-4b69-9d37-889c164f6049": {
+			"name": "Ernährung",
+			"description": "Ich achte auf eine ausgewogene und gesunde Ernährung, um mich fit und energiegeladen zu fühlen. Kochen ist für mich eine kreative Aktivität, die ich gerne mit Freunden und Familie teile. Ich interessiere mich für neue Lebensmittel und experimentiere gerne mit verschiedenen Küchen und Geschmacksrichtungen. Eine gesunde Ernährung hilft mir, mich gut zu fühlen und das Beste aus meinem Tag zu machen.",
+			"name_r": "Питание",
+			"name_e": "Nutrition",
+			"description_e": "I pay attention to a balanced and healthy diet to feel fit and full of energy. For me, cooking is a creative activity that I enjoy sharing with friends and family. I am interested in new foods and like to experiment with different cuisines and tastes. Eating a healthy diet helps me feel good and get the most out of my day.",
+			"description_r": "Я уделяю внимание сбалансированному и здоровому питанию, чтобы чувствовать себя в хорошей форме и полным энергии. Для меня приготовление пищи — это творческое занятие, которым мне нравится делиться с друзьями и семьей. Я интересуюсь новыми продуктами и люблю экспериментировать с разными кухнями и вкусами. Здоровое питание помогает мне чувствовать себя хорошо и получать от дня максимум удовольствия."
+		},
+		"33d97a56-fff0-44e0-ba93-58b7cf44fbb0": {
+			"name": "Geist",
+			"description": "Geistige Herausforderungen sind für mich genauso wichtig wie körperliche Aktivität. Ich liebe es, neue Dinge zu lernen und meine Fähigkeiten zu erweitern. Meditation und Yoga helfen mir, meinen Geist zu beruhigen und mich zu konzentrieren. Lesen und Schreiben sind für mich eine Quelle der Inspiration und der Reflexion.",
+			"name_e": "Geist",
+			"name_r": "Гейст",
+			"description_e": "Mental challenges are just as important to me as physical activity. I love learning new things and expanding my skills. Meditation and yoga help me calm my mind and focus. Reading and writing are a source of inspiration and reflection for me.",
+			"description_r": "Умственные проблемы для меня так же важны, как и физическая активность. Я люблю узнавать что-то новое и расширять свои навыки. Медитация и йога помогают мне успокоить разум и сосредоточиться. Чтение и письмо являются для меня источником вдохновения и размышлений."
+		},
+		"e0fcc768-7b54-4a4d-abe7-56118b265832": {
+			"name": "Frontend",
+			"description": "Erstellung von benutzerorientierten Websites oder Webanwendungen unter Verwendung von Technologien wie HTML, CSS und JavaScript.",
+			"name_e": "Frontend",
+			"name_r": "Внешний интерфейс",
+			"description_e": "Creation of user-oriented websites or web applications using technologies such as HTML, CSS and JavaScript.",
+			"description_r": "Создание ориентированных на пользователя веб-сайтов или веб-приложений с использованием таких технологий, как HTML, CSS и JavaScript."
+		},
+		"f7510eab-1d66-4d09-bc1d-bf73f450684d": {
+			"name": "Backend",
+			"description": "Erstellung von serverseitiger Logik und Integration von Datenbanken für Webanwendungen.",
+			"name_e": "Backend",
+			"name_r": "Бэкэнд",
+			"description_e": "Creation of server-side logic and integration of databases for web applications.",
+			"description_r": "Создание серверной логики и интеграция баз данных для веб-приложений."
+		},
+		"99c0b9da-b69a-40a2-bcf8-e7c30ba6a705": {
+			"name": "Mobile App Entwicklung",
+			"description": "Erstellung von Anwendungen für mobile Geräte wie Smartphones und Tablets.",
+			"name_e": "Mobile app development",
+			"name_r": "Разработка мобильных приложений",
+			"description_e": "Creation of applications for mobile devices such as smartphones and tablets.",
+			"description_r": "Создание приложений для мобильных устройств, таких как смартфоны и планшеты."
+		},
+		"a61136d7-1b14-487a-a45f-542a60317905": {
+			"name": "Spielentwicklung",
+			"description": "Erstellung von Videospielen für Konsolen, PC oder mobile Geräte unter Verwendung verschiedener Programmiersprachen und Spiele-Engines.",
+			"name_e": "game development",
+			"name_r": "разработка игр",
+			"description_e": "Creation of video games for consoles, PC or mobile devices using different programming languages ​​and game engines.",
+			"description_r": "Создание видеоигр для консолей, ПК или мобильных устройств с использованием разных языков программирования и игровых движков."
+		},
+		"7c5b1fd4-e63b-4dde-a6bc-8ef14e6ec5f1": {
+			"name": "Datenbankentwicklung",
+			"description": "Entwurf und Implementierung von Datenbanken zur Speicherung und Organisation großer Datenmengen.",
+			"name_e": "database development",
+			"name_r": "разработка базы данных",
+			"description_e": "Design and implementation of databases for storing and organizing large amounts of data.",
+			"description_r": "Проектирование и внедрение баз данных для хранения и организации больших объемов данных."
+		},
+		"a45916dd-f6c0-4264-9e10-a89c072124e9": {
+			"name": "Datenmanagement",
+			"description": "Entwurf und Implementierung von Anwendungen zur Manipulation und Organisation großer Datenmengen.",
+			"name_e": "data management",
+			"name_r": "управление данными",
+			"description_e": "Design and implementation of applications for manipulating and organizing large amounts of data.",
+			"description_r": "Проектирование и реализация приложений для манипулирования и организации больших объемов данных."
+		},
+		"2d246f00-61f1-4ffc-9192-e181a7e4963d": {
+			"name": "Bildbearbeitung",
+			"description": "Bearbeitung und Optimierung von digitalen Bildern und Fotos mit Hilfe von Computerprogrammen, um ihre Qualität und Ästhetik zu verbessern.",
+			"name_e": "image editing",
+			"name_r": "редактирование изображений",
+			"description_e": "Editing and optimization of digital images and photos using computer programs to improve their quality and aesthetics.",
+			"description_r": "Редактирование и оптимизация цифровых изображений и фотографий с помощью компьютерных программ для улучшения их качества и эстетики."
+		},
+		"40cc665b-511b-4d2c-a69c-68339ac25de4": {
+			"name": "Office",
+			"description": "Eine Sammlung von Anwendungen wie Word, Excel, PowerPoint und Outlook, die häufig in Büros und Unternehmen verwendet wird, um Dokumente zu erstellen, Tabellenkalkulationen durchzuführen, Präsentationen zu gestalten und E-Mails zu verwalten.",
+			"name_e": "Office",
+			"name_r": "Офис",
+			"description_e": "A collection of applications such as Word, Excel, PowerPoint and Outlook commonly used in offices and businesses to create documents, perform spreadsheets, design presentations and manage e-mails.",
+			"description_r": "Коллекция приложений, таких как Word, Excel, PowerPoint и Outlook, которые обычно используются в офисах и на предприятиях для создания документов, работы с электронными таблицами, разработки презентаций и управления электронной почтой."
+		},
+		"094295f2-6945-4333-8f3a-e55aa38013a1": {
+			"name": "SEO",
+			"description": " Suchmaschinenoptimierung bezieht sich auf die Techniken, die verwendet werden, um eine Website oder eine Online-Präsenz in den Suchergebnissen einer Suchmaschine zu verbessern. Ziel ist es, eine höhere Sichtbarkeit und damit mehr Besucher auf der Webseite zu erreichen.",
+			"name_e": "SEO",
+			"name_r": "SEO",
+			"description_e": "Search Engine Optimization refers to the techniques used to improve a website or online presence in a search engine's search results. The aim is to achieve higher visibility and thus more visitors to the website.",
+			"description_r": "Поисковая оптимизация относится к методам, используемым для улучшения веб-сайта или присутствия в Интернете в результатах поиска поисковой системы. Цель состоит в том, чтобы добиться большей видимости и, следовательно, большего количества посетителей на веб-сайте."
+		},
+		"855a8ee3-d34c-41c1-aa6c-5751a5f7ea04": {
+			"name": "Datenbearbeitung",
+			"description": null,
+			"name_e": "data processing",
+			"name_r": "обработка данных"
+		},
+		"6bb9dc80-c2cd-47ab-b81e-79d770786333": {
+			"name": "Softskills",
+			"description": "Persönliche Fähigkeiten, die bei der Interaktion mit anderen Menschen am Arbeitsplatz oder in sozialen Situationen von Vorteil sind, wie zum Beispiel Kommunikation, Teamarbeit, Zeitmanagement und Problemlösung.",
+			"name_e": "Soft Skills",
+			"name_r": "Мягкие навыки",
+			"description_e": "Personal skills that are beneficial when interacting with other people in the workplace or in social situations, such as communication, teamwork, time management and problem solving.",
+			"description_r": "Личные навыки, которые полезны при взаимодействии с другими людьми на рабочем месте или в социальных ситуациях, такие как общение, работа в команде, управление временем и решение проблем."
+		},
+		"f6f95c3d-9c92-435f-943a-57331f948537": {
+			"name": "Sprachen",
+			"description": "Die Fähigkeit, Sprachen fließend zu sprechen, lesen und schreiben.",
+			"name_e": "Languages",
+			"name_r": "Языки",
+			"description_e": "The ability to speak, read and write languages ​​fluently.",
+			"description_r": "Умение свободно говорить, читать и писать на языках."
+		},
+		"3dbc2b58-4f2f-48a1-bbdc-deb24518b47a": {
+			"name": "Wissen",
+			"description": "Die Fähigkeit, Wissen in verschiedenen Bereichen zu sammeln, zu verstehen und anzuwenden.",
+			"name_e": "To know",
+			"name_r": "Знать",
+			"description_e": "The ability to gather, understand and apply knowledge in different fields.",
+			"description_r": "Способность собирать, понимать и применять знания в различных областях."
+		}
+	},
+	"workplace": {
+		"22d18da7-6150-4f02-aa98-f9718e982c98": {
+			"name": "Inteco",
+			"description": "Führender Schweizer IT-Gesamtanbieter für alle Branchen, spezialisiert auf Getränke- und Weinhandel.",
+			"description_e": "Leading Swiss full-service IT provider for all sectors, specializing in the beverage and wine trade.",
+			"description_r": "Ведущий швейцарский поставщик ИТ-услуг с полным спектром услуг для всех секторов, специализирующийся на торговле напитками и вином.",
+			"name_e": "Inteco",
+			"name_r": "Интеко"
+		},
+		"03e8c289-d838-44c7-818a-cc10f90db722": {
+			"name": "Ernesto Vargas",
+			"description": "Ernesto Vargas® ist eine Schweizer Firma, die sich seit 2014 auf die Ausrüstung professioneller Handwerker spezialisiert hat.",
+			"description_e": "Ernesto Vargas® is a Swiss company specialized in equipping professional craftsmen since 2014.",
+			"description_r": "Ernesto Vargas® — швейцарская компания, специализирующаяся на оснащении профессиональных мастеров с 2014 года.",
+			"name_e": "Ernesto Vargas",
+			"name_r": "Эрнесто Варгас"
+		},
+		"99d9f775-1b53-400a-b96b-07d70b8f74bb": {
+			"name": "Kork",
+			"description": "Kork wurde 2020 gegründet, als drei Freunde ihre Fähigkeiten in Dienstleistungen umwandelten und diese Kunden im Tausch gegen Geld anboten.",
+			"description_e": "Kork was founded in 2020 when three friends converted their skills into services and offered these to customers in exchange for money.",
+			"description_r": "Компания Kork была основана в 2020 году, когда трое друзей превратили свои навыки в услуги и предложили их клиентам в обмен на деньги.",
+			"name_e": "Cap",
+			"name_r": "Кепка"
+		}
+	},
+	"skillcategory": {
+		"74395c63-972f-43c3-bcf8-3c04e44bf43e": {
+			"description": "Kategorie für Kunstfertigkeiten",
+			"name": "Kunst",
+			"description_e": "Craftsmanship category",
+			"description_r": "Категория мастерства",
+			"name_e": "Art",
+			"name_r": "Искусство"
+		},
+		"05e11624-4c3e-4bb5-9085-a1848232dbcf": {
+			"description": "Kategorie für pädagogische Fähigkeiten",
+			"name": "Pädagogik",
+			"description_e": "Pedagogical skills category",
+			"name_e": "pedagogy",
+			"name_r": "педагогика",
+			"description_r": "Категория педагогического мастерства"
+		},
+		"b2d985b8-f3d3-43dc-84c3-313148beefe3": {
+			"description": "Kategorie für gesundheitsbezogene Fähigkeiten",
+			"name": "Gesundheit",
+			"description_e": "Health Skills category",
+			"name_e": "Health",
+			"name_r": "Здоровье",
+			"description_r": "Категория «Навыки здоровья»"
+		},
+		"4ab6c95e-a9ce-424d-9668-1ae7a052da70": {
+			"description": "Kategorie für informatische Fähigkeiten",
+			"name": "Informatik",
+			"description_e": "Computer skills category",
+			"name_e": "computer science",
+			"description_r": "Категория «Компьютерные навыки»",
+			"name_r": "Информатика"
+		},
+		"a2d674c8-3e88-444f-8132-062b40839f37": {
+			"description": "Kategorie für allgemeine Fähigkeiten",
+			"name": "Allgemein",
+			"name_e": "Generally",
+			"description_e": "General Skills category",
+			"description_r": "Категория «Общие навыки»",
+			"name_r": "В целом"
+		}
+	},
+	"language": {
+		"9ff4e422-2f50-4895-a222-335bc9e50289": {
+			"description": "Seit Geburt",
+			"name": "Deutsch",
+			"description_e": "Since birth",
+			"description_r": "С рождения",
+			"name_e": "Deutsch",
+			"name_r": "немецкий"
+		},
+		"be36227f-efcb-45e9-bf25-3a63633333fe": {
+			"description": "Vatersprache",
+			"name": "Englisch",
+			"description_e": "mother tongue",
+			"description_r": "родной язык",
+			"name_e": "English",
+			"name_r": "Английский"
+		},
+		"5cf18e31-ee36-45f0-95af-9ab917e87045": {
+			"description": "Muttersprache",
+			"name": "Russisch",
+			"description_e": "mother tongue",
+			"description_r": "родной язык",
+			"name_e": "Russian",
+			"name_r": "Русский"
+		},
+		"48b5e9b0-ae04-42dc-bb2b-2dcaa334ba73": {
+			"description": "Schulwissen",
+			"name": "Französisch",
+			"description_e": "school knowledge",
+			"description_r": "школьные знания",
+			"name_e": "French",
+			"name_r": "Французский"
+		},
+		"dac3a3b9-b363-424f-aab3-a2d73193472d": {
+			"description": "Grundkenntnisse",
+			"name": "Latein",
+			"description_e": "Basic knowledge",
+			"description_r": "Базовые знания",
+			"name_e": "Latin",
+			"name_r": "латинский"
+		}
+	},
+	"contactpoint": {
+		"e16711ad-ccc9-4674-a857-03727a387d94": {
+			"name": "Info point",
+			"name_r": "Информационная точка",
+			"name_e": "Info point"
+		},
+		"47f0b596-e68f-4a89-bda2-ed88fa9cb882": {
+			"name": "Info point",
+			"name_e": "Info point",
+			"name_r": "Информационная точка"
+		},
+		"39f2cd91-f130-40f2-94e7-0bff473b2874": {
+			"name": "Sekretariat",
+			"name_r": "Секретариат",
+			"name_e": "Secretariat"
+		},
+		"30da5cea-b400-4b9c-a524-ca25f65a9433": {
+			"name": "Sekretariat",
+			"name_e": "Secretariat",
+			"name_r": "Секретариат"
+		},
+		"78dd7e1b-e938-4d1e-9a80-3e1589b816cc": {
+			"name": "Schulleitung",
+			"name_e": "principal",
+			"name_r": "главный"
+		},
+		"d29a50be-2cca-40dd-9f6b-b539b6a6a164": {
+			"name": "Sekretariat",
+			"name_e": "Secretariat",
+			"name_r": "Секретариат"
+		},
+		"c4c67e00-df0a-4758-8312-77b9656843b4": {
+			"name": "Sekretariat",
+			"name_r": "Секретариат",
+			"name_e": "Secretariat"
+		},
+		"41c893a7-1ef4-487e-aebc-b769c05aedb8": {
+			"name": "me",
+			"name_e": "me",
+			"name_r": "мне"
+		},
+		"bd300439-2103-4e0b-b7c2-7ca1ff2b35bd": {
+			"name": "mom",
+			"name_e": "mom",
+			"name_r": "мама"
+		},
+		"fc4cbfa0-8019-409a-876b-792e3664efd5": {
+			"name": "dad",
+			"name_r": "папа",
+			"name_e": "dad"
+		},
+		"bfbb6b30-0831-4a46-8c08-68079f5faf0a": {
+			"name": "niki",
+			"name_r": "Ники",
+			"name_e": "niki"
+		},
+		"376db6db-9446-492d-aec4-fa3ef8d895ef": {
+			"name": "michi",
+			"name_e": "michi",
+			"name_r": "Мичи"
+		},
+		"d5be52c9-125a-452d-884c-c2d894232a40": {
+			"name": "betina",
+			"name_e": "female",
+			"name_r": "женский"
+		},
+		"9339f546-93b1-4354-b64e-f218f20d3bf3": {
+			"name": "Kork",
+			"name_e": "Cap",
+			"name_r": "Кепка"
+		}
+	},
+	"personcategory": {
+		"621e5f78-a4bc-409e-9317-c6ce87a5a18a": {
+			"name": "me",
+			"description": "Ich",
+			"description_e": "I",
+			"description_r": "я",
+			"name_e": "me",
+			"name_r": "мне"
+		},
+		"3fbc3d00-27d2-4301-8104-7aa99213d024": {
+			"name": "familie",
+			"description": "Familie",
+			"description_r": "Семья",
+			"description_e": "Family",
+			"name_e": "family",
+			"name_r": "семья"
+		},
+		"d7687ffe-e29b-4fc0-bef8-1dc6c2d56e54": {
+			"name": "berufsbildner",
+			"description": "Berufsbildner*in",
+			"description_e": "vocational trainer",
+			"description_r": "профессиональный тренер",
+			"name_e": "vocational trainer",
+			"name_r": "профессиональный тренер"
+		},
+		"908359e8-1e1b-4852-81e8-296772653a85": {
+			"name": "lehrer",
+			"description": "Lehrer*in",
+			"description_e": "Teacher",
+			"description_r": "Учитель",
+			"name_e": "lehrer",
+			"name_r": "Лерер"
+		}
+	},
+	"ability": {
+		"c83e3340-e852-406b-8e01-9d4e07b10421": {
+			"name": "Selbstständigkeit",
+			"description": "Selbstständigkeit bezieht sich auf die Fähigkeit, unabhängig zu handeln und Verantwortung für die eigenen Entscheidungen und Handlungen zu übernehmen.",
+			"description_e": "Autonomy refers to the ability to act independently and take responsibility for one's decisions and actions.",
+			"description_r": "Автономия означает способность действовать независимо и брать на себя ответственность за свои решения и действия.",
+			"name_e": "independence",
+			"name_r": "независимость"
+		},
+		"3b42ea4c-3f82-4d85-a43f-9c26d8fb9f39": {
+			"name": "Teamwork",
+			"description": "Teamwork bezieht sich auf die Fähigkeit, effektiv in einer Gruppe zu arbeiten. Teamwork erfordert Zusammenarbeit, Kommunikation und Kompromissbereitschaft, um gemeinsame Ziele zu erreichen.",
+			"description_e": "Teamwork refers to the ability to work effectively in a group. Teamwork requires collaboration, communication, and compromise to achieve common goals.",
+			"description_r": "Командная работа подразумевает способность эффективно работать в группе. Командная работа требует сотрудничества, общения и компромисса для достижения общих целей.",
+			"name_e": "Teamwork",
+			"name_r": "Командная работа"
+		},
+		"d307eae7-c39a-4cd1-8c73-439594c31f85": {
+			"name": "Logisches Denken",
+			"description": "Logisches Denken bezieht sich auf die Fähigkeit, komplexe Probleme zu analysieren und zu lösen, indem man rationale und systematische Schritte unternimmt.",
+			"description_e": "Logical thinking refers to the ability to analyze and solve complex problems by taking rational and systematic steps.",
+			"description_r": "Логическое мышление означает способность анализировать и решать сложные проблемы, предпринимая рациональные и систематические шаги.",
+			"name_e": "Logical thinking",
+			"name_r": "Логическое мышление"
+		},
+		"04b42c57-1c32-469e-b7d4-c84b3a2b5221": {
+			"name": "Kritikfähigkeit",
+			"description": "Kritikfähigkeit bezieht sich auf die Fähigkeit, konstruktive Kritik zu akzeptieren und davon zu lernen. Kritikfähigkeit erfordert Offenheit und die Bereitschaft, aus Fehlern zu lernen.",
+			"description_e": "Criticism refers to the ability to accept and learn from constructive criticism. The ability to take criticism requires openness and the willingness to learn from mistakes.",
+			"description_r": "Критика означает способность принимать конструктивную критику и учиться на ней. Способность воспринимать критику требует открытости и готовности учиться на ошибках.",
+			"name_e": "critical ability",
+			"name_r": "критическая способность"
+		},
+		"5ac2b858-5742-4b70-a77d-7f42719ed21d": {
+			"name": "Kreativität",
+			"description": "Kreativität bezieht sich auf die Fähigkeit, neue und originelle Ideen zu entwickeln und umzusetzen. Kreativität kann auch helfen, Probleme auf unkonventionelle Weise zu lösen.",
+			"description_e": "Creativity refers to the ability to develop and implement new and original ideas. Creativity can also help solve problems in unconventional ways.",
+			"description_r": "Креативность означает способность разрабатывать и реализовывать новые и оригинальные идеи. Креативность также может помочь решить проблемы нетрадиционными способами.",
+			"name_e": "creativity",
+			"name_r": "креативность"
+		},
+		"c952f04f-f5f3-42e1-bb14-04f81f477bbc": {
+			"name": "Kommunikation",
+			"description": "Kommunikation bezieht sich auf die Fähigkeit, effektiv zu sprechen und zuzuhören, um Botschaften zu vermitteln und zu verstehen. Kommunikation ist auch im täglichen Leben wichtig.",
+			"description_e": "Communication refers to the ability to speak and listen effectively to convey and understand messages. Communication is also important in everyday life.",
+			"description_r": "Коммуникация подразумевает способность эффективно говорить и слушать, чтобы передавать и понимать сообщения. Общение также важно в повседневной жизни.",
+			"name_e": "Communication",
+			"name_r": "Коммуникация"
+		},
+		"ed91887e-d732-4a30-bef0-aa52a92dd5ee": {
+			"name": "Lernfähigkeit",
+			"description": "Lernfähigkeit bezieht sich auf die Fähigkeit, schnell und effektiv neue Informationen und Fähigkeiten zu erwerben. Lernfähigkeit erfordert Offenheit und die Bereitschaft, aus Erfahrungen und Fehlern zu lernen.",
+			"description_e": "Learning ability refers to the ability to acquire new information and skills quickly and effectively. The ability to learn requires openness and the willingness to learn from experience and mistakes.",
+			"description_r": "Способность к обучению означает способность быстро и эффективно приобретать новую информацию и навыки. Способность учиться требует открытости и готовности учиться на опыте и ошибках.",
+			"name_e": "ability to learn",
+			"name_r": "способность учиться"
+		},
+		"10244860-00b1-43db-b615-0e483b37ce18": {
+			"name": "Organisation",
+			"description": "Organisation bezieht sich auf die Fähigkeit, effektiv Zeit, Ressourcen und Aufgaben zu planen und zu verwalten. Organisation kann auch helfen, den Alltag effektiver zu gestalten.",
+			"description_e": "Organization refers to the ability to effectively plan and manage time, resources, and tasks. Organization can also help to make everyday life more effective.",
+			"description_r": "Организация означает способность эффективно планировать и управлять временем, ресурсами и задачами. Организация также может помочь сделать повседневную жизнь более эффективной.",
+			"name_e": "Organisation",
+			"name_r": "Организация"
+		},
+		"2fea02c8-c981-4ddb-8764-4074780a180e": {
+			"name": "Empathie",
+			"description": "Die Fähigkeit, sich in andere Menschen hineinzuversetzen und deren Gefühle zu verstehen und nachzuvollziehen.",
+			"description_e": "The ability to empathize with other people and to understand and relate to their feelings.",
+			"description_r": "Способность сопереживать другим людям, понимать и относиться к их чувствам.",
+			"name_r": "Сочувствие",
+			"name_e": "Empathy"
+		},
+		"5d1d29f3-81ec-4b77-bb8f-884703d43dd6": {
+			"name": "Geduld",
+			"description": "Die Fähigkeit, in schwierigen oder herausfordernden Situationen ruhig zu bleiben und darauf zu vertrauen, dass sich die Dinge zum Guten wenden werden. Geduld hilft dabei, auch langfristige Ziele zu verfolgen und Hindernisse zu überwinden.",
+			"description_e": "The ability to remain calm in difficult or challenging situations and have faith that things will work out for the better. Patience helps to pursue long-term goals and overcome obstacles.",
+			"description_r": "Способность сохранять спокойствие в трудных или сложных ситуациях и верить, что все будет хорошо. Терпение помогает добиваться долгосрочных целей и преодолевать препятствия.",
+			"name_e": "patience",
+			"name_r": "терпение"
+		}
+	},
+	"activity": {
+		"66712277-fc26-4046-9648-49d06609beb6": {
+			"name": "Papierarbeit",
+			"description": "Origami ist eine faszinierende Kunstform, die mich begeistert, da sie Kreativität und Präzision vereint. Durch das Falten von Papier kann ich komplexe Formen und Figuren erschaffen und gleichzeitig meine Feinmotorik schulen. Es ist eine meditative Tätigkeit, die mir Freude bereitet und mein ästhetisches Empfinden anspricht.",
+			"name_e": "paperwork",
+			"name_r": "оформление документации",
+			"description_e": "Origami is a fascinating art form that excites me as it combines creativity and precision. By folding paper, I can create complex shapes and figures and at the same time train my fine motor skills. It is a meditative activity that gives me pleasure and appeals to my aesthetic sensibilities.",
+			"description_r": "Оригами — это увлекательный вид искусства, который меня восхищает, поскольку он сочетает в себе креативность и точность. Складывая бумагу, я могу создавать сложные формы и фигуры и одновременно тренировать мелкую моторику. Это медитативная деятельность, которая доставляет мне удовольствие и затрагивает мои эстетические чувства."
+		},
+		"54c66ac6-7455-487c-b35e-28f10d837702": {
+			"name": "Zeichnen",
+			"description": "Das Zeichnen ist für mich eine Ausdrucksform, mit der ich meine Ideen und Emotionen auf visuelle Weise vermitteln kann. Es ermöglicht mir, meine Kreativität auszuleben und neue Perspektiven zu entdecken. Beim Zeichnen kann ich mich in eine Welt der Fantasie begeben und meine eigenen Geschichten erzählen.",
+			"name_e": "Draw",
+			"name_r": "Рисовать",
+			"description_e": "For me, drawing is a form of expression that allows me to convey my ideas and emotions in a visual way. It enables me to live out my creativity and to discover new perspectives. When drawing, I can enter a world of fantasy and tell my own stories.",
+			"description_r": "Для меня рисунок — это форма самовыражения, которая позволяет мне визуально передать свои идеи и эмоции. Это позволяет мне реализовать свои творческие способности и открыть для себя новые перспективы. Рисуя, я могу войти в мир фантазий и рассказать свои собственные истории."
+		},
+		"bf8bbb98-1c64-4b04-963d-6dc314554c86": {
+			"name": "Graffiti",
+			"description": "Graffiti ist für mich eine Möglichkeit, Kunst im öffentlichen Raum zu schaffen und meine Individualität auszudrücken. Es erlaubt mir, mit Farben und Formen zu experimentieren und gleichzeitig eine Botschaft oder Stimmung zu vermitteln. Graffiti vereint Kreativität, Street Culture und soziale Kommunikation auf eine einzigartige Weise.",
+			"name_e": "Graffiti",
+			"name_r": "Граффити",
+			"description_r": "Для меня граффити — это способ создания искусства в общественных местах и ​​выражения своей индивидуальности. Это позволяет мне экспериментировать с цветами и формами, передавая послание или настроение. Граффити уникальным образом сочетает в себе творчество, уличную культуру и социальную коммуникацию.",
+			"description_e": "For me, graffiti is a way of creating art in public spaces and expressing my individuality. It allows me to experiment with colors and shapes while conveying a message or mood. Graffiti combines creativity, street culture and social communication in a unique way."
+		},
+		"3687747f-4cd1-435f-b743-e50d9e355bf3": {
+			"name": "Holzarbeit",
+			"description": "Die Arbeit mit Holz bietet mir die Möglichkeit, etwas mit meinen eigenen Händen zu erschaffen. Es ist eine Mischung aus handwerklichem Geschick und künstlerischer Gestaltung. Die Verbindung von Naturmaterialien und der Prozess des Formens und Gestaltens von Holzstücken fasziniert mich und lässt mich die Schönheit und Vielseitigkeit dieses Materials schätzen.",
+			"name_e": "woodwork",
+			"name_r": "работа по дереву",
+			"description_e": "Working with wood gives me the opportunity to create something with my own hands. It is a mixture of craftsmanship and artistic design. The combination of natural materials and the process of shaping and designing pieces of wood fascinates me and makes me appreciate the beauty and versatility of this material.",
+			"description_r": "Работа с деревом дает мне возможность создать что-то своими руками. Это смесь мастерства и художественного дизайна. Сочетание натуральных материалов и процесса формовки и оформления изделий из дерева очаровывает меня и заставляет оценить красоту и универсальность этого материала."
+		},
+		"ffc86a46-24e2-4c0b-b464-bfbd327602f3": {
+			"name": "Nähen",
+			"description": "Das Nähen ist für mich eine praktische und kreative Fähigkeit, die es mir ermöglicht, meine eigenen Kleidungsstücke und Accessoires zu gestalten. Es ist ein Prozess der Transformation von Stoffen, bei dem ich meine Vorstellungskraft einsetzen kann, um einzigartige Designs zu kreieren. Das Nähen ermöglicht es mir, meine Liebe zur Nachhaltigkeit und zum Handwerk zu kombinieren.",
+			"name_e": "Sew",
+			"name_r": "Шить",
+			"description_e": "For me, sewing is a practical and creative skill that allows me to create my own garments and accessories. It's a process of transforming fabrics, allowing me to use my imagination to create unique designs. Sewing allows me to combine my love of sustainability and craftsmanship.",
+			"description_r": "Для меня шитье – это практический и творческий навык, который позволяет мне создавать собственную одежду и аксессуары. Это процесс трансформации тканей, позволяющий мне использовать свое воображение для создания уникальных дизайнов. Шитье позволяет мне сочетать любовь к устойчивому развитию и мастерство."
+		},
+		"848159f3-5205-46ef-84a7-0fa0872823b7": {
+			"name": "Gitarre",
+			"description": "Die Gitarre ist mein treuer Begleiter in musikalischen Momenten. Das Spielen der Gitarre erlaubt mir, meine Emotionen und Gefühle durch die Klänge und Rhythmen der Musik auszudrücken. Es ist eine Form der kreativen Selbstentfaltung und ermöglicht mir, mich mit anderen Musikern zu verbinden und gemeinsam Harmonien zu schaffen.",
+			"name_e": "guitar",
+			"name_r": "гитара",
+			"description_r": "Гитара – мой верный спутник в музыкальные моменты. Игра на гитаре позволяет мне выражать свои эмоции и чувства через звуки и ритмы музыки. Это форма творческого самовыражения, которая позволяет мне общаться с другими музыкантами и вместе создавать гармонию.",
+			"description_e": "The guitar is my faithful companion in musical moments. Playing the guitar allows me to express my emotions and feelings through the sounds and rhythms of the music. It is a form of creative self-expression and allows me to connect with other musicians and create harmonies together."
+		},
+		"6f86a3d2-af0d-4140-aac0-aea15fba9b9b": {
+			"name": "Bass",
+			"description": " Der Bass ist ein essenzieller Bestandteil der Musik, der für Stabilität und Groove sorgt. Das Spielen des Basses erfüllt mich mit Energie und ermöglicht es mir, mich in den rhythmischen Puls der Musik einzufügen. Der Bass ist ein Instrument, das mich dazu bringt, mich auf die Essenz der Musik zu konzentrieren und die Verbindung zwischen Melodie und Rhythmus zu erforschen.",
+			"name_e": "Bass",
+			"name_r": "Бас",
+			"description_e": "Bass is an essential part of music, providing stability and groove. Playing the bass fills me with energy and allows me to blend into the rhythmic pulse of the music. The bass is an instrument that makes me focus on the essence of the music and explore the connection between melody and rhythm.",
+			"description_r": "Бас — важная часть музыки, обеспечивающая стабильность и грув. Игра на басу наполняет меня энергией и позволяет сливаться с ритмичным пульсом музыки. Бас — это инструмент, который заставляет меня сосредоточиться на сути музыки и исследовать связь между мелодией и ритмом."
+		},
+		"820884ee-4868-4811-a21c-dba9b6b1a778": {
+			"name": "Schlagzeug",
+			"description": "Das Schlagzeug ist mein Ventil, um mich rhythmisch auszudrücken und meine Energie freizusetzen. Es erlaubt mir, verschiedene Klangfarben und Texturen zu erzeugen und mich in den Rhythmus einzufühlen. Das Schlagzeugspielen fördert meine Koordination, Konzentration und Ausdauer und ermöglicht es mir, mit anderen Musikern zusammenzuspielen und gemeinsam eine mitreißende Performance zu schaffen.",
+			"name_e": "Drums",
+			"name_r": "Барабаны",
+			"description_e": "The drums are my outlet to express myself rhythmically and release my energy. It allows me to create different timbres and textures and feel the rhythm. Playing the drums improves my coordination, concentration and stamina and allows me to play together with other musicians and create an engaging performance together.",
+			"description_r": "Барабаны — это мой способ ритмично выразить себя и высвободить свою энергию. Это позволяет мне создавать разные тембры и текстуры и чувствовать ритм. Игра на барабанах улучшает мою координацию, концентрацию и выносливость, а также позволяет мне играть вместе с другими музыкантами и вместе создавать захватывающие выступления."
+		},
+		"8bdcb49d-c3dd-4ea9-8af6-2e652466d058": {
+			"name": "Produzieren",
+			"description": "Das Produzieren von Musik ist für mich wie das Erschaffen einer eigenen Klangwelt. Es erlaubt mir, verschiedene Instrumente und Klänge zu kombinieren, um meine musikalischen Ideen zum Leben zu erwecken. Das Produzieren gibt mir die Freiheit, mein musikalisches Gespür und meine technischen Fähigkeiten zu nutzen, um Songs und Kompositionen zu arrangieren und ihnen meinen eigenen Stil zu verleihen. Es ist ein Prozess der Kreativität und des Experimentierens, bei dem ich die Rolle des Klanggestalters einnehme.",
+			"name_e": "To produce",
+			"name_r": "Производить",
+			"description_e": "Producing music for me is like creating my own world of sound. It allows me to combine different instruments and sounds to bring my musical ideas to life. Producing gives me the freedom to use my musical flair and technical skills to arrange songs and compositions and give them my own style. It's a process of creativity and experimentation, in which I take on the role of sound designer.",
+			"description_r": "Для меня создание музыки — это все равно, что создание собственного мира звука. Это позволяет мне комбинировать разные инструменты и звуки, чтобы воплотить в жизнь мои музыкальные идеи. Продюсирование дает мне свободу использовать свое музыкальное чутье и технические навыки для аранжировки песен и композиций и придания им собственного стиля. Это процесс творчества и экспериментирования, в котором я беру на себя роль звукорежиссера."
+		},
+		"b2347690-ac48-47d6-9545-d9dad8d6afbb": {
+			"name": "Hort",
+			"description": "Die Arbeit im Hort bereitet mir große Freude, da ich die Möglichkeit habe, Kinder auf ihrem Weg zu begleiten und ihnen dabei zu helfen, ihre Persönlichkeit und Fähigkeiten zu entfalten. Es ist eine verantwortungsvolle Aufgabe, die es mir ermöglicht, eine unterstützende und bereichernde Umgebung zu schaffen, in der die Kinder spielen, lernen und wachsen können.",
+			"name_e": "Hort",
+			"name_r": "Хорт",
+			"description_e": "I really enjoy working in the after-school care center because I have the opportunity to accompany children on their way and to help them develop their personality and abilities. It is a responsible job that allows me to create a supportive and enriching environment in which the children can play, learn and grow.",
+			"description_r": "Мне очень нравится работать в детском саду, потому что у меня есть возможность сопровождать детей в пути и помогать им развивать свою личность и способности. Это ответственная работа, которая позволяет мне создавать благоприятную и обогащающую среду, в которой дети могут играть, учиться и расти."
+		},
+		"a3ba5212-732c-485d-9e2f-e7c2e4e7365a": {
+			"name": "Fahrrad",
+			"description": "Das Fahrradfahren ist für mich nicht nur eine Fortbewegungsmethode, sondern auch eine Quelle der Freiheit und des Abenteuers. Es verbindet mich mit der Natur und gibt mir die Möglichkeit, mich aktiv zu bewegen und dabei die Umwelt zu schonen. Beim Fahrradfahren kann ich den Alltagsstress hinter mir lassen und die Welt aus einer anderen Perspektive erleben.",
+			"name_e": "Bicycle",
+			"name_r": "Велосипед",
+			"description_e": "For me, cycling is not only a means of transportation, but also a source of freedom and adventure. It connects me with nature and gives me the opportunity to exercise actively while protecting the environment. When I ride my bike, I can leave the stress of everyday life behind me and experience the world from a different perspective.",
+			"description_r": "Для меня велосипед – это не только средство передвижения, но и источник свободы и приключений. Это соединяет меня с природой и дает мне возможность активно заниматься спортом, одновременно защищая окружающую среду. Когда я езжу на велосипеде, я могу оставить позади стресс повседневной жизни и взглянуть на мир с другой точки зрения."
+		},
+		"020f3fa8-0aab-43df-9a99-cb01bf6cc38e": {
+			"name": "Volleyball",
+			"description": "Volleyball ist ein Teamsport, der mir die Möglichkeit gibt, meine Leidenschaft für Bewegung und Wettbewerb auszuleben. Es ist eine dynamische Sportart, die Koordination, Ausdauer und Teamwork erfordert. Beim Volleyball kann ich meine Fähigkeiten verbessern, neue Strategien entwickeln und mich gleichzeitig körperlich und mental herausfordern.",
+			"name_e": "Volleyball",
+			"name_r": "Волейбол",
+			"description_e": "Volleyball is a team sport that gives me the opportunity to live out my passion for exercise and competition. It is a dynamic sport that requires coordination, endurance and teamwork. With volleyball I can improve my skills, develop new strategies and at the same time challenge myself physically and mentally.",
+			"description_r": "Волейбол — командный вид спорта, который дает мне возможность реализовать свою страсть к движению и соревнованиям. Это динамичный вид спорта, требующий координации, выносливости и командной работы. С помощью волейбола я могу улучшить свои навыки, разработать новые стратегии и в то же время бросить себе вызов физически и морально."
+		},
+		"6a51ee24-b04d-4318-a609-f64a83f3d999": {
+			"name": "Skateboard",
+			"description": " Das Skateboarden ist für mich eine aufregende und kreative Art der Fortbewegung. Es erlaubt mir, meine Balance und Koordination zu schulen und gleichzeitig meine Kreativität auszudrücken. Beim Skateboarden kann ich neue Tricks lernen, meine Grenzen ausloten und mich in einer Gemeinschaft von Gleichgesinnten austauschen.",
+			"name_e": "Skateboard",
+			"name_r": "Скейтборд",
+			"description_e": "For me, skateboarding is an exciting and creative way of getting around. It allows me to train my balance and coordination while expressing my creativity. Skateboarding allows me to learn new tricks, push my limits, and connect with a community of like-minded people.",
+			"description_r": "Для меня скейтбординг — это увлекательный и творческий способ передвижения. Это позволяет мне тренировать баланс и координацию, одновременно выражая свои творческие способности. Скейтбординг позволяет мне изучать новые трюки, расширять свои возможности и общаться с сообществом единомышленников."
+		},
+		"4bbd040f-e5c8-4729-ab3e-efed02b77522": {
+			"name": "Tischtennis",
+			"description": "Tischtennis ist ein schneller und präziser Sport, der mir die Möglichkeit gibt, meine Reaktionsfähigkeit und mein Auge-Hand-Koordination zu verbessern. Es ist eine Sportart, die Geschicklichkeit und Taktik erfordert und gleichzeitig viel Spaß macht. Beim Tischtennis kann ich meine Konzentration schärfen und mich in spannenden Wettkämpfen mit anderen messen.",
+			"name_e": "table tennis",
+			"name_r": "настольный теннис",
+			"description_e": "Table tennis is a fast and precise sport that gives me the opportunity to improve my responsiveness and hand-eye coordination. It is a sport that requires skill and tactics while being great fun. With table tennis I can sharpen my concentration and compete with others in exciting competitions.",
+			"description_r": "Настольный теннис — быстрый и точный вид спорта, который дает мне возможность улучшить реакцию и зрительно-моторную координацию. Это спорт, который требует навыков и тактики, но при этом доставляет массу удовольствия. С помощью настольного тенниса я могу улучшить свою концентрацию и соревноваться с другими в захватывающих соревнованиях."
+		},
+		"d12a319d-e9d0-4dec-a9a7-12ab86accc3f": {
+			"name": "Wandern",
+			"description": "Das Wandern ist für mich eine Möglichkeit, dem stressigen Alltag zu entfliehen und die Schönheit der Natur zu genießen. Es ermöglicht mir, meinen Geist zu beruhigen, während ich neue Landschaften erkunde und frische Luft einatme. Beim Wandern kann ich meine körperliche Fitness verbessern und mich mit der Natur verbunden fühlen.",
+			"name_e": "Hike",
+			"name_r": "Поход",
+			"description_e": "For me, hiking is a way of escaping the stress of everyday life and enjoying the beauty of nature. It allows me to quiet my mind while exploring new landscapes and breathing fresh air. Hiking allows me to improve my physical fitness and feel connected to nature.",
+			"description_r": "Для меня походы – это способ уйти от стресса повседневной жизни и насладиться красотой природы. Это позволяет мне успокоиться, исследуя новые пейзажи и дыша свежим воздухом. Походы позволяют мне улучшить свою физическую форму и почувствовать связь с природой."
+		},
+		"4309157a-7de9-449b-81e4-ca41d67d5a55": {
+			"name": "CEVI",
+			"description": "Der CEVI ist eine Organisation, die es mir ermöglicht, mich in der Gemeinschaft zu engagieren und Verantwortung zu übernehmen. Als Pfadfinder habe ich die Möglichkeit, neue Fähigkeiten zu erlernen, Outdoor-Abenteuer zu planen und erleben und dabei Werte wie Teamwork, Respekt und Nachhaltigkeit zu fördern. Der CEVI bietet mir die Chance, neue Freundschaften zu knüpfen, meine Organisatorischen Fähigkeiten zu fördern und mich persönlich weiterzuentwickeln.",
+			"name_e": "PIPES",
+			"name_r": "ТРУБЫ",
+			"description_e": "The CEVI is an organization that enables me to get involved in the community and take responsibility. As a Boy Scout, I have the opportunity to learn new skills, plan and experience outdoor adventures while promoting values ​​such as teamwork, respect and sustainability. The CEVI offers me the opportunity to make new friends, to promote my organizational skills and to develop myself personally.",
+			"description_r": "CEVI — это организация, которая позволяет мне участвовать в жизни общества и брать на себя ответственность. Будучи бойскаутом, я имею возможность приобретать новые навыки, планировать и испытывать приключения на свежем воздухе, одновременно продвигая такие ценности, как командная работа, уважение и устойчивое развитие. CEVI дает мне возможность завести новых друзей, развить свои организаторские способности и развиваться лично."
+		},
+		"d2ce8b3b-c4ce-40cf-8235-338b01533664": {
+			"name": "Englischunterricht",
+			"description": "Als Englisch-Nachhilfelehrer liegt mir die Verbesserung der Sprachkenntnisse meiner Schüler am Herzen. Ich fördere ihre Kommunikationsfähigkeiten und ermutige sie zum aktiven Sprechen, Lesen und Schreiben. Mit abwechslungsreichem Unterrichtsmaterial und interaktiven Aktivitäten unterstütze ich sie dabei, ihre Ausdrucksfähigkeit und interkulturelle Kompetenz zu stärken.",
+			"name_e": "English class",
+			"name_r": "Урок английского языка",
+			"description_e": "As an English tutor, improving the language skills of my students is important to me. I develop their communication skills and encourage active speaking, reading and writing. With varied teaching material and interactive activities, I support them in strengthening their ability to express themselves and their intercultural competence.",
+			"description_r": "Для меня, как репетитора английского языка, важно улучшать языковые навыки моих учеников. Я развиваю их коммуникативные навыки и поощряю активное говорение, чтение и письмо. С помощью разнообразных учебных материалов и интерактивных мероприятий я поддерживаю их в укреплении их способности выражать себя и межкультурной компетентности."
+		},
+		"d730f4a1-a7ef-473e-872d-ae5341dc6324": {
+			"name": "Mathematikunterricht",
+			"description": "Als Mathematik-Nachhilfelehrer ist es mein Ziel, Schülern dabei zu helfen, mathematische Konzepte zu verstehen und ihr logisches Denken zu entwickeln. Ich nutze verschiedene Lernstrategien und visuelle Hilfsmittel, um den Zugang zur Mathematik zu erleichtern. Meine Aufgabe ist es, die Schüler in ihrem mathematischen Denken zu fördern und ihnen die Bedeutung der Mathematik im Alltag und in anderen Fachbereichen nahezubringen.",
+			"name_e": "math class",
+			"name_r": "класс математики",
+			"description_e": "As a math tutor, my goal is to help students understand math concepts and develop their logical thinking. I use different learning strategies and visual aids to make mathematics easier to access. My job is to encourage students to think mathematically and to teach them about the importance of mathematics in everyday life and in other subject areas.",
+			"description_r": "Моя цель как репетитора по математике — помочь ученикам понять математические концепции и развить логическое мышление. Я использую различные стратегии обучения и наглядные пособия, чтобы облегчить доступ к математике. Моя работа состоит в том, чтобы побудить студентов мыслить математически и рассказать им о важности математики в повседневной жизни и в других предметных областях."
+		},
+		"23ecd5d5-35a3-4302-b4b8-16344f8a422d": {
+			"name": "Informatikunterricht",
+			"description": "Als Informatik-Nachhilfelehrer begeistere ich Schüler für Technologie und Programmierung. Ich lege Wert auf praktische Erfahrungen und kreatives Denken. Durch das Erlernen von Programmiersprachen und das Lösen von Problemen lernen die Schüler grundlegende Konzepte. Der Unterricht fördert Teamarbeit und die Entwicklung eigener Projekte, um die Bedeutung von Kommunikation und Zusammenarbeit in der Informatik zu vermitteln. Mein Ziel ist es, die Schüler auf die Herausforderungen und Möglichkeiten der digitalen Welt vorzubereiten.",
+			"name_e": "Information Technology",
+			"name_r": "Информационные технологии",
+			"description_e": "As a computer science tutor, I get students excited about technology and programming. I value practical experience and creative thinking. By learning programming languages ​​and solving problems, students learn fundamental concepts. Classes encourage teamwork and the development of one's own projects to teach the importance of communication and collaboration in computer science. My goal is to prepare students for the challenges and opportunities of the digital world.",
+			"description_r": "Будучи репетитором по информатике, я завожу студентов в восторге от технологий и программирования. Я ценю практический опыт и творческое мышление. Изучая языки программирования и решая задачи, студенты изучают фундаментальные концепции. Занятия поощряют командную работу и разработку собственных проектов, чтобы научить важности общения и сотрудничества в информатике. Моя цель — подготовить студентов к вызовам и возможностям цифрового мира."
+		}
+	},
+	"person": {
+		"63622dd6-f561-452e-858c-1ad32ed7c9c3": {
+			"relation": "myself",
+			"description": null,
+			"jobtitle": "Applikationsentwickler",
+			"relation_e": "myself",
+			"relation_r": "сам",
+			"jobtitle_r": "разработчик приложений",
+			"jobtitle_e": "application developer"
+		},
+		"6b0c0389-05c6-47c4-8c39-e0f4bc2521a5": {
+			"relation": "Mutter",
+			"description": null,
+			"jobtitle": "Ernährungsberaterin",
+			"relation_e": "Mutter",
+			"relation_r": "Муттер",
+			"jobtitle_r": "диетолог",
+			"jobtitle_e": "nutritionist"
+		},
+		"775db51e-a9a9-46a7-a242-2b31d7c964eb": {
+			"relation": "Vater",
+			"description": null,
+			"jobtitle": "Applikationsentwickler",
+			"relation_e": "Father",
+			"relation_r": "Отец",
+			"jobtitle_e": "application developer",
+			"jobtitle_r": "разработчик приложений"
+		},
+		"4b8f74c9-c830-4bff-a38b-40a4b63bae6b": {
+			"relation": "Bruder",
+			"description": null,
+			"jobtitle": "Schüler",
+			"relation_e": "Brother",
+			"relation_r": "Брат",
+			"jobtitle_e": "Pupils",
+			"jobtitle_r": "Зрачки"
+		},
+		"2996a142-dd20-46a1-981c-2b2aab2a536d": {
+			"relation": "Bruder",
+			"description": null,
+			"jobtitle": "Tiermedizinischer Praxisassistent",
+			"relation_e": "Brother",
+			"relation_r": "Брат",
+			"jobtitle_r": "Ассистент ветеринарной практики",
+			"jobtitle_e": "Veterinary practice assistant"
+		},
+		"0700e3dd-ef6f-4ad7-b56f-072238f47efc": {
+			"relation": "Berufsbildnerin",
+			"description": null,
+			"jobtitle": "Applikationsentwicklerin",
+			"relation_r": "профессиональный тренер",
+			"relation_e": "vocational trainer",
+			"jobtitle_r": "разработчик приложений",
+			"jobtitle_e": "application developer"
+		}
+	},
+	"project": {
+		"7e8814dc-c723-4177-928d-aafb0ec15137": {
+			"name": "Produktvergleich",
+			"description": "Als Abschlussarbeit entwickelte ich einen Produktvergleich mit drag-and-drop funktionalität für einen der Webshops in der Inteco. Dabei konnte ich einiges an Wissen in JavaScript, der HTML drag-and-drop API und Responsiveness lernen.",
+			"description_e": "As my thesis, I developed a product comparison with drag-and-drop functionality for one of the web shops in Inteco. I was able to learn a lot of knowledge in JavaScript, the HTML drag-and-drop API and responsiveness.",
+			"description_r": "В качестве дипломной работы я разработал сравнение продуктов с функцией перетаскивания для одного из интернет-магазинов компании «Интеко». Мне удалось получить много знаний в области JavaScript, API перетаскивания HTML и отзывчивости.",
+			"name_e": "product comparison",
+			"name_r": "Сравнение продуктов"
+		},
+		"3296a410-434a-4ebf-9931-19d9a5ecf22f": {
+			"name": "ID Altersverifikation",
+			"description": "Die Inteco EDV AG setzt für Getränkehändler Webshops um. Da viele dieser Kunden alkoholhaltige Getränke verkaufen, musste laut den neuen Onlinegesetzen der Schweiz eine Altersüberprüfungsmethode im Webshop implementiert werden. Mir wurde der Auftrag vermittelt, eine Altersüberprüfung in den Webshops einzubauen, welche durch die Kennzahlen der Schweizer ID oder des Schweizer Passes erfolgen soll.",
+			"description_e": "Inteco EDV AG implements web shops for drinks retailers. Since many of these customers sell alcoholic beverages, the new online laws in Switzerland required the implementation of an age verification method in the web shop. I was given the task of installing an age check in the web shops, which should be carried out using the codes of the Swiss ID or the Swiss passport.",
+			"description_r": "Inteco EDV AG реализует интернет-магазины для розничной торговли напитками. Поскольку многие из этих покупателей продают алкогольные напитки, новые онлайн-законы Швейцарии требуют внедрения метода проверки возраста в интернет-магазине. Мне дали задание установить в интернет-магазинах проверку возраста, которая должна осуществляться по кодам Swiss ID или швейцарского паспорта.",
+			"name_e": "ID Altersverifikation",
+			"name_r": "ID Альтерсверификация"
+		},
+		"f76ce856-0344-4452-8fff-ff739a8233bb": {
+			"name": "Produzentenseite",
+			"description": "Ich setzte die Seite «Partner» im neuen Webshop vom Kunden Firstwine um, auf welcher die Getränkeproduzenten nach Ortschaft sortiert ersichtlich sind. Ihr alter Webshop besass schon diese Unterseite und im neuen Shop wurde eine Komponente erstellt, die durch einen neuen, rekursiven Ansatz die Produzenten auflistet.",
+			"description_e": "I implemented the \"Partners\" page in the new web shop of the customer Firstwine, on which the beverage producers are sorted by location. Your old web shop already had this subpage and a component was created in the new shop that lists the producers using a new, recursive approach.",
+			"description_r": "В новом интернет-магазине клиента Firstwine я реализовал страницу «Партнеры», на которой производители напитков отсортированы по местоположению. В вашем старом интернет-магазине уже была эта подстраница, и в новом магазине был создан компонент, в котором перечислены производители, используя новый рекурсивный подход.",
+			"name_e": "producer side",
+			"name_r": "сторона продюсера"
+		},
+		"b86eb3f7-353c-4f99-9843-fa4623dbd177": {
+			"name": "SCSS Skript",
+			"description": "Ein weiterer Auftrag war das Refaktorisieren des SCSS Quellcodes, damit dieser mit der neuen Version des SCSS VS Code Plugins Kompiliert werden konnte. Da hauptsächlich die gleichen Fehler behoben werden mussten, schrieb ich ein Shell-Skript welches mithilfe von Regular Expressions die betroffenen Zeilen ersetzte.",
+			"description_e": "Another assignment was to refactor the SCSS source code so that it could be compiled with the new version of the SCSS VS Code Plugin. Since mainly the same errors had to be fixed, I wrote a shell script that used regular expressions to replace the affected lines.",
+			"description_r": "Еще одним заданием было рефакторинг исходного кода SCSS, чтобы его можно было скомпилировать с новой версией плагина SCSS VS Code. Поскольку исправлять приходилось в основном одни и те же ошибки, я написал сценарий оболочки, который использовал регулярные выражения для замены затронутых строк.",
+			"name_e": "scss script",
+			"name_r": "scs-скрипт"
+		},
+		"2f1a86ba-913e-4905-8dbc-68f2e43e2e03": {
+			"name": "Übersetzungsskript",
+			"description": "Bei der Integration der Internationalisierung in die von der Inteco edv AG entwickelten Webseiten mussten viele Werte übersetzt werden, welche in .properties Dateien gespeichert waren. Um den Prozess teils zu automatisieren schrieb ich ein Python- und danach ein TypeScript-Skript, welches mithilfe von Regular Expressions durch die Werte aus der gegebenen Datei iteriert und entweder (nach optionaler Bestätigung) ersetzt oder überspringt falls sie schon übersetzt waren.",
+			"description_e": "When integrating internationalization into the websites developed by Inteco edv AG, many values ​​that were stored in .properties files had to be translated. To partially automate the process, I wrote a Python and then a TypeScript script that iterates through the values ​​from the given file using regular expressions and either replaces (after optional confirmation) or skips if they were already translated.",
+			"description_r": "При интеграции интернационализации в веб-сайты, разработанные Inteco edv AG, пришлось перевести многие значения, хранившиеся в файлах .properties. Чтобы частично автоматизировать процесс, я написал скрипт на Python, а затем на TypeScript, который перебирает значения из заданного файла с помощью регулярных выражений и либо заменяет (после необязательного подтверждения), либо пропускает, если они уже были переведены.",
+			"name_e": "translation script",
+			"name_r": "сценарий перевода"
+		},
+		"44502209-ce33-44e2-8f12-06fc9245b0a0": {
+			"name": "Testen mittels Selenium",
+			"description": "Bei der implementation der Produzentenseite schrieb ich in Python mithilfe von Selenium ein Skript, welches das Frontend der erstellten Seite auf bestimmte Kriterien testete und die Resultate in eine Tabelle eingetragen hat.",
+			"description_e": "When implementing the producer side, I wrote a script in Python using Selenium, which tested the front end of the created site for certain criteria and entered the results in a table.",
+			"description_r": "При реализации стороны производителя я написал скрипт на Python с использованием Selenium, который проверял интерфейс созданного сайта на соответствие определенным критериям и записывал результаты в таблицу.",
+			"name_e": "Testing with Selenium",
+			"name_r": "Тестирование с помощью Selenium"
+		},
+		"90264bca-8e6d-4790-a4da-30adb0edec7e": {
+			"name": "i18n",
+			"description": "Als Teil eines Projekts habe ich die Mehrsprachigkeitsfunktion (i18n) bei den Webanwendungen in meiner Arbeitsumgebung erfolgreich implementiert. Es war eine anspruchsvoll langwierige Aufgabe, die jedoch äußerst lohnenswert war.",
+			"description_e": "As part of a project, I successfully implemented the multilingual feature (i18n) in the web applications in my work environment. It was a demanding lengthy task, but extremely rewarding.",
+			"description_r": "В рамках проекта я успешно реализовал многоязычную функцию (i18n) в веб-приложениях своей рабочей среды. Это была трудная и длительная задача, но чрезвычайно полезная.",
+			"name_e": "i18n",
+			"name_r": "i18n"
+		},
+		"ec5bf053-552a-4acb-87a2-795f1d8ef208": {
+			"name": "Passwort zurücksetzen",
+			"description": "Da mir auffiel, dass bei der Anfrage auf ein neues Passwort dieses in einfachem Text per E-Mail versendet wurde, erarbeitete ich eine sicherere Methode das Passwort zurückzusetzen. Diese erfolgt durch das versenden eines Links, welcher auf eine Seite führt, worauf der User sein Passwort selber setzt (nachdem die Gültigkeit des Links überprüft wurde).",
+			"description_e": "Since I noticed that the request for a new password was sent in plain text by e-mail, I worked out a more secure method of resetting the password. This is done by sending a link that leads to a page on which the user sets his password himself (after the validity of the link has been checked).",
+			"description_r": "Поскольку я заметил, что запрос на новый пароль отправляется в виде открытого текста по электронной почте, я разработал более безопасный метод сброса пароля. Это осуществляется путем отправки ссылки, ведущей на страницу, на которой пользователь сам устанавливает свой пароль (после проверки валидности ссылки).",
+			"name_e": "reset Password",
+			"name_r": "Сброс пароля"
+		},
+		"8994d6cd-cb3e-4597-8478-d1f7662f57b7": {
+			"name": "Share Buttons",
+			"description": "Einer meiner ersten Aufträge bei der Inteco edv AG war es, auf der Produktdetailseite Share-Buttons einzufügen, sowie das Schema Markup, welches die Vorschau des Produktes beim Teilen ermöglichte.",
+			"description_e": "One of my first jobs at Inteco edv AG was to add share buttons to the product detail page, as well as the schema markup that enabled the product to be previewed when it was shared.",
+			"description_r": "Одной из моих первых работ в Inteco edv AG было добавление кнопок «Поделиться» на страницу сведений о продукте, а также разметки схемы, которая позволяла предварительно просматривать продукт при публикации.",
+			"name_e": "Share Buttons",
+			"name_r": "Кнопки «Поделиться»"
+		},
+		"f9f97804-f170-40bc-ab09-56adfbfc3e7a": {
+			"name": "SEO Analyse",
+			"description": "Innerhalb des Praktikums bei Inteco erarbeitete ich mir viel Wissen über (das unendliche Thema) SEO, welches ich in einem Dokument zusammenfasste und durch eine Präsentation unserem Webentwicklungs-Team vorstellte. Teilweise begann ich selbst damit einen Teil, welchen wir als Entwickler zu SEO beitragen können, umzusetzen.",
+			"description_e": "During the internship at Inteco I gained a lot of knowledge about (the endless topic) SEO, which I summarized in a document and presented to our web development team in a presentation. Partly I started to implement a part that we as developers can contribute to SEO.",
+			"description_r": "Во время стажировки в Inteco я получил много знаний о (бесконечной теме) SEO, которые я обобщил в документе и представил нашей команде веб-разработчиков в презентации. Частично я начал реализовывать ту часть, которую мы, как разработчики, можем внести в SEO.",
+			"name_e": "SEO Analyse",
+			"name_r": "SEO-анализ"
+		},
+		"3b075de6-9666-4588-a5e6-ccd61de65ec1": {
+			"name": "Geschmacksprofil",
+			"description": "Mein erster Auftrag als Praktikant war es, ein Geschmacksprofil auf der Produktdetailseite der Weine zu erstellen, an dem ersichtlich sein soll, wie der Wein schmeckt.",
+			"description_e": "My first job as an intern was to create a taste profile on the wine product detail page, which should show how the wine tastes.",
+			"description_r": "Моей первой работой в качестве стажера было создание профиля вкуса на странице сведений о винном продукте, который должен был показать вкус вина.",
+			"name_e": "Taste profile",
+			"name_r": "Вкусовой профиль"
+		},
+		"e5bccd9f-4eba-4bce-8f7b-e1039215a880": {
+			"name": "Popup",
+			"description": "Im Auftrag vom Terroir-ist erstellte ich ein Konfigurierbares Popup, um als User das Alter bestätigen zu können.",
+			"description_e": "On behalf of Terroir-ist I created a configurable popup to be able to confirm the age as a user.",
+			"description_r": "От имени Terroir-ist я создал настраиваемое всплывающее окно, позволяющее подтвердить возраст пользователя.",
+			"name_e": "Popup",
+			"name_r": "Неожиданно возникнуть"
+		},
+		"5a39e9a6-b60b-4bc1-887f-da3a78c2405b": {
+			"name": "Konfigurationsseiten Magnolia",
+			"description": "Um den Entwicklern und Kunden das Leben zu vereinfachen und einfache Konfigurationsmöglichkeiten der Webseiten bereitzustellen, erstellte ich einige Konfigurations-Seiten im AdminCentral des Magnolia CMS.",
+			"description_e": "In order to make life easier for developers and customers and to provide simple configuration options for the websites, I created some configuration pages in the AdminCentral of the Magnolia CMS.",
+			"description_r": "Чтобы облегчить жизнь разработчикам и клиентам и предоставить простые возможности настройки веб-сайтов, я создал несколько страниц конфигурации в Центре администрирования Magnolia CMS.",
+			"name_e": "Configuration pages Magnolia",
+			"name_r": "Страницы конфигурации Магнолия"
+		},
+		"84a955b8-96fc-404f-aece-9eb42299b011": {
+			"name": "Webseiten aufsetzen",
+			"description": "In meiner Zeit als Praktikant hatte ich zwei Webseiten auf Tomcat7 Servern sowie Docker neu aufgesetzt und livegeschaltet für Kunden, die vom alten Webshop in den neuen migrierten.",
+			"description_e": "During my time as an intern, I had set up two websites on Tomcat7 servers and Docker and switched them live for customers who migrated from the old web shop to the new one.",
+			"description_r": "Во время работы стажером я создал два веб-сайта на серверах Tomcat7 и Docker и переключил их в реальном времени для клиентов, которые перешли из старого интернет-магазина в новый.",
+			"name_e": "set up websites",
+			"name_r": "настроить веб-сайты"
+		},
+		"d89a24b8-b811-4b83-8ae9-d08ce799c977": {
+			"name": "Webseiten warten",
+			"description": "Ich wartete bei der Inteco edv AG bei mehreren Kunden Ihre Webseiten mit und setzte erwünschte Features um. Dabei sammelte ich viele Erfahrungen mit Frontend sowie Backend Technologien.",
+			"description_e": "I maintained the websites of several customers at Inteco edv AG and implemented desired features. I gained a lot of experience with frontend and backend technologies.",
+			"description_r": "Я поддерживал веб-сайты нескольких клиентов Inteco edv AG и реализовал необходимые функции. Я приобрел большой опыт работы с интерфейсными и серверными технологиями.",
+			"name_e": "websites are waiting",
+			"name_r": "сайты ждут"
+		},
+		"defa70a1-6a94-4b11-9020-a3e278590811": {
+			"name": "Webscraping automatisation",
+			"description": "Das Ziel war es bei diesem Projekt, Kleidungsstücke aus verschiedenen Firmen auf die Homepage hochladen. Mithilfe meines Scripts konnte ich automatisch die Informationen aus den Onlineshops der Unternehmen auslesen und schlussendlich das Produkt auf der Wordpress Webapp erstellen.",
+			"description_e": "The aim of this project was to upload items of clothing from different companies to the homepage. With the help of my script, I was able to automatically read the information from the companies' online shops and finally create the product on the Wordpress web app.",
+			"description_r": "Целью проекта было загрузить на главную страницу одежду разных компаний. С помощью моего скрипта я смог автоматически считывать информацию из интернет-магазинов компаний и, наконец, создавать продукт в веб-приложении Wordpress.",
+			"name_e": "Webscraping automatisation",
+			"name_r": "Автоматизация веб-скрапинга"
+		},
+		"4ac0eb85-c2f6-403a-bd7f-1a140afc14ac": {
+			"name": "Portfolio",
+			"description": "Das ist diese Seite, auf welcher du dich gerade befindest.",
+			"description_e": "This is the page you are on right now.",
+			"description_r": "Это страница, на которой вы сейчас находитесь.",
+			"name_e": "Portfolio",
+			"name_r": "портфолио"
+		},
+		"494ffded-6f4c-47a9-95a8-86f6fb926f2b": {
+			"name": "Portfolio (alt)",
+			"description": "Für die Bewerbungsphase nach der Informatikmittelschule entwickelte ich eine Portfolio-Webseite. Dies war die alte Version der jetzigen Seite.",
+			"description_e": "I developed a portfolio website for the application phase after computer science high school. This was the old version of the current page.",
+			"description_r": "Я разработал веб-сайт-портфолио для этапа подачи заявок после окончания средней школы информатики. Это была старая версия текущей страницы.",
+			"name_e": "Portfolio (all)",
+			"name_r": "Портфолио (все)"
+		},
+		"961fa682-31a9-48a4-af53-b0d15193cb59": {
+			"name": "Finanzplaner",
+			"description": "Um meine Einnahmen und Ausgaben im überblick zu halten und analysieren hatte ich eine Excel-Tabelle mit meinen Transaktionen erstellt. Um diese einfacher verwalten zu können und Prognosen zu erstellen, schrieb ich ein Python-script, welches die Daten aus der Tabelle in eine MySQL Datenbank speichern und als Excel-Tabelle wieder exportieren kann. Dazu programmierte ich verschiedene Funktionen wzB eine Prognose des ersparten in x Jahren, basierend auf den bisherigen Ausgaben.",
+			"description_e": "In order to keep track of and analyze my income and expenses, I had created an Excel spreadsheet with my transactions. In order to be able to manage these more easily and to create forecasts, I wrote a Python script that can save the data from the table in a MySQL database and export it again as an Excel table. For this I programmed various functions such as a forecast of the savings in x years, based on the previous expenses.",
+			"description_r": "Чтобы отслеживать и анализировать свои доходы и расходы, я создал таблицу Excel со своими транзакциями. Чтобы упростить управление ими и создание прогнозов, я написал скрипт Python, который может сохранять данные из таблицы в базе данных MySQL и снова экспортировать их в виде таблицы Excel. Для этого я запрограммировал различные функции, такие как прогноз экономии через x лет на основе предыдущих расходов.",
+			"name_e": "financial planner",
+			"name_r": "специалист по финансовому планированию"
+		},
+		"4f02cb83-4f1f-4b08-82eb-d0cf4b295b6f": {
+			"name": "Textbasiertes Spiel Python",
+			"description": "Ich wurde durch das Entdecken einer Python-Library für das Entwickeln textbasierter Spiele dazu inspiriert, ein eigenes Spiel zu schreiben. In dieser Geschichte strandet der Spieler auf einer Insel und muss ressourcen sammeln sowie Feinde bekämpfen, um schlussendlich das Ziel des Bauen eines Bootes um der Insel zu entfliehen zu erreichen.",
+			"description_e": "I was inspired to write my own game by discovering a Python library for developing text-based games. In this story, the player is stranded on an island and has to collect resources and fight enemies to finally achieve the goal of building a boat to escape the island.",
+			"description_r": "На написание собственной игры меня вдохновило открытие библиотеки Python для разработки текстовых игр. В этой истории игрок застрял на острове и должен собирать ресурсы и сражаться с врагами, чтобы наконец достичь цели — построить лодку, чтобы сбежать с острова.",
+			"name_e": "Text based game Python",
+			"name_r": "Текстовая игра Python"
+		},
+		"b5af64bb-26de-401a-86ad-f43152645bb5": {
+			"name": "Textbasiertes Spiel C#",
+			"description": "Dieses Spiel ist die weiterführung, bzw die Neu-Implementation des Python Stranded Spiels. Da mir die Dynamische Typisierung sowie die Laufzeit von Python nicht gefiel, fing ich an dieses Spiel in C# zu entwickeln.",
+			"description_e": "This game is the continuation or the new implementation of the Python Stranded game. Since I didn't like the dynamic typing and the runtime of Python, I started to develop this game in C#.",
+			"description_r": "Эта игра является продолжением или новой реализацией игры Python Stranded. Поскольку мне не нравилась динамическая типизация и среда выполнения Python, я начал разрабатывать эту игру на C#.",
+			"name_e": "Text based game C#",
+			"name_r": "Текстовая игра C#"
+		},
+		"90bf3589-6c75-4205-8de9-3b881ae43dc2": {
+			"name": "Roguelike Dungeon Spiel",
+			"description": "Da mir die Spielentwicklung mittelsunity sehr gefallen hat, fing ich an ein eigener Roguelike Dungeon Spiel zu entwickeln. Die Sprites habe ich mittels Gimp designed.",
+			"description_e": "Since I really liked the game development using unity, I started to develop my own roguelike dungeon game. I designed the sprites using Gimp.",
+			"description_r": "Поскольку мне очень понравилась разработка игр с использованием Unity, я начал разрабатывать собственную игру в жанре рогалика с подземельями. Спрайты я разработал с помощью Gimp.",
+			"name_e": "Roguelike Dungeon Spiel",
+			"name_r": "Рогалик о подземельях"
+		},
+		"cd7275d1-6b4c-4c18-bf0d-c5e4a40c9279": {
+			"name": "Roguelike Dungeon Spiel 2",
+			"description": "Da mir die 2D-Roguelike Spiele sehr gefielen und ich Python lernen wollte, entwickelte ich so ein Spiel mittels Ursina. Die Sprites erstellte ich mittels Gimp.",
+			"name_r": "Рогалик в подземельях 2",
+			"description_e": "Since I really liked the 2D roguelike games and wanted to learn Python, I developed such a game using Ursina. I created the sprites using Gimp.",
+			"description_r": "Поскольку мне очень нравились 2D-рогалики и хотелось изучить Python, я разработал такую ​​игру с помощью Ursina. Спрайты я создал с помощью Gimp.",
+			"name_e": "Roguelike Dungeon Spiel 2"
+		},
+		"65061c84-ef7a-4c93-a7a5-a73799fdc957": {
+			"name": "Raketen Spiel",
+			"description": "In der Informatikmittelschule zeigte mir ein Kollege, wie man ein Spiel in Unity entwickelt. Dies ist das Ergebnis meines ersten Unity-Projektes. Die Rakete modellierte ich in Blender.",
+			"name_e": "rocket game",
+			"name_r": "ракетная игра",
+			"description_e": "In computer science middle school, a colleague showed me how to develop a game in Unity. This is the result of my first Unity project. I modeled the rocket in Blender.",
+			"description_r": "В средней школе информатики коллега показал мне, как разработать игру в Unity. Это результат моего первого проекта Unity. Я моделировал ракету в Blender."
+		},
+		"1f78b8c5-6620-43e0-bb1f-7ad41af94faa": {
+			"name": "Textbasiertes Spiel Java",
+			"description": "Dieses Spiel entwickelte ich, als ich Informatikunterricht gab. Mein Ziel war es, ein vom Code-Aufbau simples Spiel zu gestalten, um das den Lernenden beizubringen und zusammen zu schreiben.",
+			"name_e": "Text based game Java",
+			"name_r": "Текстовая игра Java",
+			"description_e": "I developed this game when I was teaching computer science. My goal was to create a game with a simple code structure, to teach the learners and to write together.",
+			"description_r": "Я разработал эту игру, когда преподавал информатику. Моей целью было создать игру с простой структурой кода, чтобы обучать учащихся и писать вместе."
+		},
+		"38c08b87-1a8c-48db-9bb7-b1fdb37b8eb8": {
+			"name": "Java UNO Spiel",
+			"description": "Während der Schulzeit entwickelte ich mit ein paar meiner Klassenkameraden ein UNO-Spiel mittels Java sowie Swing für die GUI-Implementation.",
+			"name_e": "Java UNO game",
+			"name_r": "Java игра УНО",
+			"description_e": "When I was in school, I developed a UNO game with some of my classmates using Java and Swing for the GUI implementation.",
+			"description_r": "Когда я учился в школе, я вместе с некоторыми из своих одноклассников разработал игру UNO, используя Java и Swing для реализации графического интерфейса."
+		},
+		"38b0fb62-05db-4af9-b31c-457836afe523": {
+			"name": "Immobilien Webseite",
+			"description": "Im Auftrag meines Vaters schrieb ich eine simple Webseite, damit er seine zu verkaufenden, renovierten Immobilien ausstellen konnte.",
+			"name_e": "real estate website",
+			"name_r": "сайт недвижимости",
+			"description_e": "On behalf of my father, I wrote a simple website for him to display his renovated properties for sale.",
+			"description_r": "По поручению моего отца я написал для него простой веб-сайт, на котором можно было выставить на продажу его отремонтированную недвижимость."
+		},
+		"43270423-3073-48aa-b0bb-470f6a92115a": {
+			"name": "RusFrauenTreff Webseite",
+			"description": "Für die Treffen russischer Frauen in Zürich entwickelte ich nach Bitte meiner Mutter eine Info-Homepage.",
+			"name_e": "RusFrauenTreff website",
+			"name_r": "Сайт РусФрауэнТрефф",
+			"description_e": "At my mother's request, I developed an information website for the meetings of Russian women in Zurich.",
+			"description_r": "По просьбе мамы я разработала информационный сайт встреч русских женщин в Цюрихе."
+		},
+		"c5e038e6-be8d-4358-9575-8d8fb23496a9": {
+			"name": "Teddy",
+			"description": "Für meinen Teddy nähte ich mehrere Jäckchen sowie einen hut, damit er auch in Winterzeiten warm hat aber auch stylisch aussieht.",
+			"name_e": "Teddy",
+			"name_r": "Тедди",
+			"description_e": "I sewed several jackets and a hat for my teddy bear, so that it would be warm in winter but also look stylish.",
+			"description_r": "Я сшила своему мишке несколько курток и шапку, чтобы зимой было тепло, но и выглядело стильно."
+		},
+		"c856c838-8f7d-4efd-990d-b4b082ff8cb1": {
+			"name": "Tie Dye",
+			"description": "Diese Tie Dye Shirts habe ich aus meiner Faszination für die 60er US-Kultur und deren Auswirkungen auf die Gesellschaft erstellt. Aber auch weil ich die Muster schön finde.",
+			"name_e": "Tie Dye",
+			"name_r": "Тай-Дай",
+			"description_e": "I created these tie dye shirts out of my fascination for the 60s US culture and its impact on society. But also because I think the patterns are beautiful.",
+			"description_r": "Я создал эти рубашки тай-дай из-за моего увлечения культурой США 60-х годов и ее влиянием на общество. Но еще и потому, что я считаю, что узоры красивые."
+		},
+		"1879ab32-8f0f-4704-918b-d4d76330ad20": {
+			"name": "Portemonnaie",
+			"description": "Damit ich einen sicheren Ort für mein geringes Kapital habe und Stoffe aus meinen alten Kleidern wiederverwenden kann, designte und nähte ich ein mehrfach-Portemonnaie mit Ressverschluss.",
+			"name_e": "Wallet",
+			"name_r": "Кошелек",
+			"description_e": "In order to have a safe place for my small capital and to be able to reuse fabrics from my old clothes, I designed and sewed a multi-zip wallet.",
+			"description_r": "Чтобы иметь безопасное место для моего небольшого капитала и иметь возможность повторно использовать ткани из моей старой одежды, я спроектировала и сшила кошелек с несколькими молниями."
+		},
+		"3ce4999b-ee59-4e38-916c-08230824f8df": {
+			"name": "Pullover",
+			"description": "Es macht mir spass, meine Kleider weiter zu verschönern und bemalen. Somit kann ich in einer gelangweilten Stunde aus einem eintönigen Pullover ein Kunstwerk erschaffen.",
+			"name_r": "Перетягивать",
+			"name_e": "Pullover",
+			"description_e": "It's fun for me to continue beautifying and painting my clothes. So I can create a work of art from a monotonous sweater in a bored hour.",
+			"description_r": "Мне интересно продолжать украшать и раскрашивать свою одежду. Вот и я могу в скучный час из однообразного свитера создать произведение искусства."
+		},
+		"195a4a30-0eec-4ac0-bef0-688738e2498b": {
+			"name": "Heavy Metal Veste",
+			"description": "Heavy Metal ist nicht nur meine bevorzugte Musikrichtung, sondern auch ein Lebensgefühl, das ich mit Stolz trage. In Hingabe an diese mitreißende Musik habe ich eine Weste im DIY-Stil gefertigt, die meine tiefe Verbundenheit mit der Heavy-Metal-Kultur ausdrückt.",
+			"name_e": "Heavy Metal Veste",
+			"name_r": "Хэви-метал Весте",
+			"description_e": "Heavy metal isn't just my favorite style of music, it's also a way of life that I'm proud of. In devotion to this rousing music, I have crafted a DIY style vest that expresses my deep connection to heavy metal culture.",
+			"description_r": "Хэви-метал — это не только мой любимый стиль музыки, это еще и образ жизни, которым я горжусь. В преданности этой зажигательной музыке я создал жилет в стиле DIY, который выражает мою глубокую связь с культурой хэви-метала."
+		},
+		"6710bf3f-33c1-41ee-9ff9-ed9cf5d6f069": {
+			"name": "Punk Pullover",
+			"description": "Punk ist für mich mehr als nur Musik, es ist eine Lebenseinstellung. Diesen Pullover habe ich bemalt und bestickt, um meine Vorliebe für Punkrock und die subversive Kultur zu verdeutlichen.",
+			"name_e": "Punk Pullover",
+			"name_r": "Панк-пуловер",
+			"description_e": "For me, punk is more than just music, it's a way of life. I painted and embroidered this sweater to show my love for punk rock and subversive culture.",
+			"description_r": "Для меня панк — это больше, чем просто музыка, это образ жизни. Я нарисовала и вышила этот свитер, чтобы показать свою любовь к панк-року и подрывной культуре."
+		},
+		"92b88e7f-c347-4e3b-beea-f7d7888de4db": {
+			"name": "Holzbesteck",
+			"description": "Als ich an einem Tag campen ging und kein Besteck dabei hatte, kam ich auf die Idee, dieses selbst zu schnitzen. Diese Erfahrung weckte mein Interesse an Holz und dessen Bearbeitungsmöglichkeiten.",
+			"name_e": "wooden cutlery",
+			"name_r": "деревянные столовые приборы",
+			"description_e": "When I went camping one day and didn't have any cutlery with me, I had the idea of ​​carving it myself. This experience aroused my interest in wood and its processing possibilities.",
+			"description_r": "Когда однажды я отправился в поход и у меня не было с собой столовых приборов, мне пришла в голову идея вырезать их самому. Этот опыт пробудил во мне интерес к дереву и возможностям его обработки."
+		},
+		"7ddb2450-0ce5-4a56-8b9f-f51343b815c3": {
+			"name": "Holzohrenring",
+			"description": "Diesen Plug habe ich als Miniprojekt geschnitzt. Diesen hatte ich immer dabei und konnte während des Wartens auf den Zug oder als Entspannungsübung Schritt nach Schritt vervollständigen.",
+			"name_e": "Holzohrenring",
+			"name_r": "Хольцоренринг",
+			"description_e": "I carved this plug as a mini project. I always had this with me and could complete it step by step while waiting for the train or as a relaxation exercise.",
+			"description_r": "Эту заглушку я вырезал как мини-проект. Я всегда носил его с собой и мог выполнять его шаг за шагом, ожидая поезда или в качестве упражнения на расслабление."
+		},
+		"ba98abd2-71ec-4915-abd3-2576897ccefb": {
+			"name": "Turnsack und Seemannssack",
+			"description": "Da meistens die industriell hergestellten Turnsäcke für meinen Geschmack zu klein sind, nähte ich aus Reststoff für mich passende Bags und Rucksäcke.",
+			"name_e": "Turnsack und Seemannssack",
+			"name_r": "Turnsack и Seemannssack",
+			"description_e": "Since most of the industrially produced gym bags are too small for my taste, I sewed suitable bags and backpacks from leftovers.",
+			"description_r": "Поскольку большинство спортивных сумок промышленного производства на мой вкус маловаты, я сшил подходящие сумки и рюкзаки из остатков."
+		},
+		"6a1222d0-be66-4481-a60e-c5221c38ba8b": {
+			"name": "Legales Graffiti",
+			"description": "Graffiti ist für mich eine Möglichkeit, Kunst im öffentlichen Raum zu schaffen und meine Individualität auszudrücken. Es erlaubt mir, mit Farben und Formen zu experimentieren und gleichzeitig eine Botschaft oder Stimmung zu vermitteln. Graffiti vereint Kreativität, Street Culture und soziale Kommunikation auf eine einzigartige Weise.",
+			"name_e": "legal graffiti",
+			"name_r": "юридические граффити",
+			"description_e": "For me, graffiti is a way of creating art in public spaces and expressing my individuality. It allows me to experiment with colors and shapes while conveying a message or mood. Graffiti combines creativity, street culture and social communication in a unique way.",
+			"description_r": "Для меня граффити — это способ создания искусства в общественных местах и ​​выражения своей индивидуальности. Это позволяет мне экспериментировать с цветами и формами, передавая послание или настроение. Граффити уникальным образом сочетает в себе творчество, уличную культуру и социальную коммуникацию."
+		},
+		"61392827-58b6-4f7c-8dc3-ddaebb404a2c": {
+			"name": "Kusudama",
+			"description": "Das Falten und Kreieren dieser faszinierenden Origami-Kugeln ist für mich nicht nur eine kreative Entdeckungsreise, sondern auch eine meditative Praxis. Es fasziniert mich, wie aus einzelnen kleinen Papierkomponenten ein komplexes Kunstwerk entstehen kann.",
+			"name_e": "Kusudama",
+			"name_r": "Кусудама",
+			"description_e": "For me, folding and creating these fascinating origami balls is not only a creative journey of discovery, but also a meditative practice. It fascinates me how a complex work of art can emerge from individual small paper components.",
+			"description_r": "Для меня складывание и создание этих увлекательных шаров оригами — это не только творческое путешествие к открытиям, но и медитативная практика. Меня восхищает, как сложное произведение искусства может возникнуть из отдельных маленьких бумажных компонентов."
+		},
+		"64da1b53-0743-4b4b-ac4e-82a463ee7fe4": {
+			"name": "Origami",
+			"description": "Origami ist eine faszinierende Kunstform, die mich begeistert, da sie Kreativität und Präzision vereint. Durch das Falten von Papier kann ich komplexe Formen und Figuren erschaffen und gleichzeitig meine Feinmotorik schulen. Es ist eine meditative Tätigkeit, die mir Freude bereitet und mein ästhetisches Empfinden anspricht.",
+			"name_e": "Origami",
+			"name_r": "Оригами",
+			"description_e": "Origami is a fascinating art form that excites me as it combines creativity and precision. By folding paper, I can create complex shapes and figures and at the same time train my fine motor skills. It is a meditative activity that gives me pleasure and appeals to my aesthetic sensibilities.",
+			"description_r": "Оригами — это увлекательный вид искусства, который меня восхищает, поскольку он сочетает в себе креативность и точность. Складывая бумагу, я могу создавать сложные формы и фигуры и одновременно тренировать мелкую моторику. Это медитативная деятельность, которая доставляет мне удовольствие и затрагивает мои эстетические чувства."
+		},
+		"b682c11c-6f32-424a-afe0-e6e07c62ce7e": {
+			"name": "Zeichnungen",
+			"description": "Das Zeichnen ist für mich eine Ausdrucksform, mit der ich meine Ideen und Emotionen auf visuelle Weise vermitteln kann. Es ermöglicht mir, meine Kreativität auszuleben und neue Perspektiven zu entdecken. Beim Zeichnen kann ich mich in eine Welt der Fantasie begeben und meine eigenen Geschichten erzählen.",
+			"name_e": "drawings",
+			"name_r": "рисунки",
+			"description_e": "For me, drawing is a form of expression that allows me to convey my ideas and emotions in a visual way. It enables me to live out my creativity and to discover new perspectives. When drawing, I can enter a world of fantasy and tell my own stories.",
+			"description_r": "Для меня рисунок — это форма самовыражения, которая позволяет мне визуально передать свои идеи и эмоции. Это позволяет мне реализовать свои творческие способности и открыть для себя новые перспективы. Рисуя, я могу войти в мир фантазий и рассказать свои собственные истории."
+		},
+		"9c7a7c8f-a2dd-47ce-902c-244c0bef5b89": {
+			"name": "Mosaik",
+			"description": "Das Gestalten von Mosaiken ist für mich wie das Zusammensetzen eines Puzzles aus Farben und Formen. Die Vielfalt der Materialien und die kreative Freiheit, die das Mosaikhandwerk bietet, fesseln mich immer wieder aufs Neue. Es ist eine Möglichkeit, meine künstlerische Ausdrucksfähigkeit zu entfalten und gleichzeitig ein Gefühl der Erfüllung zu erleben, wenn ich aus kleinen Stücken ein harmonisches Gesamtbild erschaffe. Die Kombination von Ästhetik und Handwerk macht das Mosaik für mich zu einer wunderbaren Art, meine kreative Energie auszuleben.",
+			"name_e": "Mosaic",
+			"name_r": "Мозаика",
+			"description_e": "For me, creating mosaics is like putting together a puzzle of colors and shapes. The variety of materials and the creative freedom that the mosaic craft offers fascinate me again and again. It's a way to unleash my artistic expression while experiencing a sense of accomplishment as I create a harmonious whole out of small pieces. The combination of aesthetics and craftsmanship makes the mosaic a wonderful way for me to express my creative energy.",
+			"description_r": "Для меня создание мозаики похоже на сбор пазла из цветов и форм. Разнообразие материалов и творческая свобода, которую предлагает мозаичное ремесло, очаровывают меня снова и снова. Это способ раскрыть свое художественное самовыражение, испытывая при этом чувство выполненного долга, поскольку я создаю гармоничное целое из маленьких частей. Сочетание эстетики и мастерства делает мозаику прекрасным способом выразить мою творческую энергию."
+		},
+		"d6d64638-6daa-4278-9044-67e51b307531": {
+			"name": "Katzenbaum",
+			"description": "Es war eine erfüllende Erfahrung, meinem Bruder beim Bau eines maßgeschneiderten Katzenbaums aus Holz und Stoff zu unterstützen. Durch unsere Zusammenarbeit haben wir nicht nur eine gemütliche Spiel- und Ruheoase für seine geliebte Katze geschaffen, sondern auch unsere handwerklichen Fähigkeiten vertieft. Das Wissen, dass wir gemeinsam ein Stück für das Wohlbefinden seines pelzigen Freundes erschaffen haben, verleiht mir ein tiefes Gefühl der Zufriedenheit und Freude.",
+			"name_e": "Katzenbaum",
+			"name_r": "Катценбаум",
+			"description_e": "It was a fulfilling experience helping my brother build a custom made wood and fabric cat tree. Through our cooperation, we have not only created a cozy play and resting oasis for his beloved cat, but also deepened our manual skills. Knowing that together we have created a piece for the well-being of his furry friend gives me a deep sense of satisfaction and joy.",
+			"description_r": "Это был полезный опыт: помогать моему брату построить кошачье дерево из дерева и ткани на заказ. Благодаря нашему сотрудничеству мы не только создали уютный оазис игр и отдыха для его любимого кота, но и углубили наши навыки ручного труда. Сознание того, что вместе мы создали кусочек благополучия его пушистого друга, дает мне глубокое чувство удовлетворения и радости."
+		},
+		"a7efac30-c66a-4688-a56a-2f859a567ee0": {
+			"name": "Malen",
+			"description": "Die Welt der Farben und Pinsel ist mein Rückzugsort, in dem ich mich frei ausdrücken kann. Beim Malen kann ich meine Emotionen und Gedanken auf die Leinwand bringen und meine eigene Interpretation der Realität schaffen. Es ist eine Kunstform, die mir erlaubt, meine Fantasie zu entfalten und neue Wege des Ausdrucks zu entdecken. Die Möglichkeit, in verschiedenen Stilen und Techniken zu malen, lässt mich immer wieder neue Inspiration finden und meine Fähigkeiten als Künstler weiterentwickeln.",
+			"name_e": "Grind",
+			"name_r": "Молоть",
+			"description_e": "The world of colors and brushes is my retreat where I can express myself freely. Painting allows me to bring my emotions and thoughts to the canvas and create my own interpretation of reality. It's an art form that allows me to unleash my imagination and explore new ways of expression. The opportunity to paint in different styles and techniques allows me to constantly find new inspiration and develop my skills as an artist.",
+			"description_r": "Мир красок и кистей — мое убежище, где я могу свободно выражать себя. Живопись позволяет мне перенести на холст свои эмоции и мысли и создать собственную интерпретацию реальности. Это форма искусства, которая позволяет мне дать волю своему воображению и исследовать новые способы самовыражения. Возможность рисовать в разных стилях и техниках позволяет мне постоянно находить новое вдохновение и развивать свои навыки художника."
+		},
+		"05917f45-a0c6-47a5-aa67-fee06d852dea": {
+			"name": "Gitarre",
+			"description": "Die Gitarre ist mein treuer Begleiter in musikalischen Momenten. Das Spielen der Gitarre erlaubt mir, meine Emotionen und Gefühle durch die Klänge und Rhythmen der Musik auszudrücken. Es ist eine Form der kreativen Selbstentfaltung und ermöglicht mir, mich mit anderen Musikern zu verbinden und gemeinsam Harmonien zu schaffen.",
+			"name_e": "guitar",
+			"name_r": "гитара",
+			"description_e": "The guitar is my faithful companion in musical moments. Playing the guitar allows me to express my emotions and feelings through the sounds and rhythms of the music. It is a form of creative self-expression and allows me to connect with other musicians and create harmonies together.",
+			"description_r": "Гитара – мой верный спутник в музыкальные моменты. Игра на гитаре позволяет мне выражать свои эмоции и чувства через звуки и ритмы музыки. Это форма творческого самовыражения, которая позволяет мне общаться с другими музыкантами и вместе создавать гармонию."
+		},
+		"9b1f16e6-2940-427d-ae0b-7ed2deaf9644": {
+			"name": "Bass",
+			"description": " Der Bass ist ein essenzieller Bestandteil der Musik, der für Stabilität und Groove sorgt. Das Spielen des Basses erfüllt mich mit Energie und ermöglicht es mir, mich in den rhythmischen Puls der Musik einzufügen. Der Bass ist ein Instrument, das mich dazu bringt, mich auf die Essenz der Musik zu konzentrieren und die Verbindung zwischen Melodie und Rhythmus zu erforschen.",
+			"name_e": "Bass",
+			"name_r": "Бас",
+			"description_e": "Bass is an essential part of music, providing stability and groove. Playing the bass fills me with energy and allows me to blend into the rhythmic pulse of the music. The bass is an instrument that makes me focus on the essence of the music and explore the connection between melody and rhythm.",
+			"description_r": "Бас — важная часть музыки, обеспечивающая стабильность и грув. Игра на басу наполняет меня энергией и позволяет сливаться с ритмичным пульсом музыки. Бас — это инструмент, который заставляет меня сосредоточиться на сути музыки и исследовать связь между мелодией и ритмом."
+		},
+		"28f99371-a7e2-49c2-9f72-15f3bbc9a524": {
+			"name": "Schlagzeug",
+			"description": "Das Schlagzeug ist mein Ventil, um mich rhythmisch auszudrücken und meine Energie freizusetzen. Es erlaubt mir, verschiedene Klangfarben und Texturen zu erzeugen und mich in den Rhythmus einzufühlen. Das Schlagzeugspielen fördert meine Koordination, Konzentration und Ausdauer und ermöglicht es mir, mit anderen Musikern zusammenzuspielen und gemeinsam eine mitreißende Performance zu schaffen.",
+			"name_e": "Drums",
+			"name_r": "Барабаны",
+			"description_e": "The drums are my outlet to express myself rhythmically and release my energy. It allows me to create different timbres and textures and feel the rhythm. Playing the drums improves my coordination, concentration and stamina and allows me to play together with other musicians and create an engaging performance together.",
+			"description_r": "Барабаны — это мой способ ритмично выразить себя и высвободить свою энергию. Это позволяет мне создавать разные тембры и текстуры и чувствовать ритм. Игра на барабанах улучшает мою координацию, концентрацию и выносливость, а также позволяет мне играть вместе с другими музыкантами и вместе создавать захватывающие выступления."
+		},
+		"a7ed3a19-ede7-4b72-b200-b703dda83e30": {
+			"name": "Ableton",
+			"description": "Ableton Live 10 ist eine digitale Audio-Workstation für macOS und Windows. Es wird hauptsächlich zum Komponieren, Aufnehmen, Remixen und Arrangieren von Musik verwendet.",
+			"name_e": "Ableton",
+			"name_r": "Эйблтон",
+			"description_e": "Ableton Live 10 is a digital audio workstation for macOS and Windows. It is mainly used for composing, recording, remixing and arranging music.",
+			"description_r": "Ableton Live 10 — рабочая станция с цифровым звуком для macOS и Windows. В основном он используется для сочинения, записи, ремикширования и аранжировки музыки."
+		},
+		"d6b70468-5b1a-4bf5-a3bf-b62fead095c6": {
+			"name": "FL Studio",
+			"description": "FL Studio ist eine digitale Audio-Workstation für Windows. Es wird hauptsächlich zum Erstellen und Produzieren von Musik verwendet.",
+			"name_e": "FL Studio",
+			"name_r": "ФЛ Студия",
+			"description_e": "FL Studio is a digital audio workstation for Windows. It is mainly used for creating and producing music.",
+			"description_r": "FL Studio — это рабочая станция цифрового аудио для Windows. В основном он используется для создания и производства музыки."
+		},
+		"848fb6bf-b461-462d-a94b-4fc3f3586b20": {
+			"name": "Faden",
+			"description": "Ich habe auf genageltem Holz mit Faden Motive erstellt. Dabei habe ich Nägel in das Holz geschlagen, um klare Konturen zu erzeugen, und den Faden geschickt um die Nägel gewickelt, um die Motive zu gestalten. Es war eine kreative Erfahrung, die mir die Möglichkeit gab, meine handwerklichen Fähigkeiten zu üben und mein Verständnis von Formen und Mustern zu erweitern.",
+			"name_e": "thread",
+			"name_r": "нить",
+			"description_e": "I created motifs on nailed wood with thread. I hammered nails into the wood to create clear contours and cleverly wrapped the thread around the nails to create the motifs. It was a creative experience that gave me the opportunity to practice my crafting skills and expand my understanding of shapes and patterns.",
+			"description_r": "Я создала мотивы на прибитом дереве с помощью ниток. Я забила гвозди в дерево, чтобы создать четкие контуры, и ловко обернула нить вокруг гвоздей, чтобы создать мотивы. Это был творческий опыт, который дал мне возможность практиковать свои навыки рукоделия и расширить понимание форм и узоров."
+		},
+		"19d5cd90-b26f-40d3-91d9-e74eec1ea6e9": {
+			"name": "CEVI",
+			"description": "Der CEVI ist eine Organisation, die es mir ermöglicht, mich in der Gemeinschaft zu engagieren und Verantwortung zu übernehmen. Als Pfadfinder habe ich die Möglichkeit, neue Fähigkeiten zu erlernen, Outdoor-Abenteuer zu planen und erleben und dabei Werte wie Teamwork, Respekt und Nachhaltigkeit zu fördern. Der CEVI bietet mir die Chance, neue Freundschaften zu knüpfen, meine Organisatorischen Fähigkeiten zu fördern und mich persönlich weiterzuentwickeln.",
+			"name_e": "PIPES",
+			"name_r": "ТРУБЫ",
+			"description_e": "The CEVI is an organization that enables me to get involved in the community and take responsibility. As a Boy Scout, I have the opportunity to learn new skills, plan and experience outdoor adventures while promoting values ​​such as teamwork, respect and sustainability. The CEVI offers me the opportunity to make new friends, to promote my organizational skills and to develop myself personally.",
+			"description_r": "CEVI — это организация, которая позволяет мне участвовать в жизни общества и брать на себя ответственность. Будучи бойскаутом, я имею возможность приобретать новые навыки, планировать и испытывать приключения на свежем воздухе, одновременно продвигая такие ценности, как командная работа, уважение и устойчивое развитие. CEVI дает мне возможность завести новых друзей, развить свои организаторские способности и развиваться лично."
+		},
+		"9ec69adf-bfb7-4575-80d9-70e188069f57": {
+			"name": "Fahrrad",
+			"description": "Das Fahrradfahren ist für mich nicht nur eine Fortbewegungsmethode, sondern auch eine Quelle der Freiheit und des Abenteuers. Es verbindet mich mit der Natur und gibt mir die Möglichkeit, mich aktiv zu bewegen und dabei die Umwelt zu schonen. Beim Fahrradfahren kann ich den Alltagsstress hinter mir lassen und die Welt aus einer anderen Perspektive erleben.",
+			"name_e": "Bicycle",
+			"name_r": "Велосипед",
+			"description_e": "For me, cycling is not only a means of transportation, but also a source of freedom and adventure. It connects me with nature and gives me the opportunity to exercise actively while protecting the environment. When I ride my bike, I can leave the stress of everyday life behind me and experience the world from a different perspective.",
+			"description_r": "Для меня велосипед – это не только средство передвижения, но и источник свободы и приключений. Это соединяет меня с природой и дает мне возможность активно заниматься спортом, одновременно защищая окружающую среду. Когда я езжу на велосипеде, я могу оставить позади стресс повседневной жизни и взглянуть на мир с другой точки зрения."
+		},
+		"c4ec0ec5-fba4-4935-a00d-66db72ac1991": {
+			"name": "Volleyball",
+			"description": "Volleyball ist ein Teamsport, der mir die Möglichkeit gibt, meine Leidenschaft für Bewegung und Wettbewerb auszuleben. Es ist eine dynamische Sportart, die Koordination, Ausdauer und Teamwork erfordert. Beim Volleyball kann ich meine Fähigkeiten verbessern, neue Strategien entwickeln und mich gleichzeitig körperlich und mental herausfordern.",
+			"name_e": "Volleyball",
+			"name_r": "Волейбол",
+			"description_e": "Volleyball is a team sport that gives me the opportunity to live out my passion for exercise and competition. It is a dynamic sport that requires coordination, endurance and teamwork. With volleyball I can improve my skills, develop new strategies and at the same time challenge myself physically and mentally.",
+			"description_r": "Волейбол — командный вид спорта, который дает мне возможность реализовать свою страсть к движению и соревнованиям. Это динамичный вид спорта, требующий координации, выносливости и командной работы. С помощью волейбола я могу улучшить свои навыки, разработать новые стратегии и в то же время бросить себе вызов физически и морально."
+		},
+		"877c0174-a711-4c46-a6fb-9cf1eea95054": {
+			"name": "Skateboard",
+			"description": " Das Skateboarden ist für mich eine aufregende und kreative Art der Fortbewegung. Es erlaubt mir, meine Balance und Koordination zu schulen und gleichzeitig meine Kreativität auszudrücken. Beim Skateboarden kann ich neue Tricks lernen, meine Grenzen ausloten und mich in einer Gemeinschaft von Gleichgesinnten austauschen.",
+			"name_e": "Skateboard",
+			"name_r": "Скейтборд",
+			"description_e": "For me, skateboarding is an exciting and creative way of getting around. It allows me to train my balance and coordination while expressing my creativity. Skateboarding allows me to learn new tricks, push my limits, and connect with a community of like-minded people.",
+			"description_r": "Для меня скейтбординг — это увлекательный и творческий способ передвижения. Это позволяет мне тренировать баланс и координацию, одновременно выражая свои творческие способности. Скейтбординг позволяет мне изучать новые трюки, расширять свои возможности и общаться с сообществом единомышленников."
+		},
+		"c1aa2228-d152-46cf-a3eb-7fe9eb047b12": {
+			"name": "Tischtennis",
+			"description": "Tischtennis ist ein schneller und präziser Sport, der mir die Möglichkeit gibt, meine Reaktionsfähigkeit und mein Auge-Hand-Koordination zu verbessern. Es ist eine Sportart, die Geschicklichkeit und Taktik erfordert und gleichzeitig viel Spaß macht. Beim Tischtennis kann ich meine Konzentration schärfen und mich in spannenden Wettkämpfen mit anderen messen.",
+			"name_e": "table tennis",
+			"name_r": "настольный теннис",
+			"description_e": "Table tennis is a fast and precise sport that gives me the opportunity to improve my responsiveness and hand-eye coordination. It is a sport that requires skill and tactics while being great fun. With table tennis I can sharpen my concentration and compete with others in exciting competitions.",
+			"description_r": "Настольный теннис — быстрый и точный вид спорта, который дает мне возможность улучшить реакцию и зрительно-моторную координацию. Это спорт, который требует навыков и тактики, но при этом доставляет массу удовольствия. С помощью настольного тенниса я могу улучшить свою концентрацию и соревноваться с другими в захватывающих соревнованиях."
+		},
+		"02f7b37e-6bd4-40e5-917d-d72aac71620f": {
+			"name": "Campen",
+			"description": "Das Campen ist für mich eine Rückkehr zur Natur und eine Gelegenheit, dem hektischen Alltag zu entfliehen. Die Einfachheit des Campinglebens und das Gefühl der Freiheit, das es vermittelt, sind unschätzbar wertvoll. Beim Campen kann ich mich mit der Natur verbinden, die Schönheit der Umgebung genießen und das Gefühl der Gemeinschaft erleben, wenn ich mit anderen Campern in der Natur zusammenkomme. Es ist eine wunderbare Möglichkeit, mich zu erden und neue Energie zu tanken.",
+			"name_e": "The camp",
+			"name_r": "Лагерь",
+			"description_e": "For me, camping is a return to nature and an opportunity to get away from the hustle and bustle of everyday life. The simplicity of camping life and the sense of freedom it gives are priceless. Camping allows me to connect with nature, enjoy the beauty of the surroundings and experience the sense of community when I get together with other campers in nature. It's a wonderful way to ground myself and recharge my batteries.",
+			"description_r": "Для меня кемпинг – это возвращение к природе и возможность уйти от суеты повседневной жизни. Простота походной жизни и ощущение свободы, которое она дает, бесценны. Кемпинг позволяет мне соединиться с природой, насладиться красотой окружающей среды и ощутить чувство общности, когда я собираюсь вместе с другими отдыхающими на природе. Это замечательный способ заземлиться и подзарядить свои батарейки."
+		},
+		"acfb4f7a-f1fe-40d6-84ac-7ac824575de2": {
+			"name": "Wandern",
+			"description": "Das Wandern ist für mich eine Möglichkeit, dem stressigen Alltag zu entfliehen und die Schönheit der Natur zu genießen. Es ermöglicht mir, meinen Geist zu beruhigen, während ich neue Landschaften erkunde und frische Luft einatme. Beim Wandern kann ich meine körperliche Fitness verbessern und mich mit der Natur verbunden fühlen.",
+			"name_e": "Hike",
+			"name_r": "Поход",
+			"description_e": "For me, hiking is a way of escaping the stress of everyday life and enjoying the beauty of nature. It allows me to quiet my mind while exploring new landscapes and breathing fresh air. Hiking allows me to improve my physical fitness and feel connected to nature.",
+			"description_r": "Для меня походы – это способ уйти от стресса повседневной жизни и насладиться красотой природы. Это позволяет мне успокоиться, исследуя новые пейзажи и дыша свежим воздухом. Походы позволяют мне улучшить свою физическую форму и почувствовать связь с природой."
+		},
+		"57fd8353-22c3-460e-aadd-cf36c8496f4b": {
+			"name": "Kochen",
+			"description": " Die Küche ist mein kreatives Labor, in dem ich neue Aromen und Geschmacksrichtungen entdecke. Kochen ist für mich mehr als nur eine Alltagspflicht – es ist eine Möglichkeit, meine kulinarische Fantasie zum Leben zu erwecken. Die Kombination von Zutaten, das Experimentieren mit Gewürzen und die Freude am Servieren von köstlichen Gerichten sind für mich eine Quelle der Inspiration. Kochen ist ein Akt der Fürsorge, sowohl für mich selbst als auch für andere, und es erlaubt mir, meine Liebe zur Gastronomie und die Freude am Teilen von Essen zu vereinen.",
+			"name_e": "Cook",
+			"name_r": "Готовить",
+			"description_e": "The kitchen is my creative laboratory where I discover new aromas and flavors. For me, cooking is more than just a daily chore - it's a way to bring my culinary imagination to life. The combination of ingredients, experimenting with spices and the joy of serving delicious dishes are a source of inspiration for me. Cooking is an act of caring, both for myself and for others, and it allows me to combine my love of gastronomy and the joy of sharing food.",
+			"description_r": "Кухня — моя творческая лаборатория, где я открываю для себя новые ароматы и вкусы. Для меня приготовление пищи — это больше, чем просто повседневная работа, это способ воплотить в жизнь мое кулинарное воображение. Сочетание ингредиентов, эксперименты со специями и радость от подачи вкусных блюд являются для меня источником вдохновения. Приготовление пищи — это акт заботы как о себе, так и о других, и он позволяет мне объединить мою любовь к гастрономии и ��адость от обмена едой."
+		},
+		"9e3506ae-7b1d-4263-ab41-722e98bbbf09": {
+			"name": "Lebkuchen",
+			"description": "Diesen Lebkuchen habe ich im Winter mit meinen beiden Brüdern gebacken. Zusammen die Kreativität im Kochen zum Ausdruck zu bringen war ein wundervolles Erlebnis.",
+			"name_e": "Gingerbread",
+			"name_r": "Имбирный пряник",
+			"description_e": "I baked this gingerbread with my two brothers in winter. Expressing creativity in cooking together was a wonderful experience.",
+			"description_r": "Эти пряники я испекла зимой с двумя братьями. Проявить творческий подход в совместной готовке было замечательным опытом."
+		}
+	}
+}

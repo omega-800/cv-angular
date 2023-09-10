@@ -112,13 +112,13 @@ $img-height-x: 50vh;
             z-index: variables.$evenhigher;
 
             & .img-main {
-                $img-height: var(--heightfull);
-                $img-width: var(--widthfull);
-                $img-margin-ver: calc((100% - var(--heightfull))/2);
-                $img-margin-hor: calc((100% - var(--widthfull))/2);
-                height: calc($img-height * 0.9);
-                width: calc($img-width * 0.9);
-                margin: calc($img-margin-ver + ($img-height * 0.05)) calc($img-margin-hor + ($img-width * 0.05));
+                $img-height: calc(var(--heightfull) * 0.9);
+                $img-width: calc(var(--widthfull) * 0.9);
+                $img-margin-ver: calc((100% - $img-height) / 3);
+                $img-margin-hor: calc((100% - $img-width) / 2);
+                height: $img-height;
+                width: $img-width;
+                margin: calc($img-margin-ver) calc($img-margin-hor);
                 position: fixed;
                 top: 0;
                 left: 0;

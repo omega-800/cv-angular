@@ -1,0 +1,6 @@
+{
+    "main": "i18n.js",
+    "dependencies": {
+        "google-translate-api-browser": "^3.0.1"
+    }
+}

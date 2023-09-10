@@ -5,6 +5,10 @@
 
 :host {
     & .filterSelectedContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         overflow-x: auto;
         transform: rotateX(180deg);
 
@@ -26,6 +30,12 @@
                 }
             }
         }
+    }
+
+    & .filterReset {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     & .fullFilterComp {

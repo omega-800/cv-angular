@@ -18,7 +18,8 @@ import { arrowIcon, lockIcon } from '../../icons.constants';
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [CarouselComponent, ImageComponent, NgIf, ButtonComponent, TooltipComponent],
-  animations: [DropDownAnimation]
+  animations: [DropDownAnimation],
+  //host: { 'class': 'slimpill' }
 })
 export class ContentboxComponent implements OnInit {
   @Input() title!: string;

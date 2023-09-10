@@ -37,8 +37,8 @@ import { Entity } from 'src/app/services/entities.model';
 export class FilterComponent implements OnInit {
   @Input() filters!: FiltersEntity[];
   @Input() additionalFilters$?: BehaviorSubject<FiltersEntity[]>;
-  @Input() count!: number;
   @Output() filterEmitter = new EventEmitter<FiltersEntity[]>();
+  @Output() openEmitter = new EventEmitter<boolean>();
   selectedFilter: FiltersEntity[] = [];
   arrowIcon: ImageComp = arrowIcon;
   projectFilterProps = projectFilterProps;
@@ -67,6 +67,11 @@ export class FilterComponent implements OnInit {
 
   ngAfterContentChecked() {
     this.cdref.detectChanges();
+  }
+
+  toggleOpen() {
+    this.isActive = !this.isActive;
+    this.openEmitter.emit(this.isActive)
   }
 
   setAdditionalFilters(addFilters: FiltersEntity[]) {
@@ -307,22 +312,4 @@ export class FilterComponent implements OnInit {
   getRelevanceTag(category: FilterCategoryEntity): TagEntity | undefined {
     return category.tags.find((tag) => tag.id == this.selectedInterest);
   }
-
-  /*@Input() filterValues!:{[key:string]:string};
-  @Input() name!: string;
-  @Input() filters!: FiltersEntity[];
-  filtersSelected$:Observable<FiltersEntity[]>;
-  
-  constructor(private store:Store) {
-    for (const [key, value] of Object.entries(this.filterValues)) {
-      this.filtersSelected[value] = false;
-    };
-    this.filtersSelected$ = this.store
-      .select(FilterState.filters)
-      .pipe();
-  }
-
-  onFilterChange(){
-    //elem.classList.add('selected');
-  } */
 }

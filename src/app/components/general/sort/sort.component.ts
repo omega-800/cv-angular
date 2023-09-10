@@ -15,7 +15,7 @@ import { Entity } from 'src/app/services/entities.model';
   styleUrls: ['./sort.component.scss'],
   standalone: true,
   imports: [NgFor, FormsModule, SelectComponent],
-  host: { 'class': 'sortComp flex-e2e slimpill' }
+  host: { 'class': 'sortComp flex-e2e' }
 })
 export class SortComponent implements OnInit {
   @Input() fields!: SortEntity[];

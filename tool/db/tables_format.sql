@@ -336,7 +336,7 @@ CREATE TABLE IF NOT EXISTS public.school
     school_id uuid NOT NULL DEFAULT gen_random_uuid(),
     type character varying COLLATE pg_catalog."default",
     type_e character varying COLLATE pg_catalog."default",
-    type_d character varying COLLATE pg_catalog."default",
+    type_r character varying COLLATE pg_catalog."default",
     description character varying COLLATE pg_catalog."default",
     description_e character varying COLLATE pg_catalog."default",
     description_r character varying COLLATE pg_catalog."default",

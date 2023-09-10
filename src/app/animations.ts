@@ -51,7 +51,7 @@ export const DropDownAnimation = trigger("dropDownMenu", [
         sequence([
             animate(faster, style({ height: "*" })),
             query(".menu-item", [
-                stagger(-20, [
+                stagger(-10, [
                     animate(`${normal} ease-in-out`, style({ opacity: 1, transform: "none" }))
                 ])
             ])
@@ -63,7 +63,7 @@ export const DropDownAnimation = trigger("dropDownMenu", [
         query(".menu-item", [style({ opacity: 1, transform: "none" })]),
         sequence([
             query(".menu-item", [
-                stagger(10, [
+                stagger(5, [
                     animate(
                         `${fast} ease-in-out`,
                         style({ opacity: 0, transform: `translateY(-${pxSize})` })

@@ -10,14 +10,14 @@ import { NgFor, NgIf } from '@angular/common';
 import { SkillsFilterPipe } from 'src/app/pipes/skills-filter/skills-filter.pipe';
 import { SkillsSortPipe } from 'src/app/pipes/skills-sort/skills-sort.pipe';
 import { LeftToRightAnimationIncrement } from 'src/app/animations';
+import { FullFilterComponent } from '../../full-filter/full-filter.component';
 
 @Component({
   selector: 'app-skills-percent',
   templateUrl: './skills-percent.component.html',
   styleUrls: ['./skills-percent.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [FilterComponent, SortComponent, SkillItemComponent, NgFor, SkillsFilterPipe, SkillsSortPipe, NgIf],
+  imports: [FullFilterComponent, SkillItemComponent, NgFor, SkillsFilterPipe, SkillsSortPipe, NgIf],
   animations: [LeftToRightAnimationIncrement]
 })
 export class SkillsPercentComponent implements OnInit {

@@ -1,0 +1,15 @@
+<div *ngIf="selectedFilter.length > 0" class="selected"></div>
+<div class="filters slimpill">
+    <app-filter [filters]="filters" [additionalFilters$]="additionalFilters$" (filterEmitter)="emitFilter($event)"
+        (openEmitter)="isActive = $event;"></app-filter>
+    <app-sort [fields]="sortFields" (selectedEmitter)="emitSort($event)"></app-sort>
+    <div *ngIf="isActive" class="flex-center">
+        <h4 *ngIf="count > 0">Angezeigt werden {{ count }} Einträge</h4>
+        <h4 *ngIf="!loggedIn && lockedCount && lockedCount > 0">
+            Einloggen, um {{ lockedCount }} Einträge mehr zu sehen ;)
+        </h4>
+    </div>
+</div>
+<h2 *ngIf="count == 0">
+    Leider konnten keine Einträge zu diesem Filter gefunden werden :(
+</h2>

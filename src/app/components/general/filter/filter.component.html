@@ -21,63 +21,51 @@
     </ng-container>
   </div>
 </div>
-<div #fullcomp class="fullFilterComp slimpill">
+<p *ngIf="selectedFilter.length > 0" (click)="reset()" class="filterReset link pill">
+  Zurücksetzen
+</p>
+<div class="fullFilterComp">
   <div class="filterTitle flex-e2e">
-    <div class="showFilter flex-row-nojust" (mouseenter)="fullcomp.classList.add('hover')"
-      (mouseleave)="fullcomp.classList.remove('hover')"
-      (click)="fullimg.classList.toggle('notactive'); isActive = !isActive">
-      <img #fullimg class="arrowImg small-image notactive" src="{{ arrowIcon.path }}" alt="{{ arrowIcon.alt }}"
-        loading="lazy" />
-      <h3>Filtern ({{ count }})</h3>
-    </div>
-    <p *ngIf="selectedFilter.length > 0" (click)="reset()" class="filterReset link pill">
-      Zurücksetzen
+    <h3>Filtern</h3>
+    <p (click)="toggleOpen()" class="link pill">
+      {{isActive ? "Weniger" : "Mehr"}} anzeigen
     </p>
   </div>
-  <div *ngIf="isActive" [@dropDownMenu]>
-    <div *ngFor="let filter of filters" #comp class="filterComp menu-item">
-      <h4 *ngIf="filters.length > 1" class="filterTitle subTitle">
+  <div [@dropDownMenu]>
+    <div *ngFor="let filter of filters" class="filterComp menu-item">
+      <h4 *ngIf="filters.length > 1 && isActive" class="filterTitle subTitle">
         {{ filter.name }}
       </h4>
       <div class="filterCategories flex-row-nojust">
         <ng-container *ngFor="let category of filter.categories">
-          <div *ngIf="
+          <ng-container *ngIf="isActive || category.selected">
+            <div *ngIf="
               !category.isRange &&
               category.tags.length == 1 &&
               category.id != projectFilterProps.relevance
             " (click)="toggleTag(filter, category, category.tags[0])" class="pill tag link" [id]="category.tags[0].id">
-            <img *ngIf="category.tags[0].image" src="{{ category.tags[0].image.path }}"
-              alt="{{ category.tags[0].image.alt }}" class="tagIcon small-image" loading="lazy" />
-            <p>{{ category.tags[0].name }}</p>
-          </div>
+              <img *ngIf="category.tags[0].image" src="{{ category.tags[0].image.path }}"
+                alt="{{ category.tags[0].image.alt }}" class="tagIcon small-image" loading="lazy" />
+              <p>{{ category.tags[0].name }}</p>
+            </div>
 
-          <div *ngIf="
+            <div *ngIf="
               category.id == projectFilterProps.relevance &&
               getRelevanceTag(category) as tag
             " (click)="toggleTag(filter, category, tag)" class="pill tag link active" [id]="tag.id">
-            <p>{{ tag.name }}</p>
-          </div>
+              <p>{{ tag.name }}</p>
+            </div>
 
-          <app-select
-            *ngIf="!category.isRange && category.id != projectFilterProps.relevance && category.tags.length > 1"
-            [name]="category.name" [alwaysShowName]="true" [allowMultiple]="true" [fields]="category.tags"
-            [toClear]="toClear.asObservable()" (selectEmitter)="setCategory(filter, category, $event)"></app-select>
+            <app-select
+              *ngIf="!category.isRange && category.id != projectFilterProps.relevance && category.tags.length > 1"
+              [name]="category.name" [alwaysShowName]="true" [allowMultiple]="true" [fields]="category.tags"
+              [toClear]="toClear.asObservable()" (selectEmitter)="setCategory(filter, category, $event)"></app-select>
 
-          <app-range *ngIf="category.isRange" [range]="category"
-            (rangeEmitter)="updateRange(filter, $event)"></app-range>
+            <app-range *ngIf="category.isRange" [range]="category"
+              (rangeEmitter)="updateRange(filter, $event)"></app-range>
+          </ng-container>
         </ng-container>
       </div>
     </div>
   </div>
 </div>
-<!-- p>{{filtersSelected$ | async | json}}</p>
-<form #filterForm="ngForm">
-    {{filterForm.value | json}}
-    <div class="filter-item" *ngFor="let filter of filterValues | keyvalue">
-        <label for="{{filter.key}}">{{filter.value}}</label>
-        <input ngModel type="checkbox" name="{{filter.key}}" value="{{filter.key}}">
-    </div>
-</form>
-<div *ngFor="let filter of filterValues | keyvalue">
-    <div #filterItem class="filter" (click)="filterItem.classList.toggle('active')">{{filter.value}}</div>
-</div -->

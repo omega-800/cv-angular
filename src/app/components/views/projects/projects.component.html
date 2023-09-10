@@ -1,104 +1,46 @@
 <div class="title">
   <h1>Projekte</h1>
-  <p *ngIf="!loggedIn">
-    Einloggen, um {{ getLockedProjectsCount() }} Einträge mehr zu sehen ;)
-  </p>
 </div>
-<div class="filters">
-  <!--app-filter [filters]="[skillsFilter]" filterName="Filtern nach Skill"
-    (filterEmitter)="filterProjectsBySkill($event)"></app-filter-->
-  <app-filter
-    [filters]="filters"
-    [additionalFilters$]="additionalFilter$"
-    (filterEmitter)="filterProjects($event)"
-    [count]="(projects | projectsFilter : selectedFilters).length"
-  ></app-filter>
-  <app-sort
-    [fields]="sortFields"
-    (selectedEmitter)="sortProjectsBy($event)"
-  ></app-sort>
-</div>
-<div
-  [@leftToRightIncrement]="(projects | projectsFilter : selectedFilters).length"
->
-  <h2
-    class="error"
-    *ngIf="(projects | projectsFilter : selectedFilters).length == 0"
-  >
-    Leider konnten keine Projekte zu diesem Filter gefunden werden :(
-  </h2>
-  <ng-container
-    *ngFor="
+<app-full-filter [filters]="filters" [additionalFilters$]="additionalFilter$"
+  [count]="(projects | projectsFilter : selectedFilters).length" (filterEmitter)="filterProjects($event)"
+  [sortFields]="sortFields" (sortEmitter)="sortProjectsBy($event)"
+  [lockedCount]="getLockedProjectsCount()"></app-full-filter>
+<div [@leftToRightIncrement]="(projects | projectsFilter : selectedFilters).length">
+  <ng-container *ngFor="
       let project of projects
         | projectsSort : sortValue : sortAsc
         | projectsFilter : selectedFilters
-    "
-  >
-    <app-contentbox
-      [locked]="project.anon_locked && (!loggedIn || !isAuth)"
-      [image]="project.image"
-      [title]="project.name"
-      [subTitle]="project.date | pipeDate"
-      [description]="
+    ">
+    <app-contentbox [locked]="project.anon_locked && (!loggedIn || !isAuth)" [image]="project.image"
+      [title]="project.name" [subTitle]="project.date | pipeDate" [description]="
         project.anon_locked && !loggedIn
           ? loginMessage
           : project.anon_locked && !isAuth
           ? authMessage
           : project.description
-      "
-      [link]="project.url"
-      [id]="project.project_id"
-      [selected]="selectedProject?.project_id == project.project_id"
-      class="menu-item"
-    >
-      <div
-        *ngIf="project.authors"
-        class="bot authors flex-column slimpill notskills"
-      >
+      " [link]="project.url" [id]="project.project_id" [selected]="selectedProject?.project_id == project.project_id"
+      class="menu-item">
+      <div *ngIf="project.authors" class="bot authors flex-column slimpill notskills">
         <h4>Author{{ project.authors.length > 1 ? "en" : "" }}</h4>
         <div class="content flex-e2e">
-          <app-button
-            *ngFor="let author of project.authors"
-            (click)="openClient(author.id)"
-            [type]="lt.PERSON"
-            [name]="author.name"
-            [image]="author.image.path !== '' ? author.image : undefined"
-            [showName]="true"
-          ></app-button>
+          <app-button *ngFor="let author of project.authors" (click)="openClient(author.id)" [type]="lt.PERSON"
+            [name]="author.name" [image]="author.image.path !== '' ? author.image : undefined"
+            [showName]="true"></app-button>
         </div>
       </div>
-      <div
-        *ngIf="project.client"
-        class="bot client flex-column slimpill notskills"
-      >
+      <div *ngIf="project.client" class="bot client flex-column slimpill notskills">
         <h4>Entwickelt für</h4>
         <div class="content flex-e2e">
-          <app-button
-            (click)="openClient(project.client.id)"
-            [type]="lt.PERSON"
-            [name]="project.client.name"
-            [showName]="true"
-          ></app-button>
+          <app-button (click)="openClient(project.client.id)" [type]="lt.PERSON" [name]="project.client.name"
+            [showName]="true"></app-button>
         </div>
       </div>
-      <div
-        *ngIf="project.github || project.url"
-        class="bot links flex-column slimpill notskills"
-      >
+      <div *ngIf="project.github || project.url" class="bot links flex-column slimpill notskills">
         <h4>Link{{ project.github && project.url ? "s" : "" }}</h4>
         <div class="content flex-e2e">
-          <app-button
-            *ngIf="project.github"
-            (click)="ol(project.github)"
-            [type]="lt.GITHUB"
-            [name]="lt.GITHUB.name"
-          ></app-button>
-          <app-button
-            *ngIf="project.url"
-            (click)="ol(project.url)"
-            [type]="lt.URL"
-            [name]="lt.URL.name"
-          ></app-button>
+          <app-button *ngIf="project.github" (click)="ol(project.github)" [type]="lt.GITHUB"
+            [name]="lt.GITHUB.name"></app-button>
+          <app-button *ngIf="project.url" (click)="ol(project.url)" [type]="lt.URL" [name]="lt.URL.name"></app-button>
         </div>
       </div>
       <!--div *ngIf="project.clients.length > 0" class="bot client notskills">
@@ -107,32 +49,20 @@
             <app-button *ngFor="let client of project.clients" (click)="ol(client.url)" [type]="lt.URL" [name]="client.name"><p>{{client.name}}</p></app-button>
         </div>
   </div-->
-      <div
-        *ngIf="project.career"
-        class="bot career flex-column slimpill notskills"
-      >
+      <div *ngIf="project.career" class="bot career flex-column slimpill notskills">
         <h4>Entwickelt bei</h4>
         <div class="content flex-e2e">
-          <app-button
-            (click)="goToCareer(project.career.career_id)"
-            [type]="lt.OTHER"
-            [name]="
+          <app-button (click)="goToCareer(project.career.career_id)" [type]="lt.OTHER" [name]="
               project.career.type === ct.SCHOOL
                 ? project.career.school?.name!
                 : project.career.workplace?.name!
-            "
-            [showName]="true"
-          ></app-button>
+            " [showName]="true"></app-button>
         </div>
       </div>
       <div bottom class="bot skills flex-column slimpill">
         <h4>Skill{{ project.skills.length > 1 ? "s" : "" }}</h4>
         <div class="content flex-e2e">
-          <app-skill-item
-            *ngFor="let skill of project.skills"
-            [showPercent]="false"
-            [skill]="skill"
-          ></app-skill-item>
+          <app-skill-item *ngFor="let skill of project.skills" [showPercent]="false" [skill]="skill"></app-skill-item>
         </div>
       </div>
     </app-contentbox>

@@ -20,7 +20,7 @@ export const projectSortProps: SortEntity[] = [
   { id: "projectsortentity_relevance_education", name: "Relevanz", value: projectSortValues.relevance_education },
   { id: "projectsortentity_date", name: "Datum", value: projectSortValues.date },
   { id: "projectsortentity_career", name: "Karriere", value: projectSortValues.career },
-  { id: "projectsortentity_client", name: "Klient", value: projectSortValues.client },
-  { id: "projectsortentity_authors", name: "Author", value: projectSortValues.author },
+  /*{ id: "projectsortentity_client", name: "Klient", value: projectSortValues.client },
+  { id: "projectsortentity_authors", name: "Author", value: projectSortValues.author },*/
   { id: "projectsortentity_name", name: "Name", value: projectSortValues.name }
 ];
