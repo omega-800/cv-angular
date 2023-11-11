@@ -7,5 +7,7 @@
   "remoteUser": "node",
   "extensions": [
 	"Angular.ng-template",
-  ]
+  ],
+  "postCreateCommand": "npm ci && npm cache clean --force",
+  "postStartCommand": "nohup bash -c 'npm run start &' & tail -f nohup.out"
 }
